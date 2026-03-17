@@ -1,0 +1,19 @@
+﻿// resources/sass/students.scss
+@import 'variables';
+
+// Students component uses .settings-container classes from settings.scss
+// This file provides animation keyframes used by students component
+
+@keyframes slideInStudents {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// All styling for students is inherited from settings.scss since
+// the Students component uses the .settings-container class

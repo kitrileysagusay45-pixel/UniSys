@@ -1,0 +1,70 @@
+// Archive page - Blue theme to match Students page
+@import 'variables';
+
+// Override header with blue theme
+.settings-container {
+  .settings-header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.15);
+
+    h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: white;
+    }
+
+    .subtitle {
+      margin: 0;
+      opacity: 0.9;
+      color: white;
+    }
+  }
+
+  // Blue theme for tabs
+  .settings-tabs {
+    .tab-button {
+      &.active {
+        background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        color: white;
+        border-bottom: 3px solid #1e3a8a;
+      }
+
+      &:not(.active) {
+        color: #64748b;
+        
+        &:hover {
+          background: #f1f5f9;
+          color: #1e3a8a;
+        }
+      }
+    }
+  }
+
+  // Ensure table headers have proper spacing
+  .data-table {
+    thead {
+      th {
+        padding: 1rem 0.75rem;
+        white-space: nowrap;
+        text-align: left;
+        background: #1e3a8a;
+        color: white;
+        font-weight: 600;
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    tbody {
+      td {
+        padding: 1rem 0.75rem;
+        border-bottom: 1px solid #e2e8f0;
+      }
+    }
+  }
+}

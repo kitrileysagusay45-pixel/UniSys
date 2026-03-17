@@ -1,0 +1,194 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1rem;
+
+  .login-card {
+    display: flex;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+
+    .login-left {
+      flex: 1;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+
+      .logo {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 1.5rem;
+        filter: brightness(0) invert(1);
+      }
+
+      .title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .subtitle {
+        font-size: 1.125rem;
+        opacity: 0.9;
+      }
+    }
+
+    .login-right {
+      flex: 1;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .login-header {
+        font-size: 1.875rem;
+        font-weight: 600;
+        color: #1f2937;
+        margin-bottom: 2rem;
+      }
+
+      .login-form {
+        .user-type-toggle {
+          display: flex;
+          gap: 0.75rem;
+          margin-bottom: 1.5rem;
+
+          button {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: 2px solid #e5e7eb;
+            background: white;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #6b7280;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover {
+              border-color: #667eea;
+              color: #667eea;
+            }
+
+            &.active {
+              border-color: #667eea;
+              background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+              color: white;
+            }
+          }
+        }
+
+        .error-message {
+          padding: 0.75rem 1rem;
+          background: #fee2e2;
+          border: 1px solid #fecaca;
+          border-radius: 8px;
+          color: #991b1b;
+          font-size: 0.875rem;
+          margin-bottom: 1rem;
+        }
+
+        .input {
+          width: 100%;
+          padding: 0.875rem 1rem;
+          border: 1px solid #d1d5db;
+          border-radius: 8px;
+          font-size: 0.875rem;
+          margin-bottom: 1rem;
+          outline: none;
+          transition: border-color 0.2s;
+
+          &:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+          }
+
+          &::placeholder {
+            color: #9ca3af;
+          }
+        }
+
+        .actions {
+          display: flex;
+          justify-content: flex-end;
+          margin-bottom: 1.5rem;
+
+          .forgot {
+            color: #667eea;
+            font-size: 0.875rem;
+            text-decoration: none;
+            transition: color 0.2s;
+
+            &:hover {
+              color: #764ba2;
+            }
+          }
+        }
+
+        .btn-login {
+          width: 100%;
+          padding: 0.875rem;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+          border: none;
+          border-radius: 8px;
+          font-size: 1rem;
+          font-weight: 600;
+          cursor: pointer;
+          transition: transform 0.2s, box-shadow 0.2s;
+
+          &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+          }
+
+          &:active {
+            transform: translateY(0);
+          }
+        }
+
+        .signup-text {
+          text-align: center;
+          margin-top: 1.5rem;
+          font-size: 0.875rem;
+          color: #6b7280;
+
+          a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+
+            &:hover {
+              color: #764ba2;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .login-card {
+      flex-direction: column;
+
+      .login-left {
+        padding: 2rem;
+      }
+
+      .login-right {
+        padding: 2rem;
+      }
+    }
+  }
+}

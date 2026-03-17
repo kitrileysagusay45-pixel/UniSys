@@ -1,0 +1,44 @@
+@import 'variables';
+
+
+// Action Buttons Above the Table
+.report-action-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-report {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-report svg {
+  margin-right: 4px;
+}
+
+.btn-report.blue {
+  background-color: #003366; // dark blue
+}
+
+.btn-report.blue:hover {
+  background-color: #00264d;
+}
+
+.btn-report.dark-blue {
+  background-color: #002147; // navy dark
+}
+
+.btn-report.dark-blue:hover {
+  background-color: #001933;
+}

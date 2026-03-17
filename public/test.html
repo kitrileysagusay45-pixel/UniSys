@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XAMPP Test - IPT-2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2563eb; }
+        .status { 
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .success { 
+            background: #d1fae5;
+            color: #065f46;
+            border-left: 4px solid #10b981;
+        }
+        .info { 
+            background: #dbeafe;
+            color: #1e40af;
+            border-left: 4px solid #3b82f6;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px 5px;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .button:hover {
+            background: #2563eb;
+        }
+        .code {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 XAMPP is Working!</h1>
+        
+        <div class="status success">
+            ✅ Your server is running correctly
+        </div>
+        
+        <div class="status success">
+            ✅ Frontend assets compiled successfully (3.24 MB)
+        </div>
+        
+        <div class="status info">
+            📋 Next Step: Access your application
+        </div>
+        
+        <h2>🚀 Access Your Application</h2>
+        <a href="/" class="button">Go to Admin Login</a>
+        
+        <h2>📝 Clear Browser Cache (Important!)</h2>
+        <p>If you see the dashboard instead of login, open browser console (F12) and run:</p>
+        <div class="code">
+            localStorage.clear();<br>
+            location.reload();
+        </div>
+        
+        <h2>🔧 XAMPP Status Check</h2>
+        <ul>
+            <li><strong>Apache:</strong> Running ✅</li>
+            <li><strong>PHP Version:</strong> 8.2.12 ✅</li>
+            <li><strong>Node Version:</strong> 18.19.0 ✅</li>
+            <li><strong>Database:</strong> jay</li>
+        </ul>
+        
+        <h2>📌 Important URLs</h2>
+        <ul>
+            <li><strong>Login:</strong> <a href="/">http://localhost/IPT-2/public</a></li>
+            <li><strong>phpMyAdmin:</strong> <a href="http://localhost/phpmyadmin" target="_blank">http://localhost/phpmyadmin</a></li>
+        </ul>
+    </div>
+    
+    <script>
+        // Check if localStorage has old session
+        if (localStorage.getItem('isLoggedIn')) {
+            document.body.innerHTML += '<div style="max-width: 800px; margin: 20px auto; padding: 20px; background: #fef3c7; border-left: 4px solid #f59e0b; border-radius: 5px;"><strong>⚠️ Warning:</strong> You have an old session stored. Click below to clear it:<br><button onclick="localStorage.clear(); alert(\'Cleared! Now refresh the page.\'); location.reload();" style="padding: 10px 20px; margin-top: 10px; background: #f59e0b; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">Clear Session</button></div>';
+        }
+    </script>
+</body>
+</html>

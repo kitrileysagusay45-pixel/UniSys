@@ -1,0 +1,67 @@
+// Body
+$body-bg: #f5f7fa;
+
+// Typography - Professional Academic Font Stack
+$font-family-sans-serif: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+$font-size-base: 0.9375rem;
+$line-height-base: 1.6;
+
+// University Institutional Color Palette
+// Primary: Navy Blue (Traditional Academic)
+// Primary: Vibrant Light Blue (Modern & Energetic)
+$primary-color: #37bcff;
+$primary-light: #b2f2ff;
+$primary-dark: #0090e0;
+$primary-gradient: linear-gradient(135deg, #37bcff 0%, #b2f2ff 100%);
+
+// Secondary: Gold/Amber (Academic Achievement)
+// Secondary: Deep Navy (Contrast for Academic Feel)
+$secondary-color: #003366;
+$secondary-light: #00509e;
+$secondary-dark: #001122;
+
+// Accent Colors
+$accent-blue: #1e5a8e;
+$accent-teal: #16697a;
+$accent-burgundy: #8b1e3f;
+
+// Status Colors (Professional Palette)
+$success-color: #2d7a3e;
+$success-light: #e8f5e9;
+$info-color: #0277bd;
+$info-light: #e1f5fe;
+$warning-color: #f57c00;
+$warning-light: #fff3e0;
+$danger-color: #c62828;
+$danger-light: #ffebee;
+
+// Neutral Colors (Academic Gray Scale)
+$dark-color: #1a1a2e;
+$text-primary: #2c3e50;
+$text-secondary: #546e7a;
+$text-muted: #78909c;
+$light-color: #f8f9fa;
+$border-color: #d0d7de;
+$background-gray: #eceff1;
+
+// University Department Colors
+$dept-science: #4a90e2;
+$dept-arts: #9b59b6;
+$dept-business: #e67e22;
+$dept-engineering: #27ae60;
+$dept-medicine: #e74c3c;
+
+// Shadows (More subtle, professional)
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+$shadow-md: 0 2px 8px rgba(0, 0, 0, 0.12);
+$shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.16);
+$shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.20);
+
+// Card & Container
+$card-background: #ffffff;
+$card-border: #e0e7ee;
+$card-radius: 8px;
+
+// Header Heights
+$header-height: 70px;
+$sidebar-width: 260px;

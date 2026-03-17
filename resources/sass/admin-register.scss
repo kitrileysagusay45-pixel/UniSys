@@ -1,0 +1,393 @@
+// resources/sass/admin-register.scss
+@import 'variables';
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.admin-register-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $primary-gradient;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  font-family: $font-family-sans-serif;
+
+  // University seal watermark pattern
+  &::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 10px,
+      transparent 10px,
+      transparent 20px
+    );
+    top: -250px;
+    right: -250px;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      rgba(212, 175, 55, 0.05) 0px,
+      rgba(212, 175, 55, 0.05) 15px,
+      transparent 15px,
+      transparent 30px
+    );
+    bottom: -300px;
+    left: -300px;
+    border-radius: 50%;
+  }
+
+  .admin-register-card {
+    background: white;
+    border-radius: $card-radius;
+    padding: 0;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: $shadow-xl;
+    border: 4px solid $secondary-color;
+    border-top: 8px solid $secondary-color;
+    animation: fadeInScale 0.5s ease-out;
+    position: relative;
+    z-index: 1;
+
+    .admin-register-content {
+      background: white;
+      border-radius: 4px;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      overflow: hidden;
+
+      .admin-left-section {
+        flex: 0 0 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: $primary-color;
+        padding: 3rem 2rem;
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 6px;
+          background: $secondary-color;
+        }
+
+        .admin-logo-icon {
+          width: 150px;
+          height: 150px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 2rem;
+          background: $secondary-color;
+          border-radius: 50%;
+          padding: 2rem;
+          border: 5px solid rgba(255, 255, 255, 0.2);
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+
+          svg {
+            width: 100%;
+            height: 100%;
+            color: white;
+          }
+        }
+
+        .admin-title {
+          font-size: 2.75rem;
+          font-weight: 700;
+          color: white;
+          margin: 0 0 0.75rem 0;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          text-align: center;
+        }
+
+        .admin-subtitle {
+          font-size: 1.125rem;
+          color: rgba(255, 255, 255, 0.9);
+          margin: 0;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 1.5px;
+          text-align: center;
+        }
+      }
+
+      .admin-right-section {
+        flex: 1;
+        padding: 2rem 2.5rem;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow-y: auto;
+        max-height: 90vh;
+
+        .form-title {
+          font-size: 1.875rem;
+          font-weight: 700;
+          color: $primary-color;
+          text-align: left;
+          margin: 0 0 1.5rem 0;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          border-bottom: 3px solid $secondary-color;
+          padding-bottom: 1rem;
+        }
+
+        .admin-error-message {
+          background: $danger-light;
+          border: 2px solid $danger-color;
+          color: $danger-color;
+          padding: 0.875rem 1rem;
+          border-radius: 6px;
+          font-size: 0.875rem;
+          margin-bottom: 1.25rem;
+          text-align: center;
+          font-weight: 600;
+        }
+
+        .admin-form {
+          .profile-picture-upload {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: #f9fafb;
+            border-radius: 8px;
+
+            .profile-picture-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+
+          .profile-picture-preview {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            color: #9ca3af;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .upload-button {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.625rem 1.25rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover {
+              transform: translateY(-2px);
+              box-shadow: 0 6px 12px rgba(102, 126, 234, 0.3);
+            }
+          }
+            }
+
+            .error-text {
+              color: #ef4444;
+              font-size: 0.75rem;
+              margin-top: 0.5rem;
+            }
+          }
+
+          .form-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+        margin-bottom: 1.5rem;
+
+        @media (max-width: 640px) {
+          grid-template-columns: 1fr;
+        }
+
+        .form-group {
+          display: flex;
+          flex-direction: column;
+
+          &.form-full-width {
+            grid-column: 1 / -1;
+          }
+
+          label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #374151;
+            margin-bottom: 0.5rem;
+
+            svg {
+              color: #6b7280;
+            }
+          }
+
+          input {
+            padding: 0.75rem 1rem;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 0.9375rem;
+            transition: all 0.2s;
+
+            &:focus {
+              outline: none;
+              border-color: #667eea;
+              box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            }
+
+            &::placeholder {
+              color: #9ca3af;
+            }
+          }
+
+          .error-text {
+            color: #ef4444;
+            font-size: 0.75rem;
+            margin-top: 0.25rem;
+          }
+        }
+      }
+
+          .admin-register-btn {
+        width: 100%;
+        padding: 0.875rem 1.5rem;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+        margin-bottom: 1.5rem;
+
+        &:hover:not(:disabled) {
+          transform: translateY(-2px);
+          box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        &:disabled {
+          opacity: 0.6;
+          cursor: not-allowed;
+        }
+      }
+
+          .login-link {
+        text-align: center;
+
+        p {
+          font-size: 0.9375rem;
+          color: #6b7280;
+          margin: 0;
+
+          .link-button {
+            background: none;
+            border: none;
+            color: #667eea;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s;
+
+            &:hover {
+              color: #764ba2;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+
+    .admin-register-card {
+      max-width: 100%;
+      border: 3px solid $secondary-color;
+
+      .admin-register-content {
+        flex-direction: column;
+
+        .admin-left-section {
+          flex: 1;
+          padding: 2rem 1.5rem;
+
+          .admin-logo-icon {
+            width: 120px;
+            height: 120px;
+            padding: 1.5rem;
+          }
+
+          .admin-title {
+            font-size: 2rem;
+          }
+
+          .admin-subtitle {
+            font-size: 0.9375rem;
+          }
+        }
+
+        .admin-right-section {
+          padding: 2rem 1.5rem;
+          max-height: none;
+
+          .form-title {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,312 @@
+// resources/sass/admin-login.scss
+@import 'variables';
+
+// University Login Page Styles
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.admin-login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $primary-gradient;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  font-family: $font-family-sans-serif;
+
+  // University seal watermark pattern
+  &::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 10px,
+      transparent 10px,
+      transparent 20px
+    );
+    top: -250px;
+    right: -250px;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      rgba(212, 175, 55, 0.05) 0px,
+      rgba(212, 175, 55, 0.05) 15px,
+      transparent 15px,
+      transparent 30px
+    );
+    bottom: -300px;
+    left: -300px;
+    border-radius: 50%;
+  }
+
+  .admin-login-card {
+    background: white;
+    border-radius: $card-radius;
+    padding: 0;
+    width: 100%;
+    max-width: 750px;
+    box-shadow: $shadow-xl;
+    border: 4px solid $secondary-color;
+    border-top: 8px solid $secondary-color;
+    animation: fadeInScale 0.5s ease-out;
+    position: relative;
+    z-index: 1;
+
+    .admin-login-content {
+      background: white;
+      border-radius: 4px;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      overflow: hidden;
+
+      .admin-left-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: $primary-color;
+        padding: 3rem 2.5rem;
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 6px;
+          background: $secondary-color;
+        }
+
+        .admin-logo-icon {
+          width: 150px;
+          height: 150px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 2rem;
+          background: $secondary-color;
+          border-radius: 50%;
+          padding: 2rem;
+          border: 5px solid rgba(255, 255, 255, 0.2);
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+
+          svg {
+            width: 100%;
+            height: 100%;
+            color: white;
+          }
+        }
+
+        .admin-title {
+          font-size: 2.75rem;
+          font-weight: 700;
+          color: white;
+          margin: 0 0 0.75rem 0;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          text-align: center;
+        }
+
+        .admin-subtitle {
+          font-size: 1.125rem;
+          color: rgba(255, 255, 255, 0.9);
+          margin: 0;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 1.5px;
+          text-align: center;
+        }
+      }
+
+      .admin-right-section {
+        flex: 1;
+        padding: 3rem 3rem;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .form-title {
+          font-size: 1.875rem;
+          font-weight: 700;
+          color: $primary-color;
+          text-align: left;
+          margin: 0 0 2rem 0;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          border-bottom: 3px solid $secondary-color;
+          padding-bottom: 1rem;
+        }
+
+        .admin-error-message {
+          background: $danger-light;
+          border: 2px solid $danger-color;
+          color: $danger-color;
+          padding: 1rem 1.25rem;
+          border-radius: 6px;
+          font-size: 0.875rem;
+          margin-bottom: 1.5rem;
+          text-align: center;
+          font-weight: 600;
+        }
+
+        .admin-form {
+          .admin-form-group {
+            margin-bottom: 1.5rem;
+
+            .admin-input {
+              width: 100%;
+              padding: 1rem 1.25rem;
+              border: 2px solid $border-color;
+              border-radius: 6px;
+              font-size: 1rem;
+              background: white;
+              outline: none;
+              transition: all 0.2s ease;
+              font-weight: 500;
+
+              &:focus {
+                background: white;
+                border-color: $primary-color;
+                box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.1);
+              }
+
+              &::placeholder {
+                color: $text-muted;
+                font-size: 0.9375rem;
+              }
+            }
+          }
+
+          .admin-login-btn {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            background: $primary-color;
+            color: white;
+            border: 2px solid $primary-color;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            &:hover:not(:disabled) {
+              background: $primary-light;
+              border-color: $primary-light;
+            }
+
+            &:active:not(:disabled) {
+              background: $primary-dark;
+              border-color: $primary-dark;
+            }
+
+            &:disabled {
+              opacity: 0.5;
+              cursor: not-allowed;
+            }
+          }
+
+          .register-link {
+            text-align: center;
+            margin-top: 1.75rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid $background-gray;
+
+            p {
+              font-size: 0.875rem;
+              color: $text-secondary;
+              margin: 0;
+              font-weight: 500;
+
+              .link-button {
+                background: none;
+                border: none;
+                color: $secondary-color;
+                font-weight: 700;
+                cursor: pointer;
+                text-decoration: none;
+                transition: all 0.2s;
+                padding: 0;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+
+                &:hover {
+                  color: darken($secondary-color, 10%);
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+
+    .admin-login-card {
+      max-width: 100%;
+      border: 3px solid $secondary-color;
+
+      .admin-login-content {
+        flex-direction: column;
+
+        .admin-left-section {
+          padding: 2rem 1.5rem;
+
+          .admin-logo-icon {
+            width: 120px;
+            height: 120px;
+            padding: 1.5rem;
+          }
+
+          .admin-title {
+            font-size: 2rem;
+          }
+
+          .admin-subtitle {
+            font-size: 0.9375rem;
+          }
+        }
+
+        .admin-right-section {
+          padding: 2rem 1.5rem;
+
+          .form-title {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
