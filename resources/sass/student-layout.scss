@@ -1,0 +1,25 @@
+// ── Student Layout (reuses layout.scss base + overrides) ──
+@import 'layout';
+
+.student-layout {
+  .sidebar {
+    background: linear-gradient(180deg, $uni-navy-deep 0%, $uni-blue 100%);
+  }
+
+  .role-badge.student {
+    background: rgba(133, 183, 235, 0.15);
+    color: $uni-sky;
+    border: 1px solid rgba(133, 183, 235, 0.3);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .nav-item.active {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-left-color: $uni-bright !important;
+  }
+}

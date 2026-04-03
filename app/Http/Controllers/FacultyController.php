@@ -119,6 +119,17 @@ class FacultyController extends Controller
         return response()->json(['message' => 'Faculty status updated', 'faculty' => $faculty]);
     }
 
+    // ✅ Activate a faculty (Pending → Active)
+    public function activate(Faculty $faculty)
+    {
+        if ($faculty->status !== 'Pending') {
+            return response()->json(['message' => 'Only Pending faculty can be activated'], 422);
+        }
+
+        $faculty->update(['status' => 'Active']);
+        return response()->json(['message' => 'Faculty activated successfully', 'faculty' => $faculty]);
+    }
+
     // 🆕 Archive a faculty (soft delete)
     public function archive(Faculty $faculty)
     {

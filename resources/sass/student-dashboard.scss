@@ -1,0 +1,139 @@
+@import 'variables';
+
+// ── Student Dashboard Styles ──────────────────────────────
+.student-dash {
+  padding: 2rem;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  max-width: 1200px;
+
+  .dash-header {
+    margin-bottom: 2rem;
+    h2 { font-size: 2rem; font-weight: 800; color: $uni-navy-deep; margin: 0 0 0.25rem; }
+    .subtitle { color: $uni-sky; font-size: 1rem; margin: 0; }
+  }
+
+  .enrolled-section {
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $uni-blue;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #fff;
+    border-radius: 16px;
+    border: 2px dashed #e2e8f0;
+
+    .empty-icon { color: #cbd5e1; margin-bottom: 1rem; }
+    p { color: #888; margin: 0.5rem 0; }
+    .empty-sub { font-size: 0.85rem; color: #aaa; }
+  }
+
+  .subject-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .subject-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid $uni-ice;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: $modern-gradient;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.75rem;
+
+      .subject-code {
+        background: linear-gradient(135deg, #003366, #004d99);
+        color: #fff;
+        padding: 0.3rem 0.85rem;
+        border-radius: 8px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      .status-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        &.active { background: #22c55e; box-shadow: 0 0 6px rgba(34, 197, 94, 0.4); }
+      }
+    }
+
+    .subject-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin: 0 0 1rem;
+    }
+
+    .card-details {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-bottom: 1.25rem;
+
+      .detail-row {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        color: #555;
+        font-size: 0.9rem;
+
+        svg { color: #003366; flex-shrink: 0; }
+      }
+    }
+
+    .card-footer {
+      display: flex;
+      gap: 0.5rem;
+      border-top: 1px solid #f0f0f0;
+      padding-top: 1rem;
+
+      .semester, .academic-year {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.75rem;
+        border-radius: 6px;
+        background: #f0f4f8;
+        color: #555;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .student-dash { padding: 1rem; }
+  .student-dash .subject-grid { grid-template-columns: 1fr; }
+}

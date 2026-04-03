@@ -1,0 +1,1 @@
+SQLSTATE[HY000]: General error: 1364 Field 'head' doesn't have a default value (SQL: insert into `departments` (`name`, `code`, `created_at`, `updated_at`) values (Information Technology, IT, 2026-04-01 02:44:46, 2026-04-01 02:44:46))

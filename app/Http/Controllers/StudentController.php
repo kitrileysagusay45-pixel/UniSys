@@ -72,6 +72,11 @@ class StudentController extends Controller
         ], 201);
     }
 
+    public function show(Student $student)
+    {
+        return response()->json($student);
+    }
+
     public function update(Request $request, Student $student)
     {
         $data = $request->validate([
@@ -136,6 +141,16 @@ class StudentController extends Controller
             'message' => 'Status updated successfully',
             'student' => $student
         ]);
+    }
+
+    public function activate(Student $student)
+    {
+        if ($student->status !== 'Pending') {
+            return response()->json(['message' => 'Only Pending students can be activated'], 422);
+        }
+
+        $student->update(['status' => 'Active']);
+        return response()->json(['message' => 'Student activated successfully', 'student' => $student]);
     }
 
     public function archive(Student $student)

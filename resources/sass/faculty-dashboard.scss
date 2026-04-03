@@ -1,0 +1,360 @@
+@import 'variables';
+
+// ── Faculty Dashboard Styles ──────────────────────────────
+.faculty-dash {
+  padding: 2rem;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  max-width: 1200px;
+
+  .dash-header {
+    margin-bottom: 2rem;
+    h2 { font-size: 2rem; font-weight: 800; color: $uni-navy-deep; margin: 0 0 0.25rem; }
+    .subtitle { color: $uni-sky; font-size: 1rem; margin: 0; }
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .stat-card {
+    padding: 1.5rem;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+
+    &.blue { background: linear-gradient(135deg, $uni-blue, $uni-royal); }
+    &.green { background: linear-gradient(135deg, #0d7c66, #2ec4b6); }
+    &.gold { background: linear-gradient(135deg, $uni-bright, $uni-sky); }
+
+    .stat-icon {
+      width: 54px; height: 54px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    .stat-info {
+      .stat-number { display: block; font-size: 1.75rem; font-weight: 800; }
+      .stat-label { font-size: 0.8rem; opacity: 0.9; }
+    }
+  }
+
+  .subjects-section {
+    h3 { font-size: 1.5rem; font-weight: 700; color: $uni-blue; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.5rem; }
+  }
+
+  .subject-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .subject-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid $uni-ice;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    &:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.1); transform: translateY(-2px); }
+
+    .subject-code {
+      display: inline-block;
+      background: #003366;
+      color: #fff;
+      padding: 0.2rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 0.75rem;
+    }
+
+    .subject-name { font-size: 1.1rem; color: #1a1a2e; margin: 0 0 0.75rem; }
+
+    .subject-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+
+      span { color: #666; font-size: 0.85rem; }
+    }
+
+    .subject-footer {
+      display: flex;
+      gap: 0.5rem;
+      border-top: 1px solid #f0f0f0;
+      padding-top: 0.75rem;
+
+      .semester-badge, .year-badge {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 4px;
+        background: #f0f4f8;
+        color: #555;
+      }
+    }
+
+    .btn-manage {
+      width: 100%;
+      background: $modern-gradient;
+      color: white;
+      border: none;
+      padding: 0.85rem;
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: background 0.2s;
+      margin-top: 1rem;
+
+      &:hover {
+        background: #004d99;
+      }
+    }
+  }
+
+  .manage-enrollment {
+    .btn-back {
+      background: none;
+      border: none;
+      color: #4a5568;
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color 0.2s;
+      
+      &:hover { color: #1a1a2e; }
+    }
+
+    .management-header {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      border: 1px solid #e8ecf0;
+      
+      .subject-info-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        
+        h3 { margin: 0; color: #1a1a2e; }
+        .enrolled-count { 
+          background: #e8f4fd; 
+          color: #1a5fb4; 
+          padding: 0.4rem 1rem; 
+          border-radius: 999px;
+          font-weight: 700;
+          font-size: 0.85rem;
+        }
+      }
+    }
+
+    .enrollment-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+
+      @media (max-width: 900px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .enrolled-section, .available-section {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      border: 1px solid #e8ecf0;
+      
+      h4 { margin-top: 0; margin-bottom: 1.5rem; color: #1a1a2e; border-bottom: 1px solid #f0f0f0; padding-bottom: 0.75rem; }
+    }
+
+    .search-mini {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #f8fafc;
+      padding: 0.6rem 0.85rem;
+      border-radius: 8px;
+      margin-bottom: 1.25rem;
+      border: 1px solid #e2e8f0;
+
+      input {
+        background: none;
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 0.85rem;
+      }
+    }
+
+    .student-list {
+      max-height: 400px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+
+      .student-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.85rem;
+        border-radius: 8px;
+        border: 1px solid #f0f0f0;
+        transition: all 0.2s;
+
+        &:hover { background: #f8fafc; border-color: #e2e8f0; }
+
+        .item-info {
+          display: flex;
+          flex-direction: column;
+          
+          .item-name { font-weight: 600; color: #1a1a2e; font-size: 0.9rem; }
+          .item-id { font-size: 0.75rem; color: #888; }
+        }
+
+        .btn-remove {
+          background: #fff5f5;
+          color: #e53e3e;
+          border: 1px solid #feb2b2;
+          width: 32px;
+          height: 32px;
+          border-radius: 6px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.2s;
+
+          &:hover { background: #e53e3e; color: white; }
+        }
+
+        .btn-add-mini {
+          background: #f0fff4;
+          color: #38a169;
+          border: 1px solid #9ae6b4;
+          padding: 0.45rem 0.85rem;
+          border-radius: 6px;
+          font-size: 0.8rem;
+          font-weight: 600;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+          
+          &:hover { background: #38a169; color: white; }
+        }
+      }
+    }
+    
+    .empty-small { font-size: 0.85rem; color: #888; text-align: center; padding: 2.5rem 0; }
+  }
+
+  .empty-state {
+    text-align: center;
+    color: #888;
+    padding: 3rem;
+    font-size: 0.95rem;
+  }
+
+  // Students table
+  .table-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 0.5rem 1rem;
+      flex: 1;
+      max-width: 400px;
+
+      .search-icon { color: #888; }
+      input { border: none; background: transparent; outline: none; width: 100%; font-size: 0.9rem; }
+    }
+
+    .result-count { color: #888; font-size: 0.85rem; }
+  }
+
+  .students-table-wrapper {
+    overflow-x: auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .students-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th {
+      text-align: left;
+      padding: 0.85rem 1rem;
+      background: #003366;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+
+      &:first-child { border-radius: 12px 0 0 0; }
+      &:last-child { border-radius: 0 12px 0 0; }
+    }
+
+    td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    tr:hover td { background: #f8fafc; }
+
+    .id-badge {
+      background: #e8f4fd;
+      color: #1a5fb4;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.8rem;
+    }
+
+    .name-cell { font-weight: 600; color: #1a1a2e; }
+    .empty-cell { text-align: center; color: #888; padding: 2rem; }
+  }
+}
+
+@media (max-width: 768px) {
+  .faculty-dash { padding: 1rem; }
+  .faculty-dash .stats-grid { grid-template-columns: 1fr; }
+  .faculty-dash .subject-cards { grid-template-columns: 1fr; }
+}

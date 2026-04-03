@@ -2,12 +2,17 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { RotateCcw, Search, Trash2 } from "lucide-react";
 import { useCounts } from "../Context/CountContext";
-import "../../sass/faculty.scss"; // Reuse Faculty UI styling
+import ConfirmModal from "./ConfirmModal";
+import Toast from "./Toast";
+import { useToast } from "./useToast";
+import "../../sass/faculty.scss";
 
 export default function Archive() {
   const { refreshCounts } = useCounts();
   const [archives, setArchives] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
+  const { toasts, addToast, removeToast } = useToast();
+  const [confirmModal, setConfirmModal] = useState({ isOpen: false, item: null, action: null });
 
   // Fetch all archived data (students + faculty)
   const fetchArchives = async () => {
@@ -23,6 +28,7 @@ export default function Archive() {
           ...s,
           type: "Student",
           id_value: s.student_id,
+          display_name: s.name || `${s.first_name || ""} ${s.last_name || ""}`.trim() || "N/A",
           archived_date: s.updated_at,
         }));
 
@@ -32,6 +38,7 @@ export default function Archive() {
           ...f,
           type: "Faculty",
           id_value: f.faculty_id,
+          display_name: `${f.first_name || ""} ${f.last_name || ""}`.trim() || "N/A",
           archived_date: f.updated_at,
         }));
 
@@ -45,67 +52,63 @@ export default function Archive() {
     fetchArchives();
   }, []);
 
-  // Filter archives by search input (ID or name)
   const filteredArchives = archives.filter((item) => {
     const query = searchQuery.toLowerCase();
     return (
-      item.name?.toLowerCase().includes(query) ||
+      item.display_name?.toLowerCase().includes(query) ||
       item.email?.toLowerCase().includes(query) ||
       item.id_value?.toLowerCase().includes(query) ||
       item.department?.toLowerCase().includes(query)
     );
   });
 
-  // Restore record
-  const handleRestore = async (item) => {
-    if (!confirm(`Restore ${item.name}?`)) return;
-
-    try {
-      const endpoint = item.type === "Student" ? "students" : "faculties";
-      await axios.patch(`/api/${endpoint}/${item.id}/restore`);
-
-      await fetchArchives();
-      await refreshCounts();
-
-      window.dispatchEvent(
-        new CustomEvent("dataUpdated", {
-          detail: { type: endpoint, timestamp: Date.now() },
-        })
-      );
-
-      alert("✅ Restored successfully!");
-    } catch (err) {
-      console.error("Restore error:", err);
-      alert("❌ Failed to restore record.");
-    }
+  const handleRestore = (item) => {
+    setConfirmModal({ isOpen: true, item, action: 'restore' });
   };
 
-  // Permanently delete record
-  const handleDelete = async (item) => {
-    if (
-      !confirm(
-        `⚠️ PERMANENT DELETE: This will completely remove ${item.name} from the database. This action cannot be undone. Continue?`
-      )
-    )
-      return;
+  const handleDelete = (item) => {
+    setConfirmModal({ isOpen: true, item, action: 'delete' });
+  };
 
+  const handleConfirm = async () => {
+    const { item, action } = confirmModal;
+    setConfirmModal({ isOpen: false, item: null, action: null });
+    const endpoint = item.type === "Student" ? "students" : "faculties";
     try {
-      const endpoint = item.type === "Student" ? "students" : "faculties";
-      await axios.delete(`/api/${endpoint}/${item.id}`);
-
-      await fetchArchives();
-      await refreshCounts();
-
-      alert("🗑️ Record permanently deleted!");
+      if (action === 'restore') {
+        await axios.patch(`/api/${endpoint}/${item.id}/restore`);
+        await fetchArchives();
+        await refreshCounts();
+        window.dispatchEvent(new CustomEvent("dataUpdated", { detail: { type: endpoint, timestamp: Date.now() } }));
+        addToast(`${item.display_name} restored successfully.`, 'success');
+      } else {
+        await axios.delete(`/api/${endpoint}/${item.id}`);
+        await fetchArchives();
+        await refreshCounts();
+        addToast(`${item.display_name} permanently deleted.`, 'info');
+      }
     } catch (err) {
-      console.error("Delete error:", err);
-      alert("❌ Failed to delete record.");
+      console.error(`${action} error:`, err);
+      addToast(`Failed to ${action} record.`, 'error');
     }
   };
 
   return (
     <div className="settings-container">
-      {/* Header */}
+      <Toast toasts={toasts} removeToast={removeToast} />
+      <ConfirmModal
+        isOpen={confirmModal.isOpen}
+        type={confirmModal.action === 'delete' ? 'danger' : 'warning'}
+        title={confirmModal.action === 'delete' ? 'Permanently Delete Record' : 'Restore Record'}
+        message={
+          confirmModal.action === 'delete'
+            ? `This will permanently remove ${confirmModal.item?.display_name} from the database. This action cannot be undone.`
+            : `Restore ${confirmModal.item?.display_name} to active records?`
+        }
+        confirmText={confirmModal.action === 'delete' ? 'Delete Permanently' : 'Restore'}
+        onConfirm={handleConfirm}
+        onCancel={() => setConfirmModal({ isOpen: false, item: null, action: null })}
+      />
       <div className="settings-header">
         <div>
           <h2>Archive Management</h2>
@@ -172,7 +175,7 @@ export default function Archive() {
                     <tr key={`${item.type}-${item.id}`}>
                       <td>{item.type}</td>
                       <td>{item.id_value}</td>
-                      <td>{item.name}</td>
+                      <td>{item.display_name}</td>
                       <td>{item.email}</td>
                       <td>{item.department}</td>
                       <td>
@@ -185,18 +188,10 @@ export default function Archive() {
                       </td>
                       <td>
                         <div className="action-buttons">
-                          <button
-                            onClick={() => handleRestore(item)}
-                            className="btn-icon btn-edit"
-                            title="Restore"
-                          >
+                          <button onClick={() => handleRestore(item)} className="btn-icon btn-edit" title="Restore">
                             <RotateCcw size={16} />
                           </button>
-                          <button
-                            onClick={() => handleDelete(item)}
-                            className="btn-icon btn-delete"
-                            title="Delete Permanently"
-                          >
+                          <button onClick={() => handleDelete(item)} className="btn-icon btn-delete" title="Delete Permanently">
                             <Trash2 size={16} />
                           </button>
                         </div>

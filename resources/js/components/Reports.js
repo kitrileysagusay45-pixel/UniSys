@@ -27,26 +27,56 @@ export default function Reports() {
   };
 
   const filteredStudents = students.filter(s => {
-    const fullName = `${s.firstname || ''} ${s.middlename || ''} ${s.lastname || ''} ${s.name || ''}`;
+    const fullName = `${s.first_name || ''} ${s.middle_name || ''} ${s.last_name || ''} ${s.name || ''}`;
     return fullName.toLowerCase().includes(searchQuery.toLowerCase()) ||
            (s.student_id || '').toLowerCase().includes(searchQuery.toLowerCase());
   });
 
   const filteredFaculties = faculties.filter(f => {
-    const fullName = `${f.firstname || ''} ${f.middlename || ''} ${f.lastname || ''} ${f.name || ''}`;
+    const fullName = `${f.first_name || ''} ${f.middle_name || ''} ${f.last_name || ''} ${f.name || ''}`;
     return fullName.toLowerCase().includes(searchQuery.toLowerCase()) ||
            (f.faculty_id || '').toLowerCase().includes(searchQuery.toLowerCase());
   });
 
-  // Generate button handler
   const handleGenerate = (type) => {
-    if (type === 'students') {
-      console.log('Generated Student Report:', filteredStudents);
-      alert('Student report generated successfully!');
-    } else {
-      console.log('Generated Faculty Report:', filteredFaculties);
-      alert('Faculty report generated successfully!');
-    }
+    const isStudent = type === 'students';
+    const rows = isStudent ? filteredStudents : filteredFaculties;
+    const title = isStudent ? 'Student Report' : 'Faculty Report';
+    const date = new Date().toLocaleDateString('en-PH', { year: 'numeric', month: 'long', day: 'numeric' });
+
+    const tableHeaders = isStudent
+      ? '<th>Student ID</th><th>Name</th><th>Email</th><th>Department</th><th>Course</th><th>Year Level</th><th>Status</th>'
+      : '<th>Faculty ID</th><th>Name</th><th>Email</th><th>Department</th><th>Position</th><th>Status</th>';
+
+    const tableRows = rows.map(row => {
+      const fullName = row.first_name && row.last_name
+        ? `${row.first_name} ${row.middle_name ? row.middle_name + ' ' : ''}${row.last_name}`.trim()
+        : row.name || 'N/A';
+      const cells = isStudent
+        ? `<td>${row.student_id || ''}</td><td>${fullName}</td><td>${row.email || ''}</td><td>${row.department || ''}</td><td>${row.course || ''}</td><td>${row.year_level || ''}</td><td>${row.status || ''}</td>`
+        : `<td>${row.faculty_id || ''}</td><td>${fullName}</td><td>${row.email || ''}</td><td>${row.department || ''}</td><td>${row.position || ''}</td><td>${row.status || ''}</td>`;
+      return `<tr>${cells}</tr>`;
+    }).join('');
+
+    const html = `<!DOCTYPE html><html><head><title>${title}</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 40px; color: #1a1a2e; }
+      h1 { font-size: 22px; margin-bottom: 4px; }
+      .meta { font-size: 13px; color: #666; margin-bottom: 20px; }
+      table { width: 100%; border-collapse: collapse; font-size: 13px; }
+      th { background: #1a1a2e; color: #fff; padding: 10px 12px; text-align: left; }
+      td { padding: 8px 12px; border-bottom: 1px solid #e5e7eb; }
+      tr:nth-child(even) td { background: #f9fafb; }
+      @media print { body { margin: 20px; } }
+    </style></head><body>
+    <h1>UniSys — ${title}</h1>
+    <p class="meta">Generated on: ${date} &nbsp;|&nbsp; Total Records: ${rows.length}</p>
+    <table><thead><tr>${tableHeaders}</tr></thead><tbody>${tableRows}</tbody></table>
+    <script>window.onload = () => { window.print(); }<\/script>
+    </body></html>`;
+
+    const win = window.open('', '_blank');
+    if (win) { win.document.write(html); win.document.close(); }
   };
 
   // Download CSV report
@@ -60,7 +90,7 @@ export default function Reports() {
     const csvContent = [
       headers.join(','),
       ...rows.map((row) => {
-        const fullName = `${row.firstname || ''} ${row.middlename || ''} ${row.lastname || row.name || ''}`.trim();
+        const fullName = `${row.first_name || ''} ${row.middle_name || ''} ${row.last_name || row.name || ''}`.trim();
         return type === 'students'
           ? [
               row.student_id,
@@ -179,8 +209,8 @@ export default function Reports() {
                 </thead>
                 <tbody>
                   {filteredStudents.map((s) => {
-                    const fullName = s.firstname && s.lastname
-                      ? `${s.firstname} ${s.middlename ? s.middlename + ' ' : ''}${s.lastname}`.trim()
+                    const fullName = s.first_name && s.last_name
+                      ? `${s.first_name} ${s.middle_name ? s.middle_name + ' ' : ''}${s.last_name}`.trim()
                       : s.name || 'N/A';
                     return (
                       <tr key={s.id}>
@@ -214,8 +244,8 @@ export default function Reports() {
                 </thead>
                 <tbody>
                   {filteredFaculties.map((f) => {
-                    const fullName = f.firstname && f.lastname
-                      ? `${f.firstname} ${f.middlename ? f.middlename + ' ' : ''}${f.lastname}`.trim()
+                    const fullName = f.first_name && f.last_name
+                      ? `${f.first_name} ${f.middle_name ? f.middle_name + ' ' : ''}${f.last_name}`.trim()
                       : f.name || 'N/A';
                     return (
                       <tr key={f.id}>

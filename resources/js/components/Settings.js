@@ -2,10 +2,15 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Edit2, Archive, ArchiveRestore } from 'lucide-react';
 import { useCounts } from '../Context/CountContext';
+import ConfirmModal from './ConfirmModal';
+import Toast from './Toast';
+import { useToast } from './useToast';
 import '../../sass/settings.scss';
 
 export default function Settings() {
   const { refreshCounts } = useCounts();
+  const { toasts, addToast, removeToast } = useToast();
+  const [confirmArchive, setConfirmArchive] = useState({ isOpen: false, id: null });
   const [activeTab, setActiveTab] = useState('departments');
   const [departments, setDepartments] = useState([]);
   const [courses, setCourses] = useState([]);
@@ -51,93 +56,57 @@ export default function Settings() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    console.log('Submitting form data:', formData);
-    
     try {
-      const endpoint = activeTab === 'departments' ? 'departments' : 
+      const endpoint = activeTab === 'departments' ? 'departments' :
                        activeTab === 'courses' ? 'courses' : 'academic-years';
-      
-      let response;
       if (editingId) {
-        response = await axios.put(`/api/${endpoint}/${editingId}`, formData);
-        console.log('Update response:', response.data);
-        alert('✅ Updated successfully!');
+        await axios.put(`/api/${endpoint}/${editingId}`, formData);
+        addToast('Updated successfully!', 'success');
       } else {
-        response = await axios.post(`/api/${endpoint}`, formData);
-        console.log('Create response:', response.data);
-        alert('✅ Added successfully!');
+        await axios.post(`/api/${endpoint}`, formData);
+        addToast('Added successfully!', 'success');
       }
-      
       await fetchData();
       await refreshCounts();
-      
-      // Broadcast refresh event to all components
-      console.log('Settings: Broadcasting dataUpdated event for', endpoint);
-      const event = new CustomEvent('dataUpdated', { 
-        detail: { type: endpoint, timestamp: Date.now() } 
-      });
-      window.dispatchEvent(event);
-      
-      // Small delay to ensure event is processed
-      setTimeout(() => {
-        closeForm();
-      }, 100);
+      window.dispatchEvent(new CustomEvent('dataUpdated', { detail: { type: endpoint, timestamp: Date.now() } }));
+      setTimeout(() => closeForm(), 100);
     } catch (err) {
-      console.error('Save error:', err);
-      console.error('Error response:', err.response);
-      
-      // Show detailed error message
-      let errorMessage = '❌ Failed to save.';
-      if (err.response?.data?.message) {
-        errorMessage += '\n' + err.response.data.message;
-      }
-      if (err.response?.data?.errors) {
-        const errors = Object.values(err.response.data.errors).flat();
-        errorMessage += '\n' + errors.join('\n');
-      }
-      alert(errorMessage);
+      const errors = err.response?.data?.errors ? Object.values(err.response.data.errors).flat().join(' ') : (err.response?.data?.message || 'Unknown error');
+      addToast('Failed to save. ' + errors, 'error');
     }
   };
 
-  const handleArchive = async (id) => {
-    if (!confirm('Archive this item?')) return;
+  const handleArchive = (id) => {
+    setConfirmArchive({ isOpen: true, id });
+  };
+
+  const confirmDoArchive = async () => {
+    const id = confirmArchive.id;
+    setConfirmArchive({ isOpen: false, id: null });
     try {
-      const endpoint = activeTab === 'departments' ? 'departments' : 
+      const endpoint = activeTab === 'departments' ? 'departments' :
                        activeTab === 'courses' ? 'courses' : 'academic-years';
       await axios.patch(`/api/${endpoint}/${id}/archive`);
       await fetchData();
       await refreshCounts();
-      
-      // Broadcast refresh event
-      window.dispatchEvent(new CustomEvent('dataUpdated', { 
-        detail: { type: endpoint, timestamp: Date.now() } 
-      }));
-      
-      alert('📦 Archived successfully!');
+      window.dispatchEvent(new CustomEvent('dataUpdated', { detail: { type: endpoint, timestamp: Date.now() } }));
+      addToast('Archived successfully!', 'info');
     } catch (err) {
-      console.error('Archive error:', err);
-      alert('❌ Failed to archive.');
+      addToast('Failed to archive.', 'error');
     }
   };
 
   const handleRestore = async (id) => {
     try {
-      const endpoint = activeTab === 'departments' ? 'departments' : 
+      const endpoint = activeTab === 'departments' ? 'departments' :
                        activeTab === 'courses' ? 'courses' : 'academic-years';
       await axios.patch(`/api/${endpoint}/${id}/restore`);
       await fetchData();
       await refreshCounts();
-      
-      // Broadcast refresh event
-      window.dispatchEvent(new CustomEvent('dataUpdated', { 
-        detail: { type: endpoint, timestamp: Date.now() } 
-      }));
-      
-      alert('✅ Restored successfully!');
+      window.dispatchEvent(new CustomEvent('dataUpdated', { detail: { type: endpoint, timestamp: Date.now() } }));
+      addToast('Restored successfully!', 'success');
     } catch (err) {
-      console.error('Restore error:', err);
-      alert('❌ Failed to restore.');
+      addToast('Failed to restore.', 'error');
     }
   };
 
@@ -402,8 +371,7 @@ export default function Settings() {
         </form>
       );
     } else if (activeTab === 'courses') {
-      return (
-        <form onSubmit={handleSubmit} className="settings-form">
+      return (        <form onSubmit={handleSubmit} className="settings-form">
           <div className="form-group">
             <label>Code</label>
             <input
@@ -426,13 +394,16 @@ export default function Settings() {
           </div>
           <div className="form-group">
             <label>Department</label>
-            <input
-              type="text"
-              placeholder="e.g., Computer Science"
+            <select
               value={formData.department || ''}
               onChange={(e) => setFormData({ ...formData, department: e.target.value })}
               required
-            />
+            >
+              <option value="">Select Department</option>
+              {departments.filter(d => d.status !== 'Archived').map(d => (
+                <option key={d.id} value={d.name}>{d.name}</option>
+              ))}
+            </select>
           </div>
           <div className="form-group">
             <label>Credits</label>
@@ -496,6 +467,16 @@ export default function Settings() {
 
   return (
     <div className="settings-container">
+      <Toast toasts={toasts} removeToast={removeToast} />
+      <ConfirmModal
+        isOpen={confirmArchive.isOpen}
+        type="warning"
+        title="Archive Item"
+        message="Are you sure you want to archive this item? You can restore it later."
+        confirmText="Archive"
+        onConfirm={confirmDoArchive}
+        onCancel={() => setConfirmArchive({ isOpen: false, id: null })}
+      />
       <div className="settings-header">
         <div>
           <h2>Settings</h2>

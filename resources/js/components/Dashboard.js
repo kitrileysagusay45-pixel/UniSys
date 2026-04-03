@@ -74,11 +74,8 @@ export default function Dashboard({ user, onLogout }) {
     fetchDashboardData();
     
     // Listen for data updates from Settings or other components
-    const handleDataUpdate = (event) => {
-      console.log('Dashboard: Data updated, refetching...', event.detail);
-      // Refresh dashboard for any data update (departments, courses, faculties, students)
+    const handleDataUpdate = () => {
       fetchDashboardData();
-      // Force chart re-render by updating key
       setChartKey(prevKey => prevKey + 1);
     };
     
@@ -91,20 +88,15 @@ export default function Dashboard({ user, onLogout }) {
 
   const fetchDashboardData = async () => {
     try {
-      console.log('Dashboard: Fetching data...');
       const [studentsRes, facultiesRes, countsRes] = await Promise.all([
         axios.get("/api/students"),
         axios.get("/api/faculties"),
         axios.get("/api/dashboard-counts")
       ]);
-      
-      console.log('Dashboard: Students data:', studentsRes.data);
-      console.log('Dashboard: Faculties data:', facultiesRes.data);
-      console.log('Dashboard: Counts data:', countsRes.data);
-      
+
       const activeStudents = studentsRes.data.filter(s => s.status !== "Archived");
       const activeFaculties = facultiesRes.data.filter(f => f.status !== "Archived");
-      
+
       setStudents(activeStudents);
       setFaculties(activeFaculties);
       setDashboardData({
@@ -113,11 +105,8 @@ export default function Dashboard({ user, onLogout }) {
         totalCourses: countsRes.data.courses,
         totalDepartments: countsRes.data.departments
       });
-      
-      // Force chart re-render
+
       setChartKey(prevKey => prevKey + 1);
-      
-      console.log('Dashboard: Data updated successfully');
     } catch (err) {
       console.error("Failed to fetch dashboard data:", err);
     }
@@ -256,7 +245,6 @@ export default function Dashboard({ user, onLogout }) {
             {user && <p className="welcome-text">Welcome, {user.username}!</p>}
           </div>
         </div>
-        <button className="signout-btn" onClick={onLogout}>Sign Out</button>
       </div>
 
       <div className="dashboard-content">

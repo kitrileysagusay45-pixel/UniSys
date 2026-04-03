@@ -9,10 +9,8 @@ class Faculty extends Model
 {
     use HasFactory;
 
-    // Table name (optional if Laravel pluralizes correctly)
     protected $table = 'faculties';
 
-    // Allow mass assignment for these fields (only those in fill-up form)
     protected $fillable = [
         'school_id',
         'user_id',
@@ -26,8 +24,11 @@ class Faculty extends Model
         'age',
         'sex',
         'email',
+        'password',
         'phone',
         'address',
+        'department',
+        'tin_number',
         'position',
         'employment_type',
         'date_hired',
@@ -35,18 +36,27 @@ class Faculty extends Model
         'status',
     ];
 
+    protected $hidden = [
+        'password',
+    ];
+
     public function user()
     {
         return $this->belongsTo(User::class);
     }
 
-    public function department()
+    public function departmentRecord()
     {
-        return $this->belongsTo(Department::class);
+        return $this->belongsTo(Department::class, 'department_id');
     }
 
     public function grades()
     {
         return $this->hasMany(Grade::class);
+    }
+
+    public function subjects()
+    {
+        return $this->hasMany(Subject::class);
     }
 }

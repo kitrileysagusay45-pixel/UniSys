@@ -6,19 +6,24 @@ $font-family-sans-serif: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-ser
 $font-size-base: 0.9375rem;
 $line-height-base: 1.6;
 
-// University Institutional Color Palette
-// Primary: Navy Blue (Traditional Academic)
-// Primary: Vibrant Light Blue (Modern & Energetic)
-$primary-color: #37bcff;
-$primary-light: #b2f2ff;
-$primary-dark: #0090e0;
-$primary-gradient: linear-gradient(135deg, #37bcff 0%, #b2f2ff 100%);
+// University Institutional Color Palette (Modern Blue Theme)
+$uni-navy-deep: #0D2857;
+$uni-blue: #1A3F7A;
+$uni-royal: #1E5CAB;
+$uni-bright: #378ADD;
+$uni-sky: #85B7EB;
+$uni-ice: #E6F1FB;
 
-// Secondary: Gold/Amber (Academic Achievement)
-// Secondary: Deep Navy (Contrast for Academic Feel)
-$secondary-color: #003366;
-$secondary-light: #00509e;
-$secondary-dark: #001122;
+$primary-color: $uni-blue;
+$primary-light: $uni-sky;
+$primary-dark: $uni-navy-deep;
+$primary-gradient: linear-gradient(135deg, $uni-navy-deep 0%, $uni-royal 100%);
+$modern-gradient: linear-gradient(135deg, $uni-navy-deep 0%, $uni-blue 50%, $uni-royal 100%);
+
+// Secondary Palette
+$secondary-color: $uni-royal;
+$secondary-light: $uni-bright;
+$secondary-dark: $uni-navy-deep;
 
 // Accent Colors
 $accent-blue: #1e5a8e;

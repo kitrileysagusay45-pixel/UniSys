@@ -22,18 +22,20 @@
 
   .sidebar {
     width: $sidebar-width;
-    background: $primary-color;
+    background: $primary-dark;
     color: white;
     display: flex;
     flex-direction: column;
-    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 100;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
 
     .logo-section {
       padding: 1.75rem 1.5rem;
       background: $primary-dark;
       border-bottom: 2px solid $secondary-color;
+      text-align: center;
 
       .logo-box {
         display: flex;
@@ -65,6 +67,23 @@
             width: 40px;
             height: 40px;
           }
+        }
+      }
+
+      .role-badge {
+        display: inline-block;
+        margin-top: 0.75rem;
+        padding: 0.3rem 1rem;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        &.admin {
+          background: rgba(133, 183, 235, 0.15);
+          color: $uni-sky;
+          border: 1px solid rgba(133, 183, 235, 0.3);
         }
       }
     }
@@ -114,11 +133,11 @@
         }
 
         &.active {
-          background: $primary-light;
-          font-weight: 600;
+          background: rgba(255, 255, 255, 0.1);
+          font-weight: 700;
           color: white;
-          border-left-color: $secondary-color;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+          border-left: 4px solid $uni-bright;
+          box-shadow: inset 5px 0 10px rgba(0, 0, 0, 0.2);
         }
       }
     }
@@ -185,15 +204,56 @@
   }
 }
 
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+.mobile-menu-btn {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 998;
+  background: $primary-color;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+
+  span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: white;
+    border-radius: 1px;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
+
 // University Header Bar (for academic year, semester info)
 .university-header {
   background: white;
-  border-bottom: 3px solid $secondary-color;
-  padding: 0.875rem 2rem;
+  border-bottom: 1px solid $uni-ice;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: $shadow-sm;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+  }
 
   .academic-info {
     display: flex;
@@ -201,6 +261,11 @@
     align-items: center;
     font-size: 0.875rem;
     color: $text-secondary;
+
+    @media (max-width: 640px) {
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
 
     .info-item {
       display: flex;

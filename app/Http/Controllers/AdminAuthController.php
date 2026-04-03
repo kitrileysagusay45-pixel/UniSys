@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\DB;
 
 class AdminAuthController extends Controller
 {
@@ -19,8 +21,8 @@ class AdminAuthController extends Controller
             'name' => 'required|string|max:255',
             'username' => 'required|string|max:255|unique:users',
             'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:8|confirmed',
-            'phone' => 'required|string|max:20',
+            'password' => 'required|string|min:8|regex:/^(?=.*[A-Z])(?=.*[0-9]).+$/|confirmed',
+            'phone' => 'required|string|size:11',
             'address' => 'required|string|max:255',
             'tin' => 'nullable|string|max:50',
             'profile_picture' => 'nullable|image|mimes:jpeg,jpg,png,gif|max:2048',
@@ -34,12 +36,15 @@ class AdminAuthController extends Controller
         }
 
         try {
+            DB::beginTransaction();
+
             // Handle profile picture upload
             $profilePicturePath = null;
             if ($request->hasFile('profile_picture')) {
                 $profilePicturePath = $request->file('profile_picture')->store('profile_pictures', 'public');
             }
 
+            // 1. Create User account
             $user = User::create([
                 'name' => $request->name,
                 'username' => $request->username,
@@ -49,15 +54,29 @@ class AdminAuthController extends Controller
                 'phone' => $request->phone,
                 'address' => $request->address,
                 'tin' => $request->tin,
-                'role' => 'admin', // Set role as admin
+                'role' => 'admin',
             ]);
+
+            // 2. Create Admin profile
+            $adminCount = Admin::count() + 1;
+            $adminId = "ADM-" . date('Y') . "-" . str_pad($adminCount, 4, '0', STR_PAD_LEFT);
+
+            $admin = Admin::create([
+                'user_id' => $user->id,
+                'admin_id' => $adminId,
+                'status' => 'Active',
+            ]);
+
+            DB::commit();
 
             return response()->json([
                 'success' => true,
                 'message' => 'Admin registered successfully',
-                'user' => $user
+                'user' => $user,
+                'admin_id' => $adminId
             ], 201);
         } catch (\Exception $e) {
+            DB::rollBack();
             return response()->json([
                 'success' => false,
                 'message' => 'Registration failed: ' . $e->getMessage()
@@ -97,10 +116,14 @@ class AdminAuthController extends Controller
             ], 401);
         }
 
+        // Fetch associated Admin profile
+        $admin = $user->admin;
+
         return response()->json([
             'success' => true,
             'message' => 'Login successful',
-            'user' => $user
+            'user' => $user,
+            'admin_profile' => $admin
         ], 200);
     }
 }

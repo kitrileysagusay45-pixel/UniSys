@@ -2,44 +2,24 @@
 
 use Illuminate\Support\Facades\Route;
 
-// Admin Portal Route - Redirect to adminlogin
+// Redirect root to login
 Route::get('/', function () {
-    return redirect('/adminlogin');
+    return redirect('/login');
 });
 
-Route::get('/admin', function () {
-    return view('app'); // Admin portal
-});
+// SPA catch-all routes — all serve the same React app blade
+$spaRoutes = [
+    'login', 'adminlogin', 'admin',
+    'student-register', 'faculty-register',
+    'dashboard', 'faculty', 'students', 'subjects',
+    'reports', 'settings', 'archive', 'profile',
+    'faculty-dashboard', 'faculty-students', 'faculty-subjects', 'faculty-profile',
+    'student-dashboard', 'student-subjects', 'student-profile',
+    'forgot-password', 'reset-password',
+];
 
-Route::get('/adminlogin', function () {
-    return view('app'); // Admin login page
-});
-
-Route::get('/dashboard', function () {
-    return view('app'); // React app.blade.php
-});
-
-Route::get('/faculty', function () {
-    return view('app'); // React app
-});
-
-Route::get('/students', function () {
-    return view('app'); // React app
-});
-
-Route::get('/reports', function () {
-    return view('app'); // React app
-});
-
-Route::get('/settings', function () {
-    return view('app'); // React app
-});
-
-Route::get('/profile', function () {
-    return view('app'); // React app
-});
-
-// Student Portal Route (for future implementation)
-Route::get('/student', function () {
-    return view('student-app'); // Student portal (separate)
-});
+foreach ($spaRoutes as $route) {
+    Route::get('/' . $route, function () {
+        return view('app');
+    });
+}

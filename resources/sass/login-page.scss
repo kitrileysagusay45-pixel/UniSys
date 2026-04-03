@@ -1,0 +1,388 @@
+@import 'variables';
+
+// ── Login Page Styles ──────────────────────────────────────
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top right, $uni-blue, $uni-navy-deep);
+  padding: 1.5rem;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  position: relative;
+  overflow: hidden;
+
+  // Modern animated background blobs
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+    opacity: 0.4;
+    animation: float 20s infinite alternate;
+  }
+
+  &::before {
+    background: $uni-bright;
+    top: -10%;
+    right: -10%;
+  }
+
+  &::after {
+    background: $uni-royal;
+    bottom: -10%;
+    left: -10%;
+    animation-delay: -10s;
+  }
+}
+
+@keyframes float {
+  from { transform: translate(0, 0) scale(1); }
+  to { transform: translate(10%, 10%) scale(1.1); }
+}
+
+.login-card {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 600px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 1;
+  animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.login-left {
+  flex: 1.2;
+  background: $modern-gradient;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  text-align: center;
+
+  .brand-section {
+    z-index: 2;
+    animation: fadeIn 0.8s ease-out 0.2s both;
+  }
+
+  .brand-icon {
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    
+    svg {
+      filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+    }
+  }
+
+  .brand-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -1px;
+    background: linear-gradient(to bottom, #fff, #cbd5e1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .brand-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-top: 0.5rem;
+    font-weight: 500;
+  }
+
+  .brand-decoration {
+    position: absolute;
+    inset: 0;
+    opacity: 0.5;
+
+    .decoration-circle {
+      position: absolute;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+
+      &.c1 { width: 300px; height: 300px; top: -100px; left: -100px; }
+      &.c2 { 
+        width: 200px; height: 200px; bottom: -50px; right: -50px; 
+        background: radial-gradient(circle, rgba(255,255,255,0.1), transparent);
+      }
+      &.c3 { width: 150px; height: 150px; top: 20%; right: 10%; }
+    }
+  }
+}
+
+.login-right {
+  flex: 1;
+  padding: 4rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+
+  .form-heading {
+    font-size: 2rem;
+    font-weight: 800;
+    color: $uni-navy-deep;
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.5px;
+  }
+
+  .form-subheading {
+    color: $text-secondary;
+    margin: 0 0 2rem;
+    font-size: 0.95rem;
+  }
+}
+
+.role-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  background: $uni-ice;
+  border-radius: 16px;
+  padding: 6px;
+
+  .role-tab {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    background: transparent;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: $uni-blue;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.active {
+      background: white;
+      color: $uni-blue;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transform: scale(1.02);
+    }
+
+    &:hover:not(.active) {
+      background: rgba(26, 63, 122, 0.05);
+    }
+  }
+}
+
+.login-error {
+  background: #fff1f2;
+  color: #e11d48;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #fecdd3;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+.login-form {
+  .form-group {
+    margin-bottom: 1.5rem;
+
+    label {
+      display: block;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: $uni-navy-deep;
+      margin-bottom: 0.6rem;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.875rem 1.25rem;
+      border: 2px solid $uni-ice;
+      border-radius: 14px;
+      font-size: 1rem;
+      transition: all 0.2s;
+      background: $uni-ice;
+      color: $uni-navy-deep;
+
+      &::placeholder { color: $uni-sky; }
+
+      &:focus {
+        outline: none;
+        border-color: $uni-bright;
+        background: white;
+        box-shadow: 0 0 0 4px rgba(55, 138, 221, 0.1);
+      }
+    }
+  }
+
+  .password-wrapper {
+    position: relative;
+    input { padding-right: 3.5rem; }
+
+    .toggle-password {
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: $uni-sky;
+      padding: 8px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover { 
+        background: rgba(133, 183, 235, 0.1);
+        color: $uni-blue; 
+      }
+    }
+  }
+}
+
+.login-btn {
+  width: 100%;
+  padding: 1rem;
+  background: $modern-gradient;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 25px -5px rgba(13, 40, 87, 0.3);
+  margin-top: 1rem;
+
+  &:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 30px -10px rgba(13, 40, 87, 0.4);
+    filter: brightness(1.1);
+  }
+
+  &:active:not(:disabled) { transform: translateY(0); }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: $uni-blue;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  padding: 4px 8px;
+  border-radius: 6px;
+
+  &:hover {
+    background: $uni-ice;
+    color: $uni-bright;
+  }
+}
+
+.register-links {
+  margin-top: 2.5rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid $uni-ice;
+
+  p {
+    color: $text-secondary;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+
+  .register-other-roles {
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    span { color: $uni-ice; font-weight: 300; }
+  }
+}
+
+// Fade in animation
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+// Responsive Design
+@media (max-width: 992px) {
+  .login-card { max-width: 90%; }
+}
+
+@media (max-width: 768px) {
+  .login-page { padding: 1rem; }
+  
+  .login-card {
+    flex-direction: column;
+    max-width: 480px;
+    min-height: auto;
+  }
+
+  .login-left {
+    padding: 3rem 2rem;
+    
+    .brand-icon { width: 80px; height: 80px; border-radius: 20px; margin-bottom: 1.5rem; }
+    .brand-title { font-size: 2.5rem; }
+  }
+
+  .login-right {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-left { 
+    padding: 2rem 1.5rem;
+    .brand-title { font-size: 2rem; } 
+  }
+  .login-right { 
+    padding: 2rem 1.5rem; 
+    .form-heading { font-size: 1.5rem; }
+  }
+}

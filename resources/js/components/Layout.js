@@ -1,191 +1,122 @@
-// resources/js/components/Layout.js
 import React, { useState, useEffect } from "react";
-import AdminLogin from "./AdminLogin";
-import AdminRegister from "./AdminRegister";
-import Dashboard from "./Dashboard";
-import Faculty from "./Faculty";
-import Students from "./Students";
-import Reports from "./Reports";
-import Settings from "./Settings";
-import Archive from "./Archive";
-import Profile from "./Profile";
-import { GraduationCap } from "lucide-react";
-import "../../sass/layout.scss";
+import LoginPage from "./LoginPage";
+import StudentRegister from "./StudentRegister";
+import FacultyRegister from "./FacultyRegister";
+import AdminLayout from "./AdminLayout";
+import FacultyLayout from "./FacultyLayout";
+import StudentLayout from "./StudentLayout";
+import ForgotPassword from "./ForgotPassword";
+import ResetPassword from "./ResetPassword";
+
+const getStoredUser = () => {
+  const savedUser = localStorage.getItem("user");
+  if (!savedUser) return null;
+
+  try {
+    return JSON.parse(savedUser);
+  } catch (err) {
+    console.warn("Invalid user data in localStorage. Clearing auth state.", err);
+    localStorage.removeItem("user");
+    localStorage.removeItem("isLoggedIn");
+    return null;
+  }
+};
 
 export default function Layout() {
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
-    // Check localStorage for existing session on initial load
-    const loggedIn = localStorage.getItem('isLoggedIn') === 'true';
-    const savedUser = localStorage.getItem('user');
-    
-    // Validate session: if logged in but no user data, clear invalid session
+    const loggedIn = localStorage.getItem("isLoggedIn") === "true";
+    const savedUser = getStoredUser();
     if (loggedIn && !savedUser) {
-      localStorage.removeItem('isLoggedIn');
-      localStorage.removeItem('user');
+      localStorage.removeItem("isLoggedIn");
+      localStorage.removeItem("user");
       return false;
     }
-    
     return loggedIn;
   });
-  const [showRegister, setShowRegister] = useState(false);
-  const [page, setPage] = useState(() => {
-    // Get page from URL path
-    const path = window.location.pathname.replace('/', '') || 'dashboard';
-    const loggedIn = localStorage.getItem('isLoggedIn') === 'true';
-    const savedUser = localStorage.getItem('user');
-    
-    // If logged in, return the path (or default to dashboard)
-    if (loggedIn && savedUser) {
-      const validPages = ['dashboard', 'faculty', 'students', 'reports', 'settings', 'archive', 'profile'];
-      return validPages.includes(path) ? path : 'dashboard';
-    }
-    
-    return null; // Not logged in, will show login page
-  });
+
   const [user, setUser] = useState(() => {
-    // Restore user data from localStorage on initial load
-    const savedUser = localStorage.getItem('user');
-    return savedUser ? JSON.parse(savedUser) : null;
+    return getStoredUser();
   });
+
+  const [authView, setAuthView] = useState(() => {
+    if (window.location.pathname === "/reset-password") return "reset-password";
+    return "login";
+  }); // login | student-register | faculty-register | forgot-password | reset-password
 
   // Listen for profile updates
   useEffect(() => {
     const handleProfileUpdate = () => {
-      const savedUser = localStorage.getItem('user');
+      const savedUser = getStoredUser();
       if (savedUser) {
-        const updatedUser = JSON.parse(savedUser);
-        setUser(updatedUser);
-        console.log('Layout: User data refreshed from localStorage');
+        setUser(savedUser);
+      } else {
+        setUser(null);
+        setIsLoggedIn(false);
       }
     };
-
-    window.addEventListener('profileUpdated', handleProfileUpdate);
-
-    return () => {
-      window.removeEventListener('profileUpdated', handleProfileUpdate);
-    };
+    window.addEventListener("profileUpdated", handleProfileUpdate);
+    return () => window.removeEventListener("profileUpdated", handleProfileUpdate);
   }, []);
 
   const handleLogin = (userData) => {
     setUser(userData);
     setIsLoggedIn(true);
-    // Persist login state to localStorage
-    localStorage.setItem('isLoggedIn', 'true');
-    localStorage.setItem('user', JSON.stringify(userData));
-    // Navigate to dashboard after login
-    window.history.pushState({}, '', '/dashboard');
-    setPage("dashboard");
+    localStorage.setItem("isLoggedIn", "true");
+    localStorage.setItem("user", JSON.stringify(userData));
+
+    // Navigate based on role
+    const role = userData.role || "admin";
+    if (role === "admin") {
+      window.history.pushState({}, "", "/dashboard");
+    } else if (role === "faculty") {
+      window.history.pushState({}, "", "/faculty-dashboard");
+    } else if (role === "student") {
+      window.history.pushState({}, "", "/student-dashboard");
+    }
   };
 
   const handleLogout = () => {
-    setUser(null);
-    setIsLoggedIn(false);
-    setPage("dashboard");
-    // Clear localStorage on logout
-    localStorage.removeItem('isLoggedIn');
-    localStorage.removeItem('user');
-    window.history.pushState({}, '', '/adminlogin');
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("user");
+    // Force a full page reload to the login page to ensure all state is cleared
+    window.location.href = "/login";
   };
 
-  // Sync page state with URL on mount and browser back/forward
-  useEffect(() => {
-    const updatePageFromURL = () => {
-      const path = window.location.pathname.replace('/', '') || 'dashboard';
-      
-      console.log('Layout: Current path:', path, 'Logged in:', isLoggedIn);
-      
-      if (!isLoggedIn) {
-        // Not logged in - ensure we're on admin login page
-        if (path !== 'adminlogin') {
-          window.history.replaceState({}, '', '/adminlogin');
-        }
-      } else {
-        // Logged in
-        if (path === 'adminlogin') {
-          // If logged in and on adminlogin, redirect to dashboard
-          window.history.replaceState({}, '', '/dashboard');
-          setPage('dashboard');
-        } else {
-          // Set page based on URL
-          const validPages = ['dashboard', 'faculty', 'students', 'reports', 'settings', 'archive', 'profile'];
-          if (validPages.includes(path)) {
-            setPage(path);
-          } else {
-            setPage('dashboard');
-            window.history.replaceState({}, '', '/dashboard');
-          }
-        }
-      }
-    };
-
-    updatePageFromURL();
-
-    // Handle browser back/forward buttons
-    window.addEventListener('popstate', updatePageFromURL);
-
-    return () => {
-      window.removeEventListener('popstate', updatePageFromURL);
-    };
-  }, [isLoggedIn]);
-
-  // If not logged in, show AdminLogin or AdminRegister
+  // Not logged in — show auth views
   if (!isLoggedIn) {
-    if (showRegister) {
-      return <AdminRegister onBackToLogin={() => setShowRegister(false)} />;
+    if (authView === "student-register") {
+      return <StudentRegister onBackToLogin={() => setAuthView("login")} />;
     }
-    return <AdminLogin onLogin={handleLogin} onRegister={() => setShowRegister(true)} />;
+    if (authView === "faculty-register") {
+      return <FacultyRegister onBackToLogin={() => setAuthView("login")} />;
+    }
+    if (authView === "forgot-password") {
+      return <ForgotPassword onBackToLogin={() => setAuthView("login")} />;
+    }
+    if (authView === "reset-password") {
+      return <ResetPassword />;
+    }
+    return (
+      <LoginPage
+        onLogin={handleLogin}
+        onStudentRegister={() => setAuthView("student-register")}
+        onFacultyRegister={() => setAuthView("faculty-register")}
+        onForgotPassword={() => setAuthView("forgot-password")}
+      />
+    );
   }
 
-  const menuItems = [
-    { key: "dashboard", label: "Dashboard" },
-    { key: "faculty", label: "Faculty" },
-    { key: "students", label: "Students" },
-    { key: "reports", label: "Reports" },
-    { key: "settings", label: "Settings" },
-    { key: "archive", label: "Archive" },
-    { key: "profile", label: "Profile" },
-  ];
+  // Logged in — route to role-specific layout
+  const role = user?.role || "admin";
 
-  return (
-    <div className="layout">
-      {/* Sidebar */}
-      <aside className="sidebar">
-        <div className="logo-section">
-          <div className="logo-box">
-            <h1 className="logo-text">UniSys</h1>
-            <div className="logo-icon-wrapper">
-              <GraduationCap size={40} strokeWidth={1.5} className="logo-icon" />
-            </div>
-          </div>
-        </div>
+  if (role === "faculty") {
+    return <FacultyLayout user={user} onLogout={handleLogout} />;
+  }
 
-        <ul className="nav-menu">
-          {menuItems.map((item) => (
-            <li
-              key={item.key}
-              className={`nav-item ${page === item.key ? "active" : ""}`}
-              onClick={(e) => {
-                e.preventDefault();
-                setPage(item.key);
-                window.history.pushState({}, '', `/${item.key}`);
-              }}
-            >
-              {item.label}
-            </li>
-          ))}
-        </ul>
-      </aside>
+  if (role === "student") {
+    return <StudentLayout user={user} onLogout={handleLogout} />;
+  }
 
-      {/* Main Content */}
-      <main className="main-content">
-        {page === "dashboard" && <Dashboard user={user} onLogout={handleLogout} />}
-        {page === "faculty" && <Faculty />}
-        {page === "students" && <Students />}
-        {page === "reports" && <Reports />}
-        {page === "settings" && <Settings />}
-        {page === "archive" && <Archive />}
-        {page === "profile" && <Profile user={user} onLogout={handleLogout} />}
-      </main>
-    </div>
-  );
+  // Default: admin
+  return <AdminLayout user={user} onLogout={handleLogout} />;
 }

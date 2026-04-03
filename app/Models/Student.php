@@ -22,6 +22,7 @@ class Student extends Model
         'middle_name',
         'last_name',
         'email',
+        'password',
         'date_of_birth',
         'age',
         'sex',
@@ -29,7 +30,14 @@ class Student extends Model
         'address',
         'department',
         'course',
+        'year_level',
+        'section',
+        'photo',
         'status',
+    ];
+
+    protected $hidden = [
+        'password',
     ];
 
     public function user()
@@ -50,5 +58,10 @@ class Student extends Model
     public function grades()
     {
         return $this->hasMany(Grade::class);
+    }
+
+    public function subjects()
+    {
+        return $this->belongsToMany(Subject::class, 'student_subject');
     }
 }
