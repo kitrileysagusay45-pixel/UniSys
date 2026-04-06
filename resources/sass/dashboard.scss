@@ -169,6 +169,27 @@
 
     @media (max-width: 640px) {
       grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    @media (max-width: 480px) {
+      .info-card {
+        padding: 1.25rem;
+        border-radius: 12px;
+
+        .card-value {
+          font-size: 1.75rem;
+        }
+
+        .card-icon {
+          padding: 0.75rem !important;
+          
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
     }
 
     .info-card {
@@ -296,6 +317,18 @@
       grid-template-columns: 1fr;
     }
 
+    @media (max-width: 480px) {
+      gap: 1rem;
+      
+      .chart-box {
+        padding: 1rem;
+        
+        .chart-canvas {
+          min-height: 250px;
+        }
+      }
+    }
+
     .chart-box {
       background: white;
       border-radius: $card-radius;
@@ -362,6 +395,20 @@
     border: 1px solid $card-border;
     border-top: 4px solid $accent-teal;
     transition: all 0.3s ease;
+
+    @media (max-width: 480px) {
+      padding: 1.25rem;
+      
+      .activity-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        
+        .activity-time {
+          align-self: flex-end;
+        }
+      }
+    }
 
     &:hover {
       box-shadow: $shadow-lg;
@@ -433,6 +480,18 @@
     padding: 1.75rem;
     margin-bottom: 2rem;
     box-shadow: $shadow-lg;
+
+    @media (max-width: 480px) {
+      padding: 1.25rem;
+      
+      .stats-row {
+        gap: 1rem;
+        
+        .stat-item {
+          min-width: 100%; // Stack them on mobile
+        }
+      }
+    }
 
     h3 {
       font-size: 1.25rem;

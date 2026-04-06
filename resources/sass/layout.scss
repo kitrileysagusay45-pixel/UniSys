@@ -184,22 +184,38 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .sidebar {
+      width: 240px; // Slightly narrower for tablets
       position: fixed;
-      left: -280px;
-      top: 0;
-      bottom: 0;
-      z-index: 1000;
-      transition: left 0.3s ease;
-
+      left: -240px;
+      z-index: 1001;
+      
       &.open {
         left: 0;
       }
     }
+    
+    .mobile-menu-btn {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .sidebar {
+      width: 280px;
+      left: -280px;
+    }
 
     .main-content {
-      width: 100%;
+      padding-top: 60px; // Space for mobile menu button if needed
+    }
+  }
+
+  @media (max-width: 375px) {
+    .sidebar {
+      width: 100%; // Full width on very small phones
+      left: -100%;
     }
   }
 }

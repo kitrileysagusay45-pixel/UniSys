@@ -24805,7 +24805,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@keyframes fadeInUp {\n  from {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.dashboard-container {\n  padding: 0;\n  background: #f5f7fa;\n  min-height: 100vh;\n  color: #2c3e50;\n  font-family: \"Segoe UI\", \"Roboto\", \"Helvetica Neue\", Arial, sans-serif;\n}\n.dashboard-container .dashboard-header {\n  background: white;\n  border-bottom: 1px solid #E6F1FB;\n  padding: 1.5rem 2rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);\n  margin-bottom: 0;\n}\n@media (max-width: 768px) {\n  .dashboard-container .dashboard-header {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 1.5rem;\n    padding: 1rem;\n  }\n}\n.dashboard-container .dashboard-header .header-left {\n  display: flex;\n  align-items: center;\n  gap: 1.25rem;\n}\n.dashboard-container .dashboard-header .user-avatar {\n  width: 60px;\n  height: 60px;\n  border-radius: 50%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  border: 3px solid #1E5CAB;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n}\n.dashboard-container .dashboard-header .user-avatar-placeholder {\n  width: 60px;\n  height: 60px;\n  border-radius: 50%;\n  background: linear-gradient(135deg, #0D2857 0%, #1A3F7A 50%, #1E5CAB 100%);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 1.5rem;\n  font-weight: 700;\n  color: white;\n  border: 3px solid #1E5CAB;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n}\n.dashboard-container .dashboard-header h2 {\n  font-size: 1.75rem;\n  font-weight: 700;\n  color: #1A3F7A;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n  margin: 0;\n}\n@media (max-width: 768px) {\n  .dashboard-container .dashboard-header h2 {\n    font-size: 1.5rem;\n  }\n}\n.dashboard-container .dashboard-header .welcome-text {\n  font-size: 0.875rem;\n  color: #546e7a;\n  margin-top: 0.375rem;\n  font-weight: 500;\n}\n.dashboard-container .dashboard-header .signout-btn {\n  background: #1A3F7A;\n  color: white;\n  padding: 0.75rem 1.75rem;\n  border-radius: 6px;\n  border: 2px solid #1A3F7A;\n  font-weight: 600;\n  font-size: 0.875rem;\n  cursor: pointer;\n  transition: all 0.2s ease;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n}\n@media (max-width: 768px) {\n  .dashboard-container .dashboard-header .signout-btn {\n    width: 100%;\n    text-align: center;\n  }\n}\n.dashboard-container .dashboard-header .signout-btn:hover {\n  background: white;\n  color: #1A3F7A;\n  border-color: #1A3F7A;\n}\n.dashboard-container .dashboard-header .signout-btn:active {\n  background: #0D2857;\n  border-color: #0D2857;\n  color: white;\n}\n.dashboard-container .academic-bar {\n  background: #e1f5fe;\n  border-bottom: 1px solid #d0d7de;\n  padding: 0.75rem 2rem;\n  display: flex;\n  gap: 2rem;\n  font-size: 0.875rem;\n  color: #546e7a;\n}\n@media (max-width: 768px) {\n  .dashboard-container .academic-bar {\n    flex-wrap: wrap;\n    gap: 1rem;\n    padding: 0.75rem 1rem;\n  }\n}\n.dashboard-container .academic-bar .academic-item {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n}\n.dashboard-container .academic-bar .academic-item .label {\n  font-weight: 600;\n  color: #1A3F7A;\n}\n.dashboard-container .academic-bar .academic-item .value {\n  color: #2c3e50;\n}\n.dashboard-container .dashboard-content {\n  padding: 2rem;\n}\n.dashboard-container .cards-grid {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  gap: 1.5rem;\n  margin-bottom: 2rem;\n}\n@media (max-width: 1200px) {\n  .dashboard-container .cards-grid {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n@media (max-width: 640px) {\n  .dashboard-container .cards-grid {\n    grid-template-columns: 1fr;\n  }\n}\n.dashboard-container .cards-grid .info-card {\n  background: white;\n  border-radius: 20px;\n  padding: 2rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);\n  border: 1px solid #E6F1FB;\n  border-left: 6px solid #1A3F7A;\n  position: relative;\n  overflow: hidden;\n  transition: all 0.3s ease;\n}\n.dashboard-container .cards-grid .info-card::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 100px;\n  height: 100px;\n  background: linear-gradient(135deg, transparent 50%, rgba(0, 51, 102, 0.03) 50%);\n  border-radius: 0 0 0 100%;\n}\n.dashboard-container .cards-grid .info-card:hover {\n  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);\n  transform: translateY(-2px);\n}\n.dashboard-container .cards-grid .info-card:nth-child(1) {\n  border-left-color: #1A3F7A;\n}\n.dashboard-container .cards-grid .info-card:nth-child(1) .card-icon {\n  background: linear-gradient(135deg, #1A3F7A, #85B7EB);\n  color: white;\n  padding: 1rem;\n  border-radius: 12px;\n  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);\n}\n.dashboard-container .cards-grid .info-card:nth-child(2) {\n  border-left-color: #1E5CAB;\n}\n.dashboard-container .cards-grid .info-card:nth-child(2) .card-icon {\n  background: linear-gradient(135deg, #1E5CAB, #378ADD);\n  color: white;\n  padding: 1rem;\n  border-radius: 12px;\n  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);\n}\n.dashboard-container .cards-grid .info-card:nth-child(3) {\n  border-left-color: #1e5a8e;\n}\n.dashboard-container .cards-grid .info-card:nth-child(3) .card-icon {\n  background: linear-gradient(135deg, #1e5a8e, #2196f3);\n  color: white;\n  padding: 1rem;\n  border-radius: 12px;\n  box-shadow: 0 4px 12px rgba(30, 90, 142, 0.3);\n}\n.dashboard-container .cards-grid .info-card:nth-child(4) {\n  border-left-color: #16697a;\n}\n.dashboard-container .cards-grid .info-card:nth-child(4) .card-icon {\n  background: linear-gradient(135deg, #16697a, #14b8a6);\n  color: white;\n  padding: 1rem;\n  border-radius: 12px;\n  box-shadow: 0 4px 12px rgba(22, 105, 122, 0.3);\n}\n.dashboard-container .cards-grid .info-card .card-content {\n  flex: 1;\n  z-index: 1;\n}\n.dashboard-container .cards-grid .info-card .card-content h3 {\n  font-size: 0.8125rem;\n  font-weight: 600;\n  margin-bottom: 0.625rem;\n  color: #546e7a;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n}\n.dashboard-container .cards-grid .info-card .card-content .card-value {\n  font-size: 2.25rem;\n  font-weight: 700;\n  margin: 0;\n  line-height: 1;\n  color: #1A3F7A;\n}\n.dashboard-container .cards-grid .info-card .card-content .card-subtitle {\n  font-size: 0.75rem;\n  color: #78909c;\n  margin-top: 0.5rem;\n}\n.dashboard-container .cards-grid .info-card .card-icon {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  z-index: 1;\n}\n.dashboard-container .chart-section {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 1.5rem;\n  margin-bottom: 2rem;\n}\n@media (max-width: 1024px) {\n  .dashboard-container .chart-section {\n    grid-template-columns: 1fr;\n  }\n}\n.dashboard-container .chart-section .chart-box {\n  background: white;\n  border-radius: 8px;\n  padding: 1.75rem;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);\n  border: 1px solid #e0e7ee;\n  border-top: 4px solid #1A3F7A;\n  display: flex;\n  flex-direction: column;\n  transition: all 0.3s ease;\n}\n.dashboard-container .chart-section .chart-box:hover {\n  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);\n  transform: translateY(-2px);\n}\n.dashboard-container .chart-section .chart-box:nth-child(2n) {\n  border-top-color: #1E5CAB;\n}\n.dashboard-container .chart-section .chart-box:nth-child(3n) {\n  border-top-color: #1e5a8e;\n}\n.dashboard-container .chart-section .chart-box:nth-child(4n) {\n  border-top-color: #16697a;\n}\n.dashboard-container .chart-section .chart-box .chart-header {\n  margin-bottom: 1.5rem;\n  padding-bottom: 1rem;\n  border-bottom: 2px solid #eceff1;\n}\n.dashboard-container .chart-section .chart-box .chart-header h3 {\n  font-size: 1.125rem;\n  font-weight: 700;\n  color: #1A3F7A;\n  margin-bottom: 0.375rem;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n}\n.dashboard-container .chart-section .chart-box .chart-header .chart-subtitle {\n  font-size: 0.8125rem;\n  color: #546e7a;\n  margin: 0;\n  font-weight: 500;\n}\n.dashboard-container .chart-section .chart-box .chart-canvas {\n  flex: 1;\n  min-height: 300px;\n  position: relative;\n}\n.dashboard-container .activity-section {\n  background: white;\n  border-radius: 8px;\n  padding: 1.75rem;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);\n  border: 1px solid #e0e7ee;\n  border-top: 4px solid #16697a;\n  transition: all 0.3s ease;\n}\n.dashboard-container .activity-section:hover {\n  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);\n  transform: translateY(-2px);\n}\n.dashboard-container .activity-section h3 {\n  font-size: 1.125rem;\n  font-weight: 700;\n  color: #1A3F7A;\n  margin-bottom: 1.25rem;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n  padding-bottom: 0.75rem;\n  border-bottom: 2px solid #eceff1;\n}\n.dashboard-container .activity-section .activity-item {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-bottom: 0.875rem;\n  padding: 1rem;\n  background: #eceff1;\n  border-radius: 6px;\n  border-left: 3px solid #1A3F7A;\n  transition: all 0.2s ease;\n}\n.dashboard-container .activity-section .activity-item:hover {\n  background: #e1f5fe;\n  border-left-color: #1e5a8e;\n  transform: translateX(4px);\n}\n.dashboard-container .activity-section .activity-item p {\n  font-weight: 600;\n  color: #2c3e50;\n  margin: 0;\n  font-size: 0.9375rem;\n}\n.dashboard-container .activity-section .activity-item .activity-time {\n  color: #546e7a;\n  font-size: 0.8125rem;\n  font-weight: 500;\n  background: white;\n  padding: 0.25rem 0.75rem;\n  border-radius: 4px;\n}\n.dashboard-container .activity-section .activity-detail {\n  color: #546e7a;\n  font-size: 0.875rem;\n  margin-top: 1rem;\n  padding: 1rem;\n  background: #e1f5fe;\n  border-radius: 6px;\n  border-left: 3px solid #0277bd;\n  font-weight: 500;\n}\n.dashboard-container .quick-stats {\n  background: linear-gradient(135deg, #1A3F7A, #85B7EB);\n  color: white;\n  border-radius: 8px;\n  padding: 1.75rem;\n  margin-bottom: 2rem;\n  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);\n}\n.dashboard-container .quick-stats h3 {\n  font-size: 1.25rem;\n  font-weight: 700;\n  margin-bottom: 1rem;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n}\n.dashboard-container .quick-stats .stats-row {\n  display: flex;\n  gap: 2rem;\n  flex-wrap: wrap;\n}\n.dashboard-container .quick-stats .stats-row .stat-item {\n  flex: 1;\n  min-width: 150px;\n}\n.dashboard-container .quick-stats .stats-row .stat-item .stat-label {\n  font-size: 0.8125rem;\n  opacity: 0.9;\n  margin-bottom: 0.375rem;\n}\n.dashboard-container .quick-stats .stats-row .stat-item .stat-value {\n  font-size: 1.75rem;\n  font-weight: 700;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "@keyframes fadeInUp {\n  from {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.dashboard-container {\n  padding: 0;\n  background: #f5f7fa;\n  min-height: 100vh;\n  color: #2c3e50;\n  font-family: \"Segoe UI\", \"Roboto\", \"Helvetica Neue\", Arial, sans-serif;\n}\n.dashboard-container .dashboard-header {\n  background: white;\n  border-bottom: 1px solid #E6F1FB;\n  padding: 1.5rem 2rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);\n  margin-bottom: 0;\n}\n@media (max-width: 768px) {\n  .dashboard-container .dashboard-header {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 1.5rem;\n    padding: 1rem;\n  }\n}\n.dashboard-container .dashboard-header .header-left {\n  display: flex;\n  align-items: center;\n  gap: 1.25rem;\n}\n.dashboard-container .dashboard-header .user-avatar {\n  width: 60px;\n  height: 60px;\n  border-radius: 50%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  border: 3px solid #1E5CAB;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n}\n.dashboard-container .dashboard-header .user-avatar-placeholder {\n  width: 60px;\n  height: 60px;\n  border-radius: 50%;\n  background: linear-gradient(135deg, #0D2857 0%, #1A3F7A 50%, #1E5CAB 100%);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 1.5rem;\n  font-weight: 700;\n  color: white;\n  border: 3px solid #1E5CAB;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n}\n.dashboard-container .dashboard-header h2 {\n  font-size: 1.75rem;\n  font-weight: 700;\n  color: #1A3F7A;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n  margin: 0;\n}\n@media (max-width: 768px) {\n  .dashboard-container .dashboard-header h2 {\n    font-size: 1.5rem;\n  }\n}\n.dashboard-container .dashboard-header .welcome-text {\n  font-size: 0.875rem;\n  color: #546e7a;\n  margin-top: 0.375rem;\n  font-weight: 500;\n}\n.dashboard-container .dashboard-header .signout-btn {\n  background: #1A3F7A;\n  color: white;\n  padding: 0.75rem 1.75rem;\n  border-radius: 6px;\n  border: 2px solid #1A3F7A;\n  font-weight: 600;\n  font-size: 0.875rem;\n  cursor: pointer;\n  transition: all 0.2s ease;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n}\n@media (max-width: 768px) {\n  .dashboard-container .dashboard-header .signout-btn {\n    width: 100%;\n    text-align: center;\n  }\n}\n.dashboard-container .dashboard-header .signout-btn:hover {\n  background: white;\n  color: #1A3F7A;\n  border-color: #1A3F7A;\n}\n.dashboard-container .dashboard-header .signout-btn:active {\n  background: #0D2857;\n  border-color: #0D2857;\n  color: white;\n}\n.dashboard-container .academic-bar {\n  background: #e1f5fe;\n  border-bottom: 1px solid #d0d7de;\n  padding: 0.75rem 2rem;\n  display: flex;\n  gap: 2rem;\n  font-size: 0.875rem;\n  color: #546e7a;\n}\n@media (max-width: 768px) {\n  .dashboard-container .academic-bar {\n    flex-wrap: wrap;\n    gap: 1rem;\n    padding: 0.75rem 1rem;\n  }\n}\n.dashboard-container .academic-bar .academic-item {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n}\n.dashboard-container .academic-bar .academic-item .label {\n  font-weight: 600;\n  color: #1A3F7A;\n}\n.dashboard-container .academic-bar .academic-item .value {\n  color: #2c3e50;\n}\n.dashboard-container .dashboard-content {\n  padding: 2rem;\n}\n.dashboard-container .cards-grid {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  gap: 1.5rem;\n  margin-bottom: 2rem;\n}\n@media (max-width: 1200px) {\n  .dashboard-container .cards-grid {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n@media (max-width: 640px) {\n  .dashboard-container .cards-grid {\n    grid-template-columns: 1fr;\n    gap: 1rem;\n  }\n}\n@media (max-width: 480px) {\n  .dashboard-container .cards-grid .info-card {\n    padding: 1.25rem;\n    border-radius: 12px;\n  }\n  .dashboard-container .cards-grid .info-card .card-value {\n    font-size: 1.75rem;\n  }\n  .dashboard-container .cards-grid .info-card .card-icon {\n    padding: 0.75rem !important;\n  }\n  .dashboard-container .cards-grid .info-card .card-icon svg {\n    width: 20px;\n    height: 20px;\n  }\n}\n.dashboard-container .cards-grid .info-card {\n  background: white;\n  border-radius: 20px;\n  padding: 2rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);\n  border: 1px solid #E6F1FB;\n  border-left: 6px solid #1A3F7A;\n  position: relative;\n  overflow: hidden;\n  transition: all 0.3s ease;\n}\n.dashboard-container .cards-grid .info-card::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 100px;\n  height: 100px;\n  background: linear-gradient(135deg, transparent 50%, rgba(0, 51, 102, 0.03) 50%);\n  border-radius: 0 0 0 100%;\n}\n.dashboard-container .cards-grid .info-card:hover {\n  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);\n  transform: translateY(-2px);\n}\n.dashboard-container .cards-grid .info-card:nth-child(1) {\n  border-left-color: #1A3F7A;\n}\n.dashboard-container .cards-grid .info-card:nth-child(1) .card-icon {\n  background: linear-gradient(135deg, #1A3F7A, #85B7EB);\n  color: white;\n  padding: 1rem;\n  border-radius: 12px;\n  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);\n}\n.dashboard-container .cards-grid .info-card:nth-child(2) {\n  border-left-color: #1E5CAB;\n}\n.dashboard-container .cards-grid .info-card:nth-child(2) .card-icon {\n  background: linear-gradient(135deg, #1E5CAB, #378ADD);\n  color: white;\n  padding: 1rem;\n  border-radius: 12px;\n  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);\n}\n.dashboard-container .cards-grid .info-card:nth-child(3) {\n  border-left-color: #1e5a8e;\n}\n.dashboard-container .cards-grid .info-card:nth-child(3) .card-icon {\n  background: linear-gradient(135deg, #1e5a8e, #2196f3);\n  color: white;\n  padding: 1rem;\n  border-radius: 12px;\n  box-shadow: 0 4px 12px rgba(30, 90, 142, 0.3);\n}\n.dashboard-container .cards-grid .info-card:nth-child(4) {\n  border-left-color: #16697a;\n}\n.dashboard-container .cards-grid .info-card:nth-child(4) .card-icon {\n  background: linear-gradient(135deg, #16697a, #14b8a6);\n  color: white;\n  padding: 1rem;\n  border-radius: 12px;\n  box-shadow: 0 4px 12px rgba(22, 105, 122, 0.3);\n}\n.dashboard-container .cards-grid .info-card .card-content {\n  flex: 1;\n  z-index: 1;\n}\n.dashboard-container .cards-grid .info-card .card-content h3 {\n  font-size: 0.8125rem;\n  font-weight: 600;\n  margin-bottom: 0.625rem;\n  color: #546e7a;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n}\n.dashboard-container .cards-grid .info-card .card-content .card-value {\n  font-size: 2.25rem;\n  font-weight: 700;\n  margin: 0;\n  line-height: 1;\n  color: #1A3F7A;\n}\n.dashboard-container .cards-grid .info-card .card-content .card-subtitle {\n  font-size: 0.75rem;\n  color: #78909c;\n  margin-top: 0.5rem;\n}\n.dashboard-container .cards-grid .info-card .card-icon {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  z-index: 1;\n}\n.dashboard-container .chart-section {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 1.5rem;\n  margin-bottom: 2rem;\n}\n@media (max-width: 1024px) {\n  .dashboard-container .chart-section {\n    grid-template-columns: 1fr;\n  }\n}\n@media (max-width: 480px) {\n  .dashboard-container .chart-section {\n    gap: 1rem;\n  }\n  .dashboard-container .chart-section .chart-box {\n    padding: 1rem;\n  }\n  .dashboard-container .chart-section .chart-box .chart-canvas {\n    min-height: 250px;\n  }\n}\n.dashboard-container .chart-section .chart-box {\n  background: white;\n  border-radius: 8px;\n  padding: 1.75rem;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);\n  border: 1px solid #e0e7ee;\n  border-top: 4px solid #1A3F7A;\n  display: flex;\n  flex-direction: column;\n  transition: all 0.3s ease;\n}\n.dashboard-container .chart-section .chart-box:hover {\n  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);\n  transform: translateY(-2px);\n}\n.dashboard-container .chart-section .chart-box:nth-child(2n) {\n  border-top-color: #1E5CAB;\n}\n.dashboard-container .chart-section .chart-box:nth-child(3n) {\n  border-top-color: #1e5a8e;\n}\n.dashboard-container .chart-section .chart-box:nth-child(4n) {\n  border-top-color: #16697a;\n}\n.dashboard-container .chart-section .chart-box .chart-header {\n  margin-bottom: 1.5rem;\n  padding-bottom: 1rem;\n  border-bottom: 2px solid #eceff1;\n}\n.dashboard-container .chart-section .chart-box .chart-header h3 {\n  font-size: 1.125rem;\n  font-weight: 700;\n  color: #1A3F7A;\n  margin-bottom: 0.375rem;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n}\n.dashboard-container .chart-section .chart-box .chart-header .chart-subtitle {\n  font-size: 0.8125rem;\n  color: #546e7a;\n  margin: 0;\n  font-weight: 500;\n}\n.dashboard-container .chart-section .chart-box .chart-canvas {\n  flex: 1;\n  min-height: 300px;\n  position: relative;\n}\n.dashboard-container .activity-section {\n  background: white;\n  border-radius: 8px;\n  padding: 1.75rem;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);\n  border: 1px solid #e0e7ee;\n  border-top: 4px solid #16697a;\n  transition: all 0.3s ease;\n}\n@media (max-width: 480px) {\n  .dashboard-container .activity-section {\n    padding: 1.25rem;\n  }\n  .dashboard-container .activity-section .activity-item {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 0.5rem;\n  }\n  .dashboard-container .activity-section .activity-item .activity-time {\n    align-self: flex-end;\n  }\n}\n.dashboard-container .activity-section:hover {\n  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);\n  transform: translateY(-2px);\n}\n.dashboard-container .activity-section h3 {\n  font-size: 1.125rem;\n  font-weight: 700;\n  color: #1A3F7A;\n  margin-bottom: 1.25rem;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n  padding-bottom: 0.75rem;\n  border-bottom: 2px solid #eceff1;\n}\n.dashboard-container .activity-section .activity-item {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-bottom: 0.875rem;\n  padding: 1rem;\n  background: #eceff1;\n  border-radius: 6px;\n  border-left: 3px solid #1A3F7A;\n  transition: all 0.2s ease;\n}\n.dashboard-container .activity-section .activity-item:hover {\n  background: #e1f5fe;\n  border-left-color: #1e5a8e;\n  transform: translateX(4px);\n}\n.dashboard-container .activity-section .activity-item p {\n  font-weight: 600;\n  color: #2c3e50;\n  margin: 0;\n  font-size: 0.9375rem;\n}\n.dashboard-container .activity-section .activity-item .activity-time {\n  color: #546e7a;\n  font-size: 0.8125rem;\n  font-weight: 500;\n  background: white;\n  padding: 0.25rem 0.75rem;\n  border-radius: 4px;\n}\n.dashboard-container .activity-section .activity-detail {\n  color: #546e7a;\n  font-size: 0.875rem;\n  margin-top: 1rem;\n  padding: 1rem;\n  background: #e1f5fe;\n  border-radius: 6px;\n  border-left: 3px solid #0277bd;\n  font-weight: 500;\n}\n.dashboard-container .quick-stats {\n  background: linear-gradient(135deg, #1A3F7A, #85B7EB);\n  color: white;\n  border-radius: 8px;\n  padding: 1.75rem;\n  margin-bottom: 2rem;\n  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);\n}\n@media (max-width: 480px) {\n  .dashboard-container .quick-stats {\n    padding: 1.25rem;\n  }\n  .dashboard-container .quick-stats .stats-row {\n    gap: 1rem;\n  }\n  .dashboard-container .quick-stats .stats-row .stat-item {\n    min-width: 100%;\n  }\n}\n.dashboard-container .quick-stats h3 {\n  font-size: 1.25rem;\n  font-weight: 700;\n  margin-bottom: 1rem;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n}\n.dashboard-container .quick-stats .stats-row {\n  display: flex;\n  gap: 2rem;\n  flex-wrap: wrap;\n}\n.dashboard-container .quick-stats .stats-row .stat-item {\n  flex: 1;\n  min-width: 150px;\n}\n.dashboard-container .quick-stats .stats-row .stat-item .stat-label {\n  font-size: 0.8125rem;\n  opacity: 0.9;\n  margin-bottom: 0.375rem;\n}\n.dashboard-container .quick-stats .stats-row .stat-item .stat-value {\n  font-size: 1.75rem;\n  font-weight: 700;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24853,7 +24853,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@keyframes slideIn {\n  from {\n    transform: translateX(-100%);\n    opacity: 0;\n  }\n  to {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n.layout {\n  display: flex;\n  height: 100vh;\n  background: #f5f7fa;\n  overflow: hidden;\n  font-family: \"Segoe UI\", \"Roboto\", \"Helvetica Neue\", Arial, sans-serif;\n}\n.layout .sidebar {\n  width: 260px;\n  background: #0D2857;\n  color: white;\n  display: flex;\n  flex-direction: column;\n  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);\n  position: relative;\n  z-index: 100;\n  border-right: 1px solid rgba(255, 255, 255, 0.05);\n}\n.layout .sidebar .logo-section {\n  padding: 1.75rem 1.5rem;\n  background: #0D2857;\n  border-bottom: 2px solid #1E5CAB;\n  text-align: center;\n}\n.layout .sidebar .logo-section .logo-box {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 0.75rem;\n}\n.layout .sidebar .logo-section .logo-box .logo-text {\n  font-size: 1.625rem;\n  font-weight: 700;\n  margin: 0;\n  color: white;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n  text-align: center;\n}\n.layout .sidebar .logo-section .logo-box .logo-icon-wrapper {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 1rem;\n  background: #1E5CAB;\n  border-radius: 50%;\n  border: 3px solid rgba(255, 255, 255, 0.2);\n}\n.layout .sidebar .logo-section .logo-box .logo-icon-wrapper .logo-icon {\n  color: white;\n  width: 40px;\n  height: 40px;\n}\n.layout .sidebar .logo-section .role-badge {\n  display: inline-block;\n  margin-top: 0.75rem;\n  padding: 0.3rem 1rem;\n  border-radius: 20px;\n  font-size: 0.75rem;\n  font-weight: 600;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n}\n.layout .sidebar .logo-section .role-badge.admin {\n  background: rgba(133, 183, 235, 0.15);\n  color: #85B7EB;\n  border: 1px solid rgba(133, 183, 235, 0.3);\n}\n.layout .sidebar .nav-menu {\n  list-style: none;\n  padding: 1.5rem 0;\n  margin: 0;\n  flex: 1;\n  overflow-y: auto;\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar {\n  width: 6px;\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar-track {\n  background: rgba(255, 255, 255, 0.05);\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar-thumb {\n  background: rgba(255, 255, 255, 0.2);\n  border-radius: 3px;\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar-thumb:hover {\n  background: rgba(255, 255, 255, 0.3);\n}\n.layout .sidebar .nav-menu .nav-item {\n  padding: 0.875rem 1.5rem;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  font-weight: 500;\n  font-size: 0.9375rem;\n  margin: 0.25rem 1rem;\n  border-radius: 6px;\n  color: rgba(255, 255, 255, 0.85);\n  transition: all 0.2s ease;\n  border-left: 3px solid transparent;\n}\n.layout .sidebar .nav-menu .nav-item:hover {\n  background: rgba(255, 255, 255, 0.1);\n  color: white;\n  border-left-color: #1E5CAB;\n}\n.layout .sidebar .nav-menu .nav-item.active {\n  background: rgba(255, 255, 255, 0.1);\n  font-weight: 700;\n  color: white;\n  border-left: 4px solid #378ADD;\n  box-shadow: inset 5px 0 10px rgba(0, 0, 0, 0.2);\n}\n.layout .sidebar .sidebar-footer {\n  padding: 1rem 1.5rem;\n  border-top: 1px solid rgba(255, 255, 255, 0.1);\n  font-size: 0.75rem;\n  color: rgba(255, 255, 255, 0.6);\n  text-align: center;\n}\n.layout .main-content {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  position: relative;\n  background: #f5f7fa;\n}\n.layout.sidebar-collapsed .sidebar {\n  width: 80px;\n}\n.layout.sidebar-collapsed .sidebar .logo-text {\n  display: none;\n}\n.layout.sidebar-collapsed .sidebar .nav-label {\n  display: none;\n}\n.layout.sidebar-collapsed .sidebar .logo-icon-wrapper {\n  margin: 0;\n}\n.layout.sidebar-collapsed .sidebar .nav-item {\n  justify-content: center;\n  padding: 1rem;\n  margin: 0.25rem 0.5rem;\n}\n@media (max-width: 768px) {\n  .layout .sidebar {\n    position: fixed;\n    left: -280px;\n    top: 0;\n    bottom: 0;\n    z-index: 1000;\n    transition: left 0.3s ease;\n  }\n  .layout .sidebar.open {\n    left: 0;\n  }\n  .layout .main-content {\n    width: 100%;\n  }\n}\n\n.sidebar-overlay {\n  position: fixed;\n  inset: 0;\n  background: rgba(0, 0, 0, 0.4);\n  z-index: 999;\n}\n\n.mobile-menu-btn {\n  display: none;\n  position: fixed;\n  top: 1rem;\n  left: 1rem;\n  z-index: 998;\n  background: #1A3F7A;\n  border: none;\n  border-radius: 8px;\n  padding: 0.6rem;\n  cursor: pointer;\n  flex-direction: column;\n  gap: 4px;\n}\n.mobile-menu-btn span {\n  display: block;\n  width: 22px;\n  height: 2px;\n  background: white;\n  border-radius: 1px;\n}\n@media (max-width: 768px) {\n  .mobile-menu-btn {\n    display: flex;\n  }\n}\n\n.university-header {\n  background: white;\n  border-bottom: 1px solid #E6F1FB;\n  padding: 1rem 2rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);\n}\n@media (max-width: 640px) {\n  .university-header {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 1rem;\n    padding: 1rem;\n  }\n}\n.university-header .academic-info {\n  display: flex;\n  gap: 1.5rem;\n  align-items: center;\n  font-size: 0.875rem;\n  color: #546e7a;\n}\n@media (max-width: 640px) {\n  .university-header .academic-info {\n    flex-wrap: wrap;\n    gap: 0.75rem;\n  }\n}\n.university-header .academic-info .info-item {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n}\n.university-header .academic-info .info-item .label {\n  font-weight: 600;\n  color: #2c3e50;\n}\n.university-header .academic-info .info-item .value {\n  color: #546e7a;\n}\n\n.faculty-layout .sidebar {\n  background: linear-gradient(135deg, #0D2857 0%, #1A3F7A 50%, #1E5CAB 100%);\n}\n.faculty-layout .role-badge.faculty {\n  background: rgba(133, 183, 235, 0.15);\n  color: #85B7EB;\n  border: 1px solid rgba(133, 183, 235, 0.3);\n  padding: 0.3rem 1rem;\n  border-radius: 20px;\n  font-size: 0.75rem;\n  font-weight: 600;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n}\n.faculty-layout .nav-item.active {\n  background: rgba(255, 255, 255, 0.1) !important;\n  border-left-color: #378ADD !important;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "@keyframes slideIn {\n  from {\n    transform: translateX(-100%);\n    opacity: 0;\n  }\n  to {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n.layout {\n  display: flex;\n  height: 100vh;\n  background: #f5f7fa;\n  overflow: hidden;\n  font-family: \"Segoe UI\", \"Roboto\", \"Helvetica Neue\", Arial, sans-serif;\n}\n.layout .sidebar {\n  width: 260px;\n  background: #0D2857;\n  color: white;\n  display: flex;\n  flex-direction: column;\n  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);\n  position: relative;\n  z-index: 100;\n  border-right: 1px solid rgba(255, 255, 255, 0.05);\n}\n.layout .sidebar .logo-section {\n  padding: 1.75rem 1.5rem;\n  background: #0D2857;\n  border-bottom: 2px solid #1E5CAB;\n  text-align: center;\n}\n.layout .sidebar .logo-section .logo-box {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 0.75rem;\n}\n.layout .sidebar .logo-section .logo-box .logo-text {\n  font-size: 1.625rem;\n  font-weight: 700;\n  margin: 0;\n  color: white;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n  text-align: center;\n}\n.layout .sidebar .logo-section .logo-box .logo-icon-wrapper {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 1rem;\n  background: #1E5CAB;\n  border-radius: 50%;\n  border: 3px solid rgba(255, 255, 255, 0.2);\n}\n.layout .sidebar .logo-section .logo-box .logo-icon-wrapper .logo-icon {\n  color: white;\n  width: 40px;\n  height: 40px;\n}\n.layout .sidebar .logo-section .role-badge {\n  display: inline-block;\n  margin-top: 0.75rem;\n  padding: 0.3rem 1rem;\n  border-radius: 20px;\n  font-size: 0.75rem;\n  font-weight: 600;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n}\n.layout .sidebar .logo-section .role-badge.admin {\n  background: rgba(133, 183, 235, 0.15);\n  color: #85B7EB;\n  border: 1px solid rgba(133, 183, 235, 0.3);\n}\n.layout .sidebar .nav-menu {\n  list-style: none;\n  padding: 1.5rem 0;\n  margin: 0;\n  flex: 1;\n  overflow-y: auto;\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar {\n  width: 6px;\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar-track {\n  background: rgba(255, 255, 255, 0.05);\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar-thumb {\n  background: rgba(255, 255, 255, 0.2);\n  border-radius: 3px;\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar-thumb:hover {\n  background: rgba(255, 255, 255, 0.3);\n}\n.layout .sidebar .nav-menu .nav-item {\n  padding: 0.875rem 1.5rem;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  font-weight: 500;\n  font-size: 0.9375rem;\n  margin: 0.25rem 1rem;\n  border-radius: 6px;\n  color: rgba(255, 255, 255, 0.85);\n  transition: all 0.2s ease;\n  border-left: 3px solid transparent;\n}\n.layout .sidebar .nav-menu .nav-item:hover {\n  background: rgba(255, 255, 255, 0.1);\n  color: white;\n  border-left-color: #1E5CAB;\n}\n.layout .sidebar .nav-menu .nav-item.active {\n  background: rgba(255, 255, 255, 0.1);\n  font-weight: 700;\n  color: white;\n  border-left: 4px solid #378ADD;\n  box-shadow: inset 5px 0 10px rgba(0, 0, 0, 0.2);\n}\n.layout .sidebar .sidebar-footer {\n  padding: 1rem 1.5rem;\n  border-top: 1px solid rgba(255, 255, 255, 0.1);\n  font-size: 0.75rem;\n  color: rgba(255, 255, 255, 0.6);\n  text-align: center;\n}\n.layout .main-content {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  position: relative;\n  background: #f5f7fa;\n}\n.layout.sidebar-collapsed .sidebar {\n  width: 80px;\n}\n.layout.sidebar-collapsed .sidebar .logo-text {\n  display: none;\n}\n.layout.sidebar-collapsed .sidebar .nav-label {\n  display: none;\n}\n.layout.sidebar-collapsed .sidebar .logo-icon-wrapper {\n  margin: 0;\n}\n.layout.sidebar-collapsed .sidebar .nav-item {\n  justify-content: center;\n  padding: 1rem;\n  margin: 0.25rem 0.5rem;\n}\n@media (max-width: 1024px) {\n  .layout .sidebar {\n    width: 240px;\n    position: fixed;\n    left: -240px;\n    z-index: 1001;\n  }\n  .layout .sidebar.open {\n    left: 0;\n  }\n  .layout .mobile-menu-btn {\n    display: flex;\n  }\n}\n@media (max-width: 480px) {\n  .layout .sidebar {\n    width: 280px;\n    left: -280px;\n  }\n  .layout .main-content {\n    padding-top: 60px;\n  }\n}\n@media (max-width: 375px) {\n  .layout .sidebar {\n    width: 100%;\n    left: -100%;\n  }\n}\n\n.sidebar-overlay {\n  position: fixed;\n  inset: 0;\n  background: rgba(0, 0, 0, 0.4);\n  z-index: 999;\n}\n\n.mobile-menu-btn {\n  display: none;\n  position: fixed;\n  top: 1rem;\n  left: 1rem;\n  z-index: 998;\n  background: #1A3F7A;\n  border: none;\n  border-radius: 8px;\n  padding: 0.6rem;\n  cursor: pointer;\n  flex-direction: column;\n  gap: 4px;\n}\n.mobile-menu-btn span {\n  display: block;\n  width: 22px;\n  height: 2px;\n  background: white;\n  border-radius: 1px;\n}\n@media (max-width: 768px) {\n  .mobile-menu-btn {\n    display: flex;\n  }\n}\n\n.university-header {\n  background: white;\n  border-bottom: 1px solid #E6F1FB;\n  padding: 1rem 2rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);\n}\n@media (max-width: 640px) {\n  .university-header {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 1rem;\n    padding: 1rem;\n  }\n}\n.university-header .academic-info {\n  display: flex;\n  gap: 1.5rem;\n  align-items: center;\n  font-size: 0.875rem;\n  color: #546e7a;\n}\n@media (max-width: 640px) {\n  .university-header .academic-info {\n    flex-wrap: wrap;\n    gap: 0.75rem;\n  }\n}\n.university-header .academic-info .info-item {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n}\n.university-header .academic-info .info-item .label {\n  font-weight: 600;\n  color: #2c3e50;\n}\n.university-header .academic-info .info-item .value {\n  color: #546e7a;\n}\n\n.faculty-layout .sidebar {\n  background: linear-gradient(135deg, #0D2857 0%, #1A3F7A 50%, #1E5CAB 100%);\n}\n.faculty-layout .role-badge.faculty {\n  background: rgba(133, 183, 235, 0.15);\n  color: #85B7EB;\n  border: 1px solid rgba(133, 183, 235, 0.3);\n  padding: 0.3rem 1rem;\n  border-radius: 20px;\n  font-size: 0.75rem;\n  font-weight: 600;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n}\n.faculty-layout .nav-item.active {\n  background: rgba(255, 255, 255, 0.1) !important;\n  border-left-color: #378ADD !important;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24877,7 +24877,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".register-page {\n  min-height: 100vh;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: radial-gradient(circle at top right, #1A3F7A, #0D2857);\n  padding: 2rem 1rem;\n  font-family: \"Segoe UI\", system-ui, -apple-system, sans-serif;\n}\n.register-page.faculty {\n  background: radial-gradient(circle at top right, #1E5CAB, #0D2857);\n}\n\n.register-card {\n  width: 100%;\n  max-width: 720px;\n  background: rgba(255, 255, 255, 0.9);\n  backdrop-filter: blur(10px);\n  border-radius: 24px;\n  padding: 3rem;\n  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);\n  border: 1px solid rgba(255, 255, 255, 0.3);\n}\n.register-card.success-card {\n  max-width: 480px;\n  text-align: center;\n  padding: 3rem;\n}\n.register-card.success-card .success-icon {\n  color: #22c55e;\n  margin-bottom: 1rem;\n}\n.register-card.success-card h2 {\n  color: #0D2857;\n  margin: 0 0 0.75rem;\n  font-size: 2rem;\n  font-weight: 800;\n}\n.register-card.success-card .success-message {\n  color: #555;\n  margin-bottom: 1.5rem;\n  line-height: 1.6;\n}\n.register-card.success-card .id-display {\n  background: linear-gradient(135deg, #0D2857 0%, #1A3F7A 50%, #1E5CAB 100%);\n  color: #fff;\n  padding: 1.5rem;\n  border-radius: 12px;\n  margin-bottom: 1.5rem;\n}\n.register-card.success-card .id-display .id-label {\n  display: block;\n  font-size: 0.8rem;\n  opacity: 0.8;\n  margin-bottom: 0.25rem;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n}\n.register-card.success-card .id-display .id-value {\n  font-size: 1.5rem;\n  font-weight: 800;\n  letter-spacing: 2px;\n}\n.register-card.success-card .info-text {\n  color: #888;\n  font-size: 0.85rem;\n  margin-bottom: 1.5rem;\n}\n.register-card.success-card .btn-back {\n  display: inline-flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.85rem 2rem;\n  background: #0D2857;\n  color: #fff;\n  border: none;\n  border-radius: 10px;\n  font-weight: 600;\n  cursor: pointer;\n  transition: all 0.3s;\n}\n.register-card.success-card .btn-back:hover {\n  background: #004d99;\n  transform: translateY(-1px);\n}\n\n.register-header {\n  margin-bottom: 2rem;\n}\n.register-header .back-link {\n  display: inline-flex;\n  align-items: center;\n  gap: 0.4rem;\n  background: none;\n  border: none;\n  color: #003366;\n  font-weight: 600;\n  cursor: pointer;\n  font-size: 0.9rem;\n  margin-bottom: 1rem;\n  padding: 0;\n}\n.register-header .back-link:hover {\n  color: #d4af37;\n}\n.register-header .header-brand {\n  display: flex;\n  align-items: center;\n  gap: 1rem;\n}\n.register-header .header-brand .brand-icon {\n  color: #d4af37;\n}\n.register-header .header-brand h1 {\n  font-size: 1.5rem;\n  color: #003366;\n  margin: 0;\n}\n.register-header .header-brand p {\n  color: #888;\n  font-size: 0.85rem;\n  margin: 0.2rem 0 0;\n}\n\n.register-error {\n  background: #fef2f2;\n  color: #dc2626;\n  padding: 0.75rem 1rem;\n  border-radius: 8px;\n  font-size: 0.85rem;\n  margin-bottom: 1.25rem;\n  border-left: 3px solid #dc2626;\n}\n\n.register-form .section-title {\n  font-size: 1.1rem;\n  font-weight: 700;\n  color: #1A3F7A;\n  border-bottom: 2px solid #E6F1FB;\n  padding-bottom: 0.5rem;\n  margin: 1.5rem 0 1rem;\n}\n.register-form .section-title:first-child {\n  margin-top: 0;\n}\n.register-form .form-row {\n  display: grid;\n  gap: 1rem;\n  margin-bottom: 1rem;\n}\n.register-form .form-row.three-col {\n  grid-template-columns: repeat(3, 1fr);\n}\n.register-form .form-row.two-col {\n  grid-template-columns: repeat(2, 1fr);\n}\n@media (max-width: 600px) {\n  .register-form .form-row.three-col, .register-form .form-row.two-col {\n    grid-template-columns: 1fr;\n  }\n}\n.register-form .form-group {\n  margin-bottom: 0.75rem;\n}\n.register-form .form-group label {\n  display: block;\n  font-weight: 600;\n  font-size: 0.8rem;\n  color: #444;\n  margin-bottom: 0.3rem;\n}\n.register-form .form-group input, .register-form .form-group select {\n  width: 100%;\n  padding: 0.65rem 0.85rem;\n  border: 2px solid #e2e8f0;\n  border-radius: 8px;\n  font-size: 0.9rem;\n  transition: all 0.3s;\n  background: #f8fafc;\n  box-sizing: border-box;\n}\n.register-form .form-group input:focus, .register-form .form-group select:focus {\n  outline: none;\n  border-color: #378ADD;\n  background: #fff;\n  box-shadow: 0 0 0 4px rgba(55, 138, 221, 0.1);\n}\n.register-form .form-group input.readonly, .register-form .form-group select.readonly {\n  background: #f0f0f0;\n  color: #888;\n  cursor: not-allowed;\n}\n.register-form .form-group .field-error {\n  display: block;\n  color: #dc2626;\n  font-size: 0.75rem;\n  margin-top: 0.25rem;\n}\n.register-form .form-group .field-hint {\n  display: block;\n  color: #888;\n  font-size: 0.7rem;\n  text-align: right;\n  margin-top: 0.2rem;\n}\n.register-form .password-wrapper {\n  position: relative;\n}\n.register-form .password-wrapper input {\n  padding-right: 2.5rem;\n}\n.register-form .password-wrapper .toggle-pw {\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  background: none;\n  border: none;\n  cursor: pointer;\n  color: #888;\n  padding: 2px;\n}\n.register-form .password-wrapper .toggle-pw:hover {\n  color: #003366;\n}\n\n.register-btn {\n  width: 100%;\n  padding: 1rem;\n  background: linear-gradient(135deg, #0D2857 0%, #1A3F7A 50%, #1E5CAB 100%);\n  color: #fff;\n  border: none;\n  border-radius: 12px;\n  font-size: 1.1rem;\n  font-weight: 800;\n  cursor: pointer;\n  margin-top: 1rem;\n  transition: all 0.3s;\n}\n.register-btn:hover:not(:disabled) {\n  transform: translateY(-1px);\n  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);\n}\n.register-btn:disabled {\n  opacity: 0.7;\n  cursor: not-allowed;\n}\n\n.register-page.faculty .register-btn {\n  background: linear-gradient(135deg, #0d7c66, #0a6b58);\n}\n.register-page.faculty .register-btn:hover:not(:disabled) {\n  box-shadow: 0 4px 12px rgba(13, 124, 102, 0.3);\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".register-page {\n  min-height: 100vh;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: radial-gradient(circle at top right, #1A3F7A, #0D2857);\n  padding: 2rem 1rem;\n  font-family: \"Segoe UI\", system-ui, -apple-system, sans-serif;\n}\n.register-page.faculty {\n  background: radial-gradient(circle at top right, #1E5CAB, #0D2857);\n}\n\n.register-card {\n  width: 100%;\n  max-width: 720px;\n  background: rgba(255, 255, 255, 0.9);\n  backdrop-filter: blur(10px);\n  border-radius: 24px;\n  padding: 3rem;\n  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);\n  border: 1px solid rgba(255, 255, 255, 0.3);\n}\n.register-card.success-card {\n  max-width: 480px;\n  text-align: center;\n  padding: 3rem;\n}\n@media (max-width: 480px) {\n  .register-card.success-card {\n    padding: 1.5rem;\n    border-radius: 16px;\n  }\n  .register-card.success-card h2 {\n    font-size: 1.5rem;\n  }\n}\n.register-card.success-card .success-icon {\n  color: #22c55e;\n  margin-bottom: 1rem;\n}\n.register-card.success-card h2 {\n  color: #0D2857;\n  margin: 0 0 0.75rem;\n  font-size: 2rem;\n  font-weight: 800;\n}\n.register-card.success-card .success-message {\n  color: #555;\n  margin-bottom: 1.5rem;\n  line-height: 1.6;\n}\n.register-card.success-card .id-display {\n  background: linear-gradient(135deg, #0D2857 0%, #1A3F7A 50%, #1E5CAB 100%);\n  color: #fff;\n  padding: 1.5rem;\n  border-radius: 12px;\n  margin-bottom: 1.5rem;\n}\n@media (max-width: 320px) {\n  .register-card.success-card .id-display {\n    padding: 1rem;\n  }\n  .register-card.success-card .id-display .id-value {\n    font-size: 1.25rem !important;\n  }\n}\n.register-card.success-card .id-display .id-label {\n  display: block;\n  font-size: 0.8rem;\n  opacity: 0.8;\n  margin-bottom: 0.25rem;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n}\n.register-card.success-card .id-display .id-value {\n  font-size: 1.5rem;\n  font-weight: 800;\n  letter-spacing: 2px;\n}\n.register-card.success-card .info-text {\n  color: #888;\n  font-size: 0.85rem;\n  margin-bottom: 1.5rem;\n}\n.register-card.success-card .btn-back {\n  display: inline-flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.85rem 2rem;\n  background: #0D2857;\n  color: #fff;\n  border: none;\n  border-radius: 10px;\n  font-weight: 600;\n  cursor: pointer;\n  transition: all 0.3s;\n}\n@media (max-width: 480px) {\n  .register-card.success-card .btn-back {\n    width: 100%;\n    justify-content: center;\n  }\n}\n.register-card.success-card .btn-back:hover {\n  background: #004d99;\n  transform: translateY(-1px);\n}\n\n@media (max-width: 480px) {\n  .register-card {\n    padding: 1.5rem;\n    border-radius: 16px;\n  }\n  .register-header .header-brand {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 0.5rem;\n  }\n  .register-header .header-brand h1 {\n    font-size: 1.25rem;\n  }\n}\n.register-header {\n  margin-bottom: 2rem;\n}\n.register-header .back-link {\n  display: inline-flex;\n  align-items: center;\n  gap: 0.4rem;\n  background: none;\n  border: none;\n  color: #003366;\n  font-weight: 600;\n  cursor: pointer;\n  font-size: 0.9rem;\n  margin-bottom: 1rem;\n  padding: 0;\n}\n.register-header .back-link:hover {\n  color: #d4af37;\n}\n.register-header .header-brand {\n  display: flex;\n  align-items: center;\n  gap: 1rem;\n}\n.register-header .header-brand .brand-icon {\n  color: #d4af37;\n}\n.register-header .header-brand h1 {\n  font-size: 1.5rem;\n  color: #003366;\n  margin: 0;\n}\n.register-header .header-brand p {\n  color: #888;\n  font-size: 0.85rem;\n  margin: 0.2rem 0 0;\n}\n\n.register-error {\n  background: #fef2f2;\n  color: #dc2626;\n  padding: 0.75rem 1rem;\n  border-radius: 8px;\n  font-size: 0.85rem;\n  margin-bottom: 1.25rem;\n  border-left: 3px solid #dc2626;\n}\n\n.register-form .section-title {\n  font-size: 1.1rem;\n  font-weight: 700;\n  color: #1A3F7A;\n  border-bottom: 2px solid #E6F1FB;\n  padding-bottom: 0.5rem;\n  margin: 1.5rem 0 1rem;\n}\n.register-form .section-title:first-child {\n  margin-top: 0;\n}\n.register-form .form-row {\n  display: grid;\n  gap: 1rem;\n  margin-bottom: 1rem;\n}\n.register-form .form-row.three-col {\n  grid-template-columns: repeat(3, 1fr);\n}\n.register-form .form-row.two-col {\n  grid-template-columns: repeat(2, 1fr);\n}\n@media (max-width: 600px) {\n  .register-form .form-row.three-col, .register-form .form-row.two-col {\n    grid-template-columns: 1fr;\n  }\n}\n.register-form .form-group {\n  margin-bottom: 0.75rem;\n}\n.register-form .form-group label {\n  display: block;\n  font-weight: 600;\n  font-size: 0.8rem;\n  color: #444;\n  margin-bottom: 0.3rem;\n}\n.register-form .form-group input, .register-form .form-group select {\n  width: 100%;\n  padding: 0.65rem 0.85rem;\n  border: 2px solid #e2e8f0;\n  border-radius: 8px;\n  font-size: 0.9rem;\n  transition: all 0.3s;\n  background: #f8fafc;\n  box-sizing: border-box;\n}\n.register-form .form-group input:focus, .register-form .form-group select:focus {\n  outline: none;\n  border-color: #378ADD;\n  background: #fff;\n  box-shadow: 0 0 0 4px rgba(55, 138, 221, 0.1);\n}\n.register-form .form-group input.readonly, .register-form .form-group select.readonly {\n  background: #f0f0f0;\n  color: #888;\n  cursor: not-allowed;\n}\n.register-form .form-group .field-error {\n  display: block;\n  color: #dc2626;\n  font-size: 0.75rem;\n  margin-top: 0.25rem;\n}\n.register-form .form-group .field-hint {\n  display: block;\n  color: #888;\n  font-size: 0.7rem;\n  text-align: right;\n  margin-top: 0.2rem;\n}\n.register-form .password-wrapper {\n  position: relative;\n}\n.register-form .password-wrapper input {\n  padding-right: 2.5rem;\n}\n.register-form .password-wrapper .toggle-pw {\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  background: none;\n  border: none;\n  cursor: pointer;\n  color: #888;\n  padding: 2px;\n}\n.register-form .password-wrapper .toggle-pw:hover {\n  color: #003366;\n}\n\n.register-btn {\n  width: 100%;\n  padding: 1rem;\n  background: linear-gradient(135deg, #0D2857 0%, #1A3F7A 50%, #1E5CAB 100%);\n  color: #fff;\n  border: none;\n  border-radius: 12px;\n  font-size: 1.1rem;\n  font-weight: 800;\n  cursor: pointer;\n  margin-top: 1rem;\n  transition: all 0.3s;\n}\n.register-btn:hover:not(:disabled) {\n  transform: translateY(-1px);\n  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);\n}\n.register-btn:disabled {\n  opacity: 0.7;\n  cursor: not-allowed;\n}\n\n.register-page.faculty .register-btn {\n  background: linear-gradient(135deg, #0d7c66, #0a6b58);\n}\n.register-page.faculty .register-btn:hover:not(:disabled) {\n  box-shadow: 0 4px 12px rgba(13, 124, 102, 0.3);\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24925,7 +24925,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@keyframes slideIn {\n  from {\n    transform: translateX(-100%);\n    opacity: 0;\n  }\n  to {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n.layout {\n  display: flex;\n  height: 100vh;\n  background: #f5f7fa;\n  overflow: hidden;\n  font-family: \"Segoe UI\", \"Roboto\", \"Helvetica Neue\", Arial, sans-serif;\n}\n.layout .sidebar {\n  width: 260px;\n  background: #0D2857;\n  color: white;\n  display: flex;\n  flex-direction: column;\n  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);\n  position: relative;\n  z-index: 100;\n  border-right: 1px solid rgba(255, 255, 255, 0.05);\n}\n.layout .sidebar .logo-section {\n  padding: 1.75rem 1.5rem;\n  background: #0D2857;\n  border-bottom: 2px solid #1E5CAB;\n  text-align: center;\n}\n.layout .sidebar .logo-section .logo-box {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 0.75rem;\n}\n.layout .sidebar .logo-section .logo-box .logo-text {\n  font-size: 1.625rem;\n  font-weight: 700;\n  margin: 0;\n  color: white;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n  text-align: center;\n}\n.layout .sidebar .logo-section .logo-box .logo-icon-wrapper {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 1rem;\n  background: #1E5CAB;\n  border-radius: 50%;\n  border: 3px solid rgba(255, 255, 255, 0.2);\n}\n.layout .sidebar .logo-section .logo-box .logo-icon-wrapper .logo-icon {\n  color: white;\n  width: 40px;\n  height: 40px;\n}\n.layout .sidebar .logo-section .role-badge {\n  display: inline-block;\n  margin-top: 0.75rem;\n  padding: 0.3rem 1rem;\n  border-radius: 20px;\n  font-size: 0.75rem;\n  font-weight: 600;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n}\n.layout .sidebar .logo-section .role-badge.admin {\n  background: rgba(133, 183, 235, 0.15);\n  color: #85B7EB;\n  border: 1px solid rgba(133, 183, 235, 0.3);\n}\n.layout .sidebar .nav-menu {\n  list-style: none;\n  padding: 1.5rem 0;\n  margin: 0;\n  flex: 1;\n  overflow-y: auto;\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar {\n  width: 6px;\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar-track {\n  background: rgba(255, 255, 255, 0.05);\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar-thumb {\n  background: rgba(255, 255, 255, 0.2);\n  border-radius: 3px;\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar-thumb:hover {\n  background: rgba(255, 255, 255, 0.3);\n}\n.layout .sidebar .nav-menu .nav-item {\n  padding: 0.875rem 1.5rem;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  font-weight: 500;\n  font-size: 0.9375rem;\n  margin: 0.25rem 1rem;\n  border-radius: 6px;\n  color: rgba(255, 255, 255, 0.85);\n  transition: all 0.2s ease;\n  border-left: 3px solid transparent;\n}\n.layout .sidebar .nav-menu .nav-item:hover {\n  background: rgba(255, 255, 255, 0.1);\n  color: white;\n  border-left-color: #1E5CAB;\n}\n.layout .sidebar .nav-menu .nav-item.active {\n  background: rgba(255, 255, 255, 0.1);\n  font-weight: 700;\n  color: white;\n  border-left: 4px solid #378ADD;\n  box-shadow: inset 5px 0 10px rgba(0, 0, 0, 0.2);\n}\n.layout .sidebar .sidebar-footer {\n  padding: 1rem 1.5rem;\n  border-top: 1px solid rgba(255, 255, 255, 0.1);\n  font-size: 0.75rem;\n  color: rgba(255, 255, 255, 0.6);\n  text-align: center;\n}\n.layout .main-content {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  position: relative;\n  background: #f5f7fa;\n}\n.layout.sidebar-collapsed .sidebar {\n  width: 80px;\n}\n.layout.sidebar-collapsed .sidebar .logo-text {\n  display: none;\n}\n.layout.sidebar-collapsed .sidebar .nav-label {\n  display: none;\n}\n.layout.sidebar-collapsed .sidebar .logo-icon-wrapper {\n  margin: 0;\n}\n.layout.sidebar-collapsed .sidebar .nav-item {\n  justify-content: center;\n  padding: 1rem;\n  margin: 0.25rem 0.5rem;\n}\n@media (max-width: 768px) {\n  .layout .sidebar {\n    position: fixed;\n    left: -280px;\n    top: 0;\n    bottom: 0;\n    z-index: 1000;\n    transition: left 0.3s ease;\n  }\n  .layout .sidebar.open {\n    left: 0;\n  }\n  .layout .main-content {\n    width: 100%;\n  }\n}\n\n.sidebar-overlay {\n  position: fixed;\n  inset: 0;\n  background: rgba(0, 0, 0, 0.4);\n  z-index: 999;\n}\n\n.mobile-menu-btn {\n  display: none;\n  position: fixed;\n  top: 1rem;\n  left: 1rem;\n  z-index: 998;\n  background: #1A3F7A;\n  border: none;\n  border-radius: 8px;\n  padding: 0.6rem;\n  cursor: pointer;\n  flex-direction: column;\n  gap: 4px;\n}\n.mobile-menu-btn span {\n  display: block;\n  width: 22px;\n  height: 2px;\n  background: white;\n  border-radius: 1px;\n}\n@media (max-width: 768px) {\n  .mobile-menu-btn {\n    display: flex;\n  }\n}\n\n.university-header {\n  background: white;\n  border-bottom: 1px solid #E6F1FB;\n  padding: 1rem 2rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);\n}\n@media (max-width: 640px) {\n  .university-header {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 1rem;\n    padding: 1rem;\n  }\n}\n.university-header .academic-info {\n  display: flex;\n  gap: 1.5rem;\n  align-items: center;\n  font-size: 0.875rem;\n  color: #546e7a;\n}\n@media (max-width: 640px) {\n  .university-header .academic-info {\n    flex-wrap: wrap;\n    gap: 0.75rem;\n  }\n}\n.university-header .academic-info .info-item {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n}\n.university-header .academic-info .info-item .label {\n  font-weight: 600;\n  color: #2c3e50;\n}\n.university-header .academic-info .info-item .value {\n  color: #546e7a;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "@keyframes slideIn {\n  from {\n    transform: translateX(-100%);\n    opacity: 0;\n  }\n  to {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n.layout {\n  display: flex;\n  height: 100vh;\n  background: #f5f7fa;\n  overflow: hidden;\n  font-family: \"Segoe UI\", \"Roboto\", \"Helvetica Neue\", Arial, sans-serif;\n}\n.layout .sidebar {\n  width: 260px;\n  background: #0D2857;\n  color: white;\n  display: flex;\n  flex-direction: column;\n  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);\n  position: relative;\n  z-index: 100;\n  border-right: 1px solid rgba(255, 255, 255, 0.05);\n}\n.layout .sidebar .logo-section {\n  padding: 1.75rem 1.5rem;\n  background: #0D2857;\n  border-bottom: 2px solid #1E5CAB;\n  text-align: center;\n}\n.layout .sidebar .logo-section .logo-box {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 0.75rem;\n}\n.layout .sidebar .logo-section .logo-box .logo-text {\n  font-size: 1.625rem;\n  font-weight: 700;\n  margin: 0;\n  color: white;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n  text-align: center;\n}\n.layout .sidebar .logo-section .logo-box .logo-icon-wrapper {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 1rem;\n  background: #1E5CAB;\n  border-radius: 50%;\n  border: 3px solid rgba(255, 255, 255, 0.2);\n}\n.layout .sidebar .logo-section .logo-box .logo-icon-wrapper .logo-icon {\n  color: white;\n  width: 40px;\n  height: 40px;\n}\n.layout .sidebar .logo-section .role-badge {\n  display: inline-block;\n  margin-top: 0.75rem;\n  padding: 0.3rem 1rem;\n  border-radius: 20px;\n  font-size: 0.75rem;\n  font-weight: 600;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n}\n.layout .sidebar .logo-section .role-badge.admin {\n  background: rgba(133, 183, 235, 0.15);\n  color: #85B7EB;\n  border: 1px solid rgba(133, 183, 235, 0.3);\n}\n.layout .sidebar .nav-menu {\n  list-style: none;\n  padding: 1.5rem 0;\n  margin: 0;\n  flex: 1;\n  overflow-y: auto;\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar {\n  width: 6px;\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar-track {\n  background: rgba(255, 255, 255, 0.05);\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar-thumb {\n  background: rgba(255, 255, 255, 0.2);\n  border-radius: 3px;\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar-thumb:hover {\n  background: rgba(255, 255, 255, 0.3);\n}\n.layout .sidebar .nav-menu .nav-item {\n  padding: 0.875rem 1.5rem;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  font-weight: 500;\n  font-size: 0.9375rem;\n  margin: 0.25rem 1rem;\n  border-radius: 6px;\n  color: rgba(255, 255, 255, 0.85);\n  transition: all 0.2s ease;\n  border-left: 3px solid transparent;\n}\n.layout .sidebar .nav-menu .nav-item:hover {\n  background: rgba(255, 255, 255, 0.1);\n  color: white;\n  border-left-color: #1E5CAB;\n}\n.layout .sidebar .nav-menu .nav-item.active {\n  background: rgba(255, 255, 255, 0.1);\n  font-weight: 700;\n  color: white;\n  border-left: 4px solid #378ADD;\n  box-shadow: inset 5px 0 10px rgba(0, 0, 0, 0.2);\n}\n.layout .sidebar .sidebar-footer {\n  padding: 1rem 1.5rem;\n  border-top: 1px solid rgba(255, 255, 255, 0.1);\n  font-size: 0.75rem;\n  color: rgba(255, 255, 255, 0.6);\n  text-align: center;\n}\n.layout .main-content {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  position: relative;\n  background: #f5f7fa;\n}\n.layout.sidebar-collapsed .sidebar {\n  width: 80px;\n}\n.layout.sidebar-collapsed .sidebar .logo-text {\n  display: none;\n}\n.layout.sidebar-collapsed .sidebar .nav-label {\n  display: none;\n}\n.layout.sidebar-collapsed .sidebar .logo-icon-wrapper {\n  margin: 0;\n}\n.layout.sidebar-collapsed .sidebar .nav-item {\n  justify-content: center;\n  padding: 1rem;\n  margin: 0.25rem 0.5rem;\n}\n@media (max-width: 1024px) {\n  .layout .sidebar {\n    width: 240px;\n    position: fixed;\n    left: -240px;\n    z-index: 1001;\n  }\n  .layout .sidebar.open {\n    left: 0;\n  }\n  .layout .mobile-menu-btn {\n    display: flex;\n  }\n}\n@media (max-width: 480px) {\n  .layout .sidebar {\n    width: 280px;\n    left: -280px;\n  }\n  .layout .main-content {\n    padding-top: 60px;\n  }\n}\n@media (max-width: 375px) {\n  .layout .sidebar {\n    width: 100%;\n    left: -100%;\n  }\n}\n\n.sidebar-overlay {\n  position: fixed;\n  inset: 0;\n  background: rgba(0, 0, 0, 0.4);\n  z-index: 999;\n}\n\n.mobile-menu-btn {\n  display: none;\n  position: fixed;\n  top: 1rem;\n  left: 1rem;\n  z-index: 998;\n  background: #1A3F7A;\n  border: none;\n  border-radius: 8px;\n  padding: 0.6rem;\n  cursor: pointer;\n  flex-direction: column;\n  gap: 4px;\n}\n.mobile-menu-btn span {\n  display: block;\n  width: 22px;\n  height: 2px;\n  background: white;\n  border-radius: 1px;\n}\n@media (max-width: 768px) {\n  .mobile-menu-btn {\n    display: flex;\n  }\n}\n\n.university-header {\n  background: white;\n  border-bottom: 1px solid #E6F1FB;\n  padding: 1rem 2rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);\n}\n@media (max-width: 640px) {\n  .university-header {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 1rem;\n    padding: 1rem;\n  }\n}\n.university-header .academic-info {\n  display: flex;\n  gap: 1.5rem;\n  align-items: center;\n  font-size: 0.875rem;\n  color: #546e7a;\n}\n@media (max-width: 640px) {\n  .university-header .academic-info {\n    flex-wrap: wrap;\n    gap: 0.75rem;\n  }\n}\n.university-header .academic-info .info-item {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n}\n.university-header .academic-info .info-item .label {\n  font-weight: 600;\n  color: #2c3e50;\n}\n.university-header .academic-info .info-item .value {\n  color: #546e7a;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24973,7 +24973,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".profile-container {\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 2rem;\n  font-family: \"Segoe UI\", \"Roboto\", \"Helvetica Neue\", Arial, sans-serif;\n}\n\n.profile-header-section {\n  position: relative;\n  margin-bottom: 5rem;\n}\n\n.profile-cover {\n  height: 200px;\n  background: linear-gradient(135deg, #0D2857 0%, #1A3F7A 50%, #1E5CAB 100%);\n  border-radius: 20px 20px 0 0;\n  position: relative;\n  overflow: hidden;\n}\n.profile-cover .cover-pattern {\n  position: absolute;\n  inset: 0;\n  background: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255, 255, 255, 0.03) 20px, rgba(255, 255, 255, 0.03) 40px);\n}\n\n.profile-avatar-section {\n  display: flex;\n  align-items: flex-end;\n  gap: 1.5rem;\n  padding: 0 2rem;\n  margin-top: -3.5rem;\n  position: relative;\n  z-index: 1;\n}\n.profile-avatar-section .avatar-wrapper {\n  position: relative;\n  width: 110px;\n  height: 110px;\n}\n.profile-avatar-section .avatar-wrapper .avatar-img {\n  width: 100%;\n  height: 100%;\n  border-radius: 50%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  border: 4px solid #fff;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n}\n.profile-avatar-section .avatar-wrapper .avatar-placeholder {\n  width: 100%;\n  height: 100%;\n  border-radius: 50%;\n  background: linear-gradient(135deg, #0D2857 0%, #1A3F7A 50%, #1E5CAB 100%);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: white;\n  border: 4px solid #fff;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n}\n.profile-avatar-section .avatar-wrapper .avatar-upload {\n  position: absolute;\n  bottom: 4px;\n  right: 4px;\n  width: 32px;\n  height: 32px;\n  background: #378ADD;\n  border-radius: 50%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  color: white;\n  border: 2px solid #fff;\n  transition: background 0.3s;\n}\n.profile-avatar-section .avatar-wrapper .avatar-upload:hover {\n  background: #b8960b;\n}\n.profile-avatar-section .profile-name-section {\n  padding-bottom: 0.5rem;\n}\n.profile-avatar-section .profile-name-section .profile-name {\n  font-size: 1.5rem;\n  font-weight: 700;\n  color: #1a1a2e;\n  margin: 0 0 0.5rem;\n}\n.profile-avatar-section .profile-name-section .role-badge {\n  display: inline-block;\n  padding: 0.3rem 1rem;\n  border-radius: 20px;\n  color: white;\n  font-size: 0.75rem;\n  font-weight: 600;\n  letter-spacing: 0.5px;\n  text-transform: uppercase;\n}\n\n.profile-body .info-card {\n  background: #fff;\n  border-radius: 14px;\n  padding: 1.75rem;\n  margin-bottom: 1.25rem;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);\n  border: 1px solid #e8ecf0;\n}\n.profile-body .info-card h3 {\n  font-size: 1.25rem;\n  font-weight: 700;\n  color: #1A3F7A;\n  margin: 0 0 1.25rem;\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding-bottom: 0.75rem;\n  border-bottom: 2px solid #E6F1FB;\n}\n.profile-body .info-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));\n  gap: 1.25rem;\n}\n.profile-body .info-grid .info-item.full-width {\n  grid-column: 1/-1;\n}\n.profile-body .info-grid .info-item .info-label {\n  display: block;\n  font-size: 0.75rem;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n  color: #888;\n  margin-bottom: 0.3rem;\n  font-weight: 600;\n}\n.profile-body .info-grid .info-item .info-value {\n  display: block;\n  font-size: 0.95rem;\n  color: #1a1a2e;\n  font-weight: 500;\n}\n.profile-body .signout-section {\n  margin-top: 2rem;\n  text-align: center;\n}\n.profile-body .signout-section .btn-signout {\n  display: inline-flex;\n  align-items: center;\n  gap: 0.6rem;\n  padding: 0.85rem 2.5rem;\n  background: linear-gradient(135deg, #dc2626, #b91c1c);\n  color: white;\n  border: none;\n  border-radius: 12px;\n  font-size: 1rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: all 0.3s;\n}\n.profile-body .signout-section .btn-signout:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 6px 20px rgba(220, 38, 38, 0.3);\n}\n\n@media (max-width: 768px) {\n  .profile-container {\n    padding: 1rem;\n  }\n  .profile-avatar-section {\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    padding: 0 1rem;\n    gap: 0.5rem;\n  }\n  .profile-name-section {\n    margin-top: 0.5rem;\n  }\n  .profile-body .info-grid {\n    grid-template-columns: 1fr;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".profile-container {\n  min-height: 100vh;\n  background-color: #f0f4f8;\n  padding: 28px;\n  font-family: \"Inter\", system-ui, sans-serif;\n  color: #1e293b;\n}\n.profile-container .profile-grid {\n  display: grid;\n  grid-template-columns: 300px 1fr;\n  gap: 28px;\n  max-width: 1440px;\n  margin: 0 auto;\n}\n\n.profile-card {\n  background: #ffffff;\n  border: 0.5px solid rgba(13, 43, 94, 0.1);\n  border-radius: 14px;\n  overflow: hidden;\n  margin-bottom: 24px;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);\n}\n.profile-card .card-header {\n  padding: 18px 24px;\n  border-bottom: 0.5px solid rgba(13, 43, 94, 0.1);\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n.profile-card .card-header h3 {\n  font-size: 0.95rem;\n  font-weight: 700;\n  color: #0d2b5e;\n  margin: 0;\n  display: flex;\n  align-items: center;\n  gap: 8px;\n}\n.profile-card .card-header .edit-btn {\n  font-size: 0.8rem;\n  color: #1a4a9e;\n  font-weight: 600;\n  background: #f0f6ff;\n  border: none;\n  padding: 6px 12px;\n  border-radius: 8px;\n  cursor: pointer;\n  transition: all 0.2s;\n}\n.profile-card .card-header .edit-btn:hover {\n  background: rgb(219.6, 233.76, 255);\n}\n.profile-card .card-body {\n  padding: 24px;\n}\n\n.main-profile-card .profile-banner {\n  height: 110px;\n  background: #0d2b5e;\n  position: relative;\n  overflow: hidden;\n}\n.main-profile-card .profile-banner::before, .main-profile-card .profile-banner::after {\n  content: \"\";\n  position: absolute;\n  border-radius: 50%;\n  background: rgba(255, 255, 255, 0.08);\n}\n.main-profile-card .profile-banner::before {\n  width: 120px;\n  height: 120px;\n  top: -40px;\n  right: -20px;\n}\n.main-profile-card .profile-banner::after {\n  width: 70px;\n  height: 70px;\n  bottom: -10px;\n  left: 10px;\n}\n.main-profile-card .profile-info-summary {\n  text-align: center;\n  padding: 0 20px 24px;\n  margin-top: -50px;\n}\n.main-profile-card .profile-info-summary .avatar-container {\n  position: relative;\n  width: 100px;\n  height: 100px;\n  margin: 0 auto 16px;\n}\n.main-profile-card .profile-info-summary .avatar-container .profile-avatar {\n  width: 100%;\n  height: 100%;\n  border-radius: 50%;\n  background: #1a4a9e;\n  color: white;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 2rem;\n  font-weight: 700;\n  border: 4px solid #fff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.main-profile-card .profile-info-summary .avatar-container .avatar-edit-overlay {\n  position: absolute;\n  bottom: 2px;\n  right: 2px;\n  width: 32px;\n  height: 32px;\n  background: #fff;\n  border: 1px solid #e2e8f0;\n  border-radius: 50%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #64748b;\n  cursor: pointer;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);\n  transition: all 0.2s;\n}\n.main-profile-card .profile-info-summary .avatar-container .avatar-edit-overlay:hover {\n  color: #1a4a9e;\n  transform: scale(1.1);\n}\n.main-profile-card .profile-info-summary .profile-name {\n  font-size: 1.2rem;\n  font-weight: 700;\n  color: #0d2b5e;\n  margin: 0 0 6px;\n}\n.main-profile-card .profile-info-summary .role-badge {\n  display: inline-block;\n  padding: 5px 14px;\n  background: #f0f6ff;\n  color: #1a4a9e;\n  border-radius: 20px;\n  font-size: 0.65rem;\n  font-weight: 800;\n  letter-spacing: 1.2px;\n  text-transform: uppercase;\n  margin-bottom: 20px;\n}\n.main-profile-card .profile-info-summary .meta-rows {\n  text-align: left;\n  border-top: 0.5px solid rgba(13, 43, 94, 0.1);\n  padding-top: 20px;\n}\n.main-profile-card .profile-info-summary .meta-rows .meta-row {\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  margin-bottom: 14px;\n  color: #64748b;\n  font-size: 0.85rem;\n}\n.main-profile-card .profile-info-summary .meta-rows .meta-row svg {\n  color: #1a4a9e;\n  flex-shrink: 0;\n}\n.main-profile-card .profile-info-summary .meta-rows .meta-row span {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n.main-profile-card .stat-strip {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  border-top: 0.5px solid rgba(13, 43, 94, 0.1);\n  background: #fafbfc;\n}\n.main-profile-card .stat-strip .stat-item {\n  padding: 18px 8px;\n  text-align: center;\n  border-right: 0.5px solid rgba(13, 43, 94, 0.1);\n}\n.main-profile-card .stat-strip .stat-item:last-child {\n  border-right: none;\n}\n.main-profile-card .stat-strip .stat-item .stat-value {\n  display: block;\n  font-size: 1.1rem;\n  font-weight: 700;\n  color: #0d2b5e;\n  margin-bottom: 2px;\n}\n.main-profile-card .stat-strip .stat-item .stat-label {\n  font-size: 0.6rem;\n  color: #64748b;\n  text-transform: uppercase;\n  font-weight: 700;\n  letter-spacing: 0.5px;\n}\n\n.quick-links-card .link-item {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  padding: 14px 0;\n  color: #1e293b;\n  text-decoration: none;\n  cursor: pointer;\n  border-bottom: 0.5px solid rgba(13, 43, 94, 0.1);\n  transition: all 0.2s;\n}\n.quick-links-card .link-item:last-child {\n  border-bottom: none;\n  padding-bottom: 0;\n}\n.quick-links-card .link-item:first-child {\n  padding-top: 0;\n}\n.quick-links-card .link-item .link-left {\n  display: flex;\n  align-items: center;\n  gap: 14px;\n  font-size: 0.9rem;\n  font-weight: 500;\n}\n.quick-links-card .link-item .link-left svg {\n  color: #64748b;\n  transition: color 0.2s;\n}\n.quick-links-card .link-item .chevron {\n  color: #cbd5e1;\n}\n.quick-links-card .link-item:hover .link-left {\n  color: #1a4a9e;\n}\n.quick-links-card .link-item:hover .link-left svg {\n  color: #1a4a9e;\n}\n.quick-links-card .link-item:hover .chevron {\n  color: #1a4a9e;\n  transform: translateX(2px);\n}\n\n.info-field-grid {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 24px;\n}\n.info-field-grid .info-field .field-label {\n  display: block;\n  font-size: 0.7rem;\n  font-weight: 700;\n  color: #64748b;\n  margin-bottom: 6px;\n  text-transform: uppercase;\n  letter-spacing: 0.8px;\n}\n.info-field-grid .info-field .field-value {\n  font-size: 0.95rem;\n  font-weight: 600;\n  color: #1e293b;\n}\n.info-field-grid .info-field .field-value.active, .info-field-grid .info-field .field-value.enrolled {\n  color: #10b981;\n  font-weight: 700;\n}\n.info-field-grid .info-field .field-value.pending {\n  color: #f59e0b;\n  font-weight: 700;\n}\n.info-field-grid .info-field .field-value.irregular {\n  color: #ef4444;\n  font-weight: 700;\n}\n.info-field-grid .info-field .field-value.link {\n  color: #1a4a9e;\n  border-bottom: 1px dashed rgba(26, 74, 158, 0.2);\n}\n\n.activity-list {\n  display: flex;\n  flex-direction: column;\n  gap: 20px;\n}\n.activity-list .activity-item {\n  display: flex;\n  gap: 16px;\n}\n.activity-list .activity-item .status-dot {\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  margin-top: 6px;\n  flex-shrink: 0;\n}\n.activity-list .activity-item .status-dot.login {\n  background: #1a4a9e;\n  box-shadow: 0 0 0 4px rgba(26, 74, 158, 0.1);\n}\n.activity-list .activity-item .status-dot.record {\n  background: #10b981;\n  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1);\n}\n.activity-list .activity-item .status-dot.config {\n  background: #f59e0b;\n  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.1);\n}\n.activity-list .activity-item .activity-content .activity-text {\n  font-size: 0.9rem;\n  font-weight: 600;\n  margin-bottom: 4px;\n  color: #1e293b;\n}\n.activity-list .activity-item .activity-content .activity-time {\n  font-size: 0.75rem;\n  color: #64748b;\n  display: flex;\n  align-items: center;\n  gap: 4px;\n}\n\n.summary-list {\n  border: 0.5px solid rgba(13, 43, 94, 0.1);\n  border-radius: 12px;\n  overflow: hidden;\n}\n.summary-list table {\n  width: 100%;\n  border-collapse: collapse;\n}\n.summary-list table th {\n  background: #f8fafc;\n  padding: 14px 20px;\n  text-align: left;\n  font-size: 0.7rem;\n  font-weight: 700;\n  color: #64748b;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n  border-bottom: 0.5px solid rgba(13, 43, 94, 0.1);\n}\n.summary-list table td {\n  padding: 16px 20px;\n  font-size: 0.9rem;\n  border-bottom: 0.5px solid rgba(13, 43, 94, 0.1);\n  color: #1e293b;\n}\n.summary-list table td.empty-state {\n  text-align: center;\n  padding: 40px;\n  color: #64748b;\n}\n.summary-list table tr:last-child td {\n  border-bottom: none;\n}\n\n.action-buttons-card {\n  background: transparent;\n  border: none;\n  box-shadow: none;\n  margin-top: -12px;\n}\n.action-buttons-card .card-body {\n  display: flex;\n  flex-direction: column;\n  gap: 14px;\n  padding: 0;\n}\n.action-buttons-card .btn-change-password {\n  background: #fff;\n  color: #1a4a9e;\n  border: 1.5px solid #1a4a9e;\n  padding: 14px;\n  border-radius: 12px;\n  font-weight: 700;\n  font-size: 0.9rem;\n  cursor: pointer;\n  transition: all 0.2s;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n}\n.action-buttons-card .btn-change-password:hover {\n  background: #f0f6ff;\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);\n}\n.action-buttons-card .btn-logout-full {\n  background: #ef4444;\n  color: #fff;\n  border: none;\n  padding: 14px;\n  border-radius: 12px;\n  font-weight: 700;\n  font-size: 0.9rem;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n  transition: all 0.2s;\n}\n.action-buttons-card .btn-logout-full:hover {\n  background: rgb(235.7842364532, 30.4157635468, 30.4157635468);\n  transform: translateY(-1px);\n  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);\n}\n\n@media (max-width: 1024px) {\n  .profile-container {\n    padding: 20px;\n  }\n  .profile-container .profile-grid {\n    grid-template-columns: 1fr;\n    gap: 20px;\n  }\n}\n@media (max-width: 640px) {\n  .profile-container {\n    padding: 16px;\n  }\n  .profile-container .info-field-grid {\n    grid-template-columns: 1fr;\n    gap: 16px;\n  }\n  .profile-container .summary-list {\n    overflow-x: auto;\n    -webkit-overflow-scrolling: touch;\n  }\n  .profile-container .summary-list table {\n    min-width: 500px;\n  }\n}\n@media (max-width: 480px) {\n  .profile-container {\n    padding: 12px;\n  }\n  .profile-container .main-profile-card .profile-info-summary {\n    padding: 0 16px 20px;\n  }\n  .profile-container .main-profile-card .profile-info-summary .profile-name {\n    font-size: 1.1rem;\n  }\n  .profile-container .profile-card .card-header {\n    padding: 14px 18px;\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 10px;\n  }\n  .profile-container .profile-card .card-header h3 {\n    font-size: 0.9rem;\n  }\n  .profile-container .profile-card .card-body {\n    padding: 18px;\n  }\n  .profile-container .stat-strip .stat-item {\n    padding: 14px 4px;\n  }\n  .profile-container .stat-strip .stat-item .stat-value {\n    font-size: 0.95rem;\n  }\n  .profile-container .stat-strip .stat-item .stat-label {\n    font-size: 0.55rem;\n  }\n}\n@media (max-width: 320px) {\n  .profile-container .stat-strip {\n    grid-template-columns: 1fr;\n  }\n  .profile-container .stat-strip .stat-item {\n    border-right: none;\n    border-bottom: 0.5px solid rgba(13, 43, 94, 0.1);\n  }\n  .profile-container .stat-strip .stat-item:last-child {\n    border-bottom: none;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -25045,7 +25045,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@keyframes slideIn {\n  from {\n    transform: translateX(-100%);\n    opacity: 0;\n  }\n  to {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n.layout {\n  display: flex;\n  height: 100vh;\n  background: #f5f7fa;\n  overflow: hidden;\n  font-family: \"Segoe UI\", \"Roboto\", \"Helvetica Neue\", Arial, sans-serif;\n}\n.layout .sidebar {\n  width: 260px;\n  background: #0D2857;\n  color: white;\n  display: flex;\n  flex-direction: column;\n  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);\n  position: relative;\n  z-index: 100;\n  border-right: 1px solid rgba(255, 255, 255, 0.05);\n}\n.layout .sidebar .logo-section {\n  padding: 1.75rem 1.5rem;\n  background: #0D2857;\n  border-bottom: 2px solid #1E5CAB;\n  text-align: center;\n}\n.layout .sidebar .logo-section .logo-box {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 0.75rem;\n}\n.layout .sidebar .logo-section .logo-box .logo-text {\n  font-size: 1.625rem;\n  font-weight: 700;\n  margin: 0;\n  color: white;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n  text-align: center;\n}\n.layout .sidebar .logo-section .logo-box .logo-icon-wrapper {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 1rem;\n  background: #1E5CAB;\n  border-radius: 50%;\n  border: 3px solid rgba(255, 255, 255, 0.2);\n}\n.layout .sidebar .logo-section .logo-box .logo-icon-wrapper .logo-icon {\n  color: white;\n  width: 40px;\n  height: 40px;\n}\n.layout .sidebar .logo-section .role-badge {\n  display: inline-block;\n  margin-top: 0.75rem;\n  padding: 0.3rem 1rem;\n  border-radius: 20px;\n  font-size: 0.75rem;\n  font-weight: 600;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n}\n.layout .sidebar .logo-section .role-badge.admin {\n  background: rgba(133, 183, 235, 0.15);\n  color: #85B7EB;\n  border: 1px solid rgba(133, 183, 235, 0.3);\n}\n.layout .sidebar .nav-menu {\n  list-style: none;\n  padding: 1.5rem 0;\n  margin: 0;\n  flex: 1;\n  overflow-y: auto;\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar {\n  width: 6px;\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar-track {\n  background: rgba(255, 255, 255, 0.05);\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar-thumb {\n  background: rgba(255, 255, 255, 0.2);\n  border-radius: 3px;\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar-thumb:hover {\n  background: rgba(255, 255, 255, 0.3);\n}\n.layout .sidebar .nav-menu .nav-item {\n  padding: 0.875rem 1.5rem;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  font-weight: 500;\n  font-size: 0.9375rem;\n  margin: 0.25rem 1rem;\n  border-radius: 6px;\n  color: rgba(255, 255, 255, 0.85);\n  transition: all 0.2s ease;\n  border-left: 3px solid transparent;\n}\n.layout .sidebar .nav-menu .nav-item:hover {\n  background: rgba(255, 255, 255, 0.1);\n  color: white;\n  border-left-color: #1E5CAB;\n}\n.layout .sidebar .nav-menu .nav-item.active {\n  background: rgba(255, 255, 255, 0.1);\n  font-weight: 700;\n  color: white;\n  border-left: 4px solid #378ADD;\n  box-shadow: inset 5px 0 10px rgba(0, 0, 0, 0.2);\n}\n.layout .sidebar .sidebar-footer {\n  padding: 1rem 1.5rem;\n  border-top: 1px solid rgba(255, 255, 255, 0.1);\n  font-size: 0.75rem;\n  color: rgba(255, 255, 255, 0.6);\n  text-align: center;\n}\n.layout .main-content {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  position: relative;\n  background: #f5f7fa;\n}\n.layout.sidebar-collapsed .sidebar {\n  width: 80px;\n}\n.layout.sidebar-collapsed .sidebar .logo-text {\n  display: none;\n}\n.layout.sidebar-collapsed .sidebar .nav-label {\n  display: none;\n}\n.layout.sidebar-collapsed .sidebar .logo-icon-wrapper {\n  margin: 0;\n}\n.layout.sidebar-collapsed .sidebar .nav-item {\n  justify-content: center;\n  padding: 1rem;\n  margin: 0.25rem 0.5rem;\n}\n@media (max-width: 768px) {\n  .layout .sidebar {\n    position: fixed;\n    left: -280px;\n    top: 0;\n    bottom: 0;\n    z-index: 1000;\n    transition: left 0.3s ease;\n  }\n  .layout .sidebar.open {\n    left: 0;\n  }\n  .layout .main-content {\n    width: 100%;\n  }\n}\n\n.sidebar-overlay {\n  position: fixed;\n  inset: 0;\n  background: rgba(0, 0, 0, 0.4);\n  z-index: 999;\n}\n\n.mobile-menu-btn {\n  display: none;\n  position: fixed;\n  top: 1rem;\n  left: 1rem;\n  z-index: 998;\n  background: #1A3F7A;\n  border: none;\n  border-radius: 8px;\n  padding: 0.6rem;\n  cursor: pointer;\n  flex-direction: column;\n  gap: 4px;\n}\n.mobile-menu-btn span {\n  display: block;\n  width: 22px;\n  height: 2px;\n  background: white;\n  border-radius: 1px;\n}\n@media (max-width: 768px) {\n  .mobile-menu-btn {\n    display: flex;\n  }\n}\n\n.university-header {\n  background: white;\n  border-bottom: 1px solid #E6F1FB;\n  padding: 1rem 2rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);\n}\n@media (max-width: 640px) {\n  .university-header {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 1rem;\n    padding: 1rem;\n  }\n}\n.university-header .academic-info {\n  display: flex;\n  gap: 1.5rem;\n  align-items: center;\n  font-size: 0.875rem;\n  color: #546e7a;\n}\n@media (max-width: 640px) {\n  .university-header .academic-info {\n    flex-wrap: wrap;\n    gap: 0.75rem;\n  }\n}\n.university-header .academic-info .info-item {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n}\n.university-header .academic-info .info-item .label {\n  font-weight: 600;\n  color: #2c3e50;\n}\n.university-header .academic-info .info-item .value {\n  color: #546e7a;\n}\n\n.student-layout .sidebar {\n  background: linear-gradient(180deg, #0D2857 0%, #1A3F7A 100%);\n}\n.student-layout .role-badge.student {\n  background: rgba(133, 183, 235, 0.15);\n  color: #85B7EB;\n  border: 1px solid rgba(133, 183, 235, 0.3);\n  padding: 0.3rem 1rem;\n  border-radius: 20px;\n  font-size: 0.75rem;\n  font-weight: 600;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n}\n.student-layout .nav-item.active {\n  background: rgba(255, 255, 255, 0.1) !important;\n  border-left-color: #378ADD !important;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "@keyframes slideIn {\n  from {\n    transform: translateX(-100%);\n    opacity: 0;\n  }\n  to {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n.layout {\n  display: flex;\n  height: 100vh;\n  background: #f5f7fa;\n  overflow: hidden;\n  font-family: \"Segoe UI\", \"Roboto\", \"Helvetica Neue\", Arial, sans-serif;\n}\n.layout .sidebar {\n  width: 260px;\n  background: #0D2857;\n  color: white;\n  display: flex;\n  flex-direction: column;\n  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);\n  position: relative;\n  z-index: 100;\n  border-right: 1px solid rgba(255, 255, 255, 0.05);\n}\n.layout .sidebar .logo-section {\n  padding: 1.75rem 1.5rem;\n  background: #0D2857;\n  border-bottom: 2px solid #1E5CAB;\n  text-align: center;\n}\n.layout .sidebar .logo-section .logo-box {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 0.75rem;\n}\n.layout .sidebar .logo-section .logo-box .logo-text {\n  font-size: 1.625rem;\n  font-weight: 700;\n  margin: 0;\n  color: white;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n  text-align: center;\n}\n.layout .sidebar .logo-section .logo-box .logo-icon-wrapper {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 1rem;\n  background: #1E5CAB;\n  border-radius: 50%;\n  border: 3px solid rgba(255, 255, 255, 0.2);\n}\n.layout .sidebar .logo-section .logo-box .logo-icon-wrapper .logo-icon {\n  color: white;\n  width: 40px;\n  height: 40px;\n}\n.layout .sidebar .logo-section .role-badge {\n  display: inline-block;\n  margin-top: 0.75rem;\n  padding: 0.3rem 1rem;\n  border-radius: 20px;\n  font-size: 0.75rem;\n  font-weight: 600;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n}\n.layout .sidebar .logo-section .role-badge.admin {\n  background: rgba(133, 183, 235, 0.15);\n  color: #85B7EB;\n  border: 1px solid rgba(133, 183, 235, 0.3);\n}\n.layout .sidebar .nav-menu {\n  list-style: none;\n  padding: 1.5rem 0;\n  margin: 0;\n  flex: 1;\n  overflow-y: auto;\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar {\n  width: 6px;\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar-track {\n  background: rgba(255, 255, 255, 0.05);\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar-thumb {\n  background: rgba(255, 255, 255, 0.2);\n  border-radius: 3px;\n}\n.layout .sidebar .nav-menu::-webkit-scrollbar-thumb:hover {\n  background: rgba(255, 255, 255, 0.3);\n}\n.layout .sidebar .nav-menu .nav-item {\n  padding: 0.875rem 1.5rem;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  font-weight: 500;\n  font-size: 0.9375rem;\n  margin: 0.25rem 1rem;\n  border-radius: 6px;\n  color: rgba(255, 255, 255, 0.85);\n  transition: all 0.2s ease;\n  border-left: 3px solid transparent;\n}\n.layout .sidebar .nav-menu .nav-item:hover {\n  background: rgba(255, 255, 255, 0.1);\n  color: white;\n  border-left-color: #1E5CAB;\n}\n.layout .sidebar .nav-menu .nav-item.active {\n  background: rgba(255, 255, 255, 0.1);\n  font-weight: 700;\n  color: white;\n  border-left: 4px solid #378ADD;\n  box-shadow: inset 5px 0 10px rgba(0, 0, 0, 0.2);\n}\n.layout .sidebar .sidebar-footer {\n  padding: 1rem 1.5rem;\n  border-top: 1px solid rgba(255, 255, 255, 0.1);\n  font-size: 0.75rem;\n  color: rgba(255, 255, 255, 0.6);\n  text-align: center;\n}\n.layout .main-content {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  position: relative;\n  background: #f5f7fa;\n}\n.layout.sidebar-collapsed .sidebar {\n  width: 80px;\n}\n.layout.sidebar-collapsed .sidebar .logo-text {\n  display: none;\n}\n.layout.sidebar-collapsed .sidebar .nav-label {\n  display: none;\n}\n.layout.sidebar-collapsed .sidebar .logo-icon-wrapper {\n  margin: 0;\n}\n.layout.sidebar-collapsed .sidebar .nav-item {\n  justify-content: center;\n  padding: 1rem;\n  margin: 0.25rem 0.5rem;\n}\n@media (max-width: 1024px) {\n  .layout .sidebar {\n    width: 240px;\n    position: fixed;\n    left: -240px;\n    z-index: 1001;\n  }\n  .layout .sidebar.open {\n    left: 0;\n  }\n  .layout .mobile-menu-btn {\n    display: flex;\n  }\n}\n@media (max-width: 480px) {\n  .layout .sidebar {\n    width: 280px;\n    left: -280px;\n  }\n  .layout .main-content {\n    padding-top: 60px;\n  }\n}\n@media (max-width: 375px) {\n  .layout .sidebar {\n    width: 100%;\n    left: -100%;\n  }\n}\n\n.sidebar-overlay {\n  position: fixed;\n  inset: 0;\n  background: rgba(0, 0, 0, 0.4);\n  z-index: 999;\n}\n\n.mobile-menu-btn {\n  display: none;\n  position: fixed;\n  top: 1rem;\n  left: 1rem;\n  z-index: 998;\n  background: #1A3F7A;\n  border: none;\n  border-radius: 8px;\n  padding: 0.6rem;\n  cursor: pointer;\n  flex-direction: column;\n  gap: 4px;\n}\n.mobile-menu-btn span {\n  display: block;\n  width: 22px;\n  height: 2px;\n  background: white;\n  border-radius: 1px;\n}\n@media (max-width: 768px) {\n  .mobile-menu-btn {\n    display: flex;\n  }\n}\n\n.university-header {\n  background: white;\n  border-bottom: 1px solid #E6F1FB;\n  padding: 1rem 2rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);\n}\n@media (max-width: 640px) {\n  .university-header {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 1rem;\n    padding: 1rem;\n  }\n}\n.university-header .academic-info {\n  display: flex;\n  gap: 1.5rem;\n  align-items: center;\n  font-size: 0.875rem;\n  color: #546e7a;\n}\n@media (max-width: 640px) {\n  .university-header .academic-info {\n    flex-wrap: wrap;\n    gap: 0.75rem;\n  }\n}\n.university-header .academic-info .info-item {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n}\n.university-header .academic-info .info-item .label {\n  font-weight: 600;\n  color: #2c3e50;\n}\n.university-header .academic-info .info-item .value {\n  color: #546e7a;\n}\n\n.student-layout .sidebar {\n  background: linear-gradient(180deg, #0D2857 0%, #1A3F7A 100%);\n}\n.student-layout .role-badge.student {\n  background: rgba(133, 183, 235, 0.15);\n  color: #85B7EB;\n  border: 1px solid rgba(133, 183, 235, 0.3);\n  padding: 0.3rem 1rem;\n  border-radius: 20px;\n  font-size: 0.75rem;\n  font-weight: 600;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n}\n.student-layout .nav-item.active {\n  background: rgba(255, 255, 255, 0.1) !important;\n  border-left-color: #378ADD !important;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -25069,7 +25069,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".register-page {\n  min-height: 100vh;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: radial-gradient(circle at top right, #1A3F7A, #0D2857);\n  padding: 2rem 1rem;\n  font-family: \"Segoe UI\", system-ui, -apple-system, sans-serif;\n}\n.register-page.faculty {\n  background: radial-gradient(circle at top right, #1E5CAB, #0D2857);\n}\n\n.register-card {\n  width: 100%;\n  max-width: 720px;\n  background: rgba(255, 255, 255, 0.9);\n  backdrop-filter: blur(10px);\n  border-radius: 24px;\n  padding: 3rem;\n  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);\n  border: 1px solid rgba(255, 255, 255, 0.3);\n}\n.register-card.success-card {\n  max-width: 480px;\n  text-align: center;\n  padding: 3rem;\n}\n.register-card.success-card .success-icon {\n  color: #22c55e;\n  margin-bottom: 1rem;\n}\n.register-card.success-card h2 {\n  color: #0D2857;\n  margin: 0 0 0.75rem;\n  font-size: 2rem;\n  font-weight: 800;\n}\n.register-card.success-card .success-message {\n  color: #555;\n  margin-bottom: 1.5rem;\n  line-height: 1.6;\n}\n.register-card.success-card .id-display {\n  background: linear-gradient(135deg, #0D2857 0%, #1A3F7A 50%, #1E5CAB 100%);\n  color: #fff;\n  padding: 1.5rem;\n  border-radius: 12px;\n  margin-bottom: 1.5rem;\n}\n.register-card.success-card .id-display .id-label {\n  display: block;\n  font-size: 0.8rem;\n  opacity: 0.8;\n  margin-bottom: 0.25rem;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n}\n.register-card.success-card .id-display .id-value {\n  font-size: 1.5rem;\n  font-weight: 800;\n  letter-spacing: 2px;\n}\n.register-card.success-card .info-text {\n  color: #888;\n  font-size: 0.85rem;\n  margin-bottom: 1.5rem;\n}\n.register-card.success-card .btn-back {\n  display: inline-flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.85rem 2rem;\n  background: #0D2857;\n  color: #fff;\n  border: none;\n  border-radius: 10px;\n  font-weight: 600;\n  cursor: pointer;\n  transition: all 0.3s;\n}\n.register-card.success-card .btn-back:hover {\n  background: #004d99;\n  transform: translateY(-1px);\n}\n\n.register-header {\n  margin-bottom: 2rem;\n}\n.register-header .back-link {\n  display: inline-flex;\n  align-items: center;\n  gap: 0.4rem;\n  background: none;\n  border: none;\n  color: #003366;\n  font-weight: 600;\n  cursor: pointer;\n  font-size: 0.9rem;\n  margin-bottom: 1rem;\n  padding: 0;\n}\n.register-header .back-link:hover {\n  color: #d4af37;\n}\n.register-header .header-brand {\n  display: flex;\n  align-items: center;\n  gap: 1rem;\n}\n.register-header .header-brand .brand-icon {\n  color: #d4af37;\n}\n.register-header .header-brand h1 {\n  font-size: 1.5rem;\n  color: #003366;\n  margin: 0;\n}\n.register-header .header-brand p {\n  color: #888;\n  font-size: 0.85rem;\n  margin: 0.2rem 0 0;\n}\n\n.register-error {\n  background: #fef2f2;\n  color: #dc2626;\n  padding: 0.75rem 1rem;\n  border-radius: 8px;\n  font-size: 0.85rem;\n  margin-bottom: 1.25rem;\n  border-left: 3px solid #dc2626;\n}\n\n.register-form .section-title {\n  font-size: 1.1rem;\n  font-weight: 700;\n  color: #1A3F7A;\n  border-bottom: 2px solid #E6F1FB;\n  padding-bottom: 0.5rem;\n  margin: 1.5rem 0 1rem;\n}\n.register-form .section-title:first-child {\n  margin-top: 0;\n}\n.register-form .form-row {\n  display: grid;\n  gap: 1rem;\n  margin-bottom: 1rem;\n}\n.register-form .form-row.three-col {\n  grid-template-columns: repeat(3, 1fr);\n}\n.register-form .form-row.two-col {\n  grid-template-columns: repeat(2, 1fr);\n}\n@media (max-width: 600px) {\n  .register-form .form-row.three-col, .register-form .form-row.two-col {\n    grid-template-columns: 1fr;\n  }\n}\n.register-form .form-group {\n  margin-bottom: 0.75rem;\n}\n.register-form .form-group label {\n  display: block;\n  font-weight: 600;\n  font-size: 0.8rem;\n  color: #444;\n  margin-bottom: 0.3rem;\n}\n.register-form .form-group input, .register-form .form-group select {\n  width: 100%;\n  padding: 0.65rem 0.85rem;\n  border: 2px solid #e2e8f0;\n  border-radius: 8px;\n  font-size: 0.9rem;\n  transition: all 0.3s;\n  background: #f8fafc;\n  box-sizing: border-box;\n}\n.register-form .form-group input:focus, .register-form .form-group select:focus {\n  outline: none;\n  border-color: #378ADD;\n  background: #fff;\n  box-shadow: 0 0 0 4px rgba(55, 138, 221, 0.1);\n}\n.register-form .form-group input.readonly, .register-form .form-group select.readonly {\n  background: #f0f0f0;\n  color: #888;\n  cursor: not-allowed;\n}\n.register-form .form-group .field-error {\n  display: block;\n  color: #dc2626;\n  font-size: 0.75rem;\n  margin-top: 0.25rem;\n}\n.register-form .form-group .field-hint {\n  display: block;\n  color: #888;\n  font-size: 0.7rem;\n  text-align: right;\n  margin-top: 0.2rem;\n}\n.register-form .password-wrapper {\n  position: relative;\n}\n.register-form .password-wrapper input {\n  padding-right: 2.5rem;\n}\n.register-form .password-wrapper .toggle-pw {\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  background: none;\n  border: none;\n  cursor: pointer;\n  color: #888;\n  padding: 2px;\n}\n.register-form .password-wrapper .toggle-pw:hover {\n  color: #003366;\n}\n\n.register-btn {\n  width: 100%;\n  padding: 1rem;\n  background: linear-gradient(135deg, #0D2857 0%, #1A3F7A 50%, #1E5CAB 100%);\n  color: #fff;\n  border: none;\n  border-radius: 12px;\n  font-size: 1.1rem;\n  font-weight: 800;\n  cursor: pointer;\n  margin-top: 1rem;\n  transition: all 0.3s;\n}\n.register-btn:hover:not(:disabled) {\n  transform: translateY(-1px);\n  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);\n}\n.register-btn:disabled {\n  opacity: 0.7;\n  cursor: not-allowed;\n}\n\n.register-page.faculty .register-btn {\n  background: linear-gradient(135deg, #0d7c66, #0a6b58);\n}\n.register-page.faculty .register-btn:hover:not(:disabled) {\n  box-shadow: 0 4px 12px rgba(13, 124, 102, 0.3);\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".register-page {\n  min-height: 100vh;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: radial-gradient(circle at top right, #1A3F7A, #0D2857);\n  padding: 2rem 1rem;\n  font-family: \"Segoe UI\", system-ui, -apple-system, sans-serif;\n}\n.register-page.faculty {\n  background: radial-gradient(circle at top right, #1E5CAB, #0D2857);\n}\n\n.register-card {\n  width: 100%;\n  max-width: 720px;\n  background: rgba(255, 255, 255, 0.9);\n  backdrop-filter: blur(10px);\n  border-radius: 24px;\n  padding: 3rem;\n  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);\n  border: 1px solid rgba(255, 255, 255, 0.3);\n}\n.register-card.success-card {\n  max-width: 480px;\n  text-align: center;\n  padding: 3rem;\n}\n@media (max-width: 480px) {\n  .register-card.success-card {\n    padding: 1.5rem;\n    border-radius: 16px;\n  }\n  .register-card.success-card h2 {\n    font-size: 1.5rem;\n  }\n}\n.register-card.success-card .success-icon {\n  color: #22c55e;\n  margin-bottom: 1rem;\n}\n.register-card.success-card h2 {\n  color: #0D2857;\n  margin: 0 0 0.75rem;\n  font-size: 2rem;\n  font-weight: 800;\n}\n.register-card.success-card .success-message {\n  color: #555;\n  margin-bottom: 1.5rem;\n  line-height: 1.6;\n}\n.register-card.success-card .id-display {\n  background: linear-gradient(135deg, #0D2857 0%, #1A3F7A 50%, #1E5CAB 100%);\n  color: #fff;\n  padding: 1.5rem;\n  border-radius: 12px;\n  margin-bottom: 1.5rem;\n}\n@media (max-width: 320px) {\n  .register-card.success-card .id-display {\n    padding: 1rem;\n  }\n  .register-card.success-card .id-display .id-value {\n    font-size: 1.25rem !important;\n  }\n}\n.register-card.success-card .id-display .id-label {\n  display: block;\n  font-size: 0.8rem;\n  opacity: 0.8;\n  margin-bottom: 0.25rem;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n}\n.register-card.success-card .id-display .id-value {\n  font-size: 1.5rem;\n  font-weight: 800;\n  letter-spacing: 2px;\n}\n.register-card.success-card .info-text {\n  color: #888;\n  font-size: 0.85rem;\n  margin-bottom: 1.5rem;\n}\n.register-card.success-card .btn-back {\n  display: inline-flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.85rem 2rem;\n  background: #0D2857;\n  color: #fff;\n  border: none;\n  border-radius: 10px;\n  font-weight: 600;\n  cursor: pointer;\n  transition: all 0.3s;\n}\n@media (max-width: 480px) {\n  .register-card.success-card .btn-back {\n    width: 100%;\n    justify-content: center;\n  }\n}\n.register-card.success-card .btn-back:hover {\n  background: #004d99;\n  transform: translateY(-1px);\n}\n\n@media (max-width: 480px) {\n  .register-card {\n    padding: 1.5rem;\n    border-radius: 16px;\n  }\n  .register-header .header-brand {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 0.5rem;\n  }\n  .register-header .header-brand h1 {\n    font-size: 1.25rem;\n  }\n}\n.register-header {\n  margin-bottom: 2rem;\n}\n.register-header .back-link {\n  display: inline-flex;\n  align-items: center;\n  gap: 0.4rem;\n  background: none;\n  border: none;\n  color: #003366;\n  font-weight: 600;\n  cursor: pointer;\n  font-size: 0.9rem;\n  margin-bottom: 1rem;\n  padding: 0;\n}\n.register-header .back-link:hover {\n  color: #d4af37;\n}\n.register-header .header-brand {\n  display: flex;\n  align-items: center;\n  gap: 1rem;\n}\n.register-header .header-brand .brand-icon {\n  color: #d4af37;\n}\n.register-header .header-brand h1 {\n  font-size: 1.5rem;\n  color: #003366;\n  margin: 0;\n}\n.register-header .header-brand p {\n  color: #888;\n  font-size: 0.85rem;\n  margin: 0.2rem 0 0;\n}\n\n.register-error {\n  background: #fef2f2;\n  color: #dc2626;\n  padding: 0.75rem 1rem;\n  border-radius: 8px;\n  font-size: 0.85rem;\n  margin-bottom: 1.25rem;\n  border-left: 3px solid #dc2626;\n}\n\n.register-form .section-title {\n  font-size: 1.1rem;\n  font-weight: 700;\n  color: #1A3F7A;\n  border-bottom: 2px solid #E6F1FB;\n  padding-bottom: 0.5rem;\n  margin: 1.5rem 0 1rem;\n}\n.register-form .section-title:first-child {\n  margin-top: 0;\n}\n.register-form .form-row {\n  display: grid;\n  gap: 1rem;\n  margin-bottom: 1rem;\n}\n.register-form .form-row.three-col {\n  grid-template-columns: repeat(3, 1fr);\n}\n.register-form .form-row.two-col {\n  grid-template-columns: repeat(2, 1fr);\n}\n@media (max-width: 600px) {\n  .register-form .form-row.three-col, .register-form .form-row.two-col {\n    grid-template-columns: 1fr;\n  }\n}\n.register-form .form-group {\n  margin-bottom: 0.75rem;\n}\n.register-form .form-group label {\n  display: block;\n  font-weight: 600;\n  font-size: 0.8rem;\n  color: #444;\n  margin-bottom: 0.3rem;\n}\n.register-form .form-group input, .register-form .form-group select {\n  width: 100%;\n  padding: 0.65rem 0.85rem;\n  border: 2px solid #e2e8f0;\n  border-radius: 8px;\n  font-size: 0.9rem;\n  transition: all 0.3s;\n  background: #f8fafc;\n  box-sizing: border-box;\n}\n.register-form .form-group input:focus, .register-form .form-group select:focus {\n  outline: none;\n  border-color: #378ADD;\n  background: #fff;\n  box-shadow: 0 0 0 4px rgba(55, 138, 221, 0.1);\n}\n.register-form .form-group input.readonly, .register-form .form-group select.readonly {\n  background: #f0f0f0;\n  color: #888;\n  cursor: not-allowed;\n}\n.register-form .form-group .field-error {\n  display: block;\n  color: #dc2626;\n  font-size: 0.75rem;\n  margin-top: 0.25rem;\n}\n.register-form .form-group .field-hint {\n  display: block;\n  color: #888;\n  font-size: 0.7rem;\n  text-align: right;\n  margin-top: 0.2rem;\n}\n.register-form .password-wrapper {\n  position: relative;\n}\n.register-form .password-wrapper input {\n  padding-right: 2.5rem;\n}\n.register-form .password-wrapper .toggle-pw {\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  background: none;\n  border: none;\n  cursor: pointer;\n  color: #888;\n  padding: 2px;\n}\n.register-form .password-wrapper .toggle-pw:hover {\n  color: #003366;\n}\n\n.register-btn {\n  width: 100%;\n  padding: 1rem;\n  background: linear-gradient(135deg, #0D2857 0%, #1A3F7A 50%, #1E5CAB 100%);\n  color: #fff;\n  border: none;\n  border-radius: 12px;\n  font-size: 1.1rem;\n  font-weight: 800;\n  cursor: pointer;\n  margin-top: 1rem;\n  transition: all 0.3s;\n}\n.register-btn:hover:not(:disabled) {\n  transform: translateY(-1px);\n  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);\n}\n.register-btn:disabled {\n  opacity: 0.7;\n  cursor: not-allowed;\n}\n\n.register-page.faculty .register-btn {\n  background: linear-gradient(135deg, #0d7c66, #0a6b58);\n}\n.register-page.faculty .register-btn:hover:not(:disabled) {\n  box-shadow: 0 4px 12px rgba(13, 124, 102, 0.3);\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -25118,6 +25118,30 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, ".faculty-container {\n  padding: 0;\n  background: #E6F1FB;\n  min-height: 100vh;\n  font-family: \"Inter\", sans-serif;\n}\n.faculty-container .modal-overlay {\n  position: fixed;\n  inset: 0;\n  background: rgba(0, 0, 0, 0.5);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding-left: 10%;\n  z-index: 1000;\n}\n.faculty-container .modal-overlay .modal-content {\n  background: white;\n  border-radius: 12px;\n  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);\n  width: 100%;\n  max-width: 900px;\n  max-height: 90vh;\n  overflow-y: auto;\n  padding: 2.5rem;\n}\n.faculty-container .modal-overlay .modal-content .modal-title {\n  font-size: 1.5rem;\n  font-weight: 600;\n  color: #1f2937;\n  margin-bottom: 1.5rem;\n}\n.faculty-container .modal-overlay .modal-content .modal-form .form-row {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 1rem;\n  margin-bottom: 1rem;\n}\n@media (max-width: 640px) {\n  .faculty-container .modal-overlay .modal-content .modal-form .form-row {\n    grid-template-columns: 1fr;\n  }\n}\n.faculty-container .modal-overlay .modal-content .modal-form .form-group {\n  margin-bottom: 1rem;\n}\n.faculty-container .modal-overlay .modal-content .modal-form .form-group label {\n  display: block;\n  font-size: 0.875rem;\n  font-weight: 500;\n  color: #374151;\n  margin-bottom: 0.5rem;\n}\n.faculty-container .modal-overlay .modal-content .modal-form .form-group input,\n.faculty-container .modal-overlay .modal-content .modal-form .form-group select {\n  width: 100%;\n  padding: 0.75rem;\n  border: 1px solid #d1d5db;\n  border-radius: 8px;\n  font-size: 0.875rem;\n  outline: none;\n  transition: border-color 0.2s;\n}\n.faculty-container .modal-overlay .modal-content .modal-form .form-group input:focus,\n.faculty-container .modal-overlay .modal-content .modal-form .form-group select:focus {\n  border-color: #3b82f6;\n  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);\n}\n.faculty-container .modal-overlay .modal-content .modal-form .form-group input::-moz-placeholder, .faculty-container .modal-overlay .modal-content .modal-form .form-group select::-moz-placeholder {\n  color: #9ca3af;\n}\n.faculty-container .modal-overlay .modal-content .modal-form .form-group input::placeholder,\n.faculty-container .modal-overlay .modal-content .modal-form .form-group select::placeholder {\n  color: #9ca3af;\n}\n.faculty-container .modal-overlay .modal-content .modal-form .form-group select {\n  cursor: pointer;\n  background: white;\n}\n.faculty-container .modal-overlay .modal-content .modal-form .modal-actions {\n  display: flex;\n  justify-content: flex-end;\n  gap: 0.75rem;\n  margin-top: 2rem;\n  padding-top: 1.5rem;\n  border-top: 1px solid #e5e7eb;\n}\n.faculty-container .modal-overlay .modal-content .modal-form .modal-actions button {\n  padding: 0.625rem 1.5rem;\n  border-radius: 8px;\n  font-size: 0.875rem;\n  font-weight: 500;\n  cursor: pointer;\n  transition: all 0.2s;\n  border: none;\n}\n.faculty-container .modal-overlay .modal-content .modal-form .modal-actions button.btn-cancel {\n  background: #f3f4f6;\n  color: #374151;\n}\n.faculty-container .modal-overlay .modal-content .modal-form .modal-actions button.btn-cancel:hover {\n  background: #e5e7eb;\n}\n.faculty-container .modal-overlay .modal-content .modal-form .modal-actions button.btn-submit {\n  background: #3b82f6;\n  color: white;\n}\n.faculty-container .modal-overlay .modal-content .modal-form .modal-actions button.btn-submit:hover {\n  background: #2563eb;\n}\n.faculty-container .faculty-header {\n  margin-bottom: 2rem;\n  padding: 1.5rem 2rem;\n  background: white;\n  border-bottom: 1px solid #E6F1FB;\n}\n@media (max-width: 768px) {\n  .faculty-container .faculty-header {\n    padding: 1rem;\n  }\n}\n.faculty-container .faculty-header .header-content h2 {\n  font-size: 2rem;\n  font-weight: 800;\n  color: #0D2857;\n  margin-bottom: 0.25rem;\n}\n@media (max-width: 768px) {\n  .faculty-container .faculty-header .header-content h2 {\n    font-size: 1.5rem;\n  }\n}\n.faculty-container .faculty-header .header-content .subtitle {\n  font-size: 0.875rem;\n  color: #6b7280;\n  margin: 0;\n}\n.faculty-container .faculty-controls {\n  display: flex;\n  align-items: center;\n  gap: 1rem;\n  margin-bottom: 2rem;\n  padding: 1.5rem;\n  background: white;\n  border-radius: 12px;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);\n}\n@media (max-width: 640px) {\n  .faculty-container .faculty-controls {\n    flex-direction: column;\n    align-items: stretch;\n    padding: 1rem;\n    gap: 0.75rem;\n  }\n}\n.faculty-container .faculty-controls .btn-add {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  background: linear-gradient(135deg, #0D2857 0%, #1A3F7A 50%, #1E5CAB 100%);\n  color: white;\n  padding: 0.75rem 1.5rem;\n  border: none;\n  border-radius: 12px;\n  font-size: 0.875rem;\n  font-weight: 500;\n  cursor: pointer;\n  transition: background 0.2s;\n}\n.faculty-container .faculty-controls .btn-add:hover {\n  background: #2563eb;\n}\n@media (max-width: 640px) {\n  .faculty-container .faculty-controls .btn-add {\n    justify-content: center;\n  }\n}\n.faculty-container .faculty-controls .search-box {\n  flex: 1;\n  position: relative;\n  max-width: 300px;\n}\n@media (max-width: 640px) {\n  .faculty-container .faculty-controls .search-box {\n    max-width: 100%;\n  }\n}\n.faculty-container .faculty-controls .search-box .search-icon {\n  position: absolute;\n  left: 0.75rem;\n  top: 50%;\n  transform: translateY(-50%);\n  color: #9ca3af;\n}\n.faculty-container .faculty-controls .search-box input {\n  width: 100%;\n  padding: 0.625rem 0.75rem 0.625rem 2.5rem;\n  border: 1px solid #e5e7eb;\n  border-radius: 8px;\n  font-size: 0.875rem;\n  outline: none;\n  transition: border-color 0.2s;\n}\n.faculty-container .faculty-controls .search-box input:focus {\n  border-color: #3b82f6;\n}\n.faculty-container .faculty-controls .search-box input::-moz-placeholder {\n  color: #9ca3af;\n}\n.faculty-container .faculty-controls .search-box input::placeholder {\n  color: #9ca3af;\n}\n.faculty-container .faculty-controls .department-filter {\n  padding: 0.625rem 1rem;\n  border: 1px solid #e5e7eb;\n  border-radius: 8px;\n  font-size: 0.875rem;\n  background: white;\n  cursor: pointer;\n  outline: none;\n  transition: border-color 0.2s;\n}\n.faculty-container .faculty-controls .department-filter:focus {\n  border-color: #3b82f6;\n}\n.faculty-container .faculty-table-section {\n  background: white;\n  border-radius: 12px;\n  padding: 1.5rem;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);\n}\n.faculty-container .faculty-table-section .table-title {\n  font-size: 1.125rem;\n  font-weight: 600;\n  color: #1f2937;\n  margin-bottom: 1.5rem;\n}\n.faculty-container .faculty-table-section .table-wrapper {\n  overflow-x: auto;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table {\n  width: 100%;\n  border-collapse: collapse;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table thead tr {\n  border-bottom: 2px solid #f3f4f6;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table thead tr th {\n  text-align: left;\n  padding: 0.875rem 1rem;\n  font-size: 0.875rem;\n  font-weight: 600;\n  color: #6b7280;\n  text-transform: capitalize;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr {\n  border-bottom: 1px solid #f3f4f6;\n  transition: background-color 0.2s, opacity 0.2s;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr:hover {\n  background-color: #f9fafb;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr.archived-row {\n  opacity: 0.4;\n  background: #f9fafb;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr.archived-row td {\n  color: #9ca3af;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr.archived-row:hover {\n  background: #f3f4f6;\n  opacity: 0.5;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr td {\n  padding: 1rem;\n  font-size: 0.875rem;\n  color: #1f2937;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr td .status-badge {\n  display: inline-block;\n  padding: 0.25rem 0.75rem;\n  border-radius: 12px;\n  font-size: 0.75rem;\n  font-weight: 500;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr td .status-badge.active {\n  background: #d1fae5;\n  color: #065f46;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr td .status-badge.inactive {\n  background: #fee2e2;\n  color: #991b1b;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr td .status-badge.archived {\n  background: #e5e7eb;\n  color: #6b7280;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr td .action-buttons {\n  display: flex;\n  gap: 0.5rem;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr td .action-buttons .btn-icon {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 32px;\n  height: 32px;\n  border: 1px solid #e5e7eb;\n  border-radius: 6px;\n  background: white;\n  cursor: pointer;\n  transition: all 0.2s;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr td .action-buttons .btn-icon:disabled {\n  opacity: 0.3;\n  cursor: not-allowed;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr td .action-buttons .btn-icon:hover:not(:disabled) {\n  background: #f9fafb;\n  border-color: #d1d5db;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr td .action-buttons .btn-icon.btn-edit {\n  color: #3b82f6;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr td .action-buttons .btn-icon.btn-edit:hover:not(:disabled) {\n  background: #eff6ff;\n  border-color: #3b82f6;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr td .action-buttons .btn-icon.btn-archive {\n  color: #ef4444;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr td .action-buttons .btn-icon.btn-archive:hover {\n  background: #fef2f2;\n  border-color: #ef4444;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr td .action-buttons .btn-icon.btn-restore {\n  color: #10b981;\n}\n.faculty-container .faculty-table-section .table-wrapper .faculty-table tbody tr td .action-buttons .btn-icon.btn-restore:hover {\n  background: #f0fdf4;\n  border-color: #10b981;\n}\n\n.section-heading {\n  margin-top: 1.5rem;\n  color: #1A3F7A;\n  border-bottom: 2px solid #378ADD;\n  padding-bottom: 0.5rem;\n  font-size: 1rem;\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n}\n.section-heading .readonly-tag {\n  font-size: 0.7rem;\n  background: #fef3cd;\n  color: #856404;\n  padding: 0.15rem 0.5rem;\n  border-radius: 4px;\n  font-weight: 500;\n}\n.section-heading .editable-tag {\n  font-size: 0.7rem;\n  background: #d1fae5;\n  color: #065f46;\n  padding: 0.15rem 0.5rem;\n  border-radius: 4px;\n  font-weight: 500;\n}\n\n.readonly {\n  background: #f5f5f5 !important;\n  color: #888 !important;\n  cursor: not-allowed !important;\n}\n\n.btn-activate {\n  display: inline-flex;\n  align-items: center;\n  gap: 0.4rem;\n  padding: 0.55rem 1.25rem;\n  background: linear-gradient(135deg, #22c55e, #16a34a);\n  color: white;\n  border: none;\n  border-radius: 8px;\n  font-weight: 600;\n  cursor: pointer;\n  transition: all 0.3s;\n  font-size: 0.85rem;\n}\n.btn-activate:hover {\n  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);\n  transform: translateY(-1px);\n}\n\n.btn-activate-sm {\n  color: #22c55e !important;\n  border-color: #22c55e !important;\n}\n.btn-activate-sm:hover {\n  background: #f0fdf4 !important;\n  border-color: #16a34a !important;\n}\n\n.btn-archive-action {\n  padding: 0.55rem 1.25rem;\n  background: #f59e0b;\n  color: white;\n  border: none;\n  border-radius: 8px;\n  font-weight: 600;\n  cursor: pointer;\n  transition: all 0.3s;\n  font-size: 0.85rem;\n}\n.btn-archive-action:hover {\n  background: #d97706;\n}\n\n.status-badge.pending {\n  background: #fef3cd;\n  color: #856404;\n}\n\n.form-row {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));\n  gap: 1rem;\n  margin-bottom: 1rem;\n}\n@media (max-width: 640px) {\n  .form-row {\n    grid-template-columns: 1fr;\n  }\n}", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[3]!./resources/sass/top-navbar.scss":
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[3]!./resources/sass/top-navbar.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".top-navbar {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 1rem 2rem;\n  background-color: var(--card-bg, #ffffff);\n  border-bottom: 1px solid var(--border-color, #e2e8f0);\n  margin-bottom: 1.5rem;\n  position: sticky;\n  top: 0;\n  z-index: 100;\n}\n.top-navbar .navbar-left {\n  display: flex;\n  align-items: center;\n}\n.top-navbar .navbar-left .mobile-menu-btn {\n  display: none;\n  background: none;\n  border: none;\n  cursor: pointer;\n  color: var(--text-color, #1e293b);\n  padding: 0.5rem;\n  border-radius: 6px;\n}\n.top-navbar .navbar-left .mobile-menu-btn:hover {\n  background: var(--hover-bg, #f1f5f9);\n}\n@media (max-width: 1024px) {\n  .top-navbar .navbar-left .mobile-menu-btn {\n    display: block;\n  }\n}\n.top-navbar .navbar-right {\n  display: flex;\n  align-items: center;\n  gap: 1.5rem;\n}\n.top-navbar .navbar-right .icon-btn {\n  background: none;\n  border: none;\n  cursor: pointer;\n  color: var(--text-muted, #64748b);\n  padding: 0.5rem;\n  border-radius: 50%;\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  transition: all 0.2s ease;\n}\n.top-navbar .navbar-right .icon-btn:hover {\n  background-color: var(--hover-bg, #f1f5f9);\n  color: var(--primary-color, #1e3a8a);\n}\n.top-navbar .navbar-right .icon-btn .badge {\n  position: absolute;\n  top: 2px;\n  right: 2px;\n  background: #ef4444;\n  color: white;\n  font-size: 0.65rem;\n  font-weight: bold;\n  width: 16px;\n  height: 16px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border-radius: 50%;\n  border: 2px solid var(--card-bg, #ffffff);\n}\n.top-navbar .navbar-right .notification-wrapper {\n  position: relative;\n}\n.top-navbar .navbar-right .notification-wrapper .notification-dropdown {\n  position: absolute;\n  top: 100%;\n  right: -10px;\n  width: 320px;\n  background: var(--card-bg, #ffffff);\n  border: 1px solid var(--border-color, #e2e8f0);\n  border-radius: 12px;\n  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);\n  margin-top: 10px;\n  z-index: 1000;\n  overflow: hidden;\n}\n@media (max-width: 480px) {\n  .top-navbar .navbar-right .notification-wrapper .notification-dropdown {\n    right: -50px;\n    width: 300px;\n  }\n}\n@media (max-width: 320px) {\n  .top-navbar .navbar-right .notification-wrapper .notification-dropdown {\n    right: -80px;\n    width: 280px;\n  }\n}\n.top-navbar .navbar-right .notification-wrapper .notification-dropdown .dropdown-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 1rem;\n  border-bottom: 1px solid var(--border-color, #e2e8f0);\n}\n.top-navbar .navbar-right .notification-wrapper .notification-dropdown .dropdown-header h4 {\n  margin: 0;\n  font-size: 1rem;\n  color: var(--text-color, #1e293b);\n}\n.top-navbar .navbar-right .notification-wrapper .notification-dropdown .dropdown-header .mark-read {\n  background: none;\n  border: none;\n  color: var(--primary-color, #3b82f6);\n  font-size: 0.8rem;\n  cursor: pointer;\n  padding: 0;\n}\n.top-navbar .navbar-right .notification-wrapper .notification-dropdown .dropdown-header .mark-read:hover {\n  text-decoration: underline;\n}\n.top-navbar .navbar-right .notification-wrapper .notification-dropdown .dropdown-list {\n  max-height: 300px;\n  overflow-y: auto;\n}\n.top-navbar .navbar-right .notification-wrapper .notification-dropdown .dropdown-list .notification-item {\n  padding: 1rem;\n  border-bottom: 1px solid var(--border-color, #e2e8f0);\n  cursor: pointer;\n  transition: background 0.2s;\n}\n.top-navbar .navbar-right .notification-wrapper .notification-dropdown .dropdown-list .notification-item:last-child {\n  border-bottom: none;\n}\n.top-navbar .navbar-right .notification-wrapper .notification-dropdown .dropdown-list .notification-item:hover {\n  background: var(--hover-bg, #f8fafc);\n}\n.top-navbar .navbar-right .notification-wrapper .notification-dropdown .dropdown-list .notification-item p {\n  margin: 0 0 0.25rem 0;\n  font-size: 0.9rem;\n  color: var(--text-color, #334155);\n  font-weight: 500;\n}\n.top-navbar .navbar-right .notification-wrapper .notification-dropdown .dropdown-list .notification-item span {\n  font-size: 0.75rem;\n  color: var(--text-muted, #94a3b8);\n}\n.top-navbar .navbar-right .profile-wrapper {\n  position: relative;\n  display: flex;\n  align-items: center;\n}\n.top-navbar .navbar-right .profile-wrapper .nav-profile {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  cursor: pointer;\n  padding: 0.5rem 1rem;\n  border-radius: 50px;\n  transition: all 0.2s ease;\n  border: 1px solid transparent;\n}\n.top-navbar .navbar-right .profile-wrapper .nav-profile:hover {\n  background-color: var(--hover-bg, #f8fafc);\n  border-color: var(--border-color, #e2e8f0);\n}\n.top-navbar .navbar-right .profile-wrapper .nav-profile .avatar-mini {\n  width: 38px;\n  height: 38px;\n  border-radius: 50%;\n  overflow: hidden;\n  border: 2px solid var(--border-color, #e2e8f0);\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);\n}\n.top-navbar .navbar-right .profile-wrapper .nav-profile .avatar-mini img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.top-navbar .navbar-right .profile-wrapper .nav-profile .avatar-mini .avatar-placeholder {\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);\n  color: white;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n  font-size: 1.1rem;\n}\n.top-navbar .navbar-right .profile-wrapper .nav-profile .profile-info-mini {\n  display: flex;\n  flex-direction: column;\n}\n@media (max-width: 640px) {\n  .top-navbar .navbar-right .profile-wrapper .nav-profile .profile-info-mini {\n    display: none;\n  }\n}\n.top-navbar .navbar-right .profile-wrapper .nav-profile .profile-info-mini .nav-username {\n  font-weight: 700;\n  font-size: 0.85rem;\n  color: var(--text-color, #1e293b);\n  line-height: 1.2;\n}\n.top-navbar .navbar-right .profile-wrapper .nav-profile .profile-info-mini .nav-role {\n  font-size: 0.7rem;\n  color: var(--text-muted, #64748b);\n  font-weight: 500;\n}\n.top-navbar .navbar-right .profile-wrapper .nav-profile .chevron {\n  color: var(--text-muted, #94a3b8);\n  transition: transform 0.3s ease;\n}\n@media (max-width: 640px) {\n  .top-navbar .navbar-right .profile-wrapper .nav-profile .chevron {\n    display: none;\n  }\n}\n.top-navbar .navbar-right .profile-wrapper .nav-profile .chevron.rotate {\n  transform: rotate(180deg);\n}\n.top-navbar .navbar-right .profile-wrapper .profile-dropdown {\n  position: absolute;\n  top: 100%;\n  right: 0;\n  width: 240px;\n  background: var(--card-bg, #ffffff);\n  border: 1px solid var(--border-color, #e2e8f0);\n  border-radius: 12px;\n  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);\n  margin-top: 10px;\n  z-index: 1000;\n  overflow: hidden;\n  animation: dropdownSlideIn 0.2s ease-out;\n}\n@media (max-width: 480px) {\n  .top-navbar .navbar-right .profile-wrapper .profile-dropdown {\n    width: 280px;\n    right: -10px;\n  }\n}\n@keyframes dropdownSlideIn {\n  from {\n    opacity: 0;\n    transform: translateY(-10px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.top-navbar .navbar-right .profile-wrapper .profile-dropdown .dropdown-user-info {\n  padding: 1.25rem 1rem;\n  background: var(--hover-bg, #f8fafc);\n  border-bottom: 1px solid var(--border-color, #e2e8f0);\n}\n.top-navbar .navbar-right .profile-wrapper .profile-dropdown .dropdown-user-info .user-name {\n  margin: 0;\n  font-size: 0.95rem;\n  font-weight: 700;\n  color: var(--text-color, #1e293b);\n}\n.top-navbar .navbar-right .profile-wrapper .profile-dropdown .dropdown-user-info .user-email {\n  margin: 0.25rem 0 0 0;\n  font-size: 0.75rem;\n  color: var(--text-muted, #64748b);\n  word-break: break-all;\n}\n.top-navbar .navbar-right .profile-wrapper .profile-dropdown .dropdown-actions {\n  padding: 0.5rem;\n}\n.top-navbar .navbar-right .profile-wrapper .profile-dropdown .dropdown-actions .dropdown-item {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  padding: 0.75rem 0.75rem;\n  border-radius: 8px;\n  border: none;\n  background: none;\n  font-size: 0.85rem;\n  font-weight: 500;\n  color: var(--text-color, #334155);\n  cursor: pointer;\n  transition: all 0.2s;\n}\n.top-navbar .navbar-right .profile-wrapper .profile-dropdown .dropdown-actions .dropdown-item:hover {\n  background-color: var(--hover-bg, #f1f5f9);\n  color: var(--primary-color, #3b82f6);\n}\n.top-navbar .navbar-right .profile-wrapper .profile-dropdown .dropdown-actions .dropdown-item.logout {\n  color: #ef4444;\n}\n.top-navbar .navbar-right .profile-wrapper .profile-dropdown .dropdown-actions .dropdown-item.logout:hover {\n  background-color: #fef2f2;\n  color: #dc2626;\n}\n.top-navbar .navbar-right .profile-wrapper .profile-dropdown .dropdown-actions .dropdown-item svg {\n  flex-shrink: 0;\n}\n.top-navbar .navbar-right .profile-wrapper .profile-dropdown .dropdown-actions .dropdown-divider {\n  height: 1px;\n  background: var(--border-color, #e2e8f0);\n  margin: 0.5rem;\n}\n\n[data-theme=dark] {\n  --card-bg: #1e293b;\n  --bg-color: #0f172a;\n  --text-color: #f8fafc;\n  --text-muted: #94a3b8;\n  --border-color: #334155;\n  --hover-bg: #334155;\n  --primary-color: #60a5fa;\n}\n[data-theme=dark] body {\n  background-color: var(--bg-color);\n  color: var(--text-color);\n}\n[data-theme=dark] .main-content {\n  background-color: var(--bg-color, #0f172a);\n}\n[data-theme=dark] .stat-card, [data-theme=dark] .info-card, [data-theme=dark] .chart-box, [data-theme=dark] .activity-section, [data-theme=dark] .subject-card {\n  background-color: var(--card-bg, #1e293b);\n  border-color: var(--border-color, #334155);\n  color: var(--text-color, #f8fafc);\n}\n[data-theme=dark] .stat-card h3, [data-theme=dark] .stat-card h4, [data-theme=dark] .stat-card p, [data-theme=dark] .stat-card span, [data-theme=dark] .info-card h3, [data-theme=dark] .info-card h4, [data-theme=dark] .info-card p, [data-theme=dark] .info-card span, [data-theme=dark] .chart-box h3, [data-theme=dark] .chart-box h4, [data-theme=dark] .chart-box p, [data-theme=dark] .chart-box span, [data-theme=dark] .activity-section h3, [data-theme=dark] .activity-section h4, [data-theme=dark] .activity-section p, [data-theme=dark] .activity-section span, [data-theme=dark] .subject-card h3, [data-theme=dark] .subject-card h4, [data-theme=dark] .subject-card p, [data-theme=dark] .subject-card span {\n  color: var(--text-color, #f8fafc);\n}\n[data-theme=dark] .stat-card .chart-subtitle, [data-theme=dark] .stat-card .stat-label, [data-theme=dark] .stat-card .activity-time, [data-theme=dark] .info-card .chart-subtitle, [data-theme=dark] .info-card .stat-label, [data-theme=dark] .info-card .activity-time, [data-theme=dark] .chart-box .chart-subtitle, [data-theme=dark] .chart-box .stat-label, [data-theme=dark] .chart-box .activity-time, [data-theme=dark] .activity-section .chart-subtitle, [data-theme=dark] .activity-section .stat-label, [data-theme=dark] .activity-section .activity-time, [data-theme=dark] .subject-card .chart-subtitle, [data-theme=dark] .subject-card .stat-label, [data-theme=dark] .subject-card .activity-time {\n  color: var(--text-muted, #94a3b8);\n}\n[data-theme=dark] .sidebar {\n  background-color: var(--card-bg, #1e293b);\n  border-color: var(--border-color, #334155);\n}\n[data-theme=dark] .sidebar .logo-text, [data-theme=dark] .sidebar .nav-item span {\n  color: var(--text-color, #f8fafc);\n}\n[data-theme=dark] .sidebar .nav-item {\n  color: var(--text-muted, #94a3b8);\n}\n[data-theme=dark] .sidebar .nav-item:hover {\n  background-color: var(--hover-bg, #334155);\n  color: var(--text-color, #f8fafc);\n}\n[data-theme=dark] .sidebar .nav-item.active {\n  background-color: var(--hover-bg, #334155);\n}\n[data-theme=dark] input, [data-theme=dark] select, [data-theme=dark] textarea {\n  background-color: var(--bg-color);\n  color: var(--text-color);\n  border-color: var(--border-color);\n}\n[data-theme=dark] input:focus, [data-theme=dark] select:focus, [data-theme=dark] textarea:focus {\n  border-color: var(--primary-color);\n}\n[data-theme=dark] table th {\n  background-color: var(--hover-bg);\n  color: var(--text-color);\n}\n[data-theme=dark] table td {\n  color: var(--text-color);\n  border-color: var(--border-color);\n}\n[data-theme=dark] table tr:hover td {\n  background-color: var(--hover-bg);\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -42560,6 +42584,45 @@ var defaultAttributes = {
 
 /***/ }),
 
+/***/ "./node_modules/lucide-react/dist/esm/icons/activity.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/activity.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ Activity)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  [
+    "path",
+    {
+      d: "M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2",
+      key: "169zse"
+    }
+  ]
+];
+const Activity = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("activity", __iconNode);
+
+
+//# sourceMappingURL=activity.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-react/dist/esm/icons/archive-restore.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/lucide-react/dist/esm/icons/archive-restore.js ***!
@@ -42666,6 +42729,46 @@ const ArrowLeft = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"
 
 /***/ }),
 
+/***/ "./node_modules/lucide-react/dist/esm/icons/bell.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/bell.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ Bell)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["path", { d: "M10.268 21a2 2 0 0 0 3.464 0", key: "vwvbt9" }],
+  [
+    "path",
+    {
+      d: "M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326",
+      key: "11g9vi"
+    }
+  ]
+];
+const Bell = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("bell", __iconNode);
+
+
+//# sourceMappingURL=bell.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-react/dist/esm/icons/book-open.js":
 /*!***************************************************************!*\
   !*** ./node_modules/lucide-react/dist/esm/icons/book-open.js ***!
@@ -42706,40 +42809,6 @@ const BookOpen = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"]
 
 /***/ }),
 
-/***/ "./node_modules/lucide-react/dist/esm/icons/briefcase.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/lucide-react/dist/esm/icons/briefcase.js ***!
-  \***************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
-/* harmony export */   "default": () => (/* binding */ Briefcase)
-/* harmony export */ });
-/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
-/**
- * @license lucide-react v0.544.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-
-
-
-const __iconNode = [
-  ["path", { d: "M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16", key: "jecpp" }],
-  ["rect", { width: "20", height: "14", x: "2", y: "6", rx: "2", key: "i6l2r4" }]
-];
-const Briefcase = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("briefcase", __iconNode);
-
-
-//# sourceMappingURL=briefcase.js.map
-
-
-/***/ }),
-
 /***/ "./node_modules/lucide-react/dist/esm/icons/building-2.js":
 /*!****************************************************************!*\
   !*** ./node_modules/lucide-react/dist/esm/icons/building-2.js ***!
@@ -42775,6 +42844,42 @@ const Building2 = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"
 
 
 //# sourceMappingURL=building-2.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-react/dist/esm/icons/calendar.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/calendar.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ Calendar)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["path", { d: "M8 2v4", key: "1cmpym" }],
+  ["path", { d: "M16 2v4", key: "4m81vk" }],
+  ["rect", { width: "18", height: "18", x: "3", y: "4", rx: "2", key: "1hopcy" }],
+  ["path", { d: "M3 10h18", key: "8toen8" }]
+];
+const Calendar = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("calendar", __iconNode);
+
+
+//# sourceMappingURL=calendar.js.map
 
 
 /***/ }),
@@ -42855,6 +42960,46 @@ const ChartColumn = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["defaul
 
 /***/ }),
 
+/***/ "./node_modules/lucide-react/dist/esm/icons/chart-pie.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/chart-pie.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ ChartPie)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  [
+    "path",
+    {
+      d: "M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z",
+      key: "pzmjnu"
+    }
+  ],
+  ["path", { d: "M21.21 15.89A10 10 0 1 1 8 2.83", key: "k2fpak" }]
+];
+const ChartPie = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("chart-pie", __iconNode);
+
+
+//# sourceMappingURL=chart-pie.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-react/dist/esm/icons/check.js":
 /*!***********************************************************!*\
   !*** ./node_modules/lucide-react/dist/esm/icons/check.js ***!
@@ -42882,6 +43027,68 @@ const Check = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("
 
 
 //# sourceMappingURL=check.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-react/dist/esm/icons/chevron-down.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/chevron-down.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ ChevronDown)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
+const ChevronDown = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("chevron-down", __iconNode);
+
+
+//# sourceMappingURL=chevron-down.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-react/dist/esm/icons/chevron-right.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/chevron-right.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ ChevronRight)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
+const ChevronRight = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("chevron-right", __iconNode);
+
+
+//# sourceMappingURL=chevron-right.js.map
 
 
 /***/ }),
@@ -43225,6 +43432,41 @@ const Info = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("i
 
 /***/ }),
 
+/***/ "./node_modules/lucide-react/dist/esm/icons/key.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/key.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ Key)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["path", { d: "m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4", key: "g0fldk" }],
+  ["path", { d: "m21 2-9.6 9.6", key: "1j0ho8" }],
+  ["circle", { cx: "7.5", cy: "15.5", r: "5.5", key: "yqb3hr" }]
+];
+const Key = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("key", __iconNode);
+
+
+//# sourceMappingURL=key.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-react/dist/esm/icons/layout-dashboard.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/lucide-react/dist/esm/icons/layout-dashboard.js ***!
@@ -43257,6 +43499,43 @@ const LayoutDashboard = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["de
 
 
 //# sourceMappingURL=layout-dashboard.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-react/dist/esm/icons/list-checks.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/list-checks.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ ListChecks)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["path", { d: "M13 5h8", key: "a7qcls" }],
+  ["path", { d: "M13 12h8", key: "h98zly" }],
+  ["path", { d: "M13 19h8", key: "c3s6r1" }],
+  ["path", { d: "m3 17 2 2 4-4", key: "1jhpwq" }],
+  ["path", { d: "m3 7 2 2 4-4", key: "1obspn" }]
+];
+const ListChecks = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("list-checks", __iconNode);
+
+
+//# sourceMappingURL=list-checks.js.map
 
 
 /***/ }),
@@ -43370,6 +43649,80 @@ const MapPin = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
 
 /***/ }),
 
+/***/ "./node_modules/lucide-react/dist/esm/icons/menu.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/menu.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ Menu)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["path", { d: "M4 5h16", key: "1tepv9" }],
+  ["path", { d: "M4 12h16", key: "1lakjw" }],
+  ["path", { d: "M4 19h16", key: "1djgab" }]
+];
+const Menu = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("menu", __iconNode);
+
+
+//# sourceMappingURL=menu.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-react/dist/esm/icons/moon.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/moon.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ Moon)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  [
+    "path",
+    {
+      d: "M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401",
+      key: "kfwtm"
+    }
+  ]
+];
+const Moon = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("moon", __iconNode);
+
+
+//# sourceMappingURL=moon.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-react/dist/esm/icons/pen.js":
 /*!*********************************************************!*\
   !*** ./node_modules/lucide-react/dist/esm/icons/pen.js ***!
@@ -43405,6 +43758,79 @@ const Pen = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("pe
 
 
 //# sourceMappingURL=pen.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-react/dist/esm/icons/phone.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/phone.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ Phone)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  [
+    "path",
+    {
+      d: "M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384",
+      key: "9njp5v"
+    }
+  ]
+];
+const Phone = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("phone", __iconNode);
+
+
+//# sourceMappingURL=phone.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-react/dist/esm/icons/plus.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/plus.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ Plus)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["path", { d: "M5 12h14", key: "1ays0h" }],
+  ["path", { d: "M12 5v14", key: "s699le" }]
+];
+const Plus = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("plus", __iconNode);
+
+
+//# sourceMappingURL=plus.js.map
 
 
 /***/ }),
@@ -43517,6 +43943,86 @@ const Settings = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"]
 
 /***/ }),
 
+/***/ "./node_modules/lucide-react/dist/esm/icons/shield.js":
+/*!************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/shield.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ Shield)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  [
+    "path",
+    {
+      d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
+      key: "oel41y"
+    }
+  ]
+];
+const Shield = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("shield", __iconNode);
+
+
+//# sourceMappingURL=shield.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-react/dist/esm/icons/sun.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/sun.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ Sun)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["circle", { cx: "12", cy: "12", r: "4", key: "4exip2" }],
+  ["path", { d: "M12 2v2", key: "tus03m" }],
+  ["path", { d: "M12 20v2", key: "1lh1kg" }],
+  ["path", { d: "m4.93 4.93 1.41 1.41", key: "149t6j" }],
+  ["path", { d: "m17.66 17.66 1.41 1.41", key: "ptbguv" }],
+  ["path", { d: "M2 12h2", key: "1t8f8n" }],
+  ["path", { d: "M20 12h2", key: "1q8mjw" }],
+  ["path", { d: "m6.34 17.66-1.41 1.41", key: "1m8zz5" }],
+  ["path", { d: "m19.07 4.93-1.41 1.41", key: "1shlcs" }]
+];
+const Sun = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("sun", __iconNode);
+
+
+//# sourceMappingURL=sun.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-react/dist/esm/icons/trash-2.js":
 /*!*************************************************************!*\
   !*** ./node_modules/lucide-react/dist/esm/icons/trash-2.js ***!
@@ -43550,6 +44056,40 @@ const Trash2 = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
 
 
 //# sourceMappingURL=trash-2.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-react/dist/esm/icons/trending-up.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/trending-up.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ TrendingUp)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["path", { d: "M16 7h6v6", key: "box55l" }],
+  ["path", { d: "m22 7-8.5 8.5-5-5L2 17", key: "1t1m79" }]
+];
+const TrendingUp = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("trending-up", __iconNode);
+
+
+//# sourceMappingURL=trending-up.js.map
 
 
 /***/ }),
@@ -74152,10367 +74692,6 @@ if (false) // removed by dead control flow
 
 /***/ }),
 
-/***/ "./node_modules/react-router/dist/development/chunk-NISHYRIK.mjs":
-/*!***********************************************************************!*\
-  !*** ./node_modules/react-router/dist/development/chunk-NISHYRIK.mjs ***!
-  \***********************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Action: () => (/* binding */ Action),
-/* harmony export */   Await: () => (/* binding */ Await),
-/* harmony export */   AwaitContextProvider: () => (/* binding */ AwaitContextProvider),
-/* harmony export */   BrowserRouter: () => (/* binding */ BrowserRouter),
-/* harmony export */   CRITICAL_CSS_DATA_ATTRIBUTE: () => (/* binding */ CRITICAL_CSS_DATA_ATTRIBUTE),
-/* harmony export */   DataRouterContext: () => (/* binding */ DataRouterContext),
-/* harmony export */   DataRouterStateContext: () => (/* binding */ DataRouterStateContext),
-/* harmony export */   ENABLE_DEV_WARNINGS: () => (/* binding */ ENABLE_DEV_WARNINGS),
-/* harmony export */   ErrorResponseImpl: () => (/* binding */ ErrorResponseImpl),
-/* harmony export */   FetchersContext: () => (/* binding */ FetchersContext),
-/* harmony export */   Form: () => (/* binding */ Form),
-/* harmony export */   FrameworkContext: () => (/* binding */ FrameworkContext),
-/* harmony export */   HashRouter: () => (/* binding */ HashRouter),
-/* harmony export */   HistoryRouter: () => (/* binding */ HistoryRouter),
-/* harmony export */   IDLE_BLOCKER: () => (/* binding */ IDLE_BLOCKER),
-/* harmony export */   IDLE_FETCHER: () => (/* binding */ IDLE_FETCHER),
-/* harmony export */   IDLE_NAVIGATION: () => (/* binding */ IDLE_NAVIGATION),
-/* harmony export */   Link: () => (/* binding */ Link),
-/* harmony export */   Links: () => (/* binding */ Links),
-/* harmony export */   LocationContext: () => (/* binding */ LocationContext),
-/* harmony export */   MemoryRouter: () => (/* binding */ MemoryRouter),
-/* harmony export */   Meta: () => (/* binding */ Meta),
-/* harmony export */   NO_BODY_STATUS_CODES: () => (/* binding */ NO_BODY_STATUS_CODES),
-/* harmony export */   NavLink: () => (/* binding */ NavLink),
-/* harmony export */   Navigate: () => (/* binding */ Navigate),
-/* harmony export */   NavigationContext: () => (/* binding */ NavigationContext),
-/* harmony export */   Outlet: () => (/* binding */ Outlet),
-/* harmony export */   PrefetchPageLinks: () => (/* binding */ PrefetchPageLinks),
-/* harmony export */   RSCRouterContext: () => (/* binding */ RSCRouterContext),
-/* harmony export */   RemixErrorBoundary: () => (/* binding */ RemixErrorBoundary),
-/* harmony export */   Route: () => (/* binding */ Route),
-/* harmony export */   RouteContext: () => (/* binding */ RouteContext),
-/* harmony export */   Router: () => (/* binding */ Router),
-/* harmony export */   RouterContextProvider: () => (/* binding */ RouterContextProvider),
-/* harmony export */   RouterProvider: () => (/* binding */ RouterProvider),
-/* harmony export */   Routes: () => (/* binding */ Routes),
-/* harmony export */   SINGLE_FETCH_REDIRECT_STATUS: () => (/* binding */ SINGLE_FETCH_REDIRECT_STATUS),
-/* harmony export */   Scripts: () => (/* binding */ Scripts),
-/* harmony export */   ScrollRestoration: () => (/* binding */ ScrollRestoration),
-/* harmony export */   SingleFetchRedirectSymbol: () => (/* binding */ SingleFetchRedirectSymbol),
-/* harmony export */   StaticRouter: () => (/* binding */ StaticRouter),
-/* harmony export */   StaticRouterProvider: () => (/* binding */ StaticRouterProvider),
-/* harmony export */   StreamTransfer: () => (/* binding */ StreamTransfer),
-/* harmony export */   UNSTABLE_TransitionEnabledRouterProvider: () => (/* binding */ UNSTABLE_TransitionEnabledRouterProvider),
-/* harmony export */   ViewTransitionContext: () => (/* binding */ ViewTransitionContext),
-/* harmony export */   WithComponentProps: () => (/* binding */ WithComponentProps),
-/* harmony export */   WithErrorBoundaryProps: () => (/* binding */ WithErrorBoundaryProps),
-/* harmony export */   WithHydrateFallbackProps: () => (/* binding */ WithHydrateFallbackProps),
-/* harmony export */   convertRoutesToDataRoutes: () => (/* binding */ convertRoutesToDataRoutes),
-/* harmony export */   createBrowserHistory: () => (/* binding */ createBrowserHistory),
-/* harmony export */   createBrowserRouter: () => (/* binding */ createBrowserRouter),
-/* harmony export */   createClientRoutes: () => (/* binding */ createClientRoutes),
-/* harmony export */   createClientRoutesWithHMRRevalidationOptOut: () => (/* binding */ createClientRoutesWithHMRRevalidationOptOut),
-/* harmony export */   createContext: () => (/* binding */ createContext),
-/* harmony export */   createHashRouter: () => (/* binding */ createHashRouter),
-/* harmony export */   createMemoryRouter: () => (/* binding */ createMemoryRouter),
-/* harmony export */   createPath: () => (/* binding */ createPath),
-/* harmony export */   createRequestInit: () => (/* binding */ createRequestInit),
-/* harmony export */   createRouter: () => (/* binding */ createRouter),
-/* harmony export */   createRoutesFromChildren: () => (/* binding */ createRoutesFromChildren),
-/* harmony export */   createRoutesFromElements: () => (/* binding */ createRoutesFromElements),
-/* harmony export */   createSearchParams: () => (/* binding */ createSearchParams),
-/* harmony export */   createServerRoutes: () => (/* binding */ createServerRoutes),
-/* harmony export */   createStaticHandler: () => (/* binding */ createStaticHandler),
-/* harmony export */   createStaticHandler2: () => (/* binding */ createStaticHandler2),
-/* harmony export */   createStaticRouter: () => (/* binding */ createStaticRouter),
-/* harmony export */   data: () => (/* binding */ data),
-/* harmony export */   decodeViaTurboStream: () => (/* binding */ decodeViaTurboStream),
-/* harmony export */   encode: () => (/* binding */ encode),
-/* harmony export */   escapeHtml: () => (/* binding */ escapeHtml),
-/* harmony export */   generatePath: () => (/* binding */ generatePath),
-/* harmony export */   getManifestPath: () => (/* binding */ getManifestPath),
-/* harmony export */   getPatchRoutesOnNavigationFunction: () => (/* binding */ getPatchRoutesOnNavigationFunction),
-/* harmony export */   getSingleFetchDataStrategyImpl: () => (/* binding */ getSingleFetchDataStrategyImpl),
-/* harmony export */   getStaticContextFromError: () => (/* binding */ getStaticContextFromError),
-/* harmony export */   getTurboStreamSingleFetchDataStrategy: () => (/* binding */ getTurboStreamSingleFetchDataStrategy),
-/* harmony export */   hydrationRouteProperties: () => (/* binding */ hydrationRouteProperties),
-/* harmony export */   invariant: () => (/* binding */ invariant),
-/* harmony export */   isDataWithResponseInit: () => (/* binding */ isDataWithResponseInit),
-/* harmony export */   isMutationMethod: () => (/* binding */ isMutationMethod),
-/* harmony export */   isRedirectResponse: () => (/* binding */ isRedirectResponse),
-/* harmony export */   isRedirectStatusCode: () => (/* binding */ isRedirectStatusCode),
-/* harmony export */   isResponse: () => (/* binding */ isResponse),
-/* harmony export */   isRouteErrorResponse: () => (/* binding */ isRouteErrorResponse),
-/* harmony export */   mapRouteProperties: () => (/* binding */ mapRouteProperties),
-/* harmony export */   matchPath: () => (/* binding */ matchPath),
-/* harmony export */   matchRoutes: () => (/* binding */ matchRoutes),
-/* harmony export */   noActionDefinedError: () => (/* binding */ noActionDefinedError),
-/* harmony export */   parsePath: () => (/* binding */ parsePath),
-/* harmony export */   redirect: () => (/* binding */ redirect),
-/* harmony export */   redirectDocument: () => (/* binding */ redirectDocument),
-/* harmony export */   renderMatches: () => (/* binding */ renderMatches),
-/* harmony export */   replace: () => (/* binding */ replace),
-/* harmony export */   resolvePath: () => (/* binding */ resolvePath),
-/* harmony export */   setIsHydrated: () => (/* binding */ setIsHydrated),
-/* harmony export */   shouldHydrateRouteLoader: () => (/* binding */ shouldHydrateRouteLoader),
-/* harmony export */   singleFetchUrl: () => (/* binding */ singleFetchUrl),
-/* harmony export */   stripBasename: () => (/* binding */ stripBasename),
-/* harmony export */   stripIndexParam: () => (/* binding */ stripIndexParam),
-/* harmony export */   useActionData: () => (/* binding */ useActionData),
-/* harmony export */   useAsyncError: () => (/* binding */ useAsyncError),
-/* harmony export */   useAsyncValue: () => (/* binding */ useAsyncValue),
-/* harmony export */   useBeforeUnload: () => (/* binding */ useBeforeUnload),
-/* harmony export */   useBlocker: () => (/* binding */ useBlocker),
-/* harmony export */   useFetcher: () => (/* binding */ useFetcher),
-/* harmony export */   useFetchers: () => (/* binding */ useFetchers),
-/* harmony export */   useFogOFWarDiscovery: () => (/* binding */ useFogOFWarDiscovery),
-/* harmony export */   useFormAction: () => (/* binding */ useFormAction),
-/* harmony export */   useHref: () => (/* binding */ useHref),
-/* harmony export */   useInRouterContext: () => (/* binding */ useInRouterContext),
-/* harmony export */   useLinkClickHandler: () => (/* binding */ useLinkClickHandler),
-/* harmony export */   useLoaderData: () => (/* binding */ useLoaderData),
-/* harmony export */   useLocation: () => (/* binding */ useLocation),
-/* harmony export */   useMatch: () => (/* binding */ useMatch),
-/* harmony export */   useMatches: () => (/* binding */ useMatches),
-/* harmony export */   useNavigate: () => (/* binding */ useNavigate),
-/* harmony export */   useNavigation: () => (/* binding */ useNavigation),
-/* harmony export */   useNavigationType: () => (/* binding */ useNavigationType),
-/* harmony export */   useOutlet: () => (/* binding */ useOutlet),
-/* harmony export */   useOutletContext: () => (/* binding */ useOutletContext),
-/* harmony export */   useParams: () => (/* binding */ useParams),
-/* harmony export */   usePrompt: () => (/* binding */ usePrompt),
-/* harmony export */   useResolvedPath: () => (/* binding */ useResolvedPath),
-/* harmony export */   useRevalidator: () => (/* binding */ useRevalidator),
-/* harmony export */   useRouteError: () => (/* binding */ useRouteError),
-/* harmony export */   useRouteLoaderData: () => (/* binding */ useRouteLoaderData),
-/* harmony export */   useRoutes: () => (/* binding */ useRoutes),
-/* harmony export */   useScrollRestoration: () => (/* binding */ useScrollRestoration),
-/* harmony export */   useSearchParams: () => (/* binding */ useSearchParams),
-/* harmony export */   useSubmit: () => (/* binding */ useSubmit),
-/* harmony export */   useViewTransitionState: () => (/* binding */ useViewTransitionState),
-/* harmony export */   warnOnce: () => (/* binding */ warnOnce),
-/* harmony export */   withComponentProps: () => (/* binding */ withComponentProps),
-/* harmony export */   withErrorBoundaryProps: () => (/* binding */ withErrorBoundaryProps),
-/* harmony export */   withHydrateFallbackProps: () => (/* binding */ withHydrateFallbackProps)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/**
- * react-router v7.9.3
- *
- * Copyright (c) Remix Software Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.md file in the root directory of this source tree.
- *
- * @license MIT
- */
-var __typeError = (msg) => {
-  throw TypeError(msg);
-};
-var __accessCheck = (obj, member, msg) => member.has(obj) || __typeError("Cannot " + msg);
-var __privateGet = (obj, member, getter) => (__accessCheck(obj, member, "read from private field"), getter ? getter.call(obj) : member.get(obj));
-var __privateAdd = (obj, member, value) => member.has(obj) ? __typeError("Cannot add the same private member more than once") : member instanceof WeakSet ? member.add(obj) : member.set(obj, value);
-
-// lib/router/history.ts
-var Action = /* @__PURE__ */ ((Action2) => {
-  Action2["Pop"] = "POP";
-  Action2["Push"] = "PUSH";
-  Action2["Replace"] = "REPLACE";
-  return Action2;
-})(Action || {});
-var PopStateEventType = "popstate";
-function createMemoryHistory(options = {}) {
-  let { initialEntries = ["/"], initialIndex, v5Compat = false } = options;
-  let entries;
-  entries = initialEntries.map(
-    (entry, index2) => createMemoryLocation(
-      entry,
-      typeof entry === "string" ? null : entry.state,
-      index2 === 0 ? "default" : void 0
-    )
-  );
-  let index = clampIndex(
-    initialIndex == null ? entries.length - 1 : initialIndex
-  );
-  let action = "POP" /* Pop */;
-  let listener = null;
-  function clampIndex(n) {
-    return Math.min(Math.max(n, 0), entries.length - 1);
-  }
-  function getCurrentLocation() {
-    return entries[index];
-  }
-  function createMemoryLocation(to, state = null, key) {
-    let location = createLocation(
-      entries ? getCurrentLocation().pathname : "/",
-      to,
-      state,
-      key
-    );
-    warning(
-      location.pathname.charAt(0) === "/",
-      `relative pathnames are not supported in memory history: ${JSON.stringify(
-        to
-      )}`
-    );
-    return location;
-  }
-  function createHref2(to) {
-    return typeof to === "string" ? to : createPath(to);
-  }
-  let history = {
-    get index() {
-      return index;
-    },
-    get action() {
-      return action;
-    },
-    get location() {
-      return getCurrentLocation();
-    },
-    createHref: createHref2,
-    createURL(to) {
-      return new URL(createHref2(to), "http://localhost");
-    },
-    encodeLocation(to) {
-      let path = typeof to === "string" ? parsePath(to) : to;
-      return {
-        pathname: path.pathname || "",
-        search: path.search || "",
-        hash: path.hash || ""
-      };
-    },
-    push(to, state) {
-      action = "PUSH" /* Push */;
-      let nextLocation = createMemoryLocation(to, state);
-      index += 1;
-      entries.splice(index, entries.length, nextLocation);
-      if (v5Compat && listener) {
-        listener({ action, location: nextLocation, delta: 1 });
-      }
-    },
-    replace(to, state) {
-      action = "REPLACE" /* Replace */;
-      let nextLocation = createMemoryLocation(to, state);
-      entries[index] = nextLocation;
-      if (v5Compat && listener) {
-        listener({ action, location: nextLocation, delta: 0 });
-      }
-    },
-    go(delta) {
-      action = "POP" /* Pop */;
-      let nextIndex = clampIndex(index + delta);
-      let nextLocation = entries[nextIndex];
-      index = nextIndex;
-      if (listener) {
-        listener({ action, location: nextLocation, delta });
-      }
-    },
-    listen(fn) {
-      listener = fn;
-      return () => {
-        listener = null;
-      };
-    }
-  };
-  return history;
-}
-function createBrowserHistory(options = {}) {
-  function createBrowserLocation(window2, globalHistory) {
-    let { pathname, search, hash } = window2.location;
-    return createLocation(
-      "",
-      { pathname, search, hash },
-      // state defaults to `null` because `window.history.state` does
-      globalHistory.state && globalHistory.state.usr || null,
-      globalHistory.state && globalHistory.state.key || "default"
-    );
-  }
-  function createBrowserHref(window2, to) {
-    return typeof to === "string" ? to : createPath(to);
-  }
-  return getUrlBasedHistory(
-    createBrowserLocation,
-    createBrowserHref,
-    null,
-    options
-  );
-}
-function createHashHistory(options = {}) {
-  function createHashLocation(window2, globalHistory) {
-    let {
-      pathname = "/",
-      search = "",
-      hash = ""
-    } = parsePath(window2.location.hash.substring(1));
-    if (!pathname.startsWith("/") && !pathname.startsWith(".")) {
-      pathname = "/" + pathname;
-    }
-    return createLocation(
-      "",
-      { pathname, search, hash },
-      // state defaults to `null` because `window.history.state` does
-      globalHistory.state && globalHistory.state.usr || null,
-      globalHistory.state && globalHistory.state.key || "default"
-    );
-  }
-  function createHashHref(window2, to) {
-    let base = window2.document.querySelector("base");
-    let href = "";
-    if (base && base.getAttribute("href")) {
-      let url = window2.location.href;
-      let hashIndex = url.indexOf("#");
-      href = hashIndex === -1 ? url : url.slice(0, hashIndex);
-    }
-    return href + "#" + (typeof to === "string" ? to : createPath(to));
-  }
-  function validateHashLocation(location, to) {
-    warning(
-      location.pathname.charAt(0) === "/",
-      `relative pathnames are not supported in hash history.push(${JSON.stringify(
-        to
-      )})`
-    );
-  }
-  return getUrlBasedHistory(
-    createHashLocation,
-    createHashHref,
-    validateHashLocation,
-    options
-  );
-}
-function invariant(value, message) {
-  if (value === false || value === null || typeof value === "undefined") {
-    throw new Error(message);
-  }
-}
-function warning(cond, message) {
-  if (!cond) {
-    if (typeof console !== "undefined") console.warn(message);
-    try {
-      throw new Error(message);
-    } catch (e) {
-    }
-  }
-}
-function createKey() {
-  return Math.random().toString(36).substring(2, 10);
-}
-function getHistoryState(location, index) {
-  return {
-    usr: location.state,
-    key: location.key,
-    idx: index
-  };
-}
-function createLocation(current, to, state = null, key) {
-  let location = {
-    pathname: typeof current === "string" ? current : current.pathname,
-    search: "",
-    hash: "",
-    ...typeof to === "string" ? parsePath(to) : to,
-    state,
-    // TODO: This could be cleaned up.  push/replace should probably just take
-    // full Locations now and avoid the need to run through this flow at all
-    // But that's a pretty big refactor to the current test suite so going to
-    // keep as is for the time being and just let any incoming keys take precedence
-    key: to && to.key || key || createKey()
-  };
-  return location;
-}
-function createPath({
-  pathname = "/",
-  search = "",
-  hash = ""
-}) {
-  if (search && search !== "?")
-    pathname += search.charAt(0) === "?" ? search : "?" + search;
-  if (hash && hash !== "#")
-    pathname += hash.charAt(0) === "#" ? hash : "#" + hash;
-  return pathname;
-}
-function parsePath(path) {
-  let parsedPath = {};
-  if (path) {
-    let hashIndex = path.indexOf("#");
-    if (hashIndex >= 0) {
-      parsedPath.hash = path.substring(hashIndex);
-      path = path.substring(0, hashIndex);
-    }
-    let searchIndex = path.indexOf("?");
-    if (searchIndex >= 0) {
-      parsedPath.search = path.substring(searchIndex);
-      path = path.substring(0, searchIndex);
-    }
-    if (path) {
-      parsedPath.pathname = path;
-    }
-  }
-  return parsedPath;
-}
-function getUrlBasedHistory(getLocation, createHref2, validateLocation, options = {}) {
-  let { window: window2 = document.defaultView, v5Compat = false } = options;
-  let globalHistory = window2.history;
-  let action = "POP" /* Pop */;
-  let listener = null;
-  let index = getIndex();
-  if (index == null) {
-    index = 0;
-    globalHistory.replaceState({ ...globalHistory.state, idx: index }, "");
-  }
-  function getIndex() {
-    let state = globalHistory.state || { idx: null };
-    return state.idx;
-  }
-  function handlePop() {
-    action = "POP" /* Pop */;
-    let nextIndex = getIndex();
-    let delta = nextIndex == null ? null : nextIndex - index;
-    index = nextIndex;
-    if (listener) {
-      listener({ action, location: history.location, delta });
-    }
-  }
-  function push(to, state) {
-    action = "PUSH" /* Push */;
-    let location = createLocation(history.location, to, state);
-    if (validateLocation) validateLocation(location, to);
-    index = getIndex() + 1;
-    let historyState = getHistoryState(location, index);
-    let url = history.createHref(location);
-    try {
-      globalHistory.pushState(historyState, "", url);
-    } catch (error) {
-      if (error instanceof DOMException && error.name === "DataCloneError") {
-        throw error;
-      }
-      window2.location.assign(url);
-    }
-    if (v5Compat && listener) {
-      listener({ action, location: history.location, delta: 1 });
-    }
-  }
-  function replace2(to, state) {
-    action = "REPLACE" /* Replace */;
-    let location = createLocation(history.location, to, state);
-    if (validateLocation) validateLocation(location, to);
-    index = getIndex();
-    let historyState = getHistoryState(location, index);
-    let url = history.createHref(location);
-    globalHistory.replaceState(historyState, "", url);
-    if (v5Compat && listener) {
-      listener({ action, location: history.location, delta: 0 });
-    }
-  }
-  function createURL(to) {
-    return createBrowserURLImpl(to);
-  }
-  let history = {
-    get action() {
-      return action;
-    },
-    get location() {
-      return getLocation(window2, globalHistory);
-    },
-    listen(fn) {
-      if (listener) {
-        throw new Error("A history only accepts one active listener");
-      }
-      window2.addEventListener(PopStateEventType, handlePop);
-      listener = fn;
-      return () => {
-        window2.removeEventListener(PopStateEventType, handlePop);
-        listener = null;
-      };
-    },
-    createHref(to) {
-      return createHref2(window2, to);
-    },
-    createURL,
-    encodeLocation(to) {
-      let url = createURL(to);
-      return {
-        pathname: url.pathname,
-        search: url.search,
-        hash: url.hash
-      };
-    },
-    push,
-    replace: replace2,
-    go(n) {
-      return globalHistory.go(n);
-    }
-  };
-  return history;
-}
-function createBrowserURLImpl(to, isAbsolute = false) {
-  let base = "http://localhost";
-  if (typeof window !== "undefined") {
-    base = window.location.origin !== "null" ? window.location.origin : window.location.href;
-  }
-  invariant(base, "No window.location.(origin|href) available to create URL");
-  let href = typeof to === "string" ? to : createPath(to);
-  href = href.replace(/ $/, "%20");
-  if (!isAbsolute && href.startsWith("//")) {
-    href = base + href;
-  }
-  return new URL(href, base);
-}
-
-// lib/router/utils.ts
-function createContext(defaultValue) {
-  return { defaultValue };
-}
-var _map;
-var RouterContextProvider = class {
-  /**
-   * Create a new `RouterContextProvider` instance
-   * @param init An optional initial context map to populate the provider with
-   */
-  constructor(init) {
-    __privateAdd(this, _map, /* @__PURE__ */ new Map());
-    if (init) {
-      for (let [context, value] of init) {
-        this.set(context, value);
-      }
-    }
-  }
-  /**
-   * Access a value from the context. If no value has been set for the context,
-   * it will return the context's `defaultValue` if provided, or throw an error
-   * if no `defaultValue` was set.
-   * @param context The context to get the value for
-   * @returns The value for the context, or the context's `defaultValue` if no
-   * value was set
-   */
-  get(context) {
-    if (__privateGet(this, _map).has(context)) {
-      return __privateGet(this, _map).get(context);
-    }
-    if (context.defaultValue !== void 0) {
-      return context.defaultValue;
-    }
-    throw new Error("No value found for context");
-  }
-  /**
-   * Set a value for the context. If the context already has a value set, this
-   * will overwrite it.
-   *
-   * @param context The context to set the value for
-   * @param value The value to set for the context
-   * @returns {void}
-   */
-  set(context, value) {
-    __privateGet(this, _map).set(context, value);
-  }
-};
-_map = new WeakMap();
-var unsupportedLazyRouteObjectKeys = /* @__PURE__ */ new Set([
-  "lazy",
-  "caseSensitive",
-  "path",
-  "id",
-  "index",
-  "children"
-]);
-function isUnsupportedLazyRouteObjectKey(key) {
-  return unsupportedLazyRouteObjectKeys.has(
-    key
-  );
-}
-var unsupportedLazyRouteFunctionKeys = /* @__PURE__ */ new Set([
-  "lazy",
-  "caseSensitive",
-  "path",
-  "id",
-  "index",
-  "middleware",
-  "children"
-]);
-function isUnsupportedLazyRouteFunctionKey(key) {
-  return unsupportedLazyRouteFunctionKeys.has(
-    key
-  );
-}
-function isIndexRoute(route) {
-  return route.index === true;
-}
-function convertRoutesToDataRoutes(routes, mapRouteProperties2, parentPath = [], manifest = {}, allowInPlaceMutations = false) {
-  return routes.map((route, index) => {
-    let treePath = [...parentPath, String(index)];
-    let id = typeof route.id === "string" ? route.id : treePath.join("-");
-    invariant(
-      route.index !== true || !route.children,
-      `Cannot specify children on an index route`
-    );
-    invariant(
-      allowInPlaceMutations || !manifest[id],
-      `Found a route id collision on id "${id}".  Route id's must be globally unique within Data Router usages`
-    );
-    if (isIndexRoute(route)) {
-      let indexRoute = {
-        ...route,
-        ...mapRouteProperties2(route),
-        id
-      };
-      manifest[id] = indexRoute;
-      return indexRoute;
-    } else {
-      let pathOrLayoutRoute = {
-        ...route,
-        ...mapRouteProperties2(route),
-        id,
-        children: void 0
-      };
-      manifest[id] = pathOrLayoutRoute;
-      if (route.children) {
-        pathOrLayoutRoute.children = convertRoutesToDataRoutes(
-          route.children,
-          mapRouteProperties2,
-          treePath,
-          manifest,
-          allowInPlaceMutations
-        );
-      }
-      return pathOrLayoutRoute;
-    }
-  });
-}
-function matchRoutes(routes, locationArg, basename = "/") {
-  return matchRoutesImpl(routes, locationArg, basename, false);
-}
-function matchRoutesImpl(routes, locationArg, basename, allowPartial) {
-  let location = typeof locationArg === "string" ? parsePath(locationArg) : locationArg;
-  let pathname = stripBasename(location.pathname || "/", basename);
-  if (pathname == null) {
-    return null;
-  }
-  let branches = flattenRoutes(routes);
-  rankRouteBranches(branches);
-  let matches = null;
-  for (let i = 0; matches == null && i < branches.length; ++i) {
-    let decoded = decodePath(pathname);
-    matches = matchRouteBranch(
-      branches[i],
-      decoded,
-      allowPartial
-    );
-  }
-  return matches;
-}
-function convertRouteMatchToUiMatch(match, loaderData) {
-  let { route, pathname, params } = match;
-  return {
-    id: route.id,
-    pathname,
-    params,
-    data: loaderData[route.id],
-    loaderData: loaderData[route.id],
-    handle: route.handle
-  };
-}
-function flattenRoutes(routes, branches = [], parentsMeta = [], parentPath = "", _hasParentOptionalSegments = false) {
-  let flattenRoute = (route, index, hasParentOptionalSegments = _hasParentOptionalSegments, relativePath) => {
-    let meta = {
-      relativePath: relativePath === void 0 ? route.path || "" : relativePath,
-      caseSensitive: route.caseSensitive === true,
-      childrenIndex: index,
-      route
-    };
-    if (meta.relativePath.startsWith("/")) {
-      if (!meta.relativePath.startsWith(parentPath) && hasParentOptionalSegments) {
-        return;
-      }
-      invariant(
-        meta.relativePath.startsWith(parentPath),
-        `Absolute route path "${meta.relativePath}" nested under path "${parentPath}" is not valid. An absolute child route path must start with the combined path of all its parent routes.`
-      );
-      meta.relativePath = meta.relativePath.slice(parentPath.length);
-    }
-    let path = joinPaths([parentPath, meta.relativePath]);
-    let routesMeta = parentsMeta.concat(meta);
-    if (route.children && route.children.length > 0) {
-      invariant(
-        // Our types know better, but runtime JS may not!
-        // @ts-expect-error
-        route.index !== true,
-        `Index routes must not have child routes. Please remove all child routes from route path "${path}".`
-      );
-      flattenRoutes(
-        route.children,
-        branches,
-        routesMeta,
-        path,
-        hasParentOptionalSegments
-      );
-    }
-    if (route.path == null && !route.index) {
-      return;
-    }
-    branches.push({
-      path,
-      score: computeScore(path, route.index),
-      routesMeta
-    });
-  };
-  routes.forEach((route, index) => {
-    if (route.path === "" || !route.path?.includes("?")) {
-      flattenRoute(route, index);
-    } else {
-      for (let exploded of explodeOptionalSegments(route.path)) {
-        flattenRoute(route, index, true, exploded);
-      }
-    }
-  });
-  return branches;
-}
-function explodeOptionalSegments(path) {
-  let segments = path.split("/");
-  if (segments.length === 0) return [];
-  let [first, ...rest] = segments;
-  let isOptional = first.endsWith("?");
-  let required = first.replace(/\?$/, "");
-  if (rest.length === 0) {
-    return isOptional ? [required, ""] : [required];
-  }
-  let restExploded = explodeOptionalSegments(rest.join("/"));
-  let result = [];
-  result.push(
-    ...restExploded.map(
-      (subpath) => subpath === "" ? required : [required, subpath].join("/")
-    )
-  );
-  if (isOptional) {
-    result.push(...restExploded);
-  }
-  return result.map(
-    (exploded) => path.startsWith("/") && exploded === "" ? "/" : exploded
-  );
-}
-function rankRouteBranches(branches) {
-  branches.sort(
-    (a, b) => a.score !== b.score ? b.score - a.score : compareIndexes(
-      a.routesMeta.map((meta) => meta.childrenIndex),
-      b.routesMeta.map((meta) => meta.childrenIndex)
-    )
-  );
-}
-var paramRe = /^:[\w-]+$/;
-var dynamicSegmentValue = 3;
-var indexRouteValue = 2;
-var emptySegmentValue = 1;
-var staticSegmentValue = 10;
-var splatPenalty = -2;
-var isSplat = (s) => s === "*";
-function computeScore(path, index) {
-  let segments = path.split("/");
-  let initialScore = segments.length;
-  if (segments.some(isSplat)) {
-    initialScore += splatPenalty;
-  }
-  if (index) {
-    initialScore += indexRouteValue;
-  }
-  return segments.filter((s) => !isSplat(s)).reduce(
-    (score, segment) => score + (paramRe.test(segment) ? dynamicSegmentValue : segment === "" ? emptySegmentValue : staticSegmentValue),
-    initialScore
-  );
-}
-function compareIndexes(a, b) {
-  let siblings = a.length === b.length && a.slice(0, -1).every((n, i) => n === b[i]);
-  return siblings ? (
-    // If two routes are siblings, we should try to match the earlier sibling
-    // first. This allows people to have fine-grained control over the matching
-    // behavior by simply putting routes with identical paths in the order they
-    // want them tried.
-    a[a.length - 1] - b[b.length - 1]
-  ) : (
-    // Otherwise, it doesn't really make sense to rank non-siblings by index,
-    // so they sort equally.
-    0
-  );
-}
-function matchRouteBranch(branch, pathname, allowPartial = false) {
-  let { routesMeta } = branch;
-  let matchedParams = {};
-  let matchedPathname = "/";
-  let matches = [];
-  for (let i = 0; i < routesMeta.length; ++i) {
-    let meta = routesMeta[i];
-    let end = i === routesMeta.length - 1;
-    let remainingPathname = matchedPathname === "/" ? pathname : pathname.slice(matchedPathname.length) || "/";
-    let match = matchPath(
-      { path: meta.relativePath, caseSensitive: meta.caseSensitive, end },
-      remainingPathname
-    );
-    let route = meta.route;
-    if (!match && end && allowPartial && !routesMeta[routesMeta.length - 1].route.index) {
-      match = matchPath(
-        {
-          path: meta.relativePath,
-          caseSensitive: meta.caseSensitive,
-          end: false
-        },
-        remainingPathname
-      );
-    }
-    if (!match) {
-      return null;
-    }
-    Object.assign(matchedParams, match.params);
-    matches.push({
-      // TODO: Can this as be avoided?
-      params: matchedParams,
-      pathname: joinPaths([matchedPathname, match.pathname]),
-      pathnameBase: normalizePathname(
-        joinPaths([matchedPathname, match.pathnameBase])
-      ),
-      route
-    });
-    if (match.pathnameBase !== "/") {
-      matchedPathname = joinPaths([matchedPathname, match.pathnameBase]);
-    }
-  }
-  return matches;
-}
-function generatePath(originalPath, params = {}) {
-  let path = originalPath;
-  if (path.endsWith("*") && path !== "*" && !path.endsWith("/*")) {
-    warning(
-      false,
-      `Route path "${path}" will be treated as if it were "${path.replace(/\*$/, "/*")}" because the \`*\` character must always follow a \`/\` in the pattern. To get rid of this warning, please change the route path to "${path.replace(/\*$/, "/*")}".`
-    );
-    path = path.replace(/\*$/, "/*");
-  }
-  const prefix = path.startsWith("/") ? "/" : "";
-  const stringify2 = (p) => p == null ? "" : typeof p === "string" ? p : String(p);
-  const segments = path.split(/\/+/).map((segment, index, array) => {
-    const isLastSegment = index === array.length - 1;
-    if (isLastSegment && segment === "*") {
-      const star = "*";
-      return stringify2(params[star]);
-    }
-    const keyMatch = segment.match(/^:([\w-]+)(\??)$/);
-    if (keyMatch) {
-      const [, key, optional] = keyMatch;
-      let param = params[key];
-      invariant(optional === "?" || param != null, `Missing ":${key}" param`);
-      return encodeURIComponent(stringify2(param));
-    }
-    return segment.replace(/\?$/g, "");
-  }).filter((segment) => !!segment);
-  return prefix + segments.join("/");
-}
-function matchPath(pattern, pathname) {
-  if (typeof pattern === "string") {
-    pattern = { path: pattern, caseSensitive: false, end: true };
-  }
-  let [matcher, compiledParams] = compilePath(
-    pattern.path,
-    pattern.caseSensitive,
-    pattern.end
-  );
-  let match = pathname.match(matcher);
-  if (!match) return null;
-  let matchedPathname = match[0];
-  let pathnameBase = matchedPathname.replace(/(.)\/+$/, "$1");
-  let captureGroups = match.slice(1);
-  let params = compiledParams.reduce(
-    (memo2, { paramName, isOptional }, index) => {
-      if (paramName === "*") {
-        let splatValue = captureGroups[index] || "";
-        pathnameBase = matchedPathname.slice(0, matchedPathname.length - splatValue.length).replace(/(.)\/+$/, "$1");
-      }
-      const value = captureGroups[index];
-      if (isOptional && !value) {
-        memo2[paramName] = void 0;
-      } else {
-        memo2[paramName] = (value || "").replace(/%2F/g, "/");
-      }
-      return memo2;
-    },
-    {}
-  );
-  return {
-    params,
-    pathname: matchedPathname,
-    pathnameBase,
-    pattern
-  };
-}
-function compilePath(path, caseSensitive = false, end = true) {
-  warning(
-    path === "*" || !path.endsWith("*") || path.endsWith("/*"),
-    `Route path "${path}" will be treated as if it were "${path.replace(/\*$/, "/*")}" because the \`*\` character must always follow a \`/\` in the pattern. To get rid of this warning, please change the route path to "${path.replace(/\*$/, "/*")}".`
-  );
-  let params = [];
-  let regexpSource = "^" + path.replace(/\/*\*?$/, "").replace(/^\/*/, "/").replace(/[\\.*+^${}|()[\]]/g, "\\$&").replace(
-    /\/:([\w-]+)(\?)?/g,
-    (_, paramName, isOptional) => {
-      params.push({ paramName, isOptional: isOptional != null });
-      return isOptional ? "/?([^\\/]+)?" : "/([^\\/]+)";
-    }
-  ).replace(/\/([\w-]+)\?(\/|$)/g, "(/$1)?$2");
-  if (path.endsWith("*")) {
-    params.push({ paramName: "*" });
-    regexpSource += path === "*" || path === "/*" ? "(.*)$" : "(?:\\/(.+)|\\/*)$";
-  } else if (end) {
-    regexpSource += "\\/*$";
-  } else if (path !== "" && path !== "/") {
-    regexpSource += "(?:(?=\\/|$))";
-  } else {
-  }
-  let matcher = new RegExp(regexpSource, caseSensitive ? void 0 : "i");
-  return [matcher, params];
-}
-function decodePath(value) {
-  try {
-    return value.split("/").map((v) => decodeURIComponent(v).replace(/\//g, "%2F")).join("/");
-  } catch (error) {
-    warning(
-      false,
-      `The URL path "${value}" could not be decoded because it is a malformed URL segment. This is probably due to a bad percent encoding (${error}).`
-    );
-    return value;
-  }
-}
-function stripBasename(pathname, basename) {
-  if (basename === "/") return pathname;
-  if (!pathname.toLowerCase().startsWith(basename.toLowerCase())) {
-    return null;
-  }
-  let startIndex = basename.endsWith("/") ? basename.length - 1 : basename.length;
-  let nextChar = pathname.charAt(startIndex);
-  if (nextChar && nextChar !== "/") {
-    return null;
-  }
-  return pathname.slice(startIndex) || "/";
-}
-function prependBasename({
-  basename,
-  pathname
-}) {
-  return pathname === "/" ? basename : joinPaths([basename, pathname]);
-}
-function resolvePath(to, fromPathname = "/") {
-  let {
-    pathname: toPathname,
-    search = "",
-    hash = ""
-  } = typeof to === "string" ? parsePath(to) : to;
-  let pathname = toPathname ? toPathname.startsWith("/") ? toPathname : resolvePathname(toPathname, fromPathname) : fromPathname;
-  return {
-    pathname,
-    search: normalizeSearch(search),
-    hash: normalizeHash(hash)
-  };
-}
-function resolvePathname(relativePath, fromPathname) {
-  let segments = fromPathname.replace(/\/+$/, "").split("/");
-  let relativeSegments = relativePath.split("/");
-  relativeSegments.forEach((segment) => {
-    if (segment === "..") {
-      if (segments.length > 1) segments.pop();
-    } else if (segment !== ".") {
-      segments.push(segment);
-    }
-  });
-  return segments.length > 1 ? segments.join("/") : "/";
-}
-function getInvalidPathError(char, field, dest, path) {
-  return `Cannot include a '${char}' character in a manually specified \`to.${field}\` field [${JSON.stringify(
-    path
-  )}].  Please separate it out to the \`to.${dest}\` field. Alternatively you may provide the full path as a string in <Link to="..."> and the router will parse it for you.`;
-}
-function getPathContributingMatches(matches) {
-  return matches.filter(
-    (match, index) => index === 0 || match.route.path && match.route.path.length > 0
-  );
-}
-function getResolveToMatches(matches) {
-  let pathMatches = getPathContributingMatches(matches);
-  return pathMatches.map(
-    (match, idx) => idx === pathMatches.length - 1 ? match.pathname : match.pathnameBase
-  );
-}
-function resolveTo(toArg, routePathnames, locationPathname, isPathRelative = false) {
-  let to;
-  if (typeof toArg === "string") {
-    to = parsePath(toArg);
-  } else {
-    to = { ...toArg };
-    invariant(
-      !to.pathname || !to.pathname.includes("?"),
-      getInvalidPathError("?", "pathname", "search", to)
-    );
-    invariant(
-      !to.pathname || !to.pathname.includes("#"),
-      getInvalidPathError("#", "pathname", "hash", to)
-    );
-    invariant(
-      !to.search || !to.search.includes("#"),
-      getInvalidPathError("#", "search", "hash", to)
-    );
-  }
-  let isEmptyPath = toArg === "" || to.pathname === "";
-  let toPathname = isEmptyPath ? "/" : to.pathname;
-  let from;
-  if (toPathname == null) {
-    from = locationPathname;
-  } else {
-    let routePathnameIndex = routePathnames.length - 1;
-    if (!isPathRelative && toPathname.startsWith("..")) {
-      let toSegments = toPathname.split("/");
-      while (toSegments[0] === "..") {
-        toSegments.shift();
-        routePathnameIndex -= 1;
-      }
-      to.pathname = toSegments.join("/");
-    }
-    from = routePathnameIndex >= 0 ? routePathnames[routePathnameIndex] : "/";
-  }
-  let path = resolvePath(to, from);
-  let hasExplicitTrailingSlash = toPathname && toPathname !== "/" && toPathname.endsWith("/");
-  let hasCurrentTrailingSlash = (isEmptyPath || toPathname === ".") && locationPathname.endsWith("/");
-  if (!path.pathname.endsWith("/") && (hasExplicitTrailingSlash || hasCurrentTrailingSlash)) {
-    path.pathname += "/";
-  }
-  return path;
-}
-var joinPaths = (paths) => paths.join("/").replace(/\/\/+/g, "/");
-var normalizePathname = (pathname) => pathname.replace(/\/+$/, "").replace(/^\/*/, "/");
-var normalizeSearch = (search) => !search || search === "?" ? "" : search.startsWith("?") ? search : "?" + search;
-var normalizeHash = (hash) => !hash || hash === "#" ? "" : hash.startsWith("#") ? hash : "#" + hash;
-var DataWithResponseInit = class {
-  constructor(data2, init) {
-    this.type = "DataWithResponseInit";
-    this.data = data2;
-    this.init = init || null;
-  }
-};
-function data(data2, init) {
-  return new DataWithResponseInit(
-    data2,
-    typeof init === "number" ? { status: init } : init
-  );
-}
-var redirect = (url, init = 302) => {
-  let responseInit = init;
-  if (typeof responseInit === "number") {
-    responseInit = { status: responseInit };
-  } else if (typeof responseInit.status === "undefined") {
-    responseInit.status = 302;
-  }
-  let headers = new Headers(responseInit.headers);
-  headers.set("Location", url);
-  return new Response(null, { ...responseInit, headers });
-};
-var redirectDocument = (url, init) => {
-  let response = redirect(url, init);
-  response.headers.set("X-Remix-Reload-Document", "true");
-  return response;
-};
-var replace = (url, init) => {
-  let response = redirect(url, init);
-  response.headers.set("X-Remix-Replace", "true");
-  return response;
-};
-var ErrorResponseImpl = class {
-  constructor(status, statusText, data2, internal = false) {
-    this.status = status;
-    this.statusText = statusText || "";
-    this.internal = internal;
-    if (data2 instanceof Error) {
-      this.data = data2.toString();
-      this.error = data2;
-    } else {
-      this.data = data2;
-    }
-  }
-};
-function isRouteErrorResponse(error) {
-  return error != null && typeof error.status === "number" && typeof error.statusText === "string" && typeof error.internal === "boolean" && "data" in error;
-}
-
-// lib/router/router.ts
-var validMutationMethodsArr = [
-  "POST",
-  "PUT",
-  "PATCH",
-  "DELETE"
-];
-var validMutationMethods = new Set(
-  validMutationMethodsArr
-);
-var validRequestMethodsArr = [
-  "GET",
-  ...validMutationMethodsArr
-];
-var validRequestMethods = new Set(validRequestMethodsArr);
-var redirectStatusCodes = /* @__PURE__ */ new Set([301, 302, 303, 307, 308]);
-var redirectPreserveMethodStatusCodes = /* @__PURE__ */ new Set([307, 308]);
-var IDLE_NAVIGATION = {
-  state: "idle",
-  location: void 0,
-  formMethod: void 0,
-  formAction: void 0,
-  formEncType: void 0,
-  formData: void 0,
-  json: void 0,
-  text: void 0
-};
-var IDLE_FETCHER = {
-  state: "idle",
-  data: void 0,
-  formMethod: void 0,
-  formAction: void 0,
-  formEncType: void 0,
-  formData: void 0,
-  json: void 0,
-  text: void 0
-};
-var IDLE_BLOCKER = {
-  state: "unblocked",
-  proceed: void 0,
-  reset: void 0,
-  location: void 0
-};
-var ABSOLUTE_URL_REGEX = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
-var isAbsoluteUrl = (url) => ABSOLUTE_URL_REGEX.test(url);
-var defaultMapRouteProperties = (route) => ({
-  hasErrorBoundary: Boolean(route.hasErrorBoundary)
-});
-var TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
-var ResetLoaderDataSymbol = Symbol("ResetLoaderData");
-function createRouter(init) {
-  const routerWindow = init.window ? init.window : typeof window !== "undefined" ? window : void 0;
-  const isBrowser2 = typeof routerWindow !== "undefined" && typeof routerWindow.document !== "undefined" && typeof routerWindow.document.createElement !== "undefined";
-  invariant(
-    init.routes.length > 0,
-    "You must provide a non-empty routes array to createRouter"
-  );
-  let hydrationRouteProperties2 = init.hydrationRouteProperties || [];
-  let mapRouteProperties2 = init.mapRouteProperties || defaultMapRouteProperties;
-  let manifest = {};
-  let dataRoutes = convertRoutesToDataRoutes(
-    init.routes,
-    mapRouteProperties2,
-    void 0,
-    manifest
-  );
-  let inFlightDataRoutes;
-  let basename = init.basename || "/";
-  if (!basename.startsWith("/")) {
-    basename = `/${basename}`;
-  }
-  let dataStrategyImpl = init.dataStrategy || defaultDataStrategyWithMiddleware;
-  let future = {
-    ...init.future
-  };
-  let unlistenHistory = null;
-  let subscribers = /* @__PURE__ */ new Set();
-  let savedScrollPositions2 = null;
-  let getScrollRestorationKey2 = null;
-  let getScrollPosition = null;
-  let initialScrollRestored = init.hydrationData != null;
-  let initialMatches = matchRoutes(dataRoutes, init.history.location, basename);
-  let initialMatchesIsFOW = false;
-  let initialErrors = null;
-  let initialized;
-  if (initialMatches == null && !init.patchRoutesOnNavigation) {
-    let error = getInternalRouterError(404, {
-      pathname: init.history.location.pathname
-    });
-    let { matches, route } = getShortCircuitMatches(dataRoutes);
-    initialized = true;
-    initialMatches = matches;
-    initialErrors = { [route.id]: error };
-  } else {
-    if (initialMatches && !init.hydrationData) {
-      let fogOfWar = checkFogOfWar(
-        initialMatches,
-        dataRoutes,
-        init.history.location.pathname
-      );
-      if (fogOfWar.active) {
-        initialMatches = null;
-      }
-    }
-    if (!initialMatches) {
-      initialized = false;
-      initialMatches = [];
-      let fogOfWar = checkFogOfWar(
-        null,
-        dataRoutes,
-        init.history.location.pathname
-      );
-      if (fogOfWar.active && fogOfWar.matches) {
-        initialMatchesIsFOW = true;
-        initialMatches = fogOfWar.matches;
-      }
-    } else if (initialMatches.some((m) => m.route.lazy)) {
-      initialized = false;
-    } else if (!initialMatches.some((m) => routeHasLoaderOrMiddleware(m.route))) {
-      initialized = true;
-    } else {
-      let loaderData = init.hydrationData ? init.hydrationData.loaderData : null;
-      let errors = init.hydrationData ? init.hydrationData.errors : null;
-      if (errors) {
-        let idx = initialMatches.findIndex(
-          (m) => errors[m.route.id] !== void 0
-        );
-        initialized = initialMatches.slice(0, idx + 1).every(
-          (m) => !shouldLoadRouteOnHydration(m.route, loaderData, errors)
-        );
-      } else {
-        initialized = initialMatches.every(
-          (m) => !shouldLoadRouteOnHydration(m.route, loaderData, errors)
-        );
-      }
-    }
-  }
-  let router;
-  let state = {
-    historyAction: init.history.action,
-    location: init.history.location,
-    matches: initialMatches,
-    initialized,
-    navigation: IDLE_NAVIGATION,
-    // Don't restore on initial updateState() if we were SSR'd
-    restoreScrollPosition: init.hydrationData != null ? false : null,
-    preventScrollReset: false,
-    revalidation: "idle",
-    loaderData: init.hydrationData && init.hydrationData.loaderData || {},
-    actionData: init.hydrationData && init.hydrationData.actionData || null,
-    errors: init.hydrationData && init.hydrationData.errors || initialErrors,
-    fetchers: /* @__PURE__ */ new Map(),
-    blockers: /* @__PURE__ */ new Map()
-  };
-  let pendingAction = "POP" /* Pop */;
-  let pendingPreventScrollReset = false;
-  let pendingNavigationController;
-  let pendingViewTransitionEnabled = false;
-  let appliedViewTransitions = /* @__PURE__ */ new Map();
-  let removePageHideEventListener = null;
-  let isUninterruptedRevalidation = false;
-  let isRevalidationRequired = false;
-  let cancelledFetcherLoads = /* @__PURE__ */ new Set();
-  let fetchControllers = /* @__PURE__ */ new Map();
-  let incrementingLoadId = 0;
-  let pendingNavigationLoadId = -1;
-  let fetchReloadIds = /* @__PURE__ */ new Map();
-  let fetchRedirectIds = /* @__PURE__ */ new Set();
-  let fetchLoadMatches = /* @__PURE__ */ new Map();
-  let activeFetchers = /* @__PURE__ */ new Map();
-  let fetchersQueuedForDeletion = /* @__PURE__ */ new Set();
-  let blockerFunctions = /* @__PURE__ */ new Map();
-  let unblockBlockerHistoryUpdate = void 0;
-  let pendingRevalidationDfd = null;
-  function initialize() {
-    unlistenHistory = init.history.listen(
-      ({ action: historyAction, location, delta }) => {
-        if (unblockBlockerHistoryUpdate) {
-          unblockBlockerHistoryUpdate();
-          unblockBlockerHistoryUpdate = void 0;
-          return;
-        }
-        warning(
-          blockerFunctions.size === 0 || delta != null,
-          "You are trying to use a blocker on a POP navigation to a location that was not created by @remix-run/router. This will fail silently in production. This can happen if you are navigating outside the router via `window.history.pushState`/`window.location.hash` instead of using router navigation APIs.  This can also happen if you are using createHashRouter and the user manually changes the URL."
-        );
-        let blockerKey = shouldBlockNavigation({
-          currentLocation: state.location,
-          nextLocation: location,
-          historyAction
-        });
-        if (blockerKey && delta != null) {
-          let nextHistoryUpdatePromise = new Promise((resolve) => {
-            unblockBlockerHistoryUpdate = resolve;
-          });
-          init.history.go(delta * -1);
-          updateBlocker(blockerKey, {
-            state: "blocked",
-            location,
-            proceed() {
-              updateBlocker(blockerKey, {
-                state: "proceeding",
-                proceed: void 0,
-                reset: void 0,
-                location
-              });
-              nextHistoryUpdatePromise.then(() => init.history.go(delta));
-            },
-            reset() {
-              let blockers = new Map(state.blockers);
-              blockers.set(blockerKey, IDLE_BLOCKER);
-              updateState({ blockers });
-            }
-          });
-          return;
-        }
-        return startNavigation(historyAction, location);
-      }
-    );
-    if (isBrowser2) {
-      restoreAppliedTransitions(routerWindow, appliedViewTransitions);
-      let _saveAppliedTransitions = () => persistAppliedTransitions(routerWindow, appliedViewTransitions);
-      routerWindow.addEventListener("pagehide", _saveAppliedTransitions);
-      removePageHideEventListener = () => routerWindow.removeEventListener("pagehide", _saveAppliedTransitions);
-    }
-    if (!state.initialized) {
-      startNavigation("POP" /* Pop */, state.location, {
-        initialHydration: true
-      });
-    }
-    return router;
-  }
-  function dispose() {
-    if (unlistenHistory) {
-      unlistenHistory();
-    }
-    if (removePageHideEventListener) {
-      removePageHideEventListener();
-    }
-    subscribers.clear();
-    pendingNavigationController && pendingNavigationController.abort();
-    state.fetchers.forEach((_, key) => deleteFetcher(key));
-    state.blockers.forEach((_, key) => deleteBlocker(key));
-  }
-  function subscribe(fn) {
-    subscribers.add(fn);
-    return () => subscribers.delete(fn);
-  }
-  function updateState(newState, opts = {}) {
-    if (newState.matches) {
-      newState.matches = newState.matches.map((m) => {
-        let route = manifest[m.route.id];
-        let matchRoute = m.route;
-        if (matchRoute.element !== route.element || matchRoute.errorElement !== route.errorElement || matchRoute.hydrateFallbackElement !== route.hydrateFallbackElement) {
-          return {
-            ...m,
-            route
-          };
-        }
-        return m;
-      });
-    }
-    state = {
-      ...state,
-      ...newState
-    };
-    let unmountedFetchers = [];
-    let mountedFetchers = [];
-    state.fetchers.forEach((fetcher, key) => {
-      if (fetcher.state === "idle") {
-        if (fetchersQueuedForDeletion.has(key)) {
-          unmountedFetchers.push(key);
-        } else {
-          mountedFetchers.push(key);
-        }
-      }
-    });
-    fetchersQueuedForDeletion.forEach((key) => {
-      if (!state.fetchers.has(key) && !fetchControllers.has(key)) {
-        unmountedFetchers.push(key);
-      }
-    });
-    [...subscribers].forEach(
-      (subscriber) => subscriber(state, {
-        deletedFetchers: unmountedFetchers,
-        viewTransitionOpts: opts.viewTransitionOpts,
-        flushSync: opts.flushSync === true
-      })
-    );
-    unmountedFetchers.forEach((key) => deleteFetcher(key));
-    mountedFetchers.forEach((key) => state.fetchers.delete(key));
-  }
-  function completeNavigation(location, newState, { flushSync } = {}) {
-    let isActionReload = state.actionData != null && state.navigation.formMethod != null && isMutationMethod(state.navigation.formMethod) && state.navigation.state === "loading" && location.state?._isRedirect !== true;
-    let actionData;
-    if (newState.actionData) {
-      if (Object.keys(newState.actionData).length > 0) {
-        actionData = newState.actionData;
-      } else {
-        actionData = null;
-      }
-    } else if (isActionReload) {
-      actionData = state.actionData;
-    } else {
-      actionData = null;
-    }
-    let loaderData = newState.loaderData ? mergeLoaderData(
-      state.loaderData,
-      newState.loaderData,
-      newState.matches || [],
-      newState.errors
-    ) : state.loaderData;
-    let blockers = state.blockers;
-    if (blockers.size > 0) {
-      blockers = new Map(blockers);
-      blockers.forEach((_, k) => blockers.set(k, IDLE_BLOCKER));
-    }
-    let restoreScrollPosition = isUninterruptedRevalidation ? false : getSavedScrollPosition(location, newState.matches || state.matches);
-    let preventScrollReset = pendingPreventScrollReset === true || state.navigation.formMethod != null && isMutationMethod(state.navigation.formMethod) && location.state?._isRedirect !== true;
-    if (inFlightDataRoutes) {
-      dataRoutes = inFlightDataRoutes;
-      inFlightDataRoutes = void 0;
-    }
-    if (isUninterruptedRevalidation) {
-    } else if (pendingAction === "POP" /* Pop */) {
-    } else if (pendingAction === "PUSH" /* Push */) {
-      init.history.push(location, location.state);
-    } else if (pendingAction === "REPLACE" /* Replace */) {
-      init.history.replace(location, location.state);
-    }
-    let viewTransitionOpts;
-    if (pendingAction === "POP" /* Pop */) {
-      let priorPaths = appliedViewTransitions.get(state.location.pathname);
-      if (priorPaths && priorPaths.has(location.pathname)) {
-        viewTransitionOpts = {
-          currentLocation: state.location,
-          nextLocation: location
-        };
-      } else if (appliedViewTransitions.has(location.pathname)) {
-        viewTransitionOpts = {
-          currentLocation: location,
-          nextLocation: state.location
-        };
-      }
-    } else if (pendingViewTransitionEnabled) {
-      let toPaths = appliedViewTransitions.get(state.location.pathname);
-      if (toPaths) {
-        toPaths.add(location.pathname);
-      } else {
-        toPaths = /* @__PURE__ */ new Set([location.pathname]);
-        appliedViewTransitions.set(state.location.pathname, toPaths);
-      }
-      viewTransitionOpts = {
-        currentLocation: state.location,
-        nextLocation: location
-      };
-    }
-    updateState(
-      {
-        ...newState,
-        // matches, errors, fetchers go through as-is
-        actionData,
-        loaderData,
-        historyAction: pendingAction,
-        location,
-        initialized: true,
-        navigation: IDLE_NAVIGATION,
-        revalidation: "idle",
-        restoreScrollPosition,
-        preventScrollReset,
-        blockers
-      },
-      {
-        viewTransitionOpts,
-        flushSync: flushSync === true
-      }
-    );
-    pendingAction = "POP" /* Pop */;
-    pendingPreventScrollReset = false;
-    pendingViewTransitionEnabled = false;
-    isUninterruptedRevalidation = false;
-    isRevalidationRequired = false;
-    pendingRevalidationDfd?.resolve();
-    pendingRevalidationDfd = null;
-  }
-  async function navigate(to, opts) {
-    if (typeof to === "number") {
-      init.history.go(to);
-      return;
-    }
-    let normalizedPath = normalizeTo(
-      state.location,
-      state.matches,
-      basename,
-      to,
-      opts?.fromRouteId,
-      opts?.relative
-    );
-    let { path, submission, error } = normalizeNavigateOptions(
-      false,
-      normalizedPath,
-      opts
-    );
-    let currentLocation = state.location;
-    let nextLocation = createLocation(state.location, path, opts && opts.state);
-    nextLocation = {
-      ...nextLocation,
-      ...init.history.encodeLocation(nextLocation)
-    };
-    let userReplace = opts && opts.replace != null ? opts.replace : void 0;
-    let historyAction = "PUSH" /* Push */;
-    if (userReplace === true) {
-      historyAction = "REPLACE" /* Replace */;
-    } else if (userReplace === false) {
-    } else if (submission != null && isMutationMethod(submission.formMethod) && submission.formAction === state.location.pathname + state.location.search) {
-      historyAction = "REPLACE" /* Replace */;
-    }
-    let preventScrollReset = opts && "preventScrollReset" in opts ? opts.preventScrollReset === true : void 0;
-    let flushSync = (opts && opts.flushSync) === true;
-    let blockerKey = shouldBlockNavigation({
-      currentLocation,
-      nextLocation,
-      historyAction
-    });
-    if (blockerKey) {
-      updateBlocker(blockerKey, {
-        state: "blocked",
-        location: nextLocation,
-        proceed() {
-          updateBlocker(blockerKey, {
-            state: "proceeding",
-            proceed: void 0,
-            reset: void 0,
-            location: nextLocation
-          });
-          navigate(to, opts);
-        },
-        reset() {
-          let blockers = new Map(state.blockers);
-          blockers.set(blockerKey, IDLE_BLOCKER);
-          updateState({ blockers });
-        }
-      });
-      return;
-    }
-    await startNavigation(historyAction, nextLocation, {
-      submission,
-      // Send through the formData serialization error if we have one so we can
-      // render at the right error boundary after we match routes
-      pendingError: error,
-      preventScrollReset,
-      replace: opts && opts.replace,
-      enableViewTransition: opts && opts.viewTransition,
-      flushSync
-    });
-  }
-  function revalidate() {
-    if (!pendingRevalidationDfd) {
-      pendingRevalidationDfd = createDeferred();
-    }
-    interruptActiveLoads();
-    updateState({ revalidation: "loading" });
-    let promise = pendingRevalidationDfd.promise;
-    if (state.navigation.state === "submitting") {
-      return promise;
-    }
-    if (state.navigation.state === "idle") {
-      startNavigation(state.historyAction, state.location, {
-        startUninterruptedRevalidation: true
-      });
-      return promise;
-    }
-    startNavigation(
-      pendingAction || state.historyAction,
-      state.navigation.location,
-      {
-        overrideNavigation: state.navigation,
-        // Proxy through any rending view transition
-        enableViewTransition: pendingViewTransitionEnabled === true
-      }
-    );
-    return promise;
-  }
-  async function startNavigation(historyAction, location, opts) {
-    pendingNavigationController && pendingNavigationController.abort();
-    pendingNavigationController = null;
-    pendingAction = historyAction;
-    isUninterruptedRevalidation = (opts && opts.startUninterruptedRevalidation) === true;
-    saveScrollPosition(state.location, state.matches);
-    pendingPreventScrollReset = (opts && opts.preventScrollReset) === true;
-    pendingViewTransitionEnabled = (opts && opts.enableViewTransition) === true;
-    let routesToUse = inFlightDataRoutes || dataRoutes;
-    let loadingNavigation = opts && opts.overrideNavigation;
-    let matches = opts?.initialHydration && state.matches && state.matches.length > 0 && !initialMatchesIsFOW ? (
-      // `matchRoutes()` has already been called if we're in here via `router.initialize()`
-      state.matches
-    ) : matchRoutes(routesToUse, location, basename);
-    let flushSync = (opts && opts.flushSync) === true;
-    if (matches && state.initialized && !isRevalidationRequired && isHashChangeOnly(state.location, location) && !(opts && opts.submission && isMutationMethod(opts.submission.formMethod))) {
-      completeNavigation(location, { matches }, { flushSync });
-      return;
-    }
-    let fogOfWar = checkFogOfWar(matches, routesToUse, location.pathname);
-    if (fogOfWar.active && fogOfWar.matches) {
-      matches = fogOfWar.matches;
-    }
-    if (!matches) {
-      let { error, notFoundMatches, route } = handleNavigational404(
-        location.pathname
-      );
-      completeNavigation(
-        location,
-        {
-          matches: notFoundMatches,
-          loaderData: {},
-          errors: {
-            [route.id]: error
-          }
-        },
-        { flushSync }
-      );
-      return;
-    }
-    pendingNavigationController = new AbortController();
-    let request = createClientSideRequest(
-      init.history,
-      location,
-      pendingNavigationController.signal,
-      opts && opts.submission
-    );
-    let scopedContext = init.getContext ? await init.getContext() : new RouterContextProvider();
-    let pendingActionResult;
-    if (opts && opts.pendingError) {
-      pendingActionResult = [
-        findNearestBoundary(matches).route.id,
-        { type: "error" /* error */, error: opts.pendingError }
-      ];
-    } else if (opts && opts.submission && isMutationMethod(opts.submission.formMethod)) {
-      let actionResult = await handleAction(
-        request,
-        location,
-        opts.submission,
-        matches,
-        scopedContext,
-        fogOfWar.active,
-        opts && opts.initialHydration === true,
-        { replace: opts.replace, flushSync }
-      );
-      if (actionResult.shortCircuited) {
-        return;
-      }
-      if (actionResult.pendingActionResult) {
-        let [routeId, result] = actionResult.pendingActionResult;
-        if (isErrorResult(result) && isRouteErrorResponse(result.error) && result.error.status === 404) {
-          pendingNavigationController = null;
-          completeNavigation(location, {
-            matches: actionResult.matches,
-            loaderData: {},
-            errors: {
-              [routeId]: result.error
-            }
-          });
-          return;
-        }
-      }
-      matches = actionResult.matches || matches;
-      pendingActionResult = actionResult.pendingActionResult;
-      loadingNavigation = getLoadingNavigation(location, opts.submission);
-      flushSync = false;
-      fogOfWar.active = false;
-      request = createClientSideRequest(
-        init.history,
-        request.url,
-        request.signal
-      );
-    }
-    let {
-      shortCircuited,
-      matches: updatedMatches,
-      loaderData,
-      errors
-    } = await handleLoaders(
-      request,
-      location,
-      matches,
-      scopedContext,
-      fogOfWar.active,
-      loadingNavigation,
-      opts && opts.submission,
-      opts && opts.fetcherSubmission,
-      opts && opts.replace,
-      opts && opts.initialHydration === true,
-      flushSync,
-      pendingActionResult
-    );
-    if (shortCircuited) {
-      return;
-    }
-    pendingNavigationController = null;
-    completeNavigation(location, {
-      matches: updatedMatches || matches,
-      ...getActionDataForCommit(pendingActionResult),
-      loaderData,
-      errors
-    });
-  }
-  async function handleAction(request, location, submission, matches, scopedContext, isFogOfWar, initialHydration, opts = {}) {
-    interruptActiveLoads();
-    let navigation = getSubmittingNavigation(location, submission);
-    updateState({ navigation }, { flushSync: opts.flushSync === true });
-    if (isFogOfWar) {
-      let discoverResult = await discoverRoutes(
-        matches,
-        location.pathname,
-        request.signal
-      );
-      if (discoverResult.type === "aborted") {
-        return { shortCircuited: true };
-      } else if (discoverResult.type === "error") {
-        if (discoverResult.partialMatches.length === 0) {
-          let { matches: matches2, route } = getShortCircuitMatches(dataRoutes);
-          return {
-            matches: matches2,
-            pendingActionResult: [
-              route.id,
-              {
-                type: "error" /* error */,
-                error: discoverResult.error
-              }
-            ]
-          };
-        }
-        let boundaryId = findNearestBoundary(discoverResult.partialMatches).route.id;
-        return {
-          matches: discoverResult.partialMatches,
-          pendingActionResult: [
-            boundaryId,
-            {
-              type: "error" /* error */,
-              error: discoverResult.error
-            }
-          ]
-        };
-      } else if (!discoverResult.matches) {
-        let { notFoundMatches, error, route } = handleNavigational404(
-          location.pathname
-        );
-        return {
-          matches: notFoundMatches,
-          pendingActionResult: [
-            route.id,
-            {
-              type: "error" /* error */,
-              error
-            }
-          ]
-        };
-      } else {
-        matches = discoverResult.matches;
-      }
-    }
-    let result;
-    let actionMatch = getTargetMatch(matches, location);
-    if (!actionMatch.route.action && !actionMatch.route.lazy) {
-      result = {
-        type: "error" /* error */,
-        error: getInternalRouterError(405, {
-          method: request.method,
-          pathname: location.pathname,
-          routeId: actionMatch.route.id
-        })
-      };
-    } else {
-      let dsMatches = getTargetedDataStrategyMatches(
-        mapRouteProperties2,
-        manifest,
-        request,
-        matches,
-        actionMatch,
-        initialHydration ? [] : hydrationRouteProperties2,
-        scopedContext
-      );
-      let results = await callDataStrategy(
-        request,
-        dsMatches,
-        scopedContext,
-        null
-      );
-      result = results[actionMatch.route.id];
-      if (!result) {
-        for (let match of matches) {
-          if (results[match.route.id]) {
-            result = results[match.route.id];
-            break;
-          }
-        }
-      }
-      if (request.signal.aborted) {
-        return { shortCircuited: true };
-      }
-    }
-    if (isRedirectResult(result)) {
-      let replace2;
-      if (opts && opts.replace != null) {
-        replace2 = opts.replace;
-      } else {
-        let location2 = normalizeRedirectLocation(
-          result.response.headers.get("Location"),
-          new URL(request.url),
-          basename
-        );
-        replace2 = location2 === state.location.pathname + state.location.search;
-      }
-      await startRedirectNavigation(request, result, true, {
-        submission,
-        replace: replace2
-      });
-      return { shortCircuited: true };
-    }
-    if (isErrorResult(result)) {
-      let boundaryMatch = findNearestBoundary(matches, actionMatch.route.id);
-      if ((opts && opts.replace) !== true) {
-        pendingAction = "PUSH" /* Push */;
-      }
-      return {
-        matches,
-        pendingActionResult: [
-          boundaryMatch.route.id,
-          result,
-          actionMatch.route.id
-        ]
-      };
-    }
-    return {
-      matches,
-      pendingActionResult: [actionMatch.route.id, result]
-    };
-  }
-  async function handleLoaders(request, location, matches, scopedContext, isFogOfWar, overrideNavigation, submission, fetcherSubmission, replace2, initialHydration, flushSync, pendingActionResult) {
-    let loadingNavigation = overrideNavigation || getLoadingNavigation(location, submission);
-    let activeSubmission = submission || fetcherSubmission || getSubmissionFromNavigation(loadingNavigation);
-    let shouldUpdateNavigationState = !isUninterruptedRevalidation && !initialHydration;
-    if (isFogOfWar) {
-      if (shouldUpdateNavigationState) {
-        let actionData = getUpdatedActionData(pendingActionResult);
-        updateState(
-          {
-            navigation: loadingNavigation,
-            ...actionData !== void 0 ? { actionData } : {}
-          },
-          {
-            flushSync
-          }
-        );
-      }
-      let discoverResult = await discoverRoutes(
-        matches,
-        location.pathname,
-        request.signal
-      );
-      if (discoverResult.type === "aborted") {
-        return { shortCircuited: true };
-      } else if (discoverResult.type === "error") {
-        if (discoverResult.partialMatches.length === 0) {
-          let { matches: matches2, route } = getShortCircuitMatches(dataRoutes);
-          return {
-            matches: matches2,
-            loaderData: {},
-            errors: {
-              [route.id]: discoverResult.error
-            }
-          };
-        }
-        let boundaryId = findNearestBoundary(discoverResult.partialMatches).route.id;
-        return {
-          matches: discoverResult.partialMatches,
-          loaderData: {},
-          errors: {
-            [boundaryId]: discoverResult.error
-          }
-        };
-      } else if (!discoverResult.matches) {
-        let { error, notFoundMatches, route } = handleNavigational404(
-          location.pathname
-        );
-        return {
-          matches: notFoundMatches,
-          loaderData: {},
-          errors: {
-            [route.id]: error
-          }
-        };
-      } else {
-        matches = discoverResult.matches;
-      }
-    }
-    let routesToUse = inFlightDataRoutes || dataRoutes;
-    let { dsMatches, revalidatingFetchers } = getMatchesToLoad(
-      request,
-      scopedContext,
-      mapRouteProperties2,
-      manifest,
-      init.history,
-      state,
-      matches,
-      activeSubmission,
-      location,
-      initialHydration ? [] : hydrationRouteProperties2,
-      initialHydration === true,
-      isRevalidationRequired,
-      cancelledFetcherLoads,
-      fetchersQueuedForDeletion,
-      fetchLoadMatches,
-      fetchRedirectIds,
-      routesToUse,
-      basename,
-      init.patchRoutesOnNavigation != null,
-      pendingActionResult
-    );
-    pendingNavigationLoadId = ++incrementingLoadId;
-    if (!init.dataStrategy && !dsMatches.some((m) => m.shouldLoad) && !dsMatches.some(
-      (m) => m.route.middleware && m.route.middleware.length > 0
-    ) && revalidatingFetchers.length === 0) {
-      let updatedFetchers2 = markFetchRedirectsDone();
-      completeNavigation(
-        location,
-        {
-          matches,
-          loaderData: {},
-          // Commit pending error if we're short circuiting
-          errors: pendingActionResult && isErrorResult(pendingActionResult[1]) ? { [pendingActionResult[0]]: pendingActionResult[1].error } : null,
-          ...getActionDataForCommit(pendingActionResult),
-          ...updatedFetchers2 ? { fetchers: new Map(state.fetchers) } : {}
-        },
-        { flushSync }
-      );
-      return { shortCircuited: true };
-    }
-    if (shouldUpdateNavigationState) {
-      let updates = {};
-      if (!isFogOfWar) {
-        updates.navigation = loadingNavigation;
-        let actionData = getUpdatedActionData(pendingActionResult);
-        if (actionData !== void 0) {
-          updates.actionData = actionData;
-        }
-      }
-      if (revalidatingFetchers.length > 0) {
-        updates.fetchers = getUpdatedRevalidatingFetchers(revalidatingFetchers);
-      }
-      updateState(updates, { flushSync });
-    }
-    revalidatingFetchers.forEach((rf) => {
-      abortFetcher(rf.key);
-      if (rf.controller) {
-        fetchControllers.set(rf.key, rf.controller);
-      }
-    });
-    let abortPendingFetchRevalidations = () => revalidatingFetchers.forEach((f) => abortFetcher(f.key));
-    if (pendingNavigationController) {
-      pendingNavigationController.signal.addEventListener(
-        "abort",
-        abortPendingFetchRevalidations
-      );
-    }
-    let { loaderResults, fetcherResults } = await callLoadersAndMaybeResolveData(
-      dsMatches,
-      revalidatingFetchers,
-      request,
-      scopedContext
-    );
-    if (request.signal.aborted) {
-      return { shortCircuited: true };
-    }
-    if (pendingNavigationController) {
-      pendingNavigationController.signal.removeEventListener(
-        "abort",
-        abortPendingFetchRevalidations
-      );
-    }
-    revalidatingFetchers.forEach((rf) => fetchControllers.delete(rf.key));
-    let redirect2 = findRedirect(loaderResults);
-    if (redirect2) {
-      await startRedirectNavigation(request, redirect2.result, true, {
-        replace: replace2
-      });
-      return { shortCircuited: true };
-    }
-    redirect2 = findRedirect(fetcherResults);
-    if (redirect2) {
-      fetchRedirectIds.add(redirect2.key);
-      await startRedirectNavigation(request, redirect2.result, true, {
-        replace: replace2
-      });
-      return { shortCircuited: true };
-    }
-    let { loaderData, errors } = processLoaderData(
-      state,
-      matches,
-      loaderResults,
-      pendingActionResult,
-      revalidatingFetchers,
-      fetcherResults
-    );
-    if (initialHydration && state.errors) {
-      errors = { ...state.errors, ...errors };
-    }
-    let updatedFetchers = markFetchRedirectsDone();
-    let didAbortFetchLoads = abortStaleFetchLoads(pendingNavigationLoadId);
-    let shouldUpdateFetchers = updatedFetchers || didAbortFetchLoads || revalidatingFetchers.length > 0;
-    return {
-      matches,
-      loaderData,
-      errors,
-      ...shouldUpdateFetchers ? { fetchers: new Map(state.fetchers) } : {}
-    };
-  }
-  function getUpdatedActionData(pendingActionResult) {
-    if (pendingActionResult && !isErrorResult(pendingActionResult[1])) {
-      return {
-        [pendingActionResult[0]]: pendingActionResult[1].data
-      };
-    } else if (state.actionData) {
-      if (Object.keys(state.actionData).length === 0) {
-        return null;
-      } else {
-        return state.actionData;
-      }
-    }
-  }
-  function getUpdatedRevalidatingFetchers(revalidatingFetchers) {
-    revalidatingFetchers.forEach((rf) => {
-      let fetcher = state.fetchers.get(rf.key);
-      let revalidatingFetcher = getLoadingFetcher(
-        void 0,
-        fetcher ? fetcher.data : void 0
-      );
-      state.fetchers.set(rf.key, revalidatingFetcher);
-    });
-    return new Map(state.fetchers);
-  }
-  async function fetch2(key, routeId, href, opts) {
-    abortFetcher(key);
-    let flushSync = (opts && opts.flushSync) === true;
-    let routesToUse = inFlightDataRoutes || dataRoutes;
-    let normalizedPath = normalizeTo(
-      state.location,
-      state.matches,
-      basename,
-      href,
-      routeId,
-      opts?.relative
-    );
-    let matches = matchRoutes(routesToUse, normalizedPath, basename);
-    let fogOfWar = checkFogOfWar(matches, routesToUse, normalizedPath);
-    if (fogOfWar.active && fogOfWar.matches) {
-      matches = fogOfWar.matches;
-    }
-    if (!matches) {
-      setFetcherError(
-        key,
-        routeId,
-        getInternalRouterError(404, { pathname: normalizedPath }),
-        { flushSync }
-      );
-      return;
-    }
-    let { path, submission, error } = normalizeNavigateOptions(
-      true,
-      normalizedPath,
-      opts
-    );
-    if (error) {
-      setFetcherError(key, routeId, error, { flushSync });
-      return;
-    }
-    let scopedContext = init.getContext ? await init.getContext() : new RouterContextProvider();
-    let preventScrollReset = (opts && opts.preventScrollReset) === true;
-    if (submission && isMutationMethod(submission.formMethod)) {
-      await handleFetcherAction(
-        key,
-        routeId,
-        path,
-        matches,
-        scopedContext,
-        fogOfWar.active,
-        flushSync,
-        preventScrollReset,
-        submission
-      );
-      return;
-    }
-    fetchLoadMatches.set(key, { routeId, path });
-    await handleFetcherLoader(
-      key,
-      routeId,
-      path,
-      matches,
-      scopedContext,
-      fogOfWar.active,
-      flushSync,
-      preventScrollReset,
-      submission
-    );
-  }
-  async function handleFetcherAction(key, routeId, path, requestMatches, scopedContext, isFogOfWar, flushSync, preventScrollReset, submission) {
-    interruptActiveLoads();
-    fetchLoadMatches.delete(key);
-    let existingFetcher = state.fetchers.get(key);
-    updateFetcherState(key, getSubmittingFetcher(submission, existingFetcher), {
-      flushSync
-    });
-    let abortController = new AbortController();
-    let fetchRequest = createClientSideRequest(
-      init.history,
-      path,
-      abortController.signal,
-      submission
-    );
-    if (isFogOfWar) {
-      let discoverResult = await discoverRoutes(
-        requestMatches,
-        new URL(fetchRequest.url).pathname,
-        fetchRequest.signal,
-        key
-      );
-      if (discoverResult.type === "aborted") {
-        return;
-      } else if (discoverResult.type === "error") {
-        setFetcherError(key, routeId, discoverResult.error, { flushSync });
-        return;
-      } else if (!discoverResult.matches) {
-        setFetcherError(
-          key,
-          routeId,
-          getInternalRouterError(404, { pathname: path }),
-          { flushSync }
-        );
-        return;
-      } else {
-        requestMatches = discoverResult.matches;
-      }
-    }
-    let match = getTargetMatch(requestMatches, path);
-    if (!match.route.action && !match.route.lazy) {
-      let error = getInternalRouterError(405, {
-        method: submission.formMethod,
-        pathname: path,
-        routeId
-      });
-      setFetcherError(key, routeId, error, { flushSync });
-      return;
-    }
-    fetchControllers.set(key, abortController);
-    let originatingLoadId = incrementingLoadId;
-    let fetchMatches = getTargetedDataStrategyMatches(
-      mapRouteProperties2,
-      manifest,
-      fetchRequest,
-      requestMatches,
-      match,
-      hydrationRouteProperties2,
-      scopedContext
-    );
-    let actionResults = await callDataStrategy(
-      fetchRequest,
-      fetchMatches,
-      scopedContext,
-      key
-    );
-    let actionResult = actionResults[match.route.id];
-    if (fetchRequest.signal.aborted) {
-      if (fetchControllers.get(key) === abortController) {
-        fetchControllers.delete(key);
-      }
-      return;
-    }
-    if (fetchersQueuedForDeletion.has(key)) {
-      if (isRedirectResult(actionResult) || isErrorResult(actionResult)) {
-        updateFetcherState(key, getDoneFetcher(void 0));
-        return;
-      }
-    } else {
-      if (isRedirectResult(actionResult)) {
-        fetchControllers.delete(key);
-        if (pendingNavigationLoadId > originatingLoadId) {
-          updateFetcherState(key, getDoneFetcher(void 0));
-          return;
-        } else {
-          fetchRedirectIds.add(key);
-          updateFetcherState(key, getLoadingFetcher(submission));
-          return startRedirectNavigation(fetchRequest, actionResult, false, {
-            fetcherSubmission: submission,
-            preventScrollReset
-          });
-        }
-      }
-      if (isErrorResult(actionResult)) {
-        setFetcherError(key, routeId, actionResult.error);
-        return;
-      }
-    }
-    let nextLocation = state.navigation.location || state.location;
-    let revalidationRequest = createClientSideRequest(
-      init.history,
-      nextLocation,
-      abortController.signal
-    );
-    let routesToUse = inFlightDataRoutes || dataRoutes;
-    let matches = state.navigation.state !== "idle" ? matchRoutes(routesToUse, state.navigation.location, basename) : state.matches;
-    invariant(matches, "Didn't find any matches after fetcher action");
-    let loadId = ++incrementingLoadId;
-    fetchReloadIds.set(key, loadId);
-    let loadFetcher = getLoadingFetcher(submission, actionResult.data);
-    state.fetchers.set(key, loadFetcher);
-    let { dsMatches, revalidatingFetchers } = getMatchesToLoad(
-      revalidationRequest,
-      scopedContext,
-      mapRouteProperties2,
-      manifest,
-      init.history,
-      state,
-      matches,
-      submission,
-      nextLocation,
-      hydrationRouteProperties2,
-      false,
-      isRevalidationRequired,
-      cancelledFetcherLoads,
-      fetchersQueuedForDeletion,
-      fetchLoadMatches,
-      fetchRedirectIds,
-      routesToUse,
-      basename,
-      init.patchRoutesOnNavigation != null,
-      [match.route.id, actionResult]
-    );
-    revalidatingFetchers.filter((rf) => rf.key !== key).forEach((rf) => {
-      let staleKey = rf.key;
-      let existingFetcher2 = state.fetchers.get(staleKey);
-      let revalidatingFetcher = getLoadingFetcher(
-        void 0,
-        existingFetcher2 ? existingFetcher2.data : void 0
-      );
-      state.fetchers.set(staleKey, revalidatingFetcher);
-      abortFetcher(staleKey);
-      if (rf.controller) {
-        fetchControllers.set(staleKey, rf.controller);
-      }
-    });
-    updateState({ fetchers: new Map(state.fetchers) });
-    let abortPendingFetchRevalidations = () => revalidatingFetchers.forEach((rf) => abortFetcher(rf.key));
-    abortController.signal.addEventListener(
-      "abort",
-      abortPendingFetchRevalidations
-    );
-    let { loaderResults, fetcherResults } = await callLoadersAndMaybeResolveData(
-      dsMatches,
-      revalidatingFetchers,
-      revalidationRequest,
-      scopedContext
-    );
-    if (abortController.signal.aborted) {
-      return;
-    }
-    abortController.signal.removeEventListener(
-      "abort",
-      abortPendingFetchRevalidations
-    );
-    fetchReloadIds.delete(key);
-    fetchControllers.delete(key);
-    revalidatingFetchers.forEach((r) => fetchControllers.delete(r.key));
-    if (state.fetchers.has(key)) {
-      let doneFetcher = getDoneFetcher(actionResult.data);
-      state.fetchers.set(key, doneFetcher);
-    }
-    let redirect2 = findRedirect(loaderResults);
-    if (redirect2) {
-      return startRedirectNavigation(
-        revalidationRequest,
-        redirect2.result,
-        false,
-        { preventScrollReset }
-      );
-    }
-    redirect2 = findRedirect(fetcherResults);
-    if (redirect2) {
-      fetchRedirectIds.add(redirect2.key);
-      return startRedirectNavigation(
-        revalidationRequest,
-        redirect2.result,
-        false,
-        { preventScrollReset }
-      );
-    }
-    let { loaderData, errors } = processLoaderData(
-      state,
-      matches,
-      loaderResults,
-      void 0,
-      revalidatingFetchers,
-      fetcherResults
-    );
-    abortStaleFetchLoads(loadId);
-    if (state.navigation.state === "loading" && loadId > pendingNavigationLoadId) {
-      invariant(pendingAction, "Expected pending action");
-      pendingNavigationController && pendingNavigationController.abort();
-      completeNavigation(state.navigation.location, {
-        matches,
-        loaderData,
-        errors,
-        fetchers: new Map(state.fetchers)
-      });
-    } else {
-      updateState({
-        errors,
-        loaderData: mergeLoaderData(
-          state.loaderData,
-          loaderData,
-          matches,
-          errors
-        ),
-        fetchers: new Map(state.fetchers)
-      });
-      isRevalidationRequired = false;
-    }
-  }
-  async function handleFetcherLoader(key, routeId, path, matches, scopedContext, isFogOfWar, flushSync, preventScrollReset, submission) {
-    let existingFetcher = state.fetchers.get(key);
-    updateFetcherState(
-      key,
-      getLoadingFetcher(
-        submission,
-        existingFetcher ? existingFetcher.data : void 0
-      ),
-      { flushSync }
-    );
-    let abortController = new AbortController();
-    let fetchRequest = createClientSideRequest(
-      init.history,
-      path,
-      abortController.signal
-    );
-    if (isFogOfWar) {
-      let discoverResult = await discoverRoutes(
-        matches,
-        new URL(fetchRequest.url).pathname,
-        fetchRequest.signal,
-        key
-      );
-      if (discoverResult.type === "aborted") {
-        return;
-      } else if (discoverResult.type === "error") {
-        setFetcherError(key, routeId, discoverResult.error, { flushSync });
-        return;
-      } else if (!discoverResult.matches) {
-        setFetcherError(
-          key,
-          routeId,
-          getInternalRouterError(404, { pathname: path }),
-          { flushSync }
-        );
-        return;
-      } else {
-        matches = discoverResult.matches;
-      }
-    }
-    let match = getTargetMatch(matches, path);
-    fetchControllers.set(key, abortController);
-    let originatingLoadId = incrementingLoadId;
-    let dsMatches = getTargetedDataStrategyMatches(
-      mapRouteProperties2,
-      manifest,
-      fetchRequest,
-      matches,
-      match,
-      hydrationRouteProperties2,
-      scopedContext
-    );
-    let results = await callDataStrategy(
-      fetchRequest,
-      dsMatches,
-      scopedContext,
-      key
-    );
-    let result = results[match.route.id];
-    if (fetchControllers.get(key) === abortController) {
-      fetchControllers.delete(key);
-    }
-    if (fetchRequest.signal.aborted) {
-      return;
-    }
-    if (fetchersQueuedForDeletion.has(key)) {
-      updateFetcherState(key, getDoneFetcher(void 0));
-      return;
-    }
-    if (isRedirectResult(result)) {
-      if (pendingNavigationLoadId > originatingLoadId) {
-        updateFetcherState(key, getDoneFetcher(void 0));
-        return;
-      } else {
-        fetchRedirectIds.add(key);
-        await startRedirectNavigation(fetchRequest, result, false, {
-          preventScrollReset
-        });
-        return;
-      }
-    }
-    if (isErrorResult(result)) {
-      setFetcherError(key, routeId, result.error);
-      return;
-    }
-    updateFetcherState(key, getDoneFetcher(result.data));
-  }
-  async function startRedirectNavigation(request, redirect2, isNavigation, {
-    submission,
-    fetcherSubmission,
-    preventScrollReset,
-    replace: replace2
-  } = {}) {
-    if (redirect2.response.headers.has("X-Remix-Revalidate")) {
-      isRevalidationRequired = true;
-    }
-    let location = redirect2.response.headers.get("Location");
-    invariant(location, "Expected a Location header on the redirect Response");
-    location = normalizeRedirectLocation(
-      location,
-      new URL(request.url),
-      basename
-    );
-    let redirectLocation = createLocation(state.location, location, {
-      _isRedirect: true
-    });
-    if (isBrowser2) {
-      let isDocumentReload = false;
-      if (redirect2.response.headers.has("X-Remix-Reload-Document")) {
-        isDocumentReload = true;
-      } else if (isAbsoluteUrl(location)) {
-        const url = createBrowserURLImpl(location, true);
-        isDocumentReload = // Hard reload if it's an absolute URL to a new origin
-        url.origin !== routerWindow.location.origin || // Hard reload if it's an absolute URL that does not match our basename
-        stripBasename(url.pathname, basename) == null;
-      }
-      if (isDocumentReload) {
-        if (replace2) {
-          routerWindow.location.replace(location);
-        } else {
-          routerWindow.location.assign(location);
-        }
-        return;
-      }
-    }
-    pendingNavigationController = null;
-    let redirectNavigationType = replace2 === true || redirect2.response.headers.has("X-Remix-Replace") ? "REPLACE" /* Replace */ : "PUSH" /* Push */;
-    let { formMethod, formAction, formEncType } = state.navigation;
-    if (!submission && !fetcherSubmission && formMethod && formAction && formEncType) {
-      submission = getSubmissionFromNavigation(state.navigation);
-    }
-    let activeSubmission = submission || fetcherSubmission;
-    if (redirectPreserveMethodStatusCodes.has(redirect2.response.status) && activeSubmission && isMutationMethod(activeSubmission.formMethod)) {
-      await startNavigation(redirectNavigationType, redirectLocation, {
-        submission: {
-          ...activeSubmission,
-          formAction: location
-        },
-        // Preserve these flags across redirects
-        preventScrollReset: preventScrollReset || pendingPreventScrollReset,
-        enableViewTransition: isNavigation ? pendingViewTransitionEnabled : void 0
-      });
-    } else {
-      let overrideNavigation = getLoadingNavigation(
-        redirectLocation,
-        submission
-      );
-      await startNavigation(redirectNavigationType, redirectLocation, {
-        overrideNavigation,
-        // Send fetcher submissions through for shouldRevalidate
-        fetcherSubmission,
-        // Preserve these flags across redirects
-        preventScrollReset: preventScrollReset || pendingPreventScrollReset,
-        enableViewTransition: isNavigation ? pendingViewTransitionEnabled : void 0
-      });
-    }
-  }
-  async function callDataStrategy(request, matches, scopedContext, fetcherKey) {
-    let results;
-    let dataResults = {};
-    try {
-      results = await callDataStrategyImpl(
-        dataStrategyImpl,
-        request,
-        matches,
-        fetcherKey,
-        scopedContext,
-        false
-      );
-    } catch (e) {
-      matches.filter((m) => m.shouldLoad).forEach((m) => {
-        dataResults[m.route.id] = {
-          type: "error" /* error */,
-          error: e
-        };
-      });
-      return dataResults;
-    }
-    if (request.signal.aborted) {
-      return dataResults;
-    }
-    for (let [routeId, result] of Object.entries(results)) {
-      if (isRedirectDataStrategyResult(result)) {
-        let response = result.result;
-        dataResults[routeId] = {
-          type: "redirect" /* redirect */,
-          response: normalizeRelativeRoutingRedirectResponse(
-            response,
-            request,
-            routeId,
-            matches,
-            basename
-          )
-        };
-      } else {
-        dataResults[routeId] = await convertDataStrategyResultToDataResult(result);
-      }
-    }
-    return dataResults;
-  }
-  async function callLoadersAndMaybeResolveData(matches, fetchersToLoad, request, scopedContext) {
-    let loaderResultsPromise = callDataStrategy(
-      request,
-      matches,
-      scopedContext,
-      null
-    );
-    let fetcherResultsPromise = Promise.all(
-      fetchersToLoad.map(async (f) => {
-        if (f.matches && f.match && f.request && f.controller) {
-          let results = await callDataStrategy(
-            f.request,
-            f.matches,
-            scopedContext,
-            f.key
-          );
-          let result = results[f.match.route.id];
-          return { [f.key]: result };
-        } else {
-          return Promise.resolve({
-            [f.key]: {
-              type: "error" /* error */,
-              error: getInternalRouterError(404, {
-                pathname: f.path
-              })
-            }
-          });
-        }
-      })
-    );
-    let loaderResults = await loaderResultsPromise;
-    let fetcherResults = (await fetcherResultsPromise).reduce(
-      (acc, r) => Object.assign(acc, r),
-      {}
-    );
-    return {
-      loaderResults,
-      fetcherResults
-    };
-  }
-  function interruptActiveLoads() {
-    isRevalidationRequired = true;
-    fetchLoadMatches.forEach((_, key) => {
-      if (fetchControllers.has(key)) {
-        cancelledFetcherLoads.add(key);
-      }
-      abortFetcher(key);
-    });
-  }
-  function updateFetcherState(key, fetcher, opts = {}) {
-    state.fetchers.set(key, fetcher);
-    updateState(
-      { fetchers: new Map(state.fetchers) },
-      { flushSync: (opts && opts.flushSync) === true }
-    );
-  }
-  function setFetcherError(key, routeId, error, opts = {}) {
-    let boundaryMatch = findNearestBoundary(state.matches, routeId);
-    deleteFetcher(key);
-    updateState(
-      {
-        errors: {
-          [boundaryMatch.route.id]: error
-        },
-        fetchers: new Map(state.fetchers)
-      },
-      { flushSync: (opts && opts.flushSync) === true }
-    );
-  }
-  function getFetcher(key) {
-    activeFetchers.set(key, (activeFetchers.get(key) || 0) + 1);
-    if (fetchersQueuedForDeletion.has(key)) {
-      fetchersQueuedForDeletion.delete(key);
-    }
-    return state.fetchers.get(key) || IDLE_FETCHER;
-  }
-  function resetFetcher(key, opts) {
-    abortFetcher(key, opts?.reason);
-    updateFetcherState(key, getDoneFetcher(null));
-  }
-  function deleteFetcher(key) {
-    let fetcher = state.fetchers.get(key);
-    if (fetchControllers.has(key) && !(fetcher && fetcher.state === "loading" && fetchReloadIds.has(key))) {
-      abortFetcher(key);
-    }
-    fetchLoadMatches.delete(key);
-    fetchReloadIds.delete(key);
-    fetchRedirectIds.delete(key);
-    fetchersQueuedForDeletion.delete(key);
-    cancelledFetcherLoads.delete(key);
-    state.fetchers.delete(key);
-  }
-  function queueFetcherForDeletion(key) {
-    let count = (activeFetchers.get(key) || 0) - 1;
-    if (count <= 0) {
-      activeFetchers.delete(key);
-      fetchersQueuedForDeletion.add(key);
-    } else {
-      activeFetchers.set(key, count);
-    }
-    updateState({ fetchers: new Map(state.fetchers) });
-  }
-  function abortFetcher(key, reason) {
-    let controller = fetchControllers.get(key);
-    if (controller) {
-      controller.abort(reason);
-      fetchControllers.delete(key);
-    }
-  }
-  function markFetchersDone(keys) {
-    for (let key of keys) {
-      let fetcher = getFetcher(key);
-      let doneFetcher = getDoneFetcher(fetcher.data);
-      state.fetchers.set(key, doneFetcher);
-    }
-  }
-  function markFetchRedirectsDone() {
-    let doneKeys = [];
-    let updatedFetchers = false;
-    for (let key of fetchRedirectIds) {
-      let fetcher = state.fetchers.get(key);
-      invariant(fetcher, `Expected fetcher: ${key}`);
-      if (fetcher.state === "loading") {
-        fetchRedirectIds.delete(key);
-        doneKeys.push(key);
-        updatedFetchers = true;
-      }
-    }
-    markFetchersDone(doneKeys);
-    return updatedFetchers;
-  }
-  function abortStaleFetchLoads(landedId) {
-    let yeetedKeys = [];
-    for (let [key, id] of fetchReloadIds) {
-      if (id < landedId) {
-        let fetcher = state.fetchers.get(key);
-        invariant(fetcher, `Expected fetcher: ${key}`);
-        if (fetcher.state === "loading") {
-          abortFetcher(key);
-          fetchReloadIds.delete(key);
-          yeetedKeys.push(key);
-        }
-      }
-    }
-    markFetchersDone(yeetedKeys);
-    return yeetedKeys.length > 0;
-  }
-  function getBlocker(key, fn) {
-    let blocker = state.blockers.get(key) || IDLE_BLOCKER;
-    if (blockerFunctions.get(key) !== fn) {
-      blockerFunctions.set(key, fn);
-    }
-    return blocker;
-  }
-  function deleteBlocker(key) {
-    state.blockers.delete(key);
-    blockerFunctions.delete(key);
-  }
-  function updateBlocker(key, newBlocker) {
-    let blocker = state.blockers.get(key) || IDLE_BLOCKER;
-    invariant(
-      blocker.state === "unblocked" && newBlocker.state === "blocked" || blocker.state === "blocked" && newBlocker.state === "blocked" || blocker.state === "blocked" && newBlocker.state === "proceeding" || blocker.state === "blocked" && newBlocker.state === "unblocked" || blocker.state === "proceeding" && newBlocker.state === "unblocked",
-      `Invalid blocker state transition: ${blocker.state} -> ${newBlocker.state}`
-    );
-    let blockers = new Map(state.blockers);
-    blockers.set(key, newBlocker);
-    updateState({ blockers });
-  }
-  function shouldBlockNavigation({
-    currentLocation,
-    nextLocation,
-    historyAction
-  }) {
-    if (blockerFunctions.size === 0) {
-      return;
-    }
-    if (blockerFunctions.size > 1) {
-      warning(false, "A router only supports one blocker at a time");
-    }
-    let entries = Array.from(blockerFunctions.entries());
-    let [blockerKey, blockerFunction] = entries[entries.length - 1];
-    let blocker = state.blockers.get(blockerKey);
-    if (blocker && blocker.state === "proceeding") {
-      return;
-    }
-    if (blockerFunction({ currentLocation, nextLocation, historyAction })) {
-      return blockerKey;
-    }
-  }
-  function handleNavigational404(pathname) {
-    let error = getInternalRouterError(404, { pathname });
-    let routesToUse = inFlightDataRoutes || dataRoutes;
-    let { matches, route } = getShortCircuitMatches(routesToUse);
-    return { notFoundMatches: matches, route, error };
-  }
-  function enableScrollRestoration(positions, getPosition, getKey) {
-    savedScrollPositions2 = positions;
-    getScrollPosition = getPosition;
-    getScrollRestorationKey2 = getKey || null;
-    if (!initialScrollRestored && state.navigation === IDLE_NAVIGATION) {
-      initialScrollRestored = true;
-      let y = getSavedScrollPosition(state.location, state.matches);
-      if (y != null) {
-        updateState({ restoreScrollPosition: y });
-      }
-    }
-    return () => {
-      savedScrollPositions2 = null;
-      getScrollPosition = null;
-      getScrollRestorationKey2 = null;
-    };
-  }
-  function getScrollKey(location, matches) {
-    if (getScrollRestorationKey2) {
-      let key = getScrollRestorationKey2(
-        location,
-        matches.map((m) => convertRouteMatchToUiMatch(m, state.loaderData))
-      );
-      return key || location.key;
-    }
-    return location.key;
-  }
-  function saveScrollPosition(location, matches) {
-    if (savedScrollPositions2 && getScrollPosition) {
-      let key = getScrollKey(location, matches);
-      savedScrollPositions2[key] = getScrollPosition();
-    }
-  }
-  function getSavedScrollPosition(location, matches) {
-    if (savedScrollPositions2) {
-      let key = getScrollKey(location, matches);
-      let y = savedScrollPositions2[key];
-      if (typeof y === "number") {
-        return y;
-      }
-    }
-    return null;
-  }
-  function checkFogOfWar(matches, routesToUse, pathname) {
-    if (init.patchRoutesOnNavigation) {
-      if (!matches) {
-        let fogMatches = matchRoutesImpl(
-          routesToUse,
-          pathname,
-          basename,
-          true
-        );
-        return { active: true, matches: fogMatches || [] };
-      } else {
-        if (Object.keys(matches[0].params).length > 0) {
-          let partialMatches = matchRoutesImpl(
-            routesToUse,
-            pathname,
-            basename,
-            true
-          );
-          return { active: true, matches: partialMatches };
-        }
-      }
-    }
-    return { active: false, matches: null };
-  }
-  async function discoverRoutes(matches, pathname, signal, fetcherKey) {
-    if (!init.patchRoutesOnNavigation) {
-      return { type: "success", matches };
-    }
-    let partialMatches = matches;
-    while (true) {
-      let isNonHMR = inFlightDataRoutes == null;
-      let routesToUse = inFlightDataRoutes || dataRoutes;
-      let localManifest = manifest;
-      try {
-        await init.patchRoutesOnNavigation({
-          signal,
-          path: pathname,
-          matches: partialMatches,
-          fetcherKey,
-          patch: (routeId, children) => {
-            if (signal.aborted) return;
-            patchRoutesImpl(
-              routeId,
-              children,
-              routesToUse,
-              localManifest,
-              mapRouteProperties2,
-              false
-            );
-          }
-        });
-      } catch (e) {
-        return { type: "error", error: e, partialMatches };
-      } finally {
-        if (isNonHMR && !signal.aborted) {
-          dataRoutes = [...dataRoutes];
-        }
-      }
-      if (signal.aborted) {
-        return { type: "aborted" };
-      }
-      let newMatches = matchRoutes(routesToUse, pathname, basename);
-      if (newMatches) {
-        return { type: "success", matches: newMatches };
-      }
-      let newPartialMatches = matchRoutesImpl(
-        routesToUse,
-        pathname,
-        basename,
-        true
-      );
-      if (!newPartialMatches || partialMatches.length === newPartialMatches.length && partialMatches.every(
-        (m, i) => m.route.id === newPartialMatches[i].route.id
-      )) {
-        return { type: "success", matches: null };
-      }
-      partialMatches = newPartialMatches;
-    }
-  }
-  function _internalSetRoutes(newRoutes) {
-    manifest = {};
-    inFlightDataRoutes = convertRoutesToDataRoutes(
-      newRoutes,
-      mapRouteProperties2,
-      void 0,
-      manifest
-    );
-  }
-  function patchRoutes(routeId, children, unstable_allowElementMutations = false) {
-    let isNonHMR = inFlightDataRoutes == null;
-    let routesToUse = inFlightDataRoutes || dataRoutes;
-    patchRoutesImpl(
-      routeId,
-      children,
-      routesToUse,
-      manifest,
-      mapRouteProperties2,
-      unstable_allowElementMutations
-    );
-    if (isNonHMR) {
-      dataRoutes = [...dataRoutes];
-      updateState({});
-    }
-  }
-  router = {
-    get basename() {
-      return basename;
-    },
-    get future() {
-      return future;
-    },
-    get state() {
-      return state;
-    },
-    get routes() {
-      return dataRoutes;
-    },
-    get window() {
-      return routerWindow;
-    },
-    initialize,
-    subscribe,
-    enableScrollRestoration,
-    navigate,
-    fetch: fetch2,
-    revalidate,
-    // Passthrough to history-aware createHref used by useHref so we get proper
-    // hash-aware URLs in DOM paths
-    createHref: (to) => init.history.createHref(to),
-    encodeLocation: (to) => init.history.encodeLocation(to),
-    getFetcher,
-    resetFetcher,
-    deleteFetcher: queueFetcherForDeletion,
-    dispose,
-    getBlocker,
-    deleteBlocker,
-    patchRoutes,
-    _internalFetchControllers: fetchControllers,
-    // TODO: Remove setRoutes, it's temporary to avoid dealing with
-    // updating the tree while validating the update algorithm.
-    _internalSetRoutes,
-    _internalSetStateDoNotUseOrYouWillBreakYourApp(newState) {
-      updateState(newState);
-    }
-  };
-  return router;
-}
-function createStaticHandler(routes, opts) {
-  invariant(
-    routes.length > 0,
-    "You must provide a non-empty routes array to createStaticHandler"
-  );
-  let manifest = {};
-  let basename = (opts ? opts.basename : null) || "/";
-  let mapRouteProperties2 = opts?.mapRouteProperties || defaultMapRouteProperties;
-  let dataRoutes = convertRoutesToDataRoutes(
-    routes,
-    mapRouteProperties2,
-    void 0,
-    manifest
-  );
-  async function query(request, {
-    requestContext,
-    filterMatchesToLoad,
-    skipLoaderErrorBubbling,
-    skipRevalidation,
-    dataStrategy,
-    generateMiddlewareResponse
-  } = {}) {
-    let url = new URL(request.url);
-    let method = request.method;
-    let location = createLocation("", createPath(url), null, "default");
-    let matches = matchRoutes(dataRoutes, location, basename);
-    requestContext = requestContext != null ? requestContext : new RouterContextProvider();
-    if (!isValidMethod(method) && method !== "HEAD") {
-      let error = getInternalRouterError(405, { method });
-      let { matches: methodNotAllowedMatches, route } = getShortCircuitMatches(dataRoutes);
-      let staticContext = {
-        basename,
-        location,
-        matches: methodNotAllowedMatches,
-        loaderData: {},
-        actionData: null,
-        errors: {
-          [route.id]: error
-        },
-        statusCode: error.status,
-        loaderHeaders: {},
-        actionHeaders: {}
-      };
-      return generateMiddlewareResponse ? generateMiddlewareResponse(() => Promise.resolve(staticContext)) : staticContext;
-    } else if (!matches) {
-      let error = getInternalRouterError(404, { pathname: location.pathname });
-      let { matches: notFoundMatches, route } = getShortCircuitMatches(dataRoutes);
-      let staticContext = {
-        basename,
-        location,
-        matches: notFoundMatches,
-        loaderData: {},
-        actionData: null,
-        errors: {
-          [route.id]: error
-        },
-        statusCode: error.status,
-        loaderHeaders: {},
-        actionHeaders: {}
-      };
-      return generateMiddlewareResponse ? generateMiddlewareResponse(() => Promise.resolve(staticContext)) : staticContext;
-    }
-    if (generateMiddlewareResponse) {
-      invariant(
-        requestContext instanceof RouterContextProvider,
-        "When using middleware in `staticHandler.query()`, any provided `requestContext` must be an instance of `RouterContextProvider`"
-      );
-      try {
-        await loadLazyMiddlewareForMatches(
-          matches,
-          manifest,
-          mapRouteProperties2
-        );
-        let renderedStaticContext;
-        let response = await runServerMiddlewarePipeline(
-          {
-            request,
-            matches,
-            params: matches[0].params,
-            // If we're calling middleware then it must be enabled so we can cast
-            // this to the proper type knowing it's not an `AppLoadContext`
-            context: requestContext
-          },
-          async () => {
-            let res = await generateMiddlewareResponse(
-              async (revalidationRequest, opts2 = {}) => {
-                let result2 = await queryImpl(
-                  revalidationRequest,
-                  location,
-                  matches,
-                  requestContext,
-                  dataStrategy || null,
-                  skipLoaderErrorBubbling === true,
-                  null,
-                  "filterMatchesToLoad" in opts2 ? opts2.filterMatchesToLoad ?? null : filterMatchesToLoad ?? null,
-                  skipRevalidation === true
-                );
-                if (isResponse(result2)) {
-                  return result2;
-                }
-                renderedStaticContext = { location, basename, ...result2 };
-                return renderedStaticContext;
-              }
-            );
-            return res;
-          },
-          async (error, routeId) => {
-            if (isRedirectResponse(error)) {
-              return error;
-            }
-            if (isResponse(error)) {
-              try {
-                error = new ErrorResponseImpl(
-                  error.status,
-                  error.statusText,
-                  await parseResponseBody(error)
-                );
-              } catch (e) {
-                error = e;
-              }
-            }
-            if (isDataWithResponseInit(error)) {
-              error = dataWithResponseInitToErrorResponse(error);
-            }
-            if (renderedStaticContext) {
-              if (routeId in renderedStaticContext.loaderData) {
-                renderedStaticContext.loaderData[routeId] = void 0;
-              }
-              let staticContext = getStaticContextFromError(
-                dataRoutes,
-                renderedStaticContext,
-                error,
-                skipLoaderErrorBubbling ? routeId : findNearestBoundary(matches, routeId).route.id
-              );
-              return generateMiddlewareResponse(
-                () => Promise.resolve(staticContext)
-              );
-            } else {
-              let boundaryRouteId = skipLoaderErrorBubbling ? routeId : findNearestBoundary(
-                matches,
-                matches.find(
-                  (m) => m.route.id === routeId || m.route.loader
-                )?.route.id || routeId
-              ).route.id;
-              let staticContext = {
-                matches,
-                location,
-                basename,
-                loaderData: {},
-                actionData: null,
-                errors: {
-                  [boundaryRouteId]: error
-                },
-                statusCode: isRouteErrorResponse(error) ? error.status : 500,
-                actionHeaders: {},
-                loaderHeaders: {}
-              };
-              return generateMiddlewareResponse(
-                () => Promise.resolve(staticContext)
-              );
-            }
-          }
-        );
-        invariant(isResponse(response), "Expected a response in query()");
-        return response;
-      } catch (e) {
-        if (isResponse(e)) {
-          return e;
-        }
-        throw e;
-      }
-    }
-    let result = await queryImpl(
-      request,
-      location,
-      matches,
-      requestContext,
-      dataStrategy || null,
-      skipLoaderErrorBubbling === true,
-      null,
-      filterMatchesToLoad || null,
-      skipRevalidation === true
-    );
-    if (isResponse(result)) {
-      return result;
-    }
-    return { location, basename, ...result };
-  }
-  async function queryRoute(request, {
-    routeId,
-    requestContext,
-    dataStrategy,
-    generateMiddlewareResponse
-  } = {}) {
-    let url = new URL(request.url);
-    let method = request.method;
-    let location = createLocation("", createPath(url), null, "default");
-    let matches = matchRoutes(dataRoutes, location, basename);
-    requestContext = requestContext != null ? requestContext : new RouterContextProvider();
-    if (!isValidMethod(method) && method !== "HEAD" && method !== "OPTIONS") {
-      throw getInternalRouterError(405, { method });
-    } else if (!matches) {
-      throw getInternalRouterError(404, { pathname: location.pathname });
-    }
-    let match = routeId ? matches.find((m) => m.route.id === routeId) : getTargetMatch(matches, location);
-    if (routeId && !match) {
-      throw getInternalRouterError(403, {
-        pathname: location.pathname,
-        routeId
-      });
-    } else if (!match) {
-      throw getInternalRouterError(404, { pathname: location.pathname });
-    }
-    if (generateMiddlewareResponse) {
-      invariant(
-        requestContext instanceof RouterContextProvider,
-        "When using middleware in `staticHandler.queryRoute()`, any provided `requestContext` must be an instance of `RouterContextProvider`"
-      );
-      await loadLazyMiddlewareForMatches(matches, manifest, mapRouteProperties2);
-      let response = await runServerMiddlewarePipeline(
-        {
-          request,
-          matches,
-          params: matches[0].params,
-          // If we're calling middleware then it must be enabled so we can cast
-          // this to the proper type knowing it's not an `AppLoadContext`
-          context: requestContext
-        },
-        async () => {
-          let res = await generateMiddlewareResponse(
-            async (innerRequest) => {
-              let result2 = await queryImpl(
-                innerRequest,
-                location,
-                matches,
-                requestContext,
-                dataStrategy || null,
-                false,
-                match,
-                null,
-                false
-              );
-              let processed = handleQueryResult(result2);
-              return isResponse(processed) ? processed : typeof processed === "string" ? new Response(processed) : Response.json(processed);
-            }
-          );
-          return res;
-        },
-        (error) => {
-          if (isDataWithResponseInit(error)) {
-            return Promise.resolve(dataWithResponseInitToResponse(error));
-          }
-          if (isResponse(error)) {
-            return Promise.resolve(error);
-          }
-          throw error;
-        }
-      );
-      return response;
-    }
-    let result = await queryImpl(
-      request,
-      location,
-      matches,
-      requestContext,
-      dataStrategy || null,
-      false,
-      match,
-      null,
-      false
-    );
-    return handleQueryResult(result);
-    function handleQueryResult(result2) {
-      if (isResponse(result2)) {
-        return result2;
-      }
-      let error = result2.errors ? Object.values(result2.errors)[0] : void 0;
-      if (error !== void 0) {
-        throw error;
-      }
-      if (result2.actionData) {
-        return Object.values(result2.actionData)[0];
-      }
-      if (result2.loaderData) {
-        return Object.values(result2.loaderData)[0];
-      }
-      return void 0;
-    }
-  }
-  async function queryImpl(request, location, matches, requestContext, dataStrategy, skipLoaderErrorBubbling, routeMatch, filterMatchesToLoad, skipRevalidation) {
-    invariant(
-      request.signal,
-      "query()/queryRoute() requests must contain an AbortController signal"
-    );
-    try {
-      if (isMutationMethod(request.method)) {
-        let result2 = await submit(
-          request,
-          matches,
-          routeMatch || getTargetMatch(matches, location),
-          requestContext,
-          dataStrategy,
-          skipLoaderErrorBubbling,
-          routeMatch != null,
-          filterMatchesToLoad,
-          skipRevalidation
-        );
-        return result2;
-      }
-      let result = await loadRouteData(
-        request,
-        matches,
-        requestContext,
-        dataStrategy,
-        skipLoaderErrorBubbling,
-        routeMatch,
-        filterMatchesToLoad
-      );
-      return isResponse(result) ? result : {
-        ...result,
-        actionData: null,
-        actionHeaders: {}
-      };
-    } catch (e) {
-      if (isDataStrategyResult(e) && isResponse(e.result)) {
-        if (e.type === "error" /* error */) {
-          throw e.result;
-        }
-        return e.result;
-      }
-      if (isRedirectResponse(e)) {
-        return e;
-      }
-      throw e;
-    }
-  }
-  async function submit(request, matches, actionMatch, requestContext, dataStrategy, skipLoaderErrorBubbling, isRouteRequest, filterMatchesToLoad, skipRevalidation) {
-    let result;
-    if (!actionMatch.route.action && !actionMatch.route.lazy) {
-      let error = getInternalRouterError(405, {
-        method: request.method,
-        pathname: new URL(request.url).pathname,
-        routeId: actionMatch.route.id
-      });
-      if (isRouteRequest) {
-        throw error;
-      }
-      result = {
-        type: "error" /* error */,
-        error
-      };
-    } else {
-      let dsMatches = getTargetedDataStrategyMatches(
-        mapRouteProperties2,
-        manifest,
-        request,
-        matches,
-        actionMatch,
-        [],
-        requestContext
-      );
-      let results = await callDataStrategy(
-        request,
-        dsMatches,
-        isRouteRequest,
-        requestContext,
-        dataStrategy
-      );
-      result = results[actionMatch.route.id];
-      if (request.signal.aborted) {
-        throwStaticHandlerAbortedError(request, isRouteRequest);
-      }
-    }
-    if (isRedirectResult(result)) {
-      throw new Response(null, {
-        status: result.response.status,
-        headers: {
-          Location: result.response.headers.get("Location")
-        }
-      });
-    }
-    if (isRouteRequest) {
-      if (isErrorResult(result)) {
-        throw result.error;
-      }
-      return {
-        matches: [actionMatch],
-        loaderData: {},
-        actionData: { [actionMatch.route.id]: result.data },
-        errors: null,
-        // Note: statusCode + headers are unused here since queryRoute will
-        // return the raw Response or value
-        statusCode: 200,
-        loaderHeaders: {},
-        actionHeaders: {}
-      };
-    }
-    if (skipRevalidation) {
-      if (isErrorResult(result)) {
-        let boundaryMatch = skipLoaderErrorBubbling ? actionMatch : findNearestBoundary(matches, actionMatch.route.id);
-        return {
-          statusCode: isRouteErrorResponse(result.error) ? result.error.status : result.statusCode != null ? result.statusCode : 500,
-          actionData: null,
-          actionHeaders: {
-            ...result.headers ? { [actionMatch.route.id]: result.headers } : {}
-          },
-          matches,
-          loaderData: {},
-          errors: {
-            [boundaryMatch.route.id]: result.error
-          },
-          loaderHeaders: {}
-        };
-      } else {
-        return {
-          actionData: {
-            [actionMatch.route.id]: result.data
-          },
-          actionHeaders: result.headers ? { [actionMatch.route.id]: result.headers } : {},
-          matches,
-          loaderData: {},
-          errors: null,
-          statusCode: result.statusCode || 200,
-          loaderHeaders: {}
-        };
-      }
-    }
-    let loaderRequest = new Request(request.url, {
-      headers: request.headers,
-      redirect: request.redirect,
-      signal: request.signal
-    });
-    if (isErrorResult(result)) {
-      let boundaryMatch = skipLoaderErrorBubbling ? actionMatch : findNearestBoundary(matches, actionMatch.route.id);
-      let handlerContext2 = await loadRouteData(
-        loaderRequest,
-        matches,
-        requestContext,
-        dataStrategy,
-        skipLoaderErrorBubbling,
-        null,
-        filterMatchesToLoad,
-        [boundaryMatch.route.id, result]
-      );
-      return {
-        ...handlerContext2,
-        statusCode: isRouteErrorResponse(result.error) ? result.error.status : result.statusCode != null ? result.statusCode : 500,
-        actionData: null,
-        actionHeaders: {
-          ...result.headers ? { [actionMatch.route.id]: result.headers } : {}
-        }
-      };
-    }
-    let handlerContext = await loadRouteData(
-      loaderRequest,
-      matches,
-      requestContext,
-      dataStrategy,
-      skipLoaderErrorBubbling,
-      null,
-      filterMatchesToLoad
-    );
-    return {
-      ...handlerContext,
-      actionData: {
-        [actionMatch.route.id]: result.data
-      },
-      // action status codes take precedence over loader status codes
-      ...result.statusCode ? { statusCode: result.statusCode } : {},
-      actionHeaders: result.headers ? { [actionMatch.route.id]: result.headers } : {}
-    };
-  }
-  async function loadRouteData(request, matches, requestContext, dataStrategy, skipLoaderErrorBubbling, routeMatch, filterMatchesToLoad, pendingActionResult) {
-    let isRouteRequest = routeMatch != null;
-    if (isRouteRequest && !routeMatch?.route.loader && !routeMatch?.route.lazy) {
-      throw getInternalRouterError(400, {
-        method: request.method,
-        pathname: new URL(request.url).pathname,
-        routeId: routeMatch?.route.id
-      });
-    }
-    let dsMatches;
-    if (routeMatch) {
-      dsMatches = getTargetedDataStrategyMatches(
-        mapRouteProperties2,
-        manifest,
-        request,
-        matches,
-        routeMatch,
-        [],
-        requestContext
-      );
-    } else {
-      let maxIdx = pendingActionResult && isErrorResult(pendingActionResult[1]) ? (
-        // Up to but not including the boundary
-        matches.findIndex((m) => m.route.id === pendingActionResult[0]) - 1
-      ) : void 0;
-      dsMatches = matches.map((match, index) => {
-        if (maxIdx != null && index > maxIdx) {
-          return getDataStrategyMatch(
-            mapRouteProperties2,
-            manifest,
-            request,
-            match,
-            [],
-            requestContext,
-            false
-          );
-        }
-        return getDataStrategyMatch(
-          mapRouteProperties2,
-          manifest,
-          request,
-          match,
-          [],
-          requestContext,
-          (match.route.loader || match.route.lazy) != null && (!filterMatchesToLoad || filterMatchesToLoad(match))
-        );
-      });
-    }
-    if (!dataStrategy && !dsMatches.some((m) => m.shouldLoad)) {
-      return {
-        matches,
-        loaderData: {},
-        errors: pendingActionResult && isErrorResult(pendingActionResult[1]) ? {
-          [pendingActionResult[0]]: pendingActionResult[1].error
-        } : null,
-        statusCode: 200,
-        loaderHeaders: {}
-      };
-    }
-    let results = await callDataStrategy(
-      request,
-      dsMatches,
-      isRouteRequest,
-      requestContext,
-      dataStrategy
-    );
-    if (request.signal.aborted) {
-      throwStaticHandlerAbortedError(request, isRouteRequest);
-    }
-    let handlerContext = processRouteLoaderData(
-      matches,
-      results,
-      pendingActionResult,
-      true,
-      skipLoaderErrorBubbling
-    );
-    return {
-      ...handlerContext,
-      matches
-    };
-  }
-  async function callDataStrategy(request, matches, isRouteRequest, requestContext, dataStrategy) {
-    let results = await callDataStrategyImpl(
-      dataStrategy || defaultDataStrategy,
-      request,
-      matches,
-      null,
-      requestContext,
-      true
-    );
-    let dataResults = {};
-    await Promise.all(
-      matches.map(async (match) => {
-        if (!(match.route.id in results)) {
-          return;
-        }
-        let result = results[match.route.id];
-        if (isRedirectDataStrategyResult(result)) {
-          let response = result.result;
-          throw normalizeRelativeRoutingRedirectResponse(
-            response,
-            request,
-            match.route.id,
-            matches,
-            basename
-          );
-        }
-        if (isRouteRequest) {
-          if (isResponse(result.result)) {
-            throw result;
-          } else if (isDataWithResponseInit(result.result)) {
-            throw dataWithResponseInitToResponse(result.result);
-          }
-        }
-        dataResults[match.route.id] = await convertDataStrategyResultToDataResult(result);
-      })
-    );
-    return dataResults;
-  }
-  return {
-    dataRoutes,
-    query,
-    queryRoute
-  };
-}
-function getStaticContextFromError(routes, handlerContext, error, boundaryId) {
-  let errorBoundaryId = boundaryId || handlerContext._deepestRenderedBoundaryId || routes[0].id;
-  return {
-    ...handlerContext,
-    statusCode: isRouteErrorResponse(error) ? error.status : 500,
-    errors: {
-      [errorBoundaryId]: error
-    }
-  };
-}
-function throwStaticHandlerAbortedError(request, isRouteRequest) {
-  if (request.signal.reason !== void 0) {
-    throw request.signal.reason;
-  }
-  let method = isRouteRequest ? "queryRoute" : "query";
-  throw new Error(
-    `${method}() call aborted without an \`AbortSignal.reason\`: ${request.method} ${request.url}`
-  );
-}
-function isSubmissionNavigation(opts) {
-  return opts != null && ("formData" in opts && opts.formData != null || "body" in opts && opts.body !== void 0);
-}
-function normalizeTo(location, matches, basename, to, fromRouteId, relative) {
-  let contextualMatches;
-  let activeRouteMatch;
-  if (fromRouteId) {
-    contextualMatches = [];
-    for (let match of matches) {
-      contextualMatches.push(match);
-      if (match.route.id === fromRouteId) {
-        activeRouteMatch = match;
-        break;
-      }
-    }
-  } else {
-    contextualMatches = matches;
-    activeRouteMatch = matches[matches.length - 1];
-  }
-  let path = resolveTo(
-    to ? to : ".",
-    getResolveToMatches(contextualMatches),
-    stripBasename(location.pathname, basename) || location.pathname,
-    relative === "path"
-  );
-  if (to == null) {
-    path.search = location.search;
-    path.hash = location.hash;
-  }
-  if ((to == null || to === "" || to === ".") && activeRouteMatch) {
-    let nakedIndex = hasNakedIndexQuery(path.search);
-    if (activeRouteMatch.route.index && !nakedIndex) {
-      path.search = path.search ? path.search.replace(/^\?/, "?index&") : "?index";
-    } else if (!activeRouteMatch.route.index && nakedIndex) {
-      let params = new URLSearchParams(path.search);
-      let indexValues = params.getAll("index");
-      params.delete("index");
-      indexValues.filter((v) => v).forEach((v) => params.append("index", v));
-      let qs = params.toString();
-      path.search = qs ? `?${qs}` : "";
-    }
-  }
-  if (basename !== "/") {
-    path.pathname = prependBasename({ basename, pathname: path.pathname });
-  }
-  return createPath(path);
-}
-function normalizeNavigateOptions(isFetcher, path, opts) {
-  if (!opts || !isSubmissionNavigation(opts)) {
-    return { path };
-  }
-  if (opts.formMethod && !isValidMethod(opts.formMethod)) {
-    return {
-      path,
-      error: getInternalRouterError(405, { method: opts.formMethod })
-    };
-  }
-  let getInvalidBodyError = () => ({
-    path,
-    error: getInternalRouterError(400, { type: "invalid-body" })
-  });
-  let rawFormMethod = opts.formMethod || "get";
-  let formMethod = rawFormMethod.toUpperCase();
-  let formAction = stripHashFromPath(path);
-  if (opts.body !== void 0) {
-    if (opts.formEncType === "text/plain") {
-      if (!isMutationMethod(formMethod)) {
-        return getInvalidBodyError();
-      }
-      let text = typeof opts.body === "string" ? opts.body : opts.body instanceof FormData || opts.body instanceof URLSearchParams ? (
-        // https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#plain-text-form-data
-        Array.from(opts.body.entries()).reduce(
-          (acc, [name, value]) => `${acc}${name}=${value}
-`,
-          ""
-        )
-      ) : String(opts.body);
-      return {
-        path,
-        submission: {
-          formMethod,
-          formAction,
-          formEncType: opts.formEncType,
-          formData: void 0,
-          json: void 0,
-          text
-        }
-      };
-    } else if (opts.formEncType === "application/json") {
-      if (!isMutationMethod(formMethod)) {
-        return getInvalidBodyError();
-      }
-      try {
-        let json = typeof opts.body === "string" ? JSON.parse(opts.body) : opts.body;
-        return {
-          path,
-          submission: {
-            formMethod,
-            formAction,
-            formEncType: opts.formEncType,
-            formData: void 0,
-            json,
-            text: void 0
-          }
-        };
-      } catch (e) {
-        return getInvalidBodyError();
-      }
-    }
-  }
-  invariant(
-    typeof FormData === "function",
-    "FormData is not available in this environment"
-  );
-  let searchParams;
-  let formData;
-  if (opts.formData) {
-    searchParams = convertFormDataToSearchParams(opts.formData);
-    formData = opts.formData;
-  } else if (opts.body instanceof FormData) {
-    searchParams = convertFormDataToSearchParams(opts.body);
-    formData = opts.body;
-  } else if (opts.body instanceof URLSearchParams) {
-    searchParams = opts.body;
-    formData = convertSearchParamsToFormData(searchParams);
-  } else if (opts.body == null) {
-    searchParams = new URLSearchParams();
-    formData = new FormData();
-  } else {
-    try {
-      searchParams = new URLSearchParams(opts.body);
-      formData = convertSearchParamsToFormData(searchParams);
-    } catch (e) {
-      return getInvalidBodyError();
-    }
-  }
-  let submission = {
-    formMethod,
-    formAction,
-    formEncType: opts && opts.formEncType || "application/x-www-form-urlencoded",
-    formData,
-    json: void 0,
-    text: void 0
-  };
-  if (isMutationMethod(submission.formMethod)) {
-    return { path, submission };
-  }
-  let parsedPath = parsePath(path);
-  if (isFetcher && parsedPath.search && hasNakedIndexQuery(parsedPath.search)) {
-    searchParams.append("index", "");
-  }
-  parsedPath.search = `?${searchParams}`;
-  return { path: createPath(parsedPath), submission };
-}
-function getMatchesToLoad(request, scopedContext, mapRouteProperties2, manifest, history, state, matches, submission, location, lazyRoutePropertiesToSkip, initialHydration, isRevalidationRequired, cancelledFetcherLoads, fetchersQueuedForDeletion, fetchLoadMatches, fetchRedirectIds, routesToUse, basename, hasPatchRoutesOnNavigation, pendingActionResult) {
-  let actionResult = pendingActionResult ? isErrorResult(pendingActionResult[1]) ? pendingActionResult[1].error : pendingActionResult[1].data : void 0;
-  let currentUrl = history.createURL(state.location);
-  let nextUrl = history.createURL(location);
-  let maxIdx;
-  if (initialHydration && state.errors) {
-    let boundaryId = Object.keys(state.errors)[0];
-    maxIdx = matches.findIndex((m) => m.route.id === boundaryId);
-  } else if (pendingActionResult && isErrorResult(pendingActionResult[1])) {
-    let boundaryId = pendingActionResult[0];
-    maxIdx = matches.findIndex((m) => m.route.id === boundaryId) - 1;
-  }
-  let actionStatus = pendingActionResult ? pendingActionResult[1].statusCode : void 0;
-  let shouldSkipRevalidation = actionStatus && actionStatus >= 400;
-  let baseShouldRevalidateArgs = {
-    currentUrl,
-    currentParams: state.matches[0]?.params || {},
-    nextUrl,
-    nextParams: matches[0].params,
-    ...submission,
-    actionResult,
-    actionStatus
-  };
-  let dsMatches = matches.map((match, index) => {
-    let { route } = match;
-    let forceShouldLoad = null;
-    if (maxIdx != null && index > maxIdx) {
-      forceShouldLoad = false;
-    } else if (route.lazy) {
-      forceShouldLoad = true;
-    } else if (!routeHasLoaderOrMiddleware(route)) {
-      forceShouldLoad = false;
-    } else if (initialHydration) {
-      forceShouldLoad = shouldLoadRouteOnHydration(
-        route,
-        state.loaderData,
-        state.errors
-      );
-    } else if (isNewLoader(state.loaderData, state.matches[index], match)) {
-      forceShouldLoad = true;
-    }
-    if (forceShouldLoad !== null) {
-      return getDataStrategyMatch(
-        mapRouteProperties2,
-        manifest,
-        request,
-        match,
-        lazyRoutePropertiesToSkip,
-        scopedContext,
-        forceShouldLoad
-      );
-    }
-    let defaultShouldRevalidate = shouldSkipRevalidation ? false : (
-      // Forced revalidation due to submission, useRevalidator, or X-Remix-Revalidate
-      isRevalidationRequired || currentUrl.pathname + currentUrl.search === nextUrl.pathname + nextUrl.search || // Search params affect all loaders
-      currentUrl.search !== nextUrl.search || isNewRouteInstance(state.matches[index], match)
-    );
-    let shouldRevalidateArgs = {
-      ...baseShouldRevalidateArgs,
-      defaultShouldRevalidate
-    };
-    let shouldLoad = shouldRevalidateLoader(match, shouldRevalidateArgs);
-    return getDataStrategyMatch(
-      mapRouteProperties2,
-      manifest,
-      request,
-      match,
-      lazyRoutePropertiesToSkip,
-      scopedContext,
-      shouldLoad,
-      shouldRevalidateArgs
-    );
-  });
-  let revalidatingFetchers = [];
-  fetchLoadMatches.forEach((f, key) => {
-    if (initialHydration || !matches.some((m) => m.route.id === f.routeId) || fetchersQueuedForDeletion.has(key)) {
-      return;
-    }
-    let fetcher = state.fetchers.get(key);
-    let isMidInitialLoad = fetcher && fetcher.state !== "idle" && fetcher.data === void 0;
-    let fetcherMatches = matchRoutes(routesToUse, f.path, basename);
-    if (!fetcherMatches) {
-      if (hasPatchRoutesOnNavigation && isMidInitialLoad) {
-        return;
-      }
-      revalidatingFetchers.push({
-        key,
-        routeId: f.routeId,
-        path: f.path,
-        matches: null,
-        match: null,
-        request: null,
-        controller: null
-      });
-      return;
-    }
-    if (fetchRedirectIds.has(key)) {
-      return;
-    }
-    let fetcherMatch = getTargetMatch(fetcherMatches, f.path);
-    let fetchController = new AbortController();
-    let fetchRequest = createClientSideRequest(
-      history,
-      f.path,
-      fetchController.signal
-    );
-    let fetcherDsMatches = null;
-    if (cancelledFetcherLoads.has(key)) {
-      cancelledFetcherLoads.delete(key);
-      fetcherDsMatches = getTargetedDataStrategyMatches(
-        mapRouteProperties2,
-        manifest,
-        fetchRequest,
-        fetcherMatches,
-        fetcherMatch,
-        lazyRoutePropertiesToSkip,
-        scopedContext
-      );
-    } else if (isMidInitialLoad) {
-      if (isRevalidationRequired) {
-        fetcherDsMatches = getTargetedDataStrategyMatches(
-          mapRouteProperties2,
-          manifest,
-          fetchRequest,
-          fetcherMatches,
-          fetcherMatch,
-          lazyRoutePropertiesToSkip,
-          scopedContext
-        );
-      }
-    } else {
-      let shouldRevalidateArgs = {
-        ...baseShouldRevalidateArgs,
-        defaultShouldRevalidate: shouldSkipRevalidation ? false : isRevalidationRequired
-      };
-      if (shouldRevalidateLoader(fetcherMatch, shouldRevalidateArgs)) {
-        fetcherDsMatches = getTargetedDataStrategyMatches(
-          mapRouteProperties2,
-          manifest,
-          fetchRequest,
-          fetcherMatches,
-          fetcherMatch,
-          lazyRoutePropertiesToSkip,
-          scopedContext,
-          shouldRevalidateArgs
-        );
-      }
-    }
-    if (fetcherDsMatches) {
-      revalidatingFetchers.push({
-        key,
-        routeId: f.routeId,
-        path: f.path,
-        matches: fetcherDsMatches,
-        match: fetcherMatch,
-        request: fetchRequest,
-        controller: fetchController
-      });
-    }
-  });
-  return { dsMatches, revalidatingFetchers };
-}
-function routeHasLoaderOrMiddleware(route) {
-  return route.loader != null || route.middleware != null && route.middleware.length > 0;
-}
-function shouldLoadRouteOnHydration(route, loaderData, errors) {
-  if (route.lazy) {
-    return true;
-  }
-  if (!routeHasLoaderOrMiddleware(route)) {
-    return false;
-  }
-  let hasData = loaderData != null && route.id in loaderData;
-  let hasError = errors != null && errors[route.id] !== void 0;
-  if (!hasData && hasError) {
-    return false;
-  }
-  if (typeof route.loader === "function" && route.loader.hydrate === true) {
-    return true;
-  }
-  return !hasData && !hasError;
-}
-function isNewLoader(currentLoaderData, currentMatch, match) {
-  let isNew = (
-    // [a] -> [a, b]
-    !currentMatch || // [a, b] -> [a, c]
-    match.route.id !== currentMatch.route.id
-  );
-  let isMissingData = !currentLoaderData.hasOwnProperty(match.route.id);
-  return isNew || isMissingData;
-}
-function isNewRouteInstance(currentMatch, match) {
-  let currentPath = currentMatch.route.path;
-  return (
-    // param change for this match, /users/123 -> /users/456
-    currentMatch.pathname !== match.pathname || // splat param changed, which is not present in match.path
-    // e.g. /files/images/avatar.jpg -> files/finances.xls
-    currentPath != null && currentPath.endsWith("*") && currentMatch.params["*"] !== match.params["*"]
-  );
-}
-function shouldRevalidateLoader(loaderMatch, arg) {
-  if (loaderMatch.route.shouldRevalidate) {
-    let routeChoice = loaderMatch.route.shouldRevalidate(arg);
-    if (typeof routeChoice === "boolean") {
-      return routeChoice;
-    }
-  }
-  return arg.defaultShouldRevalidate;
-}
-function patchRoutesImpl(routeId, children, routesToUse, manifest, mapRouteProperties2, allowElementMutations) {
-  let childrenToPatch;
-  if (routeId) {
-    let route = manifest[routeId];
-    invariant(
-      route,
-      `No route found to patch children into: routeId = ${routeId}`
-    );
-    if (!route.children) {
-      route.children = [];
-    }
-    childrenToPatch = route.children;
-  } else {
-    childrenToPatch = routesToUse;
-  }
-  let uniqueChildren = [];
-  let existingChildren = [];
-  children.forEach((newRoute) => {
-    let existingRoute = childrenToPatch.find(
-      (existingRoute2) => isSameRoute(newRoute, existingRoute2)
-    );
-    if (existingRoute) {
-      existingChildren.push({ existingRoute, newRoute });
-    } else {
-      uniqueChildren.push(newRoute);
-    }
-  });
-  if (uniqueChildren.length > 0) {
-    let newRoutes = convertRoutesToDataRoutes(
-      uniqueChildren,
-      mapRouteProperties2,
-      [routeId || "_", "patch", String(childrenToPatch?.length || "0")],
-      manifest
-    );
-    childrenToPatch.push(...newRoutes);
-  }
-  if (allowElementMutations && existingChildren.length > 0) {
-    for (let i = 0; i < existingChildren.length; i++) {
-      let { existingRoute, newRoute } = existingChildren[i];
-      let existingRouteTyped = existingRoute;
-      let [newRouteTyped] = convertRoutesToDataRoutes(
-        [newRoute],
-        mapRouteProperties2,
-        [],
-        // Doesn't matter for mutated routes since they already have an id
-        {},
-        // Don't touch the manifest here since we're updating in place
-        true
-      );
-      Object.assign(existingRouteTyped, {
-        element: newRouteTyped.element ? newRouteTyped.element : existingRouteTyped.element,
-        errorElement: newRouteTyped.errorElement ? newRouteTyped.errorElement : existingRouteTyped.errorElement,
-        hydrateFallbackElement: newRouteTyped.hydrateFallbackElement ? newRouteTyped.hydrateFallbackElement : existingRouteTyped.hydrateFallbackElement
-      });
-    }
-  }
-}
-function isSameRoute(newRoute, existingRoute) {
-  if ("id" in newRoute && "id" in existingRoute && newRoute.id === existingRoute.id) {
-    return true;
-  }
-  if (!(newRoute.index === existingRoute.index && newRoute.path === existingRoute.path && newRoute.caseSensitive === existingRoute.caseSensitive)) {
-    return false;
-  }
-  if ((!newRoute.children || newRoute.children.length === 0) && (!existingRoute.children || existingRoute.children.length === 0)) {
-    return true;
-  }
-  return newRoute.children.every(
-    (aChild, i) => existingRoute.children?.some((bChild) => isSameRoute(aChild, bChild))
-  );
-}
-var lazyRoutePropertyCache = /* @__PURE__ */ new WeakMap();
-var loadLazyRouteProperty = ({
-  key,
-  route,
-  manifest,
-  mapRouteProperties: mapRouteProperties2
-}) => {
-  let routeToUpdate = manifest[route.id];
-  invariant(routeToUpdate, "No route found in manifest");
-  if (!routeToUpdate.lazy || typeof routeToUpdate.lazy !== "object") {
-    return;
-  }
-  let lazyFn = routeToUpdate.lazy[key];
-  if (!lazyFn) {
-    return;
-  }
-  let cache = lazyRoutePropertyCache.get(routeToUpdate);
-  if (!cache) {
-    cache = {};
-    lazyRoutePropertyCache.set(routeToUpdate, cache);
-  }
-  let cachedPromise = cache[key];
-  if (cachedPromise) {
-    return cachedPromise;
-  }
-  let propertyPromise = (async () => {
-    let isUnsupported = isUnsupportedLazyRouteObjectKey(key);
-    let staticRouteValue = routeToUpdate[key];
-    let isStaticallyDefined = staticRouteValue !== void 0 && key !== "hasErrorBoundary";
-    if (isUnsupported) {
-      warning(
-        !isUnsupported,
-        "Route property " + key + " is not a supported lazy route property. This property will be ignored."
-      );
-      cache[key] = Promise.resolve();
-    } else if (isStaticallyDefined) {
-      warning(
-        false,
-        `Route "${routeToUpdate.id}" has a static property "${key}" defined. The lazy property will be ignored.`
-      );
-    } else {
-      let value = await lazyFn();
-      if (value != null) {
-        Object.assign(routeToUpdate, { [key]: value });
-        Object.assign(routeToUpdate, mapRouteProperties2(routeToUpdate));
-      }
-    }
-    if (typeof routeToUpdate.lazy === "object") {
-      routeToUpdate.lazy[key] = void 0;
-      if (Object.values(routeToUpdate.lazy).every((value) => value === void 0)) {
-        routeToUpdate.lazy = void 0;
-      }
-    }
-  })();
-  cache[key] = propertyPromise;
-  return propertyPromise;
-};
-var lazyRouteFunctionCache = /* @__PURE__ */ new WeakMap();
-function loadLazyRoute(route, type, manifest, mapRouteProperties2, lazyRoutePropertiesToSkip) {
-  let routeToUpdate = manifest[route.id];
-  invariant(routeToUpdate, "No route found in manifest");
-  if (!route.lazy) {
-    return {
-      lazyRoutePromise: void 0,
-      lazyHandlerPromise: void 0
-    };
-  }
-  if (typeof route.lazy === "function") {
-    let cachedPromise = lazyRouteFunctionCache.get(routeToUpdate);
-    if (cachedPromise) {
-      return {
-        lazyRoutePromise: cachedPromise,
-        lazyHandlerPromise: cachedPromise
-      };
-    }
-    let lazyRoutePromise2 = (async () => {
-      invariant(
-        typeof route.lazy === "function",
-        "No lazy route function found"
-      );
-      let lazyRoute = await route.lazy();
-      let routeUpdates = {};
-      for (let lazyRouteProperty in lazyRoute) {
-        let lazyValue = lazyRoute[lazyRouteProperty];
-        if (lazyValue === void 0) {
-          continue;
-        }
-        let isUnsupported = isUnsupportedLazyRouteFunctionKey(lazyRouteProperty);
-        let staticRouteValue = routeToUpdate[lazyRouteProperty];
-        let isStaticallyDefined = staticRouteValue !== void 0 && // This property isn't static since it should always be updated based
-        // on the route updates
-        lazyRouteProperty !== "hasErrorBoundary";
-        if (isUnsupported) {
-          warning(
-            !isUnsupported,
-            "Route property " + lazyRouteProperty + " is not a supported property to be returned from a lazy route function. This property will be ignored."
-          );
-        } else if (isStaticallyDefined) {
-          warning(
-            !isStaticallyDefined,
-            `Route "${routeToUpdate.id}" has a static property "${lazyRouteProperty}" defined but its lazy function is also returning a value for this property. The lazy route property "${lazyRouteProperty}" will be ignored.`
-          );
-        } else {
-          routeUpdates[lazyRouteProperty] = lazyValue;
-        }
-      }
-      Object.assign(routeToUpdate, routeUpdates);
-      Object.assign(routeToUpdate, {
-        // To keep things framework agnostic, we use the provided `mapRouteProperties`
-        // function to set the framework-aware properties (`element`/`hasErrorBoundary`)
-        // since the logic will differ between frameworks.
-        ...mapRouteProperties2(routeToUpdate),
-        lazy: void 0
-      });
-    })();
-    lazyRouteFunctionCache.set(routeToUpdate, lazyRoutePromise2);
-    lazyRoutePromise2.catch(() => {
-    });
-    return {
-      lazyRoutePromise: lazyRoutePromise2,
-      lazyHandlerPromise: lazyRoutePromise2
-    };
-  }
-  let lazyKeys = Object.keys(route.lazy);
-  let lazyPropertyPromises = [];
-  let lazyHandlerPromise = void 0;
-  for (let key of lazyKeys) {
-    if (lazyRoutePropertiesToSkip && lazyRoutePropertiesToSkip.includes(key)) {
-      continue;
-    }
-    let promise = loadLazyRouteProperty({
-      key,
-      route,
-      manifest,
-      mapRouteProperties: mapRouteProperties2
-    });
-    if (promise) {
-      lazyPropertyPromises.push(promise);
-      if (key === type) {
-        lazyHandlerPromise = promise;
-      }
-    }
-  }
-  let lazyRoutePromise = lazyPropertyPromises.length > 0 ? Promise.all(lazyPropertyPromises).then(() => {
-  }) : void 0;
-  lazyRoutePromise?.catch(() => {
-  });
-  lazyHandlerPromise?.catch(() => {
-  });
-  return {
-    lazyRoutePromise,
-    lazyHandlerPromise
-  };
-}
-function isNonNullable(value) {
-  return value !== void 0;
-}
-function loadLazyMiddlewareForMatches(matches, manifest, mapRouteProperties2) {
-  let promises = matches.map(({ route }) => {
-    if (typeof route.lazy !== "object" || !route.lazy.middleware) {
-      return void 0;
-    }
-    return loadLazyRouteProperty({
-      key: "middleware",
-      route,
-      manifest,
-      mapRouteProperties: mapRouteProperties2
-    });
-  }).filter(isNonNullable);
-  return promises.length > 0 ? Promise.all(promises) : void 0;
-}
-async function defaultDataStrategy(args) {
-  let matchesToLoad = args.matches.filter((m) => m.shouldLoad);
-  let keyedResults = {};
-  let results = await Promise.all(matchesToLoad.map((m) => m.resolve()));
-  results.forEach((result, i) => {
-    keyedResults[matchesToLoad[i].route.id] = result;
-  });
-  return keyedResults;
-}
-async function defaultDataStrategyWithMiddleware(args) {
-  if (!args.matches.some((m) => m.route.middleware)) {
-    return defaultDataStrategy(args);
-  }
-  return runClientMiddlewarePipeline(args, () => defaultDataStrategy(args));
-}
-function runServerMiddlewarePipeline(args, handler, errorHandler) {
-  return runMiddlewarePipeline(
-    args,
-    handler,
-    processResult,
-    isResponse,
-    errorHandler
-  );
-  function processResult(result) {
-    return isDataWithResponseInit(result) ? dataWithResponseInitToResponse(result) : result;
-  }
-}
-function runClientMiddlewarePipeline(args, handler) {
-  return runMiddlewarePipeline(
-    args,
-    handler,
-    (r) => r,
-    // No post-processing needed on the client
-    isDataStrategyResults,
-    errorHandler
-  );
-  function errorHandler(error, routeId, nextResult) {
-    if (nextResult) {
-      return Promise.resolve(
-        Object.assign(nextResult.value, {
-          [routeId]: { type: "error", result: error }
-        })
-      );
-    } else {
-      let { matches } = args;
-      let maxBoundaryIdx = Math.min(
-        // Throwing route
-        Math.max(
-          matches.findIndex((m) => m.route.id === routeId),
-          0
-        ),
-        // or the shallowest route that needs to load data
-        Math.max(
-          matches.findIndex((m) => m.unstable_shouldCallHandler()),
-          0
-        )
-      );
-      let boundaryRouteId = findNearestBoundary(
-        matches,
-        matches[maxBoundaryIdx].route.id
-      ).route.id;
-      return Promise.resolve({
-        [boundaryRouteId]: { type: "error", result: error }
-      });
-    }
-  }
-}
-async function runMiddlewarePipeline(args, handler, processResult, isResult, errorHandler) {
-  let { matches, request, params, context } = args;
-  let tuples = matches.flatMap(
-    (m) => m.route.middleware ? m.route.middleware.map((fn) => [m.route.id, fn]) : []
-  );
-  let result = await callRouteMiddleware(
-    { request, params, context },
-    tuples,
-    handler,
-    processResult,
-    isResult,
-    errorHandler
-  );
-  return result;
-}
-async function callRouteMiddleware(args, middlewares, handler, processResult, isResult, errorHandler, idx = 0) {
-  let { request } = args;
-  if (request.signal.aborted) {
-    throw request.signal.reason ?? new Error(`Request aborted: ${request.method} ${request.url}`);
-  }
-  let tuple = middlewares[idx];
-  if (!tuple) {
-    let result = await handler();
-    return result;
-  }
-  let [routeId, middleware] = tuple;
-  let nextResult;
-  let next = async () => {
-    if (nextResult) {
-      throw new Error("You may only call `next()` once per middleware");
-    }
-    try {
-      let result = await callRouteMiddleware(
-        args,
-        middlewares,
-        handler,
-        processResult,
-        isResult,
-        errorHandler,
-        idx + 1
-      );
-      nextResult = { value: result };
-      return nextResult.value;
-    } catch (error) {
-      nextResult = { value: await errorHandler(error, routeId, nextResult) };
-      return nextResult.value;
-    }
-  };
-  try {
-    let value = await middleware(args, next);
-    let result = value != null ? processResult(value) : void 0;
-    if (isResult(result)) {
-      return result;
-    } else if (nextResult) {
-      return result ?? nextResult.value;
-    } else {
-      nextResult = { value: await next() };
-      return nextResult.value;
-    }
-  } catch (error) {
-    let response = await errorHandler(error, routeId, nextResult);
-    return response;
-  }
-}
-function getDataStrategyMatchLazyPromises(mapRouteProperties2, manifest, request, match, lazyRoutePropertiesToSkip) {
-  let lazyMiddlewarePromise = loadLazyRouteProperty({
-    key: "middleware",
-    route: match.route,
-    manifest,
-    mapRouteProperties: mapRouteProperties2
-  });
-  let lazyRoutePromises = loadLazyRoute(
-    match.route,
-    isMutationMethod(request.method) ? "action" : "loader",
-    manifest,
-    mapRouteProperties2,
-    lazyRoutePropertiesToSkip
-  );
-  return {
-    middleware: lazyMiddlewarePromise,
-    route: lazyRoutePromises.lazyRoutePromise,
-    handler: lazyRoutePromises.lazyHandlerPromise
-  };
-}
-function getDataStrategyMatch(mapRouteProperties2, manifest, request, match, lazyRoutePropertiesToSkip, scopedContext, shouldLoad, unstable_shouldRevalidateArgs = null) {
-  let isUsingNewApi = false;
-  let _lazyPromises = getDataStrategyMatchLazyPromises(
-    mapRouteProperties2,
-    manifest,
-    request,
-    match,
-    lazyRoutePropertiesToSkip
-  );
-  return {
-    ...match,
-    _lazyPromises,
-    shouldLoad,
-    unstable_shouldRevalidateArgs,
-    unstable_shouldCallHandler(defaultShouldRevalidate) {
-      isUsingNewApi = true;
-      if (!unstable_shouldRevalidateArgs) {
-        return shouldLoad;
-      }
-      if (typeof defaultShouldRevalidate === "boolean") {
-        return shouldRevalidateLoader(match, {
-          ...unstable_shouldRevalidateArgs,
-          defaultShouldRevalidate
-        });
-      }
-      return shouldRevalidateLoader(match, unstable_shouldRevalidateArgs);
-    },
-    resolve(handlerOverride) {
-      let { lazy, loader, middleware } = match.route;
-      let callHandler = isUsingNewApi || shouldLoad || handlerOverride && !isMutationMethod(request.method) && (lazy || loader);
-      let isMiddlewareOnlyRoute = middleware && middleware.length > 0 && !loader && !lazy;
-      if (callHandler && !isMiddlewareOnlyRoute) {
-        return callLoaderOrAction({
-          request,
-          match,
-          lazyHandlerPromise: _lazyPromises?.handler,
-          lazyRoutePromise: _lazyPromises?.route,
-          handlerOverride,
-          scopedContext
-        });
-      }
-      return Promise.resolve({ type: "data" /* data */, result: void 0 });
-    }
-  };
-}
-function getTargetedDataStrategyMatches(mapRouteProperties2, manifest, request, matches, targetMatch, lazyRoutePropertiesToSkip, scopedContext, shouldRevalidateArgs = null) {
-  return matches.map((match) => {
-    if (match.route.id !== targetMatch.route.id) {
-      return {
-        ...match,
-        shouldLoad: false,
-        unstable_shouldRevalidateArgs: shouldRevalidateArgs,
-        unstable_shouldCallHandler: () => false,
-        _lazyPromises: getDataStrategyMatchLazyPromises(
-          mapRouteProperties2,
-          manifest,
-          request,
-          match,
-          lazyRoutePropertiesToSkip
-        ),
-        resolve: () => Promise.resolve({ type: "data", result: void 0 })
-      };
-    }
-    return getDataStrategyMatch(
-      mapRouteProperties2,
-      manifest,
-      request,
-      match,
-      lazyRoutePropertiesToSkip,
-      scopedContext,
-      true,
-      shouldRevalidateArgs
-    );
-  });
-}
-async function callDataStrategyImpl(dataStrategyImpl, request, matches, fetcherKey, scopedContext, isStaticHandler) {
-  if (matches.some((m) => m._lazyPromises?.middleware)) {
-    await Promise.all(matches.map((m) => m._lazyPromises?.middleware));
-  }
-  let dataStrategyArgs = {
-    request,
-    params: matches[0].params,
-    context: scopedContext,
-    matches
-  };
-  let runClientMiddleware = isStaticHandler ? () => {
-    throw new Error(
-      "You cannot call `runClientMiddleware()` from a static handler `dataStrategy`. Middleware is run outside of `dataStrategy` during SSR in order to bubble up the Response.  You can enable middleware via the `respond` API in `query`/`queryRoute`"
-    );
-  } : (cb) => {
-    let typedDataStrategyArgs = dataStrategyArgs;
-    return runClientMiddlewarePipeline(typedDataStrategyArgs, () => {
-      return cb({
-        ...typedDataStrategyArgs,
-        fetcherKey,
-        runClientMiddleware: () => {
-          throw new Error(
-            "Cannot call `runClientMiddleware()` from within an `runClientMiddleware` handler"
-          );
-        }
-      });
-    });
-  };
-  let results = await dataStrategyImpl({
-    ...dataStrategyArgs,
-    fetcherKey,
-    runClientMiddleware
-  });
-  try {
-    await Promise.all(
-      matches.flatMap((m) => [
-        m._lazyPromises?.handler,
-        m._lazyPromises?.route
-      ])
-    );
-  } catch (e) {
-  }
-  return results;
-}
-async function callLoaderOrAction({
-  request,
-  match,
-  lazyHandlerPromise,
-  lazyRoutePromise,
-  handlerOverride,
-  scopedContext
-}) {
-  let result;
-  let onReject;
-  let isAction = isMutationMethod(request.method);
-  let type = isAction ? "action" : "loader";
-  let runHandler = (handler) => {
-    let reject;
-    let abortPromise = new Promise((_, r) => reject = r);
-    onReject = () => reject();
-    request.signal.addEventListener("abort", onReject);
-    let actualHandler = (ctx) => {
-      if (typeof handler !== "function") {
-        return Promise.reject(
-          new Error(
-            `You cannot call the handler for a route which defines a boolean "${type}" [routeId: ${match.route.id}]`
-          )
-        );
-      }
-      return handler(
-        {
-          request,
-          params: match.params,
-          context: scopedContext
-        },
-        ...ctx !== void 0 ? [ctx] : []
-      );
-    };
-    let handlerPromise = (async () => {
-      try {
-        let val = await (handlerOverride ? handlerOverride((ctx) => actualHandler(ctx)) : actualHandler());
-        return { type: "data", result: val };
-      } catch (e) {
-        return { type: "error", result: e };
-      }
-    })();
-    return Promise.race([handlerPromise, abortPromise]);
-  };
-  try {
-    let handler = isAction ? match.route.action : match.route.loader;
-    if (lazyHandlerPromise || lazyRoutePromise) {
-      if (handler) {
-        let handlerError;
-        let [value] = await Promise.all([
-          // If the handler throws, don't let it immediately bubble out,
-          // since we need to let the lazy() execution finish so we know if this
-          // route has a boundary that can handle the error
-          runHandler(handler).catch((e) => {
-            handlerError = e;
-          }),
-          // Ensure all lazy route promises are resolved before continuing
-          lazyHandlerPromise,
-          lazyRoutePromise
-        ]);
-        if (handlerError !== void 0) {
-          throw handlerError;
-        }
-        result = value;
-      } else {
-        await lazyHandlerPromise;
-        let handler2 = isAction ? match.route.action : match.route.loader;
-        if (handler2) {
-          [result] = await Promise.all([runHandler(handler2), lazyRoutePromise]);
-        } else if (type === "action") {
-          let url = new URL(request.url);
-          let pathname = url.pathname + url.search;
-          throw getInternalRouterError(405, {
-            method: request.method,
-            pathname,
-            routeId: match.route.id
-          });
-        } else {
-          return { type: "data" /* data */, result: void 0 };
-        }
-      }
-    } else if (!handler) {
-      let url = new URL(request.url);
-      let pathname = url.pathname + url.search;
-      throw getInternalRouterError(404, {
-        pathname
-      });
-    } else {
-      result = await runHandler(handler);
-    }
-  } catch (e) {
-    return { type: "error" /* error */, result: e };
-  } finally {
-    if (onReject) {
-      request.signal.removeEventListener("abort", onReject);
-    }
-  }
-  return result;
-}
-async function parseResponseBody(response) {
-  let contentType = response.headers.get("Content-Type");
-  if (contentType && /\bapplication\/json\b/.test(contentType)) {
-    return response.body == null ? null : response.json();
-  }
-  return response.text();
-}
-async function convertDataStrategyResultToDataResult(dataStrategyResult) {
-  let { result, type } = dataStrategyResult;
-  if (isResponse(result)) {
-    let data2;
-    try {
-      data2 = await parseResponseBody(result);
-    } catch (e) {
-      return { type: "error" /* error */, error: e };
-    }
-    if (type === "error" /* error */) {
-      return {
-        type: "error" /* error */,
-        error: new ErrorResponseImpl(result.status, result.statusText, data2),
-        statusCode: result.status,
-        headers: result.headers
-      };
-    }
-    return {
-      type: "data" /* data */,
-      data: data2,
-      statusCode: result.status,
-      headers: result.headers
-    };
-  }
-  if (type === "error" /* error */) {
-    if (isDataWithResponseInit(result)) {
-      if (result.data instanceof Error) {
-        return {
-          type: "error" /* error */,
-          error: result.data,
-          statusCode: result.init?.status,
-          headers: result.init?.headers ? new Headers(result.init.headers) : void 0
-        };
-      }
-      return {
-        type: "error" /* error */,
-        error: new ErrorResponseImpl(
-          result.init?.status || 500,
-          void 0,
-          result.data
-        ),
-        statusCode: isRouteErrorResponse(result) ? result.status : void 0,
-        headers: result.init?.headers ? new Headers(result.init.headers) : void 0
-      };
-    }
-    return {
-      type: "error" /* error */,
-      error: result,
-      statusCode: isRouteErrorResponse(result) ? result.status : void 0
-    };
-  }
-  if (isDataWithResponseInit(result)) {
-    return {
-      type: "data" /* data */,
-      data: result.data,
-      statusCode: result.init?.status,
-      headers: result.init?.headers ? new Headers(result.init.headers) : void 0
-    };
-  }
-  return { type: "data" /* data */, data: result };
-}
-function normalizeRelativeRoutingRedirectResponse(response, request, routeId, matches, basename) {
-  let location = response.headers.get("Location");
-  invariant(
-    location,
-    "Redirects returned/thrown from loaders/actions must have a Location header"
-  );
-  if (!isAbsoluteUrl(location)) {
-    let trimmedMatches = matches.slice(
-      0,
-      matches.findIndex((m) => m.route.id === routeId) + 1
-    );
-    location = normalizeTo(
-      new URL(request.url),
-      trimmedMatches,
-      basename,
-      location
-    );
-    response.headers.set("Location", location);
-  }
-  return response;
-}
-function normalizeRedirectLocation(location, currentUrl, basename) {
-  if (isAbsoluteUrl(location)) {
-    let normalizedLocation = location;
-    let url = normalizedLocation.startsWith("//") ? new URL(currentUrl.protocol + normalizedLocation) : new URL(normalizedLocation);
-    let isSameBasename = stripBasename(url.pathname, basename) != null;
-    if (url.origin === currentUrl.origin && isSameBasename) {
-      return url.pathname + url.search + url.hash;
-    }
-  }
-  return location;
-}
-function createClientSideRequest(history, location, signal, submission) {
-  let url = history.createURL(stripHashFromPath(location)).toString();
-  let init = { signal };
-  if (submission && isMutationMethod(submission.formMethod)) {
-    let { formMethod, formEncType } = submission;
-    init.method = formMethod.toUpperCase();
-    if (formEncType === "application/json") {
-      init.headers = new Headers({ "Content-Type": formEncType });
-      init.body = JSON.stringify(submission.json);
-    } else if (formEncType === "text/plain") {
-      init.body = submission.text;
-    } else if (formEncType === "application/x-www-form-urlencoded" && submission.formData) {
-      init.body = convertFormDataToSearchParams(submission.formData);
-    } else {
-      init.body = submission.formData;
-    }
-  }
-  return new Request(url, init);
-}
-function convertFormDataToSearchParams(formData) {
-  let searchParams = new URLSearchParams();
-  for (let [key, value] of formData.entries()) {
-    searchParams.append(key, typeof value === "string" ? value : value.name);
-  }
-  return searchParams;
-}
-function convertSearchParamsToFormData(searchParams) {
-  let formData = new FormData();
-  for (let [key, value] of searchParams.entries()) {
-    formData.append(key, value);
-  }
-  return formData;
-}
-function processRouteLoaderData(matches, results, pendingActionResult, isStaticHandler = false, skipLoaderErrorBubbling = false) {
-  let loaderData = {};
-  let errors = null;
-  let statusCode;
-  let foundError = false;
-  let loaderHeaders = {};
-  let pendingError = pendingActionResult && isErrorResult(pendingActionResult[1]) ? pendingActionResult[1].error : void 0;
-  matches.forEach((match) => {
-    if (!(match.route.id in results)) {
-      return;
-    }
-    let id = match.route.id;
-    let result = results[id];
-    invariant(
-      !isRedirectResult(result),
-      "Cannot handle redirect results in processLoaderData"
-    );
-    if (isErrorResult(result)) {
-      let error = result.error;
-      if (pendingError !== void 0) {
-        error = pendingError;
-        pendingError = void 0;
-      }
-      errors = errors || {};
-      if (skipLoaderErrorBubbling) {
-        errors[id] = error;
-      } else {
-        let boundaryMatch = findNearestBoundary(matches, id);
-        if (errors[boundaryMatch.route.id] == null) {
-          errors[boundaryMatch.route.id] = error;
-        }
-      }
-      if (!isStaticHandler) {
-        loaderData[id] = ResetLoaderDataSymbol;
-      }
-      if (!foundError) {
-        foundError = true;
-        statusCode = isRouteErrorResponse(result.error) ? result.error.status : 500;
-      }
-      if (result.headers) {
-        loaderHeaders[id] = result.headers;
-      }
-    } else {
-      loaderData[id] = result.data;
-      if (result.statusCode && result.statusCode !== 200 && !foundError) {
-        statusCode = result.statusCode;
-      }
-      if (result.headers) {
-        loaderHeaders[id] = result.headers;
-      }
-    }
-  });
-  if (pendingError !== void 0 && pendingActionResult) {
-    errors = { [pendingActionResult[0]]: pendingError };
-    if (pendingActionResult[2]) {
-      loaderData[pendingActionResult[2]] = void 0;
-    }
-  }
-  return {
-    loaderData,
-    errors,
-    statusCode: statusCode || 200,
-    loaderHeaders
-  };
-}
-function processLoaderData(state, matches, results, pendingActionResult, revalidatingFetchers, fetcherResults) {
-  let { loaderData, errors } = processRouteLoaderData(
-    matches,
-    results,
-    pendingActionResult
-  );
-  revalidatingFetchers.filter((f) => !f.matches || f.matches.some((m) => m.shouldLoad)).forEach((rf) => {
-    let { key, match, controller } = rf;
-    if (controller && controller.signal.aborted) {
-      return;
-    }
-    let result = fetcherResults[key];
-    invariant(result, "Did not find corresponding fetcher result");
-    if (isErrorResult(result)) {
-      let boundaryMatch = findNearestBoundary(state.matches, match?.route.id);
-      if (!(errors && errors[boundaryMatch.route.id])) {
-        errors = {
-          ...errors,
-          [boundaryMatch.route.id]: result.error
-        };
-      }
-      state.fetchers.delete(key);
-    } else if (isRedirectResult(result)) {
-      invariant(false, "Unhandled fetcher revalidation redirect");
-    } else {
-      let doneFetcher = getDoneFetcher(result.data);
-      state.fetchers.set(key, doneFetcher);
-    }
-  });
-  return { loaderData, errors };
-}
-function mergeLoaderData(loaderData, newLoaderData, matches, errors) {
-  let mergedLoaderData = Object.entries(newLoaderData).filter(([, v]) => v !== ResetLoaderDataSymbol).reduce((merged, [k, v]) => {
-    merged[k] = v;
-    return merged;
-  }, {});
-  for (let match of matches) {
-    let id = match.route.id;
-    if (!newLoaderData.hasOwnProperty(id) && loaderData.hasOwnProperty(id) && match.route.loader) {
-      mergedLoaderData[id] = loaderData[id];
-    }
-    if (errors && errors.hasOwnProperty(id)) {
-      break;
-    }
-  }
-  return mergedLoaderData;
-}
-function getActionDataForCommit(pendingActionResult) {
-  if (!pendingActionResult) {
-    return {};
-  }
-  return isErrorResult(pendingActionResult[1]) ? {
-    // Clear out prior actionData on errors
-    actionData: {}
-  } : {
-    actionData: {
-      [pendingActionResult[0]]: pendingActionResult[1].data
-    }
-  };
-}
-function findNearestBoundary(matches, routeId) {
-  let eligibleMatches = routeId ? matches.slice(0, matches.findIndex((m) => m.route.id === routeId) + 1) : [...matches];
-  return eligibleMatches.reverse().find((m) => m.route.hasErrorBoundary === true) || matches[0];
-}
-function getShortCircuitMatches(routes) {
-  let route = routes.length === 1 ? routes[0] : routes.find((r) => r.index || !r.path || r.path === "/") || {
-    id: `__shim-error-route__`
-  };
-  return {
-    matches: [
-      {
-        params: {},
-        pathname: "",
-        pathnameBase: "",
-        route
-      }
-    ],
-    route
-  };
-}
-function getInternalRouterError(status, {
-  pathname,
-  routeId,
-  method,
-  type,
-  message
-} = {}) {
-  let statusText = "Unknown Server Error";
-  let errorMessage = "Unknown @remix-run/router error";
-  if (status === 400) {
-    statusText = "Bad Request";
-    if (method && pathname && routeId) {
-      errorMessage = `You made a ${method} request to "${pathname}" but did not provide a \`loader\` for route "${routeId}", so there is no way to handle the request.`;
-    } else if (type === "invalid-body") {
-      errorMessage = "Unable to encode submission body";
-    }
-  } else if (status === 403) {
-    statusText = "Forbidden";
-    errorMessage = `Route "${routeId}" does not match URL "${pathname}"`;
-  } else if (status === 404) {
-    statusText = "Not Found";
-    errorMessage = `No route matches URL "${pathname}"`;
-  } else if (status === 405) {
-    statusText = "Method Not Allowed";
-    if (method && pathname && routeId) {
-      errorMessage = `You made a ${method.toUpperCase()} request to "${pathname}" but did not provide an \`action\` for route "${routeId}", so there is no way to handle the request.`;
-    } else if (method) {
-      errorMessage = `Invalid request method "${method.toUpperCase()}"`;
-    }
-  }
-  return new ErrorResponseImpl(
-    status || 500,
-    statusText,
-    new Error(errorMessage),
-    true
-  );
-}
-function findRedirect(results) {
-  let entries = Object.entries(results);
-  for (let i = entries.length - 1; i >= 0; i--) {
-    let [key, result] = entries[i];
-    if (isRedirectResult(result)) {
-      return { key, result };
-    }
-  }
-}
-function stripHashFromPath(path) {
-  let parsedPath = typeof path === "string" ? parsePath(path) : path;
-  return createPath({ ...parsedPath, hash: "" });
-}
-function isHashChangeOnly(a, b) {
-  if (a.pathname !== b.pathname || a.search !== b.search) {
-    return false;
-  }
-  if (a.hash === "") {
-    return b.hash !== "";
-  } else if (a.hash === b.hash) {
-    return true;
-  } else if (b.hash !== "") {
-    return true;
-  }
-  return false;
-}
-function dataWithResponseInitToResponse(data2) {
-  return Response.json(data2.data, data2.init ?? void 0);
-}
-function dataWithResponseInitToErrorResponse(data2) {
-  return new ErrorResponseImpl(
-    data2.init?.status ?? 500,
-    data2.init?.statusText ?? "Internal Server Error",
-    data2.data
-  );
-}
-function isDataStrategyResults(result) {
-  return result != null && typeof result === "object" && Object.entries(result).every(
-    ([key, value]) => typeof key === "string" && isDataStrategyResult(value)
-  );
-}
-function isDataStrategyResult(result) {
-  return result != null && typeof result === "object" && "type" in result && "result" in result && (result.type === "data" /* data */ || result.type === "error" /* error */);
-}
-function isRedirectDataStrategyResult(result) {
-  return isResponse(result.result) && redirectStatusCodes.has(result.result.status);
-}
-function isErrorResult(result) {
-  return result.type === "error" /* error */;
-}
-function isRedirectResult(result) {
-  return (result && result.type) === "redirect" /* redirect */;
-}
-function isDataWithResponseInit(value) {
-  return typeof value === "object" && value != null && "type" in value && "data" in value && "init" in value && value.type === "DataWithResponseInit";
-}
-function isResponse(value) {
-  return value != null && typeof value.status === "number" && typeof value.statusText === "string" && typeof value.headers === "object" && typeof value.body !== "undefined";
-}
-function isRedirectStatusCode(statusCode) {
-  return redirectStatusCodes.has(statusCode);
-}
-function isRedirectResponse(result) {
-  return isResponse(result) && isRedirectStatusCode(result.status) && result.headers.has("Location");
-}
-function isValidMethod(method) {
-  return validRequestMethods.has(method.toUpperCase());
-}
-function isMutationMethod(method) {
-  return validMutationMethods.has(method.toUpperCase());
-}
-function hasNakedIndexQuery(search) {
-  return new URLSearchParams(search).getAll("index").some((v) => v === "");
-}
-function getTargetMatch(matches, location) {
-  let search = typeof location === "string" ? parsePath(location).search : location.search;
-  if (matches[matches.length - 1].route.index && hasNakedIndexQuery(search || "")) {
-    return matches[matches.length - 1];
-  }
-  let pathMatches = getPathContributingMatches(matches);
-  return pathMatches[pathMatches.length - 1];
-}
-function getSubmissionFromNavigation(navigation) {
-  let { formMethod, formAction, formEncType, text, formData, json } = navigation;
-  if (!formMethod || !formAction || !formEncType) {
-    return;
-  }
-  if (text != null) {
-    return {
-      formMethod,
-      formAction,
-      formEncType,
-      formData: void 0,
-      json: void 0,
-      text
-    };
-  } else if (formData != null) {
-    return {
-      formMethod,
-      formAction,
-      formEncType,
-      formData,
-      json: void 0,
-      text: void 0
-    };
-  } else if (json !== void 0) {
-    return {
-      formMethod,
-      formAction,
-      formEncType,
-      formData: void 0,
-      json,
-      text: void 0
-    };
-  }
-}
-function getLoadingNavigation(location, submission) {
-  if (submission) {
-    let navigation = {
-      state: "loading",
-      location,
-      formMethod: submission.formMethod,
-      formAction: submission.formAction,
-      formEncType: submission.formEncType,
-      formData: submission.formData,
-      json: submission.json,
-      text: submission.text
-    };
-    return navigation;
-  } else {
-    let navigation = {
-      state: "loading",
-      location,
-      formMethod: void 0,
-      formAction: void 0,
-      formEncType: void 0,
-      formData: void 0,
-      json: void 0,
-      text: void 0
-    };
-    return navigation;
-  }
-}
-function getSubmittingNavigation(location, submission) {
-  let navigation = {
-    state: "submitting",
-    location,
-    formMethod: submission.formMethod,
-    formAction: submission.formAction,
-    formEncType: submission.formEncType,
-    formData: submission.formData,
-    json: submission.json,
-    text: submission.text
-  };
-  return navigation;
-}
-function getLoadingFetcher(submission, data2) {
-  if (submission) {
-    let fetcher = {
-      state: "loading",
-      formMethod: submission.formMethod,
-      formAction: submission.formAction,
-      formEncType: submission.formEncType,
-      formData: submission.formData,
-      json: submission.json,
-      text: submission.text,
-      data: data2
-    };
-    return fetcher;
-  } else {
-    let fetcher = {
-      state: "loading",
-      formMethod: void 0,
-      formAction: void 0,
-      formEncType: void 0,
-      formData: void 0,
-      json: void 0,
-      text: void 0,
-      data: data2
-    };
-    return fetcher;
-  }
-}
-function getSubmittingFetcher(submission, existingFetcher) {
-  let fetcher = {
-    state: "submitting",
-    formMethod: submission.formMethod,
-    formAction: submission.formAction,
-    formEncType: submission.formEncType,
-    formData: submission.formData,
-    json: submission.json,
-    text: submission.text,
-    data: existingFetcher ? existingFetcher.data : void 0
-  };
-  return fetcher;
-}
-function getDoneFetcher(data2) {
-  let fetcher = {
-    state: "idle",
-    formMethod: void 0,
-    formAction: void 0,
-    formEncType: void 0,
-    formData: void 0,
-    json: void 0,
-    text: void 0,
-    data: data2
-  };
-  return fetcher;
-}
-function restoreAppliedTransitions(_window, transitions) {
-  try {
-    let sessionPositions = _window.sessionStorage.getItem(
-      TRANSITIONS_STORAGE_KEY
-    );
-    if (sessionPositions) {
-      let json = JSON.parse(sessionPositions);
-      for (let [k, v] of Object.entries(json || {})) {
-        if (v && Array.isArray(v)) {
-          transitions.set(k, new Set(v || []));
-        }
-      }
-    }
-  } catch (e) {
-  }
-}
-function persistAppliedTransitions(_window, transitions) {
-  if (transitions.size > 0) {
-    let json = {};
-    for (let [k, v] of transitions) {
-      json[k] = [...v];
-    }
-    try {
-      _window.sessionStorage.setItem(
-        TRANSITIONS_STORAGE_KEY,
-        JSON.stringify(json)
-      );
-    } catch (error) {
-      warning(
-        false,
-        `Failed to save applied view transitions in sessionStorage (${error}).`
-      );
-    }
-  }
-}
-function createDeferred() {
-  let resolve;
-  let reject;
-  let promise = new Promise((res, rej) => {
-    resolve = async (val) => {
-      res(val);
-      try {
-        await promise;
-      } catch (e) {
-      }
-    };
-    reject = async (error) => {
-      rej(error);
-      try {
-        await promise;
-      } catch (e) {
-      }
-    };
-  });
-  return {
-    promise,
-    //@ts-ignore
-    resolve,
-    //@ts-ignore
-    reject
-  };
-}
-
-// lib/context.ts
-
-var DataRouterContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
-DataRouterContext.displayName = "DataRouter";
-var DataRouterStateContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
-DataRouterStateContext.displayName = "DataRouterState";
-var RSCRouterContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(false);
-function useIsRSCRouterContext() {
-  return react__WEBPACK_IMPORTED_MODULE_0__.useContext(RSCRouterContext);
-}
-var ViewTransitionContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext({
-  isTransitioning: false
-});
-ViewTransitionContext.displayName = "ViewTransition";
-var FetchersContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(
-  /* @__PURE__ */ new Map()
-);
-FetchersContext.displayName = "Fetchers";
-var AwaitContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
-AwaitContext.displayName = "Await";
-var AwaitContextProvider = (props) => react__WEBPACK_IMPORTED_MODULE_0__.createElement(AwaitContext.Provider, props);
-var NavigationContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(
-  null
-);
-NavigationContext.displayName = "Navigation";
-var LocationContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(
-  null
-);
-LocationContext.displayName = "Location";
-var RouteContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext({
-  outlet: null,
-  matches: [],
-  isDataRoute: false
-});
-RouteContext.displayName = "Route";
-var RouteErrorContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
-RouteErrorContext.displayName = "RouteError";
-var ENABLE_DEV_WARNINGS = true;
-
-// lib/hooks.tsx
-
-function useHref(to, { relative } = {}) {
-  invariant(
-    useInRouterContext(),
-    // TODO: This error is probably because they somehow have 2 versions of the
-    // router loaded. We can help them understand how to avoid that.
-    `useHref() may be used only in the context of a <Router> component.`
-  );
-  let { basename, navigator } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
-  let { hash, pathname, search } = useResolvedPath(to, { relative });
-  let joinedPathname = pathname;
-  if (basename !== "/") {
-    joinedPathname = pathname === "/" ? basename : joinPaths([basename, pathname]);
-  }
-  return navigator.createHref({ pathname: joinedPathname, search, hash });
-}
-function useInRouterContext() {
-  return react__WEBPACK_IMPORTED_MODULE_0__.useContext(LocationContext) != null;
-}
-function useLocation() {
-  invariant(
-    useInRouterContext(),
-    // TODO: This error is probably because they somehow have 2 versions of the
-    // router loaded. We can help them understand how to avoid that.
-    `useLocation() may be used only in the context of a <Router> component.`
-  );
-  return react__WEBPACK_IMPORTED_MODULE_0__.useContext(LocationContext).location;
-}
-function useNavigationType() {
-  return react__WEBPACK_IMPORTED_MODULE_0__.useContext(LocationContext).navigationType;
-}
-function useMatch(pattern) {
-  invariant(
-    useInRouterContext(),
-    // TODO: This error is probably because they somehow have 2 versions of the
-    // router loaded. We can help them understand how to avoid that.
-    `useMatch() may be used only in the context of a <Router> component.`
-  );
-  let { pathname } = useLocation();
-  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
-    () => matchPath(pattern, decodePath(pathname)),
-    [pathname, pattern]
-  );
-}
-var navigateEffectWarning = `You should call navigate() in a React.useEffect(), not when your component is first rendered.`;
-function useIsomorphicLayoutEffect(cb) {
-  let isStatic = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext).static;
-  if (!isStatic) {
-    react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(cb);
-  }
-}
-function useNavigate() {
-  let { isDataRoute } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
-  return isDataRoute ? useNavigateStable() : useNavigateUnstable();
-}
-function useNavigateUnstable() {
-  invariant(
-    useInRouterContext(),
-    // TODO: This error is probably because they somehow have 2 versions of the
-    // router loaded. We can help them understand how to avoid that.
-    `useNavigate() may be used only in the context of a <Router> component.`
-  );
-  let dataRouterContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterContext);
-  let { basename, navigator } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
-  let { matches } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
-  let { pathname: locationPathname } = useLocation();
-  let routePathnamesJson = JSON.stringify(getResolveToMatches(matches));
-  let activeRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(false);
-  useIsomorphicLayoutEffect(() => {
-    activeRef.current = true;
-  });
-  let navigate = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
-    (to, options = {}) => {
-      warning(activeRef.current, navigateEffectWarning);
-      if (!activeRef.current) return;
-      if (typeof to === "number") {
-        navigator.go(to);
-        return;
-      }
-      let path = resolveTo(
-        to,
-        JSON.parse(routePathnamesJson),
-        locationPathname,
-        options.relative === "path"
-      );
-      if (dataRouterContext == null && basename !== "/") {
-        path.pathname = path.pathname === "/" ? basename : joinPaths([basename, path.pathname]);
-      }
-      (!!options.replace ? navigator.replace : navigator.push)(
-        path,
-        options.state,
-        options
-      );
-    },
-    [
-      basename,
-      navigator,
-      routePathnamesJson,
-      locationPathname,
-      dataRouterContext
-    ]
-  );
-  return navigate;
-}
-var OutletContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
-function useOutletContext() {
-  return react__WEBPACK_IMPORTED_MODULE_0__.useContext(OutletContext);
-}
-function useOutlet(context) {
-  let outlet = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext).outlet;
-  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
-    () => outlet && /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(OutletContext.Provider, { value: context }, outlet),
-    [outlet, context]
-  );
-}
-function useParams() {
-  let { matches } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
-  let routeMatch = matches[matches.length - 1];
-  return routeMatch ? routeMatch.params : {};
-}
-function useResolvedPath(to, { relative } = {}) {
-  let { matches } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
-  let { pathname: locationPathname } = useLocation();
-  let routePathnamesJson = JSON.stringify(getResolveToMatches(matches));
-  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
-    () => resolveTo(
-      to,
-      JSON.parse(routePathnamesJson),
-      locationPathname,
-      relative === "path"
-    ),
-    [to, routePathnamesJson, locationPathname, relative]
-  );
-}
-function useRoutes(routes, locationArg) {
-  return useRoutesImpl(routes, locationArg);
-}
-function useRoutesImpl(routes, locationArg, dataRouterState, unstable_onError, future) {
-  invariant(
-    useInRouterContext(),
-    // TODO: This error is probably because they somehow have 2 versions of the
-    // router loaded. We can help them understand how to avoid that.
-    `useRoutes() may be used only in the context of a <Router> component.`
-  );
-  let { navigator } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
-  let { matches: parentMatches } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
-  let routeMatch = parentMatches[parentMatches.length - 1];
-  let parentParams = routeMatch ? routeMatch.params : {};
-  let parentPathname = routeMatch ? routeMatch.pathname : "/";
-  let parentPathnameBase = routeMatch ? routeMatch.pathnameBase : "/";
-  let parentRoute = routeMatch && routeMatch.route;
-  if (ENABLE_DEV_WARNINGS) {
-    let parentPath = parentRoute && parentRoute.path || "";
-    warningOnce(
-      parentPathname,
-      !parentRoute || parentPath.endsWith("*") || parentPath.endsWith("*?"),
-      `You rendered descendant <Routes> (or called \`useRoutes()\`) at "${parentPathname}" (under <Route path="${parentPath}">) but the parent route path has no trailing "*". This means if you navigate deeper, the parent won't match anymore and therefore the child routes will never render.
-
-Please change the parent <Route path="${parentPath}"> to <Route path="${parentPath === "/" ? "*" : `${parentPath}/*`}">.`
-    );
-  }
-  let locationFromContext = useLocation();
-  let location;
-  if (locationArg) {
-    let parsedLocationArg = typeof locationArg === "string" ? parsePath(locationArg) : locationArg;
-    invariant(
-      parentPathnameBase === "/" || parsedLocationArg.pathname?.startsWith(parentPathnameBase),
-      `When overriding the location using \`<Routes location>\` or \`useRoutes(routes, location)\`, the location pathname must begin with the portion of the URL pathname that was matched by all parent routes. The current pathname base is "${parentPathnameBase}" but pathname "${parsedLocationArg.pathname}" was given in the \`location\` prop.`
-    );
-    location = parsedLocationArg;
-  } else {
-    location = locationFromContext;
-  }
-  let pathname = location.pathname || "/";
-  let remainingPathname = pathname;
-  if (parentPathnameBase !== "/") {
-    let parentSegments = parentPathnameBase.replace(/^\//, "").split("/");
-    let segments = pathname.replace(/^\//, "").split("/");
-    remainingPathname = "/" + segments.slice(parentSegments.length).join("/");
-  }
-  let matches = matchRoutes(routes, { pathname: remainingPathname });
-  if (ENABLE_DEV_WARNINGS) {
-    warning(
-      parentRoute || matches != null,
-      `No routes matched location "${location.pathname}${location.search}${location.hash}" `
-    );
-    warning(
-      matches == null || matches[matches.length - 1].route.element !== void 0 || matches[matches.length - 1].route.Component !== void 0 || matches[matches.length - 1].route.lazy !== void 0,
-      `Matched leaf route at location "${location.pathname}${location.search}${location.hash}" does not have an element or Component. This means it will render an <Outlet /> with a null value by default resulting in an "empty" page.`
-    );
-  }
-  let renderedMatches = _renderMatches(
-    matches && matches.map(
-      (match) => Object.assign({}, match, {
-        params: Object.assign({}, parentParams, match.params),
-        pathname: joinPaths([
-          parentPathnameBase,
-          // Re-encode pathnames that were decoded inside matchRoutes.
-          // Pre-encode `?` and `#` ahead of `encodeLocation` because it uses
-          // `new URL()` internally and we need to prevent it from treating
-          // them as separators
-          navigator.encodeLocation ? navigator.encodeLocation(
-            match.pathname.replace(/\?/g, "%3F").replace(/#/g, "%23")
-          ).pathname : match.pathname
-        ]),
-        pathnameBase: match.pathnameBase === "/" ? parentPathnameBase : joinPaths([
-          parentPathnameBase,
-          // Re-encode pathnames that were decoded inside matchRoutes
-          // Pre-encode `?` and `#` ahead of `encodeLocation` because it uses
-          // `new URL()` internally and we need to prevent it from treating
-          // them as separators
-          navigator.encodeLocation ? navigator.encodeLocation(
-            match.pathnameBase.replace(/\?/g, "%3F").replace(/#/g, "%23")
-          ).pathname : match.pathnameBase
-        ])
-      })
-    ),
-    parentMatches,
-    dataRouterState,
-    unstable_onError,
-    future
-  );
-  if (locationArg && renderedMatches) {
-    return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-      LocationContext.Provider,
-      {
-        value: {
-          location: {
-            pathname: "/",
-            search: "",
-            hash: "",
-            state: null,
-            key: "default",
-            ...location
-          },
-          navigationType: "POP" /* Pop */
-        }
-      },
-      renderedMatches
-    );
-  }
-  return renderedMatches;
-}
-function DefaultErrorComponent() {
-  let error = useRouteError();
-  let message = isRouteErrorResponse(error) ? `${error.status} ${error.statusText}` : error instanceof Error ? error.message : JSON.stringify(error);
-  let stack = error instanceof Error ? error.stack : null;
-  let lightgrey = "rgba(200,200,200, 0.5)";
-  let preStyles = { padding: "0.5rem", backgroundColor: lightgrey };
-  let codeStyles = { padding: "2px 4px", backgroundColor: lightgrey };
-  let devInfo = null;
-  if (ENABLE_DEV_WARNINGS) {
-    console.error(
-      "Error handled by React Router default ErrorBoundary:",
-      error
-    );
-    devInfo = /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "\u{1F4BF} Hey developer \u{1F44B}"), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "You can provide a way better UX than this when your app throws errors by providing your own ", /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("code", { style: codeStyles }, "ErrorBoundary"), " or", " ", /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("code", { style: codeStyles }, "errorElement"), " prop on your route."));
-  }
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Unexpected Application Error!"), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { style: { fontStyle: "italic" } }, message), stack ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("pre", { style: preStyles }, stack) : null, devInfo);
-}
-var defaultErrorElement = /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(DefaultErrorComponent, null);
-var RenderErrorBoundary = class extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      location: props.location,
-      revalidation: props.revalidation,
-      error: props.error
-    };
-  }
-  static getDerivedStateFromError(error) {
-    return { error };
-  }
-  static getDerivedStateFromProps(props, state) {
-    if (state.location !== props.location || state.revalidation !== "idle" && props.revalidation === "idle") {
-      return {
-        error: props.error,
-        location: props.location,
-        revalidation: props.revalidation
-      };
-    }
-    return {
-      error: props.error !== void 0 ? props.error : state.error,
-      location: state.location,
-      revalidation: props.revalidation || state.revalidation
-    };
-  }
-  componentDidCatch(error, errorInfo) {
-    if (this.props.unstable_onError) {
-      this.props.unstable_onError(error, errorInfo);
-    } else {
-      console.error(
-        "React Router caught the following error during render",
-        error
-      );
-    }
-  }
-  render() {
-    return this.state.error !== void 0 ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(RouteContext.Provider, { value: this.props.routeContext }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-      RouteErrorContext.Provider,
-      {
-        value: this.state.error,
-        children: this.props.component
-      }
-    )) : this.props.children;
-  }
-};
-function RenderedRoute({ routeContext, match, children }) {
-  let dataRouterContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterContext);
-  if (dataRouterContext && dataRouterContext.static && dataRouterContext.staticContext && (match.route.errorElement || match.route.ErrorBoundary)) {
-    dataRouterContext.staticContext._deepestRenderedBoundaryId = match.route.id;
-  }
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(RouteContext.Provider, { value: routeContext }, children);
-}
-function _renderMatches(matches, parentMatches = [], dataRouterState = null, unstable_onError = null, future = null) {
-  if (matches == null) {
-    if (!dataRouterState) {
-      return null;
-    }
-    if (dataRouterState.errors) {
-      matches = dataRouterState.matches;
-    } else if (parentMatches.length === 0 && !dataRouterState.initialized && dataRouterState.matches.length > 0) {
-      matches = dataRouterState.matches;
-    } else {
-      return null;
-    }
-  }
-  let renderedMatches = matches;
-  let errors = dataRouterState?.errors;
-  if (errors != null) {
-    let errorIndex = renderedMatches.findIndex(
-      (m) => m.route.id && errors?.[m.route.id] !== void 0
-    );
-    invariant(
-      errorIndex >= 0,
-      `Could not find a matching route for errors on route IDs: ${Object.keys(
-        errors
-      ).join(",")}`
-    );
-    renderedMatches = renderedMatches.slice(
-      0,
-      Math.min(renderedMatches.length, errorIndex + 1)
-    );
-  }
-  let renderFallback = false;
-  let fallbackIndex = -1;
-  if (dataRouterState) {
-    for (let i = 0; i < renderedMatches.length; i++) {
-      let match = renderedMatches[i];
-      if (match.route.HydrateFallback || match.route.hydrateFallbackElement) {
-        fallbackIndex = i;
-      }
-      if (match.route.id) {
-        let { loaderData, errors: errors2 } = dataRouterState;
-        let needsToRunLoader = match.route.loader && !loaderData.hasOwnProperty(match.route.id) && (!errors2 || errors2[match.route.id] === void 0);
-        if (match.route.lazy || needsToRunLoader) {
-          renderFallback = true;
-          if (fallbackIndex >= 0) {
-            renderedMatches = renderedMatches.slice(0, fallbackIndex + 1);
-          } else {
-            renderedMatches = [renderedMatches[0]];
-          }
-          break;
-        }
-      }
-    }
-  }
-  return renderedMatches.reduceRight(
-    (outlet, match, index) => {
-      let error;
-      let shouldRenderHydrateFallback = false;
-      let errorElement = null;
-      let hydrateFallbackElement = null;
-      if (dataRouterState) {
-        error = errors && match.route.id ? errors[match.route.id] : void 0;
-        errorElement = match.route.errorElement || defaultErrorElement;
-        if (renderFallback) {
-          if (fallbackIndex < 0 && index === 0) {
-            warningOnce(
-              "route-fallback",
-              false,
-              "No `HydrateFallback` element provided to render during initial hydration"
-            );
-            shouldRenderHydrateFallback = true;
-            hydrateFallbackElement = null;
-          } else if (fallbackIndex === index) {
-            shouldRenderHydrateFallback = true;
-            hydrateFallbackElement = match.route.hydrateFallbackElement || null;
-          }
-        }
-      }
-      let matches2 = parentMatches.concat(renderedMatches.slice(0, index + 1));
-      let getChildren = () => {
-        let children;
-        if (error) {
-          children = errorElement;
-        } else if (shouldRenderHydrateFallback) {
-          children = hydrateFallbackElement;
-        } else if (match.route.Component) {
-          children = /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(match.route.Component, null);
-        } else if (match.route.element) {
-          children = match.route.element;
-        } else {
-          children = outlet;
-        }
-        return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-          RenderedRoute,
-          {
-            match,
-            routeContext: {
-              outlet,
-              matches: matches2,
-              isDataRoute: dataRouterState != null
-            },
-            children
-          }
-        );
-      };
-      return dataRouterState && (match.route.ErrorBoundary || match.route.errorElement || index === 0) ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-        RenderErrorBoundary,
-        {
-          location: dataRouterState.location,
-          revalidation: dataRouterState.revalidation,
-          component: errorElement,
-          error,
-          children: getChildren(),
-          routeContext: { outlet: null, matches: matches2, isDataRoute: true },
-          unstable_onError
-        }
-      ) : getChildren();
-    },
-    null
-  );
-}
-function getDataRouterConsoleError(hookName) {
-  return `${hookName} must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.`;
-}
-function useDataRouterContext(hookName) {
-  let ctx = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterContext);
-  invariant(ctx, getDataRouterConsoleError(hookName));
-  return ctx;
-}
-function useDataRouterState(hookName) {
-  let state = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterStateContext);
-  invariant(state, getDataRouterConsoleError(hookName));
-  return state;
-}
-function useRouteContext(hookName) {
-  let route = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
-  invariant(route, getDataRouterConsoleError(hookName));
-  return route;
-}
-function useCurrentRouteId(hookName) {
-  let route = useRouteContext(hookName);
-  let thisRoute = route.matches[route.matches.length - 1];
-  invariant(
-    thisRoute.route.id,
-    `${hookName} can only be used on routes that contain a unique "id"`
-  );
-  return thisRoute.route.id;
-}
-function useRouteId() {
-  return useCurrentRouteId("useRouteId" /* UseRouteId */);
-}
-function useNavigation() {
-  let state = useDataRouterState("useNavigation" /* UseNavigation */);
-  return state.navigation;
-}
-function useRevalidator() {
-  let dataRouterContext = useDataRouterContext("useRevalidator" /* UseRevalidator */);
-  let state = useDataRouterState("useRevalidator" /* UseRevalidator */);
-  let revalidate = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(async () => {
-    await dataRouterContext.router.revalidate();
-  }, [dataRouterContext.router]);
-  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
-    () => ({ revalidate, state: state.revalidation }),
-    [revalidate, state.revalidation]
-  );
-}
-function useMatches() {
-  let { matches, loaderData } = useDataRouterState(
-    "useMatches" /* UseMatches */
-  );
-  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
-    () => matches.map((m) => convertRouteMatchToUiMatch(m, loaderData)),
-    [matches, loaderData]
-  );
-}
-function useLoaderData() {
-  let state = useDataRouterState("useLoaderData" /* UseLoaderData */);
-  let routeId = useCurrentRouteId("useLoaderData" /* UseLoaderData */);
-  return state.loaderData[routeId];
-}
-function useRouteLoaderData(routeId) {
-  let state = useDataRouterState("useRouteLoaderData" /* UseRouteLoaderData */);
-  return state.loaderData[routeId];
-}
-function useActionData() {
-  let state = useDataRouterState("useActionData" /* UseActionData */);
-  let routeId = useCurrentRouteId("useLoaderData" /* UseLoaderData */);
-  return state.actionData ? state.actionData[routeId] : void 0;
-}
-function useRouteError() {
-  let error = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteErrorContext);
-  let state = useDataRouterState("useRouteError" /* UseRouteError */);
-  let routeId = useCurrentRouteId("useRouteError" /* UseRouteError */);
-  if (error !== void 0) {
-    return error;
-  }
-  return state.errors?.[routeId];
-}
-function useAsyncValue() {
-  let value = react__WEBPACK_IMPORTED_MODULE_0__.useContext(AwaitContext);
-  return value?._data;
-}
-function useAsyncError() {
-  let value = react__WEBPACK_IMPORTED_MODULE_0__.useContext(AwaitContext);
-  return value?._error;
-}
-var blockerId = 0;
-function useBlocker(shouldBlock) {
-  let { router, basename } = useDataRouterContext("useBlocker" /* UseBlocker */);
-  let state = useDataRouterState("useBlocker" /* UseBlocker */);
-  let [blockerKey, setBlockerKey] = react__WEBPACK_IMPORTED_MODULE_0__.useState("");
-  let blockerFunction = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
-    (arg) => {
-      if (typeof shouldBlock !== "function") {
-        return !!shouldBlock;
-      }
-      if (basename === "/") {
-        return shouldBlock(arg);
-      }
-      let { currentLocation, nextLocation, historyAction } = arg;
-      return shouldBlock({
-        currentLocation: {
-          ...currentLocation,
-          pathname: stripBasename(currentLocation.pathname, basename) || currentLocation.pathname
-        },
-        nextLocation: {
-          ...nextLocation,
-          pathname: stripBasename(nextLocation.pathname, basename) || nextLocation.pathname
-        },
-        historyAction
-      });
-    },
-    [basename, shouldBlock]
-  );
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    let key = String(++blockerId);
-    setBlockerKey(key);
-    return () => router.deleteBlocker(key);
-  }, [router]);
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    if (blockerKey !== "") {
-      router.getBlocker(blockerKey, blockerFunction);
-    }
-  }, [router, blockerKey, blockerFunction]);
-  return blockerKey && state.blockers.has(blockerKey) ? state.blockers.get(blockerKey) : IDLE_BLOCKER;
-}
-function useNavigateStable() {
-  let { router } = useDataRouterContext("useNavigate" /* UseNavigateStable */);
-  let id = useCurrentRouteId("useNavigate" /* UseNavigateStable */);
-  let activeRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(false);
-  useIsomorphicLayoutEffect(() => {
-    activeRef.current = true;
-  });
-  let navigate = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
-    async (to, options = {}) => {
-      warning(activeRef.current, navigateEffectWarning);
-      if (!activeRef.current) return;
-      if (typeof to === "number") {
-        router.navigate(to);
-      } else {
-        await router.navigate(to, { fromRouteId: id, ...options });
-      }
-    },
-    [router, id]
-  );
-  return navigate;
-}
-var alreadyWarned = {};
-function warningOnce(key, cond, message) {
-  if (!cond && !alreadyWarned[key]) {
-    alreadyWarned[key] = true;
-    warning(false, message);
-  }
-}
-
-// lib/components.tsx
-
-
-// lib/server-runtime/warnings.ts
-var alreadyWarned2 = {};
-function warnOnce(condition, message) {
-  if (!condition && !alreadyWarned2[message]) {
-    alreadyWarned2[message] = true;
-    console.warn(message);
-  }
-}
-
-// lib/components.tsx
-function mapRouteProperties(route) {
-  let updates = {
-    // Note: this check also occurs in createRoutesFromChildren so update
-    // there if you change this -- please and thank you!
-    hasErrorBoundary: route.hasErrorBoundary || route.ErrorBoundary != null || route.errorElement != null
-  };
-  if (route.Component) {
-    if (ENABLE_DEV_WARNINGS) {
-      if (route.element) {
-        warning(
-          false,
-          "You should not include both `Component` and `element` on your route - `Component` will be used."
-        );
-      }
-    }
-    Object.assign(updates, {
-      element: react__WEBPACK_IMPORTED_MODULE_0__.createElement(route.Component),
-      Component: void 0
-    });
-  }
-  if (route.HydrateFallback) {
-    if (ENABLE_DEV_WARNINGS) {
-      if (route.hydrateFallbackElement) {
-        warning(
-          false,
-          "You should not include both `HydrateFallback` and `hydrateFallbackElement` on your route - `HydrateFallback` will be used."
-        );
-      }
-    }
-    Object.assign(updates, {
-      hydrateFallbackElement: react__WEBPACK_IMPORTED_MODULE_0__.createElement(route.HydrateFallback),
-      HydrateFallback: void 0
-    });
-  }
-  if (route.ErrorBoundary) {
-    if (ENABLE_DEV_WARNINGS) {
-      if (route.errorElement) {
-        warning(
-          false,
-          "You should not include both `ErrorBoundary` and `errorElement` on your route - `ErrorBoundary` will be used."
-        );
-      }
-    }
-    Object.assign(updates, {
-      errorElement: react__WEBPACK_IMPORTED_MODULE_0__.createElement(route.ErrorBoundary),
-      ErrorBoundary: void 0
-    });
-  }
-  return updates;
-}
-var hydrationRouteProperties = [
-  "HydrateFallback",
-  "hydrateFallbackElement"
-];
-function createMemoryRouter(routes, opts) {
-  return createRouter({
-    basename: opts?.basename,
-    getContext: opts?.getContext,
-    future: opts?.future,
-    history: createMemoryHistory({
-      initialEntries: opts?.initialEntries,
-      initialIndex: opts?.initialIndex
-    }),
-    hydrationData: opts?.hydrationData,
-    routes,
-    hydrationRouteProperties,
-    mapRouteProperties,
-    dataStrategy: opts?.dataStrategy,
-    patchRoutesOnNavigation: opts?.patchRoutesOnNavigation
-  }).initialize();
-}
-var Deferred = class {
-  constructor() {
-    this.status = "pending";
-    this.promise = new Promise((resolve, reject) => {
-      this.resolve = (value) => {
-        if (this.status === "pending") {
-          this.status = "resolved";
-          resolve(value);
-        }
-      };
-      this.reject = (reason) => {
-        if (this.status === "pending") {
-          this.status = "rejected";
-          reject(reason);
-        }
-      };
-    });
-  }
-};
-function shallowDiff(a, b) {
-  if (a === b) {
-    return false;
-  }
-  let aKeys = Object.keys(a);
-  let bKeys = Object.keys(b);
-  if (aKeys.length !== bKeys.length) {
-    return true;
-  }
-  for (let key of aKeys) {
-    if (a[key] !== b[key]) {
-      return true;
-    }
-  }
-  return false;
-}
-function UNSTABLE_TransitionEnabledRouterProvider({
-  router,
-  flushSync: reactDomFlushSyncImpl,
-  unstable_onError
-}) {
-  let fetcherData = react__WEBPACK_IMPORTED_MODULE_0__.useRef(/* @__PURE__ */ new Map());
-  let [revalidating, startRevalidation] = react__WEBPACK_IMPORTED_MODULE_0__.useTransition();
-  let [state, setState] = react__WEBPACK_IMPORTED_MODULE_0__.useState(router.state);
-  router.__setPendingRerender = (promise) => startRevalidation(
-    // @ts-expect-error - need react 19 types for this to be async
-    async () => {
-      const rerender = await promise;
-      startRevalidation(() => {
-        rerender();
-      });
-    }
-  );
-  let navigator = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
-    return {
-      createHref: router.createHref,
-      encodeLocation: router.encodeLocation,
-      go: (n) => router.navigate(n),
-      push: (to, state2, opts) => router.navigate(to, {
-        state: state2,
-        preventScrollReset: opts?.preventScrollReset
-      }),
-      replace: (to, state2, opts) => router.navigate(to, {
-        replace: true,
-        state: state2,
-        preventScrollReset: opts?.preventScrollReset
-      })
-    };
-  }, [router]);
-  let basename = router.basename || "/";
-  let dataRouterContext = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
-    () => ({
-      router,
-      navigator,
-      static: false,
-      basename,
-      unstable_onError
-    }),
-    [router, navigator, basename, unstable_onError]
-  );
-  react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => {
-    return router.subscribe(
-      (newState, { deletedFetchers, flushSync, viewTransitionOpts }) => {
-        newState.fetchers.forEach((fetcher, key) => {
-          if (fetcher.data !== void 0) {
-            fetcherData.current.set(key, fetcher.data);
-          }
-        });
-        deletedFetchers.forEach((key) => fetcherData.current.delete(key));
-        const diff = shallowDiff(state, newState);
-        if (!diff) return;
-        if (flushSync) {
-          if (reactDomFlushSyncImpl) {
-            reactDomFlushSyncImpl(() => setState(newState));
-          } else {
-            setState(newState);
-          }
-        } else {
-          react__WEBPACK_IMPORTED_MODULE_0__.startTransition(() => {
-            setState(newState);
-          });
-        }
-      }
-    );
-  }, [router, reactDomFlushSyncImpl, state]);
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(DataRouterContext.Provider, { value: dataRouterContext }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    DataRouterStateContext.Provider,
-    {
-      value: {
-        ...state,
-        revalidation: revalidating ? "loading" : state.revalidation
-      }
-    },
-    /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(FetchersContext.Provider, { value: fetcherData.current }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-      Router,
-      {
-        basename,
-        location: state.location,
-        navigationType: state.historyAction,
-        navigator
-      },
-      /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-        MemoizedDataRoutes,
-        {
-          routes: router.routes,
-          future: router.future,
-          state,
-          unstable_onError
-        }
-      )
-    ))
-  )), null);
-}
-function RouterProvider({
-  router,
-  flushSync: reactDomFlushSyncImpl,
-  unstable_onError
-}) {
-  let [state, setStateImpl] = react__WEBPACK_IMPORTED_MODULE_0__.useState(router.state);
-  let [pendingState, setPendingState] = react__WEBPACK_IMPORTED_MODULE_0__.useState();
-  let [vtContext, setVtContext] = react__WEBPACK_IMPORTED_MODULE_0__.useState({
-    isTransitioning: false
-  });
-  let [renderDfd, setRenderDfd] = react__WEBPACK_IMPORTED_MODULE_0__.useState();
-  let [transition, setTransition] = react__WEBPACK_IMPORTED_MODULE_0__.useState();
-  let [interruption, setInterruption] = react__WEBPACK_IMPORTED_MODULE_0__.useState();
-  let fetcherData = react__WEBPACK_IMPORTED_MODULE_0__.useRef(/* @__PURE__ */ new Map());
-  let logErrorsAndSetState = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
-    (newState) => {
-      setStateImpl((prevState) => {
-        if (newState.errors && unstable_onError) {
-          Object.entries(newState.errors).forEach(([routeId, error]) => {
-            if (prevState.errors?.[routeId] !== error) {
-              unstable_onError(error);
-            }
-          });
-        }
-        return newState;
-      });
-    },
-    [unstable_onError]
-  );
-  let setState = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
-    (newState, { deletedFetchers, flushSync, viewTransitionOpts }) => {
-      newState.fetchers.forEach((fetcher, key) => {
-        if (fetcher.data !== void 0) {
-          fetcherData.current.set(key, fetcher.data);
-        }
-      });
-      deletedFetchers.forEach((key) => fetcherData.current.delete(key));
-      warnOnce(
-        flushSync === false || reactDomFlushSyncImpl != null,
-        'You provided the `flushSync` option to a router update, but you are not using the `<RouterProvider>` from `react-router/dom` so `ReactDOM.flushSync()` is unavailable.  Please update your app to `import { RouterProvider } from "react-router/dom"` and ensure you have `react-dom` installed as a dependency to use the `flushSync` option.'
-      );
-      let isViewTransitionAvailable = router.window != null && router.window.document != null && typeof router.window.document.startViewTransition === "function";
-      warnOnce(
-        viewTransitionOpts == null || isViewTransitionAvailable,
-        "You provided the `viewTransition` option to a router update, but you do not appear to be running in a DOM environment as `window.startViewTransition` is not available."
-      );
-      if (!viewTransitionOpts || !isViewTransitionAvailable) {
-        if (reactDomFlushSyncImpl && flushSync) {
-          reactDomFlushSyncImpl(() => logErrorsAndSetState(newState));
-        } else {
-          react__WEBPACK_IMPORTED_MODULE_0__.startTransition(() => logErrorsAndSetState(newState));
-        }
-        return;
-      }
-      if (reactDomFlushSyncImpl && flushSync) {
-        reactDomFlushSyncImpl(() => {
-          if (transition) {
-            renderDfd && renderDfd.resolve();
-            transition.skipTransition();
-          }
-          setVtContext({
-            isTransitioning: true,
-            flushSync: true,
-            currentLocation: viewTransitionOpts.currentLocation,
-            nextLocation: viewTransitionOpts.nextLocation
-          });
-        });
-        let t = router.window.document.startViewTransition(() => {
-          reactDomFlushSyncImpl(() => logErrorsAndSetState(newState));
-        });
-        t.finished.finally(() => {
-          reactDomFlushSyncImpl(() => {
-            setRenderDfd(void 0);
-            setTransition(void 0);
-            setPendingState(void 0);
-            setVtContext({ isTransitioning: false });
-          });
-        });
-        reactDomFlushSyncImpl(() => setTransition(t));
-        return;
-      }
-      if (transition) {
-        renderDfd && renderDfd.resolve();
-        transition.skipTransition();
-        setInterruption({
-          state: newState,
-          currentLocation: viewTransitionOpts.currentLocation,
-          nextLocation: viewTransitionOpts.nextLocation
-        });
-      } else {
-        setPendingState(newState);
-        setVtContext({
-          isTransitioning: true,
-          flushSync: false,
-          currentLocation: viewTransitionOpts.currentLocation,
-          nextLocation: viewTransitionOpts.nextLocation
-        });
-      }
-    },
-    [
-      router.window,
-      reactDomFlushSyncImpl,
-      transition,
-      renderDfd,
-      logErrorsAndSetState
-    ]
-  );
-  react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => router.subscribe(setState), [router, setState]);
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    if (vtContext.isTransitioning && !vtContext.flushSync) {
-      setRenderDfd(new Deferred());
-    }
-  }, [vtContext]);
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    if (renderDfd && pendingState && router.window) {
-      let newState = pendingState;
-      let renderPromise = renderDfd.promise;
-      let transition2 = router.window.document.startViewTransition(async () => {
-        react__WEBPACK_IMPORTED_MODULE_0__.startTransition(() => logErrorsAndSetState(newState));
-        await renderPromise;
-      });
-      transition2.finished.finally(() => {
-        setRenderDfd(void 0);
-        setTransition(void 0);
-        setPendingState(void 0);
-        setVtContext({ isTransitioning: false });
-      });
-      setTransition(transition2);
-    }
-  }, [pendingState, renderDfd, router.window, logErrorsAndSetState]);
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    if (renderDfd && pendingState && state.location.key === pendingState.location.key) {
-      renderDfd.resolve();
-    }
-  }, [renderDfd, transition, state.location, pendingState]);
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    if (!vtContext.isTransitioning && interruption) {
-      setPendingState(interruption.state);
-      setVtContext({
-        isTransitioning: true,
-        flushSync: false,
-        currentLocation: interruption.currentLocation,
-        nextLocation: interruption.nextLocation
-      });
-      setInterruption(void 0);
-    }
-  }, [vtContext.isTransitioning, interruption]);
-  let navigator = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
-    return {
-      createHref: router.createHref,
-      encodeLocation: router.encodeLocation,
-      go: (n) => router.navigate(n),
-      push: (to, state2, opts) => router.navigate(to, {
-        state: state2,
-        preventScrollReset: opts?.preventScrollReset
-      }),
-      replace: (to, state2, opts) => router.navigate(to, {
-        replace: true,
-        state: state2,
-        preventScrollReset: opts?.preventScrollReset
-      })
-    };
-  }, [router]);
-  let basename = router.basename || "/";
-  let dataRouterContext = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
-    () => ({
-      router,
-      navigator,
-      static: false,
-      basename,
-      unstable_onError
-    }),
-    [router, navigator, basename, unstable_onError]
-  );
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(DataRouterContext.Provider, { value: dataRouterContext }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(DataRouterStateContext.Provider, { value: state }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(FetchersContext.Provider, { value: fetcherData.current }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(ViewTransitionContext.Provider, { value: vtContext }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    Router,
-    {
-      basename,
-      location: state.location,
-      navigationType: state.historyAction,
-      navigator
-    },
-    /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-      MemoizedDataRoutes,
-      {
-        routes: router.routes,
-        future: router.future,
-        state,
-        unstable_onError
-      }
-    )
-  ))))), null);
-}
-var MemoizedDataRoutes = react__WEBPACK_IMPORTED_MODULE_0__.memo(DataRoutes);
-function DataRoutes({
-  routes,
-  future,
-  state,
-  unstable_onError
-}) {
-  return useRoutesImpl(routes, void 0, state, unstable_onError, future);
-}
-function MemoryRouter({
-  basename,
-  children,
-  initialEntries,
-  initialIndex
-}) {
-  let historyRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef();
-  if (historyRef.current == null) {
-    historyRef.current = createMemoryHistory({
-      initialEntries,
-      initialIndex,
-      v5Compat: true
-    });
-  }
-  let history = historyRef.current;
-  let [state, setStateImpl] = react__WEBPACK_IMPORTED_MODULE_0__.useState({
-    action: history.action,
-    location: history.location
-  });
-  let setState = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
-    (newState) => {
-      react__WEBPACK_IMPORTED_MODULE_0__.startTransition(() => setStateImpl(newState));
-    },
-    [setStateImpl]
-  );
-  react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => history.listen(setState), [history, setState]);
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    Router,
-    {
-      basename,
-      children,
-      location: state.location,
-      navigationType: state.action,
-      navigator: history
-    }
-  );
-}
-function Navigate({
-  to,
-  replace: replace2,
-  state,
-  relative
-}) {
-  invariant(
-    useInRouterContext(),
-    // TODO: This error is probably because they somehow have 2 versions of
-    // the router loaded. We can help them understand how to avoid that.
-    `<Navigate> may be used only in the context of a <Router> component.`
-  );
-  let { static: isStatic } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
-  warning(
-    !isStatic,
-    `<Navigate> must not be used on the initial render in a <StaticRouter>. This is a no-op, but you should modify your code so the <Navigate> is only ever rendered in response to some user interaction or state change.`
-  );
-  let { matches } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
-  let { pathname: locationPathname } = useLocation();
-  let navigate = useNavigate();
-  let path = resolveTo(
-    to,
-    getResolveToMatches(matches),
-    locationPathname,
-    relative === "path"
-  );
-  let jsonPath = JSON.stringify(path);
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    navigate(JSON.parse(jsonPath), { replace: replace2, state, relative });
-  }, [navigate, jsonPath, relative, replace2, state]);
-  return null;
-}
-function Outlet(props) {
-  return useOutlet(props.context);
-}
-function Route(props) {
-  invariant(
-    false,
-    `A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.`
-  );
-}
-function Router({
-  basename: basenameProp = "/",
-  children = null,
-  location: locationProp,
-  navigationType = "POP" /* Pop */,
-  navigator,
-  static: staticProp = false
-}) {
-  invariant(
-    !useInRouterContext(),
-    `You cannot render a <Router> inside another <Router>. You should never have more than one in your app.`
-  );
-  let basename = basenameProp.replace(/^\/*/, "/");
-  let navigationContext = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
-    () => ({
-      basename,
-      navigator,
-      static: staticProp,
-      future: {}
-    }),
-    [basename, navigator, staticProp]
-  );
-  if (typeof locationProp === "string") {
-    locationProp = parsePath(locationProp);
-  }
-  let {
-    pathname = "/",
-    search = "",
-    hash = "",
-    state = null,
-    key = "default"
-  } = locationProp;
-  let locationContext = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
-    let trailingPathname = stripBasename(pathname, basename);
-    if (trailingPathname == null) {
-      return null;
-    }
-    return {
-      location: {
-        pathname: trailingPathname,
-        search,
-        hash,
-        state,
-        key
-      },
-      navigationType
-    };
-  }, [basename, pathname, search, hash, state, key, navigationType]);
-  warning(
-    locationContext != null,
-    `<Router basename="${basename}"> is not able to match the URL "${pathname}${search}${hash}" because it does not start with the basename, so the <Router> won't render anything.`
-  );
-  if (locationContext == null) {
-    return null;
-  }
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(NavigationContext.Provider, { value: navigationContext }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(LocationContext.Provider, { children, value: locationContext }));
-}
-function Routes({
-  children,
-  location
-}) {
-  return useRoutes(createRoutesFromChildren(children), location);
-}
-function Await({
-  children,
-  errorElement,
-  resolve
-}) {
-  let dataRouterContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterContext);
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    AwaitErrorBoundary,
-    {
-      resolve,
-      errorElement,
-      unstable_onError: dataRouterContext?.unstable_onError
-    },
-    /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(ResolveAwait, null, children)
-  );
-}
-var AwaitErrorBoundary = class extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
-  constructor(props) {
-    super(props);
-    this.state = { error: null };
-  }
-  static getDerivedStateFromError(error) {
-    return { error };
-  }
-  componentDidCatch(error, errorInfo) {
-    if (this.props.unstable_onError) {
-      this.props.unstable_onError(error, errorInfo);
-    } else {
-      console.error(
-        "<Await> caught the following error during render",
-        error,
-        errorInfo
-      );
-    }
-  }
-  render() {
-    let { children, errorElement, resolve } = this.props;
-    let promise = null;
-    let status = 0 /* pending */;
-    if (!(resolve instanceof Promise)) {
-      status = 1 /* success */;
-      promise = Promise.resolve();
-      Object.defineProperty(promise, "_tracked", { get: () => true });
-      Object.defineProperty(promise, "_data", { get: () => resolve });
-    } else if (this.state.error) {
-      status = 2 /* error */;
-      let renderError = this.state.error;
-      promise = Promise.reject().catch(() => {
-      });
-      Object.defineProperty(promise, "_tracked", { get: () => true });
-      Object.defineProperty(promise, "_error", { get: () => renderError });
-    } else if (resolve._tracked) {
-      promise = resolve;
-      status = "_error" in promise ? 2 /* error */ : "_data" in promise ? 1 /* success */ : 0 /* pending */;
-    } else {
-      status = 0 /* pending */;
-      Object.defineProperty(resolve, "_tracked", { get: () => true });
-      promise = resolve.then(
-        (data2) => Object.defineProperty(resolve, "_data", { get: () => data2 }),
-        (error) => {
-          this.props.unstable_onError?.(error);
-          Object.defineProperty(resolve, "_error", { get: () => error });
-        }
-      );
-    }
-    if (status === 2 /* error */ && !errorElement) {
-      throw promise._error;
-    }
-    if (status === 2 /* error */) {
-      return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(AwaitContext.Provider, { value: promise, children: errorElement });
-    }
-    if (status === 1 /* success */) {
-      return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(AwaitContext.Provider, { value: promise, children });
-    }
-    throw promise;
-  }
-};
-function ResolveAwait({
-  children
-}) {
-  let data2 = useAsyncValue();
-  let toRender = typeof children === "function" ? children(data2) : children;
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, toRender);
-}
-function createRoutesFromChildren(children, parentPath = []) {
-  let routes = [];
-  react__WEBPACK_IMPORTED_MODULE_0__.Children.forEach(children, (element, index) => {
-    if (!react__WEBPACK_IMPORTED_MODULE_0__.isValidElement(element)) {
-      return;
-    }
-    let treePath = [...parentPath, index];
-    if (element.type === react__WEBPACK_IMPORTED_MODULE_0__.Fragment) {
-      routes.push.apply(
-        routes,
-        createRoutesFromChildren(element.props.children, treePath)
-      );
-      return;
-    }
-    invariant(
-      element.type === Route,
-      `[${typeof element.type === "string" ? element.type : element.type.name}] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>`
-    );
-    invariant(
-      !element.props.index || !element.props.children,
-      "An index route cannot have child routes."
-    );
-    let route = {
-      id: element.props.id || treePath.join("-"),
-      caseSensitive: element.props.caseSensitive,
-      element: element.props.element,
-      Component: element.props.Component,
-      index: element.props.index,
-      path: element.props.path,
-      middleware: element.props.middleware,
-      loader: element.props.loader,
-      action: element.props.action,
-      hydrateFallbackElement: element.props.hydrateFallbackElement,
-      HydrateFallback: element.props.HydrateFallback,
-      errorElement: element.props.errorElement,
-      ErrorBoundary: element.props.ErrorBoundary,
-      hasErrorBoundary: element.props.hasErrorBoundary === true || element.props.ErrorBoundary != null || element.props.errorElement != null,
-      shouldRevalidate: element.props.shouldRevalidate,
-      handle: element.props.handle,
-      lazy: element.props.lazy
-    };
-    if (element.props.children) {
-      route.children = createRoutesFromChildren(
-        element.props.children,
-        treePath
-      );
-    }
-    routes.push(route);
-  });
-  return routes;
-}
-var createRoutesFromElements = createRoutesFromChildren;
-function renderMatches(matches) {
-  return _renderMatches(matches);
-}
-function useRouteComponentProps() {
-  return {
-    params: useParams(),
-    loaderData: useLoaderData(),
-    actionData: useActionData(),
-    matches: useMatches()
-  };
-}
-function WithComponentProps({
-  children
-}) {
-  const props = useRouteComponentProps();
-  return react__WEBPACK_IMPORTED_MODULE_0__.cloneElement(children, props);
-}
-function withComponentProps(Component4) {
-  return function WithComponentProps2() {
-    const props = useRouteComponentProps();
-    return react__WEBPACK_IMPORTED_MODULE_0__.createElement(Component4, props);
-  };
-}
-function useHydrateFallbackProps() {
-  return {
-    params: useParams(),
-    loaderData: useLoaderData(),
-    actionData: useActionData()
-  };
-}
-function WithHydrateFallbackProps({
-  children
-}) {
-  const props = useHydrateFallbackProps();
-  return react__WEBPACK_IMPORTED_MODULE_0__.cloneElement(children, props);
-}
-function withHydrateFallbackProps(HydrateFallback) {
-  return function WithHydrateFallbackProps2() {
-    const props = useHydrateFallbackProps();
-    return react__WEBPACK_IMPORTED_MODULE_0__.createElement(HydrateFallback, props);
-  };
-}
-function useErrorBoundaryProps() {
-  return {
-    params: useParams(),
-    loaderData: useLoaderData(),
-    actionData: useActionData(),
-    error: useRouteError()
-  };
-}
-function WithErrorBoundaryProps({
-  children
-}) {
-  const props = useErrorBoundaryProps();
-  return react__WEBPACK_IMPORTED_MODULE_0__.cloneElement(children, props);
-}
-function withErrorBoundaryProps(ErrorBoundary) {
-  return function WithErrorBoundaryProps2() {
-    const props = useErrorBoundaryProps();
-    return react__WEBPACK_IMPORTED_MODULE_0__.createElement(ErrorBoundary, props);
-  };
-}
-
-// lib/dom/dom.ts
-var defaultMethod = "get";
-var defaultEncType = "application/x-www-form-urlencoded";
-function isHtmlElement(object) {
-  return object != null && typeof object.tagName === "string";
-}
-function isButtonElement(object) {
-  return isHtmlElement(object) && object.tagName.toLowerCase() === "button";
-}
-function isFormElement(object) {
-  return isHtmlElement(object) && object.tagName.toLowerCase() === "form";
-}
-function isInputElement(object) {
-  return isHtmlElement(object) && object.tagName.toLowerCase() === "input";
-}
-function isModifiedEvent(event) {
-  return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
-}
-function shouldProcessLinkClick(event, target) {
-  return event.button === 0 && // Ignore everything but left clicks
-  (!target || target === "_self") && // Let browser handle "target=_blank" etc.
-  !isModifiedEvent(event);
-}
-function createSearchParams(init = "") {
-  return new URLSearchParams(
-    typeof init === "string" || Array.isArray(init) || init instanceof URLSearchParams ? init : Object.keys(init).reduce((memo2, key) => {
-      let value = init[key];
-      return memo2.concat(
-        Array.isArray(value) ? value.map((v) => [key, v]) : [[key, value]]
-      );
-    }, [])
-  );
-}
-function getSearchParamsForLocation(locationSearch, defaultSearchParams) {
-  let searchParams = createSearchParams(locationSearch);
-  if (defaultSearchParams) {
-    defaultSearchParams.forEach((_, key) => {
-      if (!searchParams.has(key)) {
-        defaultSearchParams.getAll(key).forEach((value) => {
-          searchParams.append(key, value);
-        });
-      }
-    });
-  }
-  return searchParams;
-}
-var _formDataSupportsSubmitter = null;
-function isFormDataSubmitterSupported() {
-  if (_formDataSupportsSubmitter === null) {
-    try {
-      new FormData(
-        document.createElement("form"),
-        // @ts-expect-error if FormData supports the submitter parameter, this will throw
-        0
-      );
-      _formDataSupportsSubmitter = false;
-    } catch (e) {
-      _formDataSupportsSubmitter = true;
-    }
-  }
-  return _formDataSupportsSubmitter;
-}
-var supportedFormEncTypes = /* @__PURE__ */ new Set([
-  "application/x-www-form-urlencoded",
-  "multipart/form-data",
-  "text/plain"
-]);
-function getFormEncType(encType) {
-  if (encType != null && !supportedFormEncTypes.has(encType)) {
-    warning(
-      false,
-      `"${encType}" is not a valid \`encType\` for \`<Form>\`/\`<fetcher.Form>\` and will default to "${defaultEncType}"`
-    );
-    return null;
-  }
-  return encType;
-}
-function getFormSubmissionInfo(target, basename) {
-  let method;
-  let action;
-  let encType;
-  let formData;
-  let body;
-  if (isFormElement(target)) {
-    let attr = target.getAttribute("action");
-    action = attr ? stripBasename(attr, basename) : null;
-    method = target.getAttribute("method") || defaultMethod;
-    encType = getFormEncType(target.getAttribute("enctype")) || defaultEncType;
-    formData = new FormData(target);
-  } else if (isButtonElement(target) || isInputElement(target) && (target.type === "submit" || target.type === "image")) {
-    let form = target.form;
-    if (form == null) {
-      throw new Error(
-        `Cannot submit a <button> or <input type="submit"> without a <form>`
-      );
-    }
-    let attr = target.getAttribute("formaction") || form.getAttribute("action");
-    action = attr ? stripBasename(attr, basename) : null;
-    method = target.getAttribute("formmethod") || form.getAttribute("method") || defaultMethod;
-    encType = getFormEncType(target.getAttribute("formenctype")) || getFormEncType(form.getAttribute("enctype")) || defaultEncType;
-    formData = new FormData(form, target);
-    if (!isFormDataSubmitterSupported()) {
-      let { name, type, value } = target;
-      if (type === "image") {
-        let prefix = name ? `${name}.` : "";
-        formData.append(`${prefix}x`, "0");
-        formData.append(`${prefix}y`, "0");
-      } else if (name) {
-        formData.append(name, value);
-      }
-    }
-  } else if (isHtmlElement(target)) {
-    throw new Error(
-      `Cannot submit element that is not <form>, <button>, or <input type="submit|image">`
-    );
-  } else {
-    method = defaultMethod;
-    action = null;
-    encType = defaultEncType;
-    body = target;
-  }
-  if (formData && encType === "text/plain") {
-    body = formData;
-    formData = void 0;
-  }
-  return { action, method: method.toLowerCase(), encType, formData, body };
-}
-
-// lib/dom/ssr/single-fetch.tsx
-
-
-// vendor/turbo-stream-v2/utils.ts
-var HOLE = -1;
-var NAN = -2;
-var NEGATIVE_INFINITY = -3;
-var NEGATIVE_ZERO = -4;
-var NULL = -5;
-var POSITIVE_INFINITY = -6;
-var UNDEFINED = -7;
-var TYPE_BIGINT = "B";
-var TYPE_DATE = "D";
-var TYPE_ERROR = "E";
-var TYPE_MAP = "M";
-var TYPE_NULL_OBJECT = "N";
-var TYPE_PROMISE = "P";
-var TYPE_REGEXP = "R";
-var TYPE_SET = "S";
-var TYPE_SYMBOL = "Y";
-var TYPE_URL = "U";
-var TYPE_PREVIOUS_RESOLVED = "Z";
-var Deferred2 = class {
-  constructor() {
-    this.promise = new Promise((resolve, reject) => {
-      this.resolve = resolve;
-      this.reject = reject;
-    });
-  }
-};
-function createLineSplittingTransform() {
-  const decoder = new TextDecoder();
-  let leftover = "";
-  return new TransformStream({
-    transform(chunk, controller) {
-      const str = decoder.decode(chunk, { stream: true });
-      const parts = (leftover + str).split("\n");
-      leftover = parts.pop() || "";
-      for (const part of parts) {
-        controller.enqueue(part);
-      }
-    },
-    flush(controller) {
-      if (leftover) {
-        controller.enqueue(leftover);
-      }
-    }
-  });
-}
-
-// vendor/turbo-stream-v2/flatten.ts
-function flatten(input) {
-  const { indices } = this;
-  const existing = indices.get(input);
-  if (existing) return [existing];
-  if (input === void 0) return UNDEFINED;
-  if (input === null) return NULL;
-  if (Number.isNaN(input)) return NAN;
-  if (input === Number.POSITIVE_INFINITY) return POSITIVE_INFINITY;
-  if (input === Number.NEGATIVE_INFINITY) return NEGATIVE_INFINITY;
-  if (input === 0 && 1 / input < 0) return NEGATIVE_ZERO;
-  const index = this.index++;
-  indices.set(input, index);
-  stringify.call(this, input, index);
-  return index;
-}
-function stringify(input, index) {
-  const { deferred, plugins, postPlugins } = this;
-  const str = this.stringified;
-  const stack = [[input, index]];
-  while (stack.length > 0) {
-    const [input2, index2] = stack.pop();
-    const partsForObj = (obj) => Object.keys(obj).map((k) => `"_${flatten.call(this, k)}":${flatten.call(this, obj[k])}`).join(",");
-    let error = null;
-    switch (typeof input2) {
-      case "boolean":
-      case "number":
-      case "string":
-        str[index2] = JSON.stringify(input2);
-        break;
-      case "bigint":
-        str[index2] = `["${TYPE_BIGINT}","${input2}"]`;
-        break;
-      case "symbol": {
-        const keyFor = Symbol.keyFor(input2);
-        if (!keyFor) {
-          error = new Error(
-            "Cannot encode symbol unless created with Symbol.for()"
-          );
-        } else {
-          str[index2] = `["${TYPE_SYMBOL}",${JSON.stringify(keyFor)}]`;
-        }
-        break;
-      }
-      case "object": {
-        if (!input2) {
-          str[index2] = `${NULL}`;
-          break;
-        }
-        const isArray = Array.isArray(input2);
-        let pluginHandled = false;
-        if (!isArray && plugins) {
-          for (const plugin of plugins) {
-            const pluginResult = plugin(input2);
-            if (Array.isArray(pluginResult)) {
-              pluginHandled = true;
-              const [pluginIdentifier, ...rest] = pluginResult;
-              str[index2] = `[${JSON.stringify(pluginIdentifier)}`;
-              if (rest.length > 0) {
-                str[index2] += `,${rest.map((v) => flatten.call(this, v)).join(",")}`;
-              }
-              str[index2] += "]";
-              break;
-            }
-          }
-        }
-        if (!pluginHandled) {
-          let result = isArray ? "[" : "{";
-          if (isArray) {
-            for (let i = 0; i < input2.length; i++)
-              result += (i ? "," : "") + (i in input2 ? flatten.call(this, input2[i]) : HOLE);
-            str[index2] = `${result}]`;
-          } else if (input2 instanceof Date) {
-            const dateTime = input2.getTime();
-            str[index2] = `["${TYPE_DATE}",${Number.isNaN(dateTime) ? JSON.stringify("invalid") : dateTime}]`;
-          } else if (input2 instanceof URL) {
-            str[index2] = `["${TYPE_URL}",${JSON.stringify(input2.href)}]`;
-          } else if (input2 instanceof RegExp) {
-            str[index2] = `["${TYPE_REGEXP}",${JSON.stringify(
-              input2.source
-            )},${JSON.stringify(input2.flags)}]`;
-          } else if (input2 instanceof Set) {
-            if (input2.size > 0) {
-              str[index2] = `["${TYPE_SET}",${[...input2].map((val) => flatten.call(this, val)).join(",")}]`;
-            } else {
-              str[index2] = `["${TYPE_SET}"]`;
-            }
-          } else if (input2 instanceof Map) {
-            if (input2.size > 0) {
-              str[index2] = `["${TYPE_MAP}",${[...input2].flatMap(([k, v]) => [
-                flatten.call(this, k),
-                flatten.call(this, v)
-              ]).join(",")}]`;
-            } else {
-              str[index2] = `["${TYPE_MAP}"]`;
-            }
-          } else if (input2 instanceof Promise) {
-            str[index2] = `["${TYPE_PROMISE}",${index2}]`;
-            deferred[index2] = input2;
-          } else if (input2 instanceof Error) {
-            str[index2] = `["${TYPE_ERROR}",${JSON.stringify(input2.message)}`;
-            if (input2.name !== "Error") {
-              str[index2] += `,${JSON.stringify(input2.name)}`;
-            }
-            str[index2] += "]";
-          } else if (Object.getPrototypeOf(input2) === null) {
-            str[index2] = `["${TYPE_NULL_OBJECT}",{${partsForObj(input2)}}]`;
-          } else if (isPlainObject(input2)) {
-            str[index2] = `{${partsForObj(input2)}}`;
-          } else {
-            error = new Error("Cannot encode object with prototype");
-          }
-        }
-        break;
-      }
-      default: {
-        const isArray = Array.isArray(input2);
-        let pluginHandled = false;
-        if (!isArray && plugins) {
-          for (const plugin of plugins) {
-            const pluginResult = plugin(input2);
-            if (Array.isArray(pluginResult)) {
-              pluginHandled = true;
-              const [pluginIdentifier, ...rest] = pluginResult;
-              str[index2] = `[${JSON.stringify(pluginIdentifier)}`;
-              if (rest.length > 0) {
-                str[index2] += `,${rest.map((v) => flatten.call(this, v)).join(",")}`;
-              }
-              str[index2] += "]";
-              break;
-            }
-          }
-        }
-        if (!pluginHandled) {
-          error = new Error("Cannot encode function or unexpected type");
-        }
-      }
-    }
-    if (error) {
-      let pluginHandled = false;
-      if (postPlugins) {
-        for (const plugin of postPlugins) {
-          const pluginResult = plugin(input2);
-          if (Array.isArray(pluginResult)) {
-            pluginHandled = true;
-            const [pluginIdentifier, ...rest] = pluginResult;
-            str[index2] = `[${JSON.stringify(pluginIdentifier)}`;
-            if (rest.length > 0) {
-              str[index2] += `,${rest.map((v) => flatten.call(this, v)).join(",")}`;
-            }
-            str[index2] += "]";
-            break;
-          }
-        }
-      }
-      if (!pluginHandled) {
-        throw error;
-      }
-    }
-  }
-}
-var objectProtoNames = Object.getOwnPropertyNames(Object.prototype).sort().join("\0");
-function isPlainObject(thing) {
-  const proto = Object.getPrototypeOf(thing);
-  return proto === Object.prototype || proto === null || Object.getOwnPropertyNames(proto).sort().join("\0") === objectProtoNames;
-}
-
-// vendor/turbo-stream-v2/unflatten.ts
-var globalObj = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : void 0;
-function unflatten(parsed) {
-  const { hydrated, values } = this;
-  if (typeof parsed === "number") return hydrate.call(this, parsed);
-  if (!Array.isArray(parsed) || !parsed.length) throw new SyntaxError();
-  const startIndex = values.length;
-  for (const value of parsed) {
-    values.push(value);
-  }
-  hydrated.length = values.length;
-  return hydrate.call(this, startIndex);
-}
-function hydrate(index) {
-  const { hydrated, values, deferred, plugins } = this;
-  let result;
-  const stack = [
-    [
-      index,
-      (v) => {
-        result = v;
-      }
-    ]
-  ];
-  let postRun = [];
-  while (stack.length > 0) {
-    const [index2, set] = stack.pop();
-    switch (index2) {
-      case UNDEFINED:
-        set(void 0);
-        continue;
-      case NULL:
-        set(null);
-        continue;
-      case NAN:
-        set(NaN);
-        continue;
-      case POSITIVE_INFINITY:
-        set(Infinity);
-        continue;
-      case NEGATIVE_INFINITY:
-        set(-Infinity);
-        continue;
-      case NEGATIVE_ZERO:
-        set(-0);
-        continue;
-    }
-    if (hydrated[index2]) {
-      set(hydrated[index2]);
-      continue;
-    }
-    const value = values[index2];
-    if (!value || typeof value !== "object") {
-      hydrated[index2] = value;
-      set(value);
-      continue;
-    }
-    if (Array.isArray(value)) {
-      if (typeof value[0] === "string") {
-        const [type, b, c] = value;
-        switch (type) {
-          case TYPE_DATE:
-            set(hydrated[index2] = new Date(b));
-            continue;
-          case TYPE_URL:
-            set(hydrated[index2] = new URL(b));
-            continue;
-          case TYPE_BIGINT:
-            set(hydrated[index2] = BigInt(b));
-            continue;
-          case TYPE_REGEXP:
-            set(hydrated[index2] = new RegExp(b, c));
-            continue;
-          case TYPE_SYMBOL:
-            set(hydrated[index2] = Symbol.for(b));
-            continue;
-          case TYPE_SET:
-            const newSet = /* @__PURE__ */ new Set();
-            hydrated[index2] = newSet;
-            for (let i = value.length - 1; i > 0; i--)
-              stack.push([
-                value[i],
-                (v) => {
-                  newSet.add(v);
-                }
-              ]);
-            set(newSet);
-            continue;
-          case TYPE_MAP:
-            const map = /* @__PURE__ */ new Map();
-            hydrated[index2] = map;
-            for (let i = value.length - 2; i > 0; i -= 2) {
-              const r = [];
-              stack.push([
-                value[i + 1],
-                (v) => {
-                  r[1] = v;
-                }
-              ]);
-              stack.push([
-                value[i],
-                (k) => {
-                  r[0] = k;
-                }
-              ]);
-              postRun.push(() => {
-                map.set(r[0], r[1]);
-              });
-            }
-            set(map);
-            continue;
-          case TYPE_NULL_OBJECT:
-            const obj = /* @__PURE__ */ Object.create(null);
-            hydrated[index2] = obj;
-            for (const key of Object.keys(b).reverse()) {
-              const r = [];
-              stack.push([
-                b[key],
-                (v) => {
-                  r[1] = v;
-                }
-              ]);
-              stack.push([
-                Number(key.slice(1)),
-                (k) => {
-                  r[0] = k;
-                }
-              ]);
-              postRun.push(() => {
-                obj[r[0]] = r[1];
-              });
-            }
-            set(obj);
-            continue;
-          case TYPE_PROMISE:
-            if (hydrated[b]) {
-              set(hydrated[index2] = hydrated[b]);
-            } else {
-              const d = new Deferred2();
-              deferred[b] = d;
-              set(hydrated[index2] = d.promise);
-            }
-            continue;
-          case TYPE_ERROR:
-            const [, message, errorType] = value;
-            let error = errorType && globalObj && globalObj[errorType] ? new globalObj[errorType](message) : new Error(message);
-            hydrated[index2] = error;
-            set(error);
-            continue;
-          case TYPE_PREVIOUS_RESOLVED:
-            set(hydrated[index2] = hydrated[b]);
-            continue;
-          default:
-            if (Array.isArray(plugins)) {
-              const r = [];
-              const vals = value.slice(1);
-              for (let i = 0; i < vals.length; i++) {
-                const v = vals[i];
-                stack.push([
-                  v,
-                  (v2) => {
-                    r[i] = v2;
-                  }
-                ]);
-              }
-              postRun.push(() => {
-                for (const plugin of plugins) {
-                  const result2 = plugin(value[0], ...r);
-                  if (result2) {
-                    set(hydrated[index2] = result2.value);
-                    return;
-                  }
-                }
-                throw new SyntaxError();
-              });
-              continue;
-            }
-            throw new SyntaxError();
-        }
-      } else {
-        const array = [];
-        hydrated[index2] = array;
-        for (let i = 0; i < value.length; i++) {
-          const n = value[i];
-          if (n !== HOLE) {
-            stack.push([
-              n,
-              (v) => {
-                array[i] = v;
-              }
-            ]);
-          }
-        }
-        set(array);
-        continue;
-      }
-    } else {
-      const object = {};
-      hydrated[index2] = object;
-      for (const key of Object.keys(value).reverse()) {
-        const r = [];
-        stack.push([
-          value[key],
-          (v) => {
-            r[1] = v;
-          }
-        ]);
-        stack.push([
-          Number(key.slice(1)),
-          (k) => {
-            r[0] = k;
-          }
-        ]);
-        postRun.push(() => {
-          object[r[0]] = r[1];
-        });
-      }
-      set(object);
-      continue;
-    }
-  }
-  while (postRun.length > 0) {
-    postRun.pop()();
-  }
-  return result;
-}
-
-// vendor/turbo-stream-v2/turbo-stream.ts
-async function decode(readable, options) {
-  const { plugins } = options ?? {};
-  const done = new Deferred2();
-  const reader = readable.pipeThrough(createLineSplittingTransform()).getReader();
-  const decoder = {
-    values: [],
-    hydrated: [],
-    deferred: {},
-    plugins
-  };
-  const decoded = await decodeInitial.call(decoder, reader);
-  let donePromise = done.promise;
-  if (decoded.done) {
-    done.resolve();
-  } else {
-    donePromise = decodeDeferred.call(decoder, reader).then(done.resolve).catch((reason) => {
-      for (const deferred of Object.values(decoder.deferred)) {
-        deferred.reject(reason);
-      }
-      done.reject(reason);
-    });
-  }
-  return {
-    done: donePromise.then(() => reader.closed),
-    value: decoded.value
-  };
-}
-async function decodeInitial(reader) {
-  const read = await reader.read();
-  if (!read.value) {
-    throw new SyntaxError();
-  }
-  let line;
-  try {
-    line = JSON.parse(read.value);
-  } catch (reason) {
-    throw new SyntaxError();
-  }
-  return {
-    done: read.done,
-    value: unflatten.call(this, line)
-  };
-}
-async function decodeDeferred(reader) {
-  let read = await reader.read();
-  while (!read.done) {
-    if (!read.value) continue;
-    const line = read.value;
-    switch (line[0]) {
-      case TYPE_PROMISE: {
-        const colonIndex = line.indexOf(":");
-        const deferredId = Number(line.slice(1, colonIndex));
-        const deferred = this.deferred[deferredId];
-        if (!deferred) {
-          throw new Error(`Deferred ID ${deferredId} not found in stream`);
-        }
-        const lineData = line.slice(colonIndex + 1);
-        let jsonLine;
-        try {
-          jsonLine = JSON.parse(lineData);
-        } catch (reason) {
-          throw new SyntaxError();
-        }
-        const value = unflatten.call(this, jsonLine);
-        deferred.resolve(value);
-        break;
-      }
-      case TYPE_ERROR: {
-        const colonIndex = line.indexOf(":");
-        const deferredId = Number(line.slice(1, colonIndex));
-        const deferred = this.deferred[deferredId];
-        if (!deferred) {
-          throw new Error(`Deferred ID ${deferredId} not found in stream`);
-        }
-        const lineData = line.slice(colonIndex + 1);
-        let jsonLine;
-        try {
-          jsonLine = JSON.parse(lineData);
-        } catch (reason) {
-          throw new SyntaxError();
-        }
-        const value = unflatten.call(this, jsonLine);
-        deferred.reject(value);
-        break;
-      }
-      default:
-        throw new SyntaxError();
-    }
-    read = await reader.read();
-  }
-}
-function encode(input, options) {
-  const { plugins, postPlugins, signal } = options ?? {};
-  const encoder = {
-    deferred: {},
-    index: 0,
-    indices: /* @__PURE__ */ new Map(),
-    stringified: [],
-    plugins,
-    postPlugins,
-    signal
-  };
-  const textEncoder = new TextEncoder();
-  let lastSentIndex = 0;
-  const readable = new ReadableStream({
-    async start(controller) {
-      const id = flatten.call(encoder, input);
-      if (Array.isArray(id)) {
-        throw new Error("This should never happen");
-      }
-      if (id < 0) {
-        controller.enqueue(textEncoder.encode(`${id}
-`));
-      } else {
-        controller.enqueue(
-          textEncoder.encode(`[${encoder.stringified.join(",")}]
-`)
-        );
-        lastSentIndex = encoder.stringified.length - 1;
-      }
-      const seenPromises = /* @__PURE__ */ new WeakSet();
-      if (Object.keys(encoder.deferred).length) {
-        let raceDone;
-        const racePromise = new Promise((resolve, reject) => {
-          raceDone = resolve;
-          if (signal) {
-            const rejectPromise = () => reject(signal.reason || new Error("Signal was aborted."));
-            if (signal.aborted) {
-              rejectPromise();
-            } else {
-              signal.addEventListener("abort", (event) => {
-                rejectPromise();
-              });
-            }
-          }
-        });
-        while (Object.keys(encoder.deferred).length > 0) {
-          for (const [deferredId, deferred] of Object.entries(
-            encoder.deferred
-          )) {
-            if (seenPromises.has(deferred)) continue;
-            seenPromises.add(
-              // biome-ignore lint/suspicious/noAssignInExpressions: <explanation>
-              encoder.deferred[Number(deferredId)] = Promise.race([
-                racePromise,
-                deferred
-              ]).then(
-                (resolved) => {
-                  const id2 = flatten.call(encoder, resolved);
-                  if (Array.isArray(id2)) {
-                    controller.enqueue(
-                      textEncoder.encode(
-                        `${TYPE_PROMISE}${deferredId}:[["${TYPE_PREVIOUS_RESOLVED}",${id2[0]}]]
-`
-                      )
-                    );
-                    encoder.index++;
-                    lastSentIndex++;
-                  } else if (id2 < 0) {
-                    controller.enqueue(
-                      textEncoder.encode(
-                        `${TYPE_PROMISE}${deferredId}:${id2}
-`
-                      )
-                    );
-                  } else {
-                    const values = encoder.stringified.slice(lastSentIndex + 1).join(",");
-                    controller.enqueue(
-                      textEncoder.encode(
-                        `${TYPE_PROMISE}${deferredId}:[${values}]
-`
-                      )
-                    );
-                    lastSentIndex = encoder.stringified.length - 1;
-                  }
-                },
-                (reason) => {
-                  if (!reason || typeof reason !== "object" || !(reason instanceof Error)) {
-                    reason = new Error("An unknown error occurred");
-                  }
-                  const id2 = flatten.call(encoder, reason);
-                  if (Array.isArray(id2)) {
-                    controller.enqueue(
-                      textEncoder.encode(
-                        `${TYPE_ERROR}${deferredId}:[["${TYPE_PREVIOUS_RESOLVED}",${id2[0]}]]
-`
-                      )
-                    );
-                    encoder.index++;
-                    lastSentIndex++;
-                  } else if (id2 < 0) {
-                    controller.enqueue(
-                      textEncoder.encode(
-                        `${TYPE_ERROR}${deferredId}:${id2}
-`
-                      )
-                    );
-                  } else {
-                    const values = encoder.stringified.slice(lastSentIndex + 1).join(",");
-                    controller.enqueue(
-                      textEncoder.encode(
-                        `${TYPE_ERROR}${deferredId}:[${values}]
-`
-                      )
-                    );
-                    lastSentIndex = encoder.stringified.length - 1;
-                  }
-                }
-              ).finally(() => {
-                delete encoder.deferred[Number(deferredId)];
-              })
-            );
-          }
-          await Promise.race(Object.values(encoder.deferred));
-        }
-        raceDone();
-      }
-      await Promise.all(Object.values(encoder.deferred));
-      controller.close();
-    }
-  });
-  return readable;
-}
-
-// lib/dom/ssr/data.ts
-async function createRequestInit(request) {
-  let init = { signal: request.signal };
-  if (request.method !== "GET") {
-    init.method = request.method;
-    let contentType = request.headers.get("Content-Type");
-    if (contentType && /\bapplication\/json\b/.test(contentType)) {
-      init.headers = { "Content-Type": contentType };
-      init.body = JSON.stringify(await request.json());
-    } else if (contentType && /\btext\/plain\b/.test(contentType)) {
-      init.headers = { "Content-Type": contentType };
-      init.body = await request.text();
-    } else if (contentType && /\bapplication\/x-www-form-urlencoded\b/.test(contentType)) {
-      init.body = new URLSearchParams(await request.text());
-    } else {
-      init.body = await request.formData();
-    }
-  }
-  return init;
-}
-
-// lib/dom/ssr/markup.ts
-var ESCAPE_LOOKUP = {
-  "&": "\\u0026",
-  ">": "\\u003e",
-  "<": "\\u003c",
-  "\u2028": "\\u2028",
-  "\u2029": "\\u2029"
-};
-var ESCAPE_REGEX = /[&><\u2028\u2029]/g;
-function escapeHtml(html) {
-  return html.replace(ESCAPE_REGEX, (match) => ESCAPE_LOOKUP[match]);
-}
-
-// lib/dom/ssr/invariant.ts
-function invariant2(value, message) {
-  if (value === false || value === null || typeof value === "undefined") {
-    throw new Error(message);
-  }
-}
-
-// lib/dom/ssr/single-fetch.tsx
-var SingleFetchRedirectSymbol = Symbol("SingleFetchRedirect");
-var SingleFetchNoResultError = class extends Error {
-};
-var SINGLE_FETCH_REDIRECT_STATUS = 202;
-var NO_BODY_STATUS_CODES = /* @__PURE__ */ new Set([100, 101, 204, 205]);
-function StreamTransfer({
-  context,
-  identifier,
-  reader,
-  textDecoder,
-  nonce
-}) {
-  if (!context.renderMeta || !context.renderMeta.didRenderScripts) {
-    return null;
-  }
-  if (!context.renderMeta.streamCache) {
-    context.renderMeta.streamCache = {};
-  }
-  let { streamCache } = context.renderMeta;
-  let promise = streamCache[identifier];
-  if (!promise) {
-    promise = streamCache[identifier] = reader.read().then((result) => {
-      streamCache[identifier].result = {
-        done: result.done,
-        value: textDecoder.decode(result.value, { stream: true })
-      };
-    }).catch((e) => {
-      streamCache[identifier].error = e;
-    });
-  }
-  if (promise.error) {
-    throw promise.error;
-  }
-  if (promise.result === void 0) {
-    throw promise;
-  }
-  let { done, value } = promise.result;
-  let scriptTag = value ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    "script",
-    {
-      nonce,
-      dangerouslySetInnerHTML: {
-        __html: `window.__reactRouterContext.streamController.enqueue(${escapeHtml(
-          JSON.stringify(value)
-        )});`
-      }
-    }
-  ) : null;
-  if (done) {
-    return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, scriptTag, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-      "script",
-      {
-        nonce,
-        dangerouslySetInnerHTML: {
-          __html: `window.__reactRouterContext.streamController.close();`
-        }
-      }
-    ));
-  } else {
-    return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, scriptTag, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Suspense, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-      StreamTransfer,
-      {
-        context,
-        identifier: identifier + 1,
-        reader,
-        textDecoder,
-        nonce
-      }
-    )));
-  }
-}
-function getTurboStreamSingleFetchDataStrategy(getRouter, manifest, routeModules, ssr, basename) {
-  let dataStrategy = getSingleFetchDataStrategyImpl(
-    getRouter,
-    (match) => {
-      let manifestRoute = manifest.routes[match.route.id];
-      invariant2(manifestRoute, "Route not found in manifest");
-      let routeModule = routeModules[match.route.id];
-      return {
-        hasLoader: manifestRoute.hasLoader,
-        hasClientLoader: manifestRoute.hasClientLoader,
-        hasShouldRevalidate: Boolean(routeModule?.shouldRevalidate)
-      };
-    },
-    fetchAndDecodeViaTurboStream,
-    ssr,
-    basename
-  );
-  return async (args) => args.runClientMiddleware(dataStrategy);
-}
-function getSingleFetchDataStrategyImpl(getRouter, getRouteInfo, fetchAndDecode, ssr, basename, shouldAllowOptOut = () => true) {
-  return async (args) => {
-    let { request, matches, fetcherKey } = args;
-    let router = getRouter();
-    if (request.method !== "GET") {
-      return singleFetchActionStrategy(args, fetchAndDecode, basename);
-    }
-    let foundRevalidatingServerLoader = matches.some((m) => {
-      let { hasLoader, hasClientLoader } = getRouteInfo(m);
-      return m.unstable_shouldCallHandler() && hasLoader && !hasClientLoader;
-    });
-    if (!ssr && !foundRevalidatingServerLoader) {
-      return nonSsrStrategy(args, getRouteInfo, fetchAndDecode, basename);
-    }
-    if (fetcherKey) {
-      return singleFetchLoaderFetcherStrategy(args, fetchAndDecode, basename);
-    }
-    return singleFetchLoaderNavigationStrategy(
-      args,
-      router,
-      getRouteInfo,
-      fetchAndDecode,
-      ssr,
-      basename,
-      shouldAllowOptOut
-    );
-  };
-}
-async function singleFetchActionStrategy(args, fetchAndDecode, basename) {
-  let actionMatch = args.matches.find((m) => m.unstable_shouldCallHandler());
-  invariant2(actionMatch, "No action match found");
-  let actionStatus = void 0;
-  let result = await actionMatch.resolve(async (handler) => {
-    let result2 = await handler(async () => {
-      let { data: data2, status } = await fetchAndDecode(args, basename, [
-        actionMatch.route.id
-      ]);
-      actionStatus = status;
-      return unwrapSingleFetchResult(data2, actionMatch.route.id);
-    });
-    return result2;
-  });
-  if (isResponse(result.result) || isRouteErrorResponse(result.result) || isDataWithResponseInit(result.result)) {
-    return { [actionMatch.route.id]: result };
-  }
-  return {
-    [actionMatch.route.id]: {
-      type: result.type,
-      result: data(result.result, actionStatus)
-    }
-  };
-}
-async function nonSsrStrategy(args, getRouteInfo, fetchAndDecode, basename) {
-  let matchesToLoad = args.matches.filter(
-    (m) => m.unstable_shouldCallHandler()
-  );
-  let results = {};
-  await Promise.all(
-    matchesToLoad.map(
-      (m) => m.resolve(async (handler) => {
-        try {
-          let { hasClientLoader } = getRouteInfo(m);
-          let routeId = m.route.id;
-          let result = hasClientLoader ? await handler(async () => {
-            let { data: data2 } = await fetchAndDecode(args, basename, [routeId]);
-            return unwrapSingleFetchResult(data2, routeId);
-          }) : await handler();
-          results[m.route.id] = { type: "data", result };
-        } catch (e) {
-          results[m.route.id] = { type: "error", result: e };
-        }
-      })
-    )
-  );
-  return results;
-}
-async function singleFetchLoaderNavigationStrategy(args, router, getRouteInfo, fetchAndDecode, ssr, basename, shouldAllowOptOut = () => true) {
-  let routesParams = /* @__PURE__ */ new Set();
-  let foundOptOutRoute = false;
-  let routeDfds = args.matches.map(() => createDeferred2());
-  let singleFetchDfd = createDeferred2();
-  let results = {};
-  let resolvePromise = Promise.all(
-    args.matches.map(
-      async (m, i) => m.resolve(async (handler) => {
-        routeDfds[i].resolve();
-        let routeId = m.route.id;
-        let { hasLoader, hasClientLoader, hasShouldRevalidate } = getRouteInfo(m);
-        let defaultShouldRevalidate = !m.unstable_shouldRevalidateArgs || m.unstable_shouldRevalidateArgs.actionStatus == null || m.unstable_shouldRevalidateArgs.actionStatus < 400;
-        let shouldCall = m.unstable_shouldCallHandler(defaultShouldRevalidate);
-        if (!shouldCall) {
-          foundOptOutRoute || (foundOptOutRoute = m.unstable_shouldRevalidateArgs != null && // This is a revalidation,
-          hasLoader && // for a route with a server loader,
-          hasShouldRevalidate === true);
-          return;
-        }
-        if (shouldAllowOptOut(m) && hasClientLoader) {
-          if (hasLoader) {
-            foundOptOutRoute = true;
-          }
-          try {
-            let result = await handler(async () => {
-              let { data: data2 } = await fetchAndDecode(args, basename, [routeId]);
-              return unwrapSingleFetchResult(data2, routeId);
-            });
-            results[routeId] = { type: "data", result };
-          } catch (e) {
-            results[routeId] = { type: "error", result: e };
-          }
-          return;
-        }
-        if (hasLoader) {
-          routesParams.add(routeId);
-        }
-        try {
-          let result = await handler(async () => {
-            let data2 = await singleFetchDfd.promise;
-            return unwrapSingleFetchResult(data2, routeId);
-          });
-          results[routeId] = { type: "data", result };
-        } catch (e) {
-          results[routeId] = { type: "error", result: e };
-        }
-      })
-    )
-  );
-  await Promise.all(routeDfds.map((d) => d.promise));
-  let isInitialLoad = !router.state.initialized && router.state.navigation.state === "idle";
-  if ((isInitialLoad || routesParams.size === 0) && !window.__reactRouterHdrActive) {
-    singleFetchDfd.resolve({ routes: {} });
-  } else {
-    let targetRoutes = ssr && foundOptOutRoute && routesParams.size > 0 ? [...routesParams.keys()] : void 0;
-    try {
-      let data2 = await fetchAndDecode(args, basename, targetRoutes);
-      singleFetchDfd.resolve(data2.data);
-    } catch (e) {
-      singleFetchDfd.reject(e);
-    }
-  }
-  await resolvePromise;
-  await bubbleMiddlewareErrors(
-    singleFetchDfd.promise,
-    args.matches,
-    routesParams,
-    results
-  );
-  return results;
-}
-async function bubbleMiddlewareErrors(singleFetchPromise, matches, routesParams, results) {
-  try {
-    let middlewareError;
-    let fetchedData = await singleFetchPromise;
-    if ("routes" in fetchedData) {
-      for (let match of matches) {
-        if (match.route.id in fetchedData.routes) {
-          let routeResult = fetchedData.routes[match.route.id];
-          if ("error" in routeResult) {
-            middlewareError = routeResult.error;
-            if (results[match.route.id]?.result == null) {
-              results[match.route.id] = {
-                type: "error",
-                result: middlewareError
-              };
-            }
-            break;
-          }
-        }
-      }
-    }
-    if (middlewareError !== void 0) {
-      Array.from(routesParams.values()).forEach((routeId) => {
-        if (results[routeId].result instanceof SingleFetchNoResultError) {
-          results[routeId].result = middlewareError;
-        }
-      });
-    }
-  } catch (e) {
-  }
-}
-async function singleFetchLoaderFetcherStrategy(args, fetchAndDecode, basename) {
-  let fetcherMatch = args.matches.find((m) => m.unstable_shouldCallHandler());
-  invariant2(fetcherMatch, "No fetcher match found");
-  let routeId = fetcherMatch.route.id;
-  let result = await fetcherMatch.resolve(
-    async (handler) => handler(async () => {
-      let { data: data2 } = await fetchAndDecode(args, basename, [routeId]);
-      return unwrapSingleFetchResult(data2, routeId);
-    })
-  );
-  return { [fetcherMatch.route.id]: result };
-}
-function stripIndexParam(url) {
-  let indexValues = url.searchParams.getAll("index");
-  url.searchParams.delete("index");
-  let indexValuesToKeep = [];
-  for (let indexValue of indexValues) {
-    if (indexValue) {
-      indexValuesToKeep.push(indexValue);
-    }
-  }
-  for (let toKeep of indexValuesToKeep) {
-    url.searchParams.append("index", toKeep);
-  }
-  return url;
-}
-function singleFetchUrl(reqUrl, basename, extension) {
-  let url = typeof reqUrl === "string" ? new URL(
-    reqUrl,
-    // This can be called during the SSR flow via PrefetchPageLinksImpl so
-    // don't assume window is available
-    typeof window === "undefined" ? "server://singlefetch/" : window.location.origin
-  ) : reqUrl;
-  if (url.pathname === "/") {
-    url.pathname = `_root.${extension}`;
-  } else if (basename && stripBasename(url.pathname, basename) === "/") {
-    url.pathname = `${basename.replace(/\/$/, "")}/_root.${extension}`;
-  } else {
-    url.pathname = `${url.pathname.replace(/\/$/, "")}.${extension}`;
-  }
-  return url;
-}
-async function fetchAndDecodeViaTurboStream(args, basename, targetRoutes) {
-  let { request } = args;
-  let url = singleFetchUrl(request.url, basename, "data");
-  if (request.method === "GET") {
-    url = stripIndexParam(url);
-    if (targetRoutes) {
-      url.searchParams.set("_routes", targetRoutes.join(","));
-    }
-  }
-  let res = await fetch(url, await createRequestInit(request));
-  if (res.status >= 400 && !res.headers.has("X-Remix-Response")) {
-    throw new ErrorResponseImpl(res.status, res.statusText, await res.text());
-  }
-  if (res.status === 204 && res.headers.has("X-Remix-Redirect")) {
-    return {
-      status: SINGLE_FETCH_REDIRECT_STATUS,
-      data: {
-        redirect: {
-          redirect: res.headers.get("X-Remix-Redirect"),
-          status: Number(res.headers.get("X-Remix-Status") || "302"),
-          revalidate: res.headers.get("X-Remix-Revalidate") === "true",
-          reload: res.headers.get("X-Remix-Reload-Document") === "true",
-          replace: res.headers.get("X-Remix-Replace") === "true"
-        }
-      }
-    };
-  }
-  if (NO_BODY_STATUS_CODES.has(res.status)) {
-    let routes = {};
-    if (targetRoutes && request.method !== "GET") {
-      routes[targetRoutes[0]] = { data: void 0 };
-    }
-    return {
-      status: res.status,
-      data: { routes }
-    };
-  }
-  invariant2(res.body, "No response body to decode");
-  try {
-    let decoded = await decodeViaTurboStream(res.body, window);
-    let data2;
-    if (request.method === "GET") {
-      let typed = decoded.value;
-      if (SingleFetchRedirectSymbol in typed) {
-        data2 = { redirect: typed[SingleFetchRedirectSymbol] };
-      } else {
-        data2 = { routes: typed };
-      }
-    } else {
-      let typed = decoded.value;
-      let routeId = targetRoutes?.[0];
-      invariant2(routeId, "No routeId found for single fetch call decoding");
-      if ("redirect" in typed) {
-        data2 = { redirect: typed };
-      } else {
-        data2 = { routes: { [routeId]: typed } };
-      }
-    }
-    return { status: res.status, data: data2 };
-  } catch (e) {
-    throw new Error("Unable to decode turbo-stream response");
-  }
-}
-function decodeViaTurboStream(body, global) {
-  return decode(body, {
-    plugins: [
-      (type, ...rest) => {
-        if (type === "SanitizedError") {
-          let [name, message, stack] = rest;
-          let Constructor = Error;
-          if (name && name in global && typeof global[name] === "function") {
-            Constructor = global[name];
-          }
-          let error = new Constructor(message);
-          error.stack = stack;
-          return { value: error };
-        }
-        if (type === "ErrorResponse") {
-          let [data2, status, statusText] = rest;
-          return {
-            value: new ErrorResponseImpl(status, statusText, data2)
-          };
-        }
-        if (type === "SingleFetchRedirect") {
-          return { value: { [SingleFetchRedirectSymbol]: rest[0] } };
-        }
-        if (type === "SingleFetchClassInstance") {
-          return { value: rest[0] };
-        }
-        if (type === "SingleFetchFallback") {
-          return { value: void 0 };
-        }
-      }
-    ]
-  });
-}
-function unwrapSingleFetchResult(result, routeId) {
-  if ("redirect" in result) {
-    let {
-      redirect: location,
-      revalidate,
-      reload,
-      replace: replace2,
-      status
-    } = result.redirect;
-    throw redirect(location, {
-      status,
-      headers: {
-        // Three R's of redirecting (lol Veep)
-        ...revalidate ? { "X-Remix-Revalidate": "yes" } : null,
-        ...reload ? { "X-Remix-Reload-Document": "yes" } : null,
-        ...replace2 ? { "X-Remix-Replace": "yes" } : null
-      }
-    });
-  }
-  let routeResult = result.routes[routeId];
-  if (routeResult == null) {
-    throw new SingleFetchNoResultError(
-      `No result found for routeId "${routeId}"`
-    );
-  } else if ("error" in routeResult) {
-    throw routeResult.error;
-  } else if ("data" in routeResult) {
-    return routeResult.data;
-  } else {
-    throw new Error(`Invalid response found for routeId "${routeId}"`);
-  }
-}
-function createDeferred2() {
-  let resolve;
-  let reject;
-  let promise = new Promise((res, rej) => {
-    resolve = async (val) => {
-      res(val);
-      try {
-        await promise;
-      } catch (e) {
-      }
-    };
-    reject = async (error) => {
-      rej(error);
-      try {
-        await promise;
-      } catch (e) {
-      }
-    };
-  });
-  return {
-    promise,
-    //@ts-ignore
-    resolve,
-    //@ts-ignore
-    reject
-  };
-}
-
-// lib/dom/ssr/errorBoundaries.tsx
-
-
-// lib/dom/ssr/components.tsx
-
-
-// lib/dom/ssr/routeModules.ts
-async function loadRouteModule(route, routeModulesCache) {
-  if (route.id in routeModulesCache) {
-    return routeModulesCache[route.id];
-  }
-  try {
-    let routeModule = await import(
-      /* @vite-ignore */
-      /* webpackIgnore: true */
-      route.module
-    );
-    routeModulesCache[route.id] = routeModule;
-    return routeModule;
-  } catch (error) {
-    console.error(
-      `Error loading route module \`${route.module}\`, reloading page...`
-    );
-    console.error(error);
-    if (window.__reactRouterContext && window.__reactRouterContext.isSpaMode && // @ts-expect-error
-    /* unsupported import.meta.hot */ undefined) // removed by dead control flow
-{}
-    window.location.reload();
-    return new Promise(() => {
-    });
-  }
-}
-
-// lib/dom/ssr/links.ts
-function getKeyedLinksForMatches(matches, routeModules, manifest) {
-  let descriptors = matches.map((match) => {
-    let module = routeModules[match.route.id];
-    let route = manifest.routes[match.route.id];
-    return [
-      route && route.css ? route.css.map((href) => ({ rel: "stylesheet", href })) : [],
-      module?.links?.() || []
-    ];
-  }).flat(2);
-  let preloads = getModuleLinkHrefs(matches, manifest);
-  return dedupeLinkDescriptors(descriptors, preloads);
-}
-function getRouteCssDescriptors(route) {
-  if (!route.css) return [];
-  return route.css.map((href) => ({ rel: "stylesheet", href }));
-}
-async function prefetchRouteCss(route) {
-  if (!route.css) return;
-  let descriptors = getRouteCssDescriptors(route);
-  await Promise.all(descriptors.map(prefetchStyleLink));
-}
-async function prefetchStyleLinks(route, routeModule) {
-  if (!route.css && !routeModule.links || !isPreloadSupported()) return;
-  let descriptors = [];
-  if (route.css) {
-    descriptors.push(...getRouteCssDescriptors(route));
-  }
-  if (routeModule.links) {
-    descriptors.push(...routeModule.links());
-  }
-  if (descriptors.length === 0) return;
-  let styleLinks = [];
-  for (let descriptor of descriptors) {
-    if (!isPageLinkDescriptor(descriptor) && descriptor.rel === "stylesheet") {
-      styleLinks.push({
-        ...descriptor,
-        rel: "preload",
-        as: "style"
-      });
-    }
-  }
-  await Promise.all(styleLinks.map(prefetchStyleLink));
-}
-async function prefetchStyleLink(descriptor) {
-  return new Promise((resolve) => {
-    if (descriptor.media && !window.matchMedia(descriptor.media).matches || document.querySelector(
-      `link[rel="stylesheet"][href="${descriptor.href}"]`
-    )) {
-      return resolve();
-    }
-    let link = document.createElement("link");
-    Object.assign(link, descriptor);
-    function removeLink() {
-      if (document.head.contains(link)) {
-        document.head.removeChild(link);
-      }
-    }
-    link.onload = () => {
-      removeLink();
-      resolve();
-    };
-    link.onerror = () => {
-      removeLink();
-      resolve();
-    };
-    document.head.appendChild(link);
-  });
-}
-function isPageLinkDescriptor(object) {
-  return object != null && typeof object.page === "string";
-}
-function isHtmlLinkDescriptor(object) {
-  if (object == null) {
-    return false;
-  }
-  if (object.href == null) {
-    return object.rel === "preload" && typeof object.imageSrcSet === "string" && typeof object.imageSizes === "string";
-  }
-  return typeof object.rel === "string" && typeof object.href === "string";
-}
-async function getKeyedPrefetchLinks(matches, manifest, routeModules) {
-  let links = await Promise.all(
-    matches.map(async (match) => {
-      let route = manifest.routes[match.route.id];
-      if (route) {
-        let mod = await loadRouteModule(route, routeModules);
-        return mod.links ? mod.links() : [];
-      }
-      return [];
-    })
-  );
-  return dedupeLinkDescriptors(
-    links.flat(1).filter(isHtmlLinkDescriptor).filter((link) => link.rel === "stylesheet" || link.rel === "preload").map(
-      (link) => link.rel === "stylesheet" ? { ...link, rel: "prefetch", as: "style" } : { ...link, rel: "prefetch" }
-    )
-  );
-}
-function getNewMatchesForLinks(page, nextMatches, currentMatches, manifest, location, mode) {
-  let isNew = (match, index) => {
-    if (!currentMatches[index]) return true;
-    return match.route.id !== currentMatches[index].route.id;
-  };
-  let matchPathChanged = (match, index) => {
-    return (
-      // param change, /users/123 -> /users/456
-      currentMatches[index].pathname !== match.pathname || // splat param changed, which is not present in match.path
-      // e.g. /files/images/avatar.jpg -> files/finances.xls
-      currentMatches[index].route.path?.endsWith("*") && currentMatches[index].params["*"] !== match.params["*"]
-    );
-  };
-  if (mode === "assets") {
-    return nextMatches.filter(
-      (match, index) => isNew(match, index) || matchPathChanged(match, index)
-    );
-  }
-  if (mode === "data") {
-    return nextMatches.filter((match, index) => {
-      let manifestRoute = manifest.routes[match.route.id];
-      if (!manifestRoute || !manifestRoute.hasLoader) {
-        return false;
-      }
-      if (isNew(match, index) || matchPathChanged(match, index)) {
-        return true;
-      }
-      if (match.route.shouldRevalidate) {
-        let routeChoice = match.route.shouldRevalidate({
-          currentUrl: new URL(
-            location.pathname + location.search + location.hash,
-            window.origin
-          ),
-          currentParams: currentMatches[0]?.params || {},
-          nextUrl: new URL(page, window.origin),
-          nextParams: match.params,
-          defaultShouldRevalidate: true
-        });
-        if (typeof routeChoice === "boolean") {
-          return routeChoice;
-        }
-      }
-      return true;
-    });
-  }
-  return [];
-}
-function getModuleLinkHrefs(matches, manifest, { includeHydrateFallback } = {}) {
-  return dedupeHrefs(
-    matches.map((match) => {
-      let route = manifest.routes[match.route.id];
-      if (!route) return [];
-      let hrefs = [route.module];
-      if (route.clientActionModule) {
-        hrefs = hrefs.concat(route.clientActionModule);
-      }
-      if (route.clientLoaderModule) {
-        hrefs = hrefs.concat(route.clientLoaderModule);
-      }
-      if (includeHydrateFallback && route.hydrateFallbackModule) {
-        hrefs = hrefs.concat(route.hydrateFallbackModule);
-      }
-      if (route.imports) {
-        hrefs = hrefs.concat(route.imports);
-      }
-      return hrefs;
-    }).flat(1)
-  );
-}
-function dedupeHrefs(hrefs) {
-  return [...new Set(hrefs)];
-}
-function sortKeys(obj) {
-  let sorted = {};
-  let keys = Object.keys(obj).sort();
-  for (let key of keys) {
-    sorted[key] = obj[key];
-  }
-  return sorted;
-}
-function dedupeLinkDescriptors(descriptors, preloads) {
-  let set = /* @__PURE__ */ new Set();
-  let preloadsSet = new Set(preloads);
-  return descriptors.reduce((deduped, descriptor) => {
-    let alreadyModulePreload = preloads && !isPageLinkDescriptor(descriptor) && descriptor.as === "script" && descriptor.href && preloadsSet.has(descriptor.href);
-    if (alreadyModulePreload) {
-      return deduped;
-    }
-    let key = JSON.stringify(sortKeys(descriptor));
-    if (!set.has(key)) {
-      set.add(key);
-      deduped.push({ key, link: descriptor });
-    }
-    return deduped;
-  }, []);
-}
-var _isPreloadSupported;
-function isPreloadSupported() {
-  if (_isPreloadSupported !== void 0) {
-    return _isPreloadSupported;
-  }
-  let el = document.createElement("link");
-  _isPreloadSupported = el.relList.supports("preload");
-  el = null;
-  return _isPreloadSupported;
-}
-
-// lib/dom/ssr/fog-of-war.ts
-
-
-// lib/dom/ssr/routes.tsx
-
-
-// lib/dom/ssr/fallback.tsx
-
-function RemixRootDefaultHydrateFallback() {
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(BoundaryShell, { title: "Loading...", renderScripts: true }, ENABLE_DEV_WARNINGS ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    "script",
-    {
-      dangerouslySetInnerHTML: {
-        __html: `
-              console.log(
-                "\u{1F4BF} Hey developer \u{1F44B}. You can provide a way better UX than this " +
-                "when your app is loading JS modules and/or running \`clientLoader\` " +
-                "functions. Check out https://reactrouter.com/start/framework/route-module#hydratefallback " +
-                "for more information."
-              );
-            `
-      }
-    }
-  ) : null);
-}
-
-// lib/dom/ssr/routes.tsx
-function groupRoutesByParentId(manifest) {
-  let routes = {};
-  Object.values(manifest).forEach((route) => {
-    if (route) {
-      let parentId = route.parentId || "";
-      if (!routes[parentId]) {
-        routes[parentId] = [];
-      }
-      routes[parentId].push(route);
-    }
-  });
-  return routes;
-}
-function getRouteComponents(route, routeModule, isSpaMode) {
-  let Component4 = getRouteModuleComponent(routeModule);
-  let HydrateFallback = routeModule.HydrateFallback && (!isSpaMode || route.id === "root") ? routeModule.HydrateFallback : route.id === "root" ? RemixRootDefaultHydrateFallback : void 0;
-  let ErrorBoundary = routeModule.ErrorBoundary ? routeModule.ErrorBoundary : route.id === "root" ? () => /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(RemixRootDefaultErrorBoundary, { error: useRouteError() }) : void 0;
-  if (route.id === "root" && routeModule.Layout) {
-    return {
-      ...Component4 ? {
-        element: /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(routeModule.Layout, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(Component4, null))
-      } : { Component: Component4 },
-      ...ErrorBoundary ? {
-        errorElement: /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(routeModule.Layout, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(ErrorBoundary, null))
-      } : { ErrorBoundary },
-      ...HydrateFallback ? {
-        hydrateFallbackElement: /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(routeModule.Layout, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(HydrateFallback, null))
-      } : { HydrateFallback }
-    };
-  }
-  return { Component: Component4, ErrorBoundary, HydrateFallback };
-}
-function createServerRoutes(manifest, routeModules, future, isSpaMode, parentId = "", routesByParentId = groupRoutesByParentId(manifest), spaModeLazyPromise = Promise.resolve({ Component: () => null })) {
-  return (routesByParentId[parentId] || []).map((route) => {
-    let routeModule = routeModules[route.id];
-    invariant2(
-      routeModule,
-      "No `routeModule` available to create server routes"
-    );
-    let dataRoute = {
-      ...getRouteComponents(route, routeModule, isSpaMode),
-      caseSensitive: route.caseSensitive,
-      id: route.id,
-      index: route.index,
-      path: route.path,
-      handle: routeModule.handle,
-      // For SPA Mode, all routes are lazy except root.  However we tell the
-      // router root is also lazy here too since we don't need a full
-      // implementation - we just need a `lazy` prop to tell the RR rendering
-      // where to stop which is always at the root route in SPA mode
-      lazy: isSpaMode ? () => spaModeLazyPromise : void 0,
-      // For partial hydration rendering, we need to indicate when the route
-      // has a loader/clientLoader, but it won't ever be called during the static
-      // render, so just give it a no-op function so we can render down to the
-      // proper fallback
-      loader: route.hasLoader || route.hasClientLoader ? () => null : void 0
-      // We don't need middleware/action/shouldRevalidate on these routes since
-      // they're for a static render
-    };
-    let children = createServerRoutes(
-      manifest,
-      routeModules,
-      future,
-      isSpaMode,
-      route.id,
-      routesByParentId,
-      spaModeLazyPromise
-    );
-    if (children.length > 0) dataRoute.children = children;
-    return dataRoute;
-  });
-}
-function createClientRoutesWithHMRRevalidationOptOut(needsRevalidation, manifest, routeModulesCache, initialState, ssr, isSpaMode) {
-  return createClientRoutes(
-    manifest,
-    routeModulesCache,
-    initialState,
-    ssr,
-    isSpaMode,
-    "",
-    groupRoutesByParentId(manifest),
-    needsRevalidation
-  );
-}
-function preventInvalidServerHandlerCall(type, route) {
-  if (type === "loader" && !route.hasLoader || type === "action" && !route.hasAction) {
-    let fn = type === "action" ? "serverAction()" : "serverLoader()";
-    let msg = `You are trying to call ${fn} on a route that does not have a server ${type} (routeId: "${route.id}")`;
-    console.error(msg);
-    throw new ErrorResponseImpl(400, "Bad Request", new Error(msg), true);
-  }
-}
-function noActionDefinedError(type, routeId) {
-  let article = type === "clientAction" ? "a" : "an";
-  let msg = `Route "${routeId}" does not have ${article} ${type}, but you are trying to submit to it. To fix this, please add ${article} \`${type}\` function to the route`;
-  console.error(msg);
-  throw new ErrorResponseImpl(405, "Method Not Allowed", new Error(msg), true);
-}
-function createClientRoutes(manifest, routeModulesCache, initialState, ssr, isSpaMode, parentId = "", routesByParentId = groupRoutesByParentId(manifest), needsRevalidation) {
-  return (routesByParentId[parentId] || []).map((route) => {
-    let routeModule = routeModulesCache[route.id];
-    function fetchServerHandler(singleFetch) {
-      invariant2(
-        typeof singleFetch === "function",
-        "No single fetch function available for route handler"
-      );
-      return singleFetch();
-    }
-    function fetchServerLoader(singleFetch) {
-      if (!route.hasLoader) return Promise.resolve(null);
-      return fetchServerHandler(singleFetch);
-    }
-    function fetchServerAction(singleFetch) {
-      if (!route.hasAction) {
-        throw noActionDefinedError("action", route.id);
-      }
-      return fetchServerHandler(singleFetch);
-    }
-    function prefetchModule(modulePath) {
-      import(
-        /* @vite-ignore */
-        /* webpackIgnore: true */
-        modulePath
-      );
-    }
-    function prefetchRouteModuleChunks(route2) {
-      if (route2.clientActionModule) {
-        prefetchModule(route2.clientActionModule);
-      }
-      if (route2.clientLoaderModule) {
-        prefetchModule(route2.clientLoaderModule);
-      }
-    }
-    async function prefetchStylesAndCallHandler(handler) {
-      let cachedModule = routeModulesCache[route.id];
-      let linkPrefetchPromise = cachedModule ? prefetchStyleLinks(route, cachedModule) : Promise.resolve();
-      try {
-        return handler();
-      } finally {
-        await linkPrefetchPromise;
-      }
-    }
-    let dataRoute = {
-      id: route.id,
-      index: route.index,
-      path: route.path
-    };
-    if (routeModule) {
-      Object.assign(dataRoute, {
-        ...dataRoute,
-        ...getRouteComponents(route, routeModule, isSpaMode),
-        middleware: routeModule.clientMiddleware,
-        handle: routeModule.handle,
-        shouldRevalidate: getShouldRevalidateFunction(
-          dataRoute.path,
-          routeModule,
-          route,
-          ssr,
-          needsRevalidation
-        )
-      });
-      let hasInitialData = initialState && initialState.loaderData && route.id in initialState.loaderData;
-      let initialData = hasInitialData ? initialState?.loaderData?.[route.id] : void 0;
-      let hasInitialError = initialState && initialState.errors && route.id in initialState.errors;
-      let initialError = hasInitialError ? initialState?.errors?.[route.id] : void 0;
-      let isHydrationRequest = needsRevalidation == null && (routeModule.clientLoader?.hydrate === true || !route.hasLoader);
-      dataRoute.loader = async ({ request, params, context }, singleFetch) => {
-        try {
-          let result = await prefetchStylesAndCallHandler(async () => {
-            invariant2(
-              routeModule,
-              "No `routeModule` available for critical-route loader"
-            );
-            if (!routeModule.clientLoader) {
-              return fetchServerLoader(singleFetch);
-            }
-            return routeModule.clientLoader({
-              request,
-              params,
-              context,
-              async serverLoader() {
-                preventInvalidServerHandlerCall("loader", route);
-                if (isHydrationRequest) {
-                  if (hasInitialData) {
-                    return initialData;
-                  }
-                  if (hasInitialError) {
-                    throw initialError;
-                  }
-                }
-                return fetchServerLoader(singleFetch);
-              }
-            });
-          });
-          return result;
-        } finally {
-          isHydrationRequest = false;
-        }
-      };
-      dataRoute.loader.hydrate = shouldHydrateRouteLoader(
-        route.id,
-        routeModule.clientLoader,
-        route.hasLoader,
-        isSpaMode
-      );
-      dataRoute.action = ({ request, params, context }, singleFetch) => {
-        return prefetchStylesAndCallHandler(async () => {
-          invariant2(
-            routeModule,
-            "No `routeModule` available for critical-route action"
-          );
-          if (!routeModule.clientAction) {
-            if (isSpaMode) {
-              throw noActionDefinedError("clientAction", route.id);
-            }
-            return fetchServerAction(singleFetch);
-          }
-          return routeModule.clientAction({
-            request,
-            params,
-            context,
-            async serverAction() {
-              preventInvalidServerHandlerCall("action", route);
-              return fetchServerAction(singleFetch);
-            }
-          });
-        });
-      };
-    } else {
-      if (!route.hasClientLoader) {
-        dataRoute.loader = (_, singleFetch) => prefetchStylesAndCallHandler(() => {
-          return fetchServerLoader(singleFetch);
-        });
-      }
-      if (!route.hasClientAction) {
-        dataRoute.action = (_, singleFetch) => prefetchStylesAndCallHandler(() => {
-          if (isSpaMode) {
-            throw noActionDefinedError("clientAction", route.id);
-          }
-          return fetchServerAction(singleFetch);
-        });
-      }
-      let lazyRoutePromise;
-      async function getLazyRoute() {
-        if (lazyRoutePromise) {
-          return await lazyRoutePromise;
-        }
-        lazyRoutePromise = (async () => {
-          if (route.clientLoaderModule || route.clientActionModule) {
-            await new Promise((resolve) => setTimeout(resolve, 0));
-          }
-          let routeModulePromise = loadRouteModuleWithBlockingLinks(
-            route,
-            routeModulesCache
-          );
-          prefetchRouteModuleChunks(route);
-          return await routeModulePromise;
-        })();
-        return await lazyRoutePromise;
-      }
-      dataRoute.lazy = {
-        loader: route.hasClientLoader ? async () => {
-          let { clientLoader } = route.clientLoaderModule ? await import(
-            /* @vite-ignore */
-            /* webpackIgnore: true */
-            route.clientLoaderModule
-          ) : await getLazyRoute();
-          invariant2(clientLoader, "No `clientLoader` export found");
-          return (args, singleFetch) => clientLoader({
-            ...args,
-            async serverLoader() {
-              preventInvalidServerHandlerCall("loader", route);
-              return fetchServerLoader(singleFetch);
-            }
-          });
-        } : void 0,
-        action: route.hasClientAction ? async () => {
-          let clientActionPromise = route.clientActionModule ? import(
-            /* @vite-ignore */
-            /* webpackIgnore: true */
-            route.clientActionModule
-          ) : getLazyRoute();
-          prefetchRouteModuleChunks(route);
-          let { clientAction } = await clientActionPromise;
-          invariant2(clientAction, "No `clientAction` export found");
-          return (args, singleFetch) => clientAction({
-            ...args,
-            async serverAction() {
-              preventInvalidServerHandlerCall("action", route);
-              return fetchServerAction(singleFetch);
-            }
-          });
-        } : void 0,
-        middleware: route.hasClientMiddleware ? async () => {
-          let { clientMiddleware } = route.clientMiddlewareModule ? await import(
-            /* @vite-ignore */
-            /* webpackIgnore: true */
-            route.clientMiddlewareModule
-          ) : await getLazyRoute();
-          invariant2(clientMiddleware, "No `clientMiddleware` export found");
-          return clientMiddleware;
-        } : void 0,
-        shouldRevalidate: async () => {
-          let lazyRoute = await getLazyRoute();
-          return getShouldRevalidateFunction(
-            dataRoute.path,
-            lazyRoute,
-            route,
-            ssr,
-            needsRevalidation
-          );
-        },
-        handle: async () => (await getLazyRoute()).handle,
-        // No need to wrap these in layout since the root route is never
-        // loaded via route.lazy()
-        Component: async () => (await getLazyRoute()).Component,
-        ErrorBoundary: route.hasErrorBoundary ? async () => (await getLazyRoute()).ErrorBoundary : void 0
-      };
-    }
-    let children = createClientRoutes(
-      manifest,
-      routeModulesCache,
-      initialState,
-      ssr,
-      isSpaMode,
-      route.id,
-      routesByParentId,
-      needsRevalidation
-    );
-    if (children.length > 0) dataRoute.children = children;
-    return dataRoute;
-  });
-}
-function getShouldRevalidateFunction(path, route, manifestRoute, ssr, needsRevalidation) {
-  if (needsRevalidation) {
-    return wrapShouldRevalidateForHdr(
-      manifestRoute.id,
-      route.shouldRevalidate,
-      needsRevalidation
-    );
-  }
-  if (!ssr && manifestRoute.hasLoader && !manifestRoute.hasClientLoader) {
-    let myParams = path ? compilePath(path)[1].map((p) => p.paramName) : [];
-    const didParamsChange = (opts) => myParams.some((p) => opts.currentParams[p] !== opts.nextParams[p]);
-    if (route.shouldRevalidate) {
-      let fn = route.shouldRevalidate;
-      return (opts) => fn({
-        ...opts,
-        defaultShouldRevalidate: didParamsChange(opts)
-      });
-    } else {
-      return (opts) => didParamsChange(opts);
-    }
-  }
-  if (ssr && route.shouldRevalidate) {
-    let fn = route.shouldRevalidate;
-    return (opts) => fn({ ...opts, defaultShouldRevalidate: true });
-  }
-  return route.shouldRevalidate;
-}
-function wrapShouldRevalidateForHdr(routeId, routeShouldRevalidate, needsRevalidation) {
-  let handledRevalidation = false;
-  return (arg) => {
-    if (!handledRevalidation) {
-      handledRevalidation = true;
-      return needsRevalidation.has(routeId);
-    }
-    return routeShouldRevalidate ? routeShouldRevalidate(arg) : arg.defaultShouldRevalidate;
-  };
-}
-async function loadRouteModuleWithBlockingLinks(route, routeModules) {
-  let routeModulePromise = loadRouteModule(route, routeModules);
-  let prefetchRouteCssPromise = prefetchRouteCss(route);
-  let routeModule = await routeModulePromise;
-  await Promise.all([
-    prefetchRouteCssPromise,
-    prefetchStyleLinks(route, routeModule)
-  ]);
-  return {
-    Component: getRouteModuleComponent(routeModule),
-    ErrorBoundary: routeModule.ErrorBoundary,
-    clientMiddleware: routeModule.clientMiddleware,
-    clientAction: routeModule.clientAction,
-    clientLoader: routeModule.clientLoader,
-    handle: routeModule.handle,
-    links: routeModule.links,
-    meta: routeModule.meta,
-    shouldRevalidate: routeModule.shouldRevalidate
-  };
-}
-function getRouteModuleComponent(routeModule) {
-  if (routeModule.default == null) return void 0;
-  let isEmptyObject = typeof routeModule.default === "object" && Object.keys(routeModule.default).length === 0;
-  if (!isEmptyObject) {
-    return routeModule.default;
-  }
-}
-function shouldHydrateRouteLoader(routeId, clientLoader, hasLoader, isSpaMode) {
-  return isSpaMode && routeId !== "root" || clientLoader != null && (clientLoader.hydrate === true || hasLoader !== true);
-}
-
-// lib/dom/ssr/fog-of-war.ts
-var nextPaths = /* @__PURE__ */ new Set();
-var discoveredPathsMaxSize = 1e3;
-var discoveredPaths = /* @__PURE__ */ new Set();
-var URL_LIMIT = 7680;
-function isFogOfWarEnabled(routeDiscovery, ssr) {
-  return routeDiscovery.mode === "lazy" && ssr === true;
-}
-function getPartialManifest({ sri, ...manifest }, router) {
-  let routeIds = new Set(router.state.matches.map((m) => m.route.id));
-  let segments = router.state.location.pathname.split("/").filter(Boolean);
-  let paths = ["/"];
-  segments.pop();
-  while (segments.length > 0) {
-    paths.push(`/${segments.join("/")}`);
-    segments.pop();
-  }
-  paths.forEach((path) => {
-    let matches = matchRoutes(router.routes, path, router.basename);
-    if (matches) {
-      matches.forEach((m) => routeIds.add(m.route.id));
-    }
-  });
-  let initialRoutes = [...routeIds].reduce(
-    (acc, id) => Object.assign(acc, { [id]: manifest.routes[id] }),
-    {}
-  );
-  return {
-    ...manifest,
-    routes: initialRoutes,
-    sri: sri ? true : void 0
-  };
-}
-function getPatchRoutesOnNavigationFunction(manifest, routeModules, ssr, routeDiscovery, isSpaMode, basename) {
-  if (!isFogOfWarEnabled(routeDiscovery, ssr)) {
-    return void 0;
-  }
-  return async ({ path, patch, signal, fetcherKey }) => {
-    if (discoveredPaths.has(path)) {
-      return;
-    }
-    await fetchAndApplyManifestPatches(
-      [path],
-      fetcherKey ? window.location.href : path,
-      manifest,
-      routeModules,
-      ssr,
-      isSpaMode,
-      basename,
-      routeDiscovery.manifestPath,
-      patch,
-      signal
-    );
-  };
-}
-function useFogOFWarDiscovery(router, manifest, routeModules, ssr, routeDiscovery, isSpaMode) {
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    if (!isFogOfWarEnabled(routeDiscovery, ssr) || // @ts-expect-error - TS doesn't know about this yet
-    window.navigator?.connection?.saveData === true) {
-      return;
-    }
-    function registerElement(el) {
-      let path = el.tagName === "FORM" ? el.getAttribute("action") : el.getAttribute("href");
-      if (!path) {
-        return;
-      }
-      let pathname = el.tagName === "A" ? el.pathname : new URL(path, window.location.origin).pathname;
-      if (!discoveredPaths.has(pathname)) {
-        nextPaths.add(pathname);
-      }
-    }
-    async function fetchPatches() {
-      document.querySelectorAll("a[data-discover], form[data-discover]").forEach(registerElement);
-      let lazyPaths = Array.from(nextPaths.keys()).filter((path) => {
-        if (discoveredPaths.has(path)) {
-          nextPaths.delete(path);
-          return false;
-        }
-        return true;
-      });
-      if (lazyPaths.length === 0) {
-        return;
-      }
-      try {
-        await fetchAndApplyManifestPatches(
-          lazyPaths,
-          null,
-          manifest,
-          routeModules,
-          ssr,
-          isSpaMode,
-          router.basename,
-          routeDiscovery.manifestPath,
-          router.patchRoutes
-        );
-      } catch (e) {
-        console.error("Failed to fetch manifest patches", e);
-      }
-    }
-    let debouncedFetchPatches = debounce(fetchPatches, 100);
-    fetchPatches();
-    let observer = new MutationObserver(() => debouncedFetchPatches());
-    observer.observe(document.documentElement, {
-      subtree: true,
-      childList: true,
-      attributes: true,
-      attributeFilter: ["data-discover", "href", "action"]
-    });
-    return () => observer.disconnect();
-  }, [ssr, isSpaMode, manifest, routeModules, router, routeDiscovery]);
-}
-function getManifestPath(_manifestPath, basename) {
-  let manifestPath = _manifestPath || "/__manifest";
-  if (basename == null) {
-    return manifestPath;
-  }
-  return `${basename}${manifestPath}`.replace(/\/+/g, "/");
-}
-var MANIFEST_VERSION_STORAGE_KEY = "react-router-manifest-version";
-async function fetchAndApplyManifestPatches(paths, errorReloadPath, manifest, routeModules, ssr, isSpaMode, basename, manifestPath, patchRoutes, signal) {
-  const searchParams = new URLSearchParams();
-  searchParams.set("paths", paths.sort().join(","));
-  searchParams.set("version", manifest.version);
-  let url = new URL(
-    getManifestPath(manifestPath, basename),
-    window.location.origin
-  );
-  url.search = searchParams.toString();
-  if (url.toString().length > URL_LIMIT) {
-    nextPaths.clear();
-    return;
-  }
-  let serverPatches;
-  try {
-    let res = await fetch(url, { signal });
-    if (!res.ok) {
-      throw new Error(`${res.status} ${res.statusText}`);
-    } else if (res.status === 204 && res.headers.has("X-Remix-Reload-Document")) {
-      if (!errorReloadPath) {
-        console.warn(
-          "Detected a manifest version mismatch during eager route discovery. The next navigation/fetch to an undiscovered route will result in a new document navigation to sync up with the latest manifest."
-        );
-        return;
-      }
-      try {
-        if (sessionStorage.getItem(MANIFEST_VERSION_STORAGE_KEY) === manifest.version) {
-          console.error(
-            "Unable to discover routes due to manifest version mismatch."
-          );
-          return;
-        }
-        sessionStorage.setItem(MANIFEST_VERSION_STORAGE_KEY, manifest.version);
-      } catch {
-      }
-      window.location.href = errorReloadPath;
-      console.warn("Detected manifest version mismatch, reloading...");
-      await new Promise(() => {
-      });
-    } else if (res.status >= 400) {
-      throw new Error(await res.text());
-    }
-    try {
-      sessionStorage.removeItem(MANIFEST_VERSION_STORAGE_KEY);
-    } catch {
-    }
-    serverPatches = await res.json();
-  } catch (e) {
-    if (signal?.aborted) return;
-    throw e;
-  }
-  let knownRoutes = new Set(Object.keys(manifest.routes));
-  let patches = Object.values(serverPatches).reduce((acc, route) => {
-    if (route && !knownRoutes.has(route.id)) {
-      acc[route.id] = route;
-    }
-    return acc;
-  }, {});
-  Object.assign(manifest.routes, patches);
-  paths.forEach((p) => addToFifoQueue(p, discoveredPaths));
-  let parentIds = /* @__PURE__ */ new Set();
-  Object.values(patches).forEach((patch) => {
-    if (patch && (!patch.parentId || !patches[patch.parentId])) {
-      parentIds.add(patch.parentId);
-    }
-  });
-  parentIds.forEach(
-    (parentId) => patchRoutes(
-      parentId || null,
-      createClientRoutes(patches, routeModules, null, ssr, isSpaMode, parentId)
-    )
-  );
-}
-function addToFifoQueue(path, queue) {
-  if (queue.size >= discoveredPathsMaxSize) {
-    let first = queue.values().next().value;
-    queue.delete(first);
-  }
-  queue.add(path);
-}
-function debounce(callback, wait) {
-  let timeoutId;
-  return (...args) => {
-    window.clearTimeout(timeoutId);
-    timeoutId = window.setTimeout(() => callback(...args), wait);
-  };
-}
-
-// lib/dom/ssr/components.tsx
-function useDataRouterContext2() {
-  let context = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterContext);
-  invariant2(
-    context,
-    "You must render this element inside a <DataRouterContext.Provider> element"
-  );
-  return context;
-}
-function useDataRouterStateContext() {
-  let context = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterStateContext);
-  invariant2(
-    context,
-    "You must render this element inside a <DataRouterStateContext.Provider> element"
-  );
-  return context;
-}
-var FrameworkContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(void 0);
-FrameworkContext.displayName = "FrameworkContext";
-function useFrameworkContext() {
-  let context = react__WEBPACK_IMPORTED_MODULE_0__.useContext(FrameworkContext);
-  invariant2(
-    context,
-    "You must render this element inside a <HydratedRouter> element"
-  );
-  return context;
-}
-function usePrefetchBehavior(prefetch, theirElementProps) {
-  let frameworkContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(FrameworkContext);
-  let [maybePrefetch, setMaybePrefetch] = react__WEBPACK_IMPORTED_MODULE_0__.useState(false);
-  let [shouldPrefetch, setShouldPrefetch] = react__WEBPACK_IMPORTED_MODULE_0__.useState(false);
-  let { onFocus, onBlur, onMouseEnter, onMouseLeave, onTouchStart } = theirElementProps;
-  let ref = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    if (prefetch === "render") {
-      setShouldPrefetch(true);
-    }
-    if (prefetch === "viewport") {
-      let callback = (entries) => {
-        entries.forEach((entry) => {
-          setShouldPrefetch(entry.isIntersecting);
-        });
-      };
-      let observer = new IntersectionObserver(callback, { threshold: 0.5 });
-      if (ref.current) observer.observe(ref.current);
-      return () => {
-        observer.disconnect();
-      };
-    }
-  }, [prefetch]);
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    if (maybePrefetch) {
-      let id = setTimeout(() => {
-        setShouldPrefetch(true);
-      }, 100);
-      return () => {
-        clearTimeout(id);
-      };
-    }
-  }, [maybePrefetch]);
-  let setIntent = () => {
-    setMaybePrefetch(true);
-  };
-  let cancelIntent = () => {
-    setMaybePrefetch(false);
-    setShouldPrefetch(false);
-  };
-  if (!frameworkContext) {
-    return [false, ref, {}];
-  }
-  if (prefetch !== "intent") {
-    return [shouldPrefetch, ref, {}];
-  }
-  return [
-    shouldPrefetch,
-    ref,
-    {
-      onFocus: composeEventHandlers(onFocus, setIntent),
-      onBlur: composeEventHandlers(onBlur, cancelIntent),
-      onMouseEnter: composeEventHandlers(onMouseEnter, setIntent),
-      onMouseLeave: composeEventHandlers(onMouseLeave, cancelIntent),
-      onTouchStart: composeEventHandlers(onTouchStart, setIntent)
-    }
-  ];
-}
-function composeEventHandlers(theirHandler, ourHandler) {
-  return (event) => {
-    theirHandler && theirHandler(event);
-    if (!event.defaultPrevented) {
-      ourHandler(event);
-    }
-  };
-}
-function getActiveMatches(matches, errors, isSpaMode) {
-  if (isSpaMode && !isHydrated) {
-    return [matches[0]];
-  }
-  if (errors) {
-    let errorIdx = matches.findIndex((m) => errors[m.route.id] !== void 0);
-    return matches.slice(0, errorIdx + 1);
-  }
-  return matches;
-}
-var CRITICAL_CSS_DATA_ATTRIBUTE = "data-react-router-critical-css";
-function Links({ nonce }) {
-  let { isSpaMode, manifest, routeModules, criticalCss } = useFrameworkContext();
-  let { errors, matches: routerMatches } = useDataRouterStateContext();
-  let matches = getActiveMatches(routerMatches, errors, isSpaMode);
-  let keyedLinks = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
-    () => getKeyedLinksForMatches(matches, routeModules, manifest),
-    [matches, routeModules, manifest]
-  );
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, typeof criticalCss === "string" ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    "style",
-    {
-      ...{ [CRITICAL_CSS_DATA_ATTRIBUTE]: "" },
-      dangerouslySetInnerHTML: { __html: criticalCss }
-    }
-  ) : null, typeof criticalCss === "object" ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    "link",
-    {
-      ...{ [CRITICAL_CSS_DATA_ATTRIBUTE]: "" },
-      rel: "stylesheet",
-      href: criticalCss.href,
-      nonce
-    }
-  ) : null, keyedLinks.map(
-    ({ key, link }) => isPageLinkDescriptor(link) ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(PrefetchPageLinks, { key, nonce, ...link }) : /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("link", { key, nonce, ...link })
-  ));
-}
-function PrefetchPageLinks({ page, ...linkProps }) {
-  let { router } = useDataRouterContext2();
-  let matches = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
-    () => matchRoutes(router.routes, page, router.basename),
-    [router.routes, page, router.basename]
-  );
-  if (!matches) {
-    return null;
-  }
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(PrefetchPageLinksImpl, { page, matches, ...linkProps });
-}
-function useKeyedPrefetchLinks(matches) {
-  let { manifest, routeModules } = useFrameworkContext();
-  let [keyedPrefetchLinks, setKeyedPrefetchLinks] = react__WEBPACK_IMPORTED_MODULE_0__.useState([]);
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    let interrupted = false;
-    void getKeyedPrefetchLinks(matches, manifest, routeModules).then(
-      (links) => {
-        if (!interrupted) {
-          setKeyedPrefetchLinks(links);
-        }
-      }
-    );
-    return () => {
-      interrupted = true;
-    };
-  }, [matches, manifest, routeModules]);
-  return keyedPrefetchLinks;
-}
-function PrefetchPageLinksImpl({
-  page,
-  matches: nextMatches,
-  ...linkProps
-}) {
-  let location = useLocation();
-  let { manifest, routeModules } = useFrameworkContext();
-  let { basename } = useDataRouterContext2();
-  let { loaderData, matches } = useDataRouterStateContext();
-  let newMatchesForData = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
-    () => getNewMatchesForLinks(
-      page,
-      nextMatches,
-      matches,
-      manifest,
-      location,
-      "data"
-    ),
-    [page, nextMatches, matches, manifest, location]
-  );
-  let newMatchesForAssets = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
-    () => getNewMatchesForLinks(
-      page,
-      nextMatches,
-      matches,
-      manifest,
-      location,
-      "assets"
-    ),
-    [page, nextMatches, matches, manifest, location]
-  );
-  let dataHrefs = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
-    if (page === location.pathname + location.search + location.hash) {
-      return [];
-    }
-    let routesParams = /* @__PURE__ */ new Set();
-    let foundOptOutRoute = false;
-    nextMatches.forEach((m) => {
-      let manifestRoute = manifest.routes[m.route.id];
-      if (!manifestRoute || !manifestRoute.hasLoader) {
-        return;
-      }
-      if (!newMatchesForData.some((m2) => m2.route.id === m.route.id) && m.route.id in loaderData && routeModules[m.route.id]?.shouldRevalidate) {
-        foundOptOutRoute = true;
-      } else if (manifestRoute.hasClientLoader) {
-        foundOptOutRoute = true;
-      } else {
-        routesParams.add(m.route.id);
-      }
-    });
-    if (routesParams.size === 0) {
-      return [];
-    }
-    let url = singleFetchUrl(page, basename, "data");
-    if (foundOptOutRoute && routesParams.size > 0) {
-      url.searchParams.set(
-        "_routes",
-        nextMatches.filter((m) => routesParams.has(m.route.id)).map((m) => m.route.id).join(",")
-      );
-    }
-    return [url.pathname + url.search];
-  }, [
-    basename,
-    loaderData,
-    location,
-    manifest,
-    newMatchesForData,
-    nextMatches,
-    page,
-    routeModules
-  ]);
-  let moduleHrefs = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
-    () => getModuleLinkHrefs(newMatchesForAssets, manifest),
-    [newMatchesForAssets, manifest]
-  );
-  let keyedPrefetchLinks = useKeyedPrefetchLinks(newMatchesForAssets);
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, dataHrefs.map((href) => /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("link", { key: href, rel: "prefetch", as: "fetch", href, ...linkProps })), moduleHrefs.map((href) => /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("link", { key: href, rel: "modulepreload", href, ...linkProps })), keyedPrefetchLinks.map(({ key, link }) => (
-    // these don't spread `linkProps` because they are full link descriptors
-    // already with their own props
-    /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("link", { key, nonce: linkProps.nonce, ...link })
-  )));
-}
-function Meta() {
-  let { isSpaMode, routeModules } = useFrameworkContext();
-  let {
-    errors,
-    matches: routerMatches,
-    loaderData
-  } = useDataRouterStateContext();
-  let location = useLocation();
-  let _matches = getActiveMatches(routerMatches, errors, isSpaMode);
-  let error = null;
-  if (errors) {
-    error = errors[_matches[_matches.length - 1].route.id];
-  }
-  let meta = [];
-  let leafMeta = null;
-  let matches = [];
-  for (let i = 0; i < _matches.length; i++) {
-    let _match = _matches[i];
-    let routeId = _match.route.id;
-    let data2 = loaderData[routeId];
-    let params = _match.params;
-    let routeModule = routeModules[routeId];
-    let routeMeta = [];
-    let match = {
-      id: routeId,
-      data: data2,
-      loaderData: data2,
-      meta: [],
-      params: _match.params,
-      pathname: _match.pathname,
-      handle: _match.route.handle,
-      error
-    };
-    matches[i] = match;
-    if (routeModule?.meta) {
-      routeMeta = typeof routeModule.meta === "function" ? routeModule.meta({
-        data: data2,
-        loaderData: data2,
-        params,
-        location,
-        matches,
-        error
-      }) : Array.isArray(routeModule.meta) ? [...routeModule.meta] : routeModule.meta;
-    } else if (leafMeta) {
-      routeMeta = [...leafMeta];
-    }
-    routeMeta = routeMeta || [];
-    if (!Array.isArray(routeMeta)) {
-      throw new Error(
-        "The route at " + _match.route.path + " returns an invalid value. All route meta functions must return an array of meta objects.\n\nTo reference the meta function API, see https://remix.run/route/meta"
-      );
-    }
-    match.meta = routeMeta;
-    matches[i] = match;
-    meta = [...routeMeta];
-    leafMeta = meta;
-  }
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, meta.flat().map((metaProps) => {
-    if (!metaProps) {
-      return null;
-    }
-    if ("tagName" in metaProps) {
-      let { tagName, ...rest } = metaProps;
-      if (!isValidMetaTag(tagName)) {
-        console.warn(
-          `A meta object uses an invalid tagName: ${tagName}. Expected either 'link' or 'meta'`
-        );
-        return null;
-      }
-      let Comp = tagName;
-      return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(Comp, { key: JSON.stringify(rest), ...rest });
-    }
-    if ("title" in metaProps) {
-      return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("title", { key: "title" }, String(metaProps.title));
-    }
-    if ("charset" in metaProps) {
-      metaProps.charSet ?? (metaProps.charSet = metaProps.charset);
-      delete metaProps.charset;
-    }
-    if ("charSet" in metaProps && metaProps.charSet != null) {
-      return typeof metaProps.charSet === "string" ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("meta", { key: "charSet", charSet: metaProps.charSet }) : null;
-    }
-    if ("script:ld+json" in metaProps) {
-      try {
-        let json = JSON.stringify(metaProps["script:ld+json"]);
-        return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-          "script",
-          {
-            key: `script:ld+json:${json}`,
-            type: "application/ld+json",
-            dangerouslySetInnerHTML: { __html: escapeHtml(json) }
-          }
-        );
-      } catch (err) {
-        return null;
-      }
-    }
-    return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("meta", { key: JSON.stringify(metaProps), ...metaProps });
-  }));
-}
-function isValidMetaTag(tagName) {
-  return typeof tagName === "string" && /^(meta|link)$/.test(tagName);
-}
-var isHydrated = false;
-function setIsHydrated() {
-  isHydrated = true;
-}
-function Scripts(scriptProps) {
-  let {
-    manifest,
-    serverHandoffString,
-    isSpaMode,
-    renderMeta,
-    routeDiscovery,
-    ssr
-  } = useFrameworkContext();
-  let { router, static: isStatic, staticContext } = useDataRouterContext2();
-  let { matches: routerMatches } = useDataRouterStateContext();
-  let isRSCRouterContext = useIsRSCRouterContext();
-  let enableFogOfWar = isFogOfWarEnabled(routeDiscovery, ssr);
-  if (renderMeta) {
-    renderMeta.didRenderScripts = true;
-  }
-  let matches = getActiveMatches(routerMatches, null, isSpaMode);
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    setIsHydrated();
-  }, []);
-  let initialScripts = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
-    if (isRSCRouterContext) {
-      return null;
-    }
-    let streamScript = "window.__reactRouterContext.stream = new ReadableStream({start(controller){window.__reactRouterContext.streamController = controller;}}).pipeThrough(new TextEncoderStream());";
-    let contextScript = staticContext ? `window.__reactRouterContext = ${serverHandoffString};${streamScript}` : " ";
-    let routeModulesScript = !isStatic ? " " : `${manifest.hmr?.runtime ? `import ${JSON.stringify(manifest.hmr.runtime)};` : ""}${!enableFogOfWar ? `import ${JSON.stringify(manifest.url)}` : ""};
-${matches.map((match, routeIndex) => {
-      let routeVarName = `route${routeIndex}`;
-      let manifestEntry = manifest.routes[match.route.id];
-      invariant2(manifestEntry, `Route ${match.route.id} not found in manifest`);
-      let {
-        clientActionModule,
-        clientLoaderModule,
-        clientMiddlewareModule,
-        hydrateFallbackModule,
-        module
-      } = manifestEntry;
-      let chunks = [
-        ...clientActionModule ? [
-          {
-            module: clientActionModule,
-            varName: `${routeVarName}_clientAction`
-          }
-        ] : [],
-        ...clientLoaderModule ? [
-          {
-            module: clientLoaderModule,
-            varName: `${routeVarName}_clientLoader`
-          }
-        ] : [],
-        ...clientMiddlewareModule ? [
-          {
-            module: clientMiddlewareModule,
-            varName: `${routeVarName}_clientMiddleware`
-          }
-        ] : [],
-        ...hydrateFallbackModule ? [
-          {
-            module: hydrateFallbackModule,
-            varName: `${routeVarName}_HydrateFallback`
-          }
-        ] : [],
-        { module, varName: `${routeVarName}_main` }
-      ];
-      if (chunks.length === 1) {
-        return `import * as ${routeVarName} from ${JSON.stringify(module)};`;
-      }
-      let chunkImportsSnippet = chunks.map((chunk) => `import * as ${chunk.varName} from "${chunk.module}";`).join("\n");
-      let mergedChunksSnippet = `const ${routeVarName} = {${chunks.map((chunk) => `...${chunk.varName}`).join(",")}};`;
-      return [chunkImportsSnippet, mergedChunksSnippet].join("\n");
-    }).join("\n")}
-  ${enableFogOfWar ? (
-      // Inline a minimal manifest with the SSR matches
-      `window.__reactRouterManifest = ${JSON.stringify(
-        getPartialManifest(manifest, router),
-        null,
-        2
-      )};`
-    ) : ""}
-  window.__reactRouterRouteModules = {${matches.map((match, index) => `${JSON.stringify(match.route.id)}:route${index}`).join(",")}};
-
-import(${JSON.stringify(manifest.entry.module)});`;
-    return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-      "script",
-      {
-        ...scriptProps,
-        suppressHydrationWarning: true,
-        dangerouslySetInnerHTML: { __html: contextScript },
-        type: void 0
-      }
-    ), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-      "script",
-      {
-        ...scriptProps,
-        suppressHydrationWarning: true,
-        dangerouslySetInnerHTML: { __html: routeModulesScript },
-        type: "module",
-        async: true
-      }
-    ));
-  }, []);
-  let preloads = isHydrated || isRSCRouterContext ? [] : dedupe(
-    manifest.entry.imports.concat(
-      getModuleLinkHrefs(matches, manifest, {
-        includeHydrateFallback: true
-      })
-    )
-  );
-  let sri = typeof manifest.sri === "object" ? manifest.sri : {};
-  warnOnce(
-    !isRSCRouterContext,
-    "The <Scripts /> element is a no-op when using RSC and can be safely removed."
-  );
-  return isHydrated || isRSCRouterContext ? null : /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, typeof manifest.sri === "object" ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    "script",
-    {
-      "rr-importmap": "",
-      type: "importmap",
-      suppressHydrationWarning: true,
-      dangerouslySetInnerHTML: {
-        __html: JSON.stringify({
-          integrity: sri
-        })
-      }
-    }
-  ) : null, !enableFogOfWar ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    "link",
-    {
-      rel: "modulepreload",
-      href: manifest.url,
-      crossOrigin: scriptProps.crossOrigin,
-      integrity: sri[manifest.url],
-      suppressHydrationWarning: true
-    }
-  ) : null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    "link",
-    {
-      rel: "modulepreload",
-      href: manifest.entry.module,
-      crossOrigin: scriptProps.crossOrigin,
-      integrity: sri[manifest.entry.module],
-      suppressHydrationWarning: true
-    }
-  ), preloads.map((path) => /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    "link",
-    {
-      key: path,
-      rel: "modulepreload",
-      href: path,
-      crossOrigin: scriptProps.crossOrigin,
-      integrity: sri[path],
-      suppressHydrationWarning: true
-    }
-  )), initialScripts);
-}
-function dedupe(array) {
-  return [...new Set(array)];
-}
-function mergeRefs(...refs) {
-  return (value) => {
-    refs.forEach((ref) => {
-      if (typeof ref === "function") {
-        ref(value);
-      } else if (ref != null) {
-        ref.current = value;
-      }
-    });
-  };
-}
-
-// lib/dom/ssr/errorBoundaries.tsx
-var RemixErrorBoundary = class extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
-  constructor(props) {
-    super(props);
-    this.state = { error: props.error || null, location: props.location };
-  }
-  static getDerivedStateFromError(error) {
-    return { error };
-  }
-  static getDerivedStateFromProps(props, state) {
-    if (state.location !== props.location) {
-      return { error: props.error || null, location: props.location };
-    }
-    return { error: props.error || state.error, location: state.location };
-  }
-  render() {
-    if (this.state.error) {
-      return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-        RemixRootDefaultErrorBoundary,
-        {
-          error: this.state.error,
-          isOutsideRemixApp: true
-        }
-      );
-    } else {
-      return this.props.children;
-    }
-  }
-};
-function RemixRootDefaultErrorBoundary({
-  error,
-  isOutsideRemixApp
-}) {
-  console.error(error);
-  let heyDeveloper = /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    "script",
-    {
-      dangerouslySetInnerHTML: {
-        __html: `
-        console.log(
-          "\u{1F4BF} Hey developer \u{1F44B}. You can provide a way better UX than this when your app throws errors. Check out https://reactrouter.com/how-to/error-boundary for more information."
-        );
-      `
-      }
-    }
-  );
-  if (isRouteErrorResponse(error)) {
-    return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(BoundaryShell, { title: "Unhandled Thrown Response!" }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", { style: { fontSize: "24px" } }, error.status, " ", error.statusText), ENABLE_DEV_WARNINGS ? heyDeveloper : null);
-  }
-  let errorInstance;
-  if (error instanceof Error) {
-    errorInstance = error;
-  } else {
-    let errorString = error == null ? "Unknown Error" : typeof error === "object" && "toString" in error ? error.toString() : JSON.stringify(error);
-    errorInstance = new Error(errorString);
-  }
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    BoundaryShell,
-    {
-      title: "Application Error!",
-      isOutsideRemixApp
-    },
-    /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", { style: { fontSize: "24px" } }, "Application Error"),
-    /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-      "pre",
-      {
-        style: {
-          padding: "2rem",
-          background: "hsla(10, 50%, 50%, 0.1)",
-          color: "red",
-          overflow: "auto"
-        }
-      },
-      errorInstance.stack
-    ),
-    heyDeveloper
-  );
-}
-function BoundaryShell({
-  title,
-  renderScripts,
-  isOutsideRemixApp,
-  children
-}) {
-  let { routeModules } = useFrameworkContext();
-  if (routeModules.root?.Layout && !isOutsideRemixApp) {
-    return children;
-  }
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("html", { lang: "en" }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("head", null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("meta", { charSet: "utf-8" }), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    "meta",
-    {
-      name: "viewport",
-      content: "width=device-width,initial-scale=1,viewport-fit=cover"
-    }
-  ), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("title", null, title)), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("body", null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", { style: { fontFamily: "system-ui, sans-serif", padding: "2rem" } }, children, renderScripts ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(Scripts, null) : null)));
-}
-
-// lib/dom/lib.tsx
-
-var isBrowser = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined";
-try {
-  if (isBrowser) {
-    window.__reactRouterVersion = // @ts-expect-error
-    "7.9.3";
-  }
-} catch (e) {
-}
-function createBrowserRouter(routes, opts) {
-  return createRouter({
-    basename: opts?.basename,
-    getContext: opts?.getContext,
-    future: opts?.future,
-    history: createBrowserHistory({ window: opts?.window }),
-    hydrationData: opts?.hydrationData || parseHydrationData(),
-    routes,
-    mapRouteProperties,
-    hydrationRouteProperties,
-    dataStrategy: opts?.dataStrategy,
-    patchRoutesOnNavigation: opts?.patchRoutesOnNavigation,
-    window: opts?.window
-  }).initialize();
-}
-function createHashRouter(routes, opts) {
-  return createRouter({
-    basename: opts?.basename,
-    getContext: opts?.getContext,
-    future: opts?.future,
-    history: createHashHistory({ window: opts?.window }),
-    hydrationData: opts?.hydrationData || parseHydrationData(),
-    routes,
-    mapRouteProperties,
-    hydrationRouteProperties,
-    dataStrategy: opts?.dataStrategy,
-    patchRoutesOnNavigation: opts?.patchRoutesOnNavigation,
-    window: opts?.window
-  }).initialize();
-}
-function parseHydrationData() {
-  let state = window?.__staticRouterHydrationData;
-  if (state && state.errors) {
-    state = {
-      ...state,
-      errors: deserializeErrors(state.errors)
-    };
-  }
-  return state;
-}
-function deserializeErrors(errors) {
-  if (!errors) return null;
-  let entries = Object.entries(errors);
-  let serialized = {};
-  for (let [key, val] of entries) {
-    if (val && val.__type === "RouteErrorResponse") {
-      serialized[key] = new ErrorResponseImpl(
-        val.status,
-        val.statusText,
-        val.data,
-        val.internal === true
-      );
-    } else if (val && val.__type === "Error") {
-      if (val.__subType) {
-        let ErrorConstructor = window[val.__subType];
-        if (typeof ErrorConstructor === "function") {
-          try {
-            let error = new ErrorConstructor(val.message);
-            error.stack = "";
-            serialized[key] = error;
-          } catch (e) {
-          }
-        }
-      }
-      if (serialized[key] == null) {
-        let error = new Error(val.message);
-        error.stack = "";
-        serialized[key] = error;
-      }
-    } else {
-      serialized[key] = val;
-    }
-  }
-  return serialized;
-}
-function BrowserRouter({
-  basename,
-  children,
-  window: window2
-}) {
-  let historyRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef();
-  if (historyRef.current == null) {
-    historyRef.current = createBrowserHistory({ window: window2, v5Compat: true });
-  }
-  let history = historyRef.current;
-  let [state, setStateImpl] = react__WEBPACK_IMPORTED_MODULE_0__.useState({
-    action: history.action,
-    location: history.location
-  });
-  let setState = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
-    (newState) => {
-      react__WEBPACK_IMPORTED_MODULE_0__.startTransition(() => setStateImpl(newState));
-    },
-    [setStateImpl]
-  );
-  react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => history.listen(setState), [history, setState]);
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    Router,
-    {
-      basename,
-      children,
-      location: state.location,
-      navigationType: state.action,
-      navigator: history
-    }
-  );
-}
-function HashRouter({ basename, children, window: window2 }) {
-  let historyRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef();
-  if (historyRef.current == null) {
-    historyRef.current = createHashHistory({ window: window2, v5Compat: true });
-  }
-  let history = historyRef.current;
-  let [state, setStateImpl] = react__WEBPACK_IMPORTED_MODULE_0__.useState({
-    action: history.action,
-    location: history.location
-  });
-  let setState = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
-    (newState) => {
-      react__WEBPACK_IMPORTED_MODULE_0__.startTransition(() => setStateImpl(newState));
-    },
-    [setStateImpl]
-  );
-  react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => history.listen(setState), [history, setState]);
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    Router,
-    {
-      basename,
-      children,
-      location: state.location,
-      navigationType: state.action,
-      navigator: history
-    }
-  );
-}
-function HistoryRouter({
-  basename,
-  children,
-  history
-}) {
-  let [state, setStateImpl] = react__WEBPACK_IMPORTED_MODULE_0__.useState({
-    action: history.action,
-    location: history.location
-  });
-  let setState = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
-    (newState) => {
-      react__WEBPACK_IMPORTED_MODULE_0__.startTransition(() => setStateImpl(newState));
-    },
-    [setStateImpl]
-  );
-  react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => history.listen(setState), [history, setState]);
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    Router,
-    {
-      basename,
-      children,
-      location: state.location,
-      navigationType: state.action,
-      navigator: history
-    }
-  );
-}
-HistoryRouter.displayName = "unstable_HistoryRouter";
-var ABSOLUTE_URL_REGEX2 = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
-var Link = react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(
-  function LinkWithRef({
-    onClick,
-    discover = "render",
-    prefetch = "none",
-    relative,
-    reloadDocument,
-    replace: replace2,
-    state,
-    target,
-    to,
-    preventScrollReset,
-    viewTransition,
-    ...rest
-  }, forwardedRef) {
-    let { basename } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
-    let isAbsolute = typeof to === "string" && ABSOLUTE_URL_REGEX2.test(to);
-    let absoluteHref;
-    let isExternal = false;
-    if (typeof to === "string" && isAbsolute) {
-      absoluteHref = to;
-      if (isBrowser) {
-        try {
-          let currentUrl = new URL(window.location.href);
-          let targetUrl = to.startsWith("//") ? new URL(currentUrl.protocol + to) : new URL(to);
-          let path = stripBasename(targetUrl.pathname, basename);
-          if (targetUrl.origin === currentUrl.origin && path != null) {
-            to = path + targetUrl.search + targetUrl.hash;
-          } else {
-            isExternal = true;
-          }
-        } catch (e) {
-          warning(
-            false,
-            `<Link to="${to}"> contains an invalid URL which will probably break when clicked - please update to a valid URL path.`
-          );
-        }
-      }
-    }
-    let href = useHref(to, { relative });
-    let [shouldPrefetch, prefetchRef, prefetchHandlers] = usePrefetchBehavior(
-      prefetch,
-      rest
-    );
-    let internalOnClick = useLinkClickHandler(to, {
-      replace: replace2,
-      state,
-      target,
-      preventScrollReset,
-      relative,
-      viewTransition
-    });
-    function handleClick(event) {
-      if (onClick) onClick(event);
-      if (!event.defaultPrevented) {
-        internalOnClick(event);
-      }
-    }
-    let link = (
-      // eslint-disable-next-line jsx-a11y/anchor-has-content
-      /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-        "a",
-        {
-          ...rest,
-          ...prefetchHandlers,
-          href: absoluteHref || href,
-          onClick: isExternal || reloadDocument ? onClick : handleClick,
-          ref: mergeRefs(forwardedRef, prefetchRef),
-          target,
-          "data-discover": !isAbsolute && discover === "render" ? "true" : void 0
-        }
-      )
-    );
-    return shouldPrefetch && !isAbsolute ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, link, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(PrefetchPageLinks, { page: href })) : link;
-  }
-);
-Link.displayName = "Link";
-var NavLink = react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(
-  function NavLinkWithRef({
-    "aria-current": ariaCurrentProp = "page",
-    caseSensitive = false,
-    className: classNameProp = "",
-    end = false,
-    style: styleProp,
-    to,
-    viewTransition,
-    children,
-    ...rest
-  }, ref) {
-    let path = useResolvedPath(to, { relative: rest.relative });
-    let location = useLocation();
-    let routerState = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterStateContext);
-    let { navigator, basename } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
-    let isTransitioning = routerState != null && // Conditional usage is OK here because the usage of a data router is static
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    useViewTransitionState(path) && viewTransition === true;
-    let toPathname = navigator.encodeLocation ? navigator.encodeLocation(path).pathname : path.pathname;
-    let locationPathname = location.pathname;
-    let nextLocationPathname = routerState && routerState.navigation && routerState.navigation.location ? routerState.navigation.location.pathname : null;
-    if (!caseSensitive) {
-      locationPathname = locationPathname.toLowerCase();
-      nextLocationPathname = nextLocationPathname ? nextLocationPathname.toLowerCase() : null;
-      toPathname = toPathname.toLowerCase();
-    }
-    if (nextLocationPathname && basename) {
-      nextLocationPathname = stripBasename(nextLocationPathname, basename) || nextLocationPathname;
-    }
-    const endSlashPosition = toPathname !== "/" && toPathname.endsWith("/") ? toPathname.length - 1 : toPathname.length;
-    let isActive = locationPathname === toPathname || !end && locationPathname.startsWith(toPathname) && locationPathname.charAt(endSlashPosition) === "/";
-    let isPending = nextLocationPathname != null && (nextLocationPathname === toPathname || !end && nextLocationPathname.startsWith(toPathname) && nextLocationPathname.charAt(toPathname.length) === "/");
-    let renderProps = {
-      isActive,
-      isPending,
-      isTransitioning
-    };
-    let ariaCurrent = isActive ? ariaCurrentProp : void 0;
-    let className;
-    if (typeof classNameProp === "function") {
-      className = classNameProp(renderProps);
-    } else {
-      className = [
-        classNameProp,
-        isActive ? "active" : null,
-        isPending ? "pending" : null,
-        isTransitioning ? "transitioning" : null
-      ].filter(Boolean).join(" ");
-    }
-    let style = typeof styleProp === "function" ? styleProp(renderProps) : styleProp;
-    return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-      Link,
-      {
-        ...rest,
-        "aria-current": ariaCurrent,
-        className,
-        ref,
-        style,
-        to,
-        viewTransition
-      },
-      typeof children === "function" ? children(renderProps) : children
-    );
-  }
-);
-NavLink.displayName = "NavLink";
-var Form = react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(
-  ({
-    discover = "render",
-    fetcherKey,
-    navigate,
-    reloadDocument,
-    replace: replace2,
-    state,
-    method = defaultMethod,
-    action,
-    onSubmit,
-    relative,
-    preventScrollReset,
-    viewTransition,
-    ...props
-  }, forwardedRef) => {
-    let submit = useSubmit();
-    let formAction = useFormAction(action, { relative });
-    let formMethod = method.toLowerCase() === "get" ? "get" : "post";
-    let isAbsolute = typeof action === "string" && ABSOLUTE_URL_REGEX2.test(action);
-    let submitHandler = (event) => {
-      onSubmit && onSubmit(event);
-      if (event.defaultPrevented) return;
-      event.preventDefault();
-      let submitter = event.nativeEvent.submitter;
-      let submitMethod = submitter?.getAttribute("formmethod") || method;
-      submit(submitter || event.currentTarget, {
-        fetcherKey,
-        method: submitMethod,
-        navigate,
-        replace: replace2,
-        state,
-        relative,
-        preventScrollReset,
-        viewTransition
-      });
-    };
-    return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-      "form",
-      {
-        ref: forwardedRef,
-        method: formMethod,
-        action: formAction,
-        onSubmit: reloadDocument ? onSubmit : submitHandler,
-        ...props,
-        "data-discover": !isAbsolute && discover === "render" ? "true" : void 0
-      }
-    );
-  }
-);
-Form.displayName = "Form";
-function ScrollRestoration({
-  getKey,
-  storageKey,
-  ...props
-}) {
-  let remixContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(FrameworkContext);
-  let { basename } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
-  let location = useLocation();
-  let matches = useMatches();
-  useScrollRestoration({ getKey, storageKey });
-  let ssrKey = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
-    () => {
-      if (!remixContext || !getKey) return null;
-      let userKey = getScrollRestorationKey(
-        location,
-        matches,
-        basename,
-        getKey
-      );
-      return userKey !== location.key ? userKey : null;
-    },
-    // Nah, we only need this the first time for the SSR render
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    []
-  );
-  if (!remixContext || remixContext.isSpaMode) {
-    return null;
-  }
-  let restoreScroll = ((storageKey2, restoreKey) => {
-    if (!window.history.state || !window.history.state.key) {
-      let key = Math.random().toString(32).slice(2);
-      window.history.replaceState({ key }, "");
-    }
-    try {
-      let positions = JSON.parse(sessionStorage.getItem(storageKey2) || "{}");
-      let storedY = positions[restoreKey || window.history.state.key];
-      if (typeof storedY === "number") {
-        window.scrollTo(0, storedY);
-      }
-    } catch (error) {
-      console.error(error);
-      sessionStorage.removeItem(storageKey2);
-    }
-  }).toString();
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    "script",
-    {
-      ...props,
-      suppressHydrationWarning: true,
-      dangerouslySetInnerHTML: {
-        __html: `(${restoreScroll})(${JSON.stringify(
-          storageKey || SCROLL_RESTORATION_STORAGE_KEY
-        )}, ${JSON.stringify(ssrKey)})`
-      }
-    }
-  );
-}
-ScrollRestoration.displayName = "ScrollRestoration";
-function getDataRouterConsoleError2(hookName) {
-  return `${hookName} must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.`;
-}
-function useDataRouterContext3(hookName) {
-  let ctx = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterContext);
-  invariant(ctx, getDataRouterConsoleError2(hookName));
-  return ctx;
-}
-function useDataRouterState2(hookName) {
-  let state = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterStateContext);
-  invariant(state, getDataRouterConsoleError2(hookName));
-  return state;
-}
-function useLinkClickHandler(to, {
-  target,
-  replace: replaceProp,
-  state,
-  preventScrollReset,
-  relative,
-  viewTransition
-} = {}) {
-  let navigate = useNavigate();
-  let location = useLocation();
-  let path = useResolvedPath(to, { relative });
-  return react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
-    (event) => {
-      if (shouldProcessLinkClick(event, target)) {
-        event.preventDefault();
-        let replace2 = replaceProp !== void 0 ? replaceProp : createPath(location) === createPath(path);
-        navigate(to, {
-          replace: replace2,
-          state,
-          preventScrollReset,
-          relative,
-          viewTransition
-        });
-      }
-    },
-    [
-      location,
-      navigate,
-      path,
-      replaceProp,
-      state,
-      target,
-      to,
-      preventScrollReset,
-      relative,
-      viewTransition
-    ]
-  );
-}
-function useSearchParams(defaultInit) {
-  warning(
-    typeof URLSearchParams !== "undefined",
-    `You cannot use the \`useSearchParams\` hook in a browser that does not support the URLSearchParams API. If you need to support Internet Explorer 11, we recommend you load a polyfill such as https://github.com/ungap/url-search-params.`
-  );
-  let defaultSearchParamsRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(createSearchParams(defaultInit));
-  let hasSetSearchParamsRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(false);
-  let location = useLocation();
-  let searchParams = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
-    () => (
-      // Only merge in the defaults if we haven't yet called setSearchParams.
-      // Once we call that we want those to take precedence, otherwise you can't
-      // remove a param with setSearchParams({}) if it has an initial value
-      getSearchParamsForLocation(
-        location.search,
-        hasSetSearchParamsRef.current ? null : defaultSearchParamsRef.current
-      )
-    ),
-    [location.search]
-  );
-  let navigate = useNavigate();
-  let setSearchParams = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
-    (nextInit, navigateOptions) => {
-      const newSearchParams = createSearchParams(
-        typeof nextInit === "function" ? nextInit(new URLSearchParams(searchParams)) : nextInit
-      );
-      hasSetSearchParamsRef.current = true;
-      navigate("?" + newSearchParams, navigateOptions);
-    },
-    [navigate, searchParams]
-  );
-  return [searchParams, setSearchParams];
-}
-var fetcherId = 0;
-var getUniqueFetcherId = () => `__${String(++fetcherId)}__`;
-function useSubmit() {
-  let { router } = useDataRouterContext3("useSubmit" /* UseSubmit */);
-  let { basename } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
-  let currentRouteId = useRouteId();
-  return react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
-    async (target, options = {}) => {
-      let { action, method, encType, formData, body } = getFormSubmissionInfo(
-        target,
-        basename
-      );
-      if (options.navigate === false) {
-        let key = options.fetcherKey || getUniqueFetcherId();
-        await router.fetch(key, currentRouteId, options.action || action, {
-          preventScrollReset: options.preventScrollReset,
-          formData,
-          body,
-          formMethod: options.method || method,
-          formEncType: options.encType || encType,
-          flushSync: options.flushSync
-        });
-      } else {
-        await router.navigate(options.action || action, {
-          preventScrollReset: options.preventScrollReset,
-          formData,
-          body,
-          formMethod: options.method || method,
-          formEncType: options.encType || encType,
-          replace: options.replace,
-          state: options.state,
-          fromRouteId: currentRouteId,
-          flushSync: options.flushSync,
-          viewTransition: options.viewTransition
-        });
-      }
-    },
-    [router, basename, currentRouteId]
-  );
-}
-function useFormAction(action, { relative } = {}) {
-  let { basename } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
-  let routeContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
-  invariant(routeContext, "useFormAction must be used inside a RouteContext");
-  let [match] = routeContext.matches.slice(-1);
-  let path = { ...useResolvedPath(action ? action : ".", { relative }) };
-  let location = useLocation();
-  if (action == null) {
-    path.search = location.search;
-    let params = new URLSearchParams(path.search);
-    let indexValues = params.getAll("index");
-    let hasNakedIndexParam = indexValues.some((v) => v === "");
-    if (hasNakedIndexParam) {
-      params.delete("index");
-      indexValues.filter((v) => v).forEach((v) => params.append("index", v));
-      let qs = params.toString();
-      path.search = qs ? `?${qs}` : "";
-    }
-  }
-  if ((!action || action === ".") && match.route.index) {
-    path.search = path.search ? path.search.replace(/^\?/, "?index&") : "?index";
-  }
-  if (basename !== "/") {
-    path.pathname = path.pathname === "/" ? basename : joinPaths([basename, path.pathname]);
-  }
-  return createPath(path);
-}
-function useFetcher({
-  key
-} = {}) {
-  let { router } = useDataRouterContext3("useFetcher" /* UseFetcher */);
-  let state = useDataRouterState2("useFetcher" /* UseFetcher */);
-  let fetcherData = react__WEBPACK_IMPORTED_MODULE_0__.useContext(FetchersContext);
-  let route = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
-  let routeId = route.matches[route.matches.length - 1]?.route.id;
-  invariant(fetcherData, `useFetcher must be used inside a FetchersContext`);
-  invariant(route, `useFetcher must be used inside a RouteContext`);
-  invariant(
-    routeId != null,
-    `useFetcher can only be used on routes that contain a unique "id"`
-  );
-  let defaultKey = react__WEBPACK_IMPORTED_MODULE_0__.useId();
-  let [fetcherKey, setFetcherKey] = react__WEBPACK_IMPORTED_MODULE_0__.useState(key || defaultKey);
-  if (key && key !== fetcherKey) {
-    setFetcherKey(key);
-  }
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    router.getFetcher(fetcherKey);
-    return () => router.deleteFetcher(fetcherKey);
-  }, [router, fetcherKey]);
-  let load = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
-    async (href, opts) => {
-      invariant(routeId, "No routeId available for fetcher.load()");
-      await router.fetch(fetcherKey, routeId, href, opts);
-    },
-    [fetcherKey, routeId, router]
-  );
-  let submitImpl = useSubmit();
-  let submit = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
-    async (target, opts) => {
-      await submitImpl(target, {
-        ...opts,
-        navigate: false,
-        fetcherKey
-      });
-    },
-    [fetcherKey, submitImpl]
-  );
-  let unstable_reset = react__WEBPACK_IMPORTED_MODULE_0__.useCallback((opts) => router.resetFetcher(fetcherKey, opts), [router, fetcherKey]);
-  let FetcherForm = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
-    let FetcherForm2 = react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(
-      (props, ref) => {
-        return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(Form, { ...props, navigate: false, fetcherKey, ref });
-      }
-    );
-    FetcherForm2.displayName = "fetcher.Form";
-    return FetcherForm2;
-  }, [fetcherKey]);
-  let fetcher = state.fetchers.get(fetcherKey) || IDLE_FETCHER;
-  let data2 = fetcherData.get(fetcherKey);
-  let fetcherWithComponents = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
-    () => ({
-      Form: FetcherForm,
-      submit,
-      load,
-      unstable_reset,
-      ...fetcher,
-      data: data2
-    }),
-    [FetcherForm, submit, load, unstable_reset, fetcher, data2]
-  );
-  return fetcherWithComponents;
-}
-function useFetchers() {
-  let state = useDataRouterState2("useFetchers" /* UseFetchers */);
-  return Array.from(state.fetchers.entries()).map(([key, fetcher]) => ({
-    ...fetcher,
-    key
-  }));
-}
-var SCROLL_RESTORATION_STORAGE_KEY = "react-router-scroll-positions";
-var savedScrollPositions = {};
-function getScrollRestorationKey(location, matches, basename, getKey) {
-  let key = null;
-  if (getKey) {
-    if (basename !== "/") {
-      key = getKey(
-        {
-          ...location,
-          pathname: stripBasename(location.pathname, basename) || location.pathname
-        },
-        matches
-      );
-    } else {
-      key = getKey(location, matches);
-    }
-  }
-  if (key == null) {
-    key = location.key;
-  }
-  return key;
-}
-function useScrollRestoration({
-  getKey,
-  storageKey
-} = {}) {
-  let { router } = useDataRouterContext3("useScrollRestoration" /* UseScrollRestoration */);
-  let { restoreScrollPosition, preventScrollReset } = useDataRouterState2(
-    "useScrollRestoration" /* UseScrollRestoration */
-  );
-  let { basename } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
-  let location = useLocation();
-  let matches = useMatches();
-  let navigation = useNavigation();
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    window.history.scrollRestoration = "manual";
-    return () => {
-      window.history.scrollRestoration = "auto";
-    };
-  }, []);
-  usePageHide(
-    react__WEBPACK_IMPORTED_MODULE_0__.useCallback(() => {
-      if (navigation.state === "idle") {
-        let key = getScrollRestorationKey(location, matches, basename, getKey);
-        savedScrollPositions[key] = window.scrollY;
-      }
-      try {
-        sessionStorage.setItem(
-          storageKey || SCROLL_RESTORATION_STORAGE_KEY,
-          JSON.stringify(savedScrollPositions)
-        );
-      } catch (error) {
-        warning(
-          false,
-          `Failed to save scroll positions in sessionStorage, <ScrollRestoration /> will not work properly (${error}).`
-        );
-      }
-      window.history.scrollRestoration = "auto";
-    }, [navigation.state, getKey, basename, location, matches, storageKey])
-  );
-  if (typeof document !== "undefined") {
-    react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => {
-      try {
-        let sessionPositions = sessionStorage.getItem(
-          storageKey || SCROLL_RESTORATION_STORAGE_KEY
-        );
-        if (sessionPositions) {
-          savedScrollPositions = JSON.parse(sessionPositions);
-        }
-      } catch (e) {
-      }
-    }, [storageKey]);
-    react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => {
-      let disableScrollRestoration = router?.enableScrollRestoration(
-        savedScrollPositions,
-        () => window.scrollY,
-        getKey ? (location2, matches2) => getScrollRestorationKey(location2, matches2, basename, getKey) : void 0
-      );
-      return () => disableScrollRestoration && disableScrollRestoration();
-    }, [router, basename, getKey]);
-    react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => {
-      if (restoreScrollPosition === false) {
-        return;
-      }
-      if (typeof restoreScrollPosition === "number") {
-        window.scrollTo(0, restoreScrollPosition);
-        return;
-      }
-      try {
-        if (location.hash) {
-          let el = document.getElementById(
-            decodeURIComponent(location.hash.slice(1))
-          );
-          if (el) {
-            el.scrollIntoView();
-            return;
-          }
-        }
-      } catch {
-        warning(
-          false,
-          `"${location.hash.slice(
-            1
-          )}" is not a decodable element ID. The view will not scroll to it.`
-        );
-      }
-      if (preventScrollReset === true) {
-        return;
-      }
-      window.scrollTo(0, 0);
-    }, [location, restoreScrollPosition, preventScrollReset]);
-  }
-}
-function useBeforeUnload(callback, options) {
-  let { capture } = options || {};
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    let opts = capture != null ? { capture } : void 0;
-    window.addEventListener("beforeunload", callback, opts);
-    return () => {
-      window.removeEventListener("beforeunload", callback, opts);
-    };
-  }, [callback, capture]);
-}
-function usePageHide(callback, options) {
-  let { capture } = options || {};
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    let opts = capture != null ? { capture } : void 0;
-    window.addEventListener("pagehide", callback, opts);
-    return () => {
-      window.removeEventListener("pagehide", callback, opts);
-    };
-  }, [callback, capture]);
-}
-function usePrompt({
-  when,
-  message
-}) {
-  let blocker = useBlocker(when);
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    if (blocker.state === "blocked") {
-      let proceed = window.confirm(message);
-      if (proceed) {
-        setTimeout(blocker.proceed, 0);
-      } else {
-        blocker.reset();
-      }
-    }
-  }, [blocker, message]);
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    if (blocker.state === "blocked" && !when) {
-      blocker.reset();
-    }
-  }, [blocker, when]);
-}
-function useViewTransitionState(to, { relative } = {}) {
-  let vtContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(ViewTransitionContext);
-  invariant(
-    vtContext != null,
-    "`useViewTransitionState` must be used within `react-router-dom`'s `RouterProvider`.  Did you accidentally import `RouterProvider` from `react-router`?"
-  );
-  let { basename } = useDataRouterContext3(
-    "useViewTransitionState" /* useViewTransitionState */
-  );
-  let path = useResolvedPath(to, { relative });
-  if (!vtContext.isTransitioning) {
-    return false;
-  }
-  let currentPath = stripBasename(vtContext.currentLocation.pathname, basename) || vtContext.currentLocation.pathname;
-  let nextPath = stripBasename(vtContext.nextLocation.pathname, basename) || vtContext.nextLocation.pathname;
-  return matchPath(path.pathname, nextPath) != null || matchPath(path.pathname, currentPath) != null;
-}
-
-// lib/dom/server.tsx
-
-function StaticRouter({
-  basename,
-  children,
-  location: locationProp = "/"
-}) {
-  if (typeof locationProp === "string") {
-    locationProp = parsePath(locationProp);
-  }
-  let action = "POP" /* Pop */;
-  let location = {
-    pathname: locationProp.pathname || "/",
-    search: locationProp.search || "",
-    hash: locationProp.hash || "",
-    state: locationProp.state != null ? locationProp.state : null,
-    key: locationProp.key || "default"
-  };
-  let staticNavigator = getStatelessNavigator();
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    Router,
-    {
-      basename,
-      children,
-      location,
-      navigationType: action,
-      navigator: staticNavigator,
-      static: true
-    }
-  );
-}
-function StaticRouterProvider({
-  context,
-  router,
-  hydrate: hydrate2 = true,
-  nonce
-}) {
-  invariant(
-    router && context,
-    "You must provide `router` and `context` to <StaticRouterProvider>"
-  );
-  let dataRouterContext = {
-    router,
-    navigator: getStatelessNavigator(),
-    static: true,
-    staticContext: context,
-    basename: context.basename || "/"
-  };
-  let fetchersContext = /* @__PURE__ */ new Map();
-  let hydrateScript = "";
-  if (hydrate2 !== false) {
-    let data2 = {
-      loaderData: context.loaderData,
-      actionData: context.actionData,
-      errors: serializeErrors(context.errors)
-    };
-    let json = htmlEscape(JSON.stringify(JSON.stringify(data2)));
-    hydrateScript = `window.__staticRouterHydrationData = JSON.parse(${json});`;
-  }
-  let { state } = dataRouterContext.router;
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(DataRouterContext.Provider, { value: dataRouterContext }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(DataRouterStateContext.Provider, { value: state }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(FetchersContext.Provider, { value: fetchersContext }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(ViewTransitionContext.Provider, { value: { isTransitioning: false } }, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    Router,
-    {
-      basename: dataRouterContext.basename,
-      location: state.location,
-      navigationType: state.historyAction,
-      navigator: dataRouterContext.navigator,
-      static: dataRouterContext.static
-    },
-    /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-      DataRoutes2,
-      {
-        routes: router.routes,
-        future: router.future,
-        state
-      }
-    )
-  ))))), hydrateScript ? /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    "script",
-    {
-      suppressHydrationWarning: true,
-      nonce,
-      dangerouslySetInnerHTML: { __html: hydrateScript }
-    }
-  ) : null);
-}
-function DataRoutes2({
-  routes,
-  future,
-  state
-}) {
-  return useRoutesImpl(routes, void 0, state, void 0, future);
-}
-function serializeErrors(errors) {
-  if (!errors) return null;
-  let entries = Object.entries(errors);
-  let serialized = {};
-  for (let [key, val] of entries) {
-    if (isRouteErrorResponse(val)) {
-      serialized[key] = { ...val, __type: "RouteErrorResponse" };
-    } else if (val instanceof Error) {
-      serialized[key] = {
-        message: val.message,
-        __type: "Error",
-        // If this is a subclass (i.e., ReferenceError), send up the type so we
-        // can re-create the same type during hydration.
-        ...val.name !== "Error" ? {
-          __subType: val.name
-        } : {}
-      };
-    } else {
-      serialized[key] = val;
-    }
-  }
-  return serialized;
-}
-function getStatelessNavigator() {
-  return {
-    createHref,
-    encodeLocation,
-    push(to) {
-      throw new Error(
-        `You cannot use navigator.push() on the server because it is a stateless environment. This error was probably triggered when you did a \`navigate(${JSON.stringify(to)})\` somewhere in your app.`
-      );
-    },
-    replace(to) {
-      throw new Error(
-        `You cannot use navigator.replace() on the server because it is a stateless environment. This error was probably triggered when you did a \`navigate(${JSON.stringify(to)}, { replace: true })\` somewhere in your app.`
-      );
-    },
-    go(delta) {
-      throw new Error(
-        `You cannot use navigator.go() on the server because it is a stateless environment. This error was probably triggered when you did a \`navigate(${delta})\` somewhere in your app.`
-      );
-    },
-    back() {
-      throw new Error(
-        `You cannot use navigator.back() on the server because it is a stateless environment.`
-      );
-    },
-    forward() {
-      throw new Error(
-        `You cannot use navigator.forward() on the server because it is a stateless environment.`
-      );
-    }
-  };
-}
-function createStaticHandler2(routes, opts) {
-  return createStaticHandler(routes, {
-    ...opts,
-    mapRouteProperties
-  });
-}
-function createStaticRouter(routes, context, opts = {}) {
-  let manifest = {};
-  let dataRoutes = convertRoutesToDataRoutes(
-    routes,
-    mapRouteProperties,
-    void 0,
-    manifest
-  );
-  let matches = context.matches.map((match) => {
-    let route = manifest[match.route.id] || match.route;
-    return {
-      ...match,
-      route
-    };
-  });
-  let msg = (method) => `You cannot use router.${method}() on the server because it is a stateless environment`;
-  return {
-    get basename() {
-      return context.basename;
-    },
-    get future() {
-      return {
-        v8_middleware: false,
-        ...opts?.future
-      };
-    },
-    get state() {
-      return {
-        historyAction: "POP" /* Pop */,
-        location: context.location,
-        matches,
-        loaderData: context.loaderData,
-        actionData: context.actionData,
-        errors: context.errors,
-        initialized: true,
-        navigation: IDLE_NAVIGATION,
-        restoreScrollPosition: null,
-        preventScrollReset: false,
-        revalidation: "idle",
-        fetchers: /* @__PURE__ */ new Map(),
-        blockers: /* @__PURE__ */ new Map()
-      };
-    },
-    get routes() {
-      return dataRoutes;
-    },
-    get window() {
-      return void 0;
-    },
-    initialize() {
-      throw msg("initialize");
-    },
-    subscribe() {
-      throw msg("subscribe");
-    },
-    enableScrollRestoration() {
-      throw msg("enableScrollRestoration");
-    },
-    navigate() {
-      throw msg("navigate");
-    },
-    fetch() {
-      throw msg("fetch");
-    },
-    revalidate() {
-      throw msg("revalidate");
-    },
-    createHref,
-    encodeLocation,
-    getFetcher() {
-      return IDLE_FETCHER;
-    },
-    deleteFetcher() {
-      throw msg("deleteFetcher");
-    },
-    resetFetcher() {
-      throw msg("resetFetcher");
-    },
-    dispose() {
-      throw msg("dispose");
-    },
-    getBlocker() {
-      return IDLE_BLOCKER;
-    },
-    deleteBlocker() {
-      throw msg("deleteBlocker");
-    },
-    patchRoutes() {
-      throw msg("patchRoutes");
-    },
-    _internalFetchControllers: /* @__PURE__ */ new Map(),
-    _internalSetRoutes() {
-      throw msg("_internalSetRoutes");
-    },
-    _internalSetStateDoNotUseOrYouWillBreakYourApp() {
-      throw msg("_internalSetStateDoNotUseOrYouWillBreakYourApp");
-    }
-  };
-}
-function createHref(to) {
-  return typeof to === "string" ? to : createPath(to);
-}
-function encodeLocation(to) {
-  let href = typeof to === "string" ? to : createPath(to);
-  href = href.replace(/ $/, "%20");
-  let encoded = ABSOLUTE_URL_REGEX3.test(href) ? new URL(href) : new URL(href, "http://localhost");
-  return {
-    pathname: encoded.pathname,
-    search: encoded.search,
-    hash: encoded.hash
-  };
-}
-var ABSOLUTE_URL_REGEX3 = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
-var ESCAPE_LOOKUP2 = {
-  "&": "\\u0026",
-  ">": "\\u003e",
-  "<": "\\u003c",
-  "\u2028": "\\u2028",
-  "\u2029": "\\u2029"
-};
-var ESCAPE_REGEX2 = /[&><\u2028\u2029]/g;
-function htmlEscape(str) {
-  return str.replace(ESCAPE_REGEX2, (match) => ESCAPE_LOOKUP2[match]);
-}
-
-
-
-
-/***/ }),
-
 /***/ "./node_modules/react/cjs/react-jsx-runtime.development.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/react/cjs/react-jsx-runtime.development.js ***!
@@ -89728,24 +79907,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Layout */ "./resources/js/components/Layout.js");
 /* harmony import */ var _Context_CountContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Context/CountContext */ "./resources/js/Context/CountContext.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/development/chunk-NISHYRIK.mjs");
+/* harmony import */ var _components_ErrorBoundary__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/ErrorBoundary */ "./resources/js/components/ErrorBoundary.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
- // ✅ your main layout file
- // ✅ React Context for Dashboard counts
-
-// ✅ Optional: React Router (if you use routing)
 
 
-// ✅ Mount React to the #app element in Blade
+
 
 if (document.getElementById("app")) {
   var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(document.getElementById("app"));
   root.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Context_CountContext__WEBPACK_IMPORTED_MODULE_3__.CountProvider, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.BrowserRouter, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_ErrorBoundary__WEBPACK_IMPORTED_MODULE_4__.ErrorBoundary, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Context_CountContext__WEBPACK_IMPORTED_MODULE_3__.CountProvider, {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {})
       })
     })
@@ -89786,21 +79961,43 @@ if (token) {
 
 /**
  * Set base URL for axios
- * Detect if running in a subfolder or using Laravel dev server
+ * Detect the correct base path including the /public subfolder when running in XAMPP
  */
-var pathname = window.location.pathname;
-var basePath = pathname.split('/')[1];
+var currentPath = window.location.pathname;
+var pathParts = currentPath.split('/');
 
-// List of known Laravel routes (not subfolders)
-var laravelRoutes = ['adminlogin', 'dashboard', 'faculty', 'students', 'reports', 'settings', 'profile', 'admin', 'student', 'login', 'register'];
-
-// Only add base path if it's a real subfolder, not a Laravel route
-if (basePath && basePath !== 'api' && basePath !== 'index.php' && !laravelRoutes.includes(basePath)) {
-  window.axios.defaults.baseURL = "".concat(window.location.origin, "/").concat(basePath);
+// Find the 'public' segment index to correctly detect XAMPP subdirectory
+var publicIndex = pathParts.indexOf('public');
+var axiosBase;
+if (publicIndex > 0) {
+  // Running in a subdirectory with /public (e.g., /UniSys/public/...)
+  axiosBase = window.location.origin + pathParts.slice(0, publicIndex + 1).join('/');
 } else {
-  window.axios.defaults.baseURL = window.location.origin;
+  // Running at root or directly via server (no /public in path)
+  axiosBase = window.location.origin;
 }
+window.axios.defaults.baseURL = axiosBase;
 console.log('Axios baseURL set to:', window.axios.defaults.baseURL);
+
+/**
+ * Attach auth headers on every request from the stored user session.
+ * The backend VerifyApiUser middleware checks these for protected routes.
+ */
+window.axios.interceptors.request.use(function (config) {
+  try {
+    var stored = localStorage.getItem('user');
+    if (stored) {
+      var user = JSON.parse(stored);
+      if (user && user.id) {
+        config.headers['X-User-Id'] = user.id;
+        config.headers['X-User-Role'] = user.role || '';
+      }
+    }
+  } catch (e) {
+    // Ignore parse errors
+  }
+  return config;
+});
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
@@ -89850,8 +80047,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/settings.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/users.js");
-/* harmony import */ var _sass_layout_scss__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../sass/layout.scss */ "./resources/sass/layout.scss");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _TopNavbar__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./TopNavbar */ "./resources/js/components/TopNavbar.js");
+/* harmony import */ var _sass_layout_scss__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../sass/layout.scss */ "./resources/sass/layout.scss");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -89870,11 +80068,12 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
+
 function AdminLayout(_ref) {
   var user = _ref.user,
     onLogout = _ref.onLogout;
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(function () {
-      var path = window.location.pathname.replace("/", "") || "dashboard";
+      var path = window.location.pathname.split("/").pop() || "dashboard";
       var validPages = ["dashboard", "faculty", "students", "subjects", "reports", "settings", "archive", "profile"];
       return validPages.includes(path) ? path : "dashboard";
     }),
@@ -89887,7 +80086,7 @@ function AdminLayout(_ref) {
     setSidebarOpen = _useState4[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     var updatePage = function updatePage() {
-      var path = window.location.pathname.replace("/", "") || "dashboard";
+      var path = window.location.pathname.split("/").pop() || "dashboard";
       var validPages = ["dashboard", "faculty", "students", "subjects", "reports", "settings", "archive", "profile"];
       if (validPages.includes(path)) setPage(path);
     };
@@ -89904,105 +80103,105 @@ function AdminLayout(_ref) {
   var menuItems = [{
     key: "dashboard",
     label: "Dashboard",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
       size: 20
     })
   }, {
     key: "faculty",
     label: "Faculty",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_16__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_16__["default"], {
       size: 20
     })
   }, {
     key: "students",
     label: "Students",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
       size: 20
     })
   }, {
     key: "subjects",
     label: "Subjects",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
       size: 20
     })
   }, {
     key: "reports",
     label: "Reports",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
       size: 20
     })
   }, {
     key: "settings",
     label: "Settings",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_14__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_14__["default"], {
       size: 20
     })
   }, {
     key: "archive",
     label: "Archive",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
       size: 20
     })
   }, {
     key: "profile",
     label: "Profile",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_15__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_15__["default"], {
       size: 20
     })
   }];
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("div", {
     className: "layout",
-    children: [sidebarOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)("div", {
+    children: [sidebarOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("div", {
       className: "sidebar-overlay",
       onClick: function onClick() {
         return setSidebarOpen(false);
       }
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("aside", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("aside", {
       className: "sidebar ".concat(sidebarOpen ? "open" : ""),
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("div", {
         className: "logo-section",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("div", {
           className: "logo-box",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)("h1", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("h1", {
             className: "logo-text",
             children: "UniSys"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("div", {
             className: "logo-icon-wrapper",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
               size: 40,
               strokeWidth: 1.5,
               className: "logo-icon"
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)("span", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("span", {
           className: "role-badge admin",
           children: "Admin Portal"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)("ul", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("ul", {
         className: "nav-menu",
         children: menuItems.map(function (item) {
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("li", {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("li", {
             className: "nav-item ".concat(page === item.key ? "active" : ""),
             onClick: function onClick() {
               return navigate(item.key);
             },
-            children: [item.icon, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)("span", {
+            children: [item.icon, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)("span", {
               children: item.label
             })]
           }, item.key);
         })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("main", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsxs)("main", {
       className: "main-content",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("button", {
-        className: "mobile-menu-btn",
-        onClick: function onClick() {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_TopNavbar__WEBPACK_IMPORTED_MODULE_17__["default"], {
+        user: user,
+        onToggleSidebar: function onToggleSidebar() {
           return setSidebarOpen(!sidebarOpen);
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)("span", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)("span", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)("span", {})]
-      }), page === "dashboard" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(_Dashboard__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        onLogout: onLogout
+      }), page === "dashboard" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_Dashboard__WEBPACK_IMPORTED_MODULE_1__["default"], {
         user: user
-      }), page === "faculty" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(_Faculty__WEBPACK_IMPORTED_MODULE_2__["default"], {}), page === "students" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(_Students__WEBPACK_IMPORTED_MODULE_3__["default"], {}), page === "subjects" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(_Subjects__WEBPACK_IMPORTED_MODULE_4__["default"], {}), page === "reports" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(_Reports__WEBPACK_IMPORTED_MODULE_5__["default"], {}), page === "settings" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(_Settings__WEBPACK_IMPORTED_MODULE_6__["default"], {}), page === "archive" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(_Archive__WEBPACK_IMPORTED_MODULE_7__["default"], {}), page === "profile" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(_Profile__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      }), page === "faculty" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_Faculty__WEBPACK_IMPORTED_MODULE_2__["default"], {}), page === "students" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_Students__WEBPACK_IMPORTED_MODULE_3__["default"], {}), page === "subjects" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_Subjects__WEBPACK_IMPORTED_MODULE_4__["default"], {}), page === "reports" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_Reports__WEBPACK_IMPORTED_MODULE_5__["default"], {}), page === "settings" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_Settings__WEBPACK_IMPORTED_MODULE_6__["default"], {}), page === "archive" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_Archive__WEBPACK_IMPORTED_MODULE_7__["default"], {}), page === "profile" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_Profile__WEBPACK_IMPORTED_MODULE_8__["default"], {
         user: user,
         onLogout: onLogout
       })]
@@ -90481,11 +80680,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Context_CountContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Context/CountContext */ "./resources/js/Context/CountContext.js");
 /* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-chartjs-2 */ "./node_modules/react-chartjs-2/dist/index.js");
 /* harmony import */ var chart_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! chart.js */ "./node_modules/chart.js/dist/chart.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/building-2.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/graduation-cap.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/users.js");
-/* harmony import */ var _sass_dashboard_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../sass/dashboard.scss */ "./resources/sass/dashboard.scss");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/building-2.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/calendar.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/graduation-cap.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/plus.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/trending-up.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/users.js");
+/* harmony import */ var _sass_dashboard_scss__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../sass/dashboard.scss */ "./resources/sass/dashboard.scss");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
 function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
@@ -90509,8 +80712,7 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 chart_js__WEBPACK_IMPORTED_MODULE_4__.Chart.register(chart_js__WEBPACK_IMPORTED_MODULE_4__.CategoryScale, chart_js__WEBPACK_IMPORTED_MODULE_4__.LinearScale, chart_js__WEBPACK_IMPORTED_MODULE_4__.BarElement, chart_js__WEBPACK_IMPORTED_MODULE_4__.ArcElement, chart_js__WEBPACK_IMPORTED_MODULE_4__.Title, chart_js__WEBPACK_IMPORTED_MODULE_4__.Tooltip, chart_js__WEBPACK_IMPORTED_MODULE_4__.Legend);
 function Dashboard(_ref) {
-  var user = _ref.user,
-    onLogout = _ref.onLogout;
+  var user = _ref.user;
   var _useCounts = (0,_Context_CountContext__WEBPACK_IMPORTED_MODULE_2__.useCounts)(),
     counts = _useCounts.counts;
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
@@ -90524,7 +80726,7 @@ function Dashboard(_ref) {
   var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
     _useState6 = _slicedToArray(_useState5, 2),
     chartKey = _useState6[0],
-    setChartKey = _useState6[1]; // Key to force chart re-render
+    setChartKey = _useState6[1];
   var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
       totalStudents: 0,
       totalFaculty: 0,
@@ -90534,48 +80736,22 @@ function Dashboard(_ref) {
     _useState8 = _slicedToArray(_useState7, 2),
     dashboardData = _useState8[0],
     setDashboardData = _useState8[1];
-
-  // Color palette for departments and courses
-  var colorPalette = ['#3b82f6',
-  // Blue
-  '#f59e0b',
-  // Orange
-  '#10b981',
-  // Green
-  '#8b5cf6',
-  // Purple
-  '#ec4899',
-  // Pink
-  '#06b6d4',
-  // Cyan
-  '#ef4444',
-  // Red
-  '#84cc16',
-  // Lime
-  '#f97316',
-  // Dark Orange
-  '#6366f1',
-  // Indigo
-  '#14b8a6',
-  // Teal
-  '#a855f7',
-  // Purple Light
-  '#f43f5e',
-  // Rose
-  '#0ea5e9',
-  // Sky Blue
-  '#eab308',
-  // Yellow
-  '#22c55e' // Green Light
-  ];
-
-  // Function to get consistent color for a label
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState0 = _slicedToArray(_useState9, 2),
+    auditLogs = _useState0[0],
+    setAuditLogs = _useState0[1];
+  var _useState1 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState10 = _slicedToArray(_useState1, 2),
+    upcomingEvents = _useState10[0],
+    setUpcomingEvents = _useState10[1];
+  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    _useState12 = _slicedToArray(_useState11, 2),
+    activeSemester = _useState12[0],
+    setActiveSemester = _useState12[1];
+  var colorPalette = ['#3b82f6', '#f59e0b', '#10b981', '#8b5cf6', '#ec4899', '#06b6d4', '#ef4444', '#84cc16', '#f97316', '#6366f1', '#14b8a6', '#a855f7', '#f43f5e', '#0ea5e9', '#eab308'];
   var getColorForLabel = function getColorForLabel(label, index) {
-    // Use index to cycle through colors
     return colorPalette[index % colorPalette.length];
   };
-
-  // Function to generate colors array based on labels
   var generateColors = function generateColors(labels) {
     return labels.map(function (label, index) {
       return getColorForLabel(label, index);
@@ -90583,8 +80759,6 @@ function Dashboard(_ref) {
   };
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     fetchDashboardData();
-
-    // Listen for data updates from Settings or other components
     var handleDataUpdate = function handleDataUpdate() {
       fetchDashboardData();
       setChartKey(function (prevKey) {
@@ -90593,38 +80767,45 @@ function Dashboard(_ref) {
     };
     window.addEventListener('dataUpdated', handleDataUpdate);
     return function () {
-      window.removeEventListener('dataUpdated', handleDataUpdate);
+      return window.removeEventListener('dataUpdated', handleDataUpdate);
     };
   }, []);
   var fetchDashboardData = /*#__PURE__*/function () {
     var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
-      var _yield$Promise$all, _yield$Promise$all2, studentsRes, facultiesRes, countsRes, activeStudents, activeFaculties, _t;
+      var _yield$Promise$all, _yield$Promise$all2, studentsRes, facultiesRes, countsRes, logsRes, settingsRes, _t;
       return _regenerator().w(function (_context) {
         while (1) switch (_context.p = _context.n) {
           case 0:
             _context.p = 0;
             _context.n = 1;
-            return Promise.all([axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/students"), axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculties"), axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/dashboard-counts")]);
+            return Promise.all([axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/students"), axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculties"), axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/dashboard-counts"), axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/system/audit-logs?limit=5"), axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/system/settings")]);
           case 1:
             _yield$Promise$all = _context.v;
-            _yield$Promise$all2 = _slicedToArray(_yield$Promise$all, 3);
+            _yield$Promise$all2 = _slicedToArray(_yield$Promise$all, 5);
             studentsRes = _yield$Promise$all2[0];
             facultiesRes = _yield$Promise$all2[1];
             countsRes = _yield$Promise$all2[2];
-            activeStudents = studentsRes.data.filter(function (s) {
+            logsRes = _yield$Promise$all2[3];
+            settingsRes = _yield$Promise$all2[4];
+            setStudents(studentsRes.data.filter(function (s) {
               return s.status !== "Archived";
-            });
-            activeFaculties = facultiesRes.data.filter(function (f) {
+            }));
+            setFaculties(facultiesRes.data.filter(function (f) {
               return f.status !== "Archived";
-            });
-            setStudents(activeStudents);
-            setFaculties(activeFaculties);
+            }));
             setDashboardData({
               totalStudents: countsRes.data.students,
               totalFaculty: countsRes.data.faculties,
               totalCourses: countsRes.data.courses,
               totalDepartments: countsRes.data.departments
             });
+            setAuditLogs(logsRes.data);
+            if (settingsRes.data.upcoming_events) {
+              setUpcomingEvents(settingsRes.data.upcoming_events);
+            }
+            if (settingsRes.data.active_semester) {
+              setActiveSemester(settingsRes.data.active_semester);
+            }
             setChartKey(function (prevKey) {
               return prevKey + 1;
             });
@@ -90644,65 +80825,55 @@ function Dashboard(_ref) {
     };
   }();
 
-  // Students per Course Data (dynamically calculated)
+  // Chart Data Calculations
   var courseData = students.reduce(function (acc, student) {
     acc[student.course] = (acc[student.course] || 0) + 1;
     return acc;
   }, {});
-  var courseLabels = Object.keys(courseData);
   var studentsPerCourseData = {
-    labels: courseLabels,
+    labels: Object.keys(courseData),
     datasets: [{
       label: "Students",
       data: Object.values(courseData),
-      backgroundColor: generateColors(courseLabels),
+      backgroundColor: generateColors(Object.keys(courseData)),
       borderRadius: 6
     }]
   };
-
-  // Faculty per Department Data (Doughnut) - dynamically calculated
   var facultyDeptData = faculties.reduce(function (acc, faculty) {
     acc[faculty.department] = (acc[faculty.department] || 0) + 1;
     return acc;
   }, {});
-  var facultyDeptLabels = Object.keys(facultyDeptData);
   var facultyPerDeptData = {
-    labels: facultyDeptLabels,
+    labels: Object.keys(facultyDeptData),
     datasets: [{
       data: Object.values(facultyDeptData),
-      backgroundColor: generateColors(facultyDeptLabels),
+      backgroundColor: generateColors(Object.keys(facultyDeptData)),
       borderWidth: 0
     }]
   };
-
-  // Students per Department Data - dynamically calculated
   var studentDeptData = students.reduce(function (acc, student) {
     acc[student.department] = (acc[student.department] || 0) + 1;
     return acc;
   }, {});
-  var studentDeptLabels = Object.keys(studentDeptData);
   var studentsPerDeptData = {
-    labels: studentDeptLabels,
+    labels: Object.keys(studentDeptData),
     datasets: [{
       label: "Students",
       data: Object.values(studentDeptData),
-      backgroundColor: generateColors(studentDeptLabels),
+      backgroundColor: generateColors(Object.keys(studentDeptData)),
       borderRadius: 6
     }]
   };
-
-  // Enrollment by Year Level Data - dynamically calculated
   var yearLevelData = students.reduce(function (acc, student) {
     acc[student.year_level] = (acc[student.year_level] || 0) + 1;
     return acc;
   }, {});
-  var yearLevelLabels = Object.keys(yearLevelData);
   var enrollmentData = {
-    labels: yearLevelLabels,
+    labels: Object.keys(yearLevelData),
     datasets: [{
       label: "Students",
       data: Object.values(yearLevelData),
-      backgroundColor: generateColors(yearLevelLabels),
+      backgroundColor: generateColors(Object.keys(yearLevelData)),
       borderRadius: 6
     }]
   };
@@ -90741,192 +80912,495 @@ function Dashboard(_ref) {
       }
     }
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
     className: "dashboard-container",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
       className: "dashboard-header",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+      style: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center'
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
         className: "header-left",
-        children: [user && user.profile_photo && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("img", {
-          src: user.profile_photo,
-          alt: user.username,
-          className: "user-avatar"
-        }), user && !user.profile_photo && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
-          className: "user-avatar-placeholder",
-          children: user.username ? user.username.charAt(0).toUpperCase() : 'U'
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h2", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("h2", {
             children: "Dashboard Overview"
-          }), user && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("p", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("p", {
             className: "welcome-text",
-            children: ["Welcome, ", user.username, "!"]
+            style: {
+              margin: 0
+            },
+            children: activeSemester ? "Active Semester: ".concat(activeSemester) : 'System Overview'
           })]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+        className: "quick-actions",
+        style: {
+          display: 'flex',
+          gap: '10px'
+        },
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("button", {
+          className: "primary-btn",
+          onClick: function onClick() {
+            return window.history.pushState({}, '', '/students');
+          },
+          style: {
+            display: 'flex',
+            alignItems: 'center',
+            gap: '5px',
+            padding: '8px 12px',
+            background: '#3b82f6',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '6px',
+            cursor: 'pointer'
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
+            size: 16
+          }), " Add Student"]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("button", {
+          className: "secondary-btn",
+          onClick: function onClick() {
+            return window.history.pushState({}, '', '/faculty');
+          },
+          style: {
+            display: 'flex',
+            alignItems: 'center',
+            gap: '5px',
+            padding: '8px 12px',
+            background: '#f1f5f9',
+            color: '#1e293b',
+            border: '1px solid #cbd5e1',
+            borderRadius: '6px',
+            cursor: 'pointer'
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
+            size: 16
+          }), " Add Faculty"]
         })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
       className: "dashboard-content",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
         className: "cards-grid",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
           className: "info-card",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
             className: "card-content",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h3", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("h3", {
               children: "Total Students"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("p", {
               className: "card-value",
               children: dashboardData.totalStudents
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+              style: {
+                display: 'flex',
+                alignItems: 'center',
+                color: '#10b981',
+                fontSize: '0.8rem',
+                marginTop: '5px'
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
+                size: 14,
+                style: {
+                  marginRight: '4px'
+                }
+              }), " +5.2% this month"]
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
             className: "card-icon",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
               size: 32,
               strokeWidth: 1.5
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
           className: "info-card",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
             className: "card-content",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h3", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("h3", {
               children: "Total Courses"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("p", {
               className: "card-value",
               children: dashboardData.totalCourses
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+              style: {
+                display: 'flex',
+                alignItems: 'center',
+                color: '#10b981',
+                fontSize: '0.8rem',
+                marginTop: '5px'
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
+                size: 14,
+                style: {
+                  marginRight: '4px'
+                }
+              }), " +1.0% this month"]
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
             className: "card-icon",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
               size: 32,
               strokeWidth: 1.5
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
           className: "info-card",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
             className: "card-content",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h3", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("h3", {
               children: "Total Faculty"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("p", {
               className: "card-value",
               children: dashboardData.totalFaculty
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+              style: {
+                display: 'flex',
+                alignItems: 'center',
+                color: '#10b981',
+                fontSize: '0.8rem',
+                marginTop: '5px'
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
+                size: 14,
+                style: {
+                  marginRight: '4px'
+                }
+              }), " +2.4% this month"]
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
             className: "card-icon",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
               size: 32,
               strokeWidth: 1.5
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
           className: "info-card",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
             className: "card-content",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h3", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("h3", {
               children: "Total Departments"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("p", {
               className: "card-value",
               children: dashboardData.totalDepartments
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
             className: "card-icon",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
               size: 32,
               strokeWidth: 1.5
             })
           })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-        className: "chart-section",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-          className: "chart-box",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-            className: "chart-header",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h3", {
-              children: "Students per Course"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("p", {
-              className: "chart-subtitle",
-              children: ["Distribution of ", dashboardData.totalStudents, " active students across programs"]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+        style: {
+          display: 'grid',
+          gridTemplateColumns: '1fr 300px',
+          gap: '1.5rem',
+          marginBottom: '1.5rem',
+          alignItems: 'start'
+        },
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+          className: "chart-section",
+          style: {
+            margin: 0
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+            className: "chart-box",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+              className: "chart-header",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("h3", {
+                children: "Students per Course"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+              className: "chart-canvas",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_chartjs_2__WEBPACK_IMPORTED_MODULE_3__.Bar, {
+                data: studentsPerCourseData,
+                options: chartOptions
+              }, "c-c-".concat(chartKey))
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
-            className: "chart-canvas",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_chartjs_2__WEBPACK_IMPORTED_MODULE_3__.Bar, {
-              data: studentsPerCourseData,
-              options: chartOptions
-            }, "course-chart-".concat(chartKey))
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-          className: "chart-box",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-            className: "chart-header",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h3", {
-              children: "Faculty per Department"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
-              className: "chart-subtitle",
-              children: "Distribution of faculty across various departments"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+            className: "chart-box",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+              className: "chart-header",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("h3", {
+                children: "Faculty per Department"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+              className: "chart-canvas",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_chartjs_2__WEBPACK_IMPORTED_MODULE_3__.Doughnut, {
+                data: facultyPerDeptData,
+                options: doughnutOptions
+              }, "f-c-".concat(chartKey))
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
-            className: "chart-canvas",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_chartjs_2__WEBPACK_IMPORTED_MODULE_3__.Doughnut, {
-              data: facultyPerDeptData,
-              options: doughnutOptions
-            }, "faculty-chart-".concat(chartKey))
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-          className: "chart-box",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-            className: "chart-header",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h3", {
-              children: "Students per Department"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
-              className: "chart-subtitle",
-              children: "Student enrollment across academic departments"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+            className: "chart-box",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+              className: "chart-header",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("h3", {
+                children: "Students per Department"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+              className: "chart-canvas",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_chartjs_2__WEBPACK_IMPORTED_MODULE_3__.Bar, {
+                data: studentsPerDeptData,
+                options: chartOptions
+              }, "s-d-c-".concat(chartKey))
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
-            className: "chart-canvas",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_chartjs_2__WEBPACK_IMPORTED_MODULE_3__.Bar, {
-              data: studentsPerDeptData,
-              options: chartOptions
-            }, "dept-chart-".concat(chartKey))
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-          className: "chart-box",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-            className: "chart-header",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h3", {
-              children: "Students by Year Level"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
-              className: "chart-subtitle",
-              children: "Student distribution across year levels"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+            className: "chart-box",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+              className: "chart-header",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("h3", {
+                children: "Students by Year Level"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+              className: "chart-canvas",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_chartjs_2__WEBPACK_IMPORTED_MODULE_3__.Bar, {
+                data: enrollmentData,
+                options: chartOptions
+              }, "y-c-".concat(chartKey))
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
-            className: "chart-canvas",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_chartjs_2__WEBPACK_IMPORTED_MODULE_3__.Bar, {
-              data: enrollmentData,
-              options: chartOptions
-            }, "year-chart-".concat(chartKey))
           })]
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-        className: "activity-section",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h3", {
-          children: "Recent Activity"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-          className: "activity-item",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
-            children: "System updated successfully"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-            className: "activity-time",
-            children: "Now"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+          style: {
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '1.5rem'
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+            className: "activity-section",
+            style: {
+              background: 'var(--card-bg, #fff)',
+              border: '1px solid var(--border-color, #e2e8f0)',
+              padding: '1.5rem',
+              borderRadius: '12px'
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("h3", {
+              style: {
+                marginTop: 0,
+                marginBottom: '1rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px'
+              },
+              children: "Recent Activity"
+            }), auditLogs.length > 0 ? auditLogs.map(function (log) {
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+                className: "activity-item",
+                style: {
+                  marginBottom: '1rem',
+                  paddingBottom: '1rem',
+                  borderBottom: '1px solid var(--border-color, #f1f5f9)'
+                },
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("p", {
+                  style: {
+                    margin: 0,
+                    fontSize: '0.9rem',
+                    fontWeight: 500
+                  },
+                  children: log.action
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("p", {
+                  style: {
+                    margin: '4px 0 0',
+                    fontSize: '0.8rem',
+                    color: 'var(--text-muted, #64748b)'
+                  },
+                  children: log.description
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("span", {
+                  className: "activity-time",
+                  style: {
+                    fontSize: '0.75rem',
+                    color: '#94a3b8'
+                  },
+                  children: new Date(log.created_at).toLocaleString()
+                })]
+              }, log.id);
+            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("p", {
+              className: "activity-detail",
+              children: "No recent activity found."
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+            className: "activity-section",
+            style: {
+              background: 'var(--card-bg, #fff)',
+              border: '1px solid var(--border-color, #e2e8f0)',
+              padding: '1.5rem',
+              borderRadius: '12px'
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("h3", {
+              style: {
+                marginTop: 0,
+                marginBottom: '1rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px'
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                size: 18
+              }), " Upcoming Events"]
+            }), upcomingEvents.length > 0 ? upcomingEvents.map(function (ev, idx) {
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+                style: {
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  marginBottom: '10px',
+                  padding: '8px',
+                  background: 'var(--hover-bg, #f8fafc)',
+                  borderRadius: '6px'
+                },
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("span", {
+                  style: {
+                    fontSize: '0.9rem',
+                    fontWeight: 500
+                  },
+                  children: ev.title
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("span", {
+                  style: {
+                    fontSize: '0.85rem',
+                    color: 'var(--primary-color, #3b82f6)',
+                    fontWeight: 600
+                  },
+                  children: ev.date
+                })]
+              }, idx);
+            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("p", {
+              style: {
+                fontSize: '0.9rem',
+                color: 'var(--text-muted, #64748b)'
+              },
+              children: "No upcoming events."
+            })]
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("p", {
-          className: "activity-detail",
-          children: [dashboardData.totalStudents, " students and ", dashboardData.totalFaculty, " faculty members currently active"]
         })]
       })]
     })]
   });
 }
+
+/***/ }),
+
+/***/ "./resources/js/components/ErrorBoundary.js":
+/*!**************************************************!*\
+  !*** ./resources/js/components/ErrorBoundary.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ErrorBoundary: () => (/* binding */ ErrorBoundary)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
+function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
+function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _callSuper(t, o, e) { return o = _getPrototypeOf(o), _possibleConstructorReturn(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], _getPrototypeOf(t).constructor) : o.apply(t, e)); }
+function _possibleConstructorReturn(t, e) { if (e && ("object" == _typeof(e) || "function" == typeof e)) return e; if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined"); return _assertThisInitialized(t); }
+function _assertThisInitialized(e) { if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); return e; }
+function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
+function _getPrototypeOf(t) { return _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function (t) { return t.__proto__ || Object.getPrototypeOf(t); }, _getPrototypeOf(t); }
+function _inherits(t, e) { if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function"); t.prototype = Object.create(e && e.prototype, { constructor: { value: t, writable: !0, configurable: !0 } }), Object.defineProperty(t, "prototype", { writable: !1 }), e && _setPrototypeOf(t, e); }
+function _setPrototypeOf(t, e) { return _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function (t, e) { return t.__proto__ = e, t; }, _setPrototypeOf(t, e); }
+
+
+var ErrorBoundary = /*#__PURE__*/function (_React$Component) {
+  function ErrorBoundary(props) {
+    var _this;
+    _classCallCheck(this, ErrorBoundary);
+    _this = _callSuper(this, ErrorBoundary, [props]);
+    _this.state = {
+      hasError: false,
+      error: null
+    };
+    return _this;
+  }
+  _inherits(ErrorBoundary, _React$Component);
+  return _createClass(ErrorBoundary, [{
+    key: "componentDidCatch",
+    value: function componentDidCatch(error, info) {
+      console.error('ErrorBoundary caught:', error, info);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      if (this.state.hasError) {
+        var _this$state$error;
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          style: {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            height: '100vh',
+            fontFamily: 'Inter, sans-serif',
+            background: '#f8fafc',
+            color: '#1e293b',
+            padding: '2rem',
+            textAlign: 'center'
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
+            style: {
+              color: '#dc2626',
+              marginBottom: '1rem'
+            },
+            children: "Something went wrong"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            style: {
+              color: '#64748b',
+              marginBottom: '1rem'
+            },
+            children: "The application encountered an error. Please refresh the page."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("pre", {
+            style: {
+              background: '#fee2e2',
+              padding: '1rem',
+              borderRadius: '8px',
+              fontSize: '0.8rem',
+              maxWidth: '600px',
+              overflowX: 'auto',
+              color: '#991b1b',
+              textAlign: 'left'
+            },
+            children: (_this$state$error = this.state.error) === null || _this$state$error === void 0 ? void 0 : _this$state$error.toString()
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+            onClick: function onClick() {
+              return window.location.reload();
+            },
+            style: {
+              marginTop: '1rem',
+              padding: '10px 24px',
+              background: '#3b82f6',
+              color: '#fff',
+              border: 'none',
+              borderRadius: '8px',
+              cursor: 'pointer',
+              fontSize: '1rem'
+            },
+            children: "Reload Page"
+          })]
+        });
+      }
+      return this.props.children;
+    }
+  }], [{
+    key: "getDerivedStateFromError",
+    value: function getDerivedStateFromError(error) {
+      return {
+        hasError: true,
+        error: error
+      };
+    }
+  }]);
+}((react__WEBPACK_IMPORTED_MODULE_0___default().Component));
 
 /***/ }),
 
@@ -91799,9 +82273,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/building-2.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/users.js");
-/* harmony import */ var _sass_faculty_dashboard_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../sass/faculty-dashboard.scss */ "./resources/sass/faculty-dashboard.scss");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/calendar.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/plus.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/users.js");
+/* harmony import */ var _sass_faculty_dashboard_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../sass/faculty-dashboard.scss */ "./resources/sass/faculty-dashboard.scss");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -91823,114 +82299,188 @@ function FacultyDashboard(_ref) {
     _useState4 = _slicedToArray(_useState3, 2),
     studentCount = _useState4[0],
     setStudentCount = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    _useState6 = _slicedToArray(_useState5, 2),
+    activeSemester = _useState6[0],
+    setActiveSemester = _useState6[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     if (!(user !== null && user !== void 0 && user.id)) return;
-    // Fetch faculty's subjects
     axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculty/".concat(user.id, "/subjects")).then(function (res) {
       return setSubjects(res.data);
     })["catch"](console.error);
-    // Fetch students under department
     axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculty/".concat(user.id, "/students")).then(function (res) {
       return setStudentCount(res.data.length);
     })["catch"](console.error);
+    axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/system/settings").then(function (res) {
+      if (res.data.active_semester) setActiveSemester(res.data.active_semester);
+    })["catch"](console.error);
   }, [user]);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
     className: "faculty-dash",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
       className: "dash-header",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("h2", {
-        children: ["Welcome, ", (user === null || user === void 0 ? void 0 : user.first_name) || (user === null || user === void 0 ? void 0 : user.name) || "Faculty", "!"]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("p", {
-        className: "subtitle",
-        children: ["Faculty Dashboard \u2014 ", (user === null || user === void 0 ? void 0 : user.department) || "Department"]
+      style: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: '20px'
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("h2", {
+          children: ["Welcome, ", (user === null || user === void 0 ? void 0 : user.name) || (user === null || user === void 0 ? void 0 : user.first_name) || "Faculty", "!"]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("p", {
+          className: "subtitle",
+          style: {
+            margin: 0
+          },
+          children: ["Faculty Dashboard \u2014 ", (user === null || user === void 0 ? void 0 : user.department) || "Department"]
+        }), activeSemester && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("p", {
+          style: {
+            margin: '5px 0 0',
+            fontSize: '0.85rem',
+            color: '#64748b'
+          },
+          children: ["Semester: ", activeSemester]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+        className: "quick-actions",
+        style: {
+          display: 'flex',
+          gap: '10px'
+        },
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("button", {
+          className: "primary-btn",
+          onClick: function onClick() {
+            return window.history.pushState({}, '', '/faculty-subjects');
+          },
+          style: {
+            display: 'flex',
+            alignItems: 'center',
+            gap: '5px',
+            padding: '8px 12px',
+            background: '#0d7c66',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '6px',
+            cursor: 'pointer'
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            size: 16
+          }), " Add Grades"]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("button", {
+          className: "secondary-btn",
+          onClick: function onClick() {
+            return window.history.pushState({}, '', '/faculty-subjects');
+          },
+          style: {
+            display: 'flex',
+            alignItems: 'center',
+            gap: '5px',
+            padding: '8px 12px',
+            background: '#f1f5f9',
+            color: '#1e293b',
+            border: '1px solid #cbd5e1',
+            borderRadius: '6px',
+            cursor: 'pointer'
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            size: 16
+          }), " View Schedule"]
+        })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
       className: "stats-grid",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
         className: "stat-card blue",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
           className: "stat-icon",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
             size: 28
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
           className: "stat-info",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
             className: "stat-number",
             children: studentCount
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
             className: "stat-label",
             children: "Students in Department"
           })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
         className: "stat-card green",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
           className: "stat-icon",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
             size: 28
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
           className: "stat-info",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
             className: "stat-number",
             children: subjects.length
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
             className: "stat-label",
             children: "Subjects Assigned"
           })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
         className: "stat-card gold",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
           className: "stat-icon",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
             size: 28
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
           className: "stat-info",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
             className: "stat-number",
             children: (user === null || user === void 0 ? void 0 : user.department) || "—"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
             className: "stat-label",
             children: "Department"
           })]
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
       className: "subjects-section",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("h3", {
-        children: "\uD83D\uDCDA Subject Overview"
-      }), subjects.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h3", {
+        children: "\uD83D\uDCDA Recent Subject Schedule"
+      }), subjects.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("p", {
         className: "empty-state",
         children: "No subjects assigned yet."
-      }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
         className: "subject-cards",
         children: subjects.map(function (s) {
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
             className: "subject-card",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+            onClick: function onClick() {
+              return window.history.pushState({}, '', '/faculty-subjects');
+            },
+            style: {
+              cursor: 'pointer'
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
               className: "subject-code",
               children: s.code
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("h4", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h4", {
               className: "subject-name",
               children: s.name
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
               className: "subject-meta",
-              children: [s.schedule_day && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+              children: [s.schedule_day && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("span", {
                 children: ["\uD83D\uDCC5 ", s.schedule_day]
-              }), (s.time_start || s.time_end) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+              }), (s.time_start || s.time_end) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("span", {
                 children: ["\uD83D\uDD50 ", s.time_start, " - ", s.time_end]
-              }), s.room && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+              }), s.room && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("span", {
                 children: ["\uD83D\uDCCD ", s.room.name]
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
               className: "subject-footer",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
                 className: "semester-badge",
                 children: s.semester || "—"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
                 className: "year-badge",
                 children: s.academic_year || "—"
               })]
@@ -91966,14 +82516,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/layout-dashboard.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/users.js");
-/* harmony import */ var _sass_faculty_layout_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../sass/faculty-layout.scss */ "./resources/sass/faculty-layout.scss");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _TopNavbar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./TopNavbar */ "./resources/js/components/TopNavbar.js");
+/* harmony import */ var _sass_faculty_layout_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../sass/faculty-layout.scss */ "./resources/sass/faculty-layout.scss");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
 
 
 
@@ -91995,7 +82547,7 @@ function FacultyLayout(_ref) {
     setSidebarOpen = _useState4[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     var updatePage = function updatePage() {
-      var path = window.location.pathname.replace("/", "");
+      var path = window.location.pathname.split("/").pop();
       var valid = ["faculty-dashboard", "faculty-students", "faculty-subjects", "faculty-profile"];
       if (valid.includes(path)) setPage(path);
     };
@@ -92012,85 +82564,85 @@ function FacultyLayout(_ref) {
   var menuItems = [{
     key: "faculty-dashboard",
     label: "Dashboard",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
       size: 20
     })
   }, {
     key: "faculty-subjects",
     label: "My Subjects",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
       size: 20
     })
   }, {
     key: "faculty-students",
     label: "My Students",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
       size: 20
     })
   }, {
     key: "faculty-profile",
     label: "Profile",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
       size: 20
     })
   }];
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
     className: "layout faculty-layout",
-    children: [sidebarOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
+    children: [sidebarOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
       className: "sidebar-overlay",
       onClick: function onClick() {
         return setSidebarOpen(false);
       }
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)("aside", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("aside", {
       className: "sidebar ".concat(sidebarOpen ? "open" : ""),
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
         className: "logo-section",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
           className: "logo-box",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("h1", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("h1", {
             className: "logo-text",
             children: "UniSys"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
             className: "logo-icon-wrapper",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
               size: 40,
               strokeWidth: 1.5,
               className: "logo-icon"
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("span", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("span", {
           className: "role-badge faculty",
           children: "Faculty Portal"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("ul", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("ul", {
         className: "nav-menu",
         children: menuItems.map(function (item) {
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)("li", {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("li", {
             className: "nav-item ".concat(page === item.key ? "active" : ""),
             onClick: function onClick() {
               return navigate(item.key);
             },
-            children: [item.icon, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("span", {
+            children: [item.icon, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("span", {
               children: item.label
             })]
           }, item.key);
         })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)("main", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("main", {
       className: "main-content",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)("button", {
-        className: "mobile-menu-btn",
-        onClick: function onClick() {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_TopNavbar__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        user: user,
+        onToggleSidebar: function onToggleSidebar() {
           return setSidebarOpen(!sidebarOpen);
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("span", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("span", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("span", {})]
-      }), page === "faculty-dashboard" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_FacultyDashboard__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        onLogout: onLogout
+      }), page === "faculty-dashboard" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_FacultyDashboard__WEBPACK_IMPORTED_MODULE_1__["default"], {
         user: user
-      }), page === "faculty-subjects" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_FacultySubjects__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), page === "faculty-subjects" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_FacultySubjects__WEBPACK_IMPORTED_MODULE_3__["default"], {
         user: user
-      }), page === "faculty-students" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_FacultyStudents__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), page === "faculty-students" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_FacultyStudents__WEBPACK_IMPORTED_MODULE_2__["default"], {
         user: user
-      }), page === "faculty-profile" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_Profile__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }), page === "faculty-profile" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_Profile__WEBPACK_IMPORTED_MODULE_4__["default"], {
         user: user,
         onLogout: onLogout
       })]
@@ -93294,7 +83846,8 @@ function Layout() {
     user = _useState4[0],
     setUser = _useState4[1];
   var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(function () {
-      if (window.location.pathname === "/reset-password") return "reset-password";
+      var lastSegment = window.location.pathname.split("/").pop();
+      if (lastSegment === "reset-password") return "reset-password";
       return "login";
     }),
     _useState6 = _slicedToArray(_useState5, 2),
@@ -93451,8 +84004,9 @@ function LoginPage(_ref) {
     onFacultyRegister = _ref.onFacultyRegister,
     onForgotPassword = _ref.onForgotPassword;
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
-      identifier: "",
-      password: ""
+      username: "",
+      password: "",
+      remember: false
     }),
     _useState2 = _slicedToArray(_useState, 2),
     credentials = _useState2[0],
@@ -93471,28 +84025,29 @@ function LoginPage(_ref) {
     setShowPassword = _useState8[1];
   var handleSubmit = /*#__PURE__*/function () {
     var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee(e) {
-      var identifier, password, _response$data, response, _response$data2, _err$response, _err$response2, serverMsg, _t;
+      var username, password, _response$data, response, _response$data2, _err$response, _err$response2, serverMsg, _t;
       return _regenerator().w(function (_context) {
         while (1) switch (_context.p = _context.n) {
           case 0:
             e.preventDefault();
             setError("");
             setLoading(true);
-            identifier = (credentials.identifier || "").trim();
+            username = (credentials.username || "").trim();
             password = credentials.password || "";
-            if (!(!identifier || !password)) {
+            if (!(!username || !password)) {
               _context.n = 1;
               break;
             }
-            setError("Please enter your email/username and password.");
+            setError("Please enter your username and password.");
             setLoading(false);
             return _context.a(2);
           case 1:
             _context.p = 1;
             _context.n = 2;
             return axios__WEBPACK_IMPORTED_MODULE_1___default().post("/api/login", {
-              identifier: identifier,
-              password: password
+              username: username,
+              password: password,
+              remember: credentials.remember
             }, {
               withCredentials: true
             });
@@ -93523,6 +84078,52 @@ function LoginPage(_ref) {
       return _ref2.apply(this, arguments);
     };
   }();
+  var getRoleBadge = function getRoleBadge(username) {
+    var prefix = username.substring(0, 3).toUpperCase();
+    if (prefix === 'ADM') return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+      style: {
+        background: '#f97316',
+        color: 'white',
+        padding: '2px 8px',
+        borderRadius: '12px',
+        fontSize: '0.65rem',
+        marginLeft: '10px',
+        verticalAlign: 'middle',
+        textTransform: 'uppercase',
+        letterSpacing: '0.5px'
+      },
+      children: "Admin"
+    });
+    if (prefix === 'FAC') return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+      style: {
+        background: '#3b82f6',
+        color: 'white',
+        padding: '2px 8px',
+        borderRadius: '12px',
+        fontSize: '0.65rem',
+        marginLeft: '10px',
+        verticalAlign: 'middle',
+        textTransform: 'uppercase',
+        letterSpacing: '0.5px'
+      },
+      children: "Faculty"
+    });
+    if (prefix === 'STU') return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+      style: {
+        background: '#22c55e',
+        color: 'white',
+        padding: '2px 8px',
+        borderRadius: '12px',
+        fontSize: '0.65rem',
+        marginLeft: '10px',
+        verticalAlign: 'middle',
+        textTransform: 'uppercase',
+        letterSpacing: '0.5px'
+      },
+      children: "Student"
+    });
+    return null;
+  };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
     className: "login-page",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
@@ -93570,15 +84171,19 @@ function LoginPage(_ref) {
           className: "login-form",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
             className: "form-group",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
-              children: "Email or Username"
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("label", {
+              style: {
+                display: 'flex',
+                alignItems: 'center'
+              },
+              children: ["Username", getRoleBadge(credentials.username)]
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
               type: "text",
-              placeholder: "Enter your email or username",
-              value: credentials.identifier,
+              placeholder: "Enter your username",
+              value: credentials.username,
               onChange: function onChange(e) {
                 return setCredentials(_objectSpread(_objectSpread({}, credentials), {}, {
-                  identifier: e.target.value
+                  username: e.target.value
                 }));
               },
               autoComplete: "username",
@@ -93613,20 +84218,49 @@ function LoginPage(_ref) {
                   size: 18
                 })
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
               style: {
-                textAlign: "right",
-                marginTop: "0.5rem"
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                marginTop: '0.75rem'
               },
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("label", {
+                style: {
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  margin: 0,
+                  fontWeight: '500',
+                  color: '#64748b',
+                  fontSize: '0.85rem',
+                  cursor: 'pointer'
+                },
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+                  type: "checkbox",
+                  checked: credentials.remember,
+                  onChange: function onChange(e) {
+                    return setCredentials(_objectSpread(_objectSpread({}, credentials), {}, {
+                      remember: e.target.checked
+                    }));
+                  },
+                  style: {
+                    width: '16px',
+                    height: '16px',
+                    margin: 0,
+                    cursor: 'pointer'
+                  }
+                }), "Remember Me"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
                 type: "button",
                 className: "link-btn",
                 onClick: onForgotPassword,
                 style: {
-                  fontSize: "0.85rem"
+                  fontSize: "0.85rem",
+                  padding: 0
                 },
                 children: "Forgot Password?"
-              })
+              })]
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
             type: "submit",
@@ -93672,22 +84306,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/briefcase.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/camera.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/graduation-cap.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/log-out.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/mail.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
-/* harmony import */ var _sass_profile_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../sass/profile.scss */ "./resources/sass/profile.scss");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/chart-pie.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/activity.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/building-2.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/calendar.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/camera.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/chevron-right.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/clock.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/graduation-cap.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/info.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/key.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/layout-dashboard.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/list-checks.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/log-out.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/map-pin.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/phone.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/shield.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/users.js");
+/* harmony import */ var _sass_profile_scss__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../sass/profile.scss */ "./resources/sass/profile.scss");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
-function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
+function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
@@ -93702,6 +84348,7 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 function Profile(_ref) {
+  var _currentUser$status2;
   var user = _ref.user,
     onLogout = _ref.onLogout;
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(user),
@@ -93712,39 +84359,138 @@ function Profile(_ref) {
     _useState4 = _slicedToArray(_useState3, 2),
     uploading = _useState4[0],
     setUploading = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+      students: 0,
+      faculties: 0,
+      departments: 0
+    }),
+    _useState6 = _slicedToArray(_useState5, 2),
+    stats = _useState6[0],
+    setStats = _useState6[1];
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState8 = _slicedToArray(_useState7, 2),
+    activity = _useState8[0],
+    setActivity = _useState8[1];
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState0 = _slicedToArray(_useState9, 2),
+    subjects = _useState0[0],
+    setSubjects = _useState0[1];
+  var _useState1 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true),
+    _useState10 = _slicedToArray(_useState1, 2),
+    loadingExtras = _useState10[0],
+    setLoadingExtras = _useState10[1];
+  var role = (currentUser === null || currentUser === void 0 ? void 0 : currentUser.role) || "admin";
+  var fullName = "".concat((currentUser === null || currentUser === void 0 ? void 0 : currentUser.first_name) || "", " ").concat((currentUser === null || currentUser === void 0 ? void 0 : currentUser.last_name) || "").trim() || (currentUser === null || currentUser === void 0 ? void 0 : currentUser.name) || "User";
+  var initials = fullName.split(" ").map(function (n) {
+    return n[0];
+  }).join("").toUpperCase().slice(0, 2);
+
+  // Format IDs based on role requirements
+  var formattedId = function formattedId() {
+    if (role === "admin") return (currentUser === null || currentUser === void 0 ? void 0 : currentUser.username) || "ADM-2024-0001";
+    if (role === "faculty") return (currentUser === null || currentUser === void 0 ? void 0 : currentUser.faculty_id) || "FAC-IT-001";
+    if (role === "student") return (currentUser === null || currentUser === void 0 ? void 0 : currentUser.student_id) || "STU-2026-0001";
+    return "—";
+  };
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     var savedUser = localStorage.getItem("user");
     if (savedUser) setCurrentUser(JSON.parse(savedUser));
+    fetchRoleSpecificData();
   }, []);
-  var role = (currentUser === null || currentUser === void 0 ? void 0 : currentUser.role) || "admin";
-  var displayName = (currentUser === null || currentUser === void 0 ? void 0 : currentUser.name) || "".concat((currentUser === null || currentUser === void 0 ? void 0 : currentUser.first_name) || "", " ").concat((currentUser === null || currentUser === void 0 ? void 0 : currentUser.last_name) || "").trim() || "User";
-  var displayId = (currentUser === null || currentUser === void 0 ? void 0 : currentUser.student_id) || (currentUser === null || currentUser === void 0 ? void 0 : currentUser.faculty_id) || (currentUser === null || currentUser === void 0 ? void 0 : currentUser.username) || "—";
-  var handlePhotoUpload = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee(e) {
-      var file, formData, reader, _t;
+  var fetchRoleSpecificData = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
+      var _yield$Promise$all, _yield$Promise$all2, countsRes, logsRes, subRes, _subRes, _t;
       return _regenerator().w(function (_context) {
         while (1) switch (_context.p = _context.n) {
           case 0:
-            file = e.target.files[0];
-            if (file) {
-              _context.n = 1;
+            setLoadingExtras(true);
+            _context.p = 1;
+            if (!(role === "admin")) {
+              _context.n = 3;
               break;
             }
+            _context.n = 2;
+            return Promise.all([axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/dashboard-counts"), axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/system/audit-logs")]);
+          case 2:
+            _yield$Promise$all = _context.v;
+            _yield$Promise$all2 = _slicedToArray(_yield$Promise$all, 2);
+            countsRes = _yield$Promise$all2[0];
+            logsRes = _yield$Promise$all2[1];
+            setStats({
+              students: countsRes.data.students || 0,
+              faculties: countsRes.data.faculties || 0,
+              departments: countsRes.data.departments || 0
+            });
+            setActivity((logsRes.data || []).slice(0, 4));
+            _context.n = 7;
+            break;
+          case 3:
+            if (!(role === "faculty")) {
+              _context.n = 5;
+              break;
+            }
+            _context.n = 4;
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculty/".concat(currentUser.id, "/subjects"));
+          case 4:
+            subRes = _context.v;
+            setSubjects(subRes.data || []);
+            _context.n = 7;
+            break;
+          case 5:
+            if (!(role === "student")) {
+              _context.n = 7;
+              break;
+            }
+            _context.n = 6;
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/student/".concat(currentUser.id, "/subjects"));
+          case 6:
+            _subRes = _context.v;
+            setSubjects(_subRes.data || []);
+          case 7:
+            _context.n = 9;
+            break;
+          case 8:
+            _context.p = 8;
+            _t = _context.v;
+            console.error("Failed to fetch profile extras:", _t);
+          case 9:
+            _context.p = 9;
+            setLoadingExtras(false);
+            return _context.f(9);
+          case 10:
             return _context.a(2);
+        }
+      }, _callee, null, [[1, 8, 9, 10]]);
+    }));
+    return function fetchRoleSpecificData() {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+  var handlePhotoUpload = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2(e) {
+      var file, formData, reader, _t2;
+      return _regenerator().w(function (_context2) {
+        while (1) switch (_context2.p = _context2.n) {
+          case 0:
+            file = e.target.files[0];
+            if (file) {
+              _context2.n = 1;
+              break;
+            }
+            return _context2.a(2);
           case 1:
             setUploading(true);
-            _context.p = 2;
+            _context2.p = 2;
             formData = new FormData();
             formData.append("profile_picture", file);
             formData.append("user_id", currentUser.id);
-            _context.n = 3;
+            _context2.n = 3;
             return axios__WEBPACK_IMPORTED_MODULE_1___default().post("/api/user/profile/update", formData, {
               headers: {
                 "Content-Type": "multipart/form-data"
               }
             });
           case 3:
-            // Create a preview URL
             reader = new FileReader();
             reader.onload = function (ev) {
               var updated = _objectSpread(_objectSpread({}, currentUser), {}, {
@@ -93755,263 +84501,717 @@ function Profile(_ref) {
               window.dispatchEvent(new Event("profileUpdated"));
             };
             reader.readAsDataURL(file);
-            _context.n = 5;
+            _context2.n = 5;
             break;
           case 4:
-            _context.p = 4;
-            _t = _context.v;
-            console.error("Upload failed:", _t);
+            _context2.p = 4;
+            _t2 = _context2.v;
+            console.error("Upload failed:", _t2);
           case 5:
-            _context.p = 5;
+            _context2.p = 5;
             setUploading(false);
-            return _context.f(5);
+            return _context2.f(5);
           case 6:
-            return _context.a(2);
+            return _context2.a(2);
         }
-      }, _callee, null, [[2, 4, 5, 6]]);
+      }, _callee2, null, [[2, 4, 5, 6]]);
     }));
     return function handlePhotoUpload(_x) {
-      return _ref2.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     };
   }();
-  var getRoleBadge = function getRoleBadge() {
-    var badges = {
-      admin: "Administrator",
-      faculty: "Faculty Member",
-      student: "Student"
-    };
-    return badges[role] || "User";
-  };
-  var getRoleColor = function getRoleColor() {
-    var colors = {
-      admin: "#003366",
-      faculty: "#0d7c66",
-      student: "#1a5fb4"
-    };
-    return colors[role] || "#003366";
-  };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-    className: "profile-container",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-      className: "profile-header-section",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
-        className: "profile-cover",
-        style: {
-          background: "linear-gradient(135deg, ".concat(getRoleColor(), ", ").concat(getRoleColor(), "88)")
-        },
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
-          className: "cover-pattern"
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-        className: "profile-avatar-section",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-          className: "avatar-wrapper",
-          children: [currentUser !== null && currentUser !== void 0 && currentUser.profile_picture ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("img", {
-            src: currentUser.profile_picture,
-            alt: "Profile",
-            className: "avatar-img"
-          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
-            className: "avatar-placeholder",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
-              size: 48
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("label", {
-            className: "avatar-upload",
-            htmlFor: "photo-upload",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
-              size: 16
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("input", {
-              type: "file",
-              id: "photo-upload",
-              accept: "image/*",
-              onChange: handlePhotoUpload,
-              hidden: true
+
+  // ── Sub-Components ───────────────────────────────────────
+
+  var LeftColumn = function LeftColumn() {
+    var _currentUser$status;
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+      className: "profile-left-col",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+        className: "profile-card main-profile-card",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+          className: "profile-banner"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+          className: "profile-info-summary",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+            className: "avatar-container",
+            children: [currentUser !== null && currentUser !== void 0 && currentUser.profile_picture ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("img", {
+              src: currentUser.profile_picture,
+              alt: "Profile",
+              className: "profile-avatar"
+            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+              className: "profile-avatar",
+              children: initials
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("label", {
+              className: "avatar-edit-overlay",
+              htmlFor: "photo-upload",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                size: 14
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("input", {
+                type: "file",
+                id: "photo-upload",
+                accept: "image/*",
+                onChange: handlePhotoUpload,
+                hidden: true
+              })]
             })]
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-          className: "profile-name-section",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h2", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("h2", {
             className: "profile-name",
-            children: displayName
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
+            children: fullName
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
             className: "role-badge",
+            children: role === "admin" ? "Administrator" : role === "faculty" ? "Faculty" : "Student"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+            className: "meta-rows",
+            children: role === "student" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.Fragment, {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "meta-row",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_18__["default"], {
+                  size: 16
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("span", {
+                  children: ["ID: ", formattedId()]
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "meta-row",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                  size: 16
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("span", {
+                  children: [(currentUser === null || currentUser === void 0 ? void 0 : currentUser.course) || "BSCS", " - ", (currentUser === null || currentUser === void 0 ? void 0 : currentUser.department) || "IT"]
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "meta-row",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
+                  size: 16
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("span", {
+                  children: [(currentUser === null || currentUser === void 0 ? void 0 : currentUser.year_level) || "1st", " Year"]
+                })]
+              })]
+            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.Fragment, {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "meta-row",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                  size: 16
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("span", {
+                  children: ["Member since ", currentUser !== null && currentUser !== void 0 && currentUser.created_at ? new Date(currentUser.created_at).toLocaleDateString() : "2024"]
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "meta-row",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_17__["default"], {
+                  size: 16
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                  children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.phone) || "No phone linked"
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "meta-row",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_16__["default"], {
+                  size: 16
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                  children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.address) || "No address provided"
+                })]
+              })]
+            })
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+          className: "stat-strip",
+          children: role === "admin" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.Fragment, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+              className: "stat-item",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                className: "stat-value",
+                children: stats.students
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                className: "stat-label",
+                children: "Total Students"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+              className: "stat-item",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                className: "stat-value",
+                children: stats.faculties
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                className: "stat-label",
+                children: "Total Faculty"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+              className: "stat-item",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                className: "stat-value",
+                children: stats.departments
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                className: "stat-label",
+                children: "Total Depts"
+              })]
+            })]
+          }) : role === "faculty" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.Fragment, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+              className: "stat-item",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                className: "stat-value",
+                children: subjects.length
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                className: "stat-label",
+                children: "Subjects"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+              className: "stat-item",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                className: "stat-value",
+                children: subjects.reduce(function (acc, s) {
+                  var _s$students;
+                  return acc + (((_s$students = s.students) === null || _s$students === void 0 ? void 0 : _s$students.length) || 0);
+                }, 0)
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                className: "stat-label",
+                children: "Students"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+              className: "stat-item",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                className: "stat-value",
+                style: {
+                  fontSize: '0.75rem'
+                },
+                children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.department) || "N/A"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                className: "stat-label",
+                children: "Dept"
+              })]
+            })]
+          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.Fragment, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+              className: "stat-item",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                className: "stat-value",
+                children: subjects.length
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                className: "stat-label",
+                children: "Enrolled"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+              className: "stat-item",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                className: "stat-value",
+                children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.year_level) || "1st"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                className: "stat-label",
+                children: "Year Level"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+              className: "stat-item",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                className: "stat-value ".concat((currentUser === null || currentUser === void 0 || (_currentUser$status = currentUser.status) === null || _currentUser$status === void 0 ? void 0 : _currentUser$status.toLowerCase()) || 'enrolled'),
+                children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.status) || "Enrolled"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                className: "stat-label",
+                children: "Status"
+              })]
+            })]
+          })
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+        className: "profile-card quick-links-card",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+          className: "card-header",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("h3", {
+            children: [role === "student" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
+              size: 18
+            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
+              size: 18
+            }), role === "student" ? "Academic Info" : "Quick Links"]
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+          className: "card-body",
+          children: [role === "admin" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.Fragment, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+              className: "link-item",
+              onClick: function onClick() {
+                return window.location.href = "/dashboard";
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "link-left",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
+                  size: 18
+                }), " Dashboard"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                size: 16,
+                className: "chevron"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+              className: "link-item",
+              onClick: function onClick() {
+                return window.location.href = "/faculty";
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "link-left",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_19__["default"], {
+                  size: 18
+                }), " Manage Faculty"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                size: 16,
+                className: "chevron"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+              className: "link-item",
+              onClick: function onClick() {
+                return window.location.href = "/students";
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "link-left",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
+                  size: 18
+                }), " Manage Students"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                size: 16,
+                className: "chevron"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+              className: "link-item",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "link-left",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                  size: 18
+                }), " Reports"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                size: 16,
+                className: "chevron"
+              })]
+            })]
+          }), role === "faculty" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.Fragment, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+              className: "link-item",
+              onClick: function onClick() {
+                return window.location.href = "/faculty-dashboard";
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "link-left",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
+                  size: 18
+                }), " Dashboard"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                size: 16,
+                className: "chevron"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+              className: "link-item",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "link-left",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                  size: 18
+                }), " My Subjects"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                size: 16,
+                className: "chevron"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+              className: "link-item",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "link-left",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_19__["default"], {
+                  size: 18
+                }), " My Students"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                size: 16,
+                className: "chevron"
+              })]
+            })]
+          }), role === "student" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
             style: {
-              background: getRoleColor()
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '14px'
             },
-            children: getRoleBadge()
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+              className: "link-item",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "link-left",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
+                  size: 18
+                }), " Course: ", (currentUser === null || currentUser === void 0 ? void 0 : currentUser.course) || "BSCS"]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+              className: "link-item",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "link-left",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                  size: 18
+                }), " Dept: ", (currentUser === null || currentUser === void 0 ? void 0 : currentUser.department) || "IT"]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+              className: "link-item",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "link-left",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                  size: 18
+                }), " A.Y. 2025-2026"]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+              className: "link-item",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "link-left",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                  size: 18
+                }), " 1st Semester"]
+              })
+            })]
           })]
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-      className: "profile-body",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-        className: "info-card",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("h3", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
-            size: 20
-          }), " Personal Information"]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-          className: "info-grid",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-            className: "info-item",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-label",
-              children: "Full Name"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-value",
-              children: displayName
+    });
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+    className: "profile-container",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+      className: "profile-grid",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(LeftColumn, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+        className: "profile-right-col",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+          className: "profile-card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+            className: "card-header",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("h3", {
+              children: "Personal Information"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("button", {
+              className: "edit-btn",
+              children: "Edit Profile"
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-            className: "info-item",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-label",
-              children: role === "student" ? "School ID" : role === "faculty" ? "Faculty ID" : "Username"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-value",
-              children: displayId
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-            className: "info-item",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-label",
-              children: "Role"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-value",
-              children: getRoleBadge()
-            })]
-          }), (currentUser === null || currentUser === void 0 ? void 0 : currentUser.sex) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-            className: "info-item",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-label",
-              children: "Sex"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-value",
-              children: currentUser.sex
-            })]
-          }), (currentUser === null || currentUser === void 0 ? void 0 : currentUser.date_of_birth) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-            className: "info-item",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-label",
-              children: "Date of Birth"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-value",
-              children: currentUser.date_of_birth
-            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+            className: "card-body",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+              className: "info-field-grid",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "info-field",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                  className: "field-label",
+                  children: "Full Name"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                  className: "field-value",
+                  children: fullName
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "info-field",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                  className: "field-label",
+                  children: role === "admin" ? "Username" : role === "faculty" ? "Employee ID" : "Student ID"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                  className: "field-value",
+                  children: formattedId()
+                })]
+              }), role === "faculty" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "info-field",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                  className: "field-label",
+                  children: "Department"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                  className: "field-value",
+                  children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.department) || "N/A"
+                })]
+              }), role === "student" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.Fragment, {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                  className: "info-field",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                    className: "field-label",
+                    children: "Course"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                    className: "field-value",
+                    children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.course) || "BSCS"
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                  className: "info-field",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                    className: "field-label",
+                    children: "Department"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                    className: "field-value",
+                    children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.department) || "IT"
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                  className: "info-field",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                    className: "field-label",
+                    children: "Year Level"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                    className: "field-value",
+                    children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.year_level) || "1st"
+                  })]
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "info-field",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                  className: "field-label",
+                  children: "Role"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                  className: "field-value",
+                  children: role.charAt(0).toUpperCase() + role.slice(1)
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "info-field",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                  className: "field-label",
+                  children: "Status"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                  className: "field-value ".concat((currentUser === null || currentUser === void 0 || (_currentUser$status2 = currentUser.status) === null || _currentUser$status2 === void 0 ? void 0 : _currentUser$status2.toLowerCase()) || 'active'),
+                  children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.status) || "Active"
+                })]
+              })]
+            })
           })]
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-        className: "info-card",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("h3", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
-            size: 20
-          }), " Contact Information"]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-          className: "info-grid",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-            className: "info-item",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-label",
-              children: "Email"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-value",
-              children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.email) || "—"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+          className: "profile-card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+            className: "card-header",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("h3", {
+              children: "Contact Information"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("button", {
+              className: "edit-btn",
+              children: "Edit"
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-            className: "info-item",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-label",
-              children: "Phone"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-value",
-              children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.phone) || "—"
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-            className: "info-item full-width",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-label",
-              children: "Address"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-value",
-              children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.address) || "—"
-            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+            className: "card-body",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+              className: "info-field-grid",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "info-field",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                  className: "field-label",
+                  children: "Email Address"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                  className: "field-value link",
+                  children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.email) || "—"
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "info-field",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                  className: "field-label",
+                  children: "Phone Number"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                  className: "field-value",
+                  children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.phone) || "—"
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                className: "info-field",
+                style: {
+                  gridColumn: 'span 2'
+                },
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                  className: "field-label",
+                  children: "Home Address"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("span", {
+                  className: "field-value",
+                  children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.address) || "—"
+                })]
+              })]
+            })
           })]
-        })]
-      }), role === "student" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-        className: "info-card",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("h3", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            size: 20
-          }), " Academic Information"]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-          className: "info-grid",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-            className: "info-item",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-label",
-              children: "Course"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-value",
-              children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.course) || "—"
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-            className: "info-item",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-label",
-              children: "Department"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-value",
-              children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.department) || "—"
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-            className: "info-item",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-label",
-              children: "Section"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-value",
-              children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.section) || "—"
-            })]
+        }), role === "admin" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+          className: "profile-card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+            className: "card-header",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("h3", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                size: 18
+              }), " Recent Activity"]
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+            className: "card-body",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+              className: "activity-list",
+              children: activity.length > 0 ? activity.map(function (log, i) {
+                var _log$action, _log$action2, _log$action3;
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                  className: "activity-item",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+                    className: "status-dot ".concat((_log$action = log.action) !== null && _log$action !== void 0 && _log$action.includes('login') ? 'login' : (_log$action2 = log.action) !== null && _log$action2 !== void 0 && _log$action2.includes('created') || (_log$action3 = log.action) !== null && _log$action3 !== void 0 && _log$action3.includes('new') ? 'record' : 'config')
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                    className: "activity-content",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+                      className: "activity-text",
+                      children: log.action || "System processing"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                      className: "activity-time",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                        size: 12
+                      }), " ", new Date(log.created_at).toLocaleString([], {
+                        dateStyle: 'medium',
+                        timeStyle: 'short'
+                      })]
+                    })]
+                  })]
+                }, i);
+              }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.Fragment, {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                  className: "activity-item",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+                    className: "status-dot login"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                    className: "activity-content",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+                      className: "activity-text",
+                      children: "Successful login to admin portal"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                      className: "activity-time",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                        size: 12
+                      }), " Just now"]
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                  className: "activity-item",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+                    className: "status-dot record"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                    className: "activity-content",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+                      className: "activity-text",
+                      children: "Updated Department configurations"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+                      className: "activity-time",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                        size: 12
+                      }), " 2 hours ago"]
+                    })]
+                  })]
+                })]
+              })
+            })
           })]
-        })]
-      }), role === "faculty" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-        className: "info-card",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("h3", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
-            size: 20
-          }), " Employment Information"]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-          className: "info-grid",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-            className: "info-item",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-label",
-              children: "Department"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-value",
-              children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.department) || "—"
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-            className: "info-item",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-label",
-              children: "Position"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
-              className: "info-value",
-              children: (currentUser === null || currentUser === void 0 ? void 0 : currentUser.position) || "—"
-            })]
+        }), role === "faculty" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+          className: "profile-card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+            className: "card-header",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("h3", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_14__["default"], {
+                size: 18
+              }), " Teaching Summary"]
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+            className: "card-body",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+              className: "summary-list",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("table", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("thead", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("tr", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("th", {
+                      children: "Subject Name"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("th", {
+                      children: "Year Level"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("th", {
+                      style: {
+                        textAlign: 'right'
+                      },
+                      children: "Students"
+                    })]
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("tbody", {
+                  children: subjects.length > 0 ? subjects.map(function (s, i) {
+                    var _s$students2;
+                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("tr", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("td", {
+                        style: {
+                          fontWeight: 700,
+                          color: '#0d2b5e'
+                        },
+                        children: s.name
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("td", {
+                        children: s.year_level || "1st Year"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("td", {
+                        style: {
+                          textAlign: 'right',
+                          fontWeight: 600
+                        },
+                        children: ((_s$students2 = s.students) === null || _s$students2 === void 0 ? void 0 : _s$students2.length) || 0
+                      })]
+                    }, i);
+                  }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("tr", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("td", {
+                      colSpan: "3",
+                      className: "empty-state",
+                      children: "No subjects currently handled."
+                    })
+                  })
+                })]
+              })
+            })
           })]
+        }), role === "student" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+          className: "profile-card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+            className: "card-header",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("h3", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                size: 18
+              }), " Enrolled Subjects"]
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+            className: "card-body",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+              className: "summary-list",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("table", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("thead", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("tr", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("th", {
+                      children: "Code"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("th", {
+                      children: "Subject"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("th", {
+                      children: "Faculty"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("th", {
+                      style: {
+                        textAlign: 'right'
+                      },
+                      children: "Schedule"
+                    })]
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("tbody", {
+                  children: subjects.length > 0 ? subjects.map(function (s, i) {
+                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("tr", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("td", {
+                        style: {
+                          fontWeight: 700
+                        },
+                        children: s.code
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("td", {
+                        children: s.name
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("td", {
+                        children: s.faculty ? "".concat(s.faculty.first_name, " ").concat(s.faculty.last_name) : "TBA"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("td", {
+                        style: {
+                          textAlign: 'right',
+                          fontSize: '0.8rem'
+                        },
+                        children: [s.schedule_day || "TBA", " ", s.time_start || ""]
+                      })]
+                    }, i);
+                  }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("tr", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("td", {
+                      colSpan: "4",
+                      className: "empty-state",
+                      children: "No subjects enrolled yet. Contact your admin to enroll."
+                    })
+                  })
+                })]
+              })
+            })
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)("div", {
+          className: "profile-card action-buttons-card",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("div", {
+            className: "card-body",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("button", {
+              className: "btn-change-password",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
+                size: 18
+              }), " Change Password"]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsxs)("button", {
+              className: "btn-logout-full",
+              onClick: onLogout,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_21__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_15__["default"], {
+                size: 18
+              }), " Sign Out (Logout)"]
+            })]
+          })
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
-        className: "signout-section",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("button", {
-          className: "btn-signout",
-          onClick: onLogout,
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            size: 20
-          }), " Sign Out"]
-        })
       })]
-    })]
+    })
   });
 }
 
@@ -94068,33 +85268,39 @@ function Reports() {
     _useState6 = _slicedToArray(_useState5, 2),
     faculties = _useState6[0],
     setFaculties = _useState6[1];
-  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState8 = _slicedToArray(_useState7, 2),
-    searchQuery = _useState8[0],
-    setSearchQuery = _useState8[1];
+    auditLogs = _useState8[0],
+    setAuditLogs = _useState8[1];
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+    _useState0 = _slicedToArray(_useState9, 2),
+    searchQuery = _useState0[0],
+    setSearchQuery = _useState0[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     fetchReports();
   }, []);
   var fetchReports = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
-      var _yield$Promise$all, _yield$Promise$all2, studentRes, facultyRes, _t;
+      var _yield$Promise$all, _yield$Promise$all2, studentRes, facultyRes, logsRes, _t;
       return _regenerator().w(function (_context) {
         while (1) switch (_context.p = _context.n) {
           case 0:
             _context.p = 0;
             _context.n = 1;
-            return Promise.all([axios__WEBPACK_IMPORTED_MODULE_1___default().get('/api/students'), axios__WEBPACK_IMPORTED_MODULE_1___default().get('/api/faculties')]);
+            return Promise.all([axios__WEBPACK_IMPORTED_MODULE_1___default().get('/api/students'), axios__WEBPACK_IMPORTED_MODULE_1___default().get('/api/faculties'), axios__WEBPACK_IMPORTED_MODULE_1___default().get('/api/system/audit-logs')]);
           case 1:
             _yield$Promise$all = _context.v;
-            _yield$Promise$all2 = _slicedToArray(_yield$Promise$all, 2);
+            _yield$Promise$all2 = _slicedToArray(_yield$Promise$all, 3);
             studentRes = _yield$Promise$all2[0];
             facultyRes = _yield$Promise$all2[1];
+            logsRes = _yield$Promise$all2[2];
             setStudents(studentRes.data.filter(function (s) {
               return s.status !== 'Archived';
             }));
             setFaculties(facultyRes.data.filter(function (f) {
               return f.status !== 'Archived';
             }));
+            setAuditLogs(logsRes.data || []);
             _context.n = 3;
             break;
           case 2:
@@ -94118,7 +85324,12 @@ function Reports() {
     var fullName = "".concat(f.first_name || '', " ").concat(f.middle_name || '', " ").concat(f.last_name || '', " ").concat(f.name || '');
     return fullName.toLowerCase().includes(searchQuery.toLowerCase()) || (f.faculty_id || '').toLowerCase().includes(searchQuery.toLowerCase());
   });
+  var filteredLogs = auditLogs.filter(function (log) {
+    return log.action.toLowerCase().includes(searchQuery.toLowerCase()) || (log.description || '').toLowerCase().includes(searchQuery.toLowerCase());
+  });
   var handleGenerate = function handleGenerate(type) {
+    if (type === 'audit') return; // Print not supported for logs yet
+
     var isStudent = type === 'students';
     var rows = isStudent ? filteredStudents : filteredFaculties;
     var title = isStudent ? 'Student Report' : 'Faculty Report';
@@ -94140,9 +85351,8 @@ function Reports() {
       win.document.close();
     }
   };
-
-  // Download CSV report
   var handleDownload = function handleDownload(type) {
+    if (type === 'audit') return;
     var rows = type === 'students' ? filteredStudents : filteredFaculties;
     var headers = type === 'students' ? ['Student ID', 'Name', 'Email', 'Department', 'Course', 'Year Level', 'Status'] : ['Faculty ID', 'Name', 'Email', 'Department', 'Position', 'Status'];
     var csvContent = [headers.join(',')].concat(_toConsumableArray(rows.map(function (row) {
@@ -94164,10 +85374,10 @@ function Reports() {
       className: "settings-header",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h2", {
-          children: "Reports"
+          children: "Reports & System Logs"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
           className: "subtitle",
-          children: "Generate and download reports for students and faculty"
+          children: "Generate reports and view detailed system events"
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
         className: "settings-info",
@@ -94216,10 +85426,16 @@ function Reports() {
             return setActiveTab('faculty');
           },
           children: "Faculty"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+          className: "tab-button ".concat(activeTab === 'audit' ? 'active' : ''),
+          onClick: function onClick() {
+            return setActiveTab('audit');
+          },
+          children: "Audit Logs"
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
         className: "settings-body",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+        children: [activeTab !== 'audit' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "report-action-buttons",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("button", {
             className: "btn-report blue",
@@ -94240,8 +85456,8 @@ function Reports() {
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "table-header",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h3", {
-            children: activeTab === 'students' ? "Student Report (".concat(filteredStudents.length, " records)") : "Faculty Report (".concat(filteredFaculties.length, " records)")
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("h3", {
+            children: [activeTab === 'students' && "Student Report (".concat(filteredStudents.length, " records)"), activeTab === 'faculty' && "Faculty Report (".concat(filteredFaculties.length, " records)"), activeTab === 'audit' && "System Audit Logs (".concat(filteredLogs.length, " events)")]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             className: "search-box",
             style: {
@@ -94256,9 +85472,9 @@ function Reports() {
               }
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "settings-table-wrapper",
-          children: activeTab === 'students' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("table", {
+          children: [activeTab === 'students' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("table", {
             className: "settings-table",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("thead", {
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
@@ -94303,7 +85519,7 @@ function Reports() {
                 }, s.id);
               })
             })]
-          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("table", {
+          }), activeTab === 'faculty' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("table", {
             className: "settings-table",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("thead", {
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
@@ -94344,7 +85560,56 @@ function Reports() {
                 }, f.id);
               })
             })]
-          })
+          }), activeTab === 'audit' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("table", {
+            className: "settings-table",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("thead", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
+                  children: "Timestamp"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
+                  children: "User ID"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
+                  children: "Action"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
+                  children: "Description"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("th", {
+                  children: "IP Address"
+                })]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tbody", {
+              children: [filteredLogs.map(function (log) {
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("tr", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
+                      style: {
+                        fontSize: '0.85rem'
+                      },
+                      children: new Date(log.created_at).toLocaleString()
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                    children: log.user_id || 'System'
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("strong", {
+                      children: log.action
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                    children: log.description
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                    children: log.ip_address || '—'
+                  })]
+                }, log.id);
+              }), filteredLogs.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("tr", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("td", {
+                  colSpan: "5",
+                  style: {
+                    textAlign: 'center',
+                    padding: '2rem'
+                  },
+                  children: "No system logs found."
+                })
+              })]
+            })]
+          })]
         })]
       })]
     })]
@@ -95516,11 +86781,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/clock.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/map-pin.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
-/* harmony import */ var _sass_student_dashboard_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../sass/student-dashboard.scss */ "./resources/sass/student-dashboard.scss");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/calendar.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/clock.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/file-text.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/map-pin.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
+/* harmony import */ var _sass_student_dashboard_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../sass/student-dashboard.scss */ "./resources/sass/student-dashboard.scss");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -95538,92 +86805,207 @@ function StudentDashboard(_ref) {
     _useState2 = _slicedToArray(_useState, 2),
     subjects = _useState2[0],
     setSubjects = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    _useState4 = _slicedToArray(_useState3, 2),
+    activeSemester = _useState4[0],
+    setActiveSemester = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState6 = _slicedToArray(_useState5, 2),
+    upcomingEvents = _useState6[0],
+    setUpcomingEvents = _useState6[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     if (!(user !== null && user !== void 0 && user.id)) return;
     axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/student/".concat(user.id, "/subjects")).then(function (res) {
       return setSubjects(res.data);
     })["catch"](console.error);
+    axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/system/settings").then(function (res) {
+      if (res.data.active_semester) setActiveSemester(res.data.active_semester);
+      if (res.data.upcoming_events) setUpcomingEvents(res.data.upcoming_events);
+    })["catch"](console.error);
   }, [user]);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
     className: "student-dash",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
       className: "dash-header",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("h2", {
-        children: ["Welcome, ", (user === null || user === void 0 ? void 0 : user.first_name) || (user === null || user === void 0 ? void 0 : user.name) || "Student", "!"]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("p", {
-        className: "subtitle",
-        children: [(user === null || user === void 0 ? void 0 : user.course) || "Course", " \u2014 ", (user === null || user === void 0 ? void 0 : user.department) || "Department", " | ", user === null || user === void 0 ? void 0 : user.student_id]
-      })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-      className: "enrolled-section",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("h3", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
-          size: 22
-        }), " Enrolled Subjects"]
-      }), subjects.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-        className: "empty-state",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
-          size: 48,
-          className: "empty-icon"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-          children: "No subjects enrolled yet."
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-          className: "empty-sub",
-          children: "Contact your admin to enroll in subjects."
+      style: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: '20px'
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("h2", {
+          children: ["Welcome, ", (user === null || user === void 0 ? void 0 : user.name) || (user === null || user === void 0 ? void 0 : user.first_name) || "Student", "!"]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("p", {
+          className: "subtitle",
+          style: {
+            margin: 0
+          },
+          children: [(user === null || user === void 0 ? void 0 : user.course) || "Course", " \u2014 ", (user === null || user === void 0 ? void 0 : user.department) || "Department", " | ", user === null || user === void 0 ? void 0 : user.student_id]
+        }), activeSemester && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("p", {
+          style: {
+            margin: '5px 0 0',
+            fontSize: '0.85rem',
+            color: '#64748b'
+          },
+          children: ["Semester: ", activeSemester]
         })]
-      }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-        className: "subject-grid",
-        children: subjects.map(function (s) {
-          var _s$status;
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-            className: "subject-card",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-              className: "card-header",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
-                className: "subject-code",
-                children: s.code
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
-                className: "status-dot ".concat((_s$status = s.status) === null || _s$status === void 0 ? void 0 : _s$status.toLowerCase())
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
-              className: "subject-name",
-              children: s.name
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-              className: "card-details",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                className: "detail-row",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
-                  size: 16
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("span", {
-                  children: ["Room: ", s.room ? s.room.name : "TBA"]
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                className: "detail-row",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                  size: 16
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("span", {
-                  children: [s.schedule_day || "TBA", s.time_start || s.time_end ? " | ".concat(s.time_start, " - ").concat(s.time_end) : ""]
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                className: "detail-row",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                  size: 16
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
-                  children: s.faculty ? "".concat(s.faculty.first_name, " ").concat(s.faculty.last_name) : "TBA"
-                })]
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-              className: "card-footer",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
-                className: "semester",
-                children: s.semester || "—"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
-                className: "academic-year",
-                children: s.academic_year || "—"
-              })]
-            })]
-          }, s.id);
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+        className: "quick-actions",
+        style: {
+          display: 'flex',
+          gap: '10px'
+        },
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("button", {
+          className: "primary-btn",
+          onClick: function onClick() {
+            return window.history.pushState({}, '', '/student-profile');
+          },
+          style: {
+            display: 'flex',
+            alignItems: 'center',
+            gap: '5px',
+            padding: '8px 12px',
+            background: '#1a5fb4',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '6px',
+            cursor: 'pointer'
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            size: 16
+          }), " View Grades"]
         })
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+      style: {
+        display: 'grid',
+        gridTemplateColumns: '1fr 300px',
+        gap: '1.5rem',
+        alignItems: 'start'
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+        className: "enrolled-section",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("h3", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            size: 22
+          }), " Enrolled Subjects"]
+        }), subjects.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+          className: "empty-state",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            size: 48,
+            className: "empty-icon"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+            children: "No subjects enrolled yet."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+            className: "empty-sub",
+            children: "Contact your admin to enroll in subjects."
+          })]
+        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+          className: "subject-grid",
+          children: subjects.map(function (s) {
+            var _s$status;
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+              className: "subject-card",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+                className: "card-header",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
+                  className: "subject-code",
+                  children: s.code
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
+                  className: "status-dot ".concat((_s$status = s.status) === null || _s$status === void 0 ? void 0 : _s$status.toLowerCase())
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h4", {
+                className: "subject-name",
+                children: s.name
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+                className: "card-details",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+                  className: "detail-row",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                    size: 16
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("span", {
+                    children: ["Room: ", s.room ? s.room.name : "TBA"]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+                  className: "detail-row",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                    size: 16
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("span", {
+                    children: [s.schedule_day || "TBA", s.time_start || s.time_end ? " | ".concat(s.time_start, " - ").concat(s.time_end) : ""]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+                  className: "detail-row",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                    size: 16
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
+                    children: s.faculty ? "".concat(s.faculty.first_name, " ").concat(s.faculty.last_name) : "TBA"
+                  })]
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+                className: "card-footer",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
+                  className: "semester",
+                  children: s.semester || "—"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
+                  className: "academic-year",
+                  children: s.academic_year || "—"
+                })]
+              })]
+            }, s.id);
+          })
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+        className: "activity-section",
+        style: {
+          background: 'var(--card-bg, #fff)',
+          border: '1px solid var(--border-color, #e2e8f0)',
+          padding: '1.5rem',
+          borderRadius: '12px'
+        },
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("h3", {
+          style: {
+            marginTop: 0,
+            marginBottom: '1rem',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px'
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            size: 18
+          }), " Upcoming Events"]
+        }), upcomingEvents.length > 0 ? upcomingEvents.map(function (ev, idx) {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+            style: {
+              display: 'flex',
+              justifyContent: 'space-between',
+              marginBottom: '10px',
+              padding: '8px',
+              background: 'var(--hover-bg, #f8fafc)',
+              borderRadius: '6px'
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
+              style: {
+                fontSize: '0.9rem',
+                fontWeight: 500
+              },
+              children: ev.title
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
+              style: {
+                fontSize: '0.85rem',
+                color: 'var(--primary-color, #3b82f6)',
+                fontWeight: 600
+              },
+              children: ev.date
+            })]
+          }, idx);
+        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+          style: {
+            fontSize: '0.9rem',
+            color: 'var(--text-muted, #64748b)'
+          },
+          children: "No upcoming events."
+        })]
       })]
     })]
   });
@@ -95649,14 +87031,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/graduation-cap.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/layout-dashboard.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
-/* harmony import */ var _sass_student_layout_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../sass/student-layout.scss */ "./resources/sass/student-layout.scss");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _TopNavbar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./TopNavbar */ "./resources/js/components/TopNavbar.js");
+/* harmony import */ var _sass_student_layout_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../sass/student-layout.scss */ "./resources/sass/student-layout.scss");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
 
 
 
@@ -95676,7 +87060,7 @@ function StudentLayout(_ref) {
     setSidebarOpen = _useState4[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     var updatePage = function updatePage() {
-      var path = window.location.pathname.replace("/", "");
+      var path = window.location.pathname.split("/").pop();
       var valid = ["student-dashboard", "student-profile"];
       if (valid.includes(path)) setPage(path);
     };
@@ -95693,69 +87077,69 @@ function StudentLayout(_ref) {
   var menuItems = [{
     key: "student-dashboard",
     label: "Dashboard",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
       size: 20
     })
   }, {
     key: "student-profile",
     label: "Profile",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
       size: 20
     })
   }];
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
     className: "layout student-layout",
-    children: [sidebarOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+    children: [sidebarOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
       className: "sidebar-overlay",
       onClick: function onClick() {
         return setSidebarOpen(false);
       }
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("aside", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("aside", {
       className: "sidebar ".concat(sidebarOpen ? "open" : ""),
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
         className: "logo-section",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
           className: "logo-box",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h1", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h1", {
             className: "logo-text",
             children: "UniSys"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
             className: "logo-icon-wrapper",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
               size: 40,
               strokeWidth: 1.5,
               className: "logo-icon"
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
           className: "role-badge student",
           children: "Student Portal"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("ul", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("ul", {
         className: "nav-menu",
         children: menuItems.map(function (item) {
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("li", {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("li", {
             className: "nav-item ".concat(page === item.key ? "active" : ""),
             onClick: function onClick() {
               return navigate(item.key);
             },
-            children: [item.icon, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
+            children: [item.icon, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
               children: item.label
             })]
           }, item.key);
         })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("main", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("main", {
       className: "main-content",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("button", {
-        className: "mobile-menu-btn",
-        onClick: function onClick() {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_TopNavbar__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        user: user,
+        onToggleSidebar: function onToggleSidebar() {
           return setSidebarOpen(!sidebarOpen);
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {})]
-      }), page === "student-dashboard" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_StudentDashboard__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        onLogout: onLogout
+      }), page === "student-dashboard" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_StudentDashboard__WEBPACK_IMPORTED_MODULE_1__["default"], {
         user: user
-      }), page === "student-profile" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Profile__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), page === "student-profile" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Profile__WEBPACK_IMPORTED_MODULE_2__["default"], {
         user: user,
         onLogout: onLogout
       })]
@@ -97933,6 +89317,230 @@ function Toast(_ref2) {
 
 /***/ }),
 
+/***/ "./resources/js/components/TopNavbar.js":
+/*!**********************************************!*\
+  !*** ./resources/js/components/TopNavbar.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ TopNavbar)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/bell.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/chevron-down.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/log-out.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/menu.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/moon.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/sun.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
+/* harmony import */ var _sass_top_navbar_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../sass/top-navbar.scss */ "./resources/sass/top-navbar.scss");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+
+
+
+function TopNavbar(_ref) {
+  var user = _ref.user,
+    onToggleSidebar = _ref.onToggleSidebar,
+    onLogout = _ref.onLogout;
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(localStorage.getItem('theme') || 'light'),
+    _useState2 = _slicedToArray(_useState, 2),
+    theme = _useState2[0],
+    setTheme = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState4 = _slicedToArray(_useState3, 2),
+    showNotifications = _useState4[0],
+    setShowNotifications = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState6 = _slicedToArray(_useState5, 2),
+    showProfileDropdown = _useState6[0],
+    setShowProfileDropdown = _useState6[1];
+  var profileRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var notificationRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  // Click outside listener
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    var handleClickOutside = function handleClickOutside(event) {
+      if (profileRef.current && !profileRef.current.contains(event.target)) {
+        setShowProfileDropdown(false);
+      }
+      if (notificationRef.current && !notificationRef.current.contains(event.target)) {
+        setShowNotifications(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return function () {
+      return document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+  var toggleTheme = function toggleTheme() {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+  var notifications = [{
+    id: 1,
+    text: "System maintenance at midnight",
+    time: "1h ago"
+  }, {
+    id: 2,
+    text: "New announcements available",
+    time: "2h ago"
+  }];
+  var handleProfileClick = function handleProfileClick() {
+    // Navigate to profile page
+    var role = (user === null || user === void 0 ? void 0 : user.role) || "admin";
+    var path = "/profile";
+    if (role === "faculty") path = "/faculty-profile";
+    if (role === "student") path = "/student-profile";
+    window.history.pushState({}, "", path);
+    window.dispatchEvent(new PopStateEvent('popstate'));
+    setShowProfileDropdown(false);
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+    className: "top-navbar",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+      className: "navbar-left",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("button", {
+        className: "mobile-menu-btn",
+        onClick: onToggleSidebar,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          size: 24
+        })
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+      className: "navbar-right",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("button", {
+        className: "icon-btn theme-toggle",
+        onClick: toggleTheme,
+        title: "Toggle Theme",
+        children: theme === 'light' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          size: 20
+        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          size: 20
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+        className: "notification-wrapper",
+        ref: notificationRef,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("button", {
+          className: "icon-btn notification-bell",
+          onClick: function onClick() {
+            return setShowNotifications(!showNotifications);
+          },
+          title: "Notifications",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_1__["default"], {
+            size: 20
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
+            className: "badge",
+            children: "2"
+          })]
+        }), showNotifications && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+          className: "notification-dropdown",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+            className: "dropdown-header",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h4", {
+              children: "Notifications"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("button", {
+              className: "mark-read",
+              children: "Mark all as read"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+            className: "dropdown-list",
+            children: notifications.map(function (n) {
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+                className: "notification-item",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+                  children: n.text
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
+                  children: n.time
+                })]
+              }, n.id);
+            })
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+        className: "profile-wrapper",
+        ref: profileRef,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+          className: "nav-profile",
+          onClick: function onClick() {
+            return setShowProfileDropdown(!showProfileDropdown);
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+            className: "avatar-mini",
+            children: user !== null && user !== void 0 && user.profile_photo ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("img", {
+              src: user.profile_photo,
+              alt: "Avatar"
+            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+              className: "avatar-placeholder",
+              children: ((user === null || user === void 0 ? void 0 : user.name) || (user === null || user === void 0 ? void 0 : user.first_name) || "U").charAt(0).toUpperCase()
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+            className: "profile-info-mini",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
+              className: "nav-username",
+              children: (user === null || user === void 0 ? void 0 : user.name) || (user === null || user === void 0 ? void 0 : user.first_name) || "User"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
+              className: "nav-role",
+              children: ((user === null || user === void 0 ? void 0 : user.role) || "admin").charAt(0).toUpperCase() + ((user === null || user === void 0 ? void 0 : user.role) || "admin").slice(1)
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            size: 14,
+            className: "chevron ".concat(showProfileDropdown ? 'rotate' : '')
+          })]
+        }), showProfileDropdown && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+          className: "profile-dropdown",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+            className: "dropdown-user-info",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+              className: "user-name",
+              children: (user === null || user === void 0 ? void 0 : user.name) || (user === null || user === void 0 ? void 0 : user.first_name) || "User"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+              className: "user-email",
+              children: (user === null || user === void 0 ? void 0 : user.email) || "user@unisys.com"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+            className: "dropdown-actions",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("button", {
+              className: "dropdown-item",
+              onClick: handleProfileClick,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                size: 16
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
+                children: "My Profile"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+              className: "dropdown-divider"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("button", {
+              className: "dropdown-item logout",
+              onClick: onLogout,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                size: 16
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
+                children: "Sign Out"
+              })]
+            })]
+          })]
+        })]
+      })]
+    })]
+  });
+}
+
+/***/ }),
+
 /***/ "./resources/js/components/useToast.js":
 /*!*********************************************!*\
   !*** ./resources/js/components/useToast.js ***!
@@ -98459,6 +90067,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_3_subjects_scss__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./resources/sass/top-navbar.scss":
+/*!****************************************!*\
+  !*** ./resources/sass/top-navbar.scss ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_3_top_navbar_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[3]!./top-navbar.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[3]!./resources/sass/top-navbar.scss");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_3_top_navbar_scss__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_3_top_navbar_scss__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ })
 

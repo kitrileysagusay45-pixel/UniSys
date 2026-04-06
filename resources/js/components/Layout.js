@@ -39,7 +39,8 @@ export default function Layout() {
   });
 
   const [authView, setAuthView] = useState(() => {
-    if (window.location.pathname === "/reset-password") return "reset-password";
+    const lastSegment = window.location.pathname.split("/").pop();
+    if (lastSegment === "reset-password") return "reset-password";
     return "login";
   }); // login | student-register | faculty-register | forgot-password | reset-password
 

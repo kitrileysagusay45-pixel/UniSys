@@ -355,36 +355,55 @@
 
     .admin-register-card {
       max-width: 100%;
-      border: 3px solid $secondary-color;
+      border-width: 2px;
 
       .admin-register-content {
         flex-direction: column;
 
         .admin-left-section {
           flex: 1;
-          padding: 2rem 1.5rem;
+          padding: 1.5rem 1rem;
 
           .admin-logo-icon {
-            width: 120px;
-            height: 120px;
-            padding: 1.5rem;
+            width: 100px;
+            height: 100px;
+            padding: 1rem;
+            margin-bottom: 1rem;
           }
 
           .admin-title {
-            font-size: 2rem;
+            font-size: 1.75rem;
           }
 
           .admin-subtitle {
-            font-size: 0.9375rem;
+            font-size: 0.85rem;
           }
         }
 
         .admin-right-section {
-          padding: 2rem 1.5rem;
+          padding: 1.5rem 1rem;
           max-height: none;
 
           .form-title {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.5rem;
+    
+    .admin-register-card {
+      border-radius: 12px;
+      
+      .admin-right-section {
+        .admin-form {
+          .admin-register-btn {
+            padding: 1rem;
+            font-size: 0.95rem;
           }
         }
       }

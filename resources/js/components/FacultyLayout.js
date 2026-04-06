@@ -4,6 +4,7 @@ import FacultyStudents from "./FacultyStudents";
 import FacultySubjects from "./FacultySubjects";
 import Profile from "./Profile";
 import { GraduationCap, LayoutDashboard, Users, User, BookOpen } from "lucide-react";
+import TopNavbar from "./TopNavbar";
 import "../../sass/faculty-layout.scss";
 
 export default function FacultyLayout({ user, onLogout }) {
@@ -12,7 +13,7 @@ export default function FacultyLayout({ user, onLogout }) {
 
   useEffect(() => {
     const updatePage = () => {
-      const path = window.location.pathname.replace("/", "");
+      const path = window.location.pathname.split("/").pop();
       const valid = ["faculty-dashboard", "faculty-students", "faculty-subjects", "faculty-profile"];
       if (valid.includes(path)) setPage(path);
     };
@@ -55,9 +56,7 @@ export default function FacultyLayout({ user, onLogout }) {
         </ul>
       </aside>
       <main className="main-content">
-        <button className="mobile-menu-btn" onClick={() => setSidebarOpen(!sidebarOpen)}>
-          <span></span><span></span><span></span>
-        </button>
+        <TopNavbar user={user} onToggleSidebar={() => setSidebarOpen(!sidebarOpen)} onLogout={onLogout} />
         {page === "faculty-dashboard" && <FacultyDashboard user={user} />}
         {page === "faculty-subjects" && <FacultySubjects user={user} />}
         {page === "faculty-students" && <FacultyStudents user={user} />}

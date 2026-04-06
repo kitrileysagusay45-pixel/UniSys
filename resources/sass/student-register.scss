@@ -30,6 +30,15 @@
     text-align: center;
     padding: 3rem;
 
+    @media (max-width: 480px) {
+      padding: 1.5rem;
+      border-radius: 16px;
+      
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+
     .success-icon { color: #22c55e; margin-bottom: 1rem; }
     h2 { color: $uni-navy-deep; margin: 0 0 0.75rem; font-size: 2rem; font-weight: 800; }
     .success-message { color: #555; margin-bottom: 1.5rem; line-height: 1.6; }
@@ -40,6 +49,11 @@
       padding: 1.5rem;
       border-radius: 12px;
       margin-bottom: 1.5rem;
+
+      @media (max-width: 320px) {
+        padding: 1rem;
+        .id-value { font-size: 1.25rem !important; }
+      }
 
       .id-label { display: block; font-size: 0.8rem; opacity: 0.8; margin-bottom: 0.25rem; text-transform: uppercase; letter-spacing: 1px; }
       .id-value { font-size: 1.5rem; font-weight: 800; letter-spacing: 2px; }
@@ -60,7 +74,29 @@
       cursor: pointer;
       transition: all 0.3s;
 
+      @media (max-width: 480px) {
+        width: 100%;
+        justify-content: center;
+      }
+
       &:hover { background: #004d99; transform: translateY(-1px); }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .register-card {
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+  
+  .register-header {
+    .header-brand {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+      
+      h1 { font-size: 1.25rem; }
     }
   }
 }

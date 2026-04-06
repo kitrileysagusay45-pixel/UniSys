@@ -122,8 +122,17 @@ class AdminAuthController extends Controller
         return response()->json([
             'success' => true,
             'message' => 'Login successful',
-            'user' => $user,
-            'admin_profile' => $admin
+            'user' => [
+                'id'              => $user->id,
+                'name'            => $user->name,
+                'username'        => $user->username,
+                'email'           => $user->email,
+                'phone'           => $user->phone,
+                'address'         => $user->address,
+                'profile_picture' => $user->profile_picture,
+                'role'            => 'admin',
+                'admin_id'        => $admin->admin_id ?? null,
+            ],
         ], 200);
     }
 }

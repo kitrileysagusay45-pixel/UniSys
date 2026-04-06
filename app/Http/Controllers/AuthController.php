@@ -175,6 +175,9 @@ class AuthController extends Controller
                 'tin_number'    => $request->tin_number,
                 'password'      => Hash::make($request->password), // Redundant but kept for BC
                 'status'        => 'Pending',
+                'department'    => '',
+                'position'      => '',
+                'office_phone'  => '',
             ]);
 
             DB::commit();
@@ -199,7 +202,7 @@ class AuthController extends Controller
     public function login(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'identifier' => 'required|string',
+            'username' => 'required|string',
             'password'   => 'required|string',
         ]);
 
@@ -207,7 +210,7 @@ class AuthController extends Controller
             return response()->json(['success' => false, 'errors' => $validator->errors()], 422);
         }
 
-        $identifier = trim($request->identifier);
+        $identifier = trim($request->username);
         $password   = $request->password;
 
         // Find user by email or username

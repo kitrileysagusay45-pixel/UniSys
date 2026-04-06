@@ -2,23 +2,19 @@ require("./bootstrap");
 
 import React from "react";
 import { createRoot } from "react-dom/client";
-import Layout from "./components/Layout"; // ✅ your main layout file
-import { CountProvider } from "./Context/CountContext"; // ✅ React Context for Dashboard counts
+import Layout from "./components/Layout";
+import { CountProvider } from "./Context/CountContext";
+import { ErrorBoundary } from "./components/ErrorBoundary";
 
-// ✅ Optional: React Router (if you use routing)
-import { BrowserRouter as Router } from "react-router-dom";
-
-// ✅ Mount React to the #app element in Blade
 if (document.getElementById("app")) {
     const root = createRoot(document.getElementById("app"));
     root.render(
         <React.StrictMode>
-            <CountProvider>
-                {/* Optional: Router wrapper (if you have navigation between pages) */}
-                <Router>
+            <ErrorBoundary>
+                <CountProvider>
                     <Layout />
-                </Router>
-            </CountProvider>
+                </CountProvider>
+            </ErrorBoundary>
         </React.StrictMode>
     );
 }

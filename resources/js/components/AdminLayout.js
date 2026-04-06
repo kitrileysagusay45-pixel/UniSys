@@ -8,11 +8,12 @@ import Settings from "./Settings";
 import Archive from "./Archive";
 import Profile from "./Profile";
 import { GraduationCap, LayoutDashboard, Users, BookOpen, GraduationCap as GradIcon, BarChart3, Settings as SettingsIcon, Archive as ArchiveIcon, User } from "lucide-react";
+import TopNavbar from "./TopNavbar";
 import "../../sass/layout.scss";
 
 export default function AdminLayout({ user, onLogout }) {
   const [page, setPage] = useState(() => {
-    const path = window.location.pathname.replace("/", "") || "dashboard";
+    const path = window.location.pathname.split("/").pop() || "dashboard";
     const validPages = ["dashboard", "faculty", "students", "subjects", "reports", "settings", "archive", "profile"];
     return validPages.includes(path) ? path : "dashboard";
   });
@@ -21,7 +22,7 @@ export default function AdminLayout({ user, onLogout }) {
 
   useEffect(() => {
     const updatePage = () => {
-      const path = window.location.pathname.replace("/", "") || "dashboard";
+      const path = window.location.pathname.split("/").pop() || "dashboard";
       const validPages = ["dashboard", "faculty", "students", "subjects", "reports", "settings", "archive", "profile"];
       if (validPages.includes(path)) setPage(path);
     };
@@ -77,10 +78,7 @@ export default function AdminLayout({ user, onLogout }) {
       </aside>
 
       <main className="main-content">
-        {/* Mobile hamburger */}
-        <button className="mobile-menu-btn" onClick={() => setSidebarOpen(!sidebarOpen)}>
-          <span></span><span></span><span></span>
-        </button>
+        <TopNavbar user={user} onToggleSidebar={() => setSidebarOpen(!sidebarOpen)} onLogout={onLogout} />
 
         {page === "dashboard" && <Dashboard user={user} />}
         {page === "faculty" && <Faculty />}

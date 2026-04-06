@@ -1,203 +1,482 @@
-// ── Profile Page Styles ──────────────────────────────────
 @import 'variables';
 
+// ── Variables & Tokens ─────────────────────────────────────
+$profile-bg: #f0f4f8;
+$card-bg: #ffffff;
+$card-border: 0.5px solid rgba(13, 43, 94, 0.1);
+$card-radius: 14px;
+$uni-navy: #0d2b5e;
+$uni-blue-med: #1a4a9e;
+$uni-ice: #f0f6ff;
+$text-main: #1e293b;
+$text-muted: #64748b;
+$accent-green: #10b981;
+$accent-amber: #f59e0b;
+$accent-red: #ef4444;
+
+// ── Root Container ─────────────────────────────────────────
 .profile-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-family: $font-family-sans-serif;
+  min-height: 100vh;
+  background-color: $profile-bg;
+  padding: 28px;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: $text-main;
+
+  .profile-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 28px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 
-.profile-header-section {
-  position: relative;
-  margin-bottom: 5rem;
-}
-
-.profile-cover {
-  height: 200px;
-  background: $modern-gradient;
-  border-radius: 20px 20px 0 0;
-  position: relative;
+// ── Common Card Component ──────────────────────────────────
+.profile-card {
+  background: $card-bg;
+  border: $card-border;
+  border-radius: $card-radius;
   overflow: hidden;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
 
-  .cover-pattern {
-    position: absolute;
-    inset: 0;
-    background: repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 20px,
-      rgba(255, 255, 255, 0.03) 20px,
-      rgba(255, 255, 255, 0.03) 40px
-    );
+  .card-header {
+    padding: 18px 24px;
+    border-bottom: $card-border;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: $uni-navy;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .edit-btn {
+      font-size: 0.8rem;
+      color: $uni-blue-med;
+      font-weight: 600;
+      background: $uni-ice;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+      &:hover { background: darken($uni-ice, 4%); }
+    }
+  }
+
+  .card-body {
+    padding: 24px;
   }
 }
 
-.profile-avatar-section {
-  display: flex;
-  align-items: flex-end;
-  gap: 1.5rem;
-  padding: 0 2rem;
-  margin-top: -3.5rem;
-  position: relative;
-  z-index: 1;
-
-  .avatar-wrapper {
-    position: relative;
-    width: 110px;
+// ── Left Column Components ─────────────────────────────────
+.main-profile-card {
+  .profile-banner {
     height: 110px;
+    background: $uni-navy;
+    position: relative;
+    overflow: hidden;
 
-    .avatar-img {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #fff;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .avatar-placeholder {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      background: $modern-gradient;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      border: 4px solid #fff;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .avatar-upload {
+    &::before, &::after {
+      content: '';
       position: absolute;
-      bottom: 4px;
-      right: 4px;
-      width: 32px;
-      height: 32px;
-      background: $uni-bright;
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      color: white;
-      border: 2px solid #fff;
-      transition: background 0.3s;
-
-      &:hover { background: #b8960b; }
+      background: rgba(255,255,255,0.08);
     }
+    &::before { width: 120px; height: 120px; top: -40px; right: -20px; }
+    &::after { width: 70px; height: 70px; bottom: -10px; left: 10px; }
   }
 
-  .profile-name-section {
-    padding-bottom: 0.5rem;
+  .profile-info-summary {
+    text-align: center;
+    padding: 0 20px 24px;
+    margin-top: -50px;
+
+    .avatar-container {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 16px;
+
+      .profile-avatar {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: $uni-blue-med;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 700;
+        border: 4px solid #fff;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        object-fit: cover;
+      }
+
+      .avatar-edit-overlay {
+        position: absolute;
+        bottom: 2px;
+        right: 2px;
+        width: 32px;
+        height: 32px;
+        background: #fff;
+        border: 1px solid #e2e8f0;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $text-muted;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        transition: all 0.2s;
+        &:hover { color: $uni-blue-med; transform: scale(1.1); }
+      }
+    }
 
     .profile-name {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 700;
-      color: #1a1a2e;
-      margin: 0 0 0.5rem;
+      color: $uni-navy;
+      margin: 0 0 6px;
     }
 
     .role-badge {
       display: inline-block;
-      padding: 0.3rem 1rem;
+      padding: 5px 14px;
+      background: $uni-ice;
+      color: $uni-blue-med;
       border-radius: 20px;
-      color: white;
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.5px;
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 1.2px;
       text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .meta-rows {
+      text-align: left;
+      border-top: $card-border;
+      padding-top: 20px;
+      
+      .meta-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 14px;
+        color: $text-muted;
+        font-size: 0.85rem;
+        
+        svg { color: $uni-blue-med; flex-shrink: 0; }
+        span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+      }
+    }
+  }
+
+  .stat-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: $card-border;
+    background: #fafbfc;
+
+    .stat-item {
+      padding: 18px 8px;
+      text-align: center;
+      border-right: $card-border;
+      &:last-child { border-right: none; }
+
+      .stat-value {
+        display: block;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: $uni-navy;
+        margin-bottom: 2px;
+      }
+      .stat-label {
+        font-size: 0.6rem;
+        color: $text-muted;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
     }
   }
 }
 
-.profile-body {
-  .info-card {
-    background: #fff;
-    border-radius: 14px;
-    padding: 1.75rem;
-    margin-bottom: 1.25rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    border: 1px solid #e8ecf0;
+.quick-links-card {
+  .link-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    color: $text-main;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: $card-border;
+    transition: all 0.2s;
+    &:last-child { border-bottom: none; padding-bottom: 0; }
+    &:first-child { padding-top: 0; }
 
-    h3 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: $uni-blue;
-      margin: 0 0 1.25rem;
+    .link-left {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
-      padding-bottom: 0.75rem;
-      border-bottom: 2px solid $uni-ice;
+      gap: 14px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      svg { color: $text-muted; transition: color 0.2s; }
+    }
+    
+    .chevron { color: #cbd5e1; }
+
+    &:hover {
+      .link-left { color: $uni-blue-med; svg { color: $uni-blue-med; } }
+      .chevron { color: $uni-blue-med; transform: translateX(2px); }
     }
   }
+}
 
-  .info-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1.25rem;
+// ── Right Column Components ────────────────────────────────
+.info-field-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
 
-    .info-item {
-      &.full-width { grid-column: 1 / -1; }
-
-      .info-label {
-        display: block;
-        font-size: 0.75rem;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        color: #888;
-        margin-bottom: 0.3rem;
-        font-weight: 600;
-      }
-
-      .info-value {
-        display: block;
-        font-size: 0.95rem;
-        color: #1a1a2e;
-        font-weight: 500;
-      }
-    }
-  }
-
-  .signout-section {
-    margin-top: 2rem;
-    text-align: center;
-
-    .btn-signout {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
-      padding: 0.85rem 2.5rem;
-      background: linear-gradient(135deg, #dc2626, #b91c1c);
-      color: white;
-      border: none;
-      border-radius: 12px;
-      font-size: 1rem;
+  .info-field {
+    .field-label {
+      display: block;
+      font-size: 0.7rem;
       font-weight: 700;
-      cursor: pointer;
-      transition: all 0.3s;
+      color: $text-muted;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+    .field-value {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: $text-main;
+      &.active, &.enrolled { color: $accent-green; font-weight: 700; }
+      &.pending { color: $accent-amber; font-weight: 700; }
+      &.irregular { color: $accent-red; font-weight: 700; }
+      &.link { color: $uni-blue-med; border-bottom: 1px dashed rgba(26, 74, 158, 0.2); }
+    }
+  }
+}
 
-      &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(220, 38, 38, 0.3);
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .activity-item {
+    display: flex;
+    gap: 16px;
+    
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-top: 6px;
+      flex-shrink: 0;
+      &.login { background: $uni-blue-med; box-shadow: 0 0 0 4px rgba(26, 74, 158, 0.1); }
+      &.record { background: $accent-green; box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1); }
+      &.config { background: $accent-amber; box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.1); }
+    }
+
+    .activity-content {
+      .activity-text {
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 4px;
+        color: $text-main;
+      }
+      .activity-time {
+        font-size: 0.75rem;
+        color: $text-muted;
+        display: flex;
+        align-items: center;
+        gap: 4px;
       }
     }
   }
 }
 
-@media (max-width: 768px) {
-  .profile-container { padding: 1rem; }
-  .profile-avatar-section { 
-    flex-direction: column; 
-    align-items: center; 
-    text-align: center; 
-    padding: 0 1rem; 
-    gap: 0.5rem;
+.summary-list {
+  border: $card-border;
+  border-radius: 12px;
+  overflow: hidden;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    th {
+      background: #f8fafc;
+      padding: 14px 20px;
+      text-align: left;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: $text-muted;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: $card-border;
+    }
+
+    td {
+      padding: 16px 20px;
+      font-size: 0.9rem;
+      border-bottom: $card-border;
+      color: $text-main;
+      &.empty-state { text-align: center; padding: 40px; color: $text-muted; }
+    }
+    
+    tr:last-child td { border-bottom: none; }
   }
-  .profile-name-section {
-    margin-top: 0.5rem;
+}
+
+.action-buttons-card {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin-top: -12px;
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 0;
   }
-  .profile-body .info-grid { grid-template-columns: 1fr; }
+
+  .btn-change-password {
+    background: #fff;
+    color: $uni-blue-med;
+    border: 1.5px solid $uni-blue-med;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    &:hover { background: $uni-ice; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+  }
+
+  .btn-logout-full {
+    background: $accent-red;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.2s;
+    &:hover { background: darken($accent-red, 8%); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25); }
+  }
+}
+
+// ── Responsive ─────────────────────────────────────────────
+@media (max-width: 1024px) {
+  .profile-container {
+    padding: 20px;
+    .profile-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .profile-container {
+    padding: 16px;
+    
+    .info-field-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .summary-list {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      
+      table {
+        min-width: 500px; // Ensure table doesn't squash too much
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 12px;
+
+    .main-profile-card {
+      .profile-info-summary {
+        padding: 0 16px 20px;
+        
+        .profile-name {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .profile-card {
+      .card-header {
+        padding: 14px 18px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        
+        h3 {
+          font-size: 0.9rem;
+        }
+      }
+
+      .card-body {
+        padding: 18px;
+      }
+    }
+
+    .stat-strip {
+      .stat-item {
+        padding: 14px 4px;
+        
+        .stat-value {
+          font-size: 0.95rem;
+        }
+        
+        .stat-label {
+          font-size: 0.55rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .profile-container {
+    .stat-strip {
+      grid-template-columns: 1fr; // Stack stats on very small screens
+      
+      .stat-item {
+        border-right: none;
+        border-bottom: $card-border;
+        &:last-child { border-bottom: none; }
+      }
+    }
+  }
 }

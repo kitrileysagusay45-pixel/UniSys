@@ -4,7 +4,7 @@ import { GraduationCap, Eye, EyeOff } from "lucide-react";
 import "../../sass/login-page.scss";
 
 export default function LoginPage({ onLogin, onStudentRegister, onFacultyRegister, onForgotPassword }) {
-  const [credentials, setCredentials] = useState({ identifier: "", password: "" });
+  const [credentials, setCredentials] = useState({ username: "", password: "", remember: false });
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
@@ -14,17 +14,21 @@ export default function LoginPage({ onLogin, onStudentRegister, onFacultyRegiste
     setError("");
     setLoading(true);
 
-    const identifier = (credentials.identifier || "").trim();
-    const password   = credentials.password || "";
+    const username = (credentials.username || "").trim();
+    const password = credentials.password || "";
 
-    if (!identifier || !password) {
-      setError("Please enter your email/username and password.");
+    if (!username || !password) {
+      setError("Please enter your username and password.");
       setLoading(false);
       return;
     }
 
     try {
-      const response = await axios.post("/api/login", { identifier, password }, { withCredentials: true });
+      const response = await axios.post("/api/login", { 
+        username, 
+        password,
+        remember: credentials.remember
+      }, { withCredentials: true });
 
       if (response.data?.success) {
         if (onLogin) onLogin(response.data.user);
@@ -42,6 +46,14 @@ export default function LoginPage({ onLogin, onStudentRegister, onFacultyRegiste
     } finally {
       setLoading(false);
     }
+  };
+
+  const getRoleBadge = (username) => {
+    const prefix = username.substring(0, 3).toUpperCase();
+    if (prefix === 'ADM') return <span style={{background: '#f97316', color: 'white', padding: '2px 8px', borderRadius: '12px', fontSize: '0.65rem', marginLeft: '10px', verticalAlign: 'middle', textTransform: 'uppercase', letterSpacing: '0.5px'}}>Admin</span>;
+    if (prefix === 'FAC') return <span style={{background: '#3b82f6', color: 'white', padding: '2px 8px', borderRadius: '12px', fontSize: '0.65rem', marginLeft: '10px', verticalAlign: 'middle', textTransform: 'uppercase', letterSpacing: '0.5px'}}>Faculty</span>;
+    if (prefix === 'STU') return <span style={{background: '#22c55e', color: 'white', padding: '2px 8px', borderRadius: '12px', fontSize: '0.65rem', marginLeft: '10px', verticalAlign: 'middle', textTransform: 'uppercase', letterSpacing: '0.5px'}}>Student</span>;
+    return null;
   };
 
   return (
@@ -70,12 +82,15 @@ export default function LoginPage({ onLogin, onStudentRegister, onFacultyRegiste
 
           <form onSubmit={handleSubmit} className="login-form">
             <div className="form-group">
-              <label>Email or Username</label>
+              <label style={{ display: 'flex', alignItems: 'center' }}>
+                Username
+                {getRoleBadge(credentials.username)}
+              </label>
               <input
                 type="text"
-                placeholder="Enter your email or username"
-                value={credentials.identifier}
-                onChange={(e) => setCredentials({ ...credentials, identifier: e.target.value })}
+                placeholder="Enter your username"
+                value={credentials.username}
+                onChange={(e) => setCredentials({ ...credentials, username: e.target.value })}
                 autoComplete="username"
                 required
               />
@@ -100,8 +115,17 @@ export default function LoginPage({ onLogin, onStudentRegister, onFacultyRegiste
                   {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
                 </button>
               </div>
-              <div style={{ textAlign: "right", marginTop: "0.5rem" }}>
-                <button type="button" className="link-btn" onClick={onForgotPassword} style={{ fontSize: "0.85rem" }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.75rem' }}>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '8px', margin: 0, fontWeight: '500', color: '#64748b', fontSize: '0.85rem', cursor: 'pointer' }}>
+                  <input 
+                    type="checkbox" 
+                    checked={credentials.remember} 
+                    onChange={(e) => setCredentials({...credentials, remember: e.target.checked})} 
+                    style={{width: '16px', height: '16px', margin: 0, cursor: 'pointer'}}
+                  />
+                  Remember Me
+                </label>
+                <button type="button" className="link-btn" onClick={onForgotPassword} style={{ fontSize: "0.85rem", padding: 0 }}>
                   Forgot Password?
                 </button>
               </div>
@@ -128,3 +152,4 @@ export default function LoginPage({ onLogin, onStudentRegister, onFacultyRegiste
     </div>
   );
 }
+

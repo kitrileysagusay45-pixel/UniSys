@@ -28,6 +28,24 @@ body {
   background: #f8f9fb;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; // Critical to prevent horizontal scroll on mobile
+
+  @media (max-width: 768px) {
+    font-size: 14px; // Slightly smaller base font for mobile
+  }
+}
+
+// Global responsive helpers
+.desktop-only {
+  @media (max-width: 1024px) {
+    display: none !important;
+  }
+}
+
+.mobile-only {
+  @media (min-width: 1025px) {
+    display: none !important;
+  }
 }
 
 // Smooth transitions for all interactive elements

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import StudentDashboard from "./StudentDashboard";
 import Profile from "./Profile";
 import { GraduationCap, LayoutDashboard, User } from "lucide-react";
+import TopNavbar from "./TopNavbar";
 import "../../sass/student-layout.scss";
 
 export default function StudentLayout({ user, onLogout }) {
@@ -10,7 +11,7 @@ export default function StudentLayout({ user, onLogout }) {
 
   useEffect(() => {
     const updatePage = () => {
-      const path = window.location.pathname.replace("/", "");
+      const path = window.location.pathname.split("/").pop();
       const valid = ["student-dashboard", "student-profile"];
       if (valid.includes(path)) setPage(path);
     };
@@ -51,9 +52,7 @@ export default function StudentLayout({ user, onLogout }) {
         </ul>
       </aside>
       <main className="main-content">
-        <button className="mobile-menu-btn" onClick={() => setSidebarOpen(!sidebarOpen)}>
-          <span></span><span></span><span></span>
-        </button>
+        <TopNavbar user={user} onToggleSidebar={() => setSidebarOpen(!sidebarOpen)} onLogout={onLogout} />
         {page === "student-dashboard" && <StudentDashboard user={user} />}
         {page === "student-profile" && <Profile user={user} onLogout={onLogout} />}
       </main>

@@ -16,13 +16,20 @@ class UserProfileController extends Controller
      */
     public function update(Request $request)
     {
-        $user = User::find($request->user_id);
+        // Security: only allow a user to update their own profile
+        $requestingUserId = $request->header('X-User-Id');
+        $targetUserId     = $request->input('user_id');
+
+        $user = User::find($targetUserId);
 
         if (!$user) {
-            return response()->json([
-                'success' => false,
-                'message' => 'User not found'
-            ], 404);
+            return response()->json(['success' => false, 'message' => 'User not found'], 404);
+        }
+
+        // Users can only update their own profile (admins can update any)
+        $requestingUser = User::find($requestingUserId);
+        if (!$requestingUser || ($requestingUser->id !== $user->id && $requestingUser->role !== 'admin')) {
+            return response()->json(['success' => false, 'message' => 'Forbidden. You can only update your own profile.'], 403);
         }
 
         $validator = Validator::make($request->all(), [
@@ -90,24 +97,30 @@ class UserProfileController extends Controller
      */
     public function changePassword(Request $request)
     {
-        $user = User::find($request->user_id);
+        // Security: only allow a user to change their own password
+        $requestingUserId = $request->header('X-User-Id');
+        $targetUserId     = $request->input('user_id');
+
+        $user = User::find($targetUserId);
 
         if (!$user) {
-            return response()->json([
-                'success' => false,
-                'message' => 'User not found'
-            ], 404);
+            return response()->json(['success' => false, 'message' => 'User not found'], 404);
+        }
+
+        $requestingUser = User::find($requestingUserId);
+        if (!$requestingUser || ($requestingUser->id !== $user->id && $requestingUser->role !== 'admin')) {
+            return response()->json(['success' => false, 'message' => 'Forbidden. You can only change your own password.'], 403);
         }
 
         $validator = Validator::make($request->all(), [
             'current_password' => 'required',
-            'new_password' => 'required|string|min:8|confirmed',
+            'new_password'     => 'required|string|min:8|regex:/^(?=.*[A-Z])(?=.*[0-9]).+$/|confirmed',
         ]);
 
         if ($validator->fails()) {
             return response()->json([
                 'success' => false,
-                'errors' => $validator->errors()
+                'errors'  => $validator->errors()
             ], 422);
         }
 
