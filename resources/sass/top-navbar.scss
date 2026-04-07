@@ -1,413 +1,143 @@
+@import 'variables';
+
+// UNISYS Topbar - Theme 1
+
 .top-navbar {
+  height: $topbar-height;
+  background: $topbar-bg;
+  border-bottom: 1px solid $card-border-color;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: var(--card-bg, #ffffff);
-  border-bottom: 1px solid var(--border-color, #e2e8f0);
-  margin-bottom: 1.5rem;
+  justify-content: space-between;
+  padding: 0 24px;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 90;
 
-  .navbar-left {
+  .left-side {
     display: flex;
     align-items: center;
+    gap: 16px;
 
-    .mobile-menu-btn {
-      display: none; // Default hidden on desktop
-      background: none;
-      border: none;
-      cursor: pointer;
-      color: var(--text-color, #1e293b);
-      padding: 0.5rem;
-      border-radius: 6px;
-      
-      &:hover {
-        background: var(--hover-bg, #f1f5f9);
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: $color-text-muted;
+
+      .separator {
+        opacity: 0.3;
       }
 
-      @media (max-width: 1024px) {
-        display: block; // Show on tablet/mobile
+      .current {
+        color: $color-text-primary;
+        font-weight: $weight-semibold;
       }
     }
   }
 
-  .navbar-right {
+  .right-side {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 16px;
+  }
 
-    .icon-btn {
-      background: none;
-      border: none;
-      cursor: pointer;
-      color: var(--text-muted, #64748b);
-      padding: 0.5rem;
-      border-radius: 50%;
-      position: relative;
+  // User Chip
+  .user-chip {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 4px 12px 4px 4px;
+    background: #f8fafc;
+    border: 1px solid $card-border-color;
+    border-radius: $border-radius-btn;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background: #f1f5f9;
+      border-color: #cbd5e1;
+    }
+
+    .user-avatar-small {
+      width: 26px;
+      height: 26px;
+      background: $color-accent;
+      color: #ffffff;
+      border-radius: 6px;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: all 0.2s ease;
-
-      &:hover {
-        background-color: var(--hover-bg, #f1f5f9);
-        color: var(--primary-color, #1e3a8a);
-      }
-
-      .badge {
-        position: absolute;
-        top: 2px;
-        right: 2px;
-        background: #ef4444;
-        color: white;
-        font-size: 0.65rem;
-        font-weight: bold;
-        width: 16px;
-        height: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        border: 2px solid var(--card-bg, #ffffff);
-      }
+      font-size: 10px;
+      font-weight: $weight-bold;
     }
 
-    .notification-wrapper {
-      position: relative;
-
-      .notification-dropdown {
-        position: absolute;
-        top: 100%;
-        right: -10px;
-        width: 320px;
-        background: var(--card-bg, #ffffff);
-        border: 1px solid var(--border-color, #e2e8f0);
-        border-radius: 12px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        margin-top: 10px;
-        z-index: 1000;
-        overflow: hidden;
-
-        @media (max-width: 480px) {
-          right: -50px; // Shift slightly for small screens
-          width: 300px;
-        }
-
-        @media (max-width: 320px) {
-          right: -80px;
-          width: 280px;
-        }
-
-        .dropdown-header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 1rem;
-          border-bottom: 1px solid var(--border-color, #e2e8f0);
-
-          h4 {
-            margin: 0;
-            font-size: 1rem;
-            color: var(--text-color, #1e293b);
-          }
-
-          .mark-read {
-            background: none;
-            border: none;
-            color: var(--primary-color, #3b82f6);
-            font-size: 0.8rem;
-            cursor: pointer;
-            padding: 0;
-
-            &:hover {
-              text-decoration: underline;
-            }
-          }
-        }
-
-        .dropdown-list {
-          max-height: 300px;
-          overflow-y: auto;
-
-          .notification-item {
-            padding: 1rem;
-            border-bottom: 1px solid var(--border-color, #e2e8f0);
-            cursor: pointer;
-            transition: background 0.2s;
-
-            &:last-child {
-              border-bottom: none;
-            }
-
-            &:hover {
-              background: var(--hover-bg, #f8fafc);
-            }
-
-            p {
-              margin: 0 0 0.25rem 0;
-              font-size: 0.9rem;
-              color: var(--text-color, #334155);
-              font-weight: 500;
-            }
-
-            span {
-              font-size: 0.75rem;
-              color: var(--text-muted, #94a3b8);
-            }
-          }
-        }
-      }
-    }
-
-    .profile-wrapper {
-      position: relative;
+    .user-info-text {
       display: flex;
-      align-items: center;
+      flex-direction: column;
 
-      .nav-profile {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        cursor: pointer;
-        padding: 0.5rem 1rem;
-        border-radius: 50px;
-        transition: all 0.2s ease;
-        border: 1px solid transparent;
-
-        &:hover {
-          background-color: var(--hover-bg, #f8fafc);
-          border-color: var(--border-color, #e2e8f0);
-        }
-
-        .avatar-mini {
-          width: 38px;
-          height: 38px;
-          border-radius: 50%;
-          overflow: hidden;
-          border: 2px solid var(--border-color, #e2e8f0);
-          box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-
-          .avatar-placeholder {
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 1.1rem;
-          }
-        }
-
-        .profile-info-mini {
-          display: flex;
-          flex-direction: column;
-          @media (max-width: 640px) {
-            display: none;
-          }
-
-          .nav-username {
-            font-weight: 700;
-            font-size: 0.85rem;
-            color: var(--text-color, #1e293b);
-            line-height: 1.2;
-          }
-
-          .nav-role {
-            font-size: 0.7rem;
-            color: var(--text-muted, #64748b);
-            font-weight: 500;
-          }
-        }
-
-        .chevron {
-          color: var(--text-muted, #94a3b8);
-          transition: transform 0.3s ease;
-          @media (max-width: 640px) {
-            display: none;
-          }
-
-          &.rotate {
-            transform: rotate(180deg);
-          }
-        }
+      .user-name {
+        font-size: 12px;
+        font-weight: $weight-semibold;
+        color: $color-text-primary;
+        line-height: 1.2;
       }
 
-      .profile-dropdown {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 240px;
-        background: var(--card-bg, #ffffff);
-        border: 1px solid var(--border-color, #e2e8f0);
-        border-radius: 12px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        margin-top: 10px;
-        z-index: 1000;
-        overflow: hidden;
-        animation: dropdownSlideIn 0.2s ease-out;
-
-        @media (max-width: 480px) {
-          width: 280px;
-          right: -10px;
-        }
-
-        @keyframes dropdownSlideIn {
-          from { opacity: 0; transform: translateY(-10px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-
-        .dropdown-user-info {
-          padding: 1.25rem 1rem;
-          background: var(--hover-bg, #f8fafc);
-          border-bottom: 1px solid var(--border-color, #e2e8f0);
-
-          .user-name {
-            margin: 0;
-            font-size: 0.95rem;
-            font-weight: 700;
-            color: var(--text-color, #1e293b);
-          }
-
-          .user-email {
-            margin: 0.25rem 0 0 0;
-            font-size: 0.75rem;
-            color: var(--text-muted, #64748b);
-            word-break: break-all;
-          }
-        }
-
-        .dropdown-actions {
-          padding: 0.5rem;
-
-          .dropdown-item {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.75rem 0.75rem;
-            border-radius: 8px;
-            border: none;
-            background: none;
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: var(--text-color, #334155);
-            cursor: pointer;
-            transition: all 0.2s;
-
-            &:hover {
-              background-color: var(--hover-bg, #f1f5f9);
-              color: var(--primary-color, #3b82f6);
-            }
-
-            &.logout {
-              color: #ef4444;
-              &:hover {
-                background-color: #fef2f2;
-                color: #dc2626;
-              }
-            }
-
-            svg {
-              flex-shrink: 0;
-            }
-          }
-
-          .dropdown-divider {
-            height: 1px;
-            background: var(--border-color, #e2e8f0);
-            margin: 0.5rem;
-          }
-        }
+      .user-role {
+        font-size: 10px;
+        color: $color-text-muted;
       }
+    }
+  }
+
+  // Buttons
+  .btn-primary {
+    background: $color-accent;
+    color: #ffffff;
+    border: none;
+    border-radius: $border-radius-btn;
+    padding: 7px 16px;
+    font-size: 13px;
+    font-weight: $weight-semibold;
+    cursor: pointer;
+    transition: background 0.2s;
+
+    &:hover {
+      background: $color-accent-hover;
+    }
+  }
+
+  .btn-secondary {
+    background: #f8fafc;
+    color: $color-text-secondary;
+    border: 1px solid $card-border-color;
+    border-radius: $border-radius-btn;
+    padding: 7px 16px;
+    font-size: 13px;
+    font-weight: $weight-medium;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background: #f1f5f9;
+      color: $color-text-primary;
     }
   }
 }
 
-// Dark theme variables structure
-[data-theme='dark'] {
-  --card-bg: #1e293b;
-  --bg-color: #0f172a;
-  --text-color: #f8fafc;
-  --text-muted: #94a3b8;
-  --border-color: #334155;
-  --hover-bg: #334155;
-  --primary-color: #60a5fa;
+// Mobile Toggle
+.mobile-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: $color-text-primary;
+  cursor: pointer;
+  padding: 8px;
 
-  body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-  }
-
-  // Common dark theme overrides
-  .main-content {
-    background-color: var(--bg-color, #0f172a);
-  }
-
-  .stat-card, .info-card, .chart-box, .activity-section, .subject-card {
-    background-color: var(--card-bg, #1e293b);
-    border-color: var(--border-color, #334155);
-    color: var(--text-color, #f8fafc);
-    
-    h3, h4, p, span {
-      color: var(--text-color, #f8fafc);
-    }
-    
-    .chart-subtitle, .stat-label, .activity-time {
-      color: var(--text-muted, #94a3b8);
-    }
-  }
-
-  .sidebar {
-    background-color: var(--card-bg, #1e293b);
-    border-color: var(--border-color, #334155);
-    
-    .logo-text, .nav-item span {
-      color: var(--text-color, #f8fafc);
-    }
-
-    .nav-item {
-      color: var(--text-muted, #94a3b8);
-      &:hover {
-        background-color: var(--hover-bg, #334155);
-        color: var(--text-color, #f8fafc);
-      }
-      &.active {
-        background-color: var(--hover-bg, #334155);
-      }
-    }
-  }
-
-  input, select, textarea {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    border-color: var(--border-color);
-
-    &:focus {
-      border-color: var(--primary-color);
-    }
-  }
-
-  table {
-    th {
-      background-color: var(--hover-bg);
-      color: var(--text-color);
-    }
-    td {
-      color: var(--text-color);
-      border-color: var(--border-color);
-    }
-    tr:hover td {
-      background-color: var(--hover-bg);
-    }
+  @media (max-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

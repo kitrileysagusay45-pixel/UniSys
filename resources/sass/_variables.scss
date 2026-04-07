@@ -1,72 +1,116 @@
-// Body
-$body-bg: #f5f7fa;
+// UNISYS — Dark Indigo Theme Tokens (Theme 1)
 
-// Typography - Professional Academic Font Stack
-$font-family-sans-serif: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-$font-size-base: 0.9375rem;
-$line-height-base: 1.6;
+// Sidebar
+$sidebar-bg:            #1e2a4a;
+$sidebar-border:        rgba(255, 255, 255, 0.06);
+$sidebar-text:          #94a3b8;
+$sidebar-active-bg:     rgba(99, 102, 241, 0.12);
+$sidebar-active-txt:    #ffffff;
+$sidebar-hover-bg:      rgba(255, 255, 255, 0.03);
+$sidebar-hover-txt:     #cbd5e1;
 
-// University Institutional Color Palette (Modern Blue Theme)
-$uni-navy-deep: #0D2857;
-$uni-blue: #1A3F7A;
-$uni-royal: #1E5CAB;
-$uni-bright: #378ADD;
-$uni-sky: #85B7EB;
-$uni-ice: #E6F1FB;
+// Accent Colors (Indigo)
+$color-accent:          #6366f1;
+$color-accent-hover:    #4f46e5;
+$color-accent-soft:     #eef2ff;
+$color-accent-text:     #4338ca;
 
-$primary-color: $uni-blue;
-$primary-light: $uni-sky;
-$primary-dark: $uni-navy-deep;
-$primary-gradient: linear-gradient(135deg, $uni-navy-deep 0%, $uni-royal 100%);
-$modern-gradient: linear-gradient(135deg, $uni-navy-deep 0%, $uni-blue 50%, $uni-royal 100%);
+// Page Colors
+$page-bg:               #f0f2f8;
+$topbar-bg:             #ffffff;
+$card-bg:               #ffffff;
+$card-border-color:     #e2e8f0;
 
-// Secondary Palette
-$secondary-color: $uni-royal;
-$secondary-light: $uni-bright;
-$secondary-dark: $uni-navy-deep;
+// Text Colors
+$color-text-primary:    #1e2a4a;
+$color-text-secondary:  #475569;
+$color-text-muted:      #94a3b8;
 
-// Accent Colors
-$accent-blue: #1e5a8e;
-$accent-teal: #16697a;
-$accent-burgundy: #8b1e3f;
+// Status Palette
+$color-success:         #22c55e;
+$color-success-bg:      #dcfce7;
+$color-success-text:    #166534;
+$color-warning:         #f59e0b;
+$color-warning-bg:      #fef3c7;
+$color-warning-text:    #92400e;
+$color-danger:          #dc2626;
+$color-danger-bg:       #fef2f2;
+$color-danger-border:   #fecaca;
 
-// Status Colors (Professional Palette)
-$success-color: #2d7a3e;
-$success-light: #e8f5e9;
-$info-color: #0277bd;
-$info-light: #e1f5fe;
-$warning-color: #f57c00;
-$warning-light: #fff3e0;
-$danger-color: #c62828;
-$danger-light: #ffebee;
+// Aliases for app.scss
+$color-page-bg:         $page-bg;
+$color-card-bg:         $card-bg;
+$color-sidebar-bg:      $sidebar-bg;
+$color-topbar-bg:       $topbar-bg;
 
-// Neutral Colors (Academic Gray Scale)
-$dark-color: #1a1a2e;
-$text-primary: #2c3e50;
-$text-secondary: #546e7a;
-$text-muted: #78909c;
-$light-color: #f8f9fa;
-$border-color: #d0d7de;
-$background-gray: #eceff1;
+// Typography Defaults
+$font-family-base:      'Inter', 'Segoe UI', system-ui, sans-serif;
+$font-size-base:        14px;
+$line-height-base:      1.5;
+$font-size-page-title:  22px;
+$font-size-section:     13px;
+$font-size-body:        13px;
+$font-size-label:       10px;
+$font-size-small:       11px;
 
-// University Department Colors
-$dept-science: #4a90e2;
-$dept-arts: #9b59b6;
-$dept-business: #e67e22;
-$dept-engineering: #27ae60;
-$dept-medicine: #e74c3c;
+$weight-bold:           700;
+$weight-semibold:       600;
+$weight-medium:         500;
+$weight-regular:        400;
 
-// Shadows (More subtle, professional)
-$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-$shadow-md: 0 2px 8px rgba(0, 0, 0, 0.12);
-$shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.16);
-$shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.20);
+// Spacing & Radius
+$border-radius-card:    12px;
+$border-radius-btn:     8px;
+$border-radius-pill:    20px;
+$sidebar-width:         232px;
+$topbar-height:         52px;
+$page-padding:          28px;
+$card-gap:              16px;
 
-// Card & Container
-$card-background: #ffffff;
-$card-border: #e0e7ee;
-$card-radius: 8px;
+// KPI Colors
+$kpi-primary:           #6366f1;
+$kpi-secondary:         #a855f7;
+$kpi-tertiary:          #3b82f6;
+$kpi-quaternary:        #10b981;
 
-// Header Heights
-$header-height: 70px;
-$sidebar-width: 260px;
+// Legacy variables mapping (Compatibility)
+$body-bg: $page-bg;
+$primary-color: $color-accent;
+$primary-dark: $sidebar-bg;
+$text-primary: $color-text-primary;
+$text-secondary: $color-text-secondary;
+$text-muted: $color-text-muted;
+$border-color: $card-border-color;
+$card-radius: $border-radius-card;
+
+// Extended Legacy Mappings (to fix build errors)
+$uni-navy-deep:         $sidebar-bg;
+$uni-navy:              $sidebar-bg;
+$uni-blue:              $color-accent;
+$uni-royal:             $color-accent-hover;
+$uni-sky:               $color-text-muted;
+$uni-ice:               $card-border-color;
+$uni-bright:            $kpi-secondary;
+$modern-gradient:       linear-gradient(135deg, $color-accent, $color-accent-hover);
+$primary-gradient:      linear-gradient(135deg, $sidebar-bg, $color-accent-hover);
+$card-shadow:           0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+// Additional UI variables used in settings/faculty/etc
+$font-family-sans-serif: $font-family-base;
+$shadow-md:             0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg:             0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-xl:             0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+$card-border:           $card-border-color;
+$background-gray:       #f8fafc;
+$primary-light:         lighten($color-accent, 10%);
+$primary-dark:          darken($color-accent, 10%);
+$info-light:            rgba(99, 102, 241, 0.05);
+$secondary-color:       $color-accent-hover;
+$success-light:         $color-success-bg;
+$success-color:         $color-success;
+$danger-light:          $color-danger-bg;
+$danger-color:          $color-danger;
+$warning-light:         $color-warning-bg;
+$warning-color:         $color-warning;
+$secondary-light:       lighten($color-accent-hover, 10%);
+$card-border-active:    $color-accent;

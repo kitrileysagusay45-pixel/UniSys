@@ -3,9 +3,9 @@ import FacultyDashboard from "./FacultyDashboard";
 import FacultyStudents from "./FacultyStudents";
 import FacultySubjects from "./FacultySubjects";
 import Profile from "./Profile";
-import { GraduationCap, LayoutDashboard, Users, User, BookOpen } from "lucide-react";
+import { GraduationCap, LayoutDashboard, Users, User, BookOpen, Circle } from "lucide-react";
 import TopNavbar from "./TopNavbar";
-import "../../sass/faculty-layout.scss";
+import "../../sass/layout.scss";
 
 export default function FacultyLayout({ user, onLogout }) {
   const [page, setPage] = useState("faculty-dashboard");
@@ -28,39 +28,51 @@ export default function FacultyLayout({ user, onLogout }) {
   };
 
   const menuItems = [
-    { key: "faculty-dashboard", label: "Dashboard", icon: <LayoutDashboard size={20} /> },
-    { key: "faculty-subjects", label: "My Subjects", icon: <BookOpen size={20} /> },
-    { key: "faculty-students", label: "My Students", icon: <Users size={20} /> },
-    { key: "faculty-profile", label: "Profile", icon: <User size={20} /> },
+    { key: "faculty-dashboard", label: "Dashboard", icon: <LayoutDashboard size={18} /> },
+    { key: "faculty-subjects", label: "My Subjects", icon: <BookOpen size={18} /> },
+    { key: "faculty-students", label: "My Students", icon: <Users size={18} /> },
+    { key: "faculty-profile", label: "Profile", icon: <User size={18} /> },
   ];
 
   return (
-    <div className="layout faculty-layout">
+    <div className="layout">
       {sidebarOpen && <div className="sidebar-overlay" onClick={() => setSidebarOpen(false)} />}
       <aside className={`sidebar ${sidebarOpen ? "open" : ""}`}>
         <div className="logo-section">
           <div className="logo-box">
-            <h1 className="logo-text">UniSys</h1>
-            <div className="logo-icon-wrapper">
-              <GraduationCap size={40} strokeWidth={1.5} className="logo-icon" />
+             <div className="logo-icon-wrapper">
+              <GraduationCap size={24} strokeWidth={2.5} className="logo-icon" />
             </div>
+            <h1 className="logo-text">UniSys</h1>
           </div>
-          <span className="role-badge faculty">Faculty Portal</span>
+          <span className="portal-badge faculty">FACULTY PORTAL</span>
         </div>
-        <ul className="nav-menu">
-          {menuItems.map(item => (
-            <li key={item.key} className={`nav-item ${page === item.key ? "active" : ""}`} onClick={() => navigate(item.key)}>
-              {item.icon}<span>{item.label}</span>
-            </li>
-          ))}
-        </ul>
+        <nav className="nav-container">
+          <ul className="nav-menu">
+            {menuItems.map(item => (
+              <li key={item.key} className={`nav-item ${page === item.key ? "active" : ""}`} onClick={() => navigate(item.key)}>
+                <div className="icon-wrapper">{item.icon}</div>
+                <span>{item.label}</span>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <div className="sidebar-footer">
+          <div className="system-status">
+            <Circle size={8} fill="#10b981" stroke="none" className="status-dot pulsing" />
+            <span>System Online</span>
+          </div>
+        </div>
       </aside>
       <main className="main-content">
         <TopNavbar user={user} onToggleSidebar={() => setSidebarOpen(!sidebarOpen)} onLogout={onLogout} />
-        {page === "faculty-dashboard" && <FacultyDashboard user={user} />}
-        {page === "faculty-subjects" && <FacultySubjects user={user} />}
-        {page === "faculty-students" && <FacultyStudents user={user} />}
-        {page === "faculty-profile" && <Profile user={user} onLogout={onLogout} />}
+        
+        <div className="page-content-wrapper">
+          {page === "faculty-dashboard" && <FacultyDashboard user={user} />}
+          {page === "faculty-subjects" && <FacultySubjects user={user} />}
+          {page === "faculty-students" && <FacultyStudents user={user} />}
+          {page === "faculty-profile" && <Profile user={user} onLogout={onLogout} />}
+        </div>
       </main>
     </div>
   );

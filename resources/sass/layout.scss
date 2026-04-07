@@ -1,221 +1,213 @@
 @import 'variables';
 
-// University Layout Styles
-
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+// UNISYS Layout System - Theme 1
 
 .layout {
   display: flex;
   height: 100vh;
-  background: $body-bg;
+  background: $page-bg;
+  color: $color-text-secondary;
+  font-family: $font-family-base;
   overflow: hidden;
-  font-family: $font-family-sans-serif;
 
+  // Sidebar
   .sidebar {
     width: $sidebar-width;
-    background: $primary-dark;
-    color: white;
+    background: $sidebar-bg;
+    color: $sidebar-text;
     display: flex;
     flex-direction: column;
-    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 100;
-    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-right: 1px solid $sidebar-border;
 
     .logo-section {
-      padding: 1.75rem 1.5rem;
-      background: $primary-dark;
-      border-bottom: 2px solid $secondary-color;
-      text-align: center;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
 
       .logo-box {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0.75rem;
+        gap: 8px;
 
         .logo-text {
-          font-size: 1.625rem;
-          font-weight: 700;
-          margin: 0;
-          color: white;
+          font-size: 20px;
+          font-weight: $weight-bold;
+          color: #ffffff;
+          letter-spacing: 2px;
           text-transform: uppercase;
-          letter-spacing: 1px;
-          text-align: center;
+          margin: 0;
         }
 
         .logo-icon-wrapper {
+          width: 56px;
+          height: 56px;
+          background: $color-accent;
+          border: 2px solid #818cf8;
+          border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 1rem;
-          background: $secondary-color;
-          border-radius: 50%;
-          border: 3px solid rgba(255, 255, 255, 0.2);
+          box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 
           .logo-icon {
-            color: white;
-            width: 40px;
-            height: 40px;
+            color: #ffffff;
+            width: 32px;
+            height: 32px;
           }
         }
       }
 
       .role-badge {
-        display: inline-block;
-        margin-top: 0.75rem;
-        padding: 0.3rem 1rem;
-        border-radius: 20px;
-        font-size: 0.75rem;
-        font-weight: 600;
-        letter-spacing: 1px;
+        font-size: 9px;
+        font-weight: $weight-semibold;
         text-transform: uppercase;
-
-        &.admin {
-          background: rgba(133, 183, 235, 0.15);
-          color: $uni-sky;
-          border: 1px solid rgba(133, 183, 235, 0.3);
-        }
+        letter-spacing: 0.5px;
+        color: $color-accent;
+        background: rgba(99, 102, 241, 0.1);
+        border: 1px solid rgba(99, 102, 241, 0.3);
+        padding: 4px 12px;
+        border-radius: $border-radius-pill;
+        margin-top: 12px;
       }
     }
 
     .nav-menu {
       list-style: none;
-      padding: 1.5rem 0;
+      padding: 16px 0;
       margin: 0;
       flex: 1;
       overflow-y: auto;
 
-      &::-webkit-scrollbar {
-        width: 6px;
-      }
+      &::-webkit-scrollbar { width: 4px; }
+      &::-webkit-scrollbar-track { background: transparent; }
+      &::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 2px; }
 
-      &::-webkit-scrollbar-track {
-        background: rgba(255, 255, 255, 0.05);
-      }
-
-      &::-webkit-scrollbar-thumb {
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 3px;
-
-        &:hover {
-          background: rgba(255, 255, 255, 0.3);
-        }
+      .nav-section-header {
+        font-size: 9px;
+        font-weight: $weight-medium;
+        color: #4a5568;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        padding: 24px 24px 8px;
       }
 
       .nav-item {
-        padding: 0.875rem 1.5rem;
-        cursor: pointer;
+        margin: 4px 0;
+        padding: 11px 24px;
         display: flex;
         align-items: center;
         gap: 12px;
-        font-weight: 500;
-        font-size: 0.9375rem;
-        margin: 0.25rem 1rem;
-        border-radius: 6px;
-        color: rgba(255, 255, 255, 0.85);
+        font-size: $font-size-body;
+        font-weight: $weight-medium;
+        color: $sidebar-text;
+        cursor: pointer;
         transition: all 0.2s ease;
         border-left: 3px solid transparent;
 
+        svg {
+          opacity: 0.7;
+          transition: opacity 0.2s;
+        }
+
         &:hover {
-          background: rgba(255, 255, 255, 0.1);
-          color: white;
-          border-left-color: $secondary-color;
+          color: $sidebar-hover-txt;
+          background: $sidebar-hover-bg;
+          
+          svg { opacity: 1; }
         }
 
         &.active {
-          background: rgba(255, 255, 255, 0.1);
-          font-weight: 700;
-          color: white;
-          border-left: 4px solid $uni-bright;
-          box-shadow: inset 5px 0 10px rgba(0, 0, 0, 0.2);
+          color: $sidebar-active-txt;
+          background: $sidebar-active-bg;
+          border-left-color: $color-accent;
+          font-weight: $weight-semibold;
+
+          svg {
+            color: $color-accent;
+            opacity: 1;
+          }
+        }
+
+        .badge {
+          margin-left: auto;
+          width: 18px;
+          height: 18px;
+          background: $color-accent;
+          color: #ffffff;
+          border-radius: 50%;
+          font-size: 9px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: $weight-bold;
         }
       }
     }
 
     .sidebar-footer {
-      padding: 1rem 1.5rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      font-size: 0.75rem;
-      color: rgba(255, 255, 255, 0.6);
-      text-align: center;
+      padding: 16px 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      color: $sidebar-text;
+
+      .status-dot {
+        width: 8px;
+        height: 8px;
+        background: $color-success;
+        border-radius: 50%;
+        box-shadow: 0 0 8px $color-success;
+      }
     }
   }
 
+  // Main Content Area
   .main-content {
     flex: 1;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    position: relative;
-    background: $body-bg;
-  }
+    background: $page-bg;
+    padding: 0;
 
-  &.sidebar-collapsed {
-    .sidebar {
-      width: 80px;
+    .page-header {
+      padding: $page-padding $page-padding 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-      .logo-text {
-        display: none;
-      }
-
-      .nav-label {
-        display: none;
-      }
-
-      .logo-icon-wrapper {
+      .page-title {
+        font-size: $font-size-page-title;
+        font-weight: $weight-bold;
+        color: $color-text-primary;
         margin: 0;
       }
+    }
 
-      .nav-item {
-        justify-content: center;
-        padding: 1rem;
-        margin: 0.25rem 0.5rem;
-      }
+    .page-content {
+      padding: 0 $page-padding $page-padding;
     }
   }
 
+  // Mobile States
   @media (max-width: 1024px) {
     .sidebar {
-      width: 240px; // Slightly narrower for tablets
       position: fixed;
-      left: -240px;
-      z-index: 1001;
-      
+      left: -100%;
+      height: 100%;
+      box-shadow: 20px 0 50px rgba(0, 0, 0, 0.3);
+
       &.open {
         left: 0;
       }
-    }
-    
-    .mobile-menu-btn {
-      display: flex;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .sidebar {
-      width: 280px;
-      left: -280px;
-    }
-
-    .main-content {
-      padding-top: 60px; // Space for mobile menu button if needed
-    }
-  }
-
-  @media (max-width: 375px) {
-    .sidebar {
-      width: 100%; // Full width on very small phones
-      left: -100%;
     }
   }
 }
@@ -223,79 +215,67 @@
 .sidebar-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 999;
+  background: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 99;
 }
 
-.mobile-menu-btn {
-  display: none;
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  z-index: 998;
-  background: $primary-color;
-  border: none;
-  border-radius: 8px;
-  padding: 0.6rem;
-  cursor: pointer;
-  flex-direction: column;
-  gap: 4px;
-
-  span {
-    display: block;
-    width: 22px;
-    height: 2px;
-    background: white;
-    border-radius: 1px;
-  }
-
-  @media (max-width: 768px) {
-    display: flex;
-  }
+// KPI Cards Grid
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: $card-gap;
+  margin-bottom: 24px;
 }
 
-// University Header Bar (for academic year, semester info)
-.university-header {
-  background: white;
-  border-bottom: 1px solid $uni-ice;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+// Global Card Styles
+.card {
+  background: $card-bg;
+  border: 1px solid $card-border-color;
+  border-radius: $border-radius-card;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  position: relative;
+  overflow: hidden;
 
-  @media (max-width: 640px) {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  .academic-info {
+  .card-title {
+    font-size: $font-size-section;
+    font-weight: $weight-semibold;
+    color: $color-text-primary;
+    margin-bottom: 16px;
     display: flex;
-    gap: 1.5rem;
     align-items: center;
-    font-size: 0.875rem;
-    color: $text-secondary;
+    gap: 8px;
 
-    @media (max-width: 640px) {
-      flex-wrap: wrap;
-      gap: 0.75rem;
+    &::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: $color-accent;
+      border-radius: 50%;
     }
+  }
+}
 
-    .info-item {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+// Empty States
+.empty-state {
+  padding: 48px 24px;
+  text-align: center;
+  color: #cbd5e1;
 
-      .label {
-        font-weight: 600;
-        color: $text-primary;
-      }
+  .empty-icon {
+    font-size: 40px;
+    opacity: 0.15;
+    margin-bottom: 16px;
+  }
 
-      .value {
-        color: $text-secondary;
-      }
-    }
+  .empty-text {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  .empty-subtext {
+    font-size: 11px;
+    color: $color-text-muted;
   }
 }
