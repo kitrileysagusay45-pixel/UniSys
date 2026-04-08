@@ -15,6 +15,11 @@ use App\Http\Controllers\AcademicYearController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\SystemController;
+use App\Http\Controllers\ProgramController;
+use App\Http\Controllers\AnnouncementController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\EnrollmentController;
+use App\Http\Controllers\GradeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,11 +39,15 @@ Route::middleware('throttle:10,1')->group(function () {
 Route::middleware('throttle:5,1')->group(function () {
     Route::post('student/register', [AuthController::class, 'registerStudent']);
     Route::post('faculty/register', [AuthController::class, 'registerFaculty']);
+    Route::get('programs/public',   [ProgramController::class, 'publicList']);
 });
 
 // ── PUBLIC: Password reset
 Route::post('forgot-password',  [PasswordResetController::class, 'sendResetLinkEmail']);
 Route::post('reset-password',   [PasswordResetController::class, 'resetPassword']);
+
+// ── PUBLIC: Username role lookup (for login badge — returns only role, never password)
+Route::post('lookup-user',      [AuthController::class, 'lookupUser']);
 
 // ── PROTECTED: Must be any authenticated user ─────────────────────────────────
 Route::middleware('api.user')->group(function () {
@@ -59,6 +68,20 @@ Route::middleware('api.user')->group(function () {
     Route::get('subjects/{subject}',                 [SubjectController::class, 'show']);
     Route::get('faculty/{facultyId}/subjects',       [SubjectController::class, 'facultySubjects']);
     Route::get('student/{studentId}/subjects',       [SubjectController::class, 'studentSubjects']);
+
+    // Announcements & Events (Dashboard feed)
+    Route::get('announcements/dashboard',            [AnnouncementController::class, 'dashboard']);
+    Route::get('events/upcoming',                    [EventController::class, 'upcoming']);
+});
+
+// ── STUDENT ONLY: Personal academic info ──────────────────────────────────────
+Route::middleware('api.user:student')->group(function () {
+    Route::get('student/my-grades',                  [GradeController::class, 'myGrades']);
+});
+
+// ── FACULTY ONLY: Grading access ──────────────────────────────────────────────
+Route::middleware('api.user:faculty')->group(function () {
+    Route::post('faculty/post-grade',                [GradeController::class, 'store']);
 });
 
 // ── ADMIN ONLY: Full CRUD access ──────────────────────────────────────────────
@@ -110,6 +133,17 @@ Route::middleware('api.user:admin')->group(function () {
     Route::post('/system/settings',   [SystemController::class, 'updateSetting']);
     Route::get('/system/audit-logs',  [SystemController::class, 'getAuditLogs']);
     Route::post('/system/audit-logs', [SystemController::class, 'storeAuditLog']);
+
+    // Programs CRUD
+    Route::apiResource('programs', ProgramController::class);
+
+    // Announcements & Events Management
+    Route::apiResource('announcements', AnnouncementController::class);
+    Route::apiResource('events', EventController::class);
+
+    // Enrollment Management
+    Route::post('enrollments/subjects', [EnrollmentController::class, 'enroll']);
+    Route::delete('enrollments/subjects', [EnrollmentController::class, 'unenroll']);
 });
 
 // ── ADMIN + FACULTY: Department students list ─────────────────────────────────

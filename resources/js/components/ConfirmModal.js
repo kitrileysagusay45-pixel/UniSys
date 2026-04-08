@@ -1,6 +1,6 @@
 import React from "react";
 import { AlertTriangle, CheckCircle, XCircle } from "lucide-react";
-import "../../sass/confirm-modal.scss";
+// import "../../sass/confirm-modal.scss";
 
 export default function ConfirmModal({ isOpen, title, message, type = "warning", onConfirm, onCancel, confirmText = "Confirm", cancelText = "Cancel" }) {
   if (!isOpen) return null;

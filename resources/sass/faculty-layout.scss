@@ -1,5 +1,5 @@
 // ── Faculty Layout (reuses layout.scss base + overrides) ──
-@import 'variables';
+// @import 'variables' (Automatically injected by Mix);
 @import 'layout';
 
 .faculty-layout {

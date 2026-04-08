@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { ArrowLeft, Mail } from "lucide-react";
-import "../../sass/login-page.scss";
+// import "../../sass/login-page.scss";
 
 export default function ForgotPassword({ onBackToLogin }) {
   const [email, setEmail] = useState("");

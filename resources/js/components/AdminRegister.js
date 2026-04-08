@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { User, Mail, Lock, Phone, MapPin, IdCard, Camera } from 'lucide-react';
-import '../../sass/admin-register.scss';
+// import '.scss';
 
 // ...existing code...
 export default function AdminRegister({ onBackToLogin }) {

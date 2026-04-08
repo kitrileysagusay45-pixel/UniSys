@@ -5,7 +5,7 @@ import { Search, Edit2, Archive } from "lucide-react";
 import ConfirmModal from "./ConfirmModal";
 import Toast from "./Toast";
 import { useToast } from "./useToast";
-import "../../sass/subjects.scss";
+// import "../../sass/subjects.scss";
 
 export default function Subjects() {
   const { refreshCounts } = useCounts();

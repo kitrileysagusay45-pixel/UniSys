@@ -8,24 +8,10 @@ import StudentLayout from "./StudentLayout";
 import ForgotPassword from "./ForgotPassword";
 import ResetPassword from "./ResetPassword";
 
-const getStoredUser = () => {
-  const savedUser = localStorage.getItem("user");
-  if (!savedUser) return null;
-
-  try {
-    return JSON.parse(savedUser);
-  } catch (err) {
-    console.warn("Invalid user data in localStorage. Clearing auth state.", err);
-    localStorage.removeItem("user");
-    localStorage.removeItem("isLoggedIn");
-    return null;
-  }
-};
-
 export default function Layout() {
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
     const loggedIn = localStorage.getItem("isLoggedIn") === "true";
-    const savedUser = getStoredUser();
+    const savedUser = localStorage.getItem("user");
     if (loggedIn && !savedUser) {
       localStorage.removeItem("isLoggedIn");
       localStorage.removeItem("user");
@@ -35,25 +21,20 @@ export default function Layout() {
   });
 
   const [user, setUser] = useState(() => {
-    return getStoredUser();
+    const savedUser = localStorage.getItem("user");
+    return savedUser ? JSON.parse(savedUser) : null;
   });
 
   const [authView, setAuthView] = useState(() => {
-    const lastSegment = window.location.pathname.split("/").pop();
-    if (lastSegment === "reset-password") return "reset-password";
+    if (window.location.pathname === "/reset-password") return "reset-password";
     return "login";
   }); // login | student-register | faculty-register | forgot-password | reset-password
 
   // Listen for profile updates
   useEffect(() => {
     const handleProfileUpdate = () => {
-      const savedUser = getStoredUser();
-      if (savedUser) {
-        setUser(savedUser);
-      } else {
-        setUser(null);
-        setIsLoggedIn(false);
-      }
+      const savedUser = localStorage.getItem("user");
+      if (savedUser) setUser(JSON.parse(savedUser));
     };
     window.addEventListener("profileUpdated", handleProfileUpdate);
     return () => window.removeEventListener("profileUpdated", handleProfileUpdate);
@@ -68,11 +49,11 @@ export default function Layout() {
     // Navigate based on role
     const role = userData.role || "admin";
     if (role === "admin") {
-      window.history.pushState({}, "", "/dashboard");
+      window.history.pushState({}, "", "/admin/dashboard");
     } else if (role === "faculty") {
-      window.history.pushState({}, "", "/faculty-dashboard");
+      window.history.pushState({}, "", "/faculty/dashboard");
     } else if (role === "student") {
-      window.history.pushState({}, "", "/student-dashboard");
+      window.history.pushState({}, "", "/student/dashboard");
     }
   };
 

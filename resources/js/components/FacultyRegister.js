@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { GraduationCap, ArrowLeft, Eye, EyeOff, CheckCircle } from "lucide-react";
-import "../../sass/faculty-register.scss";
+// import "../../sass/faculty-register.scss";
 
 export default function FacultyRegister({ onBackToLogin }) {
   const [form, setForm] = useState({

@@ -6,7 +6,7 @@ import {
   Building2, PieChart, Calendar, BookOpen, Clock, 
   ChevronRight, Key, Info, Activity, ListChecks
 } from "lucide-react";
-import "../../sass/profile.scss";
+// import "../../sass/profile.scss";
 
 export default function Profile({ user, onLogout }) {
   const [currentUser, setCurrentUser] = useState(user);
@@ -478,11 +478,8 @@ export default function Profile({ user, onLogout }) {
           {/* Action Buttons */}
           <div className="profile-card action-buttons-card">
             <div className="card-body">
-              <button className="btn-change-password">
-                <Key size={18} /> Change Password
-              </button>
               <button className="btn-logout-full" onClick={onLogout}>
-                <LogOut size={18} /> Sign Out (Logout)
+                <LogOut size={18} /> Sign Out
               </button>
             </div>
           </div>

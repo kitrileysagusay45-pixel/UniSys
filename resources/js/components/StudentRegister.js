@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { GraduationCap, ArrowLeft, Eye, EyeOff, CheckCircle } from "lucide-react";
-import "../../sass/student-register.scss";
+import { GraduationCap, ArrowLeft, Eye, EyeOff, CheckCircle, BookOpen } from "lucide-react";
+// import "../../sass/student-register.scss";
 
 export default function StudentRegister({ onBackToLogin }) {
   const [form, setForm] = useState({
     first_name: "", middle_name: "", last_name: "",
     age: "", sex: "", date_of_birth: "",
     email: "", phone: "", address: "",
+    program_id: "",
     password: "", password_confirmation: "",
   });
   const [error, setError] = useState("");
@@ -16,6 +17,22 @@ export default function StudentRegister({ onBackToLogin }) {
   const [success, setSuccess] = useState(null);
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
+  const [programs, setPrograms] = useState([]);
+  const [fetchingPrograms, setFetchingPrograms] = useState(true);
+
+  useEffect(() => {
+    const fetchPrograms = async () => {
+      try {
+        const res = await axios.get("/api/programs/public");
+        setPrograms(res.data);
+      } catch (err) {
+        console.error("Failed to fetch programs", err);
+      } finally {
+        setFetchingPrograms(false);
+      }
+    };
+    fetchPrograms();
+  }, []);
 
   const handleDobChange = (dob) => {
     if (!dob) {
@@ -135,6 +152,26 @@ export default function StudentRegister({ onBackToLogin }) {
                 <option value="Female">Female</option>
               </select>
             </div>
+          </div>
+          
+          <h3 className="section-title">🎓 Academic Information</h3>
+          <div className="form-group mb-4">
+            <label>Select Program *</label>
+            <div className="select-wrapper">
+              <select 
+                value={form.program_id} 
+                onChange={e => setForm({...form, program_id: e.target.value})} 
+                required
+                disabled={fetchingPrograms}
+              >
+                <option value="">{fetchingPrograms ? "Loading programs..." : "Select Degree Program"}</option>
+                {programs.map(p => (
+                  <option key={p.id} value={p.id}>{p.code} — {p.name}</option>
+                ))}
+              </select>
+              <div className="select-icon"><BookOpen size={16} /></div>
+            </div>
+            {fieldErrors.program_id && <span className="field-error">{fieldErrors.program_id[0]}</span>}
           </div>
 
           <h3 className="section-title">📞 Contact Information</h3>

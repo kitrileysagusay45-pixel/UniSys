@@ -5,7 +5,7 @@ import FacultySubjects from "./FacultySubjects";
 import Profile from "./Profile";
 import { GraduationCap, LayoutDashboard, Users, User, BookOpen, Circle } from "lucide-react";
 import TopNavbar from "./TopNavbar";
-import "../../sass/layout.scss";
+// import "../../sass/layout.scss";
 
 export default function FacultyLayout({ user, onLogout }) {
   const [page, setPage] = useState("faculty-dashboard");

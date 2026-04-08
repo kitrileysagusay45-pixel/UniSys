@@ -9,6 +9,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\RateLimiter;
+use Illuminate\Support\Str;
 
 class AuthController extends Controller
 {
@@ -27,6 +29,7 @@ class AuthController extends Controller
             'email'        => 'required|email|unique:students,email',
             'phone'        => 'required|string|size:11',
             'address'      => 'required|string|max:500',
+            'program_id'   => 'required|exists:programs,id',
             'password'     => 'required|string|min:8|regex:/^(?=.*[A-Z])(?=.*[0-9]).+$/|confirmed',
         ]);
 
@@ -83,6 +86,7 @@ class AuthController extends Controller
                 'email'         => $request->email,
                 'phone'         => $request->phone,
                 'address'       => $request->address,
+                'program_id'    => $request->program_id,
                 'password'      => Hash::make($request->password), // Redundant but kept for BC
                 'status'        => 'Pending',
                 'department'    => '',
@@ -212,15 +216,33 @@ class AuthController extends Controller
 
         $identifier = trim($request->username);
         $password   = $request->password;
+        $ip         = $request->ip();
+        $key        = 'login-attempts:' . Str::lower($identifier) . '|' . $ip;
 
-        // Find user by email or username
+        // 1. Check Rate Limiting
+        if (RateLimiter::tooManyAttempts($key, 5)) {
+            $seconds = RateLimiter::availableIn($key);
+            return response()->json([
+                'success' => false,
+                'message' => "Too many login attempts. Please try again in {$seconds} seconds."
+            ], 429);
+        }
+
+        // 2. Find user
         $user = User::where('email', $identifier)
                     ->orWhere('username', $identifier)
                     ->first();
 
         if (!$user || !Hash::check($password, $user->password)) {
+            RateLimiter::hit($key, 300); // 5 minute decay
             return response()->json(['success' => false, 'message' => 'Invalid credentials.'], 401);
         }
+
+        // Success: Clear Rate Limiter
+        RateLimiter::clear($key);
+
+        // Update Last Login
+        $user->update(['last_login_at' => now()]);
 
         $role = $user->role;
 
@@ -302,6 +324,32 @@ class AuthController extends Controller
         }
 
         return response()->json(['success' => false, 'message' => 'Unrecognized account role.'], 403);
+    }
+
+    /**
+     * Public username/role lookup — used by the login page to show the role badge.
+     * Returns ONLY the role. Never reveals passwords or sensitive data.
+     */
+    public function lookupUser(Request $request)
+    {
+        $identifier = trim($request->input('username', ''));
+
+        if (empty($identifier) || strlen($identifier) < 3) {
+            return response()->json(['found' => false], 200);
+        }
+
+        $user = User::where('email', $identifier)
+                    ->orWhere('username', $identifier)
+                    ->first(['id', 'role']);
+
+        if (!$user) {
+            return response()->json(['found' => false], 200);
+        }
+
+        return response()->json([
+            'found' => true,
+            'role'  => $user->role,   // 'admin' | 'faculty' | 'student'
+        ], 200);
     }
 
     /**

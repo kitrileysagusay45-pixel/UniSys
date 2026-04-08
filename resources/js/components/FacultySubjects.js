@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Search, Users, X, Check, Save } from "lucide-react";
-import "../../sass/faculty-dashboard.scss";
+import { Search, Users, X, Check, Save, Star, AlertCircle, FileText, Bell, Calendar, Info, AlertTriangle } from "lucide-react";
+// import "../../sass/faculty-dashboard.scss";
 
 export default function FacultySubjects({ user }) {
   const [subjects, setSubjects] = useState([]);
@@ -10,6 +10,10 @@ export default function FacultySubjects({ user }) {
   const [allStudents, setAllStudents] = useState([]);
   const [loading, setLoading] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [viewMode, setViewMode] = useState("enrollment"); // "enrollment" or "grading"
+  const [gradesMap, setGradesMap] = useState({});
+  const [remarksMap, setRemarksMap] = useState({});
+  const [saving, setSaving] = useState(false);
 
   useEffect(() => {
     if (!user?.id) return;
@@ -59,10 +63,39 @@ export default function FacultySubjects({ user }) {
     }
   };
 
+  const handleSaveGrades = async () => {
+    setSaving(true);
+    try {
+      const promises = enrolledStudents.map(student => {
+        if (gradesMap[student.id]) {
+          return axios.post('/api/faculty/post-grade', {
+            student_id: student.id,
+            subject_id: selectedSubject.id,
+            faculty_id: user.id,
+            grade: gradesMap[student.id],
+            remarks: remarksMap[student.id] || "Passed",
+            semester: selectedSubject.semester || "First Semester",
+            academic_year: selectedSubject.academic_year || "2025-2026"
+          });
+        }
+        return Promise.resolve();
+      });
+
+      await Promise.all(promises);
+      alert("Grades saved successfully!");
+      setSelectedSubject(null);
+    } catch (err) {
+      console.error(err);
+      alert("Error saving grades. Please check values.");
+    } finally {
+      setSaving(false);
+    }
+  };
+
   const filteredAllStudents = allStudents.filter(s => {
     const isEnrolled = enrolledStudents.some(es => es.id === s.id);
     const matchesSearch = `${s.first_name} ${s.last_name}`.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                          s.student_id.toLowerCase().includes(searchQuery.toLowerCase());
+                          s.student_id?.toLowerCase().includes(searchQuery.toLowerCase());
     return !isEnrolled && matchesSearch;
   });
 
@@ -101,14 +134,23 @@ export default function FacultySubjects({ user }) {
         <div className="manage-enrollment">
           <button className="btn-back" onClick={() => setSelectedSubject(null)}>← Back to Subjects</button>
           
-          <div className="management-header">
+          <div className="management-header" style={{ marginBottom: '20px' }}>
             <div className="subject-info-title">
               <h3>{selectedSubject.code}: {selectedSubject.name}</h3>
               <span className="enrolled-count">{enrolledStudents.length} Students Enrolled</span>
             </div>
+            <div className="view-toggle" style={{ display: 'flex', gap: '10px' }}>
+              <button className={`toggle-btn ${viewMode === 'enrollment' ? 'active' : ''}`} onClick={() => setViewMode('enrollment')}>
+                <Users size={16} /> Enrollment Management
+              </button>
+              <button className={`toggle-btn ${viewMode === 'grading' ? 'active' : ''}`} onClick={() => setViewMode('grading')}>
+                <Star size={16} /> Final Grading (1.0-5.0)
+              </button>
+            </div>
           </div>
 
-          <div className="enrollment-grid">
+          {viewMode === 'enrollment' ? (
+            <div className="enrollment-grid">
             <div className="enrolled-section">
               <h4>Currently Enrolled</h4>
               <div className="student-list">
@@ -158,8 +200,70 @@ export default function FacultySubjects({ user }) {
                   ))
                 )}
               </div>
+              </div>
             </div>
-          </div>
+          ) : (
+            <div className="grading-section shadow-premium" style={{ background: '#fff', borderRadius: '12px', padding: '20px', border: '1px solid #e2e8f0' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+                <h4>Final Grade Entry</h4>
+                <button 
+                  className="btn-save-grades" 
+                  onClick={handleSaveGrades} 
+                  disabled={saving}
+                  style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 20px', background: '#059669', color: '#fff', border: 'none', borderRadius: '8px', cursor: 'pointer', fontWeight: 600 }}
+                >
+                  <Save size={18} /> {saving ? "Saving..." : "Submit Final Grades"}
+                </button>
+              </div>
+              <div className="grades-table-mini" style={{ width: '100%', overflowX: 'auto' }}>
+                <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                  <thead style={{ background: '#f8fafc', borderBottom: '2px solid #e2e8f0' }}>
+                    <tr>
+                      <th style={{ padding: '12px', textAlign: 'left' }}>Student Name</th>
+                      <th style={{ padding: '12px', textAlign: 'center', width: '120px' }}>Grade (1.0-5.0)</th>
+                      <th style={{ padding: '12px', textAlign: 'left' }}>Remarks</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {enrolledStudents.map(s => (
+                      <tr key={s.id} style={{ borderBottom: '1px solid #f1f5f9' }}>
+                        <td style={{ padding: '12px' }}>
+                          <div style={{ display: 'flex', flexDirection: 'column' }}>
+                            <span style={{ fontWeight: 600 }}>{s.first_name} {s.last_name}</span>
+                            <span style={{ fontSize: '0.8rem', color: '#64748b' }}>{s.student_id}</span>
+                          </div>
+                        </td>
+                        <td style={{ padding: '12px', textAlign: 'center' }}>
+                          <input 
+                            type="number" 
+                            step="0.01" 
+                            min="1.0" 
+                            max="5.0" 
+                            placeholder="0.00"
+                            value={gradesMap[s.id] || ""}
+                            onChange={e => setGradesMap({...gradesMap, [s.id]: e.target.value})}
+                            style={{ width: '80px', padding: '8px', border: '1px solid #cbd5e1', borderRadius: '6px', textAlign: 'center' }}
+                          />
+                        </td>
+                        <td style={{ padding: '12px' }}>
+                          <select 
+                            value={remarksMap[s.id] || "Passed"}
+                            onChange={e => setRemarksMap({...remarksMap, [s.id]: e.target.value})}
+                            style={{ padding: '8px', border: '1px solid #cbd5e1', borderRadius: '6px' }}
+                          >
+                            <option value="Passed">Passed</option>
+                            <option value="Failed">Failed</option>
+                            <option value="Incomplete">Incomplete</option>
+                            <option value="Dropped">Dropped</option>
+                          </select>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
         </div>
       )}
     </div>

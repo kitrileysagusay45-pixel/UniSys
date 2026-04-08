@@ -3,7 +3,7 @@ import StudentDashboard from "./StudentDashboard";
 import Profile from "./Profile";
 import { GraduationCap, LayoutDashboard, User, Circle } from "lucide-react";
 import TopNavbar from "./TopNavbar";
-import "../../sass/layout.scss";
+// import "../../sass/layout.scss";
 
 export default function StudentLayout({ user, onLogout }) {
   const [page, setPage] = useState("student-dashboard");

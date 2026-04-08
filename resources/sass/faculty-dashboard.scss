@@ -1,4 +1,4 @@
-@import 'variables';
+// @import 'variables' (Automatically injected by Mix);
 
 // ── Faculty Dashboard Styles ──────────────────────────────
 .faculty-dash {
@@ -144,7 +144,7 @@
     }
 
     .management-header {
-      background: white;
+      background: $card-bg;
       padding: 1.5rem;
       border-radius: 12px;
       margin-bottom: 2rem;
@@ -181,7 +181,7 @@
     }
 
     .enrolled-section, .available-section {
-      background: white;
+      background: $card-bg;
       padding: 1.5rem;
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.05);

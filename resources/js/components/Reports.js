@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Download, FileText, Activity } from 'lucide-react';
-import '../../sass/settings.scss';
+// import '.scss';
 
 export default function Reports() {
   const [activeTab, setActiveTab] = useState('students');

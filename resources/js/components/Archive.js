@@ -5,7 +5,7 @@ import { useCounts } from "../Context/CountContext";
 import ConfirmModal from "./ConfirmModal";
 import Toast from "./Toast";
 import { useToast } from "./useToast";
-import "../../sass/faculty.scss";
+// import "../../sass/faculty.scss";
 
 export default function Archive() {
   const { refreshCounts } = useCounts();

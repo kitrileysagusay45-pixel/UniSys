@@ -5,7 +5,7 @@ import { Search, Edit2, Archive, CheckCircle } from "lucide-react";
 import ConfirmModal from "./ConfirmModal";
 import Toast from "./Toast";
 import { useToast } from "./useToast";
-import "../../sass/students.scss";
+// import "../../sass/students.scss";
 
 export default function Students() {
   const { refreshCounts } = useCounts();

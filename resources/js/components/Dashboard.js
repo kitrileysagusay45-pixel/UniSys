@@ -13,8 +13,8 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import { GraduationCap, Users, Building2, TrendingUp, Calendar, Plus, BookOpen } from "lucide-react";
-import "../../sass/dashboard.scss";
+import { GraduationCap, Users, Building2, TrendingUp, Calendar, Plus, BookOpen, Bell, Info, AlertTriangle } from "lucide-react";
+// import "../../sass/dashboard.scss";
 
 // Register Chart.js components
 ChartJS.register(
@@ -39,8 +39,7 @@ export default function Dashboard({ user }) {
     totalDepartments: 0
   });
 
-  const [auditLogs, setAuditLogs] = useState([]);
-  const [upcomingEvents, setUpcomingEvents] = useState([]);
+  const [announcements, setAnnouncements] = useState([]);
   const [activeSemester, setActiveSemester] = useState("");
 
   const colorPalette = [
@@ -64,11 +63,11 @@ export default function Dashboard({ user }) {
 
   const fetchDashboardData = async () => {
     try {
-      const [studentsRes, facultiesRes, countsRes, logsRes, settingsRes] = await Promise.all([
+      const [studentsRes, facultiesRes, countsRes, annRes, settingsRes] = await Promise.all([
         axios.get("/api/students"),
         axios.get("/api/faculties"),
         axios.get("/api/dashboard-counts"),
-        axios.get("/api/system/audit-logs?limit=5"),
+        axios.get("/api/announcements/dashboard"),
         axios.get("/api/system/settings")
       ]);
 
@@ -81,10 +80,7 @@ export default function Dashboard({ user }) {
         totalDepartments: countsRes.data.departments
       });
       
-      setAuditLogs(logsRes.data);
-      if (settingsRes.data.upcoming_events) {
-        setUpcomingEvents(settingsRes.data.upcoming_events);
-      }
+      setAnnouncements(annRes.data);
       if (settingsRes.data.active_semester) {
         setActiveSemester(settingsRes.data.active_semester);
       }
@@ -197,28 +193,31 @@ export default function Dashboard({ user }) {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             <div className="activity-section" style={{ background: 'var(--card-bg, #fff)', border: '1px solid var(--border-color, #e2e8f0)', padding: '1.5rem', borderRadius: '12px' }}>
-              <h3 style={{ marginTop: 0, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>Recent Activity</h3>
-              {auditLogs.length > 0 ? auditLogs.map(log => (
-                <div key={log.id} className="activity-item" style={{ marginBottom: '1rem', paddingBottom: '1rem', borderBottom: '1px solid var(--border-color, #f1f5f9)' }}>
-                  <p style={{ margin: 0, fontSize: '0.9rem', fontWeight: 500 }}>{log.action}</p>
-                  <p style={{ margin: '4px 0 0', fontSize: '0.8rem', color: 'var(--text-muted, #64748b)' }}>{log.description}</p>
-                  <span className="activity-time" style={{ fontSize: '0.75rem', color: '#94a3b8' }}>{new Date(log.created_at).toLocaleString()}</span>
+              <h3 style={{ marginTop: 0, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.1rem' }}>
+                <Bell size={20} className="text-primary" /> Announcements
+              </h3>
+              {announcements.length > 0 ? (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                  {announcements.map(ann => (
+                    <div key={ann.id} style={{ padding: '12px', borderRadius: '8px', background: ann.type === 'urgent' ? '#fff1f2' : '#f8fafc', borderLeft: `4px solid ${ann.type === 'urgent' ? '#e11d48' : '#3b82f6'}` }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '4px' }}>
+                        {ann.type === 'urgent' ? <AlertTriangle size={14} color="#e11d48" /> : <Info size={14} color="#3b82f6" />}
+                        <span style={{ fontSize: '0.9rem', fontWeight: 700, color: ann.type === 'urgent' ? '#9f1239' : '#1e40af' }}>{ann.title}</span>
+                      </div>
+                      <p style={{ margin: 0, fontSize: '0.85rem', color: '#475569', lineHeight: '1.4' }}>{ann.content}</p>
+                      <span style={{ fontSize: '0.75rem', color: '#94a3b8', display: 'block', marginTop: '6px' }}>{new Date(ann.created_at).toLocaleDateString()}</span>
+                    </div>
+                  ))}
                 </div>
-              )) : (
-                <p className="activity-detail">No recent activity found.</p>
+              ) : (
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-muted, #64748b)' }}>No new announcements.</p>
               )}
-            </div>
-
-            <div className="activity-section" style={{ background: 'var(--card-bg, #fff)', border: '1px solid var(--border-color, #e2e8f0)', padding: '1.5rem', borderRadius: '12px' }}>
-              <h3 style={{ marginTop: 0, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}><Calendar size={18} /> Upcoming Events</h3>
-              {upcomingEvents.length > 0 ? upcomingEvents.map((ev, idx) => (
-                <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px', padding: '8px', background: 'var(--hover-bg, #f8fafc)', borderRadius: '6px' }}>
-                  <span style={{ fontSize: '0.9rem', fontWeight: 500 }}>{ev.title}</span>
-                  <span style={{ fontSize: '0.85rem', color: 'var(--primary-color, #3b82f6)', fontWeight: 600 }}>{ev.date}</span>
-                </div>
-              )) : (
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-muted, #64748b)' }}>No upcoming events.</p>
-              )}
+              <button 
+                onClick={() => window.history.pushState({}, '', '/announcements')}
+                style={{ width: '100%', marginTop: '1rem', padding: '8px', background: 'transparent', border: '1px solid #e2e8f0', borderRadius: '6px', fontSize: '0.85rem', color: '#64748b', cursor: 'pointer' }}
+              >
+                Manage Announcements
+              </button>
             </div>
           </div>
         </div>

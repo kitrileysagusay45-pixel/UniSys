@@ -1,5 +1,5 @@
 // resources/sass/admin-register.scss
-@import 'variables';
+// @import 'variables' (Automatically injected by Mix);
 
 @keyframes fadeInScale {
   from {
@@ -60,7 +60,7 @@
   }
 
   .admin-register-card {
-    background: white;
+    background: $card-bg;
     border-radius: $card-radius;
     padding: 0;
     width: 100%;
@@ -73,7 +73,7 @@
     z-index: 1;
 
     .admin-register-content {
-      background: white;
+      background: $card-bg;
       border-radius: 4px;
       padding: 0;
       display: flex;
@@ -145,7 +145,7 @@
       .admin-right-section {
         flex: 1;
         padding: 2rem 2.5rem;
-        background: white;
+        background: $card-bg;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -196,7 +196,7 @@
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            background: white;
+            background: $card-bg;
             border: 3px solid #e5e7eb;
             display: flex;
             align-items: center;

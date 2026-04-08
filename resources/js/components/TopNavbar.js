@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Bell, Moon, Sun, Search, Menu, User, LogOut, ChevronDown, Settings, CreditCard, Shield } from "lucide-react";
-import "../../sass/top-navbar.scss";
+// import "../../sass/top-navbar.scss";
 
 export default function TopNavbar({ user, onToggleSidebar, onLogout }) {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');

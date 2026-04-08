@@ -1,4 +1,4 @@
-@import 'variables';
+// @import 'variables' (Automatically injected by Mix);
 
 .login-page {
   min-height: 100vh;
@@ -10,7 +10,7 @@
 
   .login-card {
     display: flex;
-    background: white;
+    background: $card-bg;
     border-radius: 16px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -70,7 +70,7 @@
             flex: 1;
             padding: 0.75rem 1rem;
             border: 2px solid #e5e7eb;
-            background: white;
+            background: $card-bg;
             border-radius: 8px;
             font-size: 0.875rem;
             font-weight: 500;

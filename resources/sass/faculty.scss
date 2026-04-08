@@ -1,5 +1,5 @@
 // resources/sass/faculty.scss
-@import 'variables';
+// @import 'variables' (Automatically injected by Mix);
 
 // Note: Faculty component uses .settings-container classes from settings.scss
 // This file provides additional faculty-specific overrides
@@ -22,7 +22,7 @@
     z-index: 1000;
 
     .modal-content {
-      background: white;
+      background: $card-bg;
       border-radius: 12px;
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
       width: 100%;
@@ -83,7 +83,7 @@
 
           select {
             cursor: pointer;
-            background: white;
+            background: $card-bg;
           }
         }
 
@@ -130,7 +130,7 @@
   .faculty-header {
     margin-bottom: 2rem;
     padding: 1.5rem 2rem;
-    background: white;
+    background: $card-bg;
     border-bottom: 1px solid $uni-ice;
 
     @media (max-width: 768px) {
@@ -163,7 +163,7 @@
     gap: 1rem;
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background: white;
+    background: $card-bg;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 
@@ -238,7 +238,7 @@
       border: 1px solid #e5e7eb;
       border-radius: 8px;
       font-size: 0.875rem;
-      background: white;
+      background: $card-bg;
       cursor: pointer;
       outline: none;
       transition: border-color 0.2s;
@@ -250,7 +250,7 @@
   }
 
   .faculty-table-section {
-    background: white;
+    background: $card-bg;
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
@@ -347,7 +347,7 @@
                   height: 32px;
                   border: 1px solid #e5e7eb;
                   border-radius: 6px;
-                  background: white;
+                  background: $card-bg;
                   cursor: pointer;
                   transition: all 0.2s;
 

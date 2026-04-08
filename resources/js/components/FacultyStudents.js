@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Search } from "lucide-react";
-import "../../sass/faculty-dashboard.scss";
+// import "../../sass/faculty-dashboard.scss";
 
 export default function FacultyStudents({ user }) {
   const [students, setStudents] = useState([]);

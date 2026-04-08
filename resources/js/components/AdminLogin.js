@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "../../sass/admin-login.scss";
+// import "../../sass/admin-login.scss";
 
 // ...existing code...
 export default function AdminLogin({ onLogin, onRegister }) {

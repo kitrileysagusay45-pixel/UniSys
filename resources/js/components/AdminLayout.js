@@ -7,14 +7,16 @@ import Reports from "./Reports";
 import Settings from "./Settings";
 import Archive from "./Archive";
 import Profile from "./Profile";
-import { GraduationCap, LayoutDashboard, Users, BookOpen, GraduationCap as GradIcon, BarChart3, Settings as SettingsIcon, Archive as ArchiveIcon, User, Circle } from "lucide-react";
+import Programs from "./Programs";
+import Announcements from "./Announcements";
+import { GraduationCap, LayoutDashboard, Users, BookOpen, GraduationCap as GradIcon, BarChart3, Settings as SettingsIcon, Archive as ArchiveIcon, User, Circle, Bell } from "lucide-react";
 import TopNavbar from "./TopNavbar";
-import "../../sass/layout.scss";
+// import "../../sass/layout.scss";
 
 export default function AdminLayout({ user, onLogout }) {
   const [page, setPage] = useState(() => {
     const path = window.location.pathname.split("/").pop() || "dashboard";
-    const validPages = ["dashboard", "faculty", "students", "subjects", "reports", "settings", "archive", "profile"];
+    const validPages = ["dashboard", "faculty", "students", "subjects", "programs", "announcements", "reports", "settings", "archive", "profile"];
     return validPages.includes(path) ? path : "dashboard";
   });
 
@@ -23,7 +25,7 @@ export default function AdminLayout({ user, onLogout }) {
   useEffect(() => {
     const updatePage = () => {
       const path = window.location.pathname.split("/").pop() || "dashboard";
-      const validPages = ["dashboard", "faculty", "students", "subjects", "reports", "settings", "archive", "profile"];
+      const validPages = ["dashboard", "faculty", "students", "subjects", "programs", "announcements", "reports", "settings", "archive", "profile"];
       if (validPages.includes(path)) setPage(path);
     };
     window.addEventListener("popstate", updatePage);
@@ -41,6 +43,8 @@ export default function AdminLayout({ user, onLogout }) {
     { key: "faculty", label: "Faculty", icon: <Users size={18} /> },
     { key: "students", label: "Students", icon: <GradIcon size={18} /> },
     { key: "subjects", label: "Subjects", icon: <BookOpen size={18} /> },
+    { key: "programs", label: "Programs", icon: <GraduationCap size={18} /> },
+    { key: "announcements", label: "Announcements", icon: <Bell size={18} /> },
     { key: "reports", label: "Reports", icon: <BarChart3 size={18} /> },
     { key: "settings", label: "Settings", icon: <SettingsIcon size={18} /> },
     { key: "archive", label: "Archive", icon: <ArchiveIcon size={18} /> },
@@ -94,6 +98,8 @@ export default function AdminLayout({ user, onLogout }) {
           {page === "faculty" && <Faculty />}
           {page === "students" && <Students />}
           {page === "subjects" && <Subjects />}
+          {page === "programs" && <Programs />}
+          {page === "announcements" && <Announcements />}
           {page === "reports" && <Reports />}
           {page === "settings" && <Settings />}
           {page === "archive" && <Archive />}

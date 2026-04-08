@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Eye, EyeOff, Lock } from "lucide-react";
-import "../../sass/login-page.scss";
+// import "../../sass/login-page.scss";
 
 export default function ResetPassword() {
   const [formData, setFormData] = useState({
