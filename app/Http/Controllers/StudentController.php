@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Student;
+use App\Models\AccountActivityLog;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class StudentController extends Controller
 {
@@ -12,22 +14,66 @@ class StudentController extends Controller
         return response()->json(Student::all());
     }
 
+    public function bulkActivate(Request $request)
+    {
+        // Keeping for compatibility with previous implementation if needed
+        return $this->batchActivate($request);
+    }
+
+    public function batchActivate(Request $request)
+    {
+        $data = $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:students,id',
+        ]);
+
+        foreach ($data['ids'] as $id) {
+            $student = Student::find($id);
+            $student->update(['status' => 'Active']);
+            
+            AccountActivityLog::create([
+                'loggable_id' => $student->id,
+                'loggable_type' => Student::class,
+                'action' => 'Activated',
+                'performed_by' => auth()->id(),
+            ]);
+        }
+
+        return response()->json(['message' => 'Selected students activated successfully']);
+    }
+
+    public function reject(Request $request, Student $student)
+    {
+        $data = $request->validate([
+            'reason' => 'nullable|string'
+        ]);
+
+        $student->update([
+            'status' => 'Rejected',
+            'rejection_reason' => $data['reason']
+        ]);
+
+        AccountActivityLog::create([
+            'loggable_id' => $student->id,
+            'loggable_type' => Student::class,
+            'action' => 'Rejected',
+            'reason' => $data['reason'],
+            'performed_by' => auth()->id(),
+        ]);
+
+        return response()->json(['message' => 'Student rejected successfully']);
+    }
+
     public function store(Request $request)
     {
         $data = $request->validate([
-            'name' => 'nullable|string|max:100',
+            'student_id' => 'required|string|unique:students,student_id',
             'first_name' => 'required|string|max:100',
             'middle_name' => 'nullable|string|max:100',
             'last_name' => 'required|string|max:100',
             'email' => 'required|email|unique:students,email',
-            'date_of_birth' => 'nullable|date',
-            'age' => 'nullable|integer|min:15|max:100',
-            'sex' => 'nullable|in:Male,Female',
-            'phone' => 'nullable|string|max:20',
-            'address' => 'nullable|string',
-            'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'course' => 'required|string|max:100',
-            'department' => 'required|string|max:100',
+            'department' => 'required|string|exists:departments,name',
+            'course' => 'required|string|exists:courses,name',
             'year_level' => 'required|string|max:20',
             'status' => 'nullable|string|max:20',
         ]);

@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Faculty;
+use App\Models\AccountActivityLog;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class FacultyController extends Controller
 {
@@ -13,28 +15,72 @@ class FacultyController extends Controller
         return Faculty::orderBy('id', 'desc')->get();
     }
 
+    public function bulkActivate(Request $request)
+    {
+        return $this->batchActivate($request);
+    }
+
+    public function batchActivate(Request $request)
+    {
+        $data = $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:faculties,id',
+        ]);
+
+        foreach ($data['ids'] as $id) {
+            $faculty = Faculty::find($id);
+            $faculty->update(['status' => 'Active']);
+            
+            AccountActivityLog::create([
+                'loggable_id' => $faculty->id,
+                'loggable_type' => Faculty::class,
+                'action' => 'Activated',
+                'performed_by' => auth()->id(),
+            ]);
+        }
+
+        return response()->json(['message' => 'Selected faculty activated successfully']);
+    }
+
+    public function reject(Request $request, Faculty $faculty)
+    {
+        $data = $request->validate([
+            'reason' => 'nullable|string'
+        ]);
+
+        $faculty->update([
+            'status' => 'Rejected',
+            'rejection_reason' => $data['reason']
+        ]);
+
+        AccountActivityLog::create([
+            'loggable_id' => $faculty->id,
+            'loggable_type' => Faculty::class,
+            'action' => 'Rejected',
+            'reason' => $data['reason'],
+            'performed_by' => auth()->id(),
+        ]);
+
+        return response()->json(['message' => 'Faculty rejected successfully']);
+    }
+
     // ✅ Store a new faculty
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'faculty_id' => 'nullable|string|max:50',
+            'faculty_id' => 'nullable|string|max:50|unique:faculties,faculty_id',
             'employee_id' => 'nullable|string|max:50',
             'first_name' => 'required|string|max:100',
             'middle_name' => 'nullable|string|max:100',
             'last_name' => 'required|string|max:100',
-            'date_of_birth' => 'nullable|date',
-            'age' => 'nullable|integer|min:18|max:100',
-            'sex' => 'nullable|string|max:10',
             'email' => 'required|email|unique:faculties,email',
-            'phone' => 'nullable|string|max:20',
-            'address' => 'nullable|string|max:255',
-            'department' => 'required|string|max:100',
-            'position' => 'nullable|string|max:100',
+            'department' => 'required|string|exists:departments,name',
             'employment_type' => 'required|string|max:50',
-            'date_hired' => 'nullable|date',
-            'office_phone' => 'nullable|string|max:20',
             'status' => 'nullable|string|max:20',
         ]);
+
+        // Audit check: Verify department exists
+        $request->validate(['department' => 'required|string|exists:departments,name']);
 
         // Auto-generate Faculty ID
         $year = date('Y');

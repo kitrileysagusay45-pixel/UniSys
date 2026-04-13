@@ -7,6 +7,7 @@ import FacultyLayout from "./FacultyLayout";
 import StudentLayout from "./StudentLayout";
 import ForgotPassword from "./ForgotPassword";
 import ResetPassword from "./ResetPassword";
+import DisplayScaleControl from "./DisplayScaleControl";
 
 export default function Layout() {
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
@@ -79,12 +80,15 @@ export default function Layout() {
       return <ResetPassword />;
     }
     return (
-      <LoginPage
-        onLogin={handleLogin}
-        onStudentRegister={() => setAuthView("student-register")}
-        onFacultyRegister={() => setAuthView("faculty-register")}
-        onForgotPassword={() => setAuthView("forgot-password")}
-      />
+      <>
+        <LoginPage
+          onLogin={handleLogin}
+          onStudentRegister={() => setAuthView("login")}
+          onAdminLogin={() => setAuthView("login")}
+          onForgotPassword={() => setAuthView("forgot-password")}
+        />
+        <DisplayScaleControl />
+      </>
     );
   }
 
@@ -92,13 +96,28 @@ export default function Layout() {
   const role = user?.role || "admin";
 
   if (role === "faculty") {
-    return <FacultyLayout user={user} onLogout={handleLogout} />;
+    return (
+      <>
+        <FacultyLayout user={user} onLogout={handleLogout} />
+        <DisplayScaleControl />
+      </>
+    );
   }
 
   if (role === "student") {
-    return <StudentLayout user={user} onLogout={handleLogout} />;
+    return (
+      <>
+        <StudentLayout user={user} onLogout={handleLogout} />
+        <DisplayScaleControl />
+      </>
+    );
   }
 
   // Default: admin
-  return <AdminLayout user={user} onLogout={handleLogout} />;
+  return (
+    <>
+      <AdminLayout user={user} onLogout={handleLogout} />
+      <DisplayScaleControl />
+    </>
+  );
 }

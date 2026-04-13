@@ -46,8 +46,8 @@ Route::middleware('throttle:5,1')->group(function () {
 Route::post('forgot-password',  [PasswordResetController::class, 'sendResetLinkEmail']);
 Route::post('reset-password',   [PasswordResetController::class, 'resetPassword']);
 
-// ── PUBLIC: Username role lookup (for login badge — returns only role, never password)
-Route::post('lookup-user',      [AuthController::class, 'lookupUser']);
+// ── PUBLIC: User Lookup (used by Login Page for badge detection) ────────────
+Route::middleware('throttle:10,1')->post('lookup-user', [AuthController::class, 'lookupUser']);
 
 // ── PROTECTED: Must be any authenticated user ─────────────────────────────────
 Route::middleware('api.user')->group(function () {
@@ -92,17 +92,33 @@ Route::middleware('api.user:admin')->group(function () {
 
     // Faculties CRUD
     Route::apiResource('faculties', FacultyController::class);
-    Route::patch('faculties/{faculty}/status',   [FacultyController::class, 'updateStatus']);
-    Route::patch('faculties/{faculty}/activate', [FacultyController::class, 'activate']);
-    Route::patch('faculties/{faculty}/archive',  [FacultyController::class, 'archive']);
-    Route::patch('faculties/{faculty}/restore',  [FacultyController::class, 'restore']);
+    Route::get('students',                           [StudentController::class, 'index']);
+    Route::post('students',                          [StudentController::class, 'store']);
+    Route::get('students/{student}',                 [StudentController::class, 'show']);
+    Route::put('students/{student}',                 [StudentController::class, 'update']);
+    Route::delete('students/{student}',              [StudentController::class, 'destroy']);
+    Route::patch('students/{student}/activate',      [StudentController::class, 'activate']);
+    Route::patch('students/bulk-activate',           [StudentController::class, 'bulkActivate']);
+    Route::post('students/batch-activate',           [StudentController::class, 'batchActivate']);
+    // Removed old bulk-activate if I want to consolidate, but user asked for "batch-activate"
+    Route::patch('students/{student}/reject',        [StudentController::class, 'reject']);
+    Route::patch('students/{student}/archive',       [StudentController::class, 'archive']);
+    Route::patch('students/{student}/restore',       [StudentController::class, 'restore']);
+    Route::patch('students/{student}/status',        [StudentController::class, 'updateStatus']);
 
-    // Students CRUD
-    Route::apiResource('students', StudentController::class);
-    Route::patch('students/{student}/status',   [StudentController::class, 'updateStatus']);
-    Route::patch('students/{student}/activate', [StudentController::class, 'activate']);
-    Route::patch('students/{student}/archive',  [StudentController::class, 'archive']);
-    Route::patch('students/{student}/restore',  [StudentController::class, 'restore']);
+    // Faculty management
+    Route::get('faculties',                          [FacultyController::class, 'index']);
+    Route::post('faculties',                         [FacultyController::class, 'store']);
+    Route::get('faculties/{faculty}',                [FacultyController::class, 'show']);
+    Route::put('faculties/{faculty}',                [FacultyController::class, 'update']);
+    Route::delete('faculties/{faculty}',             [FacultyController::class, 'destroy']);
+    Route::patch('faculties/{faculty}/activate',     [FacultyController::class, 'activate']);
+    Route::patch('faculties/bulk-activate',          [FacultyController::class, 'bulkActivate']);
+    Route::post('faculties/batch-activate',          [FacultyController::class, 'batchActivate']);
+    Route::patch('faculties/{faculty}/reject',       [FacultyController::class, 'reject']);
+    Route::patch('faculties/{faculty}/archive',      [FacultyController::class, 'archive']);
+    Route::patch('faculties/{faculty}/restore',      [FacultyController::class, 'restore']);
+    Route::patch('faculties/{faculty}/status',       [FacultyController::class, 'updateStatus']);
 
     // Departments CRUD
     Route::apiResource('departments', DepartmentController::class);

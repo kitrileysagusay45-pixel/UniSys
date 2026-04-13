@@ -9,7 +9,7 @@ class ProgramController extends Controller
 {
     public function index()
     {
-        return response()->json(Program::with('department')->get());
+        return response()->json(Program::with('department')->withCount('students')->get());
     }
 
     public function publicList()

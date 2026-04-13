@@ -13,10 +13,14 @@ export default function Students() {
   const [editingId, setEditingId] = useState(null);
   const [showForm, setShowForm] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const [statusFilter, setStatusFilter] = useState("All");
+  const [statusFilter, setStatusFilter] = useState("Pending"); // Default to Pending
   const [departmentsList, setDepartmentsList] = useState([]);
   const [coursesList, setCoursesList] = useState([]);
   const [confirmModal, setConfirmModal] = useState({ isOpen: false, type: "", id: null, title: "", message: "" });
+  const [selectedIds, setSelectedIds] = useState([]);
+  const [activityLogs, setActivityLogs] = useState([]);
+  const [showRejectInput, setShowRejectInput] = useState(false);
+  const [rejectionReason, setRejectionReason] = useState("");
   const { toasts, addToast, removeToast } = useToast();
 
   const [form, setForm] = useState({
@@ -57,7 +61,7 @@ export default function Students() {
     }
   };
 
-  const openForm = (student) => {
+  const openForm = async (student) => {
     setEditingId(student.id);
     setForm({
       student_id: student.student_id || "", first_name: student.first_name || "",
@@ -68,9 +72,19 @@ export default function Students() {
       course: student.course || "", year_level: student.year_level || "",
       section: student.section || "", status: student.status || "Pending",
     });
+    setActivityLogs([]);
+    setShowRejectInput(false);
+    setRejectionReason("");
     fetchDepartments();
     fetchCourses();
     setShowForm(true);
+
+    try {
+      const res = await axios.get(`/api/students/${student.id}`);
+      if (res.data.activity_logs) {
+        setActivityLogs(res.data.activity_logs);
+      }
+    } catch (err) { console.error("Failed to fetch logs", err); }
   };
 
   const closeForm = () => { setShowForm(false); setEditingId(null); };
@@ -97,6 +111,9 @@ export default function Students() {
       if (type === "success") {
         await axios.patch(`/api/students/${id}/activate`);
         addToast('Student activated!', 'success');
+      } else if (type === "reject") {
+        await axios.patch(`/api/students/${id}/reject`, { reason: rejectionReason });
+        addToast('Student rejected.', 'info');
       } else {
         await axios.patch(`/api/students/${id}/archive`);
         addToast('Student archived.', 'info');
@@ -106,18 +123,108 @@ export default function Students() {
       window.dispatchEvent(new CustomEvent("dataUpdated", { detail: { type: "students" } }));
     } catch (err) { addToast('Action failed.', 'error'); }
     setConfirmModal({ isOpen: false, type: "", id: null, title: "", message: "" });
+    setShowRejectInput(false);
     closeForm();
   };
 
-  const filtered = students.filter(s => {
+  const handleBulkActivate = async () => {
+    if (selectedIds.length === 0) return;
+    try {
+      await axios.patch("/api/students/bulk-activate", { ids: selectedIds });
+      addToast(`${selectedIds.length} students activated!`, 'success');
+      setSelectedIds([]);
+      await fetchStudents();
+      await refreshCounts();
+      window.dispatchEvent(new CustomEvent("dataUpdated", { detail: { type: "students" } }));
+    } catch (err) {
+      addToast('Bulk activation failed.', 'error');
+    }
+  };
+
+  const toggleSelect = (id) => {
+    setSelectedIds(prev => prev.includes(id) ? prev.filter(i => i !== id) : [...prev, id]);
+  };
+
+  const toggleSelectAll = () => {
+    const pendings = filtered.filter(s => s.status === "Pending").map(s => s.id);
+    if (selectedIds.length === pendings.length && pendings.length > 0) {
+      setSelectedIds([]);
+    } else {
+      setSelectedIds(pendings);
+    }
+  };
+
+  const filteredBySearch = students.filter(s => {
     const q = searchQuery.toLowerCase();
     const name = `${s.first_name || ""} ${s.middle_name || ""} ${s.last_name || ""}`.toLowerCase();
-    const matchesSearch = name.includes(q) || (s.student_id || "").toLowerCase().includes(q) || (s.email || "").toLowerCase().includes(q);
-    const matchesStatus = statusFilter === "All" || s.status === statusFilter;
-    return matchesSearch && matchesStatus && s.status !== "Archived";
+    return name.includes(q) || (s.student_id || "").toLowerCase().includes(q) || (s.email || "").toLowerCase().includes(q);
   });
 
+  const filtered = filteredBySearch.filter(s => {
+    const matchesStatus = statusFilter === "All" || s.status === statusFilter;
+    return matchesStatus && s.status !== "Archived";
+  });
+
+  const counts = {
+    pending: filteredBySearch.filter(s => s.status === "Pending").length,
+    active: filteredBySearch.filter(s => s.status === "Active").length,
+    rejected: filteredBySearch.filter(s => s.status === "Rejected").length,
+    all: filteredBySearch.filter(s => s.status !== "Archived").length
+  };
+
   const isPending = form.status === "Pending";
+  const isRejected = form.status === "Rejected";
+
+  // ── Tab Configuration ──────────────────────────────────────────────────────
+  const STATUS_TABS_CONFIG = [
+    { id: "Pending",  label: "Pending",  color: "#E9A800", count: counts.pending },
+    { id: "Active",   label: "Active",   color: "#0F6E56", count: counts.active },
+    { id: "Rejected", label: "Rejected", color: "#993C1D", count: counts.rejected },
+    { id: "All",      label: "All",      color: "#3C3489", count: counts.all },
+  ];
+
+  function StatusTab({ id, label, color, count, isActive, onClick }) {
+    return (
+      <button
+        type="button"
+        onClick={() => onClick(id)}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "8px",
+          padding: "6px 14px",
+          borderRadius: "999px",
+          border: isActive ? "none" : "0.5px solid #e2e8f0",
+          background: isActive ? color : "#fff",
+          color: isActive ? "#fff" : "#64748b",
+          fontSize: "13px",
+          fontWeight: "600",
+          cursor: "pointer",
+          transition: "all 0.15s ease",
+          boxShadow: isActive ? "0 4px 12px rgba(0,0,0,0.08)" : "none",
+        }}
+      >
+        <span style={{ 
+          width: "6px", 
+          height: "6px", 
+          borderRadius: "50%", 
+          background: isActive ? "#fff" : color 
+        }} />
+        <span style={{ whiteSpace: 'nowrap' }}>{label}</span>
+        <span style={{
+          marginLeft: "2px",
+          padding: "1px 7px",
+          borderRadius: "999px",
+          fontSize: "11px",
+          fontWeight: "700",
+          background: isActive ? "rgba(255,255,255,0.2)" : "#f1f5f9",
+          color: isActive ? "#fff" : "#64748b",
+        }}>
+          {count}
+        </span>
+      </button>
+    );
+  }
 
   return (
     <div className="settings-container">
@@ -133,18 +240,32 @@ export default function Students() {
                 <Search size={18} className="search-icon" />
                 <input type="text" placeholder="Search Students" value={searchQuery} onChange={e => setSearchQuery(e.target.value)} />
               </div>
-              <select className="department-filter" value={statusFilter} onChange={e => setStatusFilter(e.target.value)}>
-                <option value="All">All Status</option>
-                <option value="Pending">Pending</option>
-                <option value="Active">Active</option>
-              </select>
+              <div className="status-tabs-container" style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
+                {STATUS_TABS_CONFIG.map(tab => (
+                  <StatusTab
+                    key={tab.id}
+                    {...tab}
+                    isActive={statusFilter === tab.id}
+                    onClick={setStatusFilter}
+                  />
+                ))}
+              </div>
+              
+              {selectedIds.length > 0 && (
+                <button className="btn-activate" onClick={handleBulkActivate} style={{ marginLeft: '1rem' }}>
+                   <CheckCircle size={16} /> Approve {selectedIds.length} Selected
+                </button>
+              )}
             </div>
           </div>
 
           {showForm && (
             <div className="modal-overlay" onClick={closeForm}>
               <div className="modal-content" onClick={e => e.stopPropagation()}>
-                <h3 className="modal-title">{isPending ? "Review & Activate Student" : "Edit Student"}</h3>
+                <h3 className="modal-title">
+                  {isPending ? "Review & Activate Student" : "Edit Student"}
+                  <span className="modal-header-id"> | {form.student_id}</span>
+                </h3>
                 <form onSubmit={handleSubmit} className="modal-form">
                   <h4 className="section-heading">📋 Personal Information {isPending && <span className="readonly-tag">Read-Only (from registration)</span>}</h4>
                   <div className="form-row">
@@ -230,32 +351,82 @@ export default function Students() {
                         onChange={e => setForm({ ...form, section: e.target.value })} />
                     </div>
                   </div>
+                  <div className="modal-actions" style={{ marginTop: "1.5rem", paddingTop: "1rem", borderTop: "1px solid #ddd" }}>
+                    {showRejectInput && isPending && (
+                      <div className="rejection-input-area" style={{ marginBottom: "1rem", width: "100%", padding: '1rem', background: '#fff1f2', borderRadius: '8px' }}>
+                        <label style={{ color: '#991b1b', fontWeight: 'bold' }}>Reason for rejection (optional)</label>
+                        <textarea 
+                          placeholder="Provide a reason for rejection..." 
+                          value={rejectionReason} 
+                          onChange={e => setRejectionReason(e.target.value)}
+                          className="rejection-textarea"
+                          style={{ width: '100%', marginTop: '0.5rem', borderRadius: '4px', border: '1px solid #fca5a5', padding: '0.5rem' }}
+                        />
+                        <div style={{ display: "flex", gap: "0.5rem", marginTop: "0.5rem" }}>
+                          <button type="button" className="btn-archive-action" style={{ background: '#ef4444' }} onClick={() => {
+                            setConfirmModal({
+                              isOpen: true, type: "reject", id: editingId,
+                              title: "Confirm Rejection",
+                              message: `Are you sure you want to reject ${form.first_name}'s registration?`
+                            });
+                          }}>Confirm Reject</button>
+                          <button type="button" className="btn-cancel" onClick={() => setShowRejectInput(false)}>Cancel</button>
+                        </div>
+                      </div>
+                    )}
 
-                  <div className="modal-actions" style={{ marginTop: "1.5rem", paddingTop: "1rem", borderTop: "1px solid #ddd", display: "flex", justifyContent: "space-between" }}>
-                    <div style={{ display: "flex", gap: "0.5rem" }}>
-                      {isPending && (
-                        <button type="button" className="btn-activate" onClick={() => {
-                          const payload = { ...form, age: form.age ? parseInt(form.age) : null, date_of_birth: form.date_of_birth || null };
-                          axios.put(`/api/students/${editingId}`, payload).then(() => {
-                            handleActivate({ id: editingId, first_name: form.first_name, last_name: form.last_name });
-                          }).catch(err => {
-                            addToast('Please fill in all academic information first.', 'error');
-                          });
-                        }}>
-                          <CheckCircle size={16} /> Activate
-                        </button>
+                    <div style={{ display: "flex", justifyContent: "space-between", width: "100%", alignItems: "center" }}>
+                      <div style={{ display: "flex", gap: "0.5rem" }}>
+                        {isPending && !showRejectInput && (
+                          <button type="button" className="btn-archive-action" onClick={() => setShowRejectInput(true)} style={{ backgroundColor: '#ef4444', color: 'white' }}>
+                            Reject Registration
+                          </button>
+                        )}
+                        {!isPending && (
+                           <button type="button" className="btn-archive-action" onClick={() => handleArchive({ id: editingId, first_name: form.first_name, last_name: form.last_name })}>
+                             📦 Archive Student
+                           </button>
+                        )}
+                        <button type="button" className="btn-cancel" onClick={closeForm}>Cancel</button>
+                      </div>
+
+                      {isPending ? (
+                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}>
+                          <button type="button" className="btn-activate" 
+                            disabled={!form.department || !form.course || !form.year_level}
+                            onClick={() => {
+                              const payload = { ...form, age: form.age ? parseInt(form.age) : null, date_of_birth: form.date_of_birth || null };
+                              axios.put(`/api/students/${editingId}`, payload).then(() => {
+                                handleActivate({ id: editingId, first_name: form.first_name, last_name: form.last_name });
+                              }).catch(err => {
+                                addToast('Failed to prepare for activation.', 'error');
+                              });
+                            }}>
+                            <CheckCircle size={16} /> Activate Student
+                          </button>
+                          {(!form.department || !form.course || !form.year_level) && (
+                            <span style={{ fontSize: '11px', color: '#ef4444', marginTop: '4px' }}>Fill in all required fields to activate</span>
+                          )}
+                        </div>
+                      ) : (
+                        <button type="submit" className="btn-submit">Update Student</button>
                       )}
-                      {!isPending && (
-                        <button type="button" className="btn-archive-action" onClick={() => handleArchive({ id: editingId, first_name: form.first_name, last_name: form.last_name })}>
-                          📦 Archive
-                        </button>
-                      )}
-                    </div>
-                    <div style={{ display: "flex", gap: "0.5rem" }}>
-                      <button type="button" onClick={closeForm} className="btn-cancel">Cancel</button>
-                      {!isPending && <button type="submit" className="btn-submit">Update Student</button>}
                     </div>
                   </div>
+
+                  {activityLogs.length > 0 && (
+                    <div className="activity-logs-section" style={{ marginTop: '2rem', paddingTop: '1rem', borderTop: '2px dashed #eee' }}>
+                      <h4 className="section-heading">📜 Activity Log</h4>
+                      <div className="logs-list" style={{ maxHeight: '150px', overflowY: 'auto' }}>
+                        {activityLogs.map(log => (
+                          <div key={log.id} className="log-item" style={{ fontSize: '13px', padding: '8px 0', borderBottom: '1px solid #fafafa' }}>
+                            <span style={{ fontWeight: 'bold', color: '#4f46e5' }}>{log.action}</span> by Admin on {new Date(log.created_at).toLocaleString()}
+                            {log.reason && <p style={{ margin: '4px 0 0 0', color: '#666', fontStyle: 'italic' }}>— Reason: {log.reason}</p>}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </form>
               </div>
             </div>
@@ -264,18 +435,35 @@ export default function Students() {
           <div className="settings-table-wrapper">
             <table className="settings-table">
               <thead><tr>
+                <th style={{ width: '40px' }}>
+                  <input 
+                    type="checkbox" 
+                    onChange={toggleSelectAll} 
+                    checked={selectedIds.length > 0 && selectedIds.length === filtered.filter(s => s.status === "Pending").length} 
+                  />
+                </th>
                 <th>Student ID</th><th>Name</th><th>Email</th><th>Course</th><th>Year Level</th><th>Status</th><th>Actions</th>
               </tr></thead>
               <tbody>
                 {filtered.map(s => {
                   const fullName = [s.first_name, s.middle_name, s.last_name].filter(Boolean).join(" ") || s.name || "N/A";
+                  const isSelected = selectedIds.includes(s.id);
                   return (
-                    <tr key={s.id}>
+                    <tr key={s.id} className={isSelected ? "row-selected" : ""}>
+                      <td>
+                        {s.status === "Pending" && (
+                          <input 
+                            type="checkbox" 
+                            checked={isSelected} 
+                            onChange={() => toggleSelect(s.id)} 
+                          />
+                        )}
+                      </td>
                       <td>{s.student_id}</td>
                       <td>{fullName}</td>
                       <td>{s.email}</td>
-                      <td>{s.course || "—"}</td>
-                      <td>{s.year_level || "—"}</td>
+                      <td>{s.status === "Pending" && !s.course ? <span className="reg-date">Registered {new Date(s.created_at).toLocaleDateString()}</span> : (s.course || "—")}</td>
+                      <td>{s.status === "Pending" && !s.year_level ? "—" : (s.year_level || "—")}</td>
                       <td><span className={`status-badge ${(s.status || "").toLowerCase()}`}>{s.status}</span></td>
                       <td>
                         <div className="action-buttons">

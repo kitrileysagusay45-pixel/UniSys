@@ -85,7 +85,7 @@ export default function Archive() {
         await axios.delete(`/api/${endpoint}/${item.id}`);
         await fetchArchives();
         await refreshCounts();
-        addToast(`${item.display_name} permanently deleted.`, 'info');
+        addToast(`${item.display_name} has been soft-deleted and remains in the database.`, 'info');
       }
     } catch (err) {
       console.error(`${action} error:`, err);
@@ -99,13 +99,13 @@ export default function Archive() {
       <ConfirmModal
         isOpen={confirmModal.isOpen}
         type={confirmModal.action === 'delete' ? 'danger' : 'warning'}
-        title={confirmModal.action === 'delete' ? 'Permanently Delete Record' : 'Restore Record'}
+        title={confirmModal.action === 'delete' ? 'Soft Delete Record' : 'Restore Record'}
         message={
           confirmModal.action === 'delete'
-            ? `This will permanently remove ${confirmModal.item?.display_name} from the database. This action cannot be undone.`
+            ? `This will soft-delete ${confirmModal.item?.display_name}. It will be hidden from this list but will remain in the database.`
             : `Restore ${confirmModal.item?.display_name} to active records?`
         }
-        confirmText={confirmModal.action === 'delete' ? 'Delete Permanently' : 'Restore'}
+        confirmText={confirmModal.action === 'delete' ? 'Soft Delete' : 'Restore'}
         onConfirm={handleConfirm}
         onCancel={() => setConfirmModal({ isOpen: false, item: null, action: null })}
       />

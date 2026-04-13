@@ -4,10 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Student extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
     protected $table = 'students';
 
@@ -34,6 +35,7 @@ class Student extends Model
         'section',
         'photo',
         'status',
+        'rejection_reason',
     ];
 
     protected $hidden = [
@@ -63,5 +65,10 @@ class Student extends Model
     public function subjects()
     {
         return $this->belongsToMany(Subject::class, 'student_subject');
+    }
+
+    public function activityLogs()
+    {
+        return $this->morphMany(AccountActivityLog::class, 'loggable');
     }
 }

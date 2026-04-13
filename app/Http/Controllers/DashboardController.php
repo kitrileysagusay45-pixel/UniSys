@@ -13,10 +13,12 @@ class DashboardController extends Controller
     public function counts()
     {
         return response()->json([
-            'faculties'   => Faculty::where('status', '!=', 'Archived')->count(),
-            'students'    => Student::where('status', '!=', 'Archived')->count(),
-            'courses'     => Course::where('status', '!=', 'Archived')->count(),
-            'departments' => Department::where('status', '!=', 'Archived')->count(),
+            'faculties'         => Faculty::where('status', '!=', 'Archived')->count(),
+            'students'          => Student::where('status', '!=', 'Archived')->count(),
+            'courses'           => Course::where('status', '!=', 'Archived')->count(),
+            'departments'       => Department::where('status', '!=', 'Archived')->count(),
+            'pending_students'  => Student::where('status', 'Pending')->count(),
+            'pending_faculties' => Faculty::where('status', 'Pending')->count(),
         ]);
     }
 }

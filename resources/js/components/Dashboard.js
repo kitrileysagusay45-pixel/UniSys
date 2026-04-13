@@ -36,7 +36,9 @@ export default function Dashboard({ user }) {
     totalStudents: 0,
     totalFaculty: 0,
     totalCourses: 0,
-    totalDepartments: 0
+    totalDepartments: 0,
+    pendingStudents: 0,
+    pendingFaculty: 0
   });
 
   const [announcements, setAnnouncements] = useState([]);
@@ -77,7 +79,9 @@ export default function Dashboard({ user }) {
         totalStudents: countsRes.data.students,
         totalFaculty: countsRes.data.faculties,
         totalCourses: countsRes.data.courses,
-        totalDepartments: countsRes.data.departments
+        totalDepartments: countsRes.data.departments,
+        pendingStudents: countsRes.data.pending_students || 0,
+        pendingFaculty: countsRes.data.pending_faculties || 0
       });
       
       setAnnouncements(annRes.data);
@@ -162,6 +166,78 @@ export default function Dashboard({ user }) {
             <div className="card-icon"><Building2 size={32} strokeWidth={1.5} /></div>
           </div>
         </div>
+
+        {(dashboardData.pendingStudents > 0 || dashboardData.pendingFaculty > 0) && (
+          <div className="pending-alerts-section" style={{ 
+            background: 'linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%)', 
+            border: '1px solid #fed7aa', 
+            borderRadius: '16px', 
+            padding: '1.5rem', 
+            marginBottom: '2rem',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+            animation: 'pulse 2s infinite'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+              <div style={{ 
+                width: '48px', 
+                height: '48px', 
+                borderRadius: '12px', 
+                background: '#fb923c', 
+                color: 'white', 
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center' 
+              }}>
+                <AlertTriangle size={24} />
+              </div>
+              <div>
+                <h4 style={{ margin: 0, color: '#9a3412', fontSize: '1.1rem', fontWeight: 700 }}>Pending Approvals Found</h4>
+                <p style={{ margin: '4px 0 0', color: '#c2410c', fontSize: '0.9rem' }}>
+                  There are <strong>{dashboardData.pendingStudents} students</strong> and <strong>{dashboardData.pendingFaculty} faculty members</strong> waiting for your verification.
+                </p>
+              </div>
+            </div>
+            <div style={{ display: 'flex', gap: '0.75rem' }}>
+              {dashboardData.pendingStudents > 0 && (
+                <button 
+                  onClick={() => window.history.pushState({}, '', '/students')} 
+                  style={{ 
+                    padding: '8px 16px', 
+                    background: 'white', 
+                    border: '1px solid #fb923c', 
+                    color: '#c2410c', 
+                    borderRadius: '8px', 
+                    fontWeight: 600, 
+                    cursor: 'pointer',
+                    fontSize: '0.85rem'
+                  }}
+                >
+                  Verify Students
+                </button>
+              )}
+              {dashboardData.pendingFaculty > 0 && (
+                <button 
+                  onClick={() => window.history.pushState({}, '', '/faculty')} 
+                  style={{ 
+                    padding: '8px 16px', 
+                    background: '#fb923c', 
+                    border: 'none', 
+                    color: 'white', 
+                    borderRadius: '8px', 
+                    fontWeight: 600, 
+                    cursor: 'pointer',
+                    fontSize: '0.85rem'
+                  }}
+                >
+                  Verify Faculty
+                </button>
+              )}
+            </div>
+          </div>
+        )}
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '1.5rem', marginBottom: '1.5rem', alignItems: 'start' }}>
           <div className="chart-section" style={{ margin: 0 }}>

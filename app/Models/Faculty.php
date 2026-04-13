@@ -4,10 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Faculty extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
     protected $table = 'faculties';
 
@@ -34,6 +35,9 @@ class Faculty extends Model
         'date_hired',
         'office_phone',
         'status',
+        'specialization',
+        'subject_assignment',
+        'rejection_reason',
     ];
 
     protected $hidden = [
@@ -58,5 +62,10 @@ class Faculty extends Model
     public function subjects()
     {
         return $this->hasMany(Subject::class);
+    }
+
+    public function activityLogs()
+    {
+        return $this->morphMany(AccountActivityLog::class, 'loggable');
     }
 }

@@ -8,21 +8,36 @@ export default function Programs() {
   const [search, setSearch] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [editingProgram, setEditingProgram] = useState(null);
-  const [form, setForm] = useState({ name: "", code: "", department: "", description: "" });
+  const [departments, setDepartments] = useState([]);
+  const [form, setForm] = useState({ name: "", code: "", department_id: "", description: "" });
   const [error, setError] = useState("");
 
   useEffect(() => {
     fetchPrograms();
+    fetchDepartments();
   }, []);
 
   const fetchPrograms = async () => {
+    setLoading(true);
     try {
       const res = await axios.get("/api/programs");
-      setPrograms(res.data);
+      // Handle Laravel pagination (res.data.data) or simple array (res.data)
+      const data = res.data.data ?? res.data;
+      setPrograms(Array.isArray(data) ? data : []);
     } catch (err) {
-      console.error(err);
+      console.error("Failed to fetch programs:", err);
+      setError("Failed to load programs");
     } finally {
       setLoading(false);
+    }
+  };
+
+  const fetchDepartments = async () => {
+    try {
+      const res = await axios.get("/api/departments");
+      setDepartments(Array.isArray(res.data) ? res.data : []);
+    } catch (err) {
+      console.error("Failed to fetch departments:", err);
     }
   };
 
@@ -38,7 +53,7 @@ export default function Programs() {
       fetchPrograms();
       setShowModal(false);
       setEditingProgram(null);
-      setForm({ name: "", code: "", department: "", description: "" });
+      setForm({ name: "", code: "", department_id: "", description: "" });
     } catch (err) {
       setError(err.response?.data?.message || "Failed to save program");
     }
@@ -46,7 +61,12 @@ export default function Programs() {
 
   const handleEdit = (p) => {
     setEditingProgram(p);
-    setForm({ name: p.name, code: p.code, department: p.department, description: p.description || "" });
+    setForm({ 
+      name: p.name, 
+      code: p.code, 
+      department_id: p.department_id || "", 
+      description: p.description || "" 
+    });
     setShowModal(true);
   };
 
@@ -74,7 +94,7 @@ export default function Programs() {
         </div>
         <button 
           className="btn-primary" 
-          onClick={() => { setEditingProgram(null); setForm({ name: "", code: "", department: "", description: "" }); setShowModal(true); }}
+          onClick={() => { setEditingProgram(null); setForm({ name: "", code: "", department_id: "", description: "" }); setShowModal(true); }}
           style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 20px', background: '#1a5fb4', color: '#fff', border: 'none', borderRadius: '10px', cursor: 'pointer', fontWeight: 600 }}
         >
           <Plus size={18} /> Add Program
@@ -95,26 +115,54 @@ export default function Programs() {
       </div>
 
       <div className="programs-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '1.5rem' }}>
-        {filtered.map(p => (
-          <div key={p.id} className="program-card shadow-sm" style={{ background: '#fff', borderRadius: '16px', padding: '20px', border: '1px solid #e2e8f0', position: 'relative' }}>
-            <div className="card-top" style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
-              <span style={{ padding: '4px 10px', background: '#eff6ff', color: '#1e40af', borderRadius: '6px', fontSize: '0.75rem', fontWeight: 700 }}>{p.code}</span>
-              <div className="actions" style={{ display: 'flex', gap: '8px' }}>
-                <button onClick={() => handleEdit(p)} style={{ border: 'none', background: 'none', color: '#64748b', cursor: 'pointer' }}><Edit2 size={16} /></button>
-                <button onClick={() => handleDelete(p.id)} style={{ border: 'none', background: 'none', color: '#ef4444', cursor: 'pointer' }}><Trash2 size={16} /></button>
-              </div>
-            </div>
-            <h3 style={{ margin: '0 0 8px', fontSize: '1.1rem', fontWeight: 700 }}>{p.name}</h3>
-            <p style={{ margin: '0 0 16px', fontSize: '0.85rem', color: '#64748b' }}>{p.department}</p>
-            
-            <div className="card-stats" style={{ display: 'flex', gap: '12px', borderTop: '1px solid #f1f5f9', paddingTop: '12px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                <GraduationCap size={14} color="#94a3b8" />
-                <span style={{ fontSize: '0.8rem', fontWeight: 600 }}>{p.students_count || 0} Students</span>
-              </div>
-            </div>
+        {loading ? (
+          <div style={{ gridColumn: '1/-1', textAlign: 'center', padding: '4rem', color: '#64748b' }}>
+            <div className="spinner" style={{ marginBottom: '1rem' }}>Loading programs...</div>
           </div>
-        ))}
+        ) : filtered.length === 0 ? (
+          <div style={{ gridColumn: '1/-1', textAlign: 'center', padding: '4rem', background: '#f8fafc', borderRadius: '16px', border: '1px dashed #cbd5e1' }}>
+            <AlertCircle size={48} color="#94a3b8" style={{ marginBottom: '1rem' }} />
+            <h3 style={{ margin: '0 0 8px', color: '#475569' }}>No programs found</h3>
+            <p style={{ margin: 0, color: '#64748b' }}>Try adjusting your search or add a new program.</p>
+          </div>
+        ) : (
+          filtered.map(p => (
+            <div key={p.id} className="program-card shadow-sm" style={{ background: '#fff', borderRadius: '16px', padding: '20px', border: '1px solid #e2e8f0', position: 'relative' }}>
+              <div className="card-top" style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
+                <span style={{ padding: '4px 10px', background: '#eff6ff', color: '#1e40af', borderRadius: '6px', fontSize: '0.75rem', fontWeight: 700 }}>{p.code}</span>
+                <div className="actions" style={{ display: 'flex', gap: '8px' }}>
+                  <button onClick={() => handleEdit(p)} style={{ border: 'none', background: 'none', color: '#64748b', cursor: 'pointer' }} title="Edit"><Edit2 size={16} /></button>
+                  <button onClick={() => handleDelete(p.id)} style={{ border: 'none', background: 'none', color: '#ef4444', cursor: 'pointer' }} title="Delete"><Trash2 size={16} /></button>
+                </div>
+              </div>
+              <h3 style={{ margin: '0 0 8px', fontSize: '1.1rem', fontWeight: 700 }}>{p.name}</h3>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
+                <span className={`status-badge ${p.department?.status?.toLowerCase() === 'active' ? 'active' : 'archived'}`} style={{ fontSize: '0.7rem', padding: '2px 8px', borderRadius: '4px', background: p.department?.status?.toLowerCase() === 'active' ? '#dcfce7' : '#fee2e2', color: p.department?.status?.toLowerCase() === 'active' ? '#166534' : '#991b1b' }}>
+                  {p.department?.status ?? 'Active'}
+                </span>
+                <p style={{ margin: 0, fontSize: '0.85rem', color: '#64748b' }}>{p.department?.name ?? 'No Department'}</p>
+              </div>
+
+              <div className="card-details" style={{ fontSize: '0.85rem', color: '#475569', marginBottom: '16px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <User size={14} color="#94a3b8" />
+                  <span>Head: <strong>{p.department?.head ?? '—'}</strong></span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <BookOpen size={14} color="#94a3b8" />
+                  <span>Created: {new Date(p.created_at).toLocaleDateString()}</span>
+                </div>
+              </div>
+              
+              <div className="card-stats" style={{ display: 'flex', gap: '12px', borderTop: '1px solid #f1f5f9', paddingTop: '12px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                  <GraduationCap size={14} color="#94a3b8" />
+                  <span style={{ fontSize: '0.8rem', fontWeight: 600 }}>{p.students_count || 0} Students</span>
+                </div>
+              </div>
+            </div>
+          ))
+        )}
       </div>
 
       {showModal && (
@@ -131,9 +179,19 @@ export default function Programs() {
                 <label style={{ display: 'block', marginBottom: '6px', fontSize: '0.9rem', fontWeight: 600 }}>Program Code</label>
                 <input type="text" value={form.code} onChange={e => setForm({...form, code: e.target.value})} placeholder="e.g. BSCS" required style={{ width: '100%', padding: '10px', borderRadius: '8px', border: '1px solid #cbd5e1' }} />
               </div>
-              <div className="form-group">
+               <div className="form-group">
                 <label style={{ display: 'block', marginBottom: '6px', fontSize: '0.9rem', fontWeight: 600 }}>Department</label>
-                <input type="text" value={form.department} onChange={e => setForm({...form, department: e.target.value})} placeholder="e.g. College of Engineering" required style={{ width: '100%', padding: '10px', borderRadius: '8px', border: '1px solid #cbd5e1' }} />
+                <select 
+                  value={form.department_id} 
+                  onChange={e => setForm({...form, department_id: e.target.value})} 
+                  required 
+                  style={{ width: '100%', padding: '10px', borderRadius: '8px', border: '1px solid #cbd5e1', background: '#fff' }}
+                >
+                  <option value="">Select a department</option>
+                  {departments.map(dept => (
+                    <option key={dept.id} value={dept.id}>{dept.name}</option>
+                  ))}
+                </select>
               </div>
               <div className="form-group">
                 <label style={{ display: 'block', marginBottom: '6px', fontSize: '0.9rem', fontWeight: 600 }}>Description</label>

@@ -20,17 +20,13 @@ class AuthController extends Controller
     public function registerStudent(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'first_name'   => 'required|string|max:100',
-            'middle_name'  => 'nullable|string|max:100',
-            'last_name'    => 'required|string|max:100',
-            'age'          => 'nullable|integer|min:15|max:100',
-            'sex'          => 'required|in:Male,Female',
-            'date_of_birth'=> 'required|date',
-            'email'        => 'required|email|unique:students,email',
-            'phone'        => 'required|string|size:11',
-            'address'      => 'required|string|max:500',
-            'program_id'   => 'required|exists:programs,id',
-            'password'     => 'required|string|min:8|regex:/^(?=.*[A-Z])(?=.*[0-9]).+$/|confirmed',
+            'name'         => 'required|string|max:255',
+            'student_id'   => 'required|string|unique:students,student_id',
+            'email'        => 'required|email|unique:users,email',
+            'course'       => 'required|string|max:100',
+            'department'   => 'required|string|max:100',
+            'year_level'   => 'required|string|max:20',
+            'password'     => 'required|string|min:8|confirmed',
         ]);
 
         if ($validator->fails()) {
@@ -43,23 +39,8 @@ class AuthController extends Controller
         try {
             DB::beginTransaction();
 
-            // Auto-generate Student ID
-            $year = date('Y');
-            $lastStudent = Student::where('student_id', 'like', "STU-{$year}-%")
-                ->orderBy('id', 'desc')
-                ->first();
-
-            if ($lastStudent && preg_match('/STU-' . $year . '-(\d+)/', $lastStudent->student_id, $matches)) {
-                $newNumber = str_pad(intval($matches[1]) + 1, 4, '0', STR_PAD_LEFT);
-            } else {
-                $newNumber = '0001';
-            }
-
-            $studentId = "STU-{$year}-{$newNumber}";
-
-            // Build full name
-            $middleName = !empty($request->middle_name) ? ' ' . $request->middle_name . ' ' : ' ';
-            $fullName = trim($request->first_name . $middleName . $request->last_name);
+            $studentId = $request->student_id;
+            $fullName  = $request->name;
 
             // 1. Create User account
             $user = User::create([
@@ -68,37 +49,46 @@ class AuthController extends Controller
                 'email'    => $request->email,
                 'password' => Hash::make($request->password),
                 'role'     => 'student',
-                'phone'    => $request->phone,
-                'address'  => $request->address,
             ]);
+
+            // 5. Logic: Student Auto-Approval (YYYY-NNNNN pattern)
+            // Pattern: YYYY-NNNNN (e.g. 2024-00123)
+            $isAutoApproved = preg_match('/^\d{4}-\d{5}$/', $studentId);
+            $initialStatus = $isAutoApproved ? 'Active' : 'Pending';
 
             // 2. Create Student profile
             $student = Student::create([
                 'user_id'       => $user->id,
-                'student_id'    => $studentId,
+                'student_id'    => $studentId, // We use the provided ID if it matches pattern or user input
                 'name'          => $fullName,
-                'first_name'    => $request->first_name,
-                'middle_name'   => $request->middle_name,
-                'last_name'     => $request->last_name,
-                'age'           => $request->age,
-                'sex'           => $request->sex,
-                'date_of_birth' => $request->date_of_birth,
                 'email'         => $request->email,
-                'phone'         => $request->phone,
-                'address'       => $request->address,
-                'program_id'    => $request->program_id,
-                'password'      => Hash::make($request->password), // Redundant but kept for BC
-                'status'        => 'Pending',
-                'department'    => '',
-                'course'        => '',
+                'course'        => $request->course,
+                'department'    => $request->department,
+                'year_level'    => $request->year_level,
+                'password'      => $user->password,
+                'status'        => $initialStatus,
             ]);
 
             DB::commit();
 
+            if ($isAutoApproved) {
+                AccountActivityLog::create([
+                    'loggable_id' => $student->id,
+                    'loggable_type' => Student::class,
+                    'action' => 'Auto-Approved',
+                    'reason' => 'ID matched auto-approval pattern (YYYY-NNNNN)',
+                ]);
+            }
+
+            $successMsg = $isAutoApproved 
+                ? 'Registration successful! Your account is auto-approved and active.'
+                : 'Registration successful! Please wait for admin activation before you can login.';
+
             return response()->json([
                 'success' => true,
-                'message' => 'Registration successful! Your School ID is: ' . $studentId . '. Please wait for admin activation before you can login.',
+                'message' => $successMsg,
                 'student_id' => $studentId,
+                'auto_approved' => $isAutoApproved
             ], 201);
         } catch (\Exception $e) {
             DB::rollBack();
@@ -115,17 +105,12 @@ class AuthController extends Controller
     public function registerFaculty(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'first_name'   => 'required|string|max:100',
-            'middle_name'  => 'nullable|string|max:100',
-            'last_name'    => 'required|string|max:100',
-            'age'          => 'nullable|integer|min:18|max:100',
-            'sex'          => 'required|in:Male,Female',
-            'date_of_birth'=> 'required|date',
-            'email'        => 'required|email|unique:faculties,email',
-            'phone'        => 'required|string|size:11',
-            'address'      => 'required|string|max:500',
-            'tin_number'   => 'required|string|max:50',
-            'password'     => 'required|string|min:8|regex:/^(?=.*[A-Z])(?=.*[0-9]).+$/|confirmed',
+            'name'         => 'required|string|max:255',
+            'faculty_id'   => 'required|string|unique:faculties,faculty_id',
+            'email'        => 'required|email|unique:users,email',
+            'department'   => 'required|string|max:100',
+            'position'     => 'required|string|max:100',
+            'password'     => 'required|string|min:8|confirmed',
         ]);
 
         if ($validator->fails()) {
@@ -138,50 +123,28 @@ class AuthController extends Controller
         try {
             DB::beginTransaction();
 
-            // Auto-generate Faculty ID
-            $year = date('Y');
-            $lastFaculty = Faculty::where('faculty_id', 'like', "FAC-{$year}-%")
-                ->orderBy('id', 'desc')
-                ->first();
-
-            if ($lastFaculty && preg_match('/FAC-' . $year . '-(\d+)/', $lastFaculty->faculty_id, $matches)) {
-                $newNumber = str_pad(intval($matches[1]) + 1, 4, '0', STR_PAD_LEFT);
-            } else {
-                $newNumber = '0001';
-            }
-
-            $facultyId = "FAC-{$year}-{$newNumber}";
+            $facultyId = $request->faculty_id;
+            $fullName  = $request->name;
 
             // 1. Create User account
             $user = User::create([
-                'name'     => trim($request->first_name . ' ' . $request->last_name),
+                'name'     => $fullName,
                 'username' => $request->email,
                 'email'    => $request->email,
                 'password' => Hash::make($request->password),
                 'role'     => 'faculty',
-                'phone'    => $request->phone,
-                'address'  => $request->address,
             ]);
 
             // 2. Create Faculty profile
             $faculty = Faculty::create([
                 'user_id'       => $user->id,
                 'faculty_id'    => $facultyId,
-                'first_name'    => $request->first_name,
-                'middle_name'   => $request->middle_name,
-                'last_name'     => $request->last_name,
-                'age'           => $request->age,
-                'sex'           => $request->sex,
-                'date_of_birth' => $request->date_of_birth,
+                'name'          => $fullName,
                 'email'         => $request->email,
-                'phone'         => $request->phone,
-                'address'       => $request->address,
-                'tin_number'    => $request->tin_number,
-                'password'      => Hash::make($request->password), // Redundant but kept for BC
+                'department'    => $request->department,
+                'position'      => $request->position,
+                'password'      => $user->password,
                 'status'        => 'Pending',
-                'department'    => '',
-                'position'      => '',
-                'office_phone'  => '',
             ]);
 
             DB::commit();
@@ -265,6 +228,10 @@ class AuthController extends Controller
             if ($faculty->status === 'Pending') {
                 return response()->json(['success' => false, 'message' => 'Your account is pending activation. Please contact the admin.'], 403);
             }
+            if ($faculty->status === 'Rejected') {
+                $reason = $faculty->rejection_reason ? " Reason: {$faculty->rejection_reason}" : "";
+                return response()->json(['success' => false, 'message' => 'Your account registration was rejected.' . $reason], 403);
+            }
             if ($faculty->status === 'Archived') {
                 return response()->json(['success' => false, 'message' => 'Your account has been deactivated. Please contact the admin.'], 403);
             }
@@ -297,6 +264,10 @@ class AuthController extends Controller
             }
             if ($student->status === 'Pending') {
                 return response()->json(['success' => false, 'message' => 'Your account is pending activation. Please contact the admin.'], 403);
+            }
+            if ($student->status === 'Rejected') {
+                $reason = $student->rejection_reason ? " Reason: {$student->rejection_reason}" : "";
+                return response()->json(['success' => false, 'message' => 'Your account registration was rejected.' . $reason], 403);
             }
             if ($student->status === 'Archived') {
                 return response()->json(['success' => false, 'message' => 'Your account has been deactivated. Please contact the admin.'], 403);
@@ -340,15 +311,30 @@ class AuthController extends Controller
 
         $user = User::where('email', $identifier)
                     ->orWhere('username', $identifier)
-                    ->first(['id', 'role']);
+                    ->with(['student', 'faculty'])
+                    ->first(['id', 'name', 'role']);
 
         if (!$user) {
             return response()->json(['found' => false], 200);
         }
 
+        // Determine status and rejection reason based on role and linked profile
+        $status = 'Active'; 
+        $rejectionReason = '';
+        if ($user->role === 'student') {
+            $status = $user->student ? $user->student->status : 'Pending';
+            $rejectionReason = $user->student ? $user->student->rejection_reason : '';
+        } elseif ($user->role === 'faculty') {
+            $status = $user->faculty ? $user->faculty->status : 'Pending';
+            $rejectionReason = $user->faculty ? $user->faculty->rejection_reason : '';
+        }
+
         return response()->json([
-            'found' => true,
-            'role'  => $user->role,   // 'admin' | 'faculty' | 'student'
+            'found'  => true,
+            'name'   => $user->name,
+            'role'   => $user->role,
+            'status' => $status,
+            'rejection_reason' => $rejectionReason,
         ], 200);
     }
 

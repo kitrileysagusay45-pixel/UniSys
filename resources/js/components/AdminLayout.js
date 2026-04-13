@@ -11,7 +11,6 @@ import Programs from "./Programs";
 import Announcements from "./Announcements";
 import { GraduationCap, LayoutDashboard, Users, BookOpen, GraduationCap as GradIcon, BarChart3, Settings as SettingsIcon, Archive as ArchiveIcon, User, Circle, Bell } from "lucide-react";
 import TopNavbar from "./TopNavbar";
-// import "../../sass/layout.scss";
 
 export default function AdminLayout({ user, onLogout }) {
   const [page, setPage] = useState(() => {
@@ -74,6 +73,7 @@ export default function AdminLayout({ user, onLogout }) {
                 key={item.key}
                 className={`nav-item ${page === item.key ? "active" : ""}`}
                 onClick={() => navigate(item.key)}
+                style={{ position: 'relative' }}
               >
                 <div className="icon-wrapper">{item.icon}</div>
                 <span>{item.label}</span>
