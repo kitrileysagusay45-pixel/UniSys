@@ -13,8 +13,12 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import { GraduationCap, Users, Building2, TrendingUp, Calendar, Plus, BookOpen, Bell, Info, AlertTriangle } from "lucide-react";
-// import "../../sass/dashboard.scss";
+import { 
+  GraduationCap, Users, Building2, TrendingUp, Calendar, 
+  Plus, BookOpen, Bell, Info, AlertTriangle, Activity, 
+  Clock, CheckCircle, ArrowUpRight, Zap, Download
+} from "lucide-react";
+import { exportStudentReport } from "../utils/ExportUtils";
 
 // Register Chart.js components
 ChartJS.register(
@@ -25,6 +29,19 @@ ChartJS.register(
   Title,
   Tooltip,
   Legend
+);
+
+// Sparkline component for stat cards
+const Sparkline = ({ color = "#6366f1" }) => (
+  <svg width="60" height="20" viewBox="0 0 60 20" style={{ marginLeft: '10px' }}>
+    <path
+      d="M0 15 Q 15 5, 30 12 T 60 8"
+      fill="none"
+      stroke={color}
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
+  </svg>
 );
 
 export default function Dashboard({ user }) {
@@ -42,6 +59,7 @@ export default function Dashboard({ user }) {
   });
 
   const [announcements, setAnnouncements] = useState([]);
+  const [auditLogs, setAuditLogs] = useState([]);
   const [activeSemester, setActiveSemester] = useState("");
 
   const colorPalette = [
@@ -63,14 +81,25 @@ export default function Dashboard({ user }) {
     return () => window.removeEventListener('dataUpdated', handleDataUpdate);
   }, []);
 
+  const handleExport = async () => {
+    try {
+      const res = await axios.get("/api/students");
+      exportStudentReport(res.data, 'AY 2025-2026');
+    } catch (err) {
+      console.error("Export failed:", err);
+      alert("Export failed. Please try again.");
+    }
+  };
+
   const fetchDashboardData = async () => {
     try {
-      const [studentsRes, facultiesRes, countsRes, annRes, settingsRes] = await Promise.all([
+      const [studentsRes, facultiesRes, countsRes, annRes, settingsRes, logsRes] = await Promise.all([
         axios.get("/api/students"),
         axios.get("/api/faculties"),
         axios.get("/api/dashboard-counts"),
         axios.get("/api/announcements/dashboard"),
-        axios.get("/api/system/settings")
+        axios.get("/api/system/settings"),
+        axios.get("/api/system/audit-logs")
       ]);
 
       setStudents(studentsRes.data.filter(s => s.status !== "Archived"));
@@ -80,11 +109,12 @@ export default function Dashboard({ user }) {
         totalFaculty: countsRes.data.faculties,
         totalCourses: countsRes.data.courses,
         totalDepartments: countsRes.data.departments,
-        pendingStudents: countsRes.data.pending_students || 0,
-        pendingFaculty: countsRes.data.pending_faculties || 0
+        pendingStudents: studentsRes.data.filter(s => s.status === 'Pending').length,
+        pendingFaculty: facultiesRes.data.filter(f => f.status === 'Pending').length
       });
       
       setAnnouncements(annRes.data);
+      setAuditLogs(logsRes.data || []);
       if (settingsRes.data.active_semester) {
         setActiveSemester(settingsRes.data.active_semester);
       }
@@ -95,204 +125,265 @@ export default function Dashboard({ user }) {
     }
   };
 
+  const chartColors = {
+    primary: '#6366f1', // Indigo
+    secondary: '#14b8a6', // Teal
+    accent: '#f59e0b', // Amber
+    neutral: '#64748b', // Slate
+    bg: '#f8fafc'
+  };
+
   // Chart Data Calculations
   const courseData = students.reduce((acc, student) => { acc[student.course] = (acc[student.course] || 0) + 1; return acc; }, {});
-  const studentsPerCourseData = { labels: Object.keys(courseData), datasets: [{ label: "Students", data: Object.values(courseData), backgroundColor: generateColors(Object.keys(courseData)), borderRadius: 6 }] };
+  const studentsPerCourseData = { 
+    labels: Object.keys(courseData), 
+    datasets: [{ 
+      label: "Students", 
+      data: Object.values(courseData), 
+      backgroundColor: chartColors.primary, 
+      borderRadius: 8,
+      hoverBackgroundColor: '#4f46e5'
+    }] 
+  };
 
   const facultyDeptData = faculties.reduce((acc, faculty) => { acc[faculty.department] = (acc[faculty.department] || 0) + 1; return acc; }, {});
-  const facultyPerDeptData = { labels: Object.keys(facultyDeptData), datasets: [{ data: Object.values(facultyDeptData), backgroundColor: generateColors(Object.keys(facultyDeptData)), borderWidth: 0 }] };
+  const facultyPerDeptData = { 
+    labels: Object.keys(facultyDeptData), 
+    datasets: [{ 
+      data: Object.values(facultyDeptData), 
+      backgroundColor: [chartColors.primary, chartColors.secondary, chartColors.accent, '#8b5cf6', '#ec4899'], 
+      borderWidth: 0,
+      hoverOffset: 15
+    }] 
+  };
 
   const studentDeptData = students.reduce((acc, student) => { acc[student.department] = (acc[student.department] || 0) + 1; return acc; }, {});
-  const studentsPerDeptData = { labels: Object.keys(studentDeptData), datasets: [{ label: "Students", data: Object.values(studentDeptData), backgroundColor: generateColors(Object.keys(studentDeptData)), borderRadius: 6 }] };
+  const studentsPerDeptData = { 
+    labels: Object.keys(studentDeptData), 
+    datasets: [{ 
+      label: "Students", 
+      data: Object.values(studentDeptData), 
+      backgroundColor: chartColors.secondary, 
+      borderRadius: 8 
+    }] 
+  };
 
-  const yearLevelData = students.reduce((acc, student) => { acc[student.year_level] = (acc[student.year_level] || 0) + 1; return acc; }, {});
-  const enrollmentData = { labels: Object.keys(yearLevelData), datasets: [{ label: "Students", data: Object.values(yearLevelData), backgroundColor: generateColors(Object.keys(yearLevelData)), borderRadius: 6 }] };
+  const yearLevelData = students.reduce((acc, student) => { 
+    if (student.year_level && student.year_level !== "null") {
+      acc[student.year_level] = (acc[student.year_level] || 0) + 1; 
+    }
+    return acc; 
+  }, {});
+  const enrollmentData = { 
+    labels: Object.keys(yearLevelData).sort(), 
+    datasets: [{ 
+      label: "Students", 
+      data: Object.values(yearLevelData), 
+      backgroundColor: '#8b5cf6', 
+      borderRadius: 8 
+    }] 
+  };
 
-  const chartOptions = { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, grid: { color: "#f3f4f6" } }, x: { grid: { display: false } } } };
-  const doughnutOptions = { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: "right", labels: { usePointStyle: true, padding: 15 } } } };
+  const chartOptions = { 
+    responsive: true, 
+    maintainAspectRatio: false, 
+    plugins: { 
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: '#1e293b',
+        padding: 12,
+        titleFont: { size: 14, weight: 'bold' },
+        bodyFont: { size: 13 },
+        cornerRadius: 8
+      }
+    }, 
+    scales: { 
+      y: { 
+        beginAtZero: true, 
+        grid: { color: "#f1f5f9", drawBorder: false },
+        ticks: { color: '#64748b', font: { size: 11 } }
+      }, 
+      x: { 
+        grid: { display: false },
+        ticks: { color: '#64748b', font: { size: 11 } }
+      } 
+    } 
+  };
+  
+  const doughnutOptions = { 
+    responsive: true, 
+    maintainAspectRatio: false, 
+    cutout: '70%',
+    plugins: { 
+      legend: { 
+        position: "bottom", 
+        labels: { 
+          usePointStyle: true, 
+          padding: 20,
+          font: { size: 12, family: 'Inter' },
+          color: '#475569'
+        } 
+      } 
+    } 
+  };
 
   return (
     <div className="dashboard-container">
-      <div className="dashboard-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div className="header-left">
+      <div className="dashboard-header" style={{ marginBottom: '2rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div>
-            <h2>Dashboard Overview</h2>
-            <p className="welcome-text" style={{margin: 0}}>{activeSemester ? `Active Semester: ${activeSemester}` : 'System Overview'}</p>
+            <h2 style={{ fontSize: '1.8rem', fontWeight: 800, color: '#1e293b', marginBottom: '4px' }}>Administrative Insights</h2>
+            <p style={{ color: '#64748b', fontSize: '0.95rem' }}>{activeSemester ? `Academic Year 2025-2026 | ${activeSemester}` : 'System Overview'}</p>
+          </div>
+          <div style={{ display: 'flex', gap: '12px' }}>
+            <button 
+              className="export-btn" 
+              onClick={handleExport}
+              style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 20px', background: '#fff', color: '#475569', border: '1px solid #e2e8f0', borderRadius: '10px', cursor: 'pointer', fontWeight: 600, boxShadow: '0 1px 2px rgba(0,0,0,0.05)' }}
+            >
+              <Download size={18} /> Export Data
+            </button>
+            <button className="primary-btn" onClick={() => window.history.pushState({}, '', '/announcements')} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 20px', background: '#6366f1', color: '#fff', border: 'none', borderRadius: '10px', cursor: 'pointer', fontWeight: 600, boxShadow: '0 4px 6px -1px rgba(99, 102, 241, 0.2)' }}>
+              <Zap size={18} /> New Broadcast
+            </button>
           </div>
         </div>
-        <div className="quick-actions" style={{ display: 'flex', gap: '10px' }}>
-            <button className="primary-btn" onClick={() => window.history.pushState({}, '', '/students')} style={{ display: 'flex', alignItems: 'center', gap: '5px', padding: '8px 12px', background: '#3b82f6', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}><Plus size={16} /> Add Student</button>
-            <button className="secondary-btn" onClick={() => window.history.pushState({}, '', '/faculty')} style={{ display: 'flex', alignItems: 'center', gap: '5px', padding: '8px 12px', background: '#f1f5f9', color: '#1e293b', border: '1px solid #cbd5e1', borderRadius: '6px', cursor: 'pointer' }}><Plus size={16} /> Add Faculty</button>
+
+        {/* Quick Actions Bar */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginTop: '1.5rem' }}>
+          {[
+            { label: 'Create Schedule', icon: Calendar, path: '/subjects', color: '#f59e0b' },
+            { label: 'Post Announcement', icon: Bell, path: '/announcements', color: '#8b5cf6' }
+          ].map((action, i) => (
+            <button 
+              key={i}
+              onClick={() => { window.history.pushState({}, '', action.path); window.dispatchEvent(new PopStateEvent('popstate')); }}
+              style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '12px 16px', background: '#fff', border: '1px solid #f1f5f9', borderRadius: '12px', cursor: 'pointer', transition: 'all 0.2s' }}
+              onMouseOver={e => e.currentTarget.style.borderColor = action.color}
+              onMouseOut={e => e.currentTarget.style.borderColor = '#f1f5f9'}
+            >
+              <div style={{ background: `${action.color}15`, color: action.color, padding: '8px', borderRadius: '8px' }}>
+                <action.icon size={20} />
+              </div>
+              <span style={{ fontWeight: 600, color: '#475569', fontSize: '0.9rem' }}>{action.label}</span>
+            </button>
+          ))}
         </div>
       </div>
 
       <div className="dashboard-content">
-        <div className="cards-grid">
-          <div className="info-card">
-            <div className="card-content">
-              <h3>Total Students</h3>
-              <p className="card-value">{dashboardData.totalStudents}</p>
-              <div style={{display: 'flex', alignItems: 'center', color: '#10b981', fontSize: '0.8rem', marginTop: '5px'}}>
-                <TrendingUp size={14} style={{marginRight: '4px'}}/> +5.2% this month
+        <div className="cards-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.5rem', marginBottom: '2rem' }}>
+          {[
+            { label: 'Total Students', value: dashboardData.totalStudents, icon: GraduationCap, color: '#6366f1', trend: '+5.2%' },
+            { label: 'Total Faculty', value: dashboardData.totalFaculty, icon: Users, color: '#14b8a6', trend: '+2.4%' },
+            { label: 'Active Courses', value: dashboardData.totalCourses, icon: BookOpen, color: '#f59e0b', trend: '+1.0%' },
+            { label: 'Departments', value: dashboardData.totalDepartments, icon: Building2, color: '#8b5cf6', trend: 'Stable' }
+          ].map((stat, i) => (
+            <div key={i} className="info-card" style={{ background: '#fff', padding: '1.5rem', borderRadius: '16px', border: '1px solid #f1f5f9', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)', position: 'relative', overflow: 'hidden' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                <div>
+                  <p style={{ color: '#64748b', fontSize: '0.85rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.025em', marginBottom: '8px' }}>{stat.label}</p>
+                  <h3 style={{ fontSize: '1.75rem', fontWeight: 800, color: '#1e293b', margin: 0 }}>{stat.value}</h3>
+                </div>
+                <div style={{ background: `${stat.color}10`, color: stat.color, padding: '10px', borderRadius: '12px' }}>
+                  <stat.icon size={24} />
+                </div>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', marginTop: '16px' }}>
+                <span style={{ fontSize: '0.8rem', fontWeight: 700, color: stat.trend.includes('+') ? '#10b981' : '#64748b', background: stat.trend.includes('+') ? '#dcfce7' : '#f1f5f9', padding: '2px 8px', borderRadius: '99px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                  {stat.trend.includes('+') && <TrendingUp size={12} />} {stat.trend}
+                </span>
+                <Sparkline color={stat.color} />
               </div>
             </div>
-            <div className="card-icon"><GraduationCap size={32} strokeWidth={1.5} /></div>
-          </div>
-          <div className="info-card">
-            <div className="card-content">
-              <h3>Total Courses</h3>
-              <p className="card-value">{dashboardData.totalCourses}</p>
-              <div style={{display: 'flex', alignItems: 'center', color: '#10b981', fontSize: '0.8rem', marginTop: '5px'}}>
-                <TrendingUp size={14} style={{marginRight: '4px'}}/> +1.0% this month
-              </div>
-            </div>
-            <div className="card-icon"><BookOpen size={32} strokeWidth={1.5} /></div>
-          </div>
-          <div className="info-card">
-            <div className="card-content">
-              <h3>Total Faculty</h3>
-              <p className="card-value">{dashboardData.totalFaculty}</p>
-              <div style={{display: 'flex', alignItems: 'center', color: '#10b981', fontSize: '0.8rem', marginTop: '5px'}}>
-                <TrendingUp size={14} style={{marginRight: '4px'}}/> +2.4% this month
-              </div>
-            </div>
-            <div className="card-icon"><Users size={32} strokeWidth={1.5} /></div>
-          </div>
-          <div className="info-card">
-            <div className="card-content">
-              <h3>Total Departments</h3>
-              <p className="card-value">{dashboardData.totalDepartments}</p>
-            </div>
-            <div className="card-icon"><Building2 size={32} strokeWidth={1.5} /></div>
-          </div>
+          ))}
         </div>
 
         {(dashboardData.pendingStudents > 0 || dashboardData.pendingFaculty > 0) && (
-          <div className="pending-alerts-section" style={{ 
-            background: 'linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%)', 
-            border: '1px solid #fed7aa', 
-            borderRadius: '16px', 
-            padding: '1.5rem', 
-            marginBottom: '2rem',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-            animation: 'pulse 2s infinite'
-          }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <div style={{ 
-                width: '48px', 
-                height: '48px', 
-                borderRadius: '12px', 
-                background: '#fb923c', 
-                color: 'white', 
-                display: 'flex', 
-                alignItems: 'center', 
-                justifyContent: 'center' 
-              }}>
-                <AlertTriangle size={24} />
-              </div>
-              <div>
-                <h4 style={{ margin: 0, color: '#9a3412', fontSize: '1.1rem', fontWeight: 700 }}>Pending Approvals Found</h4>
-                <p style={{ margin: '4px 0 0', color: '#c2410c', fontSize: '0.9rem' }}>
-                  There are <strong>{dashboardData.pendingStudents} students</strong> and <strong>{dashboardData.pendingFaculty} faculty members</strong> waiting for your verification.
-                </p>
-              </div>
+          <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '12px', padding: '1rem 1.5rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <div style={{ background: '#3b82f615', color: '#3b82f6', padding: '8px', borderRadius: '50%' }}>
+              <Info size={20} />
             </div>
-            <div style={{ display: 'flex', gap: '0.75rem' }}>
-              {dashboardData.pendingStudents > 0 && (
-                <button 
-                  onClick={() => window.history.pushState({}, '', '/students')} 
-                  style={{ 
-                    padding: '8px 16px', 
-                    background: 'white', 
-                    border: '1px solid #fb923c', 
-                    color: '#c2410c', 
-                    borderRadius: '8px', 
-                    fontWeight: 600, 
-                    cursor: 'pointer',
-                    fontSize: '0.85rem'
-                  }}
-                >
-                  Verify Students
-                </button>
-              )}
-              {dashboardData.pendingFaculty > 0 && (
-                <button 
-                  onClick={() => window.history.pushState({}, '', '/faculty')} 
-                  style={{ 
-                    padding: '8px 16px', 
-                    background: '#fb923c', 
-                    border: 'none', 
-                    color: 'white', 
-                    borderRadius: '8px', 
-                    fontWeight: 600, 
-                    cursor: 'pointer',
-                    fontSize: '0.85rem'
-                  }}
-                >
-                  Verify Faculty
-                </button>
-              )}
+            <div style={{ flex: 1 }}>
+              <h4 style={{ margin: 0, fontSize: '0.95rem', color: '#1e293b' }}>Action Required: Pending Registrations</h4>
+              <p style={{ margin: 0, fontSize: '0.85rem', color: '#64748b' }}>
+                There are <strong>{dashboardData.pendingStudents}</strong> students and <strong>{dashboardData.pendingFaculty}</strong> faculty members awaiting approval.
+              </p>
             </div>
+            <button 
+              onClick={() => { window.history.pushState({}, '', '/students'); window.dispatchEvent(new PopStateEvent('popstate')); }}
+              style={{ background: '#fff', border: '1px solid #cbd5e1', padding: '6px 14px', borderRadius: '8px', fontSize: '0.85rem', fontWeight: 600, color: '#475569', cursor: 'pointer' }}
+            >
+              Review Now
+            </button>
           </div>
         )}
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '1.5rem', marginBottom: '1.5rem', alignItems: 'start' }}>
-          <div className="chart-section" style={{ margin: 0 }}>
-            <div className="chart-box">
-              <div className="chart-header">
-                <h3>Students per Course</h3>
-              </div>
-              <div className="chart-canvas"><Bar key={`c-c-${chartKey}`} data={studentsPerCourseData} options={chartOptions} /></div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 320px', gap: '2rem', alignItems: 'start' }}>
+          <div className="chart-grid-main" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem' }}>
+            <div className="chart-box" style={{ background: '#fff', padding: '1.5rem', borderRadius: '16px', border: '1px solid #f1f5f9' }}>
+              <h4 style={{ margin: '0 0 1.5rem 0', color: '#1e293b', fontSize: '1rem', fontWeight: 700 }}>Students per Course</h4>
+              <div style={{ height: '240px' }}><Bar key={`c-c-${chartKey}`} data={studentsPerCourseData} options={chartOptions} /></div>
             </div>
-            <div className="chart-box">
-              <div className="chart-header">
-                <h3>Faculty per Department</h3>
-              </div>
-              <div className="chart-canvas"><Doughnut key={`f-c-${chartKey}`} data={facultyPerDeptData} options={doughnutOptions} /></div>
+            <div className="chart-box" style={{ background: '#fff', padding: '1.5rem', borderRadius: '16px', border: '1px solid #f1f5f9' }}>
+              <h4 style={{ margin: '0 0 1.5rem 0', color: '#1e293b', fontSize: '1rem', fontWeight: 700 }}>Faculty by Department</h4>
+              <div style={{ height: '240px' }}><Doughnut key={`f-c-${chartKey}`} data={facultyPerDeptData} options={doughnutOptions} /></div>
             </div>
-            <div className="chart-box">
-              <div className="chart-header">
-                <h3>Students per Department</h3>
-              </div>
-              <div className="chart-canvas"><Bar key={`s-d-c-${chartKey}`} data={studentsPerDeptData} options={chartOptions} /></div>
+            <div className="chart-box" style={{ background: '#fff', padding: '1.5rem', borderRadius: '16px', border: '1px solid #f1f5f9' }}>
+              <h4 style={{ margin: '0 0 1.5rem 0', color: '#1e293b', fontSize: '1rem', fontWeight: 700 }}>Students by Department</h4>
+              <div style={{ height: '240px' }}><Bar key={`s-d-c-${chartKey}`} data={studentsPerDeptData} options={chartOptions} /></div>
             </div>
-            <div className="chart-box">
-              <div className="chart-header">
-                <h3>Students by Year Level</h3>
-              </div>
-              <div className="chart-canvas"><Bar key={`y-c-${chartKey}`} data={enrollmentData} options={chartOptions} /></div>
+            <div className="chart-box" style={{ background: '#fff', padding: '1.5rem', borderRadius: '16px', border: '1px solid #f1f5f9' }}>
+              <h4 style={{ margin: '0 0 1.5rem 0', color: '#1e293b', fontSize: '1rem', fontWeight: 700 }}>Academic Population by Year</h4>
+              <div style={{ height: '240px' }}><Bar key={`y-c-${chartKey}`} data={enrollmentData} options={chartOptions} /></div>
             </div>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            <div className="activity-section" style={{ background: 'var(--card-bg, #fff)', border: '1px solid var(--border-color, #e2e8f0)', padding: '1.5rem', borderRadius: '12px' }}>
-              <h3 style={{ marginTop: 0, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.1rem' }}>
-                <Bell size={20} className="text-primary" /> Announcements
+          <div className="sidebar-widgets" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            {/* Recent Activity Feed */}
+            <div className="widget-box" style={{ background: '#fff', padding: '1.5rem', borderRadius: '16px', border: '1px solid #f1f5f9' }}>
+              <h3 style={{ margin: '0 0 1.25rem 0', fontSize: '1.1rem', color: '#1e293b', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <Activity size={20} style={{ color: '#6366f1' }} /> Recent Activity
               </h3>
-              {announcements.length > 0 ? (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                  {announcements.map(ann => (
-                    <div key={ann.id} style={{ padding: '12px', borderRadius: '8px', background: ann.type === 'urgent' ? '#fff1f2' : '#f8fafc', borderLeft: `4px solid ${ann.type === 'urgent' ? '#e11d48' : '#3b82f6'}` }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '4px' }}>
-                        {ann.type === 'urgent' ? <AlertTriangle size={14} color="#e11d48" /> : <Info size={14} color="#3b82f6" />}
-                        <span style={{ fontSize: '0.9rem', fontWeight: 700, color: ann.type === 'urgent' ? '#9f1239' : '#1e40af' }}>{ann.title}</span>
-                      </div>
-                      <p style={{ margin: 0, fontSize: '0.85rem', color: '#475569', lineHeight: '1.4' }}>{ann.content}</p>
-                      <span style={{ fontSize: '0.75rem', color: '#94a3b8', display: 'block', marginTop: '6px' }}>{new Date(ann.created_at).toLocaleDateString()}</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                {auditLogs.length > 0 ? auditLogs.slice(0, 6).map((log, i) => (
+                  <div key={i} style={{ display: 'flex', gap: '12px' }}>
+                    <div style={{ marginTop: '4px' }}>
+                      <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: log.action?.includes('delete') ? '#ef4444' : '#10b981' }}></div>
                     </div>
-                  ))}
-                </div>
-              ) : (
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-muted, #64748b)' }}>No new announcements.</p>
-              )}
+                    <div style={{ flex: 1 }}>
+                      <p style={{ margin: 0, fontSize: '0.85rem', color: '#334155', fontWeight: 600, lineHeight: '1.4' }}>{log.action}</p>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '4px', marginTop: '2px' }}>
+                        <Clock size={12} style={{ color: '#94a3b8' }} />
+                        <span style={{ fontSize: '0.75rem', color: '#94a3b8' }}>{new Date(log.created_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
+                      </div>
+                    </div>
+                  </div>
+                )) : (
+                  <p style={{ fontSize: '0.85rem', color: '#94a3b8', textAlign: 'center', padding: '20px 0' }}>No recent activities found.</p>
+                )}
+              </div>
+            </div>
+
+            {/* Announcements */}
+            <div className="widget-box" style={{ background: '#1e293b', padding: '1.5rem', borderRadius: '16px', color: '#fff' }}>
+              <h3 style={{ margin: '0 0 1.25rem 0', fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <Bell size={20} style={{ color: '#fbbf24' }} /> Broadcasts
+              </h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                {announcements.slice(0, 3).map((ann, i) => (
+                  <div key={i} style={{ paddingBottom: i < 2 ? '1rem' : 0, borderBottom: i < 2 ? '1px solid rgba(255,255,255,0.1)' : 'none' }}>
+                    <h4 style={{ margin: '0 0 4px 0', fontSize: '0.9rem', color: '#f8fafc' }}>{ann.title}</h4>
+                    <p style={{ margin: 0, fontSize: '0.8rem', color: '#94a3b8', lineHeight: '1.4' }}>{ann.content?.substring(0, 80)}...</p>
+                  </div>
+                ))}
+              </div>
               <button 
-                onClick={() => window.history.pushState({}, '', '/announcements')}
-                style={{ width: '100%', marginTop: '1rem', padding: '8px', background: 'transparent', border: '1px solid #e2e8f0', borderRadius: '6px', fontSize: '0.85rem', color: '#64748b', cursor: 'pointer' }}
+                onClick={() => { window.history.pushState({}, '', '/announcements'); window.dispatchEvent(new PopStateEvent('popstate')); }}
+                style={{ width: '100%', marginTop: '1.25rem', padding: '8px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', color: '#cbd5e1', fontSize: '0.8rem', cursor: 'pointer' }}
               >
-                Manage Announcements
+                View Bulletin Board
               </button>
             </div>
           </div>

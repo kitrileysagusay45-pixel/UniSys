@@ -22,7 +22,7 @@ export default function Subjects() {
   const { toasts, addToast, removeToast } = useToast();
 
   const [form, setForm] = useState({
-    code: "", name: "", department: "", course_id: "", faculty_id: "",
+    code: "", name: "", units: 3, section: "", department: "", course_id: "", faculty_id: "",
     room_id: "", schedule_day: "", schedule_time: "", time_start: "",
     time_end: "", semester: "", academic_year: "", status: "Active",
   });
@@ -81,7 +81,8 @@ export default function Subjects() {
     if (subject) {
       setEditingId(subject.id);
       setForm({
-        code: subject.code || "", name: subject.name || "", department: subject.department || "",
+        code: subject.code || "", name: subject.name || "", units: subject.units || 3, section: subject.section || "",
+        department: subject.department || "",
         course_id: subject.course_id || "", faculty_id: subject.faculty_id || "",
         room_id: subject.room_id || "", schedule_day: subject.schedule_day || "",
         schedule_time: subject.schedule_time || "",
@@ -91,7 +92,7 @@ export default function Subjects() {
       });
     } else {
       setEditingId(null);
-      setForm({ code: "", name: "", department: "", course_id: "", faculty_id: "", room_id: "",
+      setForm({ code: "", name: "", units: 3, section: "", department: "", course_id: "", faculty_id: "", room_id: "",
         schedule_day: "", schedule_time: "", time_start: "", time_end: "", semester: "", academic_year: "", status: "Active" });
     }
     setShowForm(true);
@@ -162,6 +163,14 @@ export default function Subjects() {
                     </div>
                   </div>
                   <div className="form-row">
+                    <div className="form-group"><label>Units</label>
+                      <input type="number" min="1" max="10" value={form.units} onChange={e => setForm({...form, units: parseInt(e.target.value) || 3})} />
+                    </div>
+                    <div className="form-group"><label>Section</label>
+                      <input type="text" placeholder="e.g. CS-1A" value={form.section} onChange={e => setForm({...form, section: e.target.value})} />
+                    </div>
+                  </div>
+                  <div className="form-row">
                     <div className="form-group"><label>Department</label>
                       <select value={form.department} onChange={e => setForm({...form, department: e.target.value})}>
                         <option value="">Select Department</option>
@@ -215,13 +224,15 @@ export default function Subjects() {
           <div className="settings-table-wrapper">
             <table className="settings-table">
               <thead><tr>
-                <th>Code</th><th>Name</th><th>Department</th><th>Faculty</th><th>Schedule</th><th>Status</th><th>Actions</th>
+                <th>Code</th><th>Name</th><th>Units</th><th>Section</th><th>Department</th><th>Faculty</th><th>Schedule</th><th>Status</th><th>Actions</th>
               </tr></thead>
               <tbody>
                 {filtered.map(s => (
                   <tr key={s.id}>
                     <td>{s.code}</td>
                     <td>{s.name}</td>
+                    <td>{s.units || 3}</td>
+                    <td>{s.section || '—'}</td>
                     <td>{s.department}</td>
                     <td>{s.faculty ? `${s.faculty.first_name} ${s.faculty.last_name}` : "—"}</td>
                     <td>{s.schedule_day ? `${s.schedule_day} ${s.time_start || ""} - ${s.time_end || ""}` : "—"}</td>

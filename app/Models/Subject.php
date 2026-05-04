@@ -12,7 +12,9 @@ class Subject extends Model
     protected $fillable = [
         'code',
         'name',
+        'units',
         'department',
+        'section',
         'course_id',
         'faculty_id',
         'room_id',
@@ -43,5 +45,37 @@ class Subject extends Model
     public function students()
     {
         return $this->belongsToMany(Student::class, 'student_subject');
+    }
+
+    public function grades()
+    {
+        return $this->hasMany(Grade::class);
+    }
+
+    /**
+     * Check for schedule conflicts with other subjects.
+     * A conflict exists when another subject uses the same room on the same day
+     * with overlapping time ranges.
+     */
+    public static function findConflicts($roomId, $scheduleDay, $timeStart, $timeEnd, $excludeId = null)
+    {
+        if (!$roomId || !$scheduleDay || !$timeStart || !$timeEnd) {
+            return collect();
+        }
+
+        $query = static::where('room_id', $roomId)
+            ->where('schedule_day', $scheduleDay)
+            ->where('status', 'Active')
+            ->where(function ($q) use ($timeStart, $timeEnd) {
+                // Overlapping: existing.start < new.end AND existing.end > new.start
+                $q->where('time_start', '<', $timeEnd)
+                  ->where('time_end', '>', $timeStart);
+            });
+
+        if ($excludeId) {
+            $query->where('id', '!=', $excludeId);
+        }
+
+        return $query->get();
     }
 }

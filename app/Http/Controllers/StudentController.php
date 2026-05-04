@@ -4,8 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Student;
 use App\Models\AccountActivityLog;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\DB;
 
 class StudentController extends Controller
 {
@@ -14,108 +17,81 @@ class StudentController extends Controller
         return response()->json(Student::all());
     }
 
-    public function bulkActivate(Request $request)
-    {
-        // Keeping for compatibility with previous implementation if needed
-        return $this->batchActivate($request);
-    }
-
-    public function batchActivate(Request $request)
-    {
-        $data = $request->validate([
-            'ids' => 'required|array',
-            'ids.*' => 'exists:students,id',
-        ]);
-
-        foreach ($data['ids'] as $id) {
-            $student = Student::find($id);
-            $student->update(['status' => 'Active']);
-            
-            AccountActivityLog::create([
-                'loggable_id' => $student->id,
-                'loggable_type' => Student::class,
-                'action' => 'Activated',
-                'performed_by' => auth()->id(),
-            ]);
-        }
-
-        return response()->json(['message' => 'Selected students activated successfully']);
-    }
-
-    public function reject(Request $request, Student $student)
-    {
-        $data = $request->validate([
-            'reason' => 'nullable|string'
-        ]);
-
-        $student->update([
-            'status' => 'Rejected',
-            'rejection_reason' => $data['reason']
-        ]);
-
-        AccountActivityLog::create([
-            'loggable_id' => $student->id,
-            'loggable_type' => Student::class,
-            'action' => 'Rejected',
-            'reason' => $data['reason'],
-            'performed_by' => auth()->id(),
-        ]);
-
-        return response()->json(['message' => 'Student rejected successfully']);
-    }
 
     public function store(Request $request)
     {
         $data = $request->validate([
-            'student_id' => 'required|string|unique:students,student_id',
             'first_name' => 'required|string|max:100',
             'middle_name' => 'nullable|string|max:100',
             'last_name' => 'required|string|max:100',
-            'email' => 'required|email|unique:students,email',
+            'email' => 'required|email|unique:students,email|unique:users,email',
             'department' => 'required|string|exists:departments,name',
             'course' => 'required|string|exists:courses,name',
             'year_level' => 'required|string|max:20',
-            'status' => 'nullable|string|max:20',
+            'section' => 'nullable|string|max:50',
         ]);
 
-        // Handle photo upload
-        if ($request->hasFile('photo')) {
-            $photo = $request->file('photo');
-            $photoName = time() . '_' . $photo->getClientOriginalName();
-            $photo->storeAs('public/student_photos', $photoName);
-            $data['photo'] = 'storage/student_photos/' . $photoName;
-        }
+        try {
+            DB::beginTransaction();
 
-        // Auto-generate Student ID
-        $year = date('Y');
-        $lastStudent = Student::whereYear('created_at', $year)
-            ->orderBy('id', 'desc')
-            ->first();
-        
-        if ($lastStudent && preg_match('/STU-' . $year . '-(\d+)/', $lastStudent->student_id, $matches)) {
-            $lastNumber = intval($matches[1]);
-            $newNumber = str_pad($lastNumber + 1, 4, '0', STR_PAD_LEFT);
-        } else {
-            $newNumber = '0001';
-        }
-        
-        $data['student_id'] = 'STU-' . $year . '-' . $newNumber;
-        
-        // Combine first, middle and last name for the name field
-        $middleName = !empty($data['middle_name']) ? ' ' . $data['middle_name'] . ' ' : ' ';
-        $data['name'] = trim($data['first_name'] . $middleName . $data['last_name']);
-        
-        // Set default status if not provided
-        if (!isset($data['status'])) {
-            $data['status'] = 'Active';
-        }
+            // 1. Auto-generate Student ID: STU-YYYY-NNNN
+            $year = date('Y');
+            $lastStudent = Student::withTrashed()->whereYear('created_at', $year)
+                ->orderBy('id', 'desc')
+                ->first();
+            
+            if ($lastStudent && preg_match('/STU-' . $year . '-(\d+)/', $lastStudent->student_id, $matches)) {
+                $lastNumber = intval($matches[1]);
+                $newNumber = str_pad($lastNumber + 1, 4, '0', STR_PAD_LEFT);
+            } else {
+                $newNumber = '0001';
+            }
+            $studentId = 'STU-' . $year . '-' . $newNumber;
 
-        $student = Student::create($data);
+            // 2. Default password: student + last 4 digits of ID
+            $defaultPassword = 'student' . $newNumber;
 
-        return response()->json([
-            'message' => '✅ Student added successfully!',
-            'student' => $student
-        ], 201);
+            // 3. Create User record
+            $user = User::create([
+                'name' => trim($data['first_name'] . ' ' . $data['last_name']),
+                'username' => $studentId,
+                'email' => $data['email'],
+                'password' => Hash::make($defaultPassword),
+                'role' => 'student',
+            ]);
+
+            // 4. Create Student profile
+            $middleName = !empty($data['middle_name']) ? ' ' . $data['middle_name'] . ' ' : ' ';
+            $studentData = array_merge($data, [
+                'user_id' => $user->id,
+                'student_id' => $studentId,
+                'name' => trim($data['first_name'] . $middleName . $data['last_name']),
+                'password' => $user->password,
+                'status' => 'Active',
+                'enrollment_status' => 'enrolled'
+            ]);
+
+            $student = Student::create($studentData);
+
+            DB::commit();
+
+            return response()->json([
+                'success' => true,
+                'message' => "✅ Student enrolled! ID: {$studentId}, Password: {$defaultPassword}",
+                'student' => $student,
+                'credentials' => [
+                    'username' => $studentId,
+                    'password' => $defaultPassword
+                ]
+            ], 201);
+
+        } catch (\Exception $e) {
+            DB::rollBack();
+            return response()->json([
+                'success' => false,
+                'message' => 'Enrollment failed: ' . $e->getMessage()
+            ], 500);
+        }
     }
 
     public function show(Student $student)
@@ -189,15 +165,6 @@ class StudentController extends Controller
         ]);
     }
 
-    public function activate(Student $student)
-    {
-        if ($student->status !== 'Pending') {
-            return response()->json(['message' => 'Only Pending students can be activated'], 422);
-        }
-
-        $student->update(['status' => 'Active']);
-        return response()->json(['message' => 'Student activated successfully', 'student' => $student]);
-    }
 
     public function archive(Student $student)
     {

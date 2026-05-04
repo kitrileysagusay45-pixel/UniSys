@@ -1,3 +1,5 @@
+@use "variables" as *;
+@use "sass:color";
 // resources/sass/admin-login.scss
 // @import 'variables' (Automatically injected by Mix);
 
@@ -260,7 +262,7 @@
                 letter-spacing: 0.5px;
 
                 &:hover {
-                  color: darken($secondary-color, 10%);
+                  color: color.adjust($secondary-color, $lightness: -10%);
                   text-decoration: underline;
                 }
               }

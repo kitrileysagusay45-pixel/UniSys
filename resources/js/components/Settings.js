@@ -117,7 +117,7 @@ export default function Settings() {
     } else {
       setEditingId(null);
       if (activeTab === 'departments') {
-        setFormData({ code: '', name: '', head: '', status: 'Active' });
+        setFormData({ code: '', name: '', dean: '', status: 'Active' });
       } else if (activeTab === 'courses') {
         setFormData({ code: '', name: '', department: '', credits: '', status: 'Active' });
       } else {
@@ -142,17 +142,17 @@ export default function Settings() {
               <tr>
                 <th>Code</th>
                 <th>Name</th>
-                <th>Head</th>
+                <th>Dean</th>
                 <th>Status</th>
                 <th>Actions</th>
               </tr>
             </thead>
             <tbody>
-              {departments.map((dept) => (
-                <tr key={dept.id} className={dept.status === 'Archived' ? 'archived-row' : ''}>
+              {departments.filter(d => d.status !== 'Archived').map((dept) => (
+                <tr key={dept.id}>
                   <td>{dept.code}</td>
                   <td>{dept.name}</td>
-                  <td>{dept.head}</td>
+                  <td>{dept.dean}</td>
                   <td>
                     <span className={`status-badge ${dept.status.toLowerCase()}`}>
                       {dept.status}
@@ -212,8 +212,8 @@ export default function Settings() {
               </tr>
             </thead>
             <tbody>
-              {courses.map((course) => (
-                <tr key={course.id} className={course.status === 'Archived' ? 'archived-row' : ''}>
+              {courses.filter(c => c.status !== 'Archived').map((course) => (
+                <tr key={course.id}>
                   <td>{course.code}</td>
                   <td>{course.name}</td>
                   <td>{course.department}</td>
@@ -276,8 +276,8 @@ export default function Settings() {
               </tr>
             </thead>
             <tbody>
-              {academicYears.map((year) => (
-                <tr key={year.id} className={year.status === 'Archived' ? 'archived-row' : ''}>
+              {academicYears.filter(y => y.status !== 'Archived').map((year) => (
+                <tr key={year.id}>
                   <td>{year.year}</td>
                   <td>{year.start_date}</td>
                   <td>{year.end_date}</td>
@@ -353,12 +353,12 @@ export default function Settings() {
             />
           </div>
           <div className="form-group">
-            <label>Head</label>
+            <label>Dean</label>
             <input
               type="text"
               placeholder="e.g., John Doe"
-              value={formData.head || ''}
-              onChange={(e) => setFormData({ ...formData, head: e.target.value })}
+              value={formData.dean || ''}
+              onChange={(e) => setFormData({ ...formData, dean: e.target.value })}
               required
             />
           </div>

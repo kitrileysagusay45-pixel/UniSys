@@ -1,49 +1,71 @@
+@use "variables" as *;
 // @import 'variables' (Automatically injected by Mix);
 
 // ── Faculty Dashboard Styles ──────────────────────────────
 .faculty-dash {
-  padding: 2rem;
-  font-family: 'Segoe UI', system-ui, sans-serif;
-  max-width: 1200px;
+  padding: $page-padding;
+  font-family: $font-family-base;
+  max-width: 1400px;
+  margin: 0 auto;
+  animation: fadeIn 0.5s ease-out;
 
   .dash-header {
-    margin-bottom: 2rem;
-    h2 { font-size: 2rem; font-weight: 800; color: $uni-navy-deep; margin: 0 0 0.25rem; }
-    .subtitle { color: $uni-sky; font-size: 1rem; margin: 0; }
+    margin-bottom: 2.5rem;
+    h2 { font-size: 2.25rem; font-weight: 800; color: #1e293b; margin: 0 0 0.5rem; letter-spacing: -0.025em; }
+    .subtitle { color: #64748b; font-size: 1.1rem; margin: 0; font-weight: 500; }
   }
 
   .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.25rem;
-    margin-bottom: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .stat-card {
-    padding: 1.5rem;
-    border-radius: 14px;
+    padding: 1.75rem;
+    border-radius: $border-radius-card;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.25rem;
     color: #fff;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: $shadow-md;
+    position: relative;
+    overflow: hidden;
 
-    &:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+    &::before {
+      content: '';
+      position: absolute;
+      top: -50%; left: -50%; width: 200%; height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
 
-    &.blue { background: linear-gradient(135deg, $uni-blue, $uni-royal); }
-    &.green { background: linear-gradient(135deg, #0d7c66, #2ec4b6); }
-    &.gold { background: linear-gradient(135deg, $uni-bright, $uni-sky); }
+    &:hover { 
+      transform: translateY(-8px); 
+      box-shadow: $shadow-xl; 
+      &::before { opacity: 1; }
+    }
+
+    &.blue { background: linear-gradient(135deg, #6366f1, #4338ca); }
+    &.green { background: linear-gradient(135deg, #10b981, #059669); }
+    &.gold { background: linear-gradient(135deg, #f59e0b, #d97706); }
+    &.purple { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
 
     .stat-icon {
-      width: 54px; height: 54px;
-      background: rgba(255,255,255,0.2);
-      border-radius: 12px;
+      width: 58px; height: 58px;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(4px);
+      border-radius: 14px;
       display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     .stat-info {
-      .stat-number { display: block; font-size: 1.75rem; font-weight: 800; }
-      .stat-label { font-size: 0.8rem; opacity: 0.9; }
+      .stat-number { display: block; font-size: 2rem; font-weight: 800; line-height: 1.1; }
+      .stat-label { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.9; }
     }
   }
 

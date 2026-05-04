@@ -3,7 +3,9 @@ import FacultyDashboard from "./FacultyDashboard";
 import FacultyStudents from "./FacultyStudents";
 import FacultySubjects from "./FacultySubjects";
 import Profile from "./Profile";
-import { GraduationCap, LayoutDashboard, Users, User, BookOpen, Circle } from "lucide-react";
+import UserSettings from "./UserSettings";
+import SecurityPrivacy from "./SecurityPrivacy";
+import { GraduationCap, LayoutDashboard, Users, User, BookOpen, Circle, Settings as SettingsIcon } from "lucide-react";
 import TopNavbar from "./TopNavbar";
 // import "../../sass/layout.scss";
 
@@ -14,7 +16,7 @@ export default function FacultyLayout({ user, onLogout }) {
   useEffect(() => {
     const updatePage = () => {
       const path = window.location.pathname.split("/").pop();
-      const valid = ["faculty-dashboard", "faculty-students", "faculty-subjects", "faculty-profile"];
+      const valid = ["faculty-dashboard", "faculty-students", "faculty-subjects", "faculty-profile", "faculty-settings", "faculty-security"];
       if (valid.includes(path)) setPage(path);
     };
     window.addEventListener("popstate", updatePage);
@@ -32,6 +34,7 @@ export default function FacultyLayout({ user, onLogout }) {
     { key: "faculty-subjects", label: "My Subjects", icon: <BookOpen size={18} /> },
     { key: "faculty-students", label: "My Students", icon: <Users size={18} /> },
     { key: "faculty-profile", label: "Profile", icon: <User size={18} /> },
+    { key: "faculty-settings", label: "Settings", icon: <SettingsIcon size={18} /> },
   ];
 
   return (
@@ -72,6 +75,8 @@ export default function FacultyLayout({ user, onLogout }) {
           {page === "faculty-subjects" && <FacultySubjects user={user} />}
           {page === "faculty-students" && <FacultyStudents user={user} />}
           {page === "faculty-profile" && <Profile user={user} onLogout={onLogout} />}
+          {page === "faculty-settings" && <UserSettings user={user} />}
+          {page === "faculty-security" && <SecurityPrivacy user={user} />}
         </div>
       </main>
     </div>

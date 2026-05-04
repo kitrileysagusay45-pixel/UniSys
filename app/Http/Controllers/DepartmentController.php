@@ -17,7 +17,7 @@ class DepartmentController extends Controller
         $validated = $request->validate([
             'code' => 'required|string|max:10',
             'name' => 'required|string|max:100',
-            'head' => 'required|string|max:100',
+            'dean' => 'required|string|max:100',
             'status' => 'string|max:20',
         ]);
 
@@ -40,7 +40,7 @@ class DepartmentController extends Controller
         $validated = $request->validate([
             'code' => 'required|string|max:10',
             'name' => 'required|string|max:100',
-            'head' => 'required|string|max:100',
+            'dean' => 'required|string|max:100',
             'status' => 'string|max:20',
         ]);
 

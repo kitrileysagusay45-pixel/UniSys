@@ -1,40 +1,40 @@
 import React, { useState, useEffect } from "react";
 import LoginPage from "./LoginPage";
-import StudentRegister from "./StudentRegister";
-import FacultyRegister from "./FacultyRegister";
 import AdminLayout from "./AdminLayout";
 import FacultyLayout from "./FacultyLayout";
 import StudentLayout from "./StudentLayout";
+import StudentRegister from "./StudentRegister";
+import FacultyRegister from "./FacultyRegister";
 import ForgotPassword from "./ForgotPassword";
 import ResetPassword from "./ResetPassword";
 import DisplayScaleControl from "./DisplayScaleControl";
 
 export default function Layout() {
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
-    const loggedIn = localStorage.getItem("isLoggedIn") === "true";
-    const savedUser = localStorage.getItem("user");
+    const loggedIn = sessionStorage.getItem("isLoggedIn") === "true";
+    const savedUser = sessionStorage.getItem("user");
     if (loggedIn && !savedUser) {
-      localStorage.removeItem("isLoggedIn");
-      localStorage.removeItem("user");
+      sessionStorage.removeItem("isLoggedIn");
+      sessionStorage.removeItem("user");
       return false;
     }
     return loggedIn;
   });
 
   const [user, setUser] = useState(() => {
-    const savedUser = localStorage.getItem("user");
+    const savedUser = sessionStorage.getItem("user");
     return savedUser ? JSON.parse(savedUser) : null;
   });
 
   const [authView, setAuthView] = useState(() => {
     if (window.location.pathname === "/reset-password") return "reset-password";
     return "login";
-  }); // login | student-register | faculty-register | forgot-password | reset-password
+  }); // login | forgot-password | reset-password
 
   // Listen for profile updates
   useEffect(() => {
     const handleProfileUpdate = () => {
-      const savedUser = localStorage.getItem("user");
+      const savedUser = sessionStorage.getItem("user");
       if (savedUser) setUser(JSON.parse(savedUser));
     };
     window.addEventListener("profileUpdated", handleProfileUpdate);
@@ -44,8 +44,8 @@ export default function Layout() {
   const handleLogin = (userData) => {
     setUser(userData);
     setIsLoggedIn(true);
-    localStorage.setItem("isLoggedIn", "true");
-    localStorage.setItem("user", JSON.stringify(userData));
+    sessionStorage.setItem("isLoggedIn", "true");
+    sessionStorage.setItem("user", JSON.stringify(userData));
 
     // Navigate based on role
     const role = userData.role || "admin";
@@ -59,32 +59,32 @@ export default function Layout() {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("isLoggedIn");
-    localStorage.removeItem("user");
+    sessionStorage.removeItem("isLoggedIn");
+    sessionStorage.removeItem("user");
     // Force a full page reload to the login page to ensure all state is cleared
     window.location.href = "/login";
   };
 
   // Not logged in — show auth views
   if (!isLoggedIn) {
-    if (authView === "student-register") {
-      return <StudentRegister onBackToLogin={() => setAuthView("login")} />;
-    }
-    if (authView === "faculty-register") {
-      return <FacultyRegister onBackToLogin={() => setAuthView("login")} />;
-    }
     if (authView === "forgot-password") {
       return <ForgotPassword onBackToLogin={() => setAuthView("login")} />;
     }
     if (authView === "reset-password") {
       return <ResetPassword />;
     }
+    if (authView === "student-register") {
+      return <StudentRegister onRegisterSuccess={handleLogin} onBackToLogin={() => setAuthView("login")} />;
+    }
+    if (authView === "faculty-register") {
+      return <FacultyRegister onRegisterSuccess={handleLogin} onBackToLogin={() => setAuthView("login")} />;
+    }
     return (
       <>
         <LoginPage
           onLogin={handleLogin}
-          onStudentRegister={() => setAuthView("login")}
-          onAdminLogin={() => setAuthView("login")}
+          onStudentRegister={() => setAuthView("student-register")}
+          onFacultyRegister={() => setAuthView("faculty-register")}
           onForgotPassword={() => setAuthView("forgot-password")}
         />
         <DisplayScaleControl />

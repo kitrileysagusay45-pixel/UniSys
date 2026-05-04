@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Plus, Search, Edit2, Trash2, BookOpen, GraduationCap, AlertCircle, CheckCircle } from "lucide-react";
+import { Plus, Search, Edit2, Trash2, BookOpen, GraduationCap, AlertCircle, CheckCircle, User } from "lucide-react";
 
 export default function Programs() {
   const [programs, setPrograms] = useState([]);

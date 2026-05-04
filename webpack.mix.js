@@ -4,7 +4,7 @@ const path = require('path');
 mix.js('resources/js/app.js', 'public/js/app.js')
     .react()
     .sass('resources/sass/app.scss', 'public/css', {
-        additionalData: `@import "resources/sass/_variables.scss";`,
+        additionalData: `@use "resources/sass/variables" as *;`,
     })
     .options({
         processCssUrls: false,
@@ -18,7 +18,7 @@ mix.js('resources/js/app.js', 'public/js/app.js')
                         {
                             loader: 'sass-loader',
                             options: {
-                                additionalData: `@import "resources/sass/_variables.scss";`,
+                                additionalData: `@use "resources/sass/variables" as *;`,
                                 sassOptions: {
                                     includePaths: [path.resolve(__dirname, 'resources/sass')],
                                 },

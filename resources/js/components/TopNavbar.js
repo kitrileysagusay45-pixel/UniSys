@@ -143,7 +143,15 @@ export default function TopNavbar({ user, onToggleSidebar, onLogout }) {
                   <User size={16} />
                   <span>Account Settings</span>
                 </button>
-                <button className="dropdown-link">
+                <button className="dropdown-link" onClick={() => {
+                  const role = user?.role || "admin";
+                  let path = "/security-settings";
+                  if (role === "faculty") path = "/faculty-security";
+                  if (role === "student") path = "/student-security";
+                  window.history.pushState({}, "", path);
+                  window.dispatchEvent(new PopStateEvent('popstate'));
+                  setShowProfileDropdown(false);
+                }}>
                   <Shield size={16} />
                   <span>Security & Privacy</span>
                 </button>

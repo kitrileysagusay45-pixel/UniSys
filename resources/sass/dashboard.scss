@@ -1,24 +1,28 @@
+@use "variables" as *;
 // @import 'variables' (Automatically injected by Mix);
 
 // ── UNISYS Admin Dashboard Styles ──────────────────────────────
 
 .dashboard-container {
-  padding: 1.5rem 2rem;
+  padding: $page-padding;
   font-family: $font-family-base;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
-  animation: fadeIn 0.4s ease-out;
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 
   .dashboard-header {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     .header-left {
       h2 {
-        font-size: 2rem;
+        font-size: 2.25rem;
         font-weight: 800;
-        color: $uni-navy-deep;
-        margin: 0 0 0.4rem;
-        letter-spacing: -0.5px;
+        color: #1e293b;
+        margin: 0 0 0.5rem;
+        letter-spacing: -0.025em;
       }
 
       .welcome-text {
@@ -26,38 +30,49 @@
         color: $color-text-secondary;
         font-weight: 500;
         margin: 0;
+        opacity: 0.8;
       }
     }
 
     .quick-actions {
+      display: flex;
+      gap: 12px;
+
+      button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 0.75rem 1.5rem;
+        border-radius: $border-radius-btn;
+        font-weight: 600;
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+      }
+
       .primary-btn {
         background: $modern-gradient;
-        box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
-        transition: all 0.3s ease;
-        padding: 0.6rem 1.25rem;
-        font-weight: 600;
-        border-radius: $border-radius-btn;
         color: white;
+        border: none;
+        box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
 
         &:hover {
           transform: translateY(-2px);
-          box-shadow: 0 6px 16px rgba(99, 102, 241, 0.35);
+          box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.4);
+          filter: brightness(1.1);
         }
+        &:active { transform: translateY(0); }
       }
 
       .secondary-btn {
-        background: $card-bg;
-        border: 1px solid $card-border-color;
-        color: $color-text-primary;
-        transition: all 0.3s ease;
-        padding: 0.6rem 1.25rem;
-        font-weight: 600;
-        border-radius: $border-radius-btn;
+        background: white;
+        border: 1px solid #e2e8f0;
+        color: #475569;
 
         &:hover {
-          border-color: $color-accent;
-          color: $color-accent;
           background: #f8fafc;
+          border-color: #cbd5e1;
+          color: #1e293b;
+          transform: translateY(-1px);
         }
       }
     }
@@ -66,135 +81,134 @@
   .dashboard-content {
     .cards-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
 
     .info-card {
       background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       border: 1px solid rgba(255, 255, 255, 0.5);
-      border-radius: 16px;
-      padding: 1.5rem;
+      border-radius: $border-radius-card;
+      padding: 1.75rem;
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      box-shadow: $shadow-md;
-      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      align-items: center;
+      box-shadow: $shadow-sm;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       position: relative;
       overflow: hidden;
 
-      &::before {
+      &::after {
         content: '';
         position: absolute;
-        top: 0; left: 0; right: 0; height: 4px;
+        bottom: 0; left: 0; right: 0; height: 3px;
         background: $modern-gradient;
-        opacity: 0;
-        transition: opacity 0.3s ease;
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
       }
 
       &:hover {
-        transform: translateY(-5px);
-        box-shadow: $shadow-xl;
-        &::before { opacity: 1; }
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: $shadow-premium;
+        background: rgba(255, 255, 255, 0.95);
+        
+        &::after { transform: scaleX(1); }
+        
+        .card-icon {
+          transform: rotate(12deg) scale(1.1);
+        }
       }
 
       .card-content {
         h3 {
-          font-size: 0.9rem;
-          color: $color-text-muted;
+          font-size: 0.85rem;
+          color: #64748b;
           text-transform: uppercase;
-          letter-spacing: 0.5px;
+          letter-spacing: 0.05em;
           margin: 0 0 0.5rem 0;
-          font-weight: 600;
+          font-weight: 700;
         }
 
         .card-value {
-          font-size: 2.2rem;
+          font-size: 2.5rem;
           font-weight: 800;
-          color: $color-text-primary;
+          color: #1e293b;
           margin: 0;
-          line-height: 1.1;
+          line-height: 1;
+        }
+
+        .trend-indicator {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          margin-top: 10px;
+          font-size: 0.8rem;
+          font-weight: 600;
+          
+          &.up { color: #10b981; }
+          &.down { color: #ef4444; }
         }
       }
 
       .card-icon {
-        width: 52px;
-        height: 52px;
-        border-radius: 12px;
-        background: $info-light;
-        color: $color-accent;
+        width: 60px;
+        height: 60px;
+        border-radius: 14px;
+        background: #f1f5f9;
+        color: #6366f1;
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all 0.4s ease;
+        box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
       }
     }
 
-    .chart-section {
+    .main-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 2fr 1fr;
       gap: 1.5rem;
       margin-bottom: 2rem;
 
-      @media (max-width: 1024px) {
-        grid-template-columns: 1fr;
-      }
+      @media (max-width: 1200px) { grid-template-columns: 1fr; }
     }
 
-    .chart-box {
-      background: $card-bg;
-      border-radius: 16px;
-      padding: 1.5rem;
-      border: 1px solid $card-border-color;
-      box-shadow: $shadow-md;
+    .chart-box, .activity-section {
+      background: white;
+      border-radius: $border-radius-card;
+      padding: 1.75rem;
+      border: 1px solid #e2e8f0;
+      box-shadow: $shadow-sm;
+      transition: box-shadow 0.3s ease;
 
-      .chart-header {
-        margin-bottom: 1.25rem;
+      &:hover { box-shadow: $shadow-md; }
+
+      .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
 
         h3 {
-          font-size: 1.1rem;
+          font-size: 1.15rem;
           font-weight: 700;
-          color: $color-text-primary;
+          color: #1e293b;
           margin: 0;
           display: flex;
           align-items: center;
+          gap: 10px;
 
           &::before {
             content: '';
-            display: inline-block;
-            width: 8px;
-            height: 16px;
-            background: $color-accent;
+            width: 4px;
+            height: 18px;
+            background: #6366f1;
             border-radius: 4px;
-            margin-right: 10px;
           }
         }
-      }
-
-      .chart-canvas {
-        height: 300px;
-        width: 100%;
-        position: relative;
-      }
-    }
-
-    .activity-section {
-      background: $card-bg;
-      border-radius: 16px;
-      padding: 1.5rem;
-      border: 1px solid $card-border-color;
-      box-shadow: $shadow-md;
-
-      h3 {
-        font-size: 1.1rem;
-        font-weight: 700;
-        color: $color-text-primary;
-        margin-top: 0;
-        margin-bottom: 1.25rem;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
       }
     }
   }

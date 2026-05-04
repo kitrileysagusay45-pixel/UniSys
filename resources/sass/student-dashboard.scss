@@ -1,15 +1,18 @@
+@use "variables" as *;
 // @import 'variables' (Automatically injected by Mix);
 
 // ── Student Dashboard Styles ──────────────────────────────
 .student-dash {
-  padding: 2rem;
-  font-family: 'Segoe UI', system-ui, sans-serif;
-  max-width: 1200px;
+  padding: $page-padding;
+  font-family: $font-family-base;
+  max-width: 1400px;
+  margin: 0 auto;
+  animation: fadeIn 0.5s ease-out;
 
   .dash-header {
-    margin-bottom: 2rem;
-    h2 { font-size: 2rem; font-weight: 800; color: $uni-navy-deep; margin: 0 0 0.25rem; }
-    .subtitle { color: $uni-sky; font-size: 1rem; margin: 0; }
+    margin-bottom: 2.5rem;
+    h2 { font-size: 2.25rem; font-weight: 800; color: #1e293b; margin: 0 0 0.5rem; letter-spacing: -0.025em; }
+    .subtitle { color: #64748b; font-size: 1.1rem; margin: 0; font-weight: 500; }
   }
 
   .enrolled-section {

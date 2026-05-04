@@ -14,13 +14,24 @@ class Course extends Model
     protected $fillable = [
         'code',
         'name',
+        'type',
         'department',
         'credits',
         'status',
     ];
 
+    /**
+     * Valid course types.
+     */
+    public const TYPES = ['lecture', 'laboratory', 'clinical', 'capstone'];
+
     public function grades()
     {
         return $this->hasMany(Grade::class);
+    }
+
+    public function subjects()
+    {
+        return $this->hasMany(Subject::class);
     }
 }

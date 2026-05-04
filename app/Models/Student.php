@@ -35,6 +35,7 @@ class Student extends Model
         'section',
         'photo',
         'status',
+        'enrollment_status',
         'rejection_reason',
     ];
 
@@ -70,5 +71,44 @@ class Student extends Model
     public function activityLogs()
     {
         return $this->morphMany(AccountActivityLog::class, 'loggable');
+    }
+
+    /**
+     * Compute the General Weighted Average (GWA) using credit-weighted computation.
+     * Formula: Σ(units × final_grade) / Σ(units)
+     *
+     * Only considers grades that have a computed final_grade.
+     *
+     * @param string|null $semester Filter by semester
+     * @param string|null $academicYear Filter by academic year
+     * @return float|null
+     */
+    public function getGWA($semester = null, $academicYear = null)
+    {
+        $query = $this->grades()->whereNotNull('final_grade');
+
+        if ($semester) {
+            $query->where('semester', $semester);
+        }
+        if ($academicYear) {
+            $query->where('academic_year', $academicYear);
+        }
+
+        $grades = $query->with('subject')->get();
+
+        $totalWeightedGrade = 0;
+        $totalUnits = 0;
+
+        foreach ($grades as $grade) {
+            $units = $grade->subject ? $grade->subject->units : 3; // Default to 3 units
+            $totalWeightedGrade += $units * $grade->final_grade;
+            $totalUnits += $units;
+        }
+
+        if ($totalUnits === 0) {
+            return null;
+        }
+
+        return round($totalWeightedGrade / $totalUnits, 4);
     }
 }

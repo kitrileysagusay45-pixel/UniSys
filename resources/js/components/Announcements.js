@@ -15,15 +15,15 @@ export default function Announcements() {
     fetchItems();
   }, [activeTab]);
 
-  const fetchItems = async () => {
-    setLoading(true);
+  const fetchItems = async (skipLoading = false) => {
+    if (!skipLoading) setLoading(true);
     try {
       const res = await axios.get(`/api/${activeTab}`);
       setItems(res.data);
     } catch (err) {
       console.error(err);
     } finally {
-      setLoading(false);
+      if (!skipLoading) setLoading(false);
     }
   };
 
@@ -52,7 +52,7 @@ export default function Announcements() {
       } else {
         await axios.post(`/api/${activeTab}`, form);
       }
-      fetchItems();
+      await fetchItems(true);
       setShowModal(false);
     } catch (err) {
       setError(err.response?.data?.message || "Failed to save item");
@@ -165,7 +165,9 @@ export default function Announcements() {
                       <select value={form.type} onChange={e => setForm({...form, type: e.target.value})} style={{ width: '100%', padding: '10px', borderRadius: '8px', border: '1px solid #cbd5e1' }}>
                         <option value="info">Information</option>
                         <option value="urgent">Urgent</option>
+                        <option value="success">Success</option>
                         <option value="holiday">Holiday</option>
+                        <option value="warning">Warning</option>
                       </select>
                     </div>
                     <div className="form-group">

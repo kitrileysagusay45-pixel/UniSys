@@ -19,7 +19,9 @@ class SubjectController extends Controller
         $validated = $request->validate([
             'code'          => 'required|string|max:20|unique:subjects,code',
             'name'          => 'required|string|max:150',
+            'units'         => 'nullable|integer|min:1|max:10',
             'department'    => 'nullable|string|max:100',
+            'section'       => 'nullable|string|max:20',
             'course_id'     => 'nullable|exists:courses,id',
             'faculty_id'    => 'nullable|exists:faculties,id',
             'room_id'       => 'nullable|exists:rooms,id',
@@ -34,6 +36,25 @@ class SubjectController extends Controller
 
         if (!isset($validated['status'])) {
             $validated['status'] = 'Active';
+        }
+        if (!isset($validated['units'])) {
+            $validated['units'] = 3;
+        }
+
+        // Check for schedule conflicts
+        if (!empty($validated['room_id']) && !empty($validated['schedule_day']) && !empty($validated['time_start']) && !empty($validated['time_end'])) {
+            $conflicts = Subject::findConflicts(
+                $validated['room_id'],
+                $validated['schedule_day'],
+                $validated['time_start'],
+                $validated['time_end']
+            );
+            if ($conflicts->isNotEmpty()) {
+                return response()->json([
+                    'message'   => 'Schedule conflict detected! Another subject is using this room at the same time.',
+                    'conflicts' => $conflicts->load(['faculty', 'room']),
+                ], 422);
+            }
         }
 
         $subject = Subject::create($validated);
@@ -54,7 +75,9 @@ class SubjectController extends Controller
         $validated = $request->validate([
             'code'          => 'required|string|max:20|unique:subjects,code,' . $subject->id,
             'name'          => 'required|string|max:150',
+            'units'         => 'nullable|integer|min:1|max:10',
             'department'    => 'nullable|string|max:100',
+            'section'       => 'nullable|string|max:20',
             'course_id'     => 'nullable|exists:courses,id',
             'faculty_id'    => 'nullable|exists:faculties,id',
             'room_id'       => 'nullable|exists:rooms,id',
@@ -66,6 +89,23 @@ class SubjectController extends Controller
             'academic_year' => 'nullable|string|max:20',
             'status'        => 'nullable|string|max:20',
         ]);
+
+        // Check for schedule conflicts (excluding self)
+        if (!empty($validated['room_id']) && !empty($validated['schedule_day']) && !empty($validated['time_start']) && !empty($validated['time_end'])) {
+            $conflicts = Subject::findConflicts(
+                $validated['room_id'],
+                $validated['schedule_day'],
+                $validated['time_start'],
+                $validated['time_end'],
+                $subject->id
+            );
+            if ($conflicts->isNotEmpty()) {
+                return response()->json([
+                    'message'   => 'Schedule conflict detected! Another subject is using this room at the same time.',
+                    'conflicts' => $conflicts->load(['faculty', 'room']),
+                ], 422);
+            }
+        }
 
         $subject->update($validated);
 

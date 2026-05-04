@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useCounts } from "../Context/CountContext";
-import { Search, Edit2, Archive, CheckCircle } from "lucide-react";
+import { Search, Edit2, Archive, CheckCircle, Plus } from "lucide-react";
 import ConfirmModal from "./ConfirmModal";
 import Toast from "./Toast";
 import { useToast } from "./useToast";
@@ -13,21 +13,20 @@ export default function Faculty() {
   const [editingId, setEditingId] = useState(null);
   const [showForm, setShowForm] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const [statusFilter, setStatusFilter] = useState("Pending"); // Default to Pending
+  const [statusFilter, setStatusFilter] = useState("Active"); // Default to Active
   const [departmentsList, setDepartmentsList] = useState([]);
   const [confirmModal, setConfirmModal] = useState({ isOpen: false, type: "", id: null, title: "", message: "" });
   const [selectedIds, setSelectedIds] = useState([]);
   const [viewMode, setViewMode] = useState(null);
   const [activityLogs, setActivityLogs] = useState([]);
-  const [showRejectInput, setShowRejectInput] = useState(false);
-  const [rejectionReason, setRejectionReason] = useState("");
+  const [showCredentials, setShowCredentials] = useState(null);
   const { toasts, addToast, removeToast } = useToast();
 
   const [form, setForm] = useState({
-    faculty_id: "", employee_id: "", first_name: "", middle_name: "", last_name: "",
-    date_of_birth: "", age: "", sex: "", email: "", phone: "", address: "", tin_number: "",
-    department: "", position: "", employment_type: "Full-Time", date_hired: "", office_phone: "", status: "Pending",
-    specialization: "", subject_assignment: "",
+    first_name: "", middle_name: "", last_name: "",
+    date_of_birth: "", sex: "", email: "", phone: "", address: "",
+    department: "", position: "", employment_type: "Full-Time", date_hired: "", office_phone: "",
+    specialization: "",
   });
 
   const fetchFaculties = async () => {
@@ -45,104 +44,79 @@ export default function Faculty() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const payload = { ...form, age: form.age ? parseInt(form.age) : null, date_of_birth: form.date_of_birth || null, date_hired: form.date_hired || null };
+      const payload = { ...form };
       if (editingId) {
         await axios.put(`/api/faculties/${editingId}`, payload);
         addToast('Faculty updated successfully!', 'success');
+      } else {
+        const res = await axios.post('/api/faculties', payload);
+        addToast('Faculty member added successfully!', 'success');
+        if (res.data.credentials) {
+          setShowCredentials(res.data.credentials);
+        }
       }
       await fetchFaculties();
       await refreshCounts();
       window.dispatchEvent(new CustomEvent("dataUpdated", { detail: { type: "faculties" } }));
-      closeForm();
+      if (!editingId) {
+          // Keep form open if showing credentials
+      } else {
+          closeForm();
+      }
     } catch (err) {
       const errs = err.response?.data?.errors ? Object.values(err.response.data.errors).flat().join(' ') : '';
       addToast('Failed to save. ' + errs, 'error');
     }
   };
 
-  const openForm = async (faculty, mode = "edit") => {
-    setEditingId(faculty.id);
-    setViewMode(mode);
-    setForm({
-      faculty_id: faculty.faculty_id || "", employee_id: faculty.employee_id || "",
-      first_name: faculty.first_name || "", middle_name: faculty.middle_name || "",
-      last_name: faculty.last_name || "", date_of_birth: faculty.date_of_birth || "",
-      age: faculty.age != null ? String(faculty.age) : "", sex: faculty.sex || "",
-      email: faculty.email || "", phone: faculty.phone || "", address: faculty.address || "",
-      tin_number: faculty.tin_number || "",
-      department: faculty.department || "", position: faculty.position || "",
-      employment_type: faculty.employment_type || "Full-Time",
-      date_hired: faculty.date_hired || "", office_phone: faculty.office_phone || "",
-      status: faculty.status || "Pending",
-      specialization: faculty.specialization || "",
-      subject_assignment: faculty.subject_assignment || "",
-    });
+  const openForm = (faculty = null) => {
+    if (faculty) {
+      setEditingId(faculty.id);
+      setForm({
+        first_name: faculty.first_name || "", middle_name: faculty.middle_name || "",
+        last_name: faculty.last_name || "", date_of_birth: faculty.date_of_birth || "",
+        sex: faculty.sex || "",
+        email: faculty.email || "", phone: faculty.phone || "", address: faculty.address || "",
+        department: faculty.department || "", position: faculty.position || "",
+        employment_type: faculty.employment_type || "Full-Time",
+        date_hired: faculty.date_hired || "", office_phone: faculty.office_phone || "",
+        specialization: faculty.specialization || "",
+      });
+    } else {
+      setEditingId(null);
+      setForm({
+        first_name: "", middle_name: "", last_name: "",
+        date_of_birth: "", sex: "", email: "", phone: "", address: "",
+        department: "", position: "", employment_type: "Full-Time", date_hired: "", office_phone: "",
+        specialization: "",
+      });
+    }
     setActivityLogs([]);
-    setShowRejectInput(false);
-    setRejectionReason("");
+    setShowCredentials(null);
     fetchDepartments();
     setShowForm(true);
-
-    try {
-      const res = await axios.get(`/api/faculties/${faculty.id}`);
-      if (res.data.activity_logs) {
-        setActivityLogs(res.data.activity_logs);
-      }
-    } catch (err) { console.error("Failed to fetch logs", err); }
   };
 
-  const closeForm = () => { setShowForm(false); setEditingId(null); setViewMode(null); };
-
-  const handleActivate = (faculty) => {
-    setConfirmModal({
-      isOpen: true, type: "success", id: faculty.id,
-      title: "Activate Faculty",
-      message: `Are you sure you want to activate ${faculty.first_name} ${faculty.last_name}? They will be able to login to the system.`,
+  const closeForm = () => { 
+    setShowForm(false); 
+    setEditingId(null); 
+    setViewMode(null); 
+    setForm({
+      first_name: "", middle_name: "", last_name: "",
+      date_of_birth: "", sex: "", email: "", phone: "", address: "",
+      department: "", position: "", employment_type: "Full-Time", date_hired: "", office_phone: "",
+      specialization: "",
     });
   };
 
   const handleArchive = (faculty) => {
     setConfirmModal({
-      isOpen: true, type: "warning", id: faculty.id,
+      isOpen: true,
+      type: "archive",
+      id: faculty.id,
       title: "Archive Faculty",
-      message: `Are you sure you want to archive ${faculty.first_name} ${faculty.last_name}? They will be removed from the active list.`,
+      message: `Are you sure you want to archive ${faculty.first_name} ${faculty.last_name}?`
     });
-  };
-
-  const confirmAction = async () => {
-    const { type, id } = confirmModal;
-    try {
-      if (type === "success") {
-        await axios.patch(`/api/faculties/${id}/activate`);
-        addToast('Faculty activated!', 'success');
-      } else if (type === "reject") {
-        await axios.patch(`/api/faculties/${id}/reject`, { reason: rejectionReason });
-        addToast('Faculty rejected.', 'info');
-      } else {
-        await axios.patch(`/api/faculties/${id}/archive`);
-        addToast('Faculty archived.', 'info');
-      }
-      await fetchFaculties();
-      await refreshCounts();
-      window.dispatchEvent(new CustomEvent("dataUpdated", { detail: { type: "faculties" } }));
-    } catch (err) { addToast('Action failed.', 'error'); }
-    setConfirmModal({ isOpen: false, type: "", id: null, title: "", message: "" });
-    setShowRejectInput(false);
-    closeForm();
-  };
-
-  const handleBulkActivate = async () => {
-    if (selectedIds.length === 0) return;
-    try {
-      await axios.patch("/api/faculties/bulk-activate", { ids: selectedIds });
-      addToast(`${selectedIds.length} faculty members activated!`, 'success');
-      setSelectedIds([]);
-      await fetchFaculties();
-      await refreshCounts();
-      window.dispatchEvent(new CustomEvent("dataUpdated", { detail: { type: "faculties" } }));
-    } catch (err) {
-      addToast('Bulk activation failed.', 'error');
-    }
   };
 
   const toggleSelect = (id) => {
@@ -170,9 +144,7 @@ export default function Faculty() {
   });
 
   const counts = {
-    pending: filteredBySearch.filter(f => f.status === "Pending").length,
     active: filteredBySearch.filter(f => f.status === "Active").length,
-    rejected: filteredBySearch.filter(f => f.status === "Rejected").length,
     all: filteredBySearch.filter(f => f.status !== "Archived").length
   };
 
@@ -181,9 +153,7 @@ export default function Faculty() {
 
   // ── Tab Configuration ──────────────────────────────────────────────────────
   const STATUS_TABS_CONFIG = [
-    { id: "Pending",  label: "Pending",  color: "#E9A800", count: counts.pending },
     { id: "Active",   label: "Active",   color: "#0F6E56", count: counts.active },
-    { id: "Rejected", label: "Rejected", color: "#993C1D", count: counts.rejected },
     { id: "All",      label: "All",      color: "#3C3489", count: counts.all },
   ];
 
@@ -238,28 +208,27 @@ export default function Faculty() {
       <div className="settings-content">
         <div className="settings-body">
           <div className="table-header">
-            <div style={{ display: "flex", gap: "1rem", alignItems: "center", flex: 1 }}>
-              <h3>Faculty Members</h3>
-              <div className="search-box" style={{ maxWidth: "250px" }}>
-                <Search size={18} className="search-icon" />
-                <input type="text" placeholder="Search Faculty" value={searchQuery} onChange={e => setSearchQuery(e.target.value)} />
+            <div style={{ display: "flex", gap: "1rem", alignItems: "center", flex: 1, justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+                <h3>Faculty Members</h3>
+                <div className="search-box" style={{ maxWidth: "250px" }}>
+                  <Search size={18} className="search-icon" />
+                  <input type="text" placeholder="Search Faculty" value={searchQuery} onChange={e => setSearchQuery(e.target.value)} />
+                </div>
+                <div className="status-tabs-container" style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
+                  {STATUS_TABS_CONFIG.map(tab => (
+                    <StatusTab
+                      key={tab.id}
+                      {...tab}
+                      isActive={statusFilter === tab.id}
+                      onClick={setStatusFilter}
+                    />
+                  ))}
+                </div>
               </div>
-              <div className="status-tabs-container" style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
-                {STATUS_TABS_CONFIG.map(tab => (
-                  <StatusTab
-                    key={tab.id}
-                    {...tab}
-                    isActive={statusFilter === tab.id}
-                    onClick={setStatusFilter}
-                  />
-                ))}
-              </div>
-              
-              {selectedIds.length > 0 && (
-                <button className="btn-activate" onClick={handleBulkActivate} style={{ marginLeft: '1rem' }}>
-                   <CheckCircle size={16} /> Approve {selectedIds.length} Selected
-                </button>
-              )}
+              <button className="primary-btn" onClick={() => openForm()} style={{ display: 'flex', alignItems: 'center', gap: '5px', padding: '8px 16px', background: '#3b82f6', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: '600' }}>
+                <Plus size={16} /> New Faculty
+              </button>
             </div>
           </div>
 
@@ -268,191 +237,118 @@ export default function Faculty() {
             <div className="modal-overlay" onClick={closeForm}>
               <div className="modal-content" onClick={e => e.stopPropagation()}>
                 <h3 className="modal-title">
-                  {isPending ? "Review & Activate Faculty" : "Edit Faculty"}
-                  <span className="modal-header-id"> | {form.employee_id || form.faculty_id}</span>
+                  {editingId ? "Edit Faculty" : "New Faculty Member"}
+                  {editingId && <span className="modal-header-id"> | {form.employee_id || form.faculty_id}</span>}
                 </h3>
-                <form onSubmit={handleSubmit} className="modal-form">
-                  {/* Personal Info - READ ONLY for pending */}
-                  <h4 className="section-heading">📋 Personal Information {isPending && <span className="readonly-tag">Read-Only (from registration)</span>}</h4>
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label>Faculty ID</label>
-                      <input type="text" value={form.faculty_id} readOnly className="readonly" />
-                    </div>
-                    <div className="form-group">
-                      <label>First Name</label>
-                      <input type="text" value={form.first_name} readOnly={isPending} className={isPending ? "readonly" : ""}
-                        onChange={e => !isPending && setForm({ ...form, first_name: e.target.value })} />
-                    </div>
-                    <div className="form-group">
-                      <label>Last Name</label>
-                      <input type="text" value={form.last_name} readOnly={isPending} className={isPending ? "readonly" : ""}
-                        onChange={e => !isPending && setForm({ ...form, last_name: e.target.value })} />
-                    </div>
-                  </div>
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label>Date of Birth</label>
-                      <input type="date" value={form.date_of_birth} readOnly={isPending} className={isPending ? "readonly" : ""}
-                        onChange={e => !isPending && setForm({ ...form, date_of_birth: e.target.value })} />
-                    </div>
-                    <div className="form-group">
-                      <label>Age</label>
-                      <input type="number" value={form.age} readOnly className="readonly" />
-                    </div>
-                    <div className="form-group">
-                      <label>Sex</label>
-                      <input type="text" value={form.sex} readOnly={isPending} className={isPending ? "readonly" : ""}
-                        onChange={e => !isPending && setForm({ ...form, sex: e.target.value })} />
-                    </div>
-                  </div>
 
-                  {/* Contact Info - READ ONLY for pending */}
-                  <h4 className="section-heading">📞 Contact Information {isPending && <span className="readonly-tag">Read-Only</span>}</h4>
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label>Email</label>
-                      <input type="email" value={form.email} readOnly={isPending} className={isPending ? "readonly" : ""}
-                        onChange={e => !isPending && setForm({ ...form, email: e.target.value })} />
-                    </div>
-                    <div className="form-group">
-                      <label>Phone</label>
-                      <input type="tel" value={form.phone} readOnly={isPending} className={isPending ? "readonly" : ""}
-                        onChange={e => !isPending && setForm({ ...form, phone: e.target.value })} />
-                    </div>
-                  </div>
-                  <div className="form-group">
-                    <label>Address</label>
-                    <input type="text" value={form.address} readOnly={isPending} className={isPending ? "readonly" : ""}
-                      onChange={e => !isPending && setForm({ ...form, address: e.target.value })} />
-                  </div>
-                  {form.tin_number && (
-                    <div className="form-group">
-                      <label>TIN Number</label>
-                      <input type="text" value={form.tin_number} readOnly className="readonly" />
-                    </div>
-                  )}
-
-                   {/* Professional Info - Admin fills this */}
-                  <h4 className="section-heading">🏢 Professional Information {isPending && <span className="editable-tag">Admin fills this</span>}</h4>
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label>Department *</label>
-                      <select value={form.department} onChange={e => setForm({ ...form, department: e.target.value })} required>
-                        <option value="">Select Department</option>
-                        {departmentsList.map(d => <option key={d.id} value={d.name}>{d.name}</option>)}
-                      </select>
-                    </div>
-                    <div className="form-group">
-                      <label>Specialization *</label>
-                      <input type="text" placeholder="e.g. Web Development" value={form.specialization}
-                        onChange={e => setForm({ ...form, specialization: e.target.value })} required />
-                    </div>
-                  </div>
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label>Employment Type *</label>
-                      <select value={form.employment_type} onChange={e => setForm({ ...form, employment_type: e.target.value })} required>
-                        <option value="">Select Type</option>
-                        {employmentTypes.map(t => <option key={t} value={t}>{t}</option>)}
-                      </select>
-                    </div>
-                    <div className="form-group">
-                      <label>Subject Assignment</label>
-                      <input type="text" placeholder="e.g. CS101, CS202" value={form.subject_assignment}
-                        onChange={e => setForm({ ...form, subject_assignment: e.target.value })} />
-                    </div>
-                  </div>
-                  <div className="form-group">
-                    <label>Position</label>
-                    <select value={form.position} onChange={e => setForm({ ...form, position: e.target.value })}>
-                      <option value="">Select Position</option>
-                      {positions.map(p => <option key={p} value={p}>{p}</option>)}
-                    </select>
-                  </div>
-                  <div className="form-group">
-                    <label>Date Hired</label>
-                    <input type="date" value={form.date_hired}
-                      onChange={e => setForm({ ...form, date_hired: e.target.value })} />
-                  </div>
-
-                  <div className="modal-actions" style={{ marginTop: "1.5rem", paddingTop: "1rem", borderTop: "1px solid #ddd" }}>
-                    {showRejectInput && isPending && (
-                      <div className="rejection-input-area" style={{ marginBottom: "1rem", width: "100%", padding: '1rem', background: '#fff1f2', borderRadius: '8px' }}>
-                        <label style={{ color: '#991b1b', fontWeight: 'bold' }}>Reason for rejection (optional)</label>
-                        <textarea 
-                          placeholder="Provide a reason for rejection..." 
-                          value={rejectionReason} 
-                          onChange={e => setRejectionReason(e.target.value)}
-                          className="rejection-textarea"
-                          style={{ width: '100%', marginTop: '0.5rem', borderRadius: '4px', border: '1px solid #fca5a5', padding: '0.5rem' }}
-                        />
-                        <div style={{ display: "flex", gap: "0.5rem", marginTop: "0.5rem" }}>
-                          <button type="button" className="btn-archive-action" style={{ background: '#ef4444' }} onClick={() => {
-                            setConfirmModal({
-                              isOpen: true, type: "reject", id: editingId,
-                              title: "Confirm Rejection",
-                              message: `Are you sure you want to reject ${form.first_name}'s registration?`
-                            });
-                          }}>Confirm Reject</button>
-                          <button type="button" className="btn-cancel" onClick={() => setShowRejectInput(false)}>Cancel</button>
-                        </div>
+                {showCredentials ? (
+                  <div className="credentials-box" style={{ background: '#f0fdf4', border: '1px solid #bbf7d0', padding: '1.5rem', borderRadius: '12px', marginBottom: '1.5rem', textAlign: 'center' }}>
+                    <h4 style={{ color: '#166534', marginTop: 0 }}>✅ Faculty Account Created!</h4>
+                    <p style={{ color: '#15803d', marginBottom: '1rem' }}>Issue these credentials to the faculty member.</p>
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', background: '#fff', padding: '1rem', borderRadius: '8px', border: '1px dashed #22c55e' }}>
+                      <div>
+                        <small style={{ color: '#64748b', display: 'block', textTransform: 'uppercase', fontSize: '10px', fontWeight: 700 }}>Faculty ID (Username)</small>
+                        <strong style={{ fontSize: '1.2rem', color: '#1e293b' }}>{showCredentials.username}</strong>
                       </div>
-                    )}
+                      <div>
+                        <small style={{ color: '#64748b', display: 'block', textTransform: 'uppercase', fontSize: '10px', fontWeight: 700 }}>Default Password</small>
+                        <strong style={{ fontSize: '1.2rem', color: '#1e293b' }}>{showCredentials.password}</strong>
+                      </div>
+                    </div>
+                    <button type="button" onClick={closeForm} style={{ marginTop: '1.5rem', padding: '8px 24px', background: '#166534', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>Done</button>
+                  </div>
+                ) : (
+                  <form onSubmit={handleSubmit} className="modal-form">
+                    <h4 className="section-heading">📋 Personal Information</h4>
+                    <div className="form-row">
+                      <div className="form-group">
+                        <label>First Name *</label>
+                        <input type="text" value={form.first_name} onChange={e => setForm({ ...form, first_name: e.target.value })} required />
+                      </div>
+                      <div className="form-group">
+                        <label>Middle Name</label>
+                        <input type="text" value={form.middle_name} onChange={e => setForm({ ...form, middle_name: e.target.value })} />
+                      </div>
+                      <div className="form-group">
+                        <label>Last Name *</label>
+                        <input type="text" value={form.last_name} onChange={e => setForm({ ...form, last_name: e.target.value })} required />
+                      </div>
+                    </div>
+                    <div className="form-row">
+                      <div className="form-group">
+                        <label>Date of Birth</label>
+                        <input type="date" value={form.date_of_birth} onChange={e => setForm({ ...form, date_of_birth: e.target.value })} />
+                      </div>
+                      <div className="form-group">
+                        <label>Sex</label>
+                        <select value={form.sex} onChange={e => setForm({ ...form, sex: e.target.value })}>
+                          <option value="">Select Sex</option>
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                        </select>
+                      </div>
+                    </div>
 
-                    <div style={{ display: "flex", justifyContent: "space-between", width: "100%", alignItems: "center" }}>
-                      <div style={{ display: "flex", gap: "0.5rem" }}>
-                        {isPending && !showRejectInput && (
-                          <button type="button" className="btn-archive-action" onClick={() => setShowRejectInput(true)} style={{ backgroundColor: '#ef4444', color: 'white' }}>
-                            Reject Registration
-                          </button>
-                        )}
-                        {!isPending && (
-                           <button type="button" className="btn-archive-action" onClick={() => handleArchive({ id: editingId, first_name: form.first_name, last_name: form.last_name })}>
-                             📦 Archive Faculty
-                           </button>
-                        )}
+                    <h4 className="section-heading">📞 Contact Information</h4>
+                    <div className="form-row">
+                      <div className="form-group">
+                        <label>Email *</label>
+                        <input type="email" value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} required />
+                      </div>
+                      <div className="form-group">
+                        <label>Phone</label>
+                        <input type="tel" value={form.phone} onChange={e => setForm({ ...form, phone: e.target.value })} />
+                      </div>
+                    </div>
+                    <div className="form-group">
+                      <label>Address</label>
+                      <input type="text" value={form.address} onChange={e => setForm({ ...form, address: e.target.value })} />
+                    </div>
+
+                    <h4 className="section-heading">🏢 Professional Information</h4>
+                    <div className="form-row">
+                      <div className="form-group">
+                        <label>Department *</label>
+                        <select value={form.department} onChange={e => setForm({ ...form, department: e.target.value })} required>
+                          <option value="">Select Department</option>
+                          {departmentsList.map(d => <option key={d.id} value={d.name}>{d.name}</option>)}
+                        </select>
+                      </div>
+                      <div className="form-group">
+                        <label>Specialization *</label>
+                        <input type="text" placeholder="e.g. Web Development" value={form.specialization}
+                          onChange={e => setForm({ ...form, specialization: e.target.value })} required />
+                      </div>
+                    </div>
+                    <div className="form-row">
+                      <div className="form-group">
+                        <label>Employment Type *</label>
+                        <select value={form.employment_type} onChange={e => setForm({ ...form, employment_type: e.target.value })} required>
+                          <option value="">Select Type</option>
+                          {employmentTypes.map(t => <option key={t} value={t}>{t}</option>)}
+                        </select>
+                      </div>
+                      <div className="form-group">
+                        <label>Position</label>
+                        <select value={form.position} onChange={e => setForm({ ...form, position: e.target.value })}>
+                          <option value="">Select Position</option>
+                          {positions.map(p => <option key={p} value={p}>{p}</option>)}
+                        </select>
+                      </div>
+                    </div>
+                    <div className="form-group">
+                      <label>Date Hired</label>
+                      <input type="date" value={form.date_hired} onChange={e => setForm({ ...form, date_hired: e.target.value })} />
+                    </div>
+
+                    <div className="modal-actions" style={{ marginTop: "1.5rem", paddingTop: "1rem", borderTop: "1px solid #ddd" }}>
+                      <div style={{ display: "flex", justifyContent: "flex-end", width: "100%", gap: "1rem" }}>
                         <button type="button" className="btn-cancel" onClick={closeForm}>Cancel</button>
-                      </div>
-
-                      {isPending ? (
-                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}>
-                          <button type="button" className="btn-activate" 
-                            disabled={!form.department || !form.specialization || !form.employment_type}
-                            onClick={() => {
-                              const payload = { ...form, age: form.age ? parseInt(form.age) : null, date_of_birth: form.date_of_birth || null, date_hired: form.date_hired || null };
-                              axios.put(`/api/faculties/${editingId}`, payload).then(() => {
-                                handleActivate({ id: editingId, first_name: form.first_name, last_name: form.last_name });
-                              }).catch(err => {
-                                addToast('Failed to prepare for activation.', 'error');
-                              });
-                            }}>
-                            <CheckCircle size={16} /> Activate Faculty
-                          </button>
-                          {(!form.department || !form.specialization || !form.employment_type) && (
-                            <span style={{ fontSize: '11px', color: '#ef4444', marginTop: '4px' }}>Fill in all required fields to activate</span>
-                          )}
-                        </div>
-                      ) : (
-                        <button type="submit" className="btn-submit">Update Faculty</button>
-                      )}
-                    </div>
-                  </div>
-
-                  {activityLogs.length > 0 && (
-                    <div className="activity-logs-section" style={{ marginTop: '2rem', paddingTop: '1rem', borderTop: '2px dashed #eee' }}>
-                      <h4 className="section-heading">📜 Activity Log</h4>
-                      <div className="logs-list" style={{ maxHeight: '150px', overflowY: 'auto' }}>
-                        {activityLogs.map(log => (
-                          <div key={log.id} className="log-item" style={{ fontSize: '13px', padding: '8px 0', borderBottom: '1px solid #fafafa' }}>
-                            <span style={{ fontWeight: 'bold', color: '#4f46e5' }}>{log.action}</span> by Admin on {new Date(log.created_at).toLocaleString()}
-                            {log.reason && <p style={{ margin: '4px 0 0 0', color: '#666', fontStyle: 'italic' }}>— Reason: {log.reason}</p>}
-                          </div>
-                        ))}
+                        <button type="submit" className="btn-submit">{editingId ? "Update Faculty" : "Create Account"}</button>
                       </div>
                     </div>
-                  )}
-                </form>
+                  </form>
+                )}
               </div>
             </div>
           )}
@@ -461,30 +357,16 @@ export default function Faculty() {
           <div className="settings-table-wrapper">
             <table className="settings-table">
               <thead><tr>
-                <th style={{ width: '40px' }}>
-                  <input 
-                    type="checkbox" 
-                    onChange={toggleSelectAll} 
-                    checked={selectedIds.length > 0 && selectedIds.length === filtered.filter(f => f.status === "Pending").length} 
-                  />
-                </th>
+                <th style={{ width: '40px' }}>#</th>
                 <th>EMPLOYEE ID</th><th>Name</th><th>Email</th><th>DEPARTMENT</th><th>EMPLOYMENT TYPE</th><th>Status</th><th>Actions</th>
               </tr></thead>
               <tbody>
-                {filtered.map(f => {
+                {filtered.map((f, index) => {
                   const fullName = [f.first_name, f.middle_name, f.last_name].filter(Boolean).join(" ") || f.name || "N/A";
                   const isSelected = selectedIds.includes(f.id);
                   return (
                     <tr key={f.id} className={isSelected ? "row-selected" : ""}>
-                      <td>
-                        {f.status === "Pending" && (
-                          <input 
-                            type="checkbox" 
-                            checked={isSelected} 
-                            onChange={() => toggleSelect(f.id)} 
-                          />
-                        )}
-                      </td>
+                      <td>{index + 1}</td>
                       <td>{f.employee_id || f.faculty_id}</td>
                       <td>{fullName}</td>
                       <td>{f.email}</td>
@@ -493,16 +375,10 @@ export default function Faculty() {
                       <td><span className={`status-badge ${(f.status || "").toLowerCase()}`}>{f.status}</span></td>
                       <td>
                         <div className="action-buttons">
-                          {f.status === "Pending" ? (
-                            <button onClick={() => openForm(f, "view")} className="btn-icon btn-activate-sm" title="Review & Activate">
-                              <CheckCircle size={16} />
-                            </button>
-                          ) : (
                             <>
-                              <button onClick={() => openForm(f, "edit")} className="btn-icon btn-edit" title="Edit"><Edit2 size={16} /></button>
+                              <button onClick={() => openForm(f)} className="btn-icon btn-edit" title="Edit"><Edit2 size={16} /></button>
                               <button onClick={() => handleArchive(f)} className="btn-icon btn-archive" title="Archive"><Archive size={16} /></button>
                             </>
-                          )}
                         </div>
                       </td>
                     </tr>
@@ -520,9 +396,18 @@ export default function Faculty() {
         title={confirmModal.title}
         message={confirmModal.message}
         type={confirmModal.type}
-        onConfirm={confirmAction}
+        onConfirm={async () => {
+          try {
+            await axios.patch(`/api/faculties/${confirmModal.id}/archive`);
+            addToast('Faculty archived.', 'info');
+            await fetchFaculties();
+            await refreshCounts();
+            window.dispatchEvent(new CustomEvent("dataUpdated", { detail: { type: "faculties" } }));
+          } catch (err) { addToast('Action failed.', 'error'); }
+          setConfirmModal({ isOpen: false, type: "", id: null, title: "", message: "" });
+        }}
         onCancel={() => setConfirmModal({ isOpen: false, type: "", id: null, title: "", message: "" })}
-        confirmText={confirmModal.type === "success" ? "Activate" : "Archive"}
+        confirmText="Archive"
       />
     </div>
   );

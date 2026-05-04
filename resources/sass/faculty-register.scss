@@ -1,2 +1,3 @@
+@use "variables" as *;
 // @import 'variables' (Automatically injected by Mix);
-@import 'student-register'; // Faculty register reuses student register styles
+@use 'student-register'; // Faculty register reuses student register styles

@@ -29,7 +29,7 @@ export default function Profile({ user, onLogout }) {
   };
 
   useEffect(() => {
-    const savedUser = localStorage.getItem("user");
+    const savedUser = sessionStorage.getItem("user");
     if (savedUser) setCurrentUser(JSON.parse(savedUser));
     
     fetchRoleSpecificData();
@@ -80,7 +80,7 @@ export default function Profile({ user, onLogout }) {
       reader.onload = (ev) => {
         const updated = { ...currentUser, profile_picture: ev.target.result };
         setCurrentUser(updated);
-        localStorage.setItem("user", JSON.stringify(updated));
+        sessionStorage.setItem("user", JSON.stringify(updated));
         window.dispatchEvent(new Event("profileUpdated"));
       };
       reader.readAsDataURL(file);

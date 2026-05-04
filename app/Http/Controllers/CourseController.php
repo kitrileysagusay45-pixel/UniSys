@@ -17,10 +17,13 @@ class CourseController extends Controller
         $validated = $request->validate([
             'code' => 'required|string|max:20',
             'name' => 'required|string|max:150',
+            'type' => 'nullable|string|in:lecture,laboratory,clinical,capstone',
             'department' => 'required|string|max:100',
             'credits' => 'required|integer|min:1',
             'status' => 'string|max:20',
         ]);
+
+        $validated['type'] = $validated['type'] ?? 'lecture';
 
         $validated['status'] = $validated['status'] ?? 'Active';
         $course = Course::create($validated);
@@ -41,6 +44,7 @@ class CourseController extends Controller
         $validated = $request->validate([
             'code' => 'required|string|max:20',
             'name' => 'required|string|max:150',
+            'type' => 'nullable|string|in:lecture,laboratory,clinical,capstone',
             'department' => 'required|string|max:100',
             'credits' => 'required|integer|min:1',
             'status' => 'string|max:20',

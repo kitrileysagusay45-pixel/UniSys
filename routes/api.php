@@ -20,6 +20,8 @@ use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\EnrollmentController;
 use App\Http\Controllers\GradeController;
+use App\Http\Controllers\ScheduleController;
+use App\Http\Controllers\ReportController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,18 +31,16 @@ use App\Http\Controllers\GradeController;
 
 // ── PUBLIC: Authentication (no auth required, throttled against brute force)
 Route::middleware('throttle:10,1')->group(function () {
-    Route::post('login',           [AuthController::class, 'login']);
-    Route::post('admin/login',     [AdminAuthController::class, 'login']);
-    Route::post('student/login',   [AuthController::class, 'loginStudent']);
-    Route::post('faculty/login',   [AuthController::class, 'loginFaculty']);
+    Route::post('login',             [AuthController::class, 'login']);
+    Route::post('admin/login',       [AdminAuthController::class, 'login']);
+    Route::post('student/login',     [AuthController::class, 'loginStudent']);
+    Route::post('faculty/login',     [AuthController::class, 'loginFaculty']);
+    Route::post('student/register',  [AuthController::class, 'registerStudent']);
+    Route::post('faculty/register',  [AuthController::class, 'registerFaculty']);
 });
 
-// ── PUBLIC: Registration (throttled)
-Route::middleware('throttle:5,1')->group(function () {
-    Route::post('student/register', [AuthController::class, 'registerStudent']);
-    Route::post('faculty/register', [AuthController::class, 'registerFaculty']);
-    Route::get('programs/public',   [ProgramController::class, 'publicList']);
-});
+// ── PUBLIC: Academic Programs List
+Route::get('programs/public',   [ProgramController::class, 'publicList']);
 
 // ── PUBLIC: Password reset
 Route::post('forgot-password',  [PasswordResetController::class, 'sendResetLinkEmail']);
@@ -77,11 +77,19 @@ Route::middleware('api.user')->group(function () {
 // ── STUDENT ONLY: Personal academic info ──────────────────────────────────────
 Route::middleware('api.user:student')->group(function () {
     Route::get('student/my-grades',                  [GradeController::class, 'myGrades']);
+    Route::get('student/gwa',                        [GradeController::class, 'myGWA']);
+    Route::get('student/schedule',                   [ScheduleController::class, 'studentSchedule']);
+    Route::get('student/announcements',              [AnnouncementController::class, 'sectionAnnouncements']);
 });
 
-// ── FACULTY ONLY: Grading access ──────────────────────────────────────────────
+// ── FACULTY ONLY: Grading & section management ────────────────────────────────
 Route::middleware('api.user:faculty')->group(function () {
     Route::post('faculty/post-grade',                [GradeController::class, 'store']);
+    Route::post('faculty/grade/period',              [GradeController::class, 'updatePeriodGrade']);
+    Route::get('faculty/schedule',                   [ScheduleController::class, 'facultySchedule']);
+    Route::get('faculty/section-grades/{subjectId}', [GradeController::class, 'sectionGrades']);
+    Route::post('faculty/announcements',             [AnnouncementController::class, 'store']);
+    Route::get('faculty/my-announcements',           [AnnouncementController::class, 'facultyAnnouncements']);
 });
 
 // ── ADMIN ONLY: Full CRUD access ──────────────────────────────────────────────
@@ -97,11 +105,7 @@ Route::middleware('api.user:admin')->group(function () {
     Route::get('students/{student}',                 [StudentController::class, 'show']);
     Route::put('students/{student}',                 [StudentController::class, 'update']);
     Route::delete('students/{student}',              [StudentController::class, 'destroy']);
-    Route::patch('students/{student}/activate',      [StudentController::class, 'activate']);
-    Route::patch('students/bulk-activate',           [StudentController::class, 'bulkActivate']);
-    Route::post('students/batch-activate',           [StudentController::class, 'batchActivate']);
-    // Removed old bulk-activate if I want to consolidate, but user asked for "batch-activate"
-    Route::patch('students/{student}/reject',        [StudentController::class, 'reject']);
+    Route::patch('students/{student}/archive',       [StudentController::class, 'archive']);
     Route::patch('students/{student}/archive',       [StudentController::class, 'archive']);
     Route::patch('students/{student}/restore',       [StudentController::class, 'restore']);
     Route::patch('students/{student}/status',        [StudentController::class, 'updateStatus']);
@@ -112,10 +116,7 @@ Route::middleware('api.user:admin')->group(function () {
     Route::get('faculties/{faculty}',                [FacultyController::class, 'show']);
     Route::put('faculties/{faculty}',                [FacultyController::class, 'update']);
     Route::delete('faculties/{faculty}',             [FacultyController::class, 'destroy']);
-    Route::patch('faculties/{faculty}/activate',     [FacultyController::class, 'activate']);
-    Route::patch('faculties/bulk-activate',          [FacultyController::class, 'bulkActivate']);
-    Route::post('faculties/batch-activate',          [FacultyController::class, 'batchActivate']);
-    Route::patch('faculties/{faculty}/reject',       [FacultyController::class, 'reject']);
+    Route::patch('faculties/{faculty}/archive',      [FacultyController::class, 'archive']);
     Route::patch('faculties/{faculty}/archive',      [FacultyController::class, 'archive']);
     Route::patch('faculties/{faculty}/restore',      [FacultyController::class, 'restore']);
     Route::patch('faculties/{faculty}/status',       [FacultyController::class, 'updateStatus']);
@@ -160,6 +161,14 @@ Route::middleware('api.user:admin')->group(function () {
     // Enrollment Management
     Route::post('enrollments/subjects', [EnrollmentController::class, 'enroll']);
     Route::delete('enrollments/subjects', [EnrollmentController::class, 'unenroll']);
+
+    // Reports (Admin only)
+    Route::get('admin/reports/enrollment',            [ReportController::class, 'enrollmentSummary']);
+    Route::get('admin/reports/department/{code}',     [ReportController::class, 'departmentReport']);
+    Route::get('admin/reports/grades',                [ReportController::class, 'gradeReport']);
+
+    // Schedule conflict check (Admin only)
+    Route::post('admin/schedule/conflicts',           [ScheduleController::class, 'checkConflicts']);
 });
 
 // ── ADMIN + FACULTY: Department students list ─────────────────────────────────

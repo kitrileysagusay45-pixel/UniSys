@@ -1,3 +1,5 @@
+@use "variables" as *;
+@use "sass:color";
 // @import '';
 // @import '';
 
@@ -60,7 +62,7 @@
       box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
 
       &:hover {
-        background: darken(#10b981, 5%);
+        background: color.adjust(#10b981, $lightness: -5%);
         transform: translateY(-2px);
       }
     }

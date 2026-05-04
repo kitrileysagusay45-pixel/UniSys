@@ -14,154 +14,6 @@ use Illuminate\Support\Str;
 
 class AuthController extends Controller
 {
-    /**
-     * Register a new student (public-facing)
-     */
-    public function registerStudent(Request $request)
-    {
-        $validator = Validator::make($request->all(), [
-            'name'         => 'required|string|max:255',
-            'student_id'   => 'required|string|unique:students,student_id',
-            'email'        => 'required|email|unique:users,email',
-            'course'       => 'required|string|max:100',
-            'department'   => 'required|string|max:100',
-            'year_level'   => 'required|string|max:20',
-            'password'     => 'required|string|min:8|confirmed',
-        ]);
-
-        if ($validator->fails()) {
-            return response()->json([
-                'success' => false,
-                'errors'  => $validator->errors()
-            ], 422);
-        }
-
-        try {
-            DB::beginTransaction();
-
-            $studentId = $request->student_id;
-            $fullName  = $request->name;
-
-            // 1. Create User account
-            $user = User::create([
-                'name'     => $fullName,
-                'username' => $request->email,
-                'email'    => $request->email,
-                'password' => Hash::make($request->password),
-                'role'     => 'student',
-            ]);
-
-            // 5. Logic: Student Auto-Approval (YYYY-NNNNN pattern)
-            // Pattern: YYYY-NNNNN (e.g. 2024-00123)
-            $isAutoApproved = preg_match('/^\d{4}-\d{5}$/', $studentId);
-            $initialStatus = $isAutoApproved ? 'Active' : 'Pending';
-
-            // 2. Create Student profile
-            $student = Student::create([
-                'user_id'       => $user->id,
-                'student_id'    => $studentId, // We use the provided ID if it matches pattern or user input
-                'name'          => $fullName,
-                'email'         => $request->email,
-                'course'        => $request->course,
-                'department'    => $request->department,
-                'year_level'    => $request->year_level,
-                'password'      => $user->password,
-                'status'        => $initialStatus,
-            ]);
-
-            DB::commit();
-
-            if ($isAutoApproved) {
-                AccountActivityLog::create([
-                    'loggable_id' => $student->id,
-                    'loggable_type' => Student::class,
-                    'action' => 'Auto-Approved',
-                    'reason' => 'ID matched auto-approval pattern (YYYY-NNNNN)',
-                ]);
-            }
-
-            $successMsg = $isAutoApproved 
-                ? 'Registration successful! Your account is auto-approved and active.'
-                : 'Registration successful! Please wait for admin activation before you can login.';
-
-            return response()->json([
-                'success' => true,
-                'message' => $successMsg,
-                'student_id' => $studentId,
-                'auto_approved' => $isAutoApproved
-            ], 201);
-        } catch (\Exception $e) {
-            DB::rollBack();
-            return response()->json([
-                'success' => false,
-                'message' => 'Registration failed: ' . $e->getMessage()
-            ], 500);
-        }
-    }
-
-    /**
-     * Register a new faculty (public-facing)
-     */
-    public function registerFaculty(Request $request)
-    {
-        $validator = Validator::make($request->all(), [
-            'name'         => 'required|string|max:255',
-            'faculty_id'   => 'required|string|unique:faculties,faculty_id',
-            'email'        => 'required|email|unique:users,email',
-            'department'   => 'required|string|max:100',
-            'position'     => 'required|string|max:100',
-            'password'     => 'required|string|min:8|confirmed',
-        ]);
-
-        if ($validator->fails()) {
-            return response()->json([
-                'success' => false,
-                'errors'  => $validator->errors()
-            ], 422);
-        }
-
-        try {
-            DB::beginTransaction();
-
-            $facultyId = $request->faculty_id;
-            $fullName  = $request->name;
-
-            // 1. Create User account
-            $user = User::create([
-                'name'     => $fullName,
-                'username' => $request->email,
-                'email'    => $request->email,
-                'password' => Hash::make($request->password),
-                'role'     => 'faculty',
-            ]);
-
-            // 2. Create Faculty profile
-            $faculty = Faculty::create([
-                'user_id'       => $user->id,
-                'faculty_id'    => $facultyId,
-                'name'          => $fullName,
-                'email'         => $request->email,
-                'department'    => $request->department,
-                'position'      => $request->position,
-                'password'      => $user->password,
-                'status'        => 'Pending',
-            ]);
-
-            DB::commit();
-
-            return response()->json([
-                'success' => true,
-                'message' => 'Registration successful! Your Faculty ID is: ' . $facultyId . '. Please wait for admin activation before you can login.',
-                'faculty_id' => $facultyId,
-            ], 201);
-        } catch (\Exception $e) {
-            DB::rollBack();
-            return response()->json([
-                'success' => false,
-                'message' => 'Registration failed: ' . $e->getMessage()
-            ], 500);
-        }
-    }
 
     /**
      * Unified login — auto-detects role from credentials
@@ -225,22 +77,13 @@ class AuthController extends Controller
             if (!$faculty) {
                 return response()->json(['success' => false, 'message' => 'Faculty profile not found.'], 404);
             }
-            if ($faculty->status === 'Pending') {
-                return response()->json(['success' => false, 'message' => 'Your account is pending activation. Please contact the admin.'], 403);
-            }
-            if ($faculty->status === 'Rejected') {
-                $reason = $faculty->rejection_reason ? " Reason: {$faculty->rejection_reason}" : "";
-                return response()->json(['success' => false, 'message' => 'Your account registration was rejected.' . $reason], 403);
-            }
-            if ($faculty->status === 'Archived') {
-                return response()->json(['success' => false, 'message' => 'Your account has been deactivated. Please contact the admin.'], 403);
-            }
             return response()->json([
                 'success' => true,
                 'message' => 'Login successful',
                 'user'    => [
-                    'id'            => $faculty->id,
+                    'id'            => $user->id, // User ID for auth
                     'faculty_id'    => $faculty->faculty_id,
+                    'profile_id'    => $faculty->id, // Profile ID for associations
                     'name'          => trim(($faculty->first_name ?? '') . ' ' . ($faculty->last_name ?? '')),
                     'first_name'    => $faculty->first_name,
                     'last_name'     => $faculty->last_name,
@@ -262,22 +105,13 @@ class AuthController extends Controller
             if (!$student) {
                 return response()->json(['success' => false, 'message' => 'Student profile not found.'], 404);
             }
-            if ($student->status === 'Pending') {
-                return response()->json(['success' => false, 'message' => 'Your account is pending activation. Please contact the admin.'], 403);
-            }
-            if ($student->status === 'Rejected') {
-                $reason = $student->rejection_reason ? " Reason: {$student->rejection_reason}" : "";
-                return response()->json(['success' => false, 'message' => 'Your account registration was rejected.' . $reason], 403);
-            }
-            if ($student->status === 'Archived') {
-                return response()->json(['success' => false, 'message' => 'Your account has been deactivated. Please contact the admin.'], 403);
-            }
             return response()->json([
                 'success' => true,
                 'message' => 'Login successful',
                 'user'    => [
-                    'id'            => $student->id,
+                    'id'            => $user->id, // User ID for auth
                     'student_id'    => $student->student_id,
+                    'profile_id'    => $student->id, // Profile ID
                     'name'          => $student->name ?? ($student->first_name . ' ' . $student->last_name),
                     'first_name'    => $student->first_name,
                     'last_name'     => $student->last_name,
@@ -318,24 +152,14 @@ class AuthController extends Controller
             return response()->json(['found' => false], 200);
         }
 
-        // Determine status and rejection reason based on role and linked profile
-        $status = 'Active'; 
-        $rejectionReason = '';
-        if ($user->role === 'student') {
-            $status = $user->student ? $user->student->status : 'Pending';
-            $rejectionReason = $user->student ? $user->student->rejection_reason : '';
-        } elseif ($user->role === 'faculty') {
-            $status = $user->faculty ? $user->faculty->status : 'Pending';
-            $rejectionReason = $user->faculty ? $user->faculty->rejection_reason : '';
-        }
-
+        $profile = $user->student ?? $user->faculty;
+        $status = $profile->status ?? 'Active';
         return response()->json([
-            'found'  => true,
-            'name'   => $user->name,
-            'role'   => $user->role,
+            'found' => true,
+            'role'  => $user->role,
             'status' => $status,
-            'rejection_reason' => $rejectionReason,
-        ], 200);
+            'rejection_reason' => $profile->rejection_reason ?? ''
+        ]);
     }
 
     /**
@@ -485,5 +309,154 @@ class AuthController extends Controller
                 'role'        => 'faculty',
             ],
         ]);
+    }
+
+    /**
+     * Register new student
+     */
+    public function registerStudent(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'first_name' => 'required|string',
+            'last_name'  => 'required|string',
+            'email'      => 'required|email|unique:users,email',
+            'phone'      => 'required|string',
+            'address'    => 'required|string',
+            'course'     => 'required|string',
+            'department' => 'required|string',
+            'year_level' => 'required|string',
+            'password'   => 'required|min:8|confirmed',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json(['success' => false, 'errors' => $validator->errors()], 422);
+        }
+
+        // Generate student_id (starting 26)
+        $maxId = Student::where('student_id', 'like', '26%')->max('student_id');
+        $studentId = $maxId ? ((int)$maxId + 1) : 26100;
+
+        DB::beginTransaction();
+        try {
+            $user = User::create([
+                'name'     => trim($request->first_name . ' ' . $request->last_name),
+                'email'    => $request->email,
+                'username' => (string)$studentId,
+                'password' => Hash::make($request->password),
+                'role'     => 'student'
+            ]);
+
+            $student = Student::create([
+                'user_id'    => $user->id,
+                'student_id' => (string)$studentId,
+                'first_name' => $request->first_name,
+                'last_name'  => $request->last_name,
+                'email'      => $request->email,
+                'phone'      => $request->phone,
+                'address'    => $request->address,
+                'course'     => $request->course,
+                'department' => $request->department,
+                'year_level' => $request->year_level,
+                'status'     => 'Active'
+            ]);
+            DB::commit();
+
+            return response()->json([
+                'success' => true,
+                'message' => 'Registration successful',
+                'user'    => [
+                    'id'         => $user->id,
+                    'student_id' => $student->student_id,
+                    'name'       => trim($student->first_name . ' ' . $student->last_name),
+                    'first_name' => $student->first_name,
+                    'last_name'  => $student->last_name,
+                    'email'      => $student->email,
+                    'phone'      => $student->phone,
+                    'address'    => $student->address,
+                    'department' => $student->department,
+                    'course'     => $student->course,
+                    'section'    => $student->section,
+                    'sex'        => $student->sex,
+                    'date_of_birth' => $student->date_of_birth,
+                    'role'       => 'student',
+                ],
+            ]);
+        } catch (\Exception $e) {
+            DB::rollBack();
+            return response()->json(['success' => false, 'message' => 'Registration failed. ' . $e->getMessage()], 500);
+        }
+    }
+
+    /**
+     * Register new faculty
+     */
+    public function registerFaculty(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'first_name'     => 'required|string',
+            'last_name'      => 'required|string',
+            'email'          => 'required|email|unique:users,email',
+            'phone'          => 'required|string',
+            'department'     => 'required|string',
+            'position'       => 'required|string',
+            'specialization' => 'required|string',
+            'password'       => 'required|min:8|confirmed',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json(['success' => false, 'errors' => $validator->errors()], 422);
+        }
+
+        // Generate faculty_id (starting 27)
+        $maxId = Faculty::where('faculty_id', 'like', '27%')->max('faculty_id');
+        $facultyId = $maxId ? ((int)$maxId + 1) : 27100;
+
+        DB::beginTransaction();
+        try {
+            $user = User::create([
+                'name'     => trim($request->first_name . ' ' . $request->last_name),
+                'email'    => $request->email,
+                'username' => (string)$facultyId,
+                'password' => Hash::make($request->password),
+                'role'     => 'faculty'
+            ]);
+
+            $faculty = Faculty::create([
+                'user_id'        => $user->id,
+                'faculty_id'     => (string)$facultyId,
+                'first_name'     => $request->first_name,
+                'last_name'      => $request->last_name,
+                'email'          => $request->email,
+                'phone'          => $request->phone,
+                'department'     => $request->department,
+                'position'       => $request->position,
+                'specialization' => $request->specialization,
+                'status'         => 'Active'
+            ]);
+            DB::commit();
+
+            return response()->json([
+                'success' => true,
+                'message' => 'Registration successful',
+                'user'    => [
+                    'id'          => $user->id,
+                    'faculty_id'  => $faculty->faculty_id,
+                    'name'        => trim($faculty->first_name . ' ' . $faculty->last_name),
+                    'first_name'  => $faculty->first_name,
+                    'last_name'   => $faculty->last_name,
+                    'email'       => $faculty->email,
+                    'phone'       => $faculty->phone,
+                    'address'     => $faculty->address,
+                    'department'  => $faculty->department,
+                    'position'    => $faculty->position,
+                    'sex'         => $faculty->sex,
+                    'date_of_birth' => $faculty->date_of_birth,
+                    'role'        => 'faculty',
+                ],
+            ]);
+        } catch (\Exception $e) {
+            DB::rollBack();
+            return response()->json(['success' => false, 'message' => 'Registration failed. ' . $e->getMessage()], 500);
+        }
     }
 }

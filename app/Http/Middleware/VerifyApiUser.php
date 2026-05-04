@@ -52,6 +52,9 @@ class VerifyApiUser
         // Attach user to request for use in controllers
         $request->merge(['_verified_user' => $user]);
 
+        // Also set the user on the auth guard so $request->user() works
+        auth()->setUser($user);
+
         return $next($request);
     }
 }

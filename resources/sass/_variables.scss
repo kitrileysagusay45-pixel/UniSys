@@ -73,44 +73,75 @@ $kpi-secondary:         #a855f7;
 $kpi-tertiary:          #3b82f6;
 $kpi-quaternary:        #10b981;
 
-// Legacy variables mapping (Compatibility)
-$body-bg: $page-bg;
-$primary-color: $color-accent;
-$primary-dark: $sidebar-bg;
-$text-primary: $color-text-primary;
-$text-secondary: $color-text-secondary;
-$text-muted: $color-text-muted;
-$border-color: $card-border-color;
-$card-radius: $border-radius-card;
+// Premium Shadow Tokens
+$shadow-sm:             0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md:             0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+$shadow-lg:             0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+$shadow-xl:             0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+$shadow-premium:        0 10px 40px -10px rgba(99, 102, 241, 0.15);
 
-// Extended Legacy Mappings (to fix build errors)
-$uni-navy-deep:         $sidebar-bg;
-$uni-navy:              $sidebar-bg;
-$uni-blue:              $color-accent;
-$uni-royal:             $color-accent-hover;
-$uni-sky:               $color-text-muted;
-$uni-ice:               $card-border-color;
-$uni-bright:            $kpi-secondary;
-$modern-gradient:       linear-gradient(135deg, $color-accent, $color-accent-hover);
-$primary-gradient:      linear-gradient(135deg, $sidebar-bg, $color-accent-hover);
-$card-shadow:           0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+// Glassmorphism Tokens
+$glass-bg:              rgba(255, 255, 255, 0.7);
+$glass-border:          rgba(255, 255, 255, 0.3);
+$glass-blur:            blur(10px);
 
-// Additional UI variables used in settings/faculty/etc
-$font-family-sans-serif: $font-family-base;
-$shadow-md:             var(--shadow-md);
-$shadow-lg:             var(--shadow-lg);
-$shadow-xl:             var(--shadow-xl);
-$card-border:           $card-border-color;
-$background-gray:       var(--background-gray);
-$primary-light:         lighten($color-accent, 10%);
-$primary-dark:          darken($color-accent, 10%);
+// Aliases for app.scss
+$color-page-bg:         $page-bg;
+$color-card-bg:         $card-bg;
+$color-sidebar-bg:      $sidebar-bg;
+$color-topbar-bg:       $topbar-bg;
+
+// Typography Defaults
+$font-family-base:      'Inter', 'Segoe UI', system-ui, sans-serif;
+$font-size-base:        14px;
+$line-height-base:      1.5;
+
+$weight-bold:           700;
+$weight-semibold:       600;
+$weight-medium:         500;
+$weight-regular:        400;
+
+// Spacing & Radius
+$border-radius-card:    16px;
+$border-radius-btn:     10px;
+$border-radius-pill:    99px;
+$sidebar-width:         240px;
+$topbar-height:         60px;
+
+// Extended Mappings
+$card-shadow:           $shadow-md;
+$modern-gradient:       linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+$primary-gradient:      linear-gradient(135deg, #1e2a4a 0%, #4338ca 100%);
+
+// Build error fixes
+$primary-light:         #818cf8;
+$primary-dark:          #4338ca;
 $info-light:            rgba(99, 102, 241, 0.05);
-$secondary-color:       $color-accent-hover;
-$success-light:         $color-success-bg;
-$success-color:         $color-success;
-$danger-light:          $color-danger-bg;
-$danger-color:          $color-danger;
-$warning-light:         $color-warning-bg;
-$warning-color:         $color-warning;
-$secondary-light:       lighten($color-accent-hover, 10%);
-$card-border-active:    $color-accent;
+$secondary-color:       #a855f7;
+$success-light:         #dcfce7;
+$success-color:         #22c55e;
+$danger-light:          #fef2f2;
+$danger-color:          #dc2626;
+$warning-light:         #fef3c7;
+$warning-color:         #f59e0b;
+$secondary-light:       #c084fc;
+$card-border-active:    #6366f1;
+
+// Legacy Mappings
+$uni-blue:              #6366f1;
+$uni-navy-deep:         #1e293b;
+$uni-navy:              #1e293b;
+$uni-royal:             #4338ca;
+$uni-sky:               #64748b;
+$uni-ice:               #e2e8f0;
+$uni-bright:            #f59e0b;
+$primary-color:         #6366f1;
+$text-primary:          #1e293b;
+$text-secondary:        #475569;
+$text-muted:            #94a3b8;
+$border-color:          #e2e8f0;
+$body-bg:               #f8fafc;
+$font-family-sans-serif: $font-family-base;
+$card-radius:           $border-radius-card;
+$card-border:           #e2e8f0;
+$background-gray:       #f8fafc;

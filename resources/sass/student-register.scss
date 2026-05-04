@@ -1,4 +1,4 @@
-// @import 'variables' (Automatically injected by Mix);
+@use "variables" as *;
 
 // ── Student & Faculty Registration Shared Styles ──────────
 .register-page {
@@ -6,12 +6,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at top right, $uni-blue, $uni-navy-deep);
+  background: radial-gradient(circle at top right, #6366f1, #1e2a4a);
   padding: 2rem 1rem;
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
 
   &.faculty {
-    background: radial-gradient(circle at top right, $uni-royal, $uni-navy-deep);
+    background: radial-gradient(circle at top right, #4f46e5, #1e2a4a);
   }
 }
 

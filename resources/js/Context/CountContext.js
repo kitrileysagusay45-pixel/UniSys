@@ -34,7 +34,7 @@ export const CountProvider = ({ children }) => {
 
   // ✅ Automatically load once on mount, but only when logged in
   useEffect(() => {
-    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+    const isLoggedIn = sessionStorage.getItem('isLoggedIn') === 'true';
     if (isLoggedIn) {
       fetchCounts();
     }

@@ -114,14 +114,6 @@ export default function AdminLogin({ onLogin, onRegister }) {
                 {loading ? 'Logging in...' : 'Login'}
               </button>
 
-              <div className="register-link">
-                <p>
-                  Don't have an account?{' '}
-                  <button type="button" onClick={onRegister} className="link-button">
-                    Register here
-                  </button>
-                </p>
-              </div>
             </form>
           </div>
         </div>

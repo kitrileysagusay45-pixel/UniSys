@@ -53,7 +53,7 @@ console.log('Axios baseURL set to:', window.axios.defaults.baseURL);
  */
 window.axios.interceptors.request.use(function (config) {
     try {
-        const stored = localStorage.getItem('user');
+        const stored = sessionStorage.getItem('user');
         if (stored) {
             const user = JSON.parse(stored);
             if (user && user.id) {
