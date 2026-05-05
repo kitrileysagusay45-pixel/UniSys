@@ -32,40 +32,42 @@ export default function FacultyDashboard({ user }) {
           axios.get('/api/announcements/dashboard'),
           axios.get('/api/faculty/my-announcements'),
         ]);
-        setSchedule(schedRes.data.schedule || []);
-        setFacultyInfo(schedRes.data.faculty || null);
-        setTotalUnits(schedRes.data.total_units || 0);
-        setTotalSubjects(schedRes.data.total_subjects || 0);
-        setStudentCount(stuRes.data.length);
-        
-        // Process section breakdown
-        const sections = {};
-        stuRes.data.forEach(s => {
-          sections[s.section] = (sections[s.section] || 0) + 1;
-        });
-        setSectionData(Object.entries(sections).map(([name, count]) => ({ name, count })));
+          setSchedule(schedRes.data.schedule || []);
+          setFacultyInfo(schedRes.data.faculty || null);
+          setTotalUnits(schedRes.data.total_units || 0);
+          setTotalSubjects(schedRes.data.total_subjects || 0);
+          setStudentCount(stuRes.data.length);
+          
+          // Process section breakdown
+          const sections = {};
+          stuRes.data.forEach(s => {
+            if (s.section) sections[s.section] = (sections[s.section] || 0) + 1;
+          });
+          setSectionData(Object.entries(sections).map(([name, count]) => ({ name, count })));
 
-        setAnnouncements(annRes.data || []);
-        setMyAnnouncements(myAnnRes.data || []);
-      } catch (err) {
-        console.error("Faculty Dashboard fetch error:", err);
-        // Fallback
-        try {
-          const profileId = user.profile_id || user.id;
-          const subRes = await axios.get(`/api/faculty/${profileId}/subjects`);
-          setSchedule(subRes.data.map(s => ({
-            id: s.id, code: s.code, name: s.name, units: s.units || 3,
-            room: s.room?.name || 'TBA', day: s.schedule_day || 'TBA',
-            time_start: s.time_start, time_end: s.time_end,
-            time_display: s.time_start && s.time_end ? `${s.time_start} - ${s.time_end}` : 'TBA',
-            section: s.section, semester: s.semester, academic_year: s.academic_year,
-            enrolled_count: 0,
-          })));
-          setTotalSubjects(subRes.data.length);
-        } catch (e) { console.error(e); }
-      } finally { setLoading(false); }
+          setAnnouncements(annRes.data || []);
+          setMyAnnouncements(myAnnRes.data || []);
+        } catch (err) {
+          console.error("Faculty Dashboard fetch error:", err);
+          // Fallback
+          try {
+            const facultyId = user.profile_id || user.id;
+            const subRes = await axios.get(`/api/faculty/${facultyId}/subjects`);
+            setSchedule(subRes.data.map(s => ({
+              id: s.id, code: s.code, name: s.name, units: s.units || 3,
+              room: s.room || 'TBA', day: s.schedule_day || 'TBA',
+              time_start: s.time_start, time_end: s.time_end,
+              time_display: s.time_display || 'TBA',
+              section: s.section, enrolled_count: s.enrolled_count || 0
+            })));
+            setTotalSubjects(subRes.data.length);
+          } catch (e) { console.error(e); }
+        } finally { setLoading(false); }
     };
     fetchData();
+    const handler = () => fetchData();
+    window.addEventListener('dataUpdated', handler);
+    return () => window.removeEventListener('dataUpdated', handler);
   }, [user]);
 
   const getTodaySchedule = () => {
@@ -164,8 +166,11 @@ export default function FacultyDashboard({ user }) {
               <Bell size={24} />
             </div>
           </div>
-          <div style={{ marginTop: '12px', fontSize: '0.8rem', color: '#ec4899', display: 'flex', alignItems: 'center', gap: '4px' }}>
-             <CheckCircle size={14} /> View Broadcasts
+          <div 
+            onClick={() => { window.history.pushState({}, '', '/faculty-subjects'); window.dispatchEvent(new PopStateEvent('popstate')); }}
+            style={{ marginTop: '12px', fontSize: '0.8rem', color: '#ec4899', display: 'flex', alignItems: 'center', gap: '4px', cursor: 'pointer' }}
+          >
+             <CheckCircle size={14} /> Post Announcement
           </div>
         </div>
       </div>
@@ -284,38 +289,6 @@ export default function FacultyDashboard({ user }) {
             </div>
           </div>
 
-          {/* Announcements with Quick Post */}
-          <div style={{ background: '#1e293b', border: '1px solid #334155', padding: '1.5rem', borderRadius: '16px', color: '#fff' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
-              <h3 style={{ margin: 0, display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1rem' }}>
-                <Bell size={18} color="#fbbf24" /> Announcements
-              </h3>
-              <button 
-                onClick={() => setShowAnnounceModal(true)}
-                style={{ background: 'rgba(255,255,255,0.1)', border: 'none', padding: '4px', borderRadius: '6px', color: '#fff', cursor: 'pointer' }}
-              >
-                <Plus size={16} />
-              </button>
-            </div>
-            
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              {myAnnouncements.length > 0 ? myAnnouncements.slice(0, 3).map(ann => (
-                <div key={ann.id} style={{ borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '10px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '4px' }}>
-                    <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#f8fafc' }}>{ann.title}</span>
-                    <span style={{ fontSize: '0.65rem', background: '#334155', padding: '1px 6px', borderRadius: '4px', color: '#94a3b8' }}>{ann.section || 'All'}</span>
-                  </div>
-                  <p style={{ margin: 0, fontSize: '0.75rem', color: '#94a3b8', lineHeight: '1.4' }}>{ann.content.substring(0, 60)}...</p>
-                </div>
-              )) : (<p style={{ fontSize: '0.75rem', color: '#94a3b8' }}>No announcements posted.</p>)}
-            </div>
-            <button 
-              onClick={() => { window.history.pushState({}, '', '/faculty-dashboard'); window.dispatchEvent(new PopStateEvent('popstate')); }}
-              style={{ width: '100%', marginTop: '1rem', padding: '8px', background: 'transparent', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', color: '#94a3b8', fontSize: '0.8rem', cursor: 'pointer' }}
-            >
-              Manage Bulletin
-            </button>
-          </div>
         </div>
       </div>
     </div>

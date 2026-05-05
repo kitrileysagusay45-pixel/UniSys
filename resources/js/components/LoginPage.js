@@ -62,7 +62,16 @@ export default function LoginPage({ onLogin, onStudentRegister, onFacultyRegiste
   const [fieldErrors, setFieldErrors] = useState({ username: "", password: "" });
   const [rememberMe, setRememberMe] = useState(false);
   const [showRoleSelection, setShowRoleSelection] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
   const usernameRef = useRef(null);
+
+  useEffect(() => {
+    const msg = sessionStorage.getItem("registrationSuccess");
+    if (msg) {
+      setSuccessMessage(msg);
+      sessionStorage.removeItem("registrationSuccess");
+    }
+  }, []);
 
   const debouncedUsername = useDebounce(credentials.username.trim(), 520);
 
@@ -336,6 +345,24 @@ export default function LoginPage({ onLogin, onStudentRegister, onFacultyRegiste
                 <h2 className="lp-form-title" style={{ fontSize: '2rem', fontWeight: '800', color: '#1e293b', margin: '0 0 0.5rem' }}>Welcome Back</h2>
                 <p className="lp-form-sub" style={{ color: '#64748b', fontSize: '1.1rem' }}>Please enter your details to sign in</p>
               </div>
+
+              {successMessage && (
+                <div className="lp-success" style={{ 
+                  padding: '1rem', 
+                  backgroundColor: '#f0fdf4', 
+                  border: '1px solid #bbf7d0', 
+                  color: '#16a34a', 
+                  borderRadius: '12px', 
+                  marginBottom: '1.5rem', 
+                  fontSize: '0.9rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem'
+                }}>
+                  <AlertCircle size={18} />
+                  <span>{successMessage}</span>
+                </div>
+              )}
 
               {error && (
                 <div className="lp-error" style={{ 

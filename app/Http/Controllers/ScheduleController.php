@@ -33,17 +33,20 @@ class ScheduleController extends Controller
             ->get();
 
         $schedule = $subjects->map(function ($subject) {
+            $timeStartFormatted = $subject->time_start ? date("h:i A", strtotime($subject->time_start)) : null;
+            $timeEndFormatted = $subject->time_end ? date("h:i A", strtotime($subject->time_end)) : null;
+            
             return [
                 'id'           => $subject->id,
                 'code'         => $subject->code,
                 'name'         => $subject->name,
                 'units'        => $subject->units,
                 'section'      => $subject->section,
-                'room'         => $subject->room ? $subject->room->name . ($subject->room->building ? ' (' . $subject->room->building . ')' : '') : 'TBA',
+                'room'         => $subject->room_id ? ($subject->room->name . ($subject->room->building ? ' (' . $subject->room->building . ')' : '')) : ($subject->room ?? 'TBA'),
                 'day'          => $subject->schedule_day ?? 'TBA',
                 'time_start'   => $subject->time_start,
                 'time_end'     => $subject->time_end,
-                'time_display' => ($subject->time_start && $subject->time_end) ? $subject->time_start . ' - ' . $subject->time_end : 'TBA',
+                'time_display' => ($timeStartFormatted && $timeEndFormatted) ? $timeStartFormatted . ' - ' . $timeEndFormatted : 'TBA',
                 'instructor'   => $subject->faculty ? trim($subject->faculty->first_name . ' ' . $subject->faculty->last_name) : 'TBA',
                 'semester'     => $subject->semester,
                 'academic_year'=> $subject->academic_year,
@@ -88,20 +91,23 @@ class ScheduleController extends Controller
             ->get();
 
         $schedule = $subjects->map(function ($subject) {
+            $timeStartFormatted = $subject->time_start ? date("h:i A", strtotime($subject->time_start)) : null;
+            $timeEndFormatted = $subject->time_end ? date("h:i A", strtotime($subject->time_end)) : null;
+
             return [
                 'id'           => $subject->id,
                 'code'         => $subject->code,
                 'name'         => $subject->name,
                 'units'        => $subject->units,
                 'section'      => $subject->section,
-                'room'         => $subject->room ? $subject->room->name . ($subject->room->building ? ' (' . $subject->room->building . ')' : '') : 'TBA',
+                'room'         => $subject->room_id && $subject->room ? ($subject->room->name . ($subject->room->building ? ' (' . $subject->room->building . ')' : '')) : ($subject->getAttributes()['room'] ?? 'TBA'),
                 'day'          => $subject->schedule_day ?? 'TBA',
                 'time_start'   => $subject->time_start,
                 'time_end'     => $subject->time_end,
-                'time_display' => ($subject->time_start && $subject->time_end) ? $subject->time_start . ' - ' . $subject->time_end : 'TBA',
+                'time_display' => ($timeStartFormatted && $timeEndFormatted) ? $timeStartFormatted . ' - ' . $timeEndFormatted : 'TBA',
                 'semester'     => $subject->semester,
                 'academic_year'=> $subject->academic_year,
-                'enrolled_count' => $subject->students()->count(),
+                'enrolled_count' => \DB::table('student_subject')->where('subject_id', $subject->id)->where('faculty_id', $faculty->id)->count(),
                 'course_type'  => $subject->course ? $subject->course->type : null,
             ];
         });

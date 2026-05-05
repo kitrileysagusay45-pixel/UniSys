@@ -468,28 +468,30 @@
         letter-spacing: 0.5px;
 
         &.btn-cancel {
-          background: $card-bg;
-          color: $text-primary;
-          border: 2px solid $border-color;
+          background: linear-gradient(135deg, #ef4444, #dc2626);
+          color: #fff;
+          border: none;
 
           &:hover {
-            background: $background-gray;
-            border-color: $text-secondary;
+            background: linear-gradient(135deg, #dc2626, #b91c1c);
+            box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+            transform: translateY(-1px);
           }
         }
 
         &.btn-submit {
-          background: $primary-color;
+          background: linear-gradient(135deg, #22c55e, #16a34a);
           color: white;
-          border: 2px solid $primary-color;
+          border: none;
 
           &:hover {
-            background: $primary-light;
-            border-color: $primary-light;
+            background: linear-gradient(135deg, #16a34a, #15803d);
+            box-shadow: 0 4px 12px rgba(34, 197, 94, 0.35);
+            transform: translateY(-1px);
           }
 
           &:active {
-            background: $primary-dark;
+            background: #15803d;
           }
         }
       }

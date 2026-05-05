@@ -3,7 +3,9 @@ import StudentDashboard from "./StudentDashboard";
 import Profile from "./Profile";
 import UserSettings from "./UserSettings";
 import SecurityPrivacy from "./SecurityPrivacy";
-import { GraduationCap, LayoutDashboard, User, Circle, Settings as SettingsIcon } from "lucide-react";
+import NotificationsPage from "./NotificationsPage";
+import StudentSubjects from "./StudentSubjects";
+import { GraduationCap, LayoutDashboard, User, Circle, Settings as SettingsIcon, BookOpen } from "lucide-react";
 import TopNavbar from "./TopNavbar";
 // import "../../sass/layout.scss";
 
@@ -14,7 +16,7 @@ export default function StudentLayout({ user, onLogout }) {
   useEffect(() => {
     const updatePage = () => {
       const path = window.location.pathname.split("/").pop();
-      const valid = ["student-dashboard", "student-profile", "student-settings", "student-security"];
+      const valid = ["student-dashboard", "student-subjects", "student-profile", "student-settings", "student-security", "notifications"];
       if (valid.includes(path)) setPage(path);
     };
     window.addEventListener("popstate", updatePage);
@@ -29,6 +31,7 @@ export default function StudentLayout({ user, onLogout }) {
 
   const menuItems = [
     { key: "student-dashboard", label: "Dashboard", icon: <LayoutDashboard size={18} /> },
+    { key: "student-subjects", label: "Subjects", icon: <BookOpen size={18} /> },
     { key: "student-profile", label: "Profile", icon: <User size={18} /> },
     { key: "student-settings", label: "Settings", icon: <SettingsIcon size={18} /> },
   ];
@@ -68,9 +71,11 @@ export default function StudentLayout({ user, onLogout }) {
         
         <div className="page-content-wrapper">
           {page === "student-dashboard" && <StudentDashboard user={user} />}
+          {page === "student-subjects" && <StudentSubjects user={user} />}
           {page === "student-profile" && <Profile user={user} onLogout={onLogout} />}
           {page === "student-settings" && <UserSettings user={user} />}
           {page === "student-security" && <SecurityPrivacy user={user} />}
+          {page === "notifications" && <NotificationsPage />}
         </div>
       </main>
     </div>

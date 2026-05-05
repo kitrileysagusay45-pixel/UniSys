@@ -1,6 +1,32 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Bell, Moon, Sun, Search, Menu, User, LogOut, ChevronDown, Settings, CreditCard, Shield } from "lucide-react";
+import axios from "axios";
+import { Bell, Moon, Sun, Search, Menu, User, LogOut, ChevronDown, Settings, CreditCard, Shield, BookOpen, AlertCircle, Info } from "lucide-react";
 // import "../../sass/top-navbar.scss";
+
+const timeAgo = (dateStr) => {
+  const date = new Date(dateStr);
+  const now = new Date();
+  const seconds = Math.floor((now - date) / 1000);
+  
+  if (seconds < 60) return `${seconds}s ago`;
+  const minutes = Math.floor(seconds / 60);
+  if (minutes < 60) return `${minutes}m ago`;
+  const hours = Math.floor(minutes / 60);
+  if (hours < 24) return `${hours}h ago`;
+  const days = Math.floor(hours / 24);
+  if (days < 30) return `${days}d ago`;
+  return date.toLocaleDateString();
+};
+
+const getIcon = (iconName) => {
+  switch(iconName) {
+    case 'system': case 'settings': return <Settings size={14} />;
+    case 'user': return <User size={14} />;
+    case 'book': case 'book-open': return <BookOpen size={14} />;
+    case 'alert': return <AlertCircle size={14} />;
+    default: return <Info size={14} />;
+  }
+};
 
 export default function TopNavbar({ user, onToggleSidebar, onLogout }) {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
@@ -8,6 +34,9 @@ export default function TopNavbar({ user, onToggleSidebar, onLogout }) {
   const [showProfileDropdown, setShowProfileDropdown] = useState(false);
   const profileRef = useRef(null);
   const notificationRef = useRef(null);
+  
+  const [notifications, setNotifications] = useState([]);
+  const [unreadCount, setUnreadCount] = useState(0);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -28,18 +57,61 @@ export default function TopNavbar({ user, onToggleSidebar, onLogout }) {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  const fetchNotifications = async () => {
+    try {
+      const res = await axios.get('/api/notifications?limit=5');
+      setNotifications(res.data.notifications || []);
+      setUnreadCount(res.data.unread_count || 0);
+    } catch (err) {
+      console.error("Error fetching notifications", err);
+    }
+  };
+
+  useEffect(() => {
+    fetchNotifications();
+    const interval = setInterval(fetchNotifications, 30000); // Poll every 30 seconds
+    return () => clearInterval(interval);
+  }, []);
+
+  const handleMarkAllRead = async () => {
+    try {
+      await axios.post('/api/notifications/mark-all-read');
+      setUnreadCount(0);
+      setNotifications(notifications.map(n => ({ ...n, is_read: true })));
+    } catch (err) {
+      console.error("Error marking all as read", err);
+    }
+  };
+
+  const handleNotificationClick = async (n) => {
+    if (!n.is_read) {
+      try {
+        await axios.post(`/api/notifications/${n.id}/mark-read`);
+        setUnreadCount(prev => Math.max(0, prev - 1));
+        setNotifications(notifications.map(item => item.id === n.id ? { ...item, is_read: true } : item));
+      } catch (err) {
+        console.error("Error marking as read", err);
+      }
+    }
+    
+    if (n.action_link) {
+      setShowNotifications(false);
+      window.history.pushState({}, "", n.action_link);
+      window.dispatchEvent(new PopStateEvent('popstate'));
+    }
+  };
+
+  const handleViewAllNotifications = () => {
+    setShowNotifications(false);
+    window.history.pushState({}, "", "/notifications");
+    window.dispatchEvent(new PopStateEvent('popstate'));
+  };
+
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
-  const notifications = [
-    { id: 1, text: "System maintenance scheduled for 12:00 AM", time: "1h ago", type: "system" },
-    { id: 2, text: "New faculty member assigned to your department", time: "2h ago", type: "user" },
-    { id: 3, text: "Monthly report is now available for download", time: "5h ago", type: "report" },
-  ];
-
   const handleProfileClick = () => {
-    // Navigate to profile page
     const role = user?.role || "admin";
     let path = "/profile";
     if (role === "faculty") path = "/faculty-profile";
@@ -76,30 +148,46 @@ export default function TopNavbar({ user, onToggleSidebar, onLogout }) {
               onClick={() => setShowNotifications(!showNotifications)}
             >
               <Bell size={18} />
-              <span className="notification-dot"></span>
+              {unreadCount > 0 && <span className="notification-dot">{unreadCount > 9 ? '9+' : unreadCount}</span>}
             </button>
             
             {showNotifications && (
               <div className="notification-dropdown">
                 <div className="dropdown-header">
                   <h3>Notifications</h3>
-                  <button className="mark-all-read">Mark all as read</button>
+                  {unreadCount > 0 && <button className="mark-all-read" onClick={handleMarkAllRead}>Mark all as read</button>}
                 </div>
                 <div className="dropdown-content">
-                  {notifications.map(n => (
-                    <div key={n.id} className="notification-item">
-                      <div className={`notification-icon ${n.type}`}>
-                        {n.type === 'system' ? <Settings size={14} /> : n.type === 'user' ? <User size={14} /> : <CreditCard size={14} />}
-                      </div>
-                      <div className="notification-text">
-                        <p>{n.text}</p>
-                        <span>{n.time}</span>
-                      </div>
+                  {notifications.length === 0 ? (
+                    <div style={{ padding: '20px', textAlign: 'center', color: '#94a3b8', fontSize: '0.9rem' }}>
+                      No notifications yet.
                     </div>
-                  ))}
+                  ) : (
+                    notifications.map(n => (
+                      <div 
+                        key={n.id} 
+                        className="notification-item" 
+                        onClick={() => handleNotificationClick(n)}
+                        style={{ 
+                          cursor: 'pointer', 
+                          background: n.is_read ? 'transparent' : '#f0fdfa',
+                          borderLeft: n.is_read ? '3px solid transparent' : '3px solid #0d7c66',
+                        }}
+                      >
+                        <div className={`notification-icon ${n.type || 'info'}`}>
+                          {getIcon(n.icon)}
+                        </div>
+                        <div className="notification-text">
+                          <p style={{ fontWeight: n.is_read ? 500 : 700, color: n.is_read ? '#64748b' : '#0f172a' }}>{n.title}</p>
+                          <p style={{ fontSize: '0.8rem', color: '#64748b', margin: '2px 0 4px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{n.message}</p>
+                          <span>{timeAgo(n.created_at)}</span>
+                        </div>
+                      </div>
+                    ))
+                  )}
                 </div>
                 <div className="dropdown-footer">
-                  <button>View All Notifications</button>
+                  <button onClick={handleViewAllNotifications}>View All Notifications</button>
                 </div>
               </div>
             )}

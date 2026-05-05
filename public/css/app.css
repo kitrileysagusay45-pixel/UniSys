@@ -2796,50 +2796,46 @@ input:focus, select:focus, textarea:focus {
 }
 
 .confirm-actions button {
-  padding: 0.6rem 1.5rem;
+  padding: 0.6rem 1.75rem;
   border-radius: 10px;
   font-weight: 600;
   font-size: 0.9rem;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.25s ease;
   border: none;
+  letter-spacing: 0.3px;
 }
 
 .confirm-actions .btn-cancel {
-  background: #f0f0f0;
-  color: #555;
-}
-
-.confirm-actions .btn-cancel:hover {
-  background: #e0e0e0;
-}
-
-.confirm-actions .btn-confirm {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
   color: #fff;
 }
 
-.confirm-actions .btn-confirm.success {
-  background: linear-gradient(135deg, #22c55e, #16a34a);
-}
-
-.confirm-actions .btn-confirm.success:hover {
-  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
-}
-
-.confirm-actions .btn-confirm.warning {
-  background: linear-gradient(135deg, #f59e0b, #d97706);
-}
-
-.confirm-actions .btn-confirm.warning:hover {
-  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
-}
-
-.confirm-actions .btn-confirm.danger {
+.confirm-actions .btn-cancel:hover {
   background: linear-gradient(135deg, #dc2626, #b91c1c);
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.35);
+  transform: translateY(-1px);
 }
 
-.confirm-actions .btn-confirm.danger:hover {
-  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+.confirm-actions .btn-confirm,
+.confirm-actions .btn-confirm.success,
+.confirm-actions .btn-confirm.warning,
+.confirm-actions .btn-confirm.danger,
+.confirm-actions .btn-confirm.archive,
+.confirm-actions .btn-confirm.delete {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #fff;
+}
+
+.confirm-actions .btn-confirm:hover,
+.confirm-actions .btn-confirm.success:hover,
+.confirm-actions .btn-confirm.warning:hover,
+.confirm-actions .btn-confirm.danger:hover,
+.confirm-actions .btn-confirm.archive:hover,
+.confirm-actions .btn-confirm.delete:hover {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  box-shadow: 0 4px 14px rgba(34, 197, 94, 0.4);
+  transform: translateY(-1px);
 }
 
 @keyframes fadeIn {
@@ -2971,21 +2967,25 @@ input:focus, select:focus, textarea:focus {
 }
 
 .faculty-container .modal-overlay .modal-content .modal-form .modal-actions button.btn-cancel {
-  background: #f3f4f6;
-  color: #374151;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #fff;
 }
 
 .faculty-container .modal-overlay .modal-content .modal-form .modal-actions button.btn-cancel:hover {
-  background: #e5e7eb;
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+  transform: translateY(-1px);
 }
 
 .faculty-container .modal-overlay .modal-content .modal-form .modal-actions button.btn-submit {
-  background: #3b82f6;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
   color: white;
 }
 
 .faculty-container .modal-overlay .modal-content .modal-form .modal-actions button.btn-submit:hover {
-  background: #2563eb;
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.35);
+  transform: translateY(-1px);
 }
 
 .faculty-container .faculty-header {
@@ -4184,29 +4184,31 @@ input:focus, select:focus, textarea:focus {
 }
 
 .settings-container .settings-form .modal-actions button.btn-cancel, .settings-container .modal-form .modal-actions button.btn-cancel {
-  background: var(--card-bg);
-  color: #1e293b;
-  border: 2px solid #e2e8f0;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #fff;
+  border: none;
 }
 
 .settings-container .settings-form .modal-actions button.btn-cancel:hover, .settings-container .modal-form .modal-actions button.btn-cancel:hover {
-  background: #f8fafc;
-  border-color: #475569;
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+  transform: translateY(-1px);
 }
 
 .settings-container .settings-form .modal-actions button.btn-submit, .settings-container .modal-form .modal-actions button.btn-submit {
-  background: #6366f1;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
   color: white;
-  border: 2px solid #6366f1;
+  border: none;
 }
 
 .settings-container .settings-form .modal-actions button.btn-submit:hover, .settings-container .modal-form .modal-actions button.btn-submit:hover {
-  background: #818cf8;
-  border-color: #818cf8;
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.35);
+  transform: translateY(-1px);
 }
 
 .settings-container .settings-form .modal-actions button.btn-submit:active, .settings-container .modal-form .modal-actions button.btn-submit:active {
-  background: #4338ca;
+  background: #15803d;
 }
 
 .toast-container {

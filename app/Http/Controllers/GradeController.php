@@ -116,6 +116,21 @@ class GradeController extends Controller
 
         $grade->save();
 
+        // --- Notification Logic ---
+        $student = Student::find($validated['student_id']);
+        if ($student && $student->user_id) {
+            \App\Models\Notification::create([
+                'user_id' => $student->user_id,
+                'title' => 'Grade Updated',
+                'message' => "Your " . ucfirst($period) . " grade for {$subject->name} has been posted/updated.",
+                'type' => 'info',
+                'icon' => 'book-open',
+                'action_link' => '/student-dashboard', // Or /grades if that exists
+                'is_read' => false,
+            ]);
+        }
+        // --------------------------
+
         return response()->json([
             'message' => ucfirst($period) . ' grade saved successfully.',
             'grade'   => $grade->load(['student', 'subject', 'course', 'faculty']),
@@ -153,6 +168,21 @@ class GradeController extends Controller
         $grade->$period = $validated['grade'];
         $grade->computeFinalGrade();
         $grade->save();
+
+        // --- Notification Logic ---
+        $student = Student::find($validated['student_id']);
+        if ($student && $student->user_id) {
+            \App\Models\Notification::create([
+                'user_id' => $student->user_id,
+                'title' => 'Grade Updated',
+                'message' => "Your " . ucfirst($period) . " grade for {$subject->name} has been posted/updated.",
+                'type' => 'info',
+                'icon' => 'book-open',
+                'action_link' => '/student-dashboard', // Or /grades if that exists
+                'is_read' => false,
+            ]);
+        }
+        // --------------------------
 
         return response()->json([
             'message' => ucfirst($period) . ' grade updated successfully.',

@@ -19,9 +19,9 @@ export default function ConfirmModal({ isOpen, title, message, type = "warning",
           <h3 className="confirm-title">{title}</h3>
           <p className="confirm-message">{message}</p>
         </div>
-        <div className="confirm-actions">
-          <button className="btn-cancel" onClick={onCancel}>{cancelText}</button>
-          <button className={`btn-confirm ${type}`} onClick={onConfirm}>{confirmText}</button>
+        <div className="confirm-actions" style={{ display: 'flex', gap: '1rem', justifyContent: 'flex-end', marginTop: '1.5rem' }}>
+          <button className="btn-cancel" onClick={onCancel} style={{ backgroundColor: '#ef4444', color: 'white', border: 'none', padding: '8px 16px', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}>{cancelText}</button>
+          <button className={`btn-confirm ${type}`} onClick={onConfirm} style={{ backgroundColor: '#22c55e', color: 'white', border: 'none', padding: '8px 16px', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}>{confirmText}</button>
         </div>
       </div>
     </div>

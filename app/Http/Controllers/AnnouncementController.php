@@ -26,13 +26,19 @@ class AnnouncementController extends Controller
                     ?? Student::where('email', $user->email)->first();
 
             if ($student) {
-                $query->where(function ($q) use ($student, $role) {
+                $enrolledSubjectIds = \DB::table('student_subject')
+                    ->where('student_id', $student->id)
+                    ->pluck('subject_id');
+
+                $query->where(function ($q) use ($student, $role, $enrolledSubjectIds) {
                     $q->where(function ($inner) use ($role) {
                         $inner->where('target_role', 'all')
                               ->orWhere('target_role', $role);
-                    })->where(function ($inner) use ($student) {
-                        $inner->forSection($student->section)
-                              ->forDepartment($student->department);
+                    })->where(function ($inner) use ($student, $enrolledSubjectIds) {
+                        $inner->where(function($sub) use ($student) {
+                            $sub->forSection($student->section)
+                                ->forDepartment($student->department);
+                        })->orWhereIn('subject_id', $enrolledSubjectIds);
                     });
                 });
             }
@@ -44,7 +50,7 @@ class AnnouncementController extends Controller
         }
         // admin sees all
 
-        return response()->json($query->with('faculty')->get());
+        return response()->json($query->with(['faculty', 'subject'])->get());
     }
 
     /**
@@ -71,6 +77,7 @@ class AnnouncementController extends Controller
             'type'        => 'required|in:info,urgent,success,warning,holiday',
             'category'    => 'nullable|in:exam_schedule,activity_notice,requirement_reminder,general_advisory',
             'target_role' => 'required|in:all,admin,faculty,student',
+            'subject_id'  => 'nullable|exists:subjects,id',
             'section'     => 'nullable|string|max:20',
             'department'  => 'nullable|string|max:100',
             'faculty_id'  => 'nullable|exists:faculties,id',
@@ -80,7 +87,68 @@ class AnnouncementController extends Controller
         $validated['category'] = $validated['category'] ?? 'general_advisory';
 
         $announcement = Announcement::create($validated);
-        return response()->json($announcement->load('faculty'), 201);
+
+        // --- Notification Logic ---
+        $targetRole = $announcement->target_role;
+        $title = $announcement->title;
+        $message = \Illuminate\Support\Str::limit($announcement->content, 150);
+        $icon = 'bell';
+
+        $usersToNotify = collect();
+
+        if ($targetRole === 'all') {
+            $usersToNotify = \App\Models\User::all();
+        } elseif ($targetRole === 'admin') {
+            $usersToNotify = \App\Models\User::where('role', 'admin')->get();
+        } elseif ($targetRole === 'faculty') {
+            $usersToNotify = \App\Models\User::where('role', 'faculty')->get();
+        } elseif ($targetRole === 'student') {
+            if ($announcement->subject_id) {
+                // Targeted to students enrolled in this specific subject
+                $studentIds = \DB::table('student_subject')
+                    ->where('subject_id', $announcement->subject_id)
+                    ->pluck('student_id');
+                
+                $userIds = \App\Models\Student::whereIn('id', $studentIds)->pluck('user_id');
+                $usersToNotify = \App\Models\User::whereIn('id', $userIds)->get();
+            } else {
+                $studentQuery = \App\Models\Student::where('status', 'Active');
+                
+                if ($announcement->department) {
+                    $studentQuery->where('department', $announcement->department);
+                }
+                if ($announcement->section) {
+                    $studentQuery->where('section', $announcement->section);
+                }
+                
+                $userIds = $studentQuery->pluck('user_id');
+                $usersToNotify = \App\Models\User::whereIn('id', $userIds)->get();
+            }
+        }
+
+        // Bulk insert notifications
+        $notificationsData = [];
+        $now = now();
+        foreach ($usersToNotify as $u) {
+            $notificationsData[] = [
+                'user_id' => $u->id,
+                'title' => $title,
+                'message' => $message,
+                'type' => $announcement->type,
+                'icon' => 'bell',
+                'action_link' => '/student-subjects', // Or appropriate link
+                'is_read' => false,
+                'created_at' => $now,
+                'updated_at' => $now,
+            ];
+        }
+
+        foreach (array_chunk($notificationsData, 500) as $chunk) {
+            \App\Models\Notification::insert($chunk);
+        }
+        // --------------------------
+
+        return response()->json($announcement->load(['faculty', 'subject']), 201);
     }
 
     /**
@@ -154,14 +222,22 @@ class AnnouncementController extends Controller
             return response()->json(['error' => 'Student record not found'], 404);
         }
 
+        $enrolledSubjectIds = \DB::table('student_subject')
+            ->where('student_id', $student->id)
+            ->pluck('subject_id');
+
         $announcements = Announcement::active()
-            ->where(function ($q) {
-                $q->where('target_role', 'all')
-                  ->orWhere('target_role', 'student');
+            ->where(function ($q) use ($student, $enrolledSubjectIds) {
+                $q->where(function($general) use ($student) {
+                    $general->where('target_role', 'all')
+                            ->orWhere('target_role', 'student')
+                            ->where(function($loc) use ($student) {
+                                $loc->forSection($student->section)
+                                    ->forDepartment($student->department);
+                            });
+                })->orWhereIn('subject_id', $enrolledSubjectIds);
             })
-            ->forSection($student->section)
-            ->forDepartment($student->department)
-            ->with('faculty')
+            ->with(['faculty', 'subject'])
             ->orderBy('created_at', 'desc')
             ->get();
 

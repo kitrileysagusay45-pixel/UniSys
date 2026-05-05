@@ -42428,6 +42428,46 @@ const Bell = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("b
 
 /***/ }),
 
+/***/ "./node_modules/lucide-react/dist/esm/icons/book-marked.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/book-marked.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ BookMarked)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["path", { d: "M10 2v8l3-3 3 3V2", key: "sqw3rj" }],
+  [
+    "path",
+    {
+      d: "M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20",
+      key: "k3hazp"
+    }
+  ]
+];
+const BookMarked = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("book-marked", __iconNode);
+
+
+//# sourceMappingURL=book-marked.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-react/dist/esm/icons/book-open.js":
 /*!***************************************************************!*\
   !*** ./node_modules/lucide-react/dist/esm/icons/book-open.js ***!
@@ -42464,6 +42504,47 @@ const BookOpen = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"]
 
 
 //# sourceMappingURL=book-open.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-react/dist/esm/icons/book-plus.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/book-plus.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ BookPlus)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["path", { d: "M12 7v6", key: "lw1j43" }],
+  [
+    "path",
+    {
+      d: "M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20",
+      key: "k3hazp"
+    }
+  ],
+  ["path", { d: "M9 10h6", key: "9gxzsh" }]
+];
+const BookPlus = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("book-plus", __iconNode);
+
+
+//# sourceMappingURL=book-plus.js.map
 
 
 /***/ }),
@@ -42898,6 +42979,41 @@ const CircleCheckBig = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["def
 
 /***/ }),
 
+/***/ "./node_modules/lucide-react/dist/esm/icons/circle-user.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/circle-user.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ CircleUser)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["circle", { cx: "12", cy: "10", r: "3", key: "ilqhr7" }],
+  ["path", { d: "M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662", key: "154egf" }]
+];
+const CircleUser = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("circle-user", __iconNode);
+
+
+//# sourceMappingURL=circle-user.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-react/dist/esm/icons/circle-x.js":
 /*!**************************************************************!*\
   !*** ./node_modules/lucide-react/dist/esm/icons/circle-x.js ***!
@@ -43079,40 +43195,6 @@ const Clock = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("
 
 
 //# sourceMappingURL=clock.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/lucide-react/dist/esm/icons/credit-card.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/lucide-react/dist/esm/icons/credit-card.js ***!
-  \*****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
-/* harmony export */   "default": () => (/* binding */ CreditCard)
-/* harmony export */ });
-/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
-/**
- * @license lucide-react v0.544.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-
-
-
-const __iconNode = [
-  ["rect", { width: "20", height: "14", x: "2", y: "5", rx: "2", key: "ynyp8z" }],
-  ["line", { x1: "2", x2: "22", y1: "10", y2: "10", key: "1b3vmo" }]
-];
-const CreditCard = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("credit-card", __iconNode);
-
-
-//# sourceMappingURL=credit-card.js.map
 
 
 /***/ }),
@@ -44559,6 +44641,77 @@ const TriangleAlert = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["defa
 
 /***/ }),
 
+/***/ "./node_modules/lucide-react/dist/esm/icons/user-check.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/user-check.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ UserCheck)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["path", { d: "m16 11 2 2 4-4", key: "9rsbq5" }],
+  ["path", { d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2", key: "1yyitq" }],
+  ["circle", { cx: "9", cy: "7", r: "4", key: "nufk8" }]
+];
+const UserCheck = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("user-check", __iconNode);
+
+
+//# sourceMappingURL=user-check.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-react/dist/esm/icons/user-plus.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/user-plus.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ UserPlus)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.544.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["path", { d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2", key: "1yyitq" }],
+  ["circle", { cx: "9", cy: "7", r: "4", key: "nufk8" }],
+  ["line", { x1: "19", x2: "19", y1: "8", y2: "14", key: "1bvyxn" }],
+  ["line", { x1: "22", x2: "16", y1: "11", y2: "11", key: "1shjgl" }]
+];
+const UserPlus = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("user-plus", __iconNode);
+
+
+//# sourceMappingURL=user-plus.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-react/dist/esm/icons/user.js":
 /*!**********************************************************!*\
   !*** ./node_modules/lucide-react/dist/esm/icons/user.js ***!
@@ -44659,45 +44812,6 @@ const X = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("x", 
 
 
 //# sourceMappingURL=x.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/lucide-react/dist/esm/icons/zap.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/lucide-react/dist/esm/icons/zap.js ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
-/* harmony export */   "default": () => (/* binding */ Zap)
-/* harmony export */ });
-/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
-/**
- * @license lucide-react v0.544.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-
-
-
-const __iconNode = [
-  [
-    "path",
-    {
-      d: "M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z",
-      key: "1xq2db"
-    }
-  ]
-];
-const Zap = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("zap", __iconNode);
-
-
-//# sourceMappingURL=zap.js.map
 
 
 /***/ }),
@@ -80261,18 +80375,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Profile__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Profile */ "./resources/js/components/Profile.js");
 /* harmony import */ var _Programs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Programs */ "./resources/js/components/Programs.js");
 /* harmony import */ var _Announcements__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Announcements */ "./resources/js/components/Announcements.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/chart-column.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/archive.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/bell.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/circle.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/graduation-cap.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/layout-dashboard.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/settings.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/users.js");
-/* harmony import */ var _TopNavbar__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./TopNavbar */ "./resources/js/components/TopNavbar.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _NotificationsPage__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./NotificationsPage */ "./resources/js/components/NotificationsPage.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/chart-column.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/archive.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/bell.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/circle.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/graduation-cap.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/layout-dashboard.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/settings.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/users.js");
+/* harmony import */ var _TopNavbar__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./TopNavbar */ "./resources/js/components/TopNavbar.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -80293,12 +80408,13 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
+
 function AdminLayout(_ref) {
   var user = _ref.user,
     onLogout = _ref.onLogout;
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(function () {
       var path = window.location.pathname.split("/").pop() || "dashboard";
-      var validPages = ["dashboard", "faculty", "students", "subjects", "programs", "announcements", "reports", "settings", "archive", "profile"];
+      var validPages = ["dashboard", "faculty", "students", "subjects", "programs", "announcements", "reports", "settings", "archive", "profile", "notifications"];
       return validPages.includes(path) ? path : "dashboard";
     }),
     _useState2 = _slicedToArray(_useState, 2),
@@ -80311,7 +80427,7 @@ function AdminLayout(_ref) {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     var updatePage = function updatePage() {
       var path = window.location.pathname.split("/").pop() || "dashboard";
-      var validPages = ["dashboard", "faculty", "students", "subjects", "programs", "announcements", "reports", "settings", "archive", "profile"];
+      var validPages = ["dashboard", "faculty", "students", "subjects", "programs", "announcements", "reports", "settings", "archive", "profile", "notifications"];
       if (validPages.includes(path)) setPage(path);
     };
     window.addEventListener("popstate", updatePage);
@@ -80327,98 +80443,98 @@ function AdminLayout(_ref) {
   var menuItems = [{
     key: "dashboard",
     label: "Dashboard",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_17__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_18__["default"], {
       size: 18
     })
   }, {
     key: "faculty",
     label: "Faculty",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_20__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_21__["default"], {
       size: 18
     })
   }, {
     key: "students",
     label: "Students",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_16__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_17__["default"], {
       size: 18
     })
   }, {
     key: "subjects",
     label: "Subjects",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_14__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_15__["default"], {
       size: 18
     })
   }, {
     key: "programs",
     label: "Programs",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_16__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_17__["default"], {
       size: 18
     })
   }, {
     key: "announcements",
     label: "Announcements",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_14__["default"], {
       size: 18
     })
   }, {
     key: "reports",
     label: "Reports",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
       size: 18
     })
   }, {
     key: "settings",
     label: "Settings",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_18__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_19__["default"], {
       size: 18
     })
   }, {
     key: "archive",
     label: "Archive",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
       size: 18
     })
   }, {
     key: "profile",
     label: "Profile",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_19__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_20__["default"], {
       size: 18
     })
   }];
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsxs)("div", {
     className: "layout",
-    children: [sidebarOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)("div", {
+    children: [sidebarOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)("div", {
       className: "sidebar-overlay",
       onClick: function onClick() {
         return setSidebarOpen(false);
       }
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsxs)("aside", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsxs)("aside", {
       className: "sidebar ".concat(sidebarOpen ? "open" : ""),
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsxs)("div", {
         className: "logo-section",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsxs)("div", {
           className: "logo-box",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)("div", {
             className: "logo-icon-wrapper",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_16__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_17__["default"], {
               size: 24,
               strokeWidth: 2.5,
               className: "logo-icon"
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)("h1", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)("h1", {
             className: "logo-text",
             children: "UniSys"
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)("span", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)("span", {
           className: "portal-badge admin",
           children: "ADMIN PORTAL"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)("nav", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)("nav", {
         className: "nav-container",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)("ul", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)("ul", {
           className: "nav-menu",
           children: menuItems.map(function (item) {
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsxs)("li", {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsxs)("li", {
               className: "nav-item ".concat(page === item.key ? "active" : ""),
               onClick: function onClick() {
                 return navigate(item.key);
@@ -80426,45 +80542,45 @@ function AdminLayout(_ref) {
               style: {
                 position: 'relative'
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)("div", {
                 className: "icon-wrapper",
                 children: item.icon
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)("span", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)("span", {
                 children: item.label
               })]
             }, item.key);
           })
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)("div", {
         className: "sidebar-footer",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsxs)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsxs)("div", {
           className: "system-status",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_15__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_16__["default"], {
             size: 8,
             fill: "#10b981",
             stroke: "none",
             className: "status-dot pulsing"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)("span", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)("span", {
             children: "System Online"
           })]
         })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsxs)("main", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsxs)("main", {
       className: "main-content",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_TopNavbar__WEBPACK_IMPORTED_MODULE_21__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_TopNavbar__WEBPACK_IMPORTED_MODULE_22__["default"], {
         user: user,
         onToggleSidebar: function onToggleSidebar() {
           return setSidebarOpen(!sidebarOpen);
         },
         onLogout: onLogout
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsxs)("div", {
         className: "page-content-wrapper",
-        children: [page === "dashboard" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_Dashboard__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        children: [page === "dashboard" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_Dashboard__WEBPACK_IMPORTED_MODULE_1__["default"], {
           user: user
-        }), page === "faculty" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_Faculty__WEBPACK_IMPORTED_MODULE_2__["default"], {}), page === "students" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_Students__WEBPACK_IMPORTED_MODULE_3__["default"], {}), page === "subjects" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_Subjects__WEBPACK_IMPORTED_MODULE_4__["default"], {}), page === "programs" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_Programs__WEBPACK_IMPORTED_MODULE_9__["default"], {}), page === "announcements" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_Announcements__WEBPACK_IMPORTED_MODULE_10__["default"], {}), page === "reports" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_Reports__WEBPACK_IMPORTED_MODULE_5__["default"], {}), page === "settings" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_Settings__WEBPACK_IMPORTED_MODULE_6__["default"], {}), page === "archive" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_Archive__WEBPACK_IMPORTED_MODULE_7__["default"], {}), page === "profile" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_Profile__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        }), page === "faculty" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_Faculty__WEBPACK_IMPORTED_MODULE_2__["default"], {}), page === "students" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_Students__WEBPACK_IMPORTED_MODULE_3__["default"], {}), page === "subjects" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_Subjects__WEBPACK_IMPORTED_MODULE_4__["default"], {}), page === "programs" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_Programs__WEBPACK_IMPORTED_MODULE_9__["default"], {}), page === "announcements" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_Announcements__WEBPACK_IMPORTED_MODULE_10__["default"], {}), page === "reports" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_Reports__WEBPACK_IMPORTED_MODULE_5__["default"], {}), page === "settings" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_Settings__WEBPACK_IMPORTED_MODULE_6__["default"], {}), page === "archive" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_Archive__WEBPACK_IMPORTED_MODULE_7__["default"], {}), page === "profile" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_Profile__WEBPACK_IMPORTED_MODULE_8__["default"], {
           user: user,
           onLogout: onLogout
-        })]
+        }), page === "notifications" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_NotificationsPage__WEBPACK_IMPORTED_MODULE_11__["default"], {})]
       })]
     })]
   });
@@ -81793,13 +81909,37 @@ function ConfirmModal(_ref) {
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
         className: "confirm-actions",
+        style: {
+          display: 'flex',
+          gap: '1rem',
+          justifyContent: 'flex-end',
+          marginTop: '1.5rem'
+        },
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
           className: "btn-cancel",
           onClick: onCancel,
+          style: {
+            backgroundColor: '#ef4444',
+            color: 'white',
+            border: 'none',
+            padding: '8px 16px',
+            borderRadius: '4px',
+            cursor: 'pointer',
+            fontWeight: 'bold'
+          },
           children: cancelText
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
           className: "btn-confirm ".concat(type),
           onClick: onConfirm,
+          style: {
+            backgroundColor: '#22c55e',
+            color: 'white',
+            border: 'none',
+            padding: '8px 16px',
+            borderRadius: '4px',
+            cursor: 'pointer',
+            fontWeight: 'bold'
+          },
           children: confirmText
         })]
       })]
@@ -81828,8 +81968,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-chartjs-2 */ "./node_modules/react-chartjs-2/dist/index.js");
 /* harmony import */ var chart_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! chart.js */ "./node_modules/chart.js/dist/chart.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/activity.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/bell.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-plus.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/building-2.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/calendar.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/clock.js");
@@ -81837,8 +81977,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/graduation-cap.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/info.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/trending-up.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/users.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/zap.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user-plus.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/users.js");
 /* harmony import */ var _utils_ExportUtils__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../utils/ExportUtils */ "./resources/js/utils/ExportUtils.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
@@ -81906,7 +82046,8 @@ function Dashboard(_ref2) {
       totalCourses: 0,
       totalDepartments: 0,
       pendingStudents: 0,
-      pendingFaculty: 0
+      pendingFaculty: 0,
+      facultyLoads: {}
     }),
     _useState8 = _slicedToArray(_useState7, 2),
     dashboardData = _useState8[0],
@@ -81975,22 +82116,23 @@ function Dashboard(_ref2) {
   }();
   var fetchDashboardData = /*#__PURE__*/function () {
     var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
-      var _yield$Promise$all, _yield$Promise$all2, studentsRes, facultiesRes, countsRes, annRes, settingsRes, logsRes, _t2;
+      var _yield$Promise$all, _yield$Promise$all2, studentsRes, facultiesRes, countsRes, annRes, settingsRes, logsRes, loadsRes, _t2;
       return _regenerator().w(function (_context2) {
         while (1) switch (_context2.p = _context2.n) {
           case 0:
             _context2.p = 0;
             _context2.n = 1;
-            return Promise.all([axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/students"), axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculties"), axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/dashboard-counts"), axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/announcements/dashboard"), axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/system/settings"), axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/system/audit-logs")]);
+            return Promise.all([axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/students"), axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculties"), axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/dashboard-counts"), axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/announcements/dashboard"), axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/system/settings"), axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/system/audit-logs"), axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculty/student-counts")]);
           case 1:
             _yield$Promise$all = _context2.v;
-            _yield$Promise$all2 = _slicedToArray(_yield$Promise$all, 6);
+            _yield$Promise$all2 = _slicedToArray(_yield$Promise$all, 7);
             studentsRes = _yield$Promise$all2[0];
             facultiesRes = _yield$Promise$all2[1];
             countsRes = _yield$Promise$all2[2];
             annRes = _yield$Promise$all2[3];
             settingsRes = _yield$Promise$all2[4];
             logsRes = _yield$Promise$all2[5];
+            loadsRes = _yield$Promise$all2[6];
             setStudents(studentsRes.data.filter(function (s) {
               return s.status !== "Archived";
             }));
@@ -82007,7 +82149,8 @@ function Dashboard(_ref2) {
               }).length,
               pendingFaculty: facultiesRes.data.filter(function (f) {
                 return f.status === 'Pending';
-              }).length
+              }).length,
+              facultyLoads: loadsRes.data || {}
             });
             setAnnouncements(annRes.data);
             setAuditLogs(logsRes.data || []);
@@ -82195,12 +82338,12 @@ function Dashboard(_ref2) {
             },
             children: activeSemester ? "Academic Year 2025-2026 | ".concat(activeSemester) : 'System Overview'
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)("div", {
           style: {
             display: 'flex',
             gap: '12px'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("button", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("button", {
             className: "export-btn",
             onClick: handleExport,
             style: {
@@ -82219,28 +82362,7 @@ function Dashboard(_ref2) {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
               size: 18
             }), " Export Data"]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("button", {
-            className: "primary-btn",
-            onClick: function onClick() {
-              return window.history.pushState({}, '', '/announcements');
-            },
-            style: {
-              display: 'flex',
-              alignItems: 'center',
-              gap: '8px',
-              padding: '10px 20px',
-              background: '#6366f1',
-              color: '#fff',
-              border: 'none',
-              borderRadius: '10px',
-              cursor: 'pointer',
-              fontWeight: 600,
-              boxShadow: '0 4px 6px -1px rgba(99, 102, 241, 0.2)'
-            },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_16__["default"], {
-              size: 18
-            }), " New Broadcast"]
-          })]
+          })
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)("div", {
         style: {
@@ -82250,15 +82372,25 @@ function Dashboard(_ref2) {
           marginTop: '1.5rem'
         },
         children: [{
-          label: 'Create Schedule',
+          label: 'Enroll Student',
+          icon: lucide_react__WEBPACK_IMPORTED_MODULE_15__["default"],
+          path: '/students',
+          color: '#6366f1'
+        }, {
+          label: 'Create Subject',
+          icon: lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"],
+          path: '/subjects',
+          color: '#14b8a6'
+        }, {
+          label: 'Set Schedule',
           icon: lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"],
           path: '/subjects',
           color: '#f59e0b'
         }, {
-          label: 'Post Announcement',
-          icon: lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"],
-          path: '/announcements',
-          color: '#8b5cf6'
+          label: 'System Logs',
+          icon: lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"],
+          path: '/reports',
+          color: '#ec4899'
         }].map(function (action, i) {
           return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("button", {
             onClick: function onClick() {
@@ -82322,13 +82454,13 @@ function Dashboard(_ref2) {
         }, {
           label: 'Total Faculty',
           value: dashboardData.totalFaculty,
-          icon: lucide_react__WEBPACK_IMPORTED_MODULE_15__["default"],
+          icon: lucide_react__WEBPACK_IMPORTED_MODULE_16__["default"],
           color: '#14b8a6',
           trend: '+2.4%'
         }, {
           label: 'Active Courses',
           value: dashboardData.totalCourses,
-          icon: lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"],
+          icon: lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"],
           color: '#f59e0b',
           trend: '+1.0%'
         }, {
@@ -82589,14 +82721,14 @@ function Dashboard(_ref2) {
               }, "y-c-".concat(chartKey))
             })]
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)("div", {
           className: "sidebar-widgets",
           style: {
             display: 'flex',
             flexDirection: 'column',
             gap: '1.5rem'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("div", {
             className: "widget-box",
             style: {
               background: '#fff',
@@ -82692,78 +82824,7 @@ function Dashboard(_ref2) {
                 children: "No recent activities found."
               })
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("div", {
-            className: "widget-box",
-            style: {
-              background: '#1e293b',
-              padding: '1.5rem',
-              borderRadius: '16px',
-              color: '#fff'
-            },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("h3", {
-              style: {
-                margin: '0 0 1.25rem 0',
-                fontSize: '1.1rem',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '10px'
-              },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                size: 20,
-                style: {
-                  color: '#fbbf24'
-                }
-              }), " Broadcasts"]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)("div", {
-              style: {
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '1rem'
-              },
-              children: announcements.slice(0, 3).map(function (ann, i) {
-                var _ann$content;
-                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("div", {
-                  style: {
-                    paddingBottom: i < 2 ? '1rem' : 0,
-                    borderBottom: i < 2 ? '1px solid rgba(255,255,255,0.1)' : 'none'
-                  },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)("h4", {
-                    style: {
-                      margin: '0 0 4px 0',
-                      fontSize: '0.9rem',
-                      color: '#f8fafc'
-                    },
-                    children: ann.title
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsxs)("p", {
-                    style: {
-                      margin: 0,
-                      fontSize: '0.8rem',
-                      color: '#94a3b8',
-                      lineHeight: '1.4'
-                    },
-                    children: [(_ann$content = ann.content) === null || _ann$content === void 0 ? void 0 : _ann$content.substring(0, 80), "..."]
-                  })]
-                }, i);
-              })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_18__.jsx)("button", {
-              onClick: function onClick() {
-                window.history.pushState({}, '', '/announcements');
-                window.dispatchEvent(new PopStateEvent('popstate'));
-              },
-              style: {
-                width: '100%',
-                marginTop: '1.25rem',
-                padding: '8px',
-                background: 'rgba(255,255,255,0.05)',
-                border: '1px solid rgba(255,255,255,0.1)',
-                borderRadius: '8px',
-                color: '#cbd5e1',
-                fontSize: '0.8rem',
-                cursor: 'pointer'
-              },
-              children: "View Bulletin Board"
-            })]
-          })]
+          })
         })]
       })]
     })]
@@ -83200,15 +83261,23 @@ function Faculty() {
     _useState18 = _slicedToArray(_useState17, 2),
     activityLogs = _useState18[0],
     setActivityLogs = _useState18[1];
-  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState20 = _slicedToArray(_useState19, 2),
-    showCredentials = _useState20[0],
-    setShowCredentials = _useState20[1];
+    allSubjects = _useState20[0],
+    setAllSubjects = _useState20[1];
+  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState22 = _slicedToArray(_useState21, 2),
+    assignedSubjects = _useState22[0],
+    setAssignedSubjects = _useState22[1];
+  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
+    _useState24 = _slicedToArray(_useState23, 2),
+    facultyStudentCounts = _useState24[0],
+    setFacultyStudentCounts = _useState24[1];
   var _useToast = (0,_useToast__WEBPACK_IMPORTED_MODULE_9__.useToast)(),
     toasts = _useToast.toasts,
     addToast = _useToast.addToast,
     removeToast = _useToast.removeToast;
-  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+  var _useState25 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
       first_name: "",
       middle_name: "",
       last_name: "",
@@ -83222,12 +83291,13 @@ function Faculty() {
       employment_type: "Full-Time",
       date_hired: "",
       office_phone: "",
-      specialization: ""
+      specialization: "",
+      status: "Active"
     }),
-    _useState22 = _slicedToArray(_useState21, 2),
-    form = _useState22[0],
-    setForm = _useState22[1];
-  var fetchFaculties = /*#__PURE__*/function () {
+    _useState26 = _slicedToArray(_useState25, 2),
+    form = _useState26[0],
+    setForm = _useState26[1];
+  var fetchDepartments = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
       var res, _t;
       return _regenerator().w(function (_context) {
@@ -83235,26 +83305,29 @@ function Faculty() {
           case 0:
             _context.p = 0;
             _context.n = 1;
-            return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculties");
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/departments");
           case 1:
             res = _context.v;
-            setFaculties(res.data);
+            // Filter for active departments if applicable, otherwise set all
+            setDepartmentsList(Array.isArray(res.data) ? res.data.filter(function (d) {
+              return d.status !== 'Archived';
+            }) : []);
             _context.n = 3;
             break;
           case 2:
             _context.p = 2;
             _t = _context.v;
-            console.error(_t);
+            console.error("Failed to fetch departments:", _t);
           case 3:
             return _context.a(2);
         }
       }, _callee, null, [[0, 2]]);
     }));
-    return function fetchFaculties() {
+    return function fetchDepartments() {
       return _ref.apply(this, arguments);
     };
   }();
-  var fetchDepartments = /*#__PURE__*/function () {
+  var fetchFaculties = /*#__PURE__*/function () {
     var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
       var res, _t2;
       return _regenerator().w(function (_context2) {
@@ -83262,12 +83335,10 @@ function Faculty() {
           case 0:
             _context2.p = 0;
             _context2.n = 1;
-            return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/departments");
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculties");
           case 1:
             res = _context2.v;
-            setDepartmentsList(res.data.filter(function (d) {
-              return d.status !== "Archived";
-            }));
+            setFaculties(res.data);
             _context2.n = 3;
             break;
           case 2:
@@ -83279,75 +83350,93 @@ function Faculty() {
         }
       }, _callee2, null, [[0, 2]]);
     }));
-    return function fetchDepartments() {
+    return function fetchFaculties() {
       return _ref2.apply(this, arguments);
+    };
+  }();
+  var fetchFacultyCounts = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3() {
+      var res, _t3;
+      return _regenerator().w(function (_context3) {
+        while (1) switch (_context3.p = _context3.n) {
+          case 0:
+            _context3.p = 0;
+            _context3.n = 1;
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculty/student-counts");
+          case 1:
+            res = _context3.v;
+            setFacultyStudentCounts(res.data);
+            _context3.n = 3;
+            break;
+          case 2:
+            _context3.p = 2;
+            _t3 = _context3.v;
+            console.error(_t3);
+          case 3:
+            return _context3.a(2);
+        }
+      }, _callee3, null, [[0, 2]]);
+    }));
+    return function fetchFacultyCounts() {
+      return _ref3.apply(this, arguments);
     };
   }();
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     fetchFaculties();
     fetchDepartments();
+    fetchFacultyCounts();
   }, []);
   var positions = ["Professor", "Associate Professor", "Assistant Professor", "Lecturer", "Instructor", "Senior Lecturer", "Dean", "Department Head", "Coordinator"];
   var employmentTypes = ["Full-Time", "Part-Time", "Adjunct"];
   var handleSubmit = /*#__PURE__*/function () {
-    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3(e) {
-      var payload, res, _err$response, errs, _t3;
-      return _regenerator().w(function (_context3) {
-        while (1) switch (_context3.p = _context3.n) {
+    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4(e) {
+      var payload, _err$response, errs, _t4;
+      return _regenerator().w(function (_context4) {
+        while (1) switch (_context4.p = _context4.n) {
           case 0:
             e.preventDefault();
-            _context3.p = 1;
-            payload = _objectSpread({}, form);
+            _context4.p = 1;
+            payload = _objectSpread(_objectSpread({}, form), {}, {
+              assigned_subjects: assignedSubjects
+            });
             if (!editingId) {
-              _context3.n = 3;
+              _context4.n = 3;
               break;
             }
-            _context3.n = 2;
+            _context4.n = 2;
             return axios__WEBPACK_IMPORTED_MODULE_1___default().put("/api/faculties/".concat(editingId), payload);
           case 2:
             addToast('Faculty updated successfully!', 'success');
-            _context3.n = 5;
-            break;
           case 3:
-            _context3.n = 4;
-            return axios__WEBPACK_IMPORTED_MODULE_1___default().post('/api/faculties', payload);
-          case 4:
-            res = _context3.v;
-            addToast('Faculty member added successfully!', 'success');
-            if (res.data.credentials) {
-              setShowCredentials(res.data.credentials);
-            }
-          case 5:
-            _context3.n = 6;
+            _context4.n = 4;
             return fetchFaculties();
-          case 6:
-            _context3.n = 7;
+          case 4:
+            _context4.n = 5;
+            return fetchFacultyCounts();
+          case 5:
+            _context4.n = 6;
             return refreshCounts();
-          case 7:
+          case 6:
             window.dispatchEvent(new CustomEvent("dataUpdated", {
               detail: {
                 type: "faculties"
               }
             }));
-            if (!editingId) {
-              // Keep form open if showing credentials
-            } else {
-              closeForm();
-            }
-            _context3.n = 9;
+            closeForm();
+            _context4.n = 8;
             break;
-          case 8:
-            _context3.p = 8;
-            _t3 = _context3.v;
-            errs = (_err$response = _t3.response) !== null && _err$response !== void 0 && (_err$response = _err$response.data) !== null && _err$response !== void 0 && _err$response.errors ? Object.values(_t3.response.data.errors).flat().join(' ') : '';
+          case 7:
+            _context4.p = 7;
+            _t4 = _context4.v;
+            errs = (_err$response = _t4.response) !== null && _err$response !== void 0 && (_err$response = _err$response.data) !== null && _err$response !== void 0 && _err$response.errors ? Object.values(_t4.response.data.errors).flat().join(' ') : '';
             addToast('Failed to save. ' + errs, 'error');
-          case 9:
-            return _context3.a(2);
+          case 8:
+            return _context4.a(2);
         }
-      }, _callee3, null, [[1, 8]]);
+      }, _callee4, null, [[1, 7]]);
     }));
     return function handleSubmit(_x) {
-      return _ref3.apply(this, arguments);
+      return _ref4.apply(this, arguments);
     };
   }();
   var openForm = function openForm() {
@@ -83370,6 +83459,16 @@ function Faculty() {
         office_phone: faculty.office_phone || "",
         specialization: faculty.specialization || ""
       });
+      // Load assigned subjects
+      axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/subjects?faculty_id=".concat(faculty.id)).then(function (res) {
+        setAssignedSubjects(res.data.filter(function (s) {
+          return s.faculty_id === faculty.id;
+        }).map(function (s) {
+          return s.id;
+        }));
+      })["catch"](function () {
+        return setAssignedSubjects([]);
+      });
     } else {
       setEditingId(null);
       setForm({
@@ -83388,9 +83487,15 @@ function Faculty() {
         office_phone: "",
         specialization: ""
       });
+      setAssignedSubjects([]);
     }
     setActivityLogs([]);
-    setShowCredentials(null);
+    // Fetch all active subjects for assignment
+    axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/subjects").then(function (res) {
+      return setAllSubjects(res.data.filter(function (s) {
+        return s.status === 'Active';
+      }));
+    })["catch"](function () {});
     fetchDepartments();
     setShowForm(true);
   };
@@ -83398,6 +83503,7 @@ function Faculty() {
     setShowForm(false);
     setEditingId(null);
     setViewMode(null);
+    setAssignedSubjects([]);
     setForm({
       first_name: "",
       middle_name: "",
@@ -83475,13 +83581,13 @@ function Faculty() {
     color: "#3C3489",
     count: counts.all
   }];
-  function StatusTab(_ref4) {
-    var id = _ref4.id,
-      label = _ref4.label,
-      color = _ref4.color,
-      count = _ref4.count,
-      isActive = _ref4.isActive,
-      _onClick = _ref4.onClick;
+  function StatusTab(_ref5) {
+    var id = _ref5.id,
+      label = _ref5.label,
+      color = _ref5.color,
+      count = _ref5.count,
+      isActive = _ref5.isActive,
+      _onClick = _ref5.onClick;
     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("button", {
       type: "button",
       onClick: function onClick() {
@@ -83593,25 +83699,26 @@ function Faculty() {
                 })
               })]
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("button", {
-              className: "primary-btn",
+              className: "btn-primary",
               onClick: function onClick() {
                 return openForm();
               },
               style: {
                 display: 'flex',
                 alignItems: 'center',
-                gap: '5px',
-                padding: '8px 16px',
-                background: '#3b82f6',
+                gap: '8px',
+                padding: '10px 20px',
+                background: 'linear-gradient(135deg,#6366f1,#4f46e5)',
                 color: '#fff',
                 border: 'none',
-                borderRadius: '6px',
+                borderRadius: '10px',
+                fontWeight: 700,
                 cursor: 'pointer',
-                fontWeight: '600'
+                boxShadow: '0 4px 12px rgba(99,102,241,0.25)'
               },
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                size: 16
-              }), " New Faculty"]
+                size: 18
+              }), " Register Faculty"]
             })]
           })
         }), showForm && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
@@ -83624,92 +83731,11 @@ function Faculty() {
             },
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("h3", {
               className: "modal-title",
-              children: [editingId ? "Edit Faculty" : "New Faculty Member", editingId && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("span", {
+              children: ["Edit Faculty", editingId && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("span", {
                 className: "modal-header-id",
                 children: [" | ", form.employee_id || form.faculty_id]
               })]
-            }), showCredentials ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-              className: "credentials-box",
-              style: {
-                background: '#f0fdf4',
-                border: '1px solid #bbf7d0',
-                padding: '1.5rem',
-                borderRadius: '12px',
-                marginBottom: '1.5rem',
-                textAlign: 'center'
-              },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("h4", {
-                style: {
-                  color: '#166534',
-                  marginTop: 0
-                },
-                children: "\u2705 Faculty Account Created!"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
-                style: {
-                  color: '#15803d',
-                  marginBottom: '1rem'
-                },
-                children: "Issue these credentials to the faculty member."
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                style: {
-                  display: 'grid',
-                  gridTemplateColumns: '1fr 1fr',
-                  gap: '1rem',
-                  background: '#fff',
-                  padding: '1rem',
-                  borderRadius: '8px',
-                  border: '1px dashed #22c55e'
-                },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("small", {
-                    style: {
-                      color: '#64748b',
-                      display: 'block',
-                      textTransform: 'uppercase',
-                      fontSize: '10px',
-                      fontWeight: 700
-                    },
-                    children: "Faculty ID (Username)"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("strong", {
-                    style: {
-                      fontSize: '1.2rem',
-                      color: '#1e293b'
-                    },
-                    children: showCredentials.username
-                  })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("small", {
-                    style: {
-                      color: '#64748b',
-                      display: 'block',
-                      textTransform: 'uppercase',
-                      fontSize: '10px',
-                      fontWeight: 700
-                    },
-                    children: "Default Password"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("strong", {
-                    style: {
-                      fontSize: '1.2rem',
-                      color: '#1e293b'
-                    },
-                    children: showCredentials.password
-                  })]
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
-                type: "button",
-                onClick: closeForm,
-                style: {
-                  marginTop: '1.5rem',
-                  padding: '8px 24px',
-                  background: '#166534',
-                  color: '#fff',
-                  border: 'none',
-                  borderRadius: '6px',
-                  cursor: 'pointer'
-                },
-                children: "Done"
-              })]
-            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("form", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("form", {
               onSubmit: handleSubmit,
               className: "modal-form",
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("h4", {
@@ -83945,6 +83971,82 @@ function Faculty() {
                     }));
                   }
                 })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("h4", {
+                className: "section-heading",
+                children: "\uD83D\uDCDA Subject Assignment"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+                className: "form-group",
+                style: {
+                  marginBottom: "1.5rem"
+                },
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+                  style: {
+                    fontSize: "0.85rem",
+                    color: "#64748b",
+                    marginBottom: "8px"
+                  },
+                  children: "Select subjects to assign to this faculty member."
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+                  style: {
+                    maxHeight: "160px",
+                    overflowY: "auto",
+                    border: "1px solid #e2e8f0",
+                    borderRadius: "8px",
+                    padding: "10px",
+                    background: "#f8fafc"
+                  },
+                  children: [allSubjects.map(function (sub) {
+                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("label", {
+                      style: {
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "8px",
+                        padding: "6px 0",
+                        cursor: "pointer",
+                        borderBottom: "1px solid #f1f5f9"
+                      },
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
+                        type: "checkbox",
+                        checked: assignedSubjects.includes(sub.id),
+                        onChange: function onChange(e) {
+                          if (e.target.checked) setAssignedSubjects([].concat(_toConsumableArray(assignedSubjects), [sub.id]));else setAssignedSubjects(assignedSubjects.filter(function (id) {
+                            return id !== sub.id;
+                          }));
+                        }
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
+                        style: {
+                          fontSize: "0.85rem",
+                          fontWeight: 600,
+                          color: "#1e293b"
+                        },
+                        children: sub.code
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("span", {
+                        style: {
+                          fontSize: "0.8rem",
+                          color: "#64748b"
+                        },
+                        children: ["- ", sub.name]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("span", {
+                        style: {
+                          fontSize: "0.75rem",
+                          fontWeight: 700,
+                          background: "#eef2ff",
+                          color: "#6366f1",
+                          padding: "2px 6px",
+                          borderRadius: "4px",
+                          marginLeft: "auto"
+                        },
+                        children: ["Section: ", sub.section || 'TBA']
+                      })]
+                    }, sub.id);
+                  }), allSubjects.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+                    style: {
+                      fontSize: "0.8rem",
+                      color: "#94a3b8"
+                    },
+                    children: "No active subjects available."
+                  })]
+                })]
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
                 className: "modal-actions",
                 style: {
@@ -83967,7 +84069,7 @@ function Faculty() {
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
                     type: "submit",
                     className: "btn-submit",
-                    children: editingId ? "Update Faculty" : "Create Account"
+                    children: "Update Faculty"
                   })]
                 })
               })]
@@ -83993,6 +84095,8 @@ function Faculty() {
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
                   children: "DEPARTMENT"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
+                  children: "STUDENT LOAD"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
                   children: "EMPLOYMENT TYPE"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
                   children: "Status"
@@ -84004,6 +84108,7 @@ function Faculty() {
               children: filtered.map(function (f, index) {
                 var fullName = [f.first_name, f.middle_name, f.last_name].filter(Boolean).join(" ") || f.name || "N/A";
                 var isSelected = selectedIds.includes(f.id);
+                var studentCount = facultyStudentCounts[f.id] || 0;
                 return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("tr", {
                   className: isSelected ? "row-selected" : "",
                   children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
@@ -84024,6 +84129,18 @@ function Faculty() {
                       children: ["Registered ", new Date(f.created_at).toLocaleDateString()]
                     }) : f.department || "—"
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("span", {
+                      style: {
+                        padding: '4px 8px',
+                        borderRadius: '4px',
+                        fontSize: '0.75rem',
+                        fontWeight: 600,
+                        background: studentCount >= 50 ? '#fee2e2' : '#f1f5f9',
+                        color: studentCount >= 50 ? '#ef4444' : '#64748b'
+                      },
+                      children: [studentCount, "/50 Students"]
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
                     children: f.status === "Pending" && !f.employment_type ? "—" : f.employment_type || "—"
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
                     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
@@ -84031,29 +84148,50 @@ function Faculty() {
                       children: f.status
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
                       className: "action-buttons",
-                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.Fragment, {
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
-                          onClick: function onClick() {
-                            return openForm(f);
-                          },
-                          className: "btn-icon btn-edit",
-                          title: "Edit",
-                          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                            size: 16
-                          })
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
-                          onClick: function onClick() {
-                            return handleArchive(f);
-                          },
-                          className: "btn-icon btn-archive",
-                          title: "Archive",
-                          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
-                            size: 16
-                          })
-                        })]
-                      })
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
+                        onClick: function onClick() {
+                          return openForm(f);
+                        },
+                        className: "btn-icon btn-edit",
+                        title: "Edit",
+                        style: {
+                          backgroundColor: '#eef2ff',
+                          color: '#6366f1',
+                          border: 'none',
+                          padding: '6px',
+                          borderRadius: '4px',
+                          cursor: 'pointer',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center'
+                        },
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                          size: 16
+                        })
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
+                        onClick: function onClick() {
+                          return handleArchive(f);
+                        },
+                        className: "btn-icon btn-archive",
+                        title: "Archive",
+                        style: {
+                          backgroundColor: '#ef4444',
+                          color: 'white',
+                          border: 'none',
+                          padding: '6px',
+                          borderRadius: '4px',
+                          cursor: 'pointer',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center'
+                        },
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                          size: 16,
+                          color: "white"
+                        })
+                      })]
                     })
                   })]
                 }, f.id);
@@ -84070,20 +84208,20 @@ function Faculty() {
       title: confirmModal.title,
       message: confirmModal.message,
       type: confirmModal.type,
-      onConfirm: /*#__PURE__*/_asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4() {
-        var _t4;
-        return _regenerator().w(function (_context4) {
-          while (1) switch (_context4.p = _context4.n) {
+      onConfirm: /*#__PURE__*/_asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee5() {
+        var _t5;
+        return _regenerator().w(function (_context5) {
+          while (1) switch (_context5.p = _context5.n) {
             case 0:
-              _context4.p = 0;
-              _context4.n = 1;
+              _context5.p = 0;
+              _context5.n = 1;
               return axios__WEBPACK_IMPORTED_MODULE_1___default().patch("/api/faculties/".concat(confirmModal.id, "/archive"));
             case 1:
               addToast('Faculty archived.', 'info');
-              _context4.n = 2;
+              _context5.n = 2;
               return fetchFaculties();
             case 2:
-              _context4.n = 3;
+              _context5.n = 3;
               return refreshCounts();
             case 3:
               window.dispatchEvent(new CustomEvent("dataUpdated", {
@@ -84091,11 +84229,11 @@ function Faculty() {
                   type: "faculties"
                 }
               }));
-              _context4.n = 5;
+              _context5.n = 5;
               break;
             case 4:
-              _context4.p = 4;
-              _t4 = _context4.v;
+              _context5.p = 4;
+              _t5 = _context5.v;
               addToast('Action failed.', 'error');
             case 5:
               setConfirmModal({
@@ -84106,9 +84244,9 @@ function Faculty() {
                 message: ""
               });
             case 6:
-              return _context4.a(2);
+              return _context5.a(2);
           }
-        }, _callee4, null, [[0, 4]]);
+        }, _callee5, null, [[0, 4]]);
       })),
       onCancel: function onCancel() {
         return setConfirmModal({
@@ -84151,11 +84289,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/graduation-cap.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/hash.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/map-pin.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/plus.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/trending-up.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/users.js");
-/* harmony import */ var _utils_ExportUtils__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../utils/ExportUtils */ "./resources/js/utils/ExportUtils.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/trending-up.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/users.js");
+/* harmony import */ var _utils_ExportUtils__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../utils/ExportUtils */ "./resources/js/utils/ExportUtils.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
@@ -84224,7 +84361,7 @@ function FacultyDashboard(_ref) {
     setLoading(true);
     var fetchData = /*#__PURE__*/function () {
       var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
-        var profileId, _yield$Promise$all, _yield$Promise$all2, schedRes, stuRes, annRes, myAnnRes, sections, _profileId, subRes, _t, _t2;
+        var profileId, _yield$Promise$all, _yield$Promise$all2, schedRes, stuRes, annRes, myAnnRes, sections, facultyId, subRes, _t, _t2;
         return _regenerator().w(function (_context) {
           while (1) switch (_context.p = _context.n) {
             case 0:
@@ -84248,7 +84385,7 @@ function FacultyDashboard(_ref) {
               // Process section breakdown
               sections = {};
               stuRes.data.forEach(function (s) {
-                sections[s.section] = (sections[s.section] || 0) + 1;
+                if (s.section) sections[s.section] = (sections[s.section] || 0) + 1;
               });
               setSectionData(Object.entries(sections).map(function (_ref3) {
                 var _ref4 = _slicedToArray(_ref3, 2),
@@ -84269,27 +84406,24 @@ function FacultyDashboard(_ref) {
               console.error("Faculty Dashboard fetch error:", _t);
               // Fallback
               _context.p = 3;
-              _profileId = user.profile_id || user.id;
+              facultyId = user.profile_id || user.id;
               _context.n = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculty/".concat(_profileId, "/subjects"));
+              return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculty/".concat(facultyId, "/subjects"));
             case 4:
               subRes = _context.v;
               setSchedule(subRes.data.map(function (s) {
-                var _s$room;
                 return {
                   id: s.id,
                   code: s.code,
                   name: s.name,
                   units: s.units || 3,
-                  room: ((_s$room = s.room) === null || _s$room === void 0 ? void 0 : _s$room.name) || 'TBA',
+                  room: s.room || 'TBA',
                   day: s.schedule_day || 'TBA',
                   time_start: s.time_start,
                   time_end: s.time_end,
-                  time_display: s.time_start && s.time_end ? "".concat(s.time_start, " - ").concat(s.time_end) : 'TBA',
+                  time_display: s.time_display || 'TBA',
                   section: s.section,
-                  semester: s.semester,
-                  academic_year: s.academic_year,
-                  enrolled_count: 0
+                  enrolled_count: s.enrolled_count || 0
                 };
               }));
               setTotalSubjects(subRes.data.length);
@@ -84313,6 +84447,13 @@ function FacultyDashboard(_ref) {
       };
     }();
     fetchData();
+    var handler = function handler() {
+      return fetchData();
+    };
+    window.addEventListener('dataUpdated', handler);
+    return function () {
+      return window.removeEventListener('dataUpdated', handler);
+    };
   }, [user]);
   var getTodaySchedule = function getTodaySchedule() {
     var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -84335,9 +84476,9 @@ function FacultyDashboard(_ref) {
     padding: '12px 14px',
     fontSize: '0.85rem'
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
     className: "faculty-dash",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
       className: "dash-header",
       style: {
         display: 'flex',
@@ -84345,16 +84486,16 @@ function FacultyDashboard(_ref) {
         alignItems: 'center',
         marginBottom: '20px'
       },
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("h2", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("h2", {
           children: ["Welcome, ", (user === null || user === void 0 ? void 0 : user.name) || (user === null || user === void 0 ? void 0 : user.first_name) || "Faculty", "!"]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("p", {
           className: "subtitle",
           style: {
             margin: 0
           },
           children: ["Faculty Dashboard \u2014 ", (user === null || user === void 0 ? void 0 : user.department) || "Department"]
-        }), (facultyInfo === null || facultyInfo === void 0 ? void 0 : facultyInfo.position) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("p", {
+        }), (facultyInfo === null || facultyInfo === void 0 ? void 0 : facultyInfo.position) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("p", {
           style: {
             margin: '5px 0 0',
             fontSize: '0.85rem',
@@ -84362,14 +84503,14 @@ function FacultyDashboard(_ref) {
           },
           children: ["Position: ", facultyInfo.position]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
         style: {
           display: 'flex',
           gap: '12px'
         },
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("button", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("button", {
           onClick: function onClick() {
-            return (0,_utils_ExportUtils__WEBPACK_IMPORTED_MODULE_15__.exportToExcel)({
+            return (0,_utils_ExportUtils__WEBPACK_IMPORTED_MODULE_14__.exportToExcel)({
               filename: 'Faculty_Schedule',
               title: "Teaching Schedule: ".concat((user === null || user === void 0 ? void 0 : user.name) || 'Faculty'),
               headers: ['Code', 'Subject', 'Section', 'Day', 'Time', 'Room', 'Students'],
@@ -84398,12 +84539,12 @@ function FacultyDashboard(_ref) {
             fontWeight: 600,
             cursor: 'pointer'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
             size: 18
           }), " Export Schedule"]
         })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
       className: "stats-grid",
       style: {
         display: 'grid',
@@ -84411,7 +84552,7 @@ function FacultyDashboard(_ref) {
         gap: '1.5rem',
         marginBottom: '2rem'
       },
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
         style: {
           background: '#fff',
           padding: '1.5rem',
@@ -84419,14 +84560,14 @@ function FacultyDashboard(_ref) {
           border: '1px solid #e2e8f0',
           boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)'
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
           style: {
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'flex-start'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("p", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
               style: {
                 color: '#64748b',
                 fontSize: '0.85rem',
@@ -84435,7 +84576,7 @@ function FacultyDashboard(_ref) {
                 marginBottom: '8px'
               },
               children: "Total Subjects"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("h3", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("h3", {
               style: {
                 fontSize: '1.75rem',
                 fontWeight: 800,
@@ -84444,18 +84585,18 @@ function FacultyDashboard(_ref) {
               },
               children: totalSubjects
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
             style: {
               background: '#ecfdf5',
               color: '#10b981',
               padding: '10px',
               borderRadius: '12px'
             },
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
               size: 24
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
           style: {
             marginTop: '12px',
             fontSize: '0.8rem',
@@ -84464,11 +84605,11 @@ function FacultyDashboard(_ref) {
             alignItems: 'center',
             gap: '4px'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
             size: 14
           }), " Full workload"]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
         style: {
           background: '#fff',
           padding: '1.5rem',
@@ -84476,14 +84617,14 @@ function FacultyDashboard(_ref) {
           border: '1px solid #e2e8f0',
           boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)'
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
           style: {
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'flex-start'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("p", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
               style: {
                 color: '#64748b',
                 fontSize: '0.85rem',
@@ -84492,7 +84633,7 @@ function FacultyDashboard(_ref) {
                 marginBottom: '8px'
               },
               children: "Handling Students"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("h3", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("h3", {
               style: {
                 fontSize: '1.75rem',
                 fontWeight: 800,
@@ -84501,18 +84642,18 @@ function FacultyDashboard(_ref) {
               },
               children: studentCount
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
             style: {
               background: '#eef2ff',
               color: '#6366f1',
               padding: '10px',
               borderRadius: '12px'
             },
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_14__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
               size: 24
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
           style: {
             marginTop: '12px',
             fontSize: '0.8rem',
@@ -84520,7 +84661,7 @@ function FacultyDashboard(_ref) {
           },
           children: ["Across ", sectionData.length, " active sections"]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
         style: {
           background: '#fff',
           padding: '1.5rem',
@@ -84528,14 +84669,14 @@ function FacultyDashboard(_ref) {
           border: '1px solid #e2e8f0',
           boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)'
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
           style: {
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'flex-start'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("p", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
               style: {
                 color: '#64748b',
                 fontSize: '0.85rem',
@@ -84544,7 +84685,7 @@ function FacultyDashboard(_ref) {
                 marginBottom: '8px'
               },
               children: "Teaching Units"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("h3", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("h3", {
               style: {
                 fontSize: '1.75rem',
                 fontWeight: 800,
@@ -84553,18 +84694,18 @@ function FacultyDashboard(_ref) {
               },
               children: totalUnits
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
             style: {
               background: '#fffbeb',
               color: '#f59e0b',
               padding: '10px',
               borderRadius: '12px'
             },
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
               size: 24
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
           style: {
             marginTop: '12px',
             fontSize: '0.8rem',
@@ -84572,7 +84713,7 @@ function FacultyDashboard(_ref) {
           },
           children: "Current semester total"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
         style: {
           background: '#fff',
           padding: '1.5rem',
@@ -84580,14 +84721,14 @@ function FacultyDashboard(_ref) {
           border: '1px solid #e2e8f0',
           boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)'
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
           style: {
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'flex-start'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("p", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
               style: {
                 color: '#64748b',
                 fontSize: '0.85rem',
@@ -84596,7 +84737,7 @@ function FacultyDashboard(_ref) {
                 marginBottom: '8px'
               },
               children: "Announcements"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("h3", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("h3", {
               style: {
                 fontSize: '1.75rem',
                 fontWeight: 800,
@@ -84605,59 +84746,64 @@ function FacultyDashboard(_ref) {
               },
               children: myAnnouncements.length
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
             style: {
               background: '#fdf2f8',
               color: '#ec4899',
               padding: '10px',
               borderRadius: '12px'
             },
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
               size: 24
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
+          onClick: function onClick() {
+            window.history.pushState({}, '', '/faculty-subjects');
+            window.dispatchEvent(new PopStateEvent('popstate'));
+          },
           style: {
             marginTop: '12px',
             fontSize: '0.8rem',
             color: '#ec4899',
             display: 'flex',
             alignItems: 'center',
-            gap: '4px'
+            gap: '4px',
+            cursor: 'pointer'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
             size: 14
-          }), " View Broadcasts"]
+          }), " Post Announcement"]
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
       style: {
         display: 'grid',
         gridTemplateColumns: '1fr 320px',
         gap: '1.5rem',
         alignItems: 'start'
       },
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
         style: {
           display: 'flex',
           flexDirection: 'column',
           gap: '2rem'
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
           style: {
             background: '#f8fafc',
             padding: '1.5rem',
             borderRadius: '20px',
             border: '2px solid #e2e8f0'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
             style: {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
               marginBottom: '1rem'
             },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("h3", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("h3", {
               style: {
                 margin: 0,
                 display: 'flex',
@@ -84665,11 +84811,11 @@ function FacultyDashboard(_ref) {
                 gap: '10px',
                 color: '#1e293b'
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
                 size: 20,
                 color: "#6366f1"
               }), " Today's Schedule"]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
               style: {
                 fontSize: '0.85rem',
                 fontWeight: 700,
@@ -84684,14 +84830,14 @@ function FacultyDashboard(_ref) {
                 day: 'numeric'
               })
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
             style: {
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
               gap: '1rem'
             },
             children: todayClasses.length > 0 ? todayClasses.map(function (s, i) {
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                 style: {
                   background: '#fff',
                   padding: '1.25rem',
@@ -84699,20 +84845,20 @@ function FacultyDashboard(_ref) {
                   border: '1px solid #f1f5f9',
                   boxShadow: '0 2px 4px rgba(0,0,0,0.02)'
                 },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                   style: {
                     display: 'flex',
                     justifyContent: 'space-between',
                     marginBottom: '10px'
                   },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                     style: {
                       fontWeight: 800,
                       color: '#6366f1',
                       fontSize: '0.9rem'
                     },
                     children: s.code
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                     style: {
                       fontSize: '0.75rem',
                       fontWeight: 700,
@@ -84720,19 +84866,19 @@ function FacultyDashboard(_ref) {
                     },
                     children: s.section
                   })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("h4", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("h4", {
                   style: {
                     margin: '0 0 12px 0',
                     fontSize: '1rem',
                     color: '#334155'
                   },
                   children: s.name
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                   style: {
                     display: 'flex',
                     gap: '15px'
                   },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                     style: {
                       display: 'flex',
                       alignItems: 'center',
@@ -84740,10 +84886,10 @@ function FacultyDashboard(_ref) {
                       fontSize: '0.8rem',
                       color: '#64748b'
                     },
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
                       size: 14
                     }), " ", s.time_display]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                     style: {
                       display: 'flex',
                       alignItems: 'center',
@@ -84751,13 +84897,13 @@ function FacultyDashboard(_ref) {
                       fontSize: '0.8rem',
                       color: '#64748b'
                     },
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
                       size: 14
                     }), " ", s.room]
                   })]
                 })]
               }, i);
-            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
               style: {
                 gridColumn: '1/-1',
                 textAlign: 'center',
@@ -84767,8 +84913,8 @@ function FacultyDashboard(_ref) {
               children: "No classes scheduled for today. Enjoy your day!"
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("h3", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("h3", {
             style: {
               display: 'flex',
               alignItems: 'center',
@@ -84776,11 +84922,11 @@ function FacultyDashboard(_ref) {
               marginBottom: '1.25rem',
               color: '#1e293b'
             },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
               size: 22,
               color: "#14b8a6"
             }), " Weekly Teaching Workload"]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
             style: {
               background: '#fff',
               border: '1px solid #e2e8f0',
@@ -84788,19 +84934,19 @@ function FacultyDashboard(_ref) {
               overflow: 'hidden',
               boxShadow: '0 1px 3px rgba(0,0,0,0.05)'
             },
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("table", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("table", {
               style: {
                 width: '100%',
                 borderCollapse: 'collapse'
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("thead", {
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("tr", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("thead", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("tr", {
                   style: {
                     background: '#f8fafc',
                     borderBottom: '2px solid #f1f5f9'
                   },
                   children: ['Code', 'Subject', 'Section', 'Day', 'Time', 'Room', 'Students'].map(function (h) {
-                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("th", {
+                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("th", {
                       style: _objectSpread(_objectSpread({}, thStyle), {}, {
                         textAlign: h === 'Students' ? 'center' : 'left'
                       }),
@@ -84808,9 +84954,9 @@ function FacultyDashboard(_ref) {
                     }, h);
                   })
                 })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("tbody", {
-                children: schedule.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("tr", {
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("td", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("tbody", {
+                children: schedule.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("tr", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("td", {
                     colSpan: "7",
                     style: {
                       padding: '40px',
@@ -84821,13 +84967,13 @@ function FacultyDashboard(_ref) {
                   })
                 }) : schedule.map(function (s, i) {
                   var _s$enrolled_count;
-                  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("tr", {
+                  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("tr", {
                     style: {
                       borderBottom: '1px solid #f8fafc'
                     },
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("td", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("td", {
                       style: tdStyle,
-                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                         style: {
                           fontWeight: 700,
                           color: '#6366f1',
@@ -84837,15 +84983,15 @@ function FacultyDashboard(_ref) {
                         },
                         children: s.code
                       })
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("td", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("td", {
                       style: _objectSpread(_objectSpread({}, tdStyle), {}, {
                         fontWeight: 600,
                         color: '#334155'
                       }),
                       children: s.name
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("td", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("td", {
                       style: tdStyle,
-                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                         style: {
                           background: '#f1f5f9',
                           color: '#475569',
@@ -84856,25 +85002,25 @@ function FacultyDashboard(_ref) {
                         },
                         children: s.section
                       })
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("td", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("td", {
                       style: _objectSpread(_objectSpread({}, tdStyle), {}, {
                         color: '#64748b'
                       }),
                       children: s.day
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("td", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("td", {
                       style: _objectSpread(_objectSpread({}, tdStyle), {}, {
                         color: '#64748b'
                       }),
                       children: s.time_display || 'TBA'
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("td", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("td", {
                       style: tdStyle,
-                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                         style: {
                           color: '#64748b'
                         },
                         children: s.room || 'TBA'
                       })
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("td", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("td", {
                       style: _objectSpread(_objectSpread({}, tdStyle), {}, {
                         textAlign: 'center',
                         fontWeight: 700,
@@ -84888,21 +85034,21 @@ function FacultyDashboard(_ref) {
             })
           })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
         className: "sidebar-widgets",
         style: {
           display: 'flex',
           flexDirection: 'column',
           gap: '1.5rem'
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
           style: {
             background: '#fff',
             border: '1px solid #e2e8f0',
             padding: '1.5rem',
             borderRadius: '16px'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("h3", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("h3", {
             style: {
               marginTop: 0,
               marginBottom: '1.25rem',
@@ -84912,43 +85058,43 @@ function FacultyDashboard(_ref) {
               fontSize: '1rem',
               color: '#1e293b'
             },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
               size: 20,
               color: "#f59e0b"
             }), " Grade Submissions"]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
             style: {
               display: 'flex',
               flexDirection: 'column',
               gap: '12px'
             },
             children: [schedule.slice(0, 3).map(function (s, i) {
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                 style: {
                   borderBottom: '1px solid #f1f5f9',
                   paddingBottom: '10px'
                 },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                   style: {
                     display: 'flex',
                     justifyContent: 'space-between',
                     marginBottom: '4px'
                   },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("span", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("span", {
                     style: {
                       fontSize: '0.8rem',
                       fontWeight: 700,
                       color: '#475569'
                     },
                     children: [s.code, " - ", s.section]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                     style: {
                       fontSize: '0.75rem',
                       color: '#f59e0b'
                     },
                     children: "Pending"
                   })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
                   style: {
                     width: '100%',
                     height: '6px',
@@ -84956,7 +85102,7 @@ function FacultyDashboard(_ref) {
                     borderRadius: '3px',
                     overflow: 'hidden'
                   },
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
                     style: {
                       width: '45%',
                       height: '100%',
@@ -84965,7 +85111,7 @@ function FacultyDashboard(_ref) {
                   })
                 })]
               }, i);
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("button", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("button", {
               onClick: function onClick() {
                 window.history.pushState({}, '', '/faculty-subjects');
                 window.dispatchEvent(new PopStateEvent('popstate'));
@@ -84985,14 +85131,14 @@ function FacultyDashboard(_ref) {
               children: "Go to Grading Sheet"
             })]
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
           style: {
             background: '#fff',
             border: '1px solid #e2e8f0',
             padding: '1.5rem',
             borderRadius: '16px'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("h3", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("h3", {
             style: {
               marginTop: 0,
               marginBottom: '1.25rem',
@@ -85002,18 +85148,18 @@ function FacultyDashboard(_ref) {
               fontSize: '1rem',
               color: '#1e293b'
             },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
               size: 20,
               color: "#14b8a6"
             }), " My Students"]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
             style: {
               display: 'flex',
               flexDirection: 'column',
               gap: '10px'
             },
             children: sectionData.map(function (s, i) {
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                 style: {
                   display: 'flex',
                   justifyContent: 'space-between',
@@ -85022,14 +85168,14 @@ function FacultyDashboard(_ref) {
                   background: '#f0fdfa',
                   borderRadius: '8px'
                 },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                   style: {
                     fontSize: '0.85rem',
                     fontWeight: 700,
                     color: '#0f766e'
                   },
                   children: s.name
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("span", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("span", {
                   style: {
                     fontSize: '0.85rem',
                     fontWeight: 800,
@@ -85039,120 +85185,6 @@ function FacultyDashboard(_ref) {
                 })]
               }, i);
             })
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
-          style: {
-            background: '#1e293b',
-            border: '1px solid #334155',
-            padding: '1.5rem',
-            borderRadius: '16px',
-            color: '#fff'
-          },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
-            style: {
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              marginBottom: '1.25rem'
-            },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("h3", {
-              style: {
-                margin: 0,
-                display: 'flex',
-                alignItems: 'center',
-                gap: '10px',
-                fontSize: '1rem'
-              },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                size: 18,
-                color: "#fbbf24"
-              }), " Announcements"]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("button", {
-              onClick: function onClick() {
-                return setShowAnnounceModal(true);
-              },
-              style: {
-                background: 'rgba(255,255,255,0.1)',
-                border: 'none',
-                padding: '4px',
-                borderRadius: '6px',
-                color: '#fff',
-                cursor: 'pointer'
-              },
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
-                size: 16
-              })
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
-            style: {
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '12px'
-            },
-            children: myAnnouncements.length > 0 ? myAnnouncements.slice(0, 3).map(function (ann) {
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
-                style: {
-                  borderBottom: '1px solid rgba(255,255,255,0.05)',
-                  paddingBottom: '10px'
-                },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
-                  style: {
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '6px',
-                    marginBottom: '4px'
-                  },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
-                    style: {
-                      fontSize: '0.8rem',
-                      fontWeight: 700,
-                      color: '#f8fafc'
-                    },
-                    children: ann.title
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
-                    style: {
-                      fontSize: '0.65rem',
-                      background: '#334155',
-                      padding: '1px 6px',
-                      borderRadius: '4px',
-                      color: '#94a3b8'
-                    },
-                    children: ann.section || 'All'
-                  })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("p", {
-                  style: {
-                    margin: 0,
-                    fontSize: '0.75rem',
-                    color: '#94a3b8',
-                    lineHeight: '1.4'
-                  },
-                  children: [ann.content.substring(0, 60), "..."]
-                })]
-              }, ann.id);
-            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("p", {
-              style: {
-                fontSize: '0.75rem',
-                color: '#94a3b8'
-              },
-              children: "No announcements posted."
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("button", {
-            onClick: function onClick() {
-              window.history.pushState({}, '', '/faculty-dashboard');
-              window.dispatchEvent(new PopStateEvent('popstate'));
-            },
-            style: {
-              width: '100%',
-              marginTop: '1rem',
-              padding: '8px',
-              background: 'transparent',
-              border: '1px solid rgba(255,255,255,0.1)',
-              borderRadius: '8px',
-              color: '#94a3b8',
-              fontSize: '0.8rem',
-              cursor: 'pointer'
-            },
-            children: "Manage Bulletin"
           })]
         })]
       })]
@@ -85181,21 +85213,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Profile__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Profile */ "./resources/js/components/Profile.js");
 /* harmony import */ var _UserSettings__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./UserSettings */ "./resources/js/components/UserSettings.js");
 /* harmony import */ var _SecurityPrivacy__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SecurityPrivacy */ "./resources/js/components/SecurityPrivacy.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/circle.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/graduation-cap.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/layout-dashboard.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/settings.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/users.js");
-/* harmony import */ var _TopNavbar__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./TopNavbar */ "./resources/js/components/TopNavbar.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _NotificationsPage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./NotificationsPage */ "./resources/js/components/NotificationsPage.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/circle.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/graduation-cap.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/layout-dashboard.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/settings.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/users.js");
+/* harmony import */ var _TopNavbar__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./TopNavbar */ "./resources/js/components/TopNavbar.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
 
 
 
@@ -85221,7 +85255,7 @@ function FacultyLayout(_ref) {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     var updatePage = function updatePage() {
       var path = window.location.pathname.split("/").pop();
-      var valid = ["faculty-dashboard", "faculty-students", "faculty-subjects", "faculty-profile", "faculty-settings", "faculty-security"];
+      var valid = ["faculty-dashboard", "faculty-students", "faculty-subjects", "faculty-profile", "faculty-settings", "faculty-security", "notifications"];
       if (valid.includes(path)) setPage(path);
     };
     window.addEventListener("popstate", updatePage);
@@ -85237,119 +85271,119 @@ function FacultyLayout(_ref) {
   var menuItems = [{
     key: "faculty-dashboard",
     label: "Dashboard",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
       size: 18
     })
   }, {
     key: "faculty-subjects",
     label: "My Subjects",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
       size: 18
     })
   }, {
     key: "faculty-students",
     label: "My Students",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_14__["default"], {
       size: 18
     })
   }, {
     key: "faculty-profile",
     label: "Profile",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
       size: 18
     })
   }, {
     key: "faculty-settings",
     label: "Settings",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
       size: 18
     })
   }];
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
     className: "layout",
-    children: [sidebarOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
+    children: [sidebarOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
       className: "sidebar-overlay",
       onClick: function onClick() {
         return setSidebarOpen(false);
       }
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("aside", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("aside", {
       className: "sidebar ".concat(sidebarOpen ? "open" : ""),
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
         className: "logo-section",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
           className: "logo-box",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
             className: "logo-icon-wrapper",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
               size: 24,
               strokeWidth: 2.5,
               className: "logo-icon"
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("h1", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("h1", {
             className: "logo-text",
             children: "UniSys"
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
           className: "portal-badge faculty",
           children: "FACULTY PORTAL"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("nav", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("nav", {
         className: "nav-container",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("ul", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("ul", {
           className: "nav-menu",
           children: menuItems.map(function (item) {
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("li", {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("li", {
               className: "nav-item ".concat(page === item.key ? "active" : ""),
               onClick: function onClick() {
                 return navigate(item.key);
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
                 className: "icon-wrapper",
                 children: item.icon
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
                 children: item.label
               })]
             }, item.key);
           })
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
         className: "sidebar-footer",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
           className: "system-status",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
             size: 8,
             fill: "#10b981",
             stroke: "none",
             className: "status-dot pulsing"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
             children: "System Online"
           })]
         })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("main", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("main", {
       className: "main-content",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(_TopNavbar__WEBPACK_IMPORTED_MODULE_14__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_TopNavbar__WEBPACK_IMPORTED_MODULE_15__["default"], {
         user: user,
         onToggleSidebar: function onToggleSidebar() {
           return setSidebarOpen(!sidebarOpen);
         },
         onLogout: onLogout
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
         className: "page-content-wrapper",
-        children: [page === "faculty-dashboard" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(_FacultyDashboard__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        children: [page === "faculty-dashboard" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_FacultyDashboard__WEBPACK_IMPORTED_MODULE_1__["default"], {
           user: user
-        }), page === "faculty-subjects" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(_FacultySubjects__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        }), page === "faculty-subjects" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_FacultySubjects__WEBPACK_IMPORTED_MODULE_3__["default"], {
           user: user
-        }), page === "faculty-students" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(_FacultyStudents__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        }), page === "faculty-students" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_FacultyStudents__WEBPACK_IMPORTED_MODULE_2__["default"], {
           user: user
-        }), page === "faculty-profile" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(_Profile__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        }), page === "faculty-profile" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_Profile__WEBPACK_IMPORTED_MODULE_4__["default"], {
           user: user,
           onLogout: onLogout
-        }), page === "faculty-settings" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(_UserSettings__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        }), page === "faculty-settings" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_UserSettings__WEBPACK_IMPORTED_MODULE_5__["default"], {
           user: user
-        }), page === "faculty-security" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(_SecurityPrivacy__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        }), page === "faculty-security" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_SecurityPrivacy__WEBPACK_IMPORTED_MODULE_6__["default"], {
           user: user
-        })]
+        }), page === "notifications" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_NotificationsPage__WEBPACK_IMPORTED_MODULE_7__["default"], {})]
       })]
     })]
   });
@@ -85406,8 +85440,6 @@ function FacultyRegister(_ref) {
       email: "",
       phone: "",
       department: "",
-      position: "",
-      specialization: "",
       password: "",
       password_confirmation: ""
     }),
@@ -85446,7 +85478,8 @@ function FacultyRegister(_ref) {
           case 2:
             res = _context.v;
             if ((_res$data = res.data) !== null && _res$data !== void 0 && _res$data.success) {
-              onRegisterSuccess(res.data.user);
+              sessionStorage.setItem("registrationSuccess", "Faculty account created successfully! Please log in to continue.");
+              window.location.href = "/login";
             }
             _context.n = 4;
             break;
@@ -85849,132 +85882,6 @@ function FacultyRegister(_ref) {
             })]
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-          style: {
-            display: 'flex',
-            gap: '1.25rem'
-          },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-            className: "lp-field",
-            style: {
-              flex: 1
-            },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
-              className: "lp-label",
-              style: {
-                display: 'block',
-                marginBottom: '0.5rem',
-                fontWeight: '600',
-                color: '#475569',
-                fontSize: '0.9rem'
-              },
-              children: "Department *"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-              className: "lp-input-wrap",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
-                type: "text",
-                className: "lp-input ".concat(fieldErrors.department ? "lp-input--invalid" : ""),
-                style: {
-                  width: '100%',
-                  padding: '0.75rem 1rem',
-                  borderRadius: '10px',
-                  border: fieldErrors.department ? '1.5px solid #ef4444' : '1.5px solid #e2e8f0',
-                  fontSize: '1rem',
-                  outline: 'none',
-                  transition: 'border-color 0.2s, box-shadow 0.2s'
-                },
-                onFocus: function onFocus(e) {
-                  if (!fieldErrors.department) {
-                    e.target.style.borderColor = '#3b82f6';
-                    e.target.style.boxShadow = '0 0 0 4px rgba(59, 130, 246, 0.1)';
-                  }
-                },
-                onBlur: function onBlur(e) {
-                  if (!fieldErrors.department) {
-                    e.target.style.borderColor = '#e2e8f0';
-                    e.target.style.boxShadow = 'none';
-                  }
-                },
-                placeholder: "e.g. IT Department",
-                value: form.department,
-                onChange: function onChange(e) {
-                  return setForm(_objectSpread(_objectSpread({}, form), {}, {
-                    department: e.target.value
-                  }));
-                },
-                required: true
-              })
-            }), fieldErrors.department && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
-              className: "lp-field-error",
-              style: {
-                color: '#ef4444',
-                fontSize: '0.8rem',
-                marginTop: '0.25rem',
-                display: 'block'
-              },
-              children: fieldErrors.department[0]
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-            className: "lp-field",
-            style: {
-              flex: 1
-            },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
-              className: "lp-label",
-              style: {
-                display: 'block',
-                marginBottom: '0.5rem',
-                fontWeight: '600',
-                color: '#475569',
-                fontSize: '0.9rem'
-              },
-              children: "Rank / Position *"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
-              className: "lp-input-wrap",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
-                type: "text",
-                className: "lp-input ".concat(fieldErrors.position ? "lp-input--invalid" : ""),
-                style: {
-                  width: '100%',
-                  padding: '0.75rem 1rem',
-                  borderRadius: '10px',
-                  border: fieldErrors.position ? '1.5px solid #ef4444' : '1.5px solid #e2e8f0',
-                  fontSize: '1rem',
-                  outline: 'none',
-                  transition: 'border-color 0.2s, box-shadow 0.2s'
-                },
-                onFocus: function onFocus(e) {
-                  if (!fieldErrors.position) {
-                    e.target.style.borderColor = '#3b82f6';
-                    e.target.style.boxShadow = '0 0 0 4px rgba(59, 130, 246, 0.1)';
-                  }
-                },
-                onBlur: function onBlur(e) {
-                  if (!fieldErrors.position) {
-                    e.target.style.borderColor = '#e2e8f0';
-                    e.target.style.boxShadow = 'none';
-                  }
-                },
-                placeholder: "e.g. Assistant Professor",
-                value: form.position,
-                onChange: function onChange(e) {
-                  return setForm(_objectSpread(_objectSpread({}, form), {}, {
-                    position: e.target.value
-                  }));
-                },
-                required: true
-              })
-            }), fieldErrors.position && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
-              className: "lp-field-error",
-              style: {
-                color: '#ef4444',
-                fontSize: '0.8rem',
-                marginTop: '0.25rem',
-                display: 'block'
-              },
-              children: fieldErrors.position[0]
-            })]
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
           className: "lp-field",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
             className: "lp-label",
@@ -85985,43 +85892,43 @@ function FacultyRegister(_ref) {
               color: '#475569',
               fontSize: '0.9rem'
             },
-            children: "Specialization *"
+            children: "Department *"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
             className: "lp-input-wrap",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
               type: "text",
-              className: "lp-input ".concat(fieldErrors.specialization ? "lp-input--invalid" : ""),
+              className: "lp-input ".concat(fieldErrors.department ? "lp-input--invalid" : ""),
               style: {
                 width: '100%',
                 padding: '0.75rem 1rem',
                 borderRadius: '10px',
-                border: fieldErrors.specialization ? '1.5px solid #ef4444' : '1.5px solid #e2e8f0',
+                border: fieldErrors.department ? '1.5px solid #ef4444' : '1.5px solid #e2e8f0',
                 fontSize: '1rem',
                 outline: 'none',
                 transition: 'border-color 0.2s, box-shadow 0.2s'
               },
               onFocus: function onFocus(e) {
-                if (!fieldErrors.specialization) {
+                if (!fieldErrors.department) {
                   e.target.style.borderColor = '#3b82f6';
                   e.target.style.boxShadow = '0 0 0 4px rgba(59, 130, 246, 0.1)';
                 }
               },
               onBlur: function onBlur(e) {
-                if (!fieldErrors.specialization) {
+                if (!fieldErrors.department) {
                   e.target.style.borderColor = '#e2e8f0';
                   e.target.style.boxShadow = 'none';
                 }
               },
-              placeholder: "e.g. Data Science, Web Development",
-              value: form.specialization,
+              placeholder: "e.g. IT Department",
+              value: form.department,
               onChange: function onChange(e) {
                 return setForm(_objectSpread(_objectSpread({}, form), {}, {
-                  specialization: e.target.value
+                  department: e.target.value
                 }));
               },
               required: true
             })
-          }), fieldErrors.specialization && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+          }), fieldErrors.department && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
             className: "lp-field-error",
             style: {
               color: '#ef4444',
@@ -86029,7 +85936,7 @@ function FacultyRegister(_ref) {
               marginTop: '0.25rem',
               display: 'block'
             },
-            children: fieldErrors.specialization[0]
+            children: fieldErrors.department[0]
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
           style: {
@@ -86235,8 +86142,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/search.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/funnel.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/mail.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/search.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user-check.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
+function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -86246,7 +86160,6 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
-// import "../../sass/faculty-dashboard.scss";
 
 function FacultyStudents(_ref) {
   var user = _ref.user;
@@ -86254,95 +86167,457 @@ function FacultyStudents(_ref) {
     _useState2 = _slicedToArray(_useState, 2),
     students = _useState2[0],
     setStudents = _useState2[1];
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState4 = _slicedToArray(_useState3, 2),
-    searchQuery = _useState4[0],
-    setSearchQuery = _useState4[1];
+    subjects = _useState4[0],
+    setSubjects = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    _useState6 = _slicedToArray(_useState5, 2),
+    selectedSubjectId = _useState6[0],
+    setSelectedSubjectId = _useState6[1];
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true),
+    _useState8 = _slicedToArray(_useState7, 2),
+    loading = _useState8[0],
+    setLoading = _useState8[1];
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    _useState0 = _slicedToArray(_useState9, 2),
+    searchQuery = _useState0[0],
+    setSearchQuery = _useState0[1];
+  var fetchSubjects = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(/*#__PURE__*/_asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
+    var profileId, res, _t;
+    return _regenerator().w(function (_context) {
+      while (1) switch (_context.p = _context.n) {
+        case 0:
+          if (user !== null && user !== void 0 && user.id) {
+            _context.n = 1;
+            break;
+          }
+          return _context.a(2);
+        case 1:
+          _context.p = 1;
+          profileId = user.profile_id || user.id;
+          _context.n = 2;
+          return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculty/".concat(profileId, "/subjects"));
+        case 2:
+          res = _context.v;
+          setSubjects(res.data);
+          _context.n = 4;
+          break;
+        case 3:
+          _context.p = 3;
+          _t = _context.v;
+          console.error("Error fetching subjects:", _t);
+        case 4:
+          return _context.a(2);
+      }
+    }, _callee, null, [[1, 3]]);
+  })), [user]);
+  var fetchStudents = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(/*#__PURE__*/_asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
+    var profileId, url, res, _t2;
+    return _regenerator().w(function (_context2) {
+      while (1) switch (_context2.p = _context2.n) {
+        case 0:
+          if (user !== null && user !== void 0 && user.id) {
+            _context2.n = 1;
+            break;
+          }
+          return _context2.a(2);
+        case 1:
+          setLoading(true);
+          _context2.p = 2;
+          profileId = user.profile_id || user.id;
+          url = selectedSubjectId ? "/api/faculty/".concat(profileId, "/students?subject_id=").concat(selectedSubjectId) : "/api/faculty/".concat(profileId, "/students");
+          _context2.n = 3;
+          return axios__WEBPACK_IMPORTED_MODULE_1___default().get(url);
+        case 3:
+          res = _context2.v;
+          setStudents(res.data);
+          _context2.n = 5;
+          break;
+        case 4:
+          _context2.p = 4;
+          _t2 = _context2.v;
+          console.error("Error fetching students:", _t2);
+        case 5:
+          _context2.p = 5;
+          setLoading(false);
+          return _context2.f(5);
+        case 6:
+          return _context2.a(2);
+      }
+    }, _callee2, null, [[2, 4, 5, 6]]);
+  })), [user, selectedSubjectId]);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    if (!(user !== null && user !== void 0 && user.id)) return;
-    axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculty/".concat(user.id, "/students")).then(function (res) {
-      return setStudents(res.data);
-    })["catch"](console.error);
-  }, [user]);
+    fetchSubjects();
+  }, [fetchSubjects]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    fetchStudents();
+    var handler = function handler() {
+      fetchSubjects();
+      fetchStudents();
+    };
+    window.addEventListener("dataUpdated", handler);
+    return function () {
+      return window.removeEventListener("dataUpdated", handler);
+    };
+  }, [fetchStudents, fetchSubjects]);
   var filtered = students.filter(function (s) {
     var q = searchQuery.toLowerCase();
     var name = "".concat(s.first_name || "", " ").concat(s.last_name || "").toLowerCase();
     return name.includes(q) || (s.student_id || "").toLowerCase().includes(q) || (s.email || "").toLowerCase().includes(q);
   });
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
     className: "faculty-dash",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
       className: "dash-header",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h2", {
-        children: "My Students"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("p", {
-        className: "subtitle",
-        children: ["Students under ", (user === null || user === void 0 ? void 0 : user.department) || "your department"]
-      })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-      className: "table-controls",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-        className: "search-box",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
-          size: 18,
-          className: "search-icon"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
-          type: "text",
-          placeholder: "Search students...",
-          value: searchQuery,
-          onChange: function onChange(e) {
-            return setSearchQuery(e.target.value);
-          }
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("h2", {
+          children: "My Students"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
+          className: "subtitle",
+          children: "All unique students enrolled across all subjects you handle"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("span", {
-        className: "result-count",
-        children: [filtered.length, " student", filtered.length !== 1 ? "s" : ""]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+        style: {
+          display: "flex",
+          gap: "12px"
+        },
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+          style: {
+            background: "#eef2ff",
+            padding: "12px 24px",
+            borderRadius: "16px",
+            textAlign: "center",
+            boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+            border: "1px solid #e0e7ff"
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+            style: {
+              fontSize: "1.8rem",
+              fontWeight: 900,
+              color: "#4f46e5"
+            },
+            children: students.length
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+            style: {
+              fontSize: "0.75rem",
+              color: "#6366f1",
+              fontWeight: 800,
+              textTransform: "uppercase",
+              letterSpacing: "0.05em"
+            },
+            children: "Unique Students"
+          })]
+        })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+      className: "table-controls",
+      style: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        background: '#fff',
+        padding: '16px',
+        borderRadius: '16px',
+        border: '1px solid #e2e8f0',
+        marginBottom: '20px'
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        style: {
+          display: 'flex',
+          gap: '16px',
+          flex: 1
+        },
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+          className: "search-box",
+          style: {
+            flex: 1,
+            maxWidth: '400px'
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            size: 18,
+            className: "search-icon"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+            type: "text",
+            placeholder: "Search by name, ID, or email...",
+            value: searchQuery,
+            onChange: function onChange(e) {
+              return setSearchQuery(e.target.value);
+            }
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+          style: {
+            position: 'relative',
+            display: 'flex',
+            alignItems: 'center'
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            size: 16,
+            style: {
+              position: 'absolute',
+              left: '12px',
+              color: '#64748b'
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("select", {
+            value: selectedSubjectId,
+            onChange: function onChange(e) {
+              return setSelectedSubjectId(e.target.value);
+            },
+            style: {
+              padding: '10px 16px 10px 36px',
+              borderRadius: '10px',
+              border: '1.5px solid #e2e8f0',
+              background: '#f8fafc',
+              color: '#475569',
+              fontWeight: 600,
+              fontSize: '0.9rem',
+              outline: 'none',
+              cursor: 'pointer',
+              appearance: 'none'
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("option", {
+              value: "",
+              children: "All Assigned Subjects"
+            }), subjects.map(function (sub) {
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("option", {
+                value: sub.id,
+                children: [sub.code, ": ", sub.section || 'N/A']
+              }, sub.id);
+            })]
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("span", {
+        className: "result-count",
+        style: {
+          fontWeight: 700,
+          color: '#64748b',
+          fontSize: '0.9rem'
+        },
+        children: ["Showing ", filtered.length, " records"]
+      })]
+    }), loading ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+      style: {
+        textAlign: "center",
+        padding: "5rem",
+        color: "#94a3b8"
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+        className: "spinner",
+        style: {
+          margin: '0 auto'
+        }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
+        style: {
+          marginTop: '16px',
+          fontWeight: 600
+        },
+        children: "Syncing student database..."
+      })]
+    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
       className: "students-table-wrapper",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("table", {
+      style: {
+        background: '#fff',
+        borderRadius: '16px',
+        border: '1px solid #e2e8f0',
+        overflow: 'hidden',
+        boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)'
+      },
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("table", {
         className: "students-table",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("thead", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+        style: {
+          width: '100%',
+          borderCollapse: 'collapse'
+        },
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("thead", {
+          style: {
+            background: '#f8fafc',
+            borderBottom: '2px solid #e2e8f0'
+          },
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
+              style: {
+                textAlign: 'left',
+                padding: '14px 20px',
+                color: '#64748b',
+                fontSize: '0.75rem',
+                textTransform: 'uppercase'
+              },
               children: "School ID"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-              children: "Name"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
+              style: {
+                textAlign: 'left',
+                padding: '14px 20px',
+                color: '#64748b',
+                fontSize: '0.75rem',
+                textTransform: 'uppercase'
+              },
+              children: "Student Name"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
+              style: {
+                textAlign: 'left',
+                padding: '14px 20px',
+                color: '#64748b',
+                fontSize: '0.75rem',
+                textTransform: 'uppercase'
+              },
               children: "Course"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-              children: "Year Level"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
+              style: {
+                textAlign: 'left',
+                padding: '14px 20px',
+                color: '#64748b',
+                fontSize: '0.75rem',
+                textTransform: 'uppercase'
+              },
+              children: "Year"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
+              style: {
+                textAlign: 'left',
+                padding: '14px 20px',
+                color: '#64748b',
+                fontSize: '0.75rem',
+                textTransform: 'uppercase'
+              },
               children: "Section"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
-              children: "Email"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
+              style: {
+                textAlign: 'left',
+                padding: '14px 20px',
+                color: '#64748b',
+                fontSize: '0.75rem',
+                textTransform: 'uppercase'
+              },
+              children: "Email Contact"
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tbody", {
-          children: filtered.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tr", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("tbody", {
+          children: filtered.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("tr", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("td", {
               colSpan: "6",
-              className: "empty-cell",
-              children: "No students found"
+              style: {
+                textAlign: "center",
+                padding: "4rem",
+                color: "#94a3b8"
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+                style: {
+                  background: '#f1f5f9',
+                  width: '64px',
+                  height: '64px',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  margin: '0 auto 16px'
+                },
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                  size: 32,
+                  style: {
+                    opacity: 0.4
+                  }
+                })
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
+                style: {
+                  fontWeight: 700,
+                  fontSize: '1.1rem',
+                  color: '#475569'
+                },
+                children: "No student records found"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
+                style: {
+                  fontSize: '0.9rem'
+                },
+                children: selectedSubjectId ? "Try selecting a different subject or clearing the filter." : "Once the admin enrolls students to your subjects, they will appear here."
+              })]
             })
           }) : filtered.map(function (s) {
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
+              style: {
+                borderBottom: '1px solid #f1f5f9',
+                transition: 'background 0.2s'
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+                style: {
+                  padding: '16px 20px'
+                },
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
                   className: "id-badge",
+                  style: {
+                    background: '#f1f5f9',
+                    padding: '4px 10px',
+                    borderRadius: '8px',
+                    fontWeight: 800,
+                    color: '#1e293b',
+                    fontSize: '0.8rem'
+                  },
                   children: s.student_id
                 })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("td", {
-                className: "name-cell",
-                children: [s.first_name, " ", s.last_name]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("td", {
+                style: {
+                  padding: '16px 20px'
+                },
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+                  style: {
+                    fontWeight: 700,
+                    color: '#1e293b'
+                  },
+                  children: [s.first_name, " ", s.last_name]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+                  style: {
+                    fontSize: '0.75rem',
+                    color: '#94a3b8'
+                  },
+                  children: "Active Student"
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+                style: {
+                  padding: '16px 20px',
+                  fontWeight: 600,
+                  color: '#475569'
+                },
                 children: s.course || "—"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+                style: {
+                  padding: '16px 20px',
+                  color: '#64748b'
+                },
                 children: s.year_level || "—"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: s.section || "—"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
-                children: s.email
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+                style: {
+                  padding: '16px 20px'
+                },
+                children: s.section ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                  style: {
+                    background: '#e0e7ff',
+                    color: '#4338ca',
+                    padding: '4px 10px',
+                    borderRadius: '8px',
+                    fontSize: '0.75rem',
+                    fontWeight: 800
+                  },
+                  children: s.section
+                }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+                  style: {
+                    color: '#cbd5e1'
+                  },
+                  children: "\u2014"
+                })
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+                style: {
+                  padding: '16px 20px'
+                },
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+                  style: {
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    color: '#64748b',
+                    fontSize: '0.9rem'
+                  },
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                    size: 14
+                  }), " ", s.email]
+                })
               })]
             }, s.id);
           })
@@ -86369,15 +86644,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/check.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/megaphone.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/save.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/search.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/send.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/star.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/users.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/x.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/calendar.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/file-text.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/graduation-cap.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/mail.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/megaphone.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/save.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/send.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/star.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/users.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/x.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
@@ -86386,10 +86663,6 @@ function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" 
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
 function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
-function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
-function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
@@ -86416,86 +86689,98 @@ function FacultySubjects(_ref) {
     _useState6 = _slicedToArray(_useState5, 2),
     enrolledStudents = _useState6[0],
     setEnrolledStudents = _useState6[1];
-  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("enrollment"),
     _useState8 = _slicedToArray(_useState7, 2),
-    allStudents = _useState8[0],
-    setAllStudents = _useState8[1];
-  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    viewMode = _useState8[0],
+    setViewMode = _useState8[1];
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("prelim"),
     _useState0 = _slicedToArray(_useState9, 2),
-    searchQuery = _useState0[0],
-    setSearchQuery = _useState0[1];
-  var _useState1 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("enrollment"),
+    gradingPeriod = _useState0[0],
+    setGradingPeriod = _useState0[1];
+  var _useState1 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
     _useState10 = _slicedToArray(_useState1, 2),
-    viewMode = _useState10[0],
-    setViewMode = _useState10[1];
-  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("prelim"),
+    gradesMap = _useState10[0],
+    setGradesMap = _useState10[1];
+  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
     _useState12 = _slicedToArray(_useState11, 2),
-    gradingPeriod = _useState12[0],
-    setGradingPeriod = _useState12[1];
+    remarksMap = _useState12[0],
+    setRemarksMap = _useState12[1];
   var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
     _useState14 = _slicedToArray(_useState13, 2),
-    gradesMap = _useState14[0],
-    setGradesMap = _useState14[1];
-  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
+    existingGrades = _useState14[0],
+    setExistingGrades = _useState14[1];
+  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState16 = _slicedToArray(_useState15, 2),
-    remarksMap = _useState16[0],
-    setRemarksMap = _useState16[1];
-  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
-    _useState18 = _slicedToArray(_useState17, 2),
-    existingGrades = _useState18[0],
-    setExistingGrades = _useState18[1];
-  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState20 = _slicedToArray(_useState19, 2),
-    saving = _useState20[0],
-    setSaving = _useState20[1];
+    saving = _useState16[0],
+    setSaving = _useState16[1];
+
   // Announcement state
-  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState22 = _slicedToArray(_useState21, 2),
-    showAnnForm = _useState22[0],
-    setShowAnnForm = _useState22[1];
-  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState18 = _slicedToArray(_useState17, 2),
+    showAnnForm = _useState18[0],
+    setShowAnnForm = _useState18[1];
+  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
       title: '',
       content: '',
       type: 'info',
       category: 'general_advisory'
     }),
-    _useState24 = _slicedToArray(_useState23, 2),
-    annForm = _useState24[0],
-    setAnnForm = _useState24[1];
-  var _useState25 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState26 = _slicedToArray(_useState25, 2),
-    annSaving = _useState26[0],
-    setAnnSaving = _useState26[1];
+    _useState20 = _slicedToArray(_useState19, 2),
+    annForm = _useState20[0],
+    setAnnForm = _useState20[1];
+  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState22 = _slicedToArray(_useState21, 2),
+    annSaving = _useState22[0],
+    setAnnSaving = _useState22[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     if (!(user !== null && user !== void 0 && user.id)) return;
     fetchSubjects();
-    fetchAllStudents();
-  }, [user]);
+    var handler = function handler() {
+      fetchSubjects();
+      if (selectedSubject) refreshSubjectData(selectedSubject.id);
+    };
+    window.addEventListener('dataUpdated', handler);
+    return function () {
+      return window.removeEventListener('dataUpdated', handler);
+    };
+  }, [user, selectedSubject === null || selectedSubject === void 0 ? void 0 : selectedSubject.id]);
   var fetchSubjects = function fetchSubjects() {
-    axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculty/".concat(user.id, "/subjects")).then(function (res) {
+    var profileId = user.profile_id || user.id;
+    axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculty/".concat(profileId, "/subjects")).then(function (res) {
       return setSubjects(res.data);
     })["catch"](console.error);
   };
-  var fetchAllStudents = function fetchAllStudents() {
-    axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculty/".concat(user.id, "/students")).then(function (res) {
-      return setAllStudents(res.data);
+  var refreshSubjectData = function refreshSubjectData(subjectId) {
+    var profileId = user.profile_id || user.id;
+    axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/subjects/".concat(subjectId, "?faculty_id=").concat(profileId)).then(function (res) {
+      setEnrolledStudents(res.data.students || []);
     })["catch"](console.error);
+  };
+  var formatTime = function formatTime(time) {
+    if (!time) return "TBA";
+    try {
+      var _time$split = time.split(':'),
+        _time$split2 = _slicedToArray(_time$split, 2),
+        hours = _time$split2[0],
+        minutes = _time$split2[1];
+      var h = parseInt(hours);
+      var ampm = h >= 12 ? 'PM' : 'AM';
+      var h12 = h % 12 || 12;
+      return "".concat(h12, ":").concat(minutes, " ").concat(ampm);
+    } catch (e) {
+      return time;
+    }
   };
   var handleManageStudents = function handleManageStudents(subject) {
     setSelectedSubject(subject);
-    setEnrolledStudents(subject.students || []);
     setViewMode("enrollment");
-    axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/subjects/".concat(subject.id)).then(function (res) {
-      return setEnrolledStudents(res.data.students || []);
-    })["catch"](console.error);
+    refreshSubjectData(subject.id);
   };
   var handleGradeView = function handleGradeView(subject) {
     setSelectedSubject(subject);
     setViewMode("grading");
     setGradingPeriod("prelim");
-    axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/subjects/".concat(subject.id)).then(function (res) {
-      return setEnrolledStudents(res.data.students || []);
-    })["catch"](console.error);
+    refreshSubjectData(subject.id);
     // Fetch existing grades
     axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculty/section-grades/".concat(subject.id)).then(function (res) {
       var map = {};
@@ -86505,87 +86790,20 @@ function FacultySubjects(_ref) {
       setExistingGrades(map);
     })["catch"](console.error);
   };
-  var enrollStudent = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee(studentId) {
-      var student, _t;
+  var handleSaveGrades = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
+      var promises, res, map, _t;
       return _regenerator().w(function (_context) {
         while (1) switch (_context.p = _context.n) {
           case 0:
-            _context.p = 0;
-            _context.n = 1;
-            return axios__WEBPACK_IMPORTED_MODULE_1___default().post("/api/subjects/".concat(selectedSubject.id, "/enroll"), {
-              student_id: studentId
-            });
-          case 1:
-            student = allStudents.find(function (s) {
-              return s.id === studentId;
-            });
-            setEnrolledStudents([].concat(_toConsumableArray(enrolledStudents), [student]));
-            _context.n = 3;
-            break;
-          case 2:
-            _context.p = 2;
-            _t = _context.v;
-            alert("Failed to enroll student.");
-          case 3:
-            return _context.a(2);
-        }
-      }, _callee, null, [[0, 2]]);
-    }));
-    return function enrollStudent(_x) {
-      return _ref2.apply(this, arguments);
-    };
-  }();
-  var unenrollStudent = /*#__PURE__*/function () {
-    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2(studentId) {
-      var _t2;
-      return _regenerator().w(function (_context2) {
-        while (1) switch (_context2.p = _context2.n) {
-          case 0:
-            if (confirm("Are you sure you want to unenroll this student?")) {
-              _context2.n = 1;
-              break;
-            }
-            return _context2.a(2);
-          case 1:
-            _context2.p = 1;
-            _context2.n = 2;
-            return axios__WEBPACK_IMPORTED_MODULE_1___default().post("/api/subjects/".concat(selectedSubject.id, "/unenroll"), {
-              student_id: studentId
-            });
-          case 2:
-            setEnrolledStudents(enrolledStudents.filter(function (s) {
-              return s.id !== studentId;
-            }));
-            _context2.n = 4;
-            break;
-          case 3:
-            _context2.p = 3;
-            _t2 = _context2.v;
-            alert("Failed to unenroll student.");
-          case 4:
-            return _context2.a(2);
-        }
-      }, _callee2, null, [[1, 3]]);
-    }));
-    return function unenrollStudent(_x2) {
-      return _ref3.apply(this, arguments);
-    };
-  }();
-  var handleSaveGrades = /*#__PURE__*/function () {
-    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3() {
-      var promises, res, map, _t3;
-      return _regenerator().w(function (_context3) {
-        while (1) switch (_context3.p = _context3.n) {
-          case 0:
             setSaving(true);
-            _context3.p = 1;
+            _context.p = 1;
             promises = enrolledStudents.map(function (student) {
               if (gradesMap[student.id]) {
                 return axios__WEBPACK_IMPORTED_MODULE_1___default().post('/api/faculty/post-grade', {
                   student_id: student.id,
                   subject_id: selectedSubject.id,
-                  faculty_id: user.id,
+                  faculty_id: user.profile_id || user.id,
                   grading_period: gradingPeriod,
                   grade: gradesMap[student.id],
                   remarks: remarksMap[student.id] || null,
@@ -86595,64 +86813,66 @@ function FacultySubjects(_ref) {
               }
               return Promise.resolve();
             });
-            _context3.n = 2;
+            _context.n = 2;
             return Promise.all(promises);
           case 2:
             alert("".concat(gradingPeriod.charAt(0).toUpperCase() + gradingPeriod.slice(1), " grades saved!"));
             setGradesMap({});
             // Refresh existing grades
-            _context3.n = 3;
+            _context.n = 3;
             return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculty/section-grades/".concat(selectedSubject.id));
           case 3:
-            res = _context3.v;
+            res = _context.v;
             map = {};
             (res.data.grades || []).forEach(function (g) {
               map[g.student_id] = g;
             });
             setExistingGrades(map);
-            _context3.n = 5;
+            window.dispatchEvent(new CustomEvent('dataUpdated'));
+            _context.n = 5;
             break;
           case 4:
-            _context3.p = 4;
-            _t3 = _context3.v;
-            console.error(_t3);
+            _context.p = 4;
+            _t = _context.v;
+            console.error(_t);
             alert("Error saving grades. Please check values.");
           case 5:
-            _context3.p = 5;
+            _context.p = 5;
             setSaving(false);
-            return _context3.f(5);
+            return _context.f(5);
           case 6:
-            return _context3.a(2);
+            return _context.a(2);
         }
-      }, _callee3, null, [[1, 4, 5, 6]]);
+      }, _callee, null, [[1, 4, 5, 6]]);
     }));
     return function handleSaveGrades() {
-      return _ref4.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     };
   }();
   var handlePostAnnouncement = /*#__PURE__*/function () {
-    var _ref5 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4() {
-      var _t4;
-      return _regenerator().w(function (_context4) {
-        while (1) switch (_context4.p = _context4.n) {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
+      var _t2;
+      return _regenerator().w(function (_context2) {
+        while (1) switch (_context2.p = _context2.n) {
           case 0:
             if (!(!annForm.title || !annForm.content)) {
-              _context4.n = 1;
+              _context2.n = 1;
               break;
             }
-            return _context4.a(2, alert("Title and content required."));
+            return _context2.a(2, alert("Title and content required."));
           case 1:
             setAnnSaving(true);
-            _context4.p = 2;
-            _context4.n = 3;
+            _context2.p = 2;
+            _context2.n = 3;
             return axios__WEBPACK_IMPORTED_MODULE_1___default().post('/api/faculty/announcements', _objectSpread(_objectSpread({}, annForm), {}, {
-              faculty_id: user.id,
+              faculty_id: user.profile_id || user.id,
+              subject_id: selectedSubject.id,
               target_role: 'student',
               section: (selectedSubject === null || selectedSubject === void 0 ? void 0 : selectedSubject.section) || null,
               department: user.department || null
             }));
           case 3:
-            alert("Announcement posted!");
+            alert("Announcement posted! Students in this subject will be notified.");
             setShowAnnForm(false);
             setAnnForm({
               title: '',
@@ -86660,69 +86880,57 @@ function FacultySubjects(_ref) {
               type: 'info',
               category: 'general_advisory'
             });
-            _context4.n = 5;
+            _context2.n = 5;
             break;
           case 4:
-            _context4.p = 4;
-            _t4 = _context4.v;
-            console.error(_t4);
+            _context2.p = 4;
+            _t2 = _context2.v;
+            console.error(_t2);
             alert("Failed to post announcement.");
           case 5:
-            _context4.p = 5;
+            _context2.p = 5;
             setAnnSaving(false);
-            return _context4.f(5);
+            return _context2.f(5);
           case 6:
-            return _context4.a(2);
+            return _context2.a(2);
         }
-      }, _callee4, null, [[2, 4, 5, 6]]);
+      }, _callee2, null, [[2, 4, 5, 6]]);
     }));
     return function handlePostAnnouncement() {
-      return _ref5.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     };
   }();
-  var filteredStudents = allStudents.filter(function (s) {
-    var _s$student_id;
-    var isEnrolled = enrolledStudents.some(function (es) {
-      return es.id === s.id;
-    });
-    var matches = "".concat(s.first_name, " ").concat(s.last_name).toLowerCase().includes(searchQuery.toLowerCase()) || ((_s$student_id = s.student_id) === null || _s$student_id === void 0 ? void 0 : _s$student_id.toLowerCase().includes(searchQuery.toLowerCase()));
-    return !isEnrolled && matches;
-  });
-  var getExistingGrade = function getExistingGrade(studentId, period) {
-    var g = existingGrades[studentId];
-    return g ? g[period] : null;
-  };
   var periodLabels = {
     prelim: 'Prelim',
     midterm: 'Midterm',
     finals: 'Finals'
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
     className: "faculty-dash",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
       className: "dash-header",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("h2", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("h2", {
         children: "My Subjects"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("p", {
         className: "subtitle",
         children: "Manage enrollment, grading, and announcements"
       })]
-    }), !selectedSubject ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    }), !selectedSubject ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
       className: "subject-grid-container",
-      children: subjects.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+      children: subjects.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
         className: "empty-state",
         children: "No subjects assigned to you."
-      }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+      }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
         className: "subject-cards",
         children: subjects.map(function (s) {
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
             className: "subject-card",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
               className: "subject-header",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("span", {
                 className: "subject-code",
                 children: s.code
-              }), s.section && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
+              }), s.section && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("span", {
                 style: {
                   fontSize: '0.7rem',
                   background: '#e0e7ff',
@@ -86733,36 +86941,56 @@ function FacultySubjects(_ref) {
                 },
                 children: s.section
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("h4", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("h4", {
               className: "subject-name",
               children: s.name
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
               className: "subject-meta",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("span", {
+                title: "Schedule Day",
                 children: ["\uD83D\uDCC5 ", s.schedule_day || "TBA"]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("span", {
-                children: ["\uD83D\uDD50 ", s.time_start || "—", " - ", s.time_end || "—"]
-              }), s.units && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("span", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("span", {
+                title: "Class Time",
+                children: ["\uD83D\uDD50 ", s.time_display || "TBA"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("span", {
+                title: "Assigned Room",
+                children: ["\uD83D\uDCCD ", s.room || "TBA"]
+              }), s.units && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("span", {
+                title: "Credit Units",
                 children: ["\uD83D\uDCCA ", s.units, " units"]
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
               style: {
                 display: 'flex',
                 gap: '8px',
                 marginTop: '12px'
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("button", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("button", {
                 className: "btn-manage",
                 onClick: function onClick() {
                   return handleManageStudents(s);
                 },
                 style: {
-                  flex: 1
+                  flex: 1,
+                  position: 'relative'
                 },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
                   size: 16
-                }), " Students"]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("button", {
+                }), " Students", s.enrolled_count > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("span", {
+                  style: {
+                    position: 'absolute',
+                    top: '-8px',
+                    right: '-8px',
+                    background: '#4f46e5',
+                    color: '#fff',
+                    fontSize: '0.65rem',
+                    padding: '2px 6px',
+                    borderRadius: '10px',
+                    fontWeight: 800
+                  },
+                  children: s.enrolled_count
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("button", {
                 onClick: function onClick() {
                   return handleGradeView(s);
                 },
@@ -86781,7 +87009,7 @@ function FacultySubjects(_ref) {
                   fontWeight: 600,
                   fontSize: '0.85rem'
                 },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
                   size: 16
                 }), " Grades"]
               })]
@@ -86789,15 +87017,15 @@ function FacultySubjects(_ref) {
           }, s.id);
         })
       })
-    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
       className: "manage-enrollment",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
         style: {
           display: 'flex',
           gap: '10px',
           marginBottom: '16px'
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
           className: "btn-back",
           onClick: function onClick() {
             setSelectedSubject(null);
@@ -86805,7 +87033,7 @@ function FacultySubjects(_ref) {
             setGradesMap({});
           },
           children: "\u2190 Back"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("button", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("button", {
           onClick: function onClick() {
             setShowAnnForm(true);
           },
@@ -86822,65 +87050,102 @@ function FacultySubjects(_ref) {
             fontWeight: 600,
             fontSize: '0.85rem'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
             size: 16
           }), " Post Announcement"]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
         style: {
           marginBottom: '20px'
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("h3", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("h3", {
             children: [selectedSubject.code, ": ", selectedSubject.name]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("span", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
             style: {
+              display: 'flex',
+              gap: '12px',
+              alignItems: 'center',
+              color: '#64748b',
               fontSize: '0.85rem',
-              color: '#64748b'
+              marginTop: '4px'
             },
-            children: [enrolledStudents.length, " Students | ", selectedSubject.section || 'No section', " | ", selectedSubject.units || 3, " units"]
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("span", {
+              style: {
+                display: 'flex',
+                alignItems: 'center',
+                gap: '4px'
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
+                size: 14
+              }), " ", enrolledStudents.length, " Students Enrolled"]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("span", {
+              style: {
+                display: 'flex',
+                alignItems: 'center',
+                gap: '4px'
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                size: 14
+              }), " ", selectedSubject.section || 'N/A']
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("span", {
+              style: {
+                display: 'flex',
+                alignItems: 'center',
+                gap: '4px'
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                size: 14
+              }), " ", selectedSubject.units || 3, " units"]
+            })]
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
           style: {
             display: 'flex',
             gap: '10px',
-            marginTop: '12px'
+            marginTop: '16px'
           },
           children: ['enrollment', 'grading'].map(function (m) {
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
               className: "toggle-btn ".concat(viewMode === m ? 'active' : ''),
               onClick: function onClick() {
                 return setViewMode(m);
               },
               style: {
-                padding: '8px 16px',
-                background: viewMode === m ? '#1a5fb4' : '#f1f5f9',
+                padding: '10px 20px',
+                background: viewMode === m ? '#1e3a8a' : '#f1f5f9',
                 color: viewMode === m ? '#fff' : '#475569',
                 border: 'none',
-                borderRadius: '8px',
+                borderRadius: '10px',
                 cursor: 'pointer',
-                fontWeight: 600
+                fontWeight: 700,
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                transition: 'all 0.2s'
               },
-              children: m === 'enrollment' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.Fragment, {
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
-                  size: 16
+              children: m === 'enrollment' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.Fragment, {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
+                  size: 18
                 }), " Enrollment"]
-              }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.Fragment, {
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
-                  size: 16
-                }), " Grading"]
+              }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.Fragment, {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                  size: 18
+                }), " Grading Sheet"]
               })
             }, m);
           })
         })]
-      }), showAnnForm && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+      }), showAnnForm && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+        className: "modal-overlay",
         style: {
           position: 'fixed',
           top: 0,
           left: 0,
           right: 0,
           bottom: 0,
-          background: 'rgba(0,0,0,0.5)',
+          background: 'rgba(15, 23, 42, 0.75)',
+          backdropFilter: 'blur(4px)',
           zIndex: 1000,
           display: 'flex',
           alignItems: 'center',
@@ -86889,470 +87154,718 @@ function FacultySubjects(_ref) {
         onClick: function onClick() {
           return setShowAnnForm(false);
         },
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+          className: "modal-content",
           style: {
             background: '#fff',
-            borderRadius: '14px',
+            borderRadius: '20px',
             padding: '2rem',
-            width: '500px',
-            maxWidth: '90vw'
+            width: '550px',
+            maxWidth: '95vw',
+            boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)'
           },
           onClick: function onClick(e) {
             return e.stopPropagation();
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("h3", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
             style: {
-              marginTop: 0
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              marginBottom: '1.5rem'
             },
-            children: ["Post Announcement to ", selectedSubject.section || selectedSubject.code]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("h3", {
+              style: {
+                margin: 0,
+                fontSize: '1.5rem',
+                fontWeight: 800,
+                color: '#1e293b'
+              },
+              children: "Post Announcement"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
+              onClick: function onClick() {
+                return setShowAnnForm(false);
+              },
+              style: {
+                background: 'none',
+                border: 'none',
+                color: '#64748b',
+                cursor: 'pointer'
+              },
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
+                size: 24
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("p", {
+            style: {
+              color: '#64748b',
+              marginBottom: '1.5rem',
+              fontSize: '0.9rem'
+            },
+            children: ["This announcement will be sent to all students enrolled in ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("strong", {
+              children: selectedSubject.code
+            }), "."]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
             style: {
               display: 'flex',
               flexDirection: 'column',
-              gap: '12px'
+              gap: '16px'
             },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
-              placeholder: "Title",
-              value: annForm.title,
-              onChange: function onChange(e) {
-                return setAnnForm(_objectSpread(_objectSpread({}, annForm), {}, {
-                  title: e.target.value
-                }));
-              },
-              style: {
-                padding: '10px 12px',
-                border: '1px solid #e2e8f0',
-                borderRadius: '8px'
-              }
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("textarea", {
-              placeholder: "Content",
-              rows: 4,
-              value: annForm.content,
-              onChange: function onChange(e) {
-                return setAnnForm(_objectSpread(_objectSpread({}, annForm), {}, {
-                  content: e.target.value
-                }));
-              },
-              style: {
-                padding: '10px 12px',
-                border: '1px solid #e2e8f0',
-                borderRadius: '8px',
-                resize: 'vertical'
-              }
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("label", {
+                style: {
+                  display: 'block',
+                  marginBottom: '6px',
+                  fontWeight: 600,
+                  fontSize: '0.85rem',
+                  color: '#475569'
+                },
+                children: "Announcement Title"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("input", {
+                placeholder: "e.g., Upcoming Quiz Reminder",
+                value: annForm.title,
+                onChange: function onChange(e) {
+                  return setAnnForm(_objectSpread(_objectSpread({}, annForm), {}, {
+                    title: e.target.value
+                  }));
+                },
+                style: {
+                  width: '100%',
+                  padding: '12px',
+                  border: '1.5px solid #e2e8f0',
+                  borderRadius: '10px',
+                  fontSize: '1rem'
+                }
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("label", {
+                style: {
+                  display: 'block',
+                  marginBottom: '6px',
+                  fontWeight: 600,
+                  fontSize: '0.85rem',
+                  color: '#475569'
+                },
+                children: "Content Message"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("textarea", {
+                placeholder: "Write your announcement details here...",
+                rows: 5,
+                value: annForm.content,
+                onChange: function onChange(e) {
+                  return setAnnForm(_objectSpread(_objectSpread({}, annForm), {}, {
+                    content: e.target.value
+                  }));
+                },
+                style: {
+                  width: '100%',
+                  padding: '12px',
+                  border: '1.5px solid #e2e8f0',
+                  borderRadius: '10px',
+                  fontSize: '1rem',
+                  resize: 'none'
+                }
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
               style: {
                 display: 'flex',
-                gap: '12px'
+                gap: '16px'
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("select", {
-                value: annForm.type,
-                onChange: function onChange(e) {
-                  return setAnnForm(_objectSpread(_objectSpread({}, annForm), {}, {
-                    type: e.target.value
-                  }));
-                },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
                 style: {
-                  flex: 1,
-                  padding: '10px',
-                  border: '1px solid #e2e8f0',
-                  borderRadius: '8px'
+                  flex: 1
                 },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                  value: "info",
-                  children: "Info"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                  value: "urgent",
-                  children: "Urgent"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                  value: "success",
-                  children: "Success"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                  value: "warning",
-                  children: "Warning"
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("label", {
+                  style: {
+                    display: 'block',
+                    marginBottom: '6px',
+                    fontWeight: 600,
+                    fontSize: '0.85rem',
+                    color: '#475569'
+                  },
+                  children: "Priority Type"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("select", {
+                  value: annForm.type,
+                  onChange: function onChange(e) {
+                    return setAnnForm(_objectSpread(_objectSpread({}, annForm), {}, {
+                      type: e.target.value
+                    }));
+                  },
+                  style: {
+                    width: '100%',
+                    padding: '12px',
+                    border: '1.5px solid #e2e8f0',
+                    borderRadius: '10px',
+                    appearance: 'none',
+                    background: 'white'
+                  },
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("option", {
+                    value: "info",
+                    children: "Information"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("option", {
+                    value: "urgent",
+                    children: "Urgent"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("option", {
+                    value: "success",
+                    children: "Success"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("option", {
+                    value: "warning",
+                    children: "Warning"
+                  })]
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("select", {
-                value: annForm.category,
-                onChange: function onChange(e) {
-                  return setAnnForm(_objectSpread(_objectSpread({}, annForm), {}, {
-                    category: e.target.value
-                  }));
-                },
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
                 style: {
-                  flex: 1,
-                  padding: '10px',
-                  border: '1px solid #e2e8f0',
-                  borderRadius: '8px'
+                  flex: 1
                 },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                  value: "general_advisory",
-                  children: "General Advisory"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                  value: "exam_schedule",
-                  children: "Exam Schedule"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                  value: "activity_notice",
-                  children: "Activity Notice"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                  value: "requirement_reminder",
-                  children: "Requirement Reminder"
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("label", {
+                  style: {
+                    display: 'block',
+                    marginBottom: '6px',
+                    fontWeight: 600,
+                    fontSize: '0.85rem',
+                    color: '#475569'
+                  },
+                  children: "Category"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("select", {
+                  value: annForm.category,
+                  onChange: function onChange(e) {
+                    return setAnnForm(_objectSpread(_objectSpread({}, annForm), {}, {
+                      category: e.target.value
+                    }));
+                  },
+                  style: {
+                    width: '100%',
+                    padding: '12px',
+                    border: '1.5px solid #e2e8f0',
+                    borderRadius: '10px',
+                    appearance: 'none',
+                    background: 'white'
+                  },
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("option", {
+                    value: "general_advisory",
+                    children: "General Advisory"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("option", {
+                    value: "exam_schedule",
+                    children: "Exam Schedule"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("option", {
+                    value: "activity_notice",
+                    children: "Activity Notice"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("option", {
+                    value: "requirement_reminder",
+                    children: "Requirement Reminder"
+                  })]
                 })]
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
               style: {
                 display: 'flex',
-                gap: '10px',
-                justifyContent: 'flex-end'
+                gap: '12px',
+                justifyContent: 'flex-end',
+                marginTop: '1rem'
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
                 onClick: function onClick() {
                   return setShowAnnForm(false);
                 },
                 style: {
-                  padding: '10px 20px',
+                  padding: '12px 24px',
                   background: '#f1f5f9',
+                  color: '#475569',
                   border: 'none',
-                  borderRadius: '8px',
-                  cursor: 'pointer'
-                },
-                children: "Cancel"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("button", {
-                onClick: handlePostAnnouncement,
-                disabled: annSaving,
-                style: {
-                  padding: '10px 20px',
-                  background: '#7c3aed',
-                  color: '#fff',
-                  border: 'none',
-                  borderRadius: '8px',
+                  borderRadius: '10px',
                   cursor: 'pointer',
                   fontWeight: 600
                 },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                  size: 16,
-                  style: {
-                    marginRight: 6,
-                    verticalAlign: 'middle'
-                  }
-                }), annSaving ? 'Posting...' : 'Post']
+                children: "Cancel"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
+                onClick: handlePostAnnouncement,
+                disabled: annSaving,
+                style: {
+                  padding: '12px 30px',
+                  background: '#7c3aed',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: '10px',
+                  cursor: 'pointer',
+                  fontWeight: 700,
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px'
+                },
+                children: annSaving ? 'Posting...' : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.Fragment, {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                    size: 18
+                  }), " Publish Announcement"]
+                })
               })]
             })]
           })]
         })
-      }), viewMode === 'enrollment' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-        className: "enrollment-grid",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-          className: "enrolled-section",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("h4", {
-            children: "Currently Enrolled"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
-            className: "student-list",
-            children: enrolledStudents.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
-              className: "empty-small",
-              children: "No students enrolled."
-            }) : enrolledStudents.map(function (s) {
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                className: "student-item enrolled",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                  className: "item-info",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("span", {
-                    className: "item-name",
-                    children: [s.first_name, " ", s.last_name]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
-                    className: "item-id",
-                    children: s.student_id
-                  })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
-                  className: "btn-remove",
-                  onClick: function onClick() {
-                    return unenrollStudent(s.id);
-                  },
-                  title: "Unenroll",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
-                    size: 16
-                  })
-                })]
-              }, s.id);
-            })
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-          className: "available-section",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("h4", {
-            children: ["Available Students (", user === null || user === void 0 ? void 0 : user.department, ")"]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-            className: "search-mini",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
-              size: 14
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
-              type: "text",
-              placeholder: "Search...",
-              value: searchQuery,
-              onChange: function onChange(e) {
-                return setSearchQuery(e.target.value);
-              }
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
-            className: "student-list",
-            children: filteredStudents.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
-              className: "empty-small",
-              children: "No students found."
-            }) : filteredStudents.map(function (s) {
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                className: "student-item available",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                  className: "item-info",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("span", {
-                    className: "item-name",
-                    children: [s.first_name, " ", s.last_name]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
-                    className: "item-id",
-                    children: s.student_id
-                  })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("button", {
-                  className: "btn-add-mini",
-                  onClick: function onClick() {
-                    return enrollStudent(s.id);
-                  },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
-                    size: 16
-                  }), " Enroll"]
-                })]
-              }, s.id);
-            })
-          })]
-        })]
-      }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+      }), viewMode === 'enrollment' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
         style: {
           background: '#fff',
-          borderRadius: '12px',
-          padding: '20px',
-          border: '1px solid #e2e8f0'
+          borderRadius: '16px',
+          border: '1px solid #e2e8f0',
+          overflow: 'hidden'
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+          style: {
+            padding: '20px',
+            borderBottom: '1px solid #e2e8f0',
+            background: '#f8fafc',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center'
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("h4", {
+            style: {
+              margin: 0,
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px'
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
+              size: 20,
+              color: "#1e40af"
+            }), " Currently Enrolled Students"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("span", {
+            style: {
+              fontSize: '0.85rem',
+              fontWeight: 600,
+              color: '#64748b'
+            },
+            children: [enrolledStudents.length, " Students Total"]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+          className: "student-list-container",
+          style: {
+            padding: '0'
+          },
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("table", {
+            style: {
+              width: '100%',
+              borderCollapse: 'collapse'
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("thead", {
+              style: {
+                background: '#f1f5f9'
+              },
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("tr", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("th", {
+                  style: {
+                    textAlign: 'left',
+                    padding: '12px 20px',
+                    fontSize: '0.75rem',
+                    textTransform: 'uppercase',
+                    color: '#64748b'
+                  },
+                  children: "School ID"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("th", {
+                  style: {
+                    textAlign: 'left',
+                    padding: '12px 20px',
+                    fontSize: '0.75rem',
+                    textTransform: 'uppercase',
+                    color: '#64748b'
+                  },
+                  children: "Full Name"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("th", {
+                  style: {
+                    textAlign: 'left',
+                    padding: '12px 20px',
+                    fontSize: '0.75rem',
+                    textTransform: 'uppercase',
+                    color: '#64748b'
+                  },
+                  children: "Course & Year"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("th", {
+                  style: {
+                    textAlign: 'left',
+                    padding: '12px 20px',
+                    fontSize: '0.75rem',
+                    textTransform: 'uppercase',
+                    color: '#64748b'
+                  },
+                  children: "Section"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("th", {
+                  style: {
+                    textAlign: 'left',
+                    padding: '12px 20px',
+                    fontSize: '0.75rem',
+                    textTransform: 'uppercase',
+                    color: '#64748b'
+                  },
+                  children: "Email Address"
+                })]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("tbody", {
+              children: enrolledStudents.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("tr", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("td", {
+                  colSpan: "5",
+                  style: {
+                    textAlign: 'center',
+                    padding: '3rem',
+                    color: '#94a3b8'
+                  },
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                    size: 48,
+                    style: {
+                      opacity: 0.2,
+                      margin: '0 auto 12px',
+                      display: 'block'
+                    }
+                  }), "No students enrolled in this subject yet."]
+                })
+              }) : enrolledStudents.map(function (s) {
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("tr", {
+                  style: {
+                    borderBottom: '1px solid #f1f5f9'
+                  },
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("td", {
+                    style: {
+                      padding: '16px 20px'
+                    },
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("span", {
+                      className: "id-badge",
+                      style: {
+                        background: '#f1f5f9',
+                        padding: '4px 8px',
+                        borderRadius: '6px',
+                        fontWeight: 700,
+                        color: '#475569',
+                        fontSize: '0.8rem'
+                      },
+                      children: s.student_id
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("td", {
+                    style: {
+                      padding: '16px 20px',
+                      fontWeight: 600,
+                      color: '#1e293b'
+                    },
+                    children: [s.first_name, " ", s.last_name]
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("td", {
+                    style: {
+                      padding: '16px 20px',
+                      color: '#64748b'
+                    },
+                    children: [s.course, " - ", s.year_level]
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("td", {
+                    style: {
+                      padding: '16px 20px'
+                    },
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("span", {
+                      style: {
+                        background: '#e0e7ff',
+                        color: '#4338ca',
+                        padding: '4px 10px',
+                        borderRadius: '8px',
+                        fontWeight: 700,
+                        fontSize: '0.75rem'
+                      },
+                      children: s.section || '—'
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("td", {
+                    style: {
+                      padding: '16px 20px',
+                      color: '#64748b',
+                      fontSize: '0.9rem'
+                    },
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+                      style: {
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '8px'
+                      },
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                        size: 14
+                      }), " ", s.email]
+                    })
+                  })]
+                }, s.id);
+              })
+            })]
+          })
+        })]
+      }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+        style: {
+          background: '#fff',
+          borderRadius: '16px',
+          padding: '24px',
+          border: '1px solid #e2e8f0',
+          boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+        },
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
           style: {
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
-            marginBottom: '20px',
+            marginBottom: '24px',
             flexWrap: 'wrap',
-            gap: '12px'
+            gap: '16px'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
             style: {
               display: 'flex',
-              gap: '6px'
+              gap: '8px',
+              background: '#f1f5f9',
+              padding: '6px',
+              borderRadius: '12px'
             },
             children: ['prelim', 'midterm', 'finals'].map(function (p) {
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
                 onClick: function onClick() {
                   setGradingPeriod(p);
                   setGradesMap({});
                 },
                 style: {
-                  padding: '8px 16px',
-                  background: gradingPeriod === p ? '#1a5fb4' : '#f1f5f9',
-                  color: gradingPeriod === p ? '#fff' : '#475569',
+                  padding: '10px 20px',
+                  background: gradingPeriod === p ? '#fff' : 'transparent',
+                  color: gradingPeriod === p ? '#1e3a8a' : '#64748b',
                   border: 'none',
                   borderRadius: '8px',
                   cursor: 'pointer',
-                  fontWeight: 600,
-                  textTransform: 'capitalize'
+                  fontWeight: 800,
+                  textTransform: 'capitalize',
+                  boxShadow: gradingPeriod === p ? '0 2px 4px rgba(0,0,0,0.05)' : 'none',
+                  transition: 'all 0.2s'
                 },
                 children: periodLabels[p]
               }, p);
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("button", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("button", {
             onClick: handleSaveGrades,
             disabled: saving,
             style: {
               display: 'flex',
               alignItems: 'center',
               gap: '8px',
-              padding: '10px 20px',
+              padding: '12px 24px',
               background: '#059669',
               color: '#fff',
               border: 'none',
-              borderRadius: '8px',
+              borderRadius: '10px',
               cursor: 'pointer',
-              fontWeight: 600
+              fontWeight: 700,
+              transition: 'all 0.2s'
             },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
-              size: 18
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
+              size: 20
             }), " ", saving ? "Saving..." : "Submit ".concat(periodLabels[gradingPeriod], " Grades")]
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("table", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
           style: {
-            width: '100%',
-            borderCollapse: 'collapse'
+            overflowX: 'auto'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("thead", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("table", {
             style: {
-              background: '#f8fafc',
-              borderBottom: '2px solid #e2e8f0'
+              width: '100%',
+              borderCollapse: 'collapse'
             },
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("thead", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("tr", {
                 style: {
-                  padding: '12px',
-                  textAlign: 'left'
+                  borderBottom: '2px solid #e2e8f0'
                 },
-                children: "Student"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
-                style: {
-                  padding: '12px',
-                  textAlign: 'center',
-                  width: '80px'
-                },
-                children: "Prelim"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
-                style: {
-                  padding: '12px',
-                  textAlign: 'center',
-                  width: '80px'
-                },
-                children: "Midterm"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
-                style: {
-                  padding: '12px',
-                  textAlign: 'center',
-                  width: '80px'
-                },
-                children: "Finals"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
-                style: {
-                  padding: '12px',
-                  textAlign: 'center',
-                  width: '90px'
-                },
-                children: "Final"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
-                style: {
-                  padding: '12px',
-                  textAlign: 'center',
-                  width: '120px'
-                },
-                children: "New Grade"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
-                style: {
-                  padding: '12px',
-                  textAlign: 'left'
-                },
-                children: "Remarks"
-              })]
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("tbody", {
-            children: enrolledStudents.map(function (s) {
-              var eg = existingGrades[s.id];
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("tr", {
-                style: {
-                  borderBottom: '1px solid #f1f5f9'
-                },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("td", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("th", {
                   style: {
-                    padding: '12px'
+                    padding: '14px',
+                    textAlign: 'left',
+                    color: '#64748b',
+                    fontSize: '0.75rem',
+                    textTransform: 'uppercase'
                   },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                    style: {
-                      fontWeight: 600
-                    },
-                    children: [s.first_name, " ", s.last_name]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
-                    style: {
-                      fontSize: '0.8rem',
-                      color: '#64748b'
-                    },
-                    children: s.student_id
-                  })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
+                  children: "Enrolled Student"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("th", {
                   style: {
-                    padding: '12px',
+                    padding: '14px',
                     textAlign: 'center',
-                    fontWeight: 600,
-                    color: eg !== null && eg !== void 0 && eg.prelim ? eg.prelim <= 3 ? '#059669' : '#dc2626' : '#94a3b8'
+                    color: '#64748b',
+                    fontSize: '0.75rem',
+                    textTransform: 'uppercase',
+                    width: '90px'
                   },
-                  children: eg !== null && eg !== void 0 && eg.prelim ? parseFloat(eg.prelim).toFixed(2) : '—'
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
+                  children: "Prelim"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("th", {
                   style: {
-                    padding: '12px',
+                    padding: '14px',
                     textAlign: 'center',
-                    fontWeight: 600,
-                    color: eg !== null && eg !== void 0 && eg.midterm ? eg.midterm <= 3 ? '#059669' : '#dc2626' : '#94a3b8'
+                    color: '#64748b',
+                    fontSize: '0.75rem',
+                    textTransform: 'uppercase',
+                    width: '90px'
                   },
-                  children: eg !== null && eg !== void 0 && eg.midterm ? parseFloat(eg.midterm).toFixed(2) : '—'
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
+                  children: "Midterm"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("th", {
                   style: {
-                    padding: '12px',
+                    padding: '14px',
                     textAlign: 'center',
-                    fontWeight: 600,
-                    color: eg !== null && eg !== void 0 && eg.finals ? eg.finals <= 3 ? '#059669' : '#dc2626' : '#94a3b8'
+                    color: '#64748b',
+                    fontSize: '0.75rem',
+                    textTransform: 'uppercase',
+                    width: '90px'
                   },
-                  children: eg !== null && eg !== void 0 && eg.finals ? parseFloat(eg.finals).toFixed(2) : '—'
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
+                  children: "Finals"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("th", {
                   style: {
-                    padding: '12px',
+                    padding: '14px',
                     textAlign: 'center',
-                    fontWeight: 700,
-                    fontSize: '1rem',
-                    color: eg !== null && eg !== void 0 && eg.final_grade ? eg.final_grade <= 3 ? '#059669' : '#dc2626' : '#94a3b8'
+                    color: '#64748b',
+                    fontSize: '0.75rem',
+                    textTransform: 'uppercase',
+                    width: '100px'
                   },
-                  children: eg !== null && eg !== void 0 && eg.final_grade ? parseFloat(eg.final_grade).toFixed(2) : '—'
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
+                  children: "Final Grade"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("th", {
                   style: {
-                    padding: '12px',
-                    textAlign: 'center'
+                    padding: '14px',
+                    textAlign: 'center',
+                    color: '#1e40af',
+                    fontSize: '0.85rem',
+                    textTransform: 'uppercase',
+                    width: '130px',
+                    background: '#eff6ff'
                   },
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
-                    type: "number",
-                    step: "0.25",
-                    min: "1.0",
-                    max: "5.0",
-                    placeholder: "0.00",
-                    value: gradesMap[s.id] || "",
-                    onChange: function onChange(e) {
-                      return setGradesMap(_objectSpread(_objectSpread({}, gradesMap), {}, _defineProperty({}, s.id, e.target.value)));
-                    },
-                    style: {
-                      width: '75px',
-                      padding: '8px',
-                      border: '1px solid #cbd5e1',
-                      borderRadius: '6px',
-                      textAlign: 'center'
-                    }
-                  })
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
+                  children: [gradingPeriod, " input"]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("th", {
                   style: {
-                    padding: '12px'
+                    padding: '14px',
+                    textAlign: 'left',
+                    color: '#64748b',
+                    fontSize: '0.75rem',
+                    textTransform: 'uppercase'
                   },
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("select", {
-                    value: remarksMap[s.id] || (eg === null || eg === void 0 ? void 0 : eg.remarks) || "",
-                    onChange: function onChange(e) {
-                      return setRemarksMap(_objectSpread(_objectSpread({}, remarksMap), {}, _defineProperty({}, s.id, e.target.value)));
-                    },
-                    style: {
-                      padding: '8px',
-                      border: '1px solid #cbd5e1',
-                      borderRadius: '6px'
-                    },
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                      value: "",
-                      children: "Auto"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                      value: "Passed",
-                      children: "Passed"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                      value: "Failed",
-                      children: "Failed"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                      value: "Incomplete",
-                      children: "Incomplete"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                      value: "Dropped",
-                      children: "Dropped"
-                    })]
-                  })
+                  children: "Status / Remarks"
                 })]
-              }, s.id);
-            })
-          })]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("tbody", {
+              children: enrolledStudents.map(function (s) {
+                var eg = existingGrades[s.id];
+                var isPassing = function isPassing(g) {
+                  return g && parseFloat(g) <= 3.0;
+                };
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("tr", {
+                  style: {
+                    borderBottom: '1px solid #f1f5f9',
+                    transition: 'background 0.2s'
+                  },
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("td", {
+                    style: {
+                      padding: '16px 14px'
+                    },
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+                      style: {
+                        fontWeight: 700,
+                        color: '#1e293b'
+                      },
+                      children: [s.first_name, " ", s.last_name]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+                      style: {
+                        fontSize: '0.75rem',
+                        color: '#94a3b8',
+                        marginTop: '2px'
+                      },
+                      children: [s.student_id, " \u2022 ", s.section]
+                    })]
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("td", {
+                    style: {
+                      padding: '16px 14px',
+                      textAlign: 'center',
+                      fontWeight: 700,
+                      color: eg !== null && eg !== void 0 && eg.prelim ? isPassing(eg.prelim) ? '#059669' : '#dc2626' : '#cbd5e1'
+                    },
+                    children: eg !== null && eg !== void 0 && eg.prelim ? parseFloat(eg.prelim).toFixed(2) : '—'
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("td", {
+                    style: {
+                      padding: '16px 14px',
+                      textAlign: 'center',
+                      fontWeight: 700,
+                      color: eg !== null && eg !== void 0 && eg.midterm ? isPassing(eg.midterm) ? '#059669' : '#dc2626' : '#cbd5e1'
+                    },
+                    children: eg !== null && eg !== void 0 && eg.midterm ? parseFloat(eg.midterm).toFixed(2) : '—'
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("td", {
+                    style: {
+                      padding: '16px 14px',
+                      textAlign: 'center',
+                      fontWeight: 700,
+                      color: eg !== null && eg !== void 0 && eg.finals ? isPassing(eg.finals) ? '#059669' : '#dc2626' : '#cbd5e1'
+                    },
+                    children: eg !== null && eg !== void 0 && eg.finals ? parseFloat(eg.finals).toFixed(2) : '—'
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("td", {
+                    style: {
+                      padding: '16px 14px',
+                      textAlign: 'center',
+                      fontWeight: 800,
+                      fontSize: '1.1rem',
+                      background: '#f8fafc',
+                      color: eg !== null && eg !== void 0 && eg.final_grade ? isPassing(eg.final_grade) ? '#059669' : '#dc2626' : '#cbd5e1'
+                    },
+                    children: eg !== null && eg !== void 0 && eg.final_grade ? parseFloat(eg.final_grade).toFixed(2) : '—'
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("td", {
+                    style: {
+                      padding: '16px 14px',
+                      textAlign: 'center',
+                      background: '#eff6ff'
+                    },
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("input", {
+                      type: "number",
+                      step: "0.25",
+                      min: "1.0",
+                      max: "5.0",
+                      placeholder: "0.00",
+                      value: gradesMap[s.id] || "",
+                      onChange: function onChange(e) {
+                        return setGradesMap(_objectSpread(_objectSpread({}, gradesMap), {}, _defineProperty({}, s.id, e.target.value)));
+                      },
+                      style: {
+                        width: '85px',
+                        padding: '10px',
+                        border: '2px solid #bfdbfe',
+                        borderRadius: '10px',
+                        textAlign: 'center',
+                        fontWeight: 700,
+                        color: '#1e40af',
+                        outline: 'none'
+                      }
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("td", {
+                    style: {
+                      padding: '16px 14px'
+                    },
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("select", {
+                      value: remarksMap[s.id] || (eg === null || eg === void 0 ? void 0 : eg.remarks) || "",
+                      onChange: function onChange(e) {
+                        return setRemarksMap(_objectSpread(_objectSpread({}, remarksMap), {}, _defineProperty({}, s.id, e.target.value)));
+                      },
+                      style: {
+                        padding: '10px',
+                        border: '1.5px solid #e2e8f0',
+                        borderRadius: '10px',
+                        width: '120px',
+                        fontWeight: 600,
+                        color: (remarksMap[s.id] || (eg === null || eg === void 0 ? void 0 : eg.remarks)) === 'Passed' ? '#059669' : (remarksMap[s.id] || (eg === null || eg === void 0 ? void 0 : eg.remarks)) === 'Failed' ? '#dc2626' : '#475569'
+                      },
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("option", {
+                        value: "",
+                        children: "Auto"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("option", {
+                        value: "Passed",
+                        children: "Passed"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("option", {
+                        value: "Failed",
+                        children: "Failed"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("option", {
+                        value: "Incomplete",
+                        children: "Incomplete"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("option", {
+                        value: "Dropped",
+                        children: "Dropped"
+                      })]
+                    })
+                  })]
+                }, s.id);
+              })
+            })]
+          })
         })]
       })]
     })]
@@ -88620,7 +89133,18 @@ function LoginPage(_ref2) {
     _useState22 = _slicedToArray(_useState21, 2),
     showRoleSelection = _useState22[0],
     setShowRoleSelection = _useState22[1];
+  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    _useState24 = _slicedToArray(_useState23, 2),
+    successMessage = _useState24[0],
+    setSuccessMessage = _useState24[1];
   var usernameRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    var msg = sessionStorage.getItem("registrationSuccess");
+    if (msg) {
+      setSuccessMessage(msg);
+      sessionStorage.removeItem("registrationSuccess");
+    }
+  }, []);
   var debouncedUsername = useDebounce(credentials.username.trim(), 520);
 
   // ── Dynamic role detection ─────────────────────────────────────────────────
@@ -89117,6 +89641,25 @@ function LoginPage(_ref2) {
               },
               children: "Please enter your details to sign in"
             })]
+          }), successMessage && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+            className: "lp-success",
+            style: {
+              padding: '1rem',
+              backgroundColor: '#f0fdf4',
+              border: '1px solid #bbf7d0',
+              color: '#16a34a',
+              borderRadius: '12px',
+              marginBottom: '1.5rem',
+              fontSize: '0.9rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem'
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              size: 18
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
+              children: successMessage
+            })]
           }), error && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
             className: "lp-error",
             style: {
@@ -89402,6 +89945,395 @@ function LoginPage(_ref2) {
         })
       })]
     })
+  });
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/NotificationsPage.js":
+/*!******************************************************!*\
+  !*** ./resources/js/components/NotificationsPage.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ NotificationsPage)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/circle-alert.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/bell.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/check.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/clock.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/info.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/settings.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
+function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+
+
+
+var timeAgo = function timeAgo(dateStr) {
+  var date = new Date(dateStr);
+  var now = new Date();
+  var seconds = Math.floor((now - date) / 1000);
+  if (seconds < 60) return "".concat(seconds, "s ago");
+  var minutes = Math.floor(seconds / 60);
+  if (minutes < 60) return "".concat(minutes, "m ago");
+  var hours = Math.floor(minutes / 60);
+  if (hours < 24) return "".concat(hours, "h ago");
+  var days = Math.floor(hours / 24);
+  if (days < 30) return "".concat(days, "d ago");
+  return date.toLocaleDateString();
+};
+var getIcon = function getIcon(iconName) {
+  switch (iconName) {
+    case 'system':
+    case 'settings':
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        size: 20
+      });
+    case 'user':
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        size: 20
+      });
+    case 'book':
+    case 'book-open':
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        size: 20
+      });
+    case 'alert':
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        size: 20
+      });
+    default:
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        size: 20
+      });
+  }
+};
+function NotificationsPage() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState2 = _slicedToArray(_useState, 2),
+    notifications = _useState2[0],
+    setNotifications = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true),
+    _useState4 = _slicedToArray(_useState3, 2),
+    loading = _useState4[0],
+    setLoading = _useState4[1];
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    fetchNotifications();
+  }, []);
+  var fetchNotifications = /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
+      var res, _t;
+      return _regenerator().w(function (_context) {
+        while (1) switch (_context.p = _context.n) {
+          case 0:
+            _context.p = 0;
+            _context.n = 1;
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().get('/api/notifications?limit=100');
+          case 1:
+            res = _context.v;
+            // Fetch more for full page
+            setNotifications(res.data.notifications || []);
+            _context.n = 3;
+            break;
+          case 2:
+            _context.p = 2;
+            _t = _context.v;
+            console.error("Error fetching notifications", _t);
+          case 3:
+            _context.p = 3;
+            setLoading(false);
+            return _context.f(3);
+          case 4:
+            return _context.a(2);
+        }
+      }, _callee, null, [[0, 2, 3, 4]]);
+    }));
+    return function fetchNotifications() {
+      return _ref.apply(this, arguments);
+    };
+  }();
+  var handleMarkAllRead = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
+      var _t2;
+      return _regenerator().w(function (_context2) {
+        while (1) switch (_context2.p = _context2.n) {
+          case 0:
+            _context2.p = 0;
+            _context2.n = 1;
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().post('/api/notifications/mark-all-read');
+          case 1:
+            setNotifications(notifications.map(function (n) {
+              return _objectSpread(_objectSpread({}, n), {}, {
+                is_read: true
+              });
+            }));
+            _context2.n = 3;
+            break;
+          case 2:
+            _context2.p = 2;
+            _t2 = _context2.v;
+            console.error("Error marking all as read", _t2);
+          case 3:
+            return _context2.a(2);
+        }
+      }, _callee2, null, [[0, 2]]);
+    }));
+    return function handleMarkAllRead() {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+  var handleNotificationClick = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3(n) {
+      var _t3;
+      return _regenerator().w(function (_context3) {
+        while (1) switch (_context3.p = _context3.n) {
+          case 0:
+            if (n.is_read) {
+              _context3.n = 4;
+              break;
+            }
+            _context3.p = 1;
+            _context3.n = 2;
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().post("/api/notifications/".concat(n.id, "/mark-read"));
+          case 2:
+            setNotifications(notifications.map(function (item) {
+              return item.id === n.id ? _objectSpread(_objectSpread({}, item), {}, {
+                is_read: true
+              }) : item;
+            }));
+            _context3.n = 4;
+            break;
+          case 3:
+            _context3.p = 3;
+            _t3 = _context3.v;
+            console.error("Error marking as read", _t3);
+          case 4:
+            if (n.action_link) {
+              window.history.pushState({}, "", n.action_link);
+              window.dispatchEvent(new PopStateEvent('popstate'));
+            }
+          case 5:
+            return _context3.a(2);
+        }
+      }, _callee3, null, [[1, 3]]);
+    }));
+    return function handleNotificationClick(_x) {
+      return _ref3.apply(this, arguments);
+    };
+  }();
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+    className: "notifications-page animated-fade-in",
+    style: {
+      padding: '2rem',
+      maxWidth: '800px',
+      margin: '0 auto'
+    },
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+      style: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: '24px'
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("h2", {
+          style: {
+            margin: 0,
+            fontSize: '1.75rem',
+            fontWeight: 700,
+            display: 'flex',
+            alignItems: 'center',
+            gap: '10px'
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            size: 24,
+            color: "#1a5fb4"
+          }), " Notifications"]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+          style: {
+            margin: '4px 0 0',
+            color: '#64748b'
+          },
+          children: "View all your recent activity and alerts."
+        })]
+      }), notifications.some(function (n) {
+        return !n.is_read;
+      }) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("button", {
+        onClick: handleMarkAllRead,
+        style: {
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px',
+          padding: '8px 16px',
+          background: '#f0fdfa',
+          color: '#0d7c66',
+          border: '1px solid #ccfbf1',
+          borderRadius: '8px',
+          cursor: 'pointer',
+          fontWeight: 600
+        },
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          size: 16
+        }), " Mark all as read"]
+      })]
+    }), loading ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+      style: {
+        textAlign: 'center',
+        padding: '50px',
+        color: '#94a3b8'
+      },
+      children: "Loading notifications..."
+    }) : notifications.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+      style: {
+        textAlign: 'center',
+        padding: '50px',
+        background: '#fff',
+        borderRadius: '16px',
+        border: '1px solid #e2e8f0'
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+        style: {
+          background: '#f8fafc',
+          width: '64px',
+          height: '64px',
+          borderRadius: '50%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          margin: '0 auto 16px',
+          color: '#94a3b8'
+        },
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          size: 32
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("h3", {
+        style: {
+          margin: '0 0 8px',
+          color: '#1e293b'
+        },
+        children: "You're all caught up!"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+        style: {
+          margin: 0,
+          color: '#64748b'
+        },
+        children: "No new notifications to display."
+      })]
+    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+      style: {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '12px'
+      },
+      children: notifications.map(function (n) {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+          onClick: function onClick() {
+            return handleNotificationClick(n);
+          },
+          style: {
+            background: '#fff',
+            border: '1px solid #e2e8f0',
+            borderRadius: '12px',
+            padding: '20px',
+            display: 'flex',
+            gap: '16px',
+            cursor: n.action_link ? 'pointer' : 'default',
+            transition: 'all 0.2s',
+            boxShadow: n.is_read ? 'none' : '0 4px 6px -1px rgba(13, 124, 102, 0.1)',
+            borderLeft: n.is_read ? '4px solid transparent' : '4px solid #0d7c66'
+          },
+          onMouseEnter: function onMouseEnter(e) {
+            if (n.action_link) e.currentTarget.style.transform = 'translateY(-2px)';
+          },
+          onMouseLeave: function onMouseLeave(e) {
+            if (n.action_link) e.currentTarget.style.transform = 'translateY(0)';
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+            style: {
+              background: n.is_read ? '#f8fafc' : '#ccfbf1',
+              color: n.is_read ? '#94a3b8' : '#0d7c66',
+              width: '48px',
+              height: '48px',
+              borderRadius: '12px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0
+            },
+            children: getIcon(n.icon)
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+            style: {
+              flex: 1
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("h4", {
+              style: {
+                margin: '0 0 4px',
+                fontSize: '1.1rem',
+                color: '#1e293b',
+                fontWeight: n.is_read ? 500 : 700
+              },
+              children: n.title
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+              style: {
+                margin: '0 0 8px',
+                color: '#475569',
+                lineHeight: '1.5'
+              },
+              children: n.message
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+              style: {
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px',
+                color: '#94a3b8',
+                fontSize: '0.85rem'
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                size: 14
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
+                children: timeAgo(n.created_at)
+              }), !n.is_read && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
+                style: {
+                  marginLeft: '10px',
+                  background: '#0d7c66',
+                  color: '#fff',
+                  padding: '2px 8px',
+                  borderRadius: '10px',
+                  fontSize: '0.7rem',
+                  fontWeight: 600
+                },
+                children: "New"
+              })]
+            })]
+          })]
+        }, n.id);
+      })
+    })]
   });
 }
 
@@ -93728,18 +94660,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/circle-check-big.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/layers.js");
 /* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/award.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/bell.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/calendar-days.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/clipboard-list.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/clock.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/file-text.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/hash.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/map-pin.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/star.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
-/* harmony import */ var _GradesView__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./GradesView */ "./resources/js/components/GradesView.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/calendar-days.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/clipboard-list.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/clock.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/file-text.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/hash.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/map-pin.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/star.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
+/* harmony import */ var _GradesView__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./GradesView */ "./resources/js/components/GradesView.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
@@ -93824,7 +94755,7 @@ function StudentDashboard(_ref) {
     setLoading(true);
     var fetchData = /*#__PURE__*/function () {
       var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
-        var _gwaRes$data, _yield$Promise$all, _yield$Promise$all2, schedRes, annRes, gwaRes, profileId, subRes, _t, _t2;
+        var _gwaRes$data, _yield$Promise$all, _yield$Promise$all2, schedRes, annRes, gwaRes, profileId, subRes, mapped, _t, _t2;
         return _regenerator().w(function (_context) {
           while (1) switch (_context.p = _context.n) {
             case 0:
@@ -93851,17 +94782,17 @@ function StudentDashboard(_ref) {
               _context.p = 3;
               profileId = user.profile_id || user.id;
               _context.n = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/student/".concat(profileId, "/subjects"));
+              return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/subjects/student/".concat(profileId));
             case 4:
               subRes = _context.v;
-              setSchedule(subRes.data.map(function (s) {
+              mapped = subRes.data.map(function (s) {
                 var _s$room;
                 return {
                   id: s.id,
                   code: s.code,
                   name: s.name,
                   units: s.units || 3,
-                  room: ((_s$room = s.room) === null || _s$room === void 0 ? void 0 : _s$room.name) || 'TBA',
+                  room: ((_s$room = s.room) === null || _s$room === void 0 ? void 0 : _s$room.name) || s.room || 'TBA',
                   day: s.schedule_day || 'TBA',
                   time_start: s.time_start,
                   time_end: s.time_end,
@@ -93871,7 +94802,11 @@ function StudentDashboard(_ref) {
                   semester: s.semester,
                   academic_year: s.academic_year
                 };
-              }));
+              });
+              setSchedule(mapped);
+              setTotalUnits(mapped.reduce(function (sum, s) {
+                return sum + (parseInt(s.units) || 3);
+              }, 0));
               _context.n = 6;
               break;
             case 5:
@@ -93892,9 +94827,17 @@ function StudentDashboard(_ref) {
       };
     }();
     fetchData();
+    // Listen for admin enrollment updates
+    var handler = function handler() {
+      fetchData();
+    };
+    window.addEventListener('dataUpdated', handler);
+    return function () {
+      return window.removeEventListener('dataUpdated', handler);
+    };
   }, [user]);
   if (viewingGrades) {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_GradesView__WEBPACK_IMPORTED_MODULE_15__["default"], {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(_GradesView__WEBPACK_IMPORTED_MODULE_14__["default"], {
       user: user,
       studentId: user.id,
       onBack: function onBack() {
@@ -93930,9 +94873,9 @@ function StudentDashboard(_ref) {
     padding: '12px 16px',
     fontSize: '0.85rem'
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
     className: "student-dash",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
       className: "dash-header",
       style: {
         marginBottom: '2rem',
@@ -93940,8 +94883,8 @@ function StudentDashboard(_ref) {
         justifyContent: 'space-between',
         alignItems: 'center'
       },
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("h2", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("h2", {
           style: {
             fontSize: '1.75rem',
             fontWeight: 800,
@@ -93949,7 +94892,7 @@ function StudentDashboard(_ref) {
             marginBottom: '4px'
           },
           children: ["Welcome back, ", (user === null || user === void 0 ? void 0 : user.first_name) || "Student", "!"]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
           style: {
             display: 'flex',
             alignItems: 'center',
@@ -93957,41 +94900,41 @@ function StudentDashboard(_ref) {
             color: '#64748b',
             fontSize: '0.9rem'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("span", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("span", {
             style: {
               display: 'flex',
               alignItems: 'center',
               gap: '6px'
             },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
               size: 16
             }), " ", (user === null || user === void 0 ? void 0 : user.student_id) || "STU-2026-0001"]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("span", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("span", {
             style: {
               display: 'flex',
               alignItems: 'center',
               gap: '6px'
             },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
               size: 16
             }), " ", (studentInfo === null || studentInfo === void 0 ? void 0 : studentInfo.section) || (user === null || user === void 0 ? void 0 : user.section) || "SECTION A"]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("span", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("span", {
             style: {
               display: 'flex',
               alignItems: 'center',
               gap: '6px'
             },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
               size: 16
             }), " ", (studentInfo === null || studentInfo === void 0 ? void 0 : studentInfo.year_level) || (user === null || user === void 0 ? void 0 : user.year_level) || "1st Year"]
           })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
         style: {
           display: 'flex',
           gap: '10px'
         },
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("button", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("button", {
           onClick: function onClick() {
             return setViewingGrades(true);
           },
@@ -94008,19 +94951,19 @@ function StudentDashboard(_ref) {
             fontWeight: 600,
             boxShadow: '0 4px 12px rgba(26,95,180,0.2)'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
             size: 18
           }), " View My Grades"]
         })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
       style: {
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
         gap: '1.5rem',
         marginBottom: '2rem'
       },
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
         style: {
           background: '#fff',
           padding: '1.5rem',
@@ -94028,13 +94971,13 @@ function StudentDashboard(_ref) {
           border: '1px solid #f1f5f9',
           boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)'
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
           style: {
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("p", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
             style: {
               color: '#64748b',
               fontSize: '0.8rem',
@@ -94042,18 +94985,18 @@ function StudentDashboard(_ref) {
               textTransform: 'uppercase'
             },
             children: "Current GWA"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
             style: {
               background: "".concat(standing.color, "15"),
               color: standing.color,
               padding: '8px',
               borderRadius: '12px'
             },
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
               size: 20
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("h3", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("h3", {
           style: {
             fontSize: '1.8rem',
             fontWeight: 800,
@@ -94061,7 +95004,7 @@ function StudentDashboard(_ref) {
             margin: '4px 0'
           },
           children: fmtGwa(gwa)
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
           style: {
             width: '100%',
             height: '8px',
@@ -94069,7 +95012,7 @@ function StudentDashboard(_ref) {
             borderRadius: '4px',
             margin: '12px 0'
           },
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
             style: {
               width: gwa ? "".concat(Math.min(100, (5 - gwa) / 4 * 100), "%") : '0%',
               height: '100%',
@@ -94077,7 +95020,7 @@ function StudentDashboard(_ref) {
               borderRadius: '4px'
             }
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
           style: {
             margin: 0,
             fontSize: '0.8rem',
@@ -94086,7 +95029,7 @@ function StudentDashboard(_ref) {
           },
           children: standing.label
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
         style: {
           background: '#fff',
           padding: '1.5rem',
@@ -94094,13 +95037,13 @@ function StudentDashboard(_ref) {
           border: '1px solid #f1f5f9',
           boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)'
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
           style: {
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("p", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
             style: {
               color: '#64748b',
               fontSize: '0.8rem',
@@ -94108,18 +95051,18 @@ function StudentDashboard(_ref) {
               textTransform: 'uppercase'
             },
             children: "Academic Load"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
             style: {
               background: '#eef2ff',
               color: '#6366f1',
               padding: '8px',
               borderRadius: '12px'
             },
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
               size: 20
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("h3", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("h3", {
           style: {
             fontSize: '1.8rem',
             fontWeight: 800,
@@ -94127,7 +95070,7 @@ function StudentDashboard(_ref) {
             margin: '4px 0'
           },
           children: [totalUnits, " Units"]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("p", {
           style: {
             margin: 0,
             fontSize: '0.8rem',
@@ -94135,7 +95078,7 @@ function StudentDashboard(_ref) {
           },
           children: ["Across ", schedule.length, " enrolled subjects"]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
         style: {
           background: '#fff',
           padding: '1.5rem',
@@ -94143,13 +95086,13 @@ function StudentDashboard(_ref) {
           border: '1px solid #f1f5f9',
           boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)'
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
           style: {
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("p", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
             style: {
               color: '#64748b',
               fontSize: '0.8rem',
@@ -94157,18 +95100,18 @@ function StudentDashboard(_ref) {
               textTransform: 'uppercase'
             },
             children: "Attendance"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
             style: {
               background: '#ecfdf5',
               color: '#10b981',
               padding: '8px',
               borderRadius: '12px'
             },
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
               size: 20
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("h3", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("h3", {
           style: {
             fontSize: '1.8rem',
             fontWeight: 800,
@@ -94176,7 +95119,7 @@ function StudentDashboard(_ref) {
             margin: '4px 0'
           },
           children: "98%"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
           style: {
             margin: 0,
             fontSize: '0.8rem',
@@ -94185,34 +95128,34 @@ function StudentDashboard(_ref) {
           children: "Good attendance record"
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
       style: {
         display: 'grid',
         gridTemplateColumns: '1fr 300px',
         gap: '1.5rem',
         alignItems: 'start'
       },
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
         style: {
           display: 'flex',
           flexDirection: 'column',
           gap: '2rem'
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
           style: {
             background: '#f8fafc',
             padding: '1.5rem',
             borderRadius: '24px',
             border: '2px solid #e2e8f0'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
             style: {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
               marginBottom: '1.25rem'
             },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("h3", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("h3", {
               style: {
                 margin: 0,
                 display: 'flex',
@@ -94221,11 +95164,11 @@ function StudentDashboard(_ref) {
                 fontSize: '1.1rem',
                 color: '#1e293b'
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
                 size: 22,
                 color: "#6366f1"
               }), " Today's Journey"]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
               style: {
                 fontSize: '0.8rem',
                 fontWeight: 700,
@@ -94240,14 +95183,14 @@ function StudentDashboard(_ref) {
                 day: 'numeric'
               })
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
             style: {
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
               gap: '1rem'
             },
             children: todayClasses.length > 0 ? todayClasses.map(function (s, i) {
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                 style: {
                   background: '#fff',
                   padding: '1.25rem',
@@ -94256,7 +95199,7 @@ function StudentDashboard(_ref) {
                   position: 'relative',
                   overflow: 'hidden'
                 },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
                   style: {
                     position: 'absolute',
                     top: 0,
@@ -94265,20 +95208,20 @@ function StudentDashboard(_ref) {
                     height: '100%',
                     background: '#6366f1'
                   }
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                   style: {
                     display: 'flex',
                     justifyContent: 'space-between',
                     marginBottom: '8px'
                   },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                     style: {
                       fontWeight: 800,
                       color: '#6366f1',
                       fontSize: '0.85rem'
                     },
                     children: s.code
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                     style: {
                       fontSize: '0.75rem',
                       fontWeight: 700,
@@ -94286,7 +95229,7 @@ function StudentDashboard(_ref) {
                     },
                     children: s.room
                   })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("h4", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("h4", {
                   style: {
                     margin: '0 0 12px 0',
                     fontSize: '1.05rem',
@@ -94294,13 +95237,13 @@ function StudentDashboard(_ref) {
                     fontWeight: 700
                   },
                   children: s.name
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                   style: {
                     display: 'flex',
                     alignItems: 'center',
                     gap: '12px'
                   },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                     style: {
                       display: 'flex',
                       alignItems: 'center',
@@ -94308,10 +95251,10 @@ function StudentDashboard(_ref) {
                       fontSize: '0.8rem',
                       color: '#64748b'
                     },
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
                       size: 14
                     }), " ", s.time_display]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                     style: {
                       display: 'flex',
                       alignItems: 'center',
@@ -94319,13 +95262,13 @@ function StudentDashboard(_ref) {
                       fontSize: '0.8rem',
                       color: '#64748b'
                     },
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_14__["default"], {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
                       size: 14
                     }), " ", s.instructor]
                   })]
                 })]
               }, i);
-            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
               style: {
                 gridColumn: '1/-1',
                 textAlign: 'center',
@@ -94335,8 +95278,8 @@ function StudentDashboard(_ref) {
               children: "No classes scheduled for today. Take some time to rest or study!"
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
             style: {
               display: 'flex',
               gap: 0,
@@ -94344,7 +95287,7 @@ function StudentDashboard(_ref) {
               borderBottom: '2px solid #f1f5f9'
             },
             children: ['schedule', 'subjects'].map(function (tab) {
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("button", {
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("button", {
                 onClick: function onClick() {
                   return setActiveTab(tab);
                 },
@@ -94362,7 +95305,7 @@ function StudentDashboard(_ref) {
                 children: tab === 'schedule' ? 'Weekly Schedule' : 'Enrolled Subjects'
               }, tab);
             })
-          }), activeTab === 'schedule' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+          }), activeTab === 'schedule' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
             style: {
               background: '#fff',
               border: '1px solid #e2e8f0',
@@ -94370,19 +95313,19 @@ function StudentDashboard(_ref) {
               overflow: 'hidden',
               boxShadow: '0 1px 3px rgba(0,0,0,0.05)'
             },
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("table", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("table", {
               style: {
                 width: '100%',
                 borderCollapse: 'collapse'
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("thead", {
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("tr", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("thead", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("tr", {
                   style: {
                     background: '#f8fafc',
                     borderBottom: '2px solid #f1f5f9'
                   },
                   children: ['Code', 'Subject', 'Units', 'Day', 'Time', 'Room', 'Instructor'].map(function (h) {
-                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("th", {
+                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("th", {
                       style: _objectSpread(_objectSpread({}, thStyle), {}, {
                         textAlign: h === 'Units' ? 'center' : 'left'
                       }),
@@ -94390,9 +95333,9 @@ function StudentDashboard(_ref) {
                     }, h);
                   })
                 })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("tbody", {
-                children: schedule.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("tr", {
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("td", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("tbody", {
+                children: schedule.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("tr", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("td", {
                     colSpan: "7",
                     style: {
                       padding: '40px',
@@ -94402,13 +95345,13 @@ function StudentDashboard(_ref) {
                     children: "No subjects enrolled yet."
                   })
                 }) : schedule.map(function (s, i) {
-                  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("tr", {
+                  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("tr", {
                     style: {
                       borderBottom: '1px solid #f8fafc'
                     },
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("td", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("td", {
                       style: tdStyle,
-                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                         style: {
                           fontWeight: 700,
                           color: '#6366f1',
@@ -94418,39 +95361,39 @@ function StudentDashboard(_ref) {
                         },
                         children: s.code
                       })
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("td", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("td", {
                       style: _objectSpread(_objectSpread({}, tdStyle), {}, {
                         fontWeight: 600,
                         color: '#334155'
                       }),
                       children: s.name
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("td", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("td", {
                       style: _objectSpread(_objectSpread({}, tdStyle), {}, {
                         textAlign: 'center',
                         fontWeight: 700,
                         color: '#64748b'
                       }),
                       children: s.units || 3
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("td", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("td", {
                       style: _objectSpread(_objectSpread({}, tdStyle), {}, {
                         color: '#64748b'
                       }),
                       children: s.day
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("td", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("td", {
                       style: _objectSpread(_objectSpread({}, tdStyle), {}, {
                         color: '#64748b'
                       }),
                       children: s.time_display || 'TBA'
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("td", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("td", {
                       style: tdStyle,
-                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                         style: {
                           color: '#475569',
                           fontWeight: 500
                         },
                         children: s.room || 'TBA'
                       })
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("td", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("td", {
                       style: _objectSpread(_objectSpread({}, tdStyle), {}, {
                         color: '#475569'
                       }),
@@ -94460,14 +95403,14 @@ function StudentDashboard(_ref) {
                 })
               })]
             })
-          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
             style: {
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fill,minmax(280px,1fr))',
               gap: '1.25rem'
             },
             children: schedule.map(function (s, i) {
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                 style: {
                   background: '#fff',
                   border: '1px solid #e2e8f0',
@@ -94475,13 +95418,13 @@ function StudentDashboard(_ref) {
                   padding: '1.5rem',
                   boxShadow: '0 1px 3px rgba(0,0,0,0.05)'
                 },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                   style: {
                     display: 'flex',
                     justifyContent: 'space-between',
                     marginBottom: '12px'
                   },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                     style: {
                       fontWeight: 800,
                       color: '#6366f1',
@@ -94491,7 +95434,7 @@ function StudentDashboard(_ref) {
                       fontSize: '0.85rem'
                     },
                     children: s.code
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("span", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("span", {
                     style: {
                       fontSize: '0.8rem',
                       color: '#94a3b8',
@@ -94499,7 +95442,7 @@ function StudentDashboard(_ref) {
                     },
                     children: [s.units || 3, " Units"]
                   })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("h4", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("h4", {
                   style: {
                     margin: '0 0 15px',
                     fontSize: '1.05rem',
@@ -94507,7 +95450,7 @@ function StudentDashboard(_ref) {
                     color: '#1e293b'
                   },
                   children: s.name
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                   style: {
                     display: 'flex',
                     flexDirection: 'column',
@@ -94515,33 +95458,33 @@ function StudentDashboard(_ref) {
                     fontSize: '0.85rem',
                     color: '#64748b'
                   },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                     style: {
                       display: 'flex',
                       alignItems: 'center',
                       gap: 10
                     },
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
                       size: 16,
                       color: "#14b8a6"
                     }), " ", s.room || 'TBA']
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                     style: {
                       display: 'flex',
                       alignItems: 'center',
                       gap: 10
                     },
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
                       size: 16,
                       color: "#6366f1"
                     }), " ", s.day, " ", s.time_display ? "| ".concat(s.time_display) : '']
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                     style: {
                       display: 'flex',
                       alignItems: 'center',
                       gap: 10
                     },
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_14__["default"], {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
                       size: 16,
                       color: "#f59e0b"
                     }), " ", s.instructor || 'TBA']
@@ -94551,21 +95494,21 @@ function StudentDashboard(_ref) {
             })
           })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
         className: "sidebar-widgets",
         style: {
           display: 'flex',
           flexDirection: 'column',
           gap: '1.5rem'
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
           style: {
             background: '#fff',
             border: '1px solid #e2e8f0',
             padding: '1.5rem',
             borderRadius: '20px'
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("h3", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("h3", {
             style: {
               marginTop: 0,
               marginBottom: '1.25rem',
@@ -94575,38 +95518,38 @@ function StudentDashboard(_ref) {
               fontSize: '1rem',
               color: '#1e293b'
             },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
               size: 20,
               color: "#f59e0b"
             }), " Critical Deadlines"]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
             style: {
               display: 'flex',
               flexDirection: 'column',
               gap: '12px'
             },
             children: deadlines.length > 0 ? deadlines.slice(0, 4).map(function (d) {
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                 style: {
                   padding: '10px',
                   borderRadius: '12px',
                   background: '#fffbeb',
                   borderLeft: '4px solid #f59e0b'
                 },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                   style: {
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'flex-start'
                   },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                     style: {
                       fontSize: '0.85rem',
                       fontWeight: 700,
                       color: '#92400e'
                     },
                     children: d.title
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                     style: {
                       fontSize: '0.65rem',
                       background: '#fef3c7',
@@ -94617,7 +95560,7 @@ function StudentDashboard(_ref) {
                     },
                     children: d.category.toUpperCase()
                   })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("p", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("p", {
                   style: {
                     margin: '4px 0 0',
                     fontSize: '0.75rem',
@@ -94626,19 +95569,19 @@ function StudentDashboard(_ref) {
                   children: [d.content.substring(0, 60), "..."]
                 })]
               }, d.id);
-            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
+            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
               style: {
                 textAlign: 'center',
                 padding: '1.5rem 0'
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
                 size: 32,
                 color: "#10b981",
                 style: {
                   opacity: 0.2,
                   marginBottom: '8px'
                 }
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("p", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
                 style: {
                   margin: 0,
                   fontSize: '0.8rem',
@@ -94648,111 +95591,7 @@ function StudentDashboard(_ref) {
               })]
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
-          style: {
-            background: '#1e293b',
-            padding: '1.5rem',
-            borderRadius: '24px',
-            color: '#fff'
-          },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("h3", {
-            style: {
-              marginTop: 0,
-              marginBottom: '1.25rem',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '10px',
-              fontSize: '1.1rem'
-            },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
-              size: 20,
-              color: "#fbbf24"
-            }), " Bulletin Board"]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("div", {
-            style: {
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '15px'
-            },
-            children: announcements.length > 0 ? announcements.slice(0, 4).map(function (ann) {
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
-                style: {
-                  borderBottom: '1px solid rgba(255,255,255,0.05)',
-                  paddingBottom: '12px'
-                },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
-                  style: {
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '8px',
-                    marginBottom: '6px'
-                  },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
-                    style: {
-                      fontSize: '0.85rem',
-                      fontWeight: 700,
-                      color: '#f8fafc'
-                    },
-                    children: ann.title
-                  }), ann.category && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("span", {
-                    style: {
-                      fontSize: '0.65rem',
-                      background: 'rgba(255,255,255,0.1)',
-                      color: '#94a3b8',
-                      padding: '1px 6px',
-                      borderRadius: '4px'
-                    },
-                    children: ann.category.replace('_', ' ')
-                  })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("p", {
-                  style: {
-                    margin: 0,
-                    fontSize: '0.8rem',
-                    color: '#94a3b8',
-                    lineHeight: '1.5'
-                  },
-                  children: [ann.content.substring(0, 80), "..."]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
-                  style: {
-                    marginTop: '8px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '6px',
-                    fontSize: '0.7rem',
-                    color: '#64748b'
-                  },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_14__["default"], {
-                    size: 12
-                  }), " ", ann.faculty ? "".concat(ann.faculty.first_name, " ").concat(ann.faculty.last_name) : 'System']
-                })]
-              }, ann.id);
-            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("p", {
-              style: {
-                fontSize: '0.8rem',
-                color: '#64748b'
-              },
-              children: "No recent broadcasts."
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)("button", {
-            onClick: function onClick() {
-              window.history.pushState({}, '', '/student-dashboard');
-              window.dispatchEvent(new PopStateEvent('popstate'));
-            },
-            style: {
-              width: '100%',
-              marginTop: '1.25rem',
-              padding: '10px',
-              background: 'rgba(255,255,255,0.05)',
-              border: '1px solid rgba(255,255,255,0.1)',
-              borderRadius: '12px',
-              color: '#cbd5e1',
-              fontSize: '0.85rem',
-              cursor: 'pointer',
-              transition: 'all 0.2s'
-            },
-            children: "View All Posts"
-          })]
-        })]
+        })
       })]
     })]
   });
@@ -94777,19 +95616,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Profile__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Profile */ "./resources/js/components/Profile.js");
 /* harmony import */ var _UserSettings__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./UserSettings */ "./resources/js/components/UserSettings.js");
 /* harmony import */ var _SecurityPrivacy__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SecurityPrivacy */ "./resources/js/components/SecurityPrivacy.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/circle.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/graduation-cap.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/layout-dashboard.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/settings.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
-/* harmony import */ var _TopNavbar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./TopNavbar */ "./resources/js/components/TopNavbar.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _NotificationsPage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./NotificationsPage */ "./resources/js/components/NotificationsPage.js");
+/* harmony import */ var _StudentSubjects__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./StudentSubjects */ "./resources/js/components/StudentSubjects.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/circle.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/graduation-cap.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/layout-dashboard.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/settings.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
+/* harmony import */ var _TopNavbar__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./TopNavbar */ "./resources/js/components/TopNavbar.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+
 
 
 
@@ -94813,7 +95657,7 @@ function StudentLayout(_ref) {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     var updatePage = function updatePage() {
       var path = window.location.pathname.split("/").pop();
-      var valid = ["student-dashboard", "student-profile", "student-settings", "student-security"];
+      var valid = ["student-dashboard", "student-subjects", "student-profile", "student-settings", "student-security", "notifications"];
       if (valid.includes(path)) setPage(path);
     };
     window.addEventListener("popstate", updatePage);
@@ -94829,103 +95673,111 @@ function StudentLayout(_ref) {
   var menuItems = [{
     key: "student-dashboard",
     label: "Dashboard",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      size: 18
+    })
+  }, {
+    key: "student-subjects",
+    label: "Subjects",
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
       size: 18
     })
   }, {
     key: "student-profile",
     label: "Profile",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
       size: 18
     })
   }, {
     key: "student-settings",
     label: "Settings",
-    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
       size: 18
     })
   }];
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
     className: "layout",
-    children: [sidebarOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
+    children: [sidebarOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
       className: "sidebar-overlay",
       onClick: function onClick() {
         return setSidebarOpen(false);
       }
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)("aside", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("aside", {
       className: "sidebar ".concat(sidebarOpen ? "open" : ""),
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
         className: "logo-section",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
           className: "logo-box",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
             className: "logo-icon-wrapper",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
               size: 24,
               strokeWidth: 2.5,
               className: "logo-icon"
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("h1", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("h1", {
             className: "logo-text",
             children: "UniSys"
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("span", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("span", {
           className: "portal-badge student",
           children: "STUDENT PORTAL"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("nav", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("nav", {
         className: "nav-container",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("ul", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("ul", {
           className: "nav-menu",
           children: menuItems.map(function (item) {
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)("li", {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("li", {
               className: "nav-item ".concat(page === item.key ? "active" : ""),
               onClick: function onClick() {
                 return navigate(item.key);
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
                 className: "icon-wrapper",
                 children: item.icon
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("span", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("span", {
                 children: item.label
               })]
             }, item.key);
           })
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
         className: "sidebar-footer",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
           className: "system-status",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
             size: 8,
             fill: "#10b981",
             stroke: "none",
             className: "status-dot pulsing"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("span", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("span", {
             children: "System Online"
           })]
         })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)("main", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("main", {
       className: "main-content",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_TopNavbar__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(_TopNavbar__WEBPACK_IMPORTED_MODULE_13__["default"], {
         user: user,
         onToggleSidebar: function onToggleSidebar() {
           return setSidebarOpen(!sidebarOpen);
         },
         onLogout: onLogout
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
         className: "page-content-wrapper",
-        children: [page === "student-dashboard" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_StudentDashboard__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        children: [page === "student-dashboard" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(_StudentDashboard__WEBPACK_IMPORTED_MODULE_1__["default"], {
           user: user
-        }), page === "student-profile" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_Profile__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        }), page === "student-subjects" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(_StudentSubjects__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          user: user
+        }), page === "student-profile" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(_Profile__WEBPACK_IMPORTED_MODULE_2__["default"], {
           user: user,
           onLogout: onLogout
-        }), page === "student-settings" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_UserSettings__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        }), page === "student-settings" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(_UserSettings__WEBPACK_IMPORTED_MODULE_3__["default"], {
           user: user
-        }), page === "student-security" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_SecurityPrivacy__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        }), page === "student-security" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(_SecurityPrivacy__WEBPACK_IMPORTED_MODULE_4__["default"], {
           user: user
-        })]
+        }), page === "notifications" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(_NotificationsPage__WEBPACK_IMPORTED_MODULE_5__["default"], {})]
       })]
     })]
   });
@@ -95023,7 +95875,8 @@ function StudentRegister(_ref) {
           case 2:
             res = _context.v;
             if ((_res$data = res.data) !== null && _res$data !== void 0 && _res$data.success) {
-              onRegisterSuccess(res.data.user);
+              sessionStorage.setItem("registrationSuccess", "Account created successfully! Please log in to continue.");
+              window.location.href = "/login";
             }
             _context.n = 4;
             break;
@@ -95872,6 +96725,469 @@ function StudentRegister(_ref) {
 
 /***/ }),
 
+/***/ "./resources/js/components/StudentSubjects.js":
+/*!****************************************************!*\
+  !*** ./resources/js/components/StudentSubjects.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ StudentSubjects)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/calendar-days.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/clock.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/hash.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/map-pin.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
+function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+
+
+
+function StudentSubjects(_ref) {
+  var user = _ref.user;
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState2 = _slicedToArray(_useState, 2),
+    subjects = _useState2[0],
+    setSubjects = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true),
+    _useState4 = _slicedToArray(_useState3, 2),
+    loading = _useState4[0],
+    setLoading = _useState4[1];
+  var fetchSubjects = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(/*#__PURE__*/_asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
+    var studentId, res, _t;
+    return _regenerator().w(function (_context) {
+      while (1) switch (_context.p = _context.n) {
+        case 0:
+          if (user) {
+            _context.n = 1;
+            break;
+          }
+          return _context.a(2);
+        case 1:
+          studentId = user.profile_id || user.id;
+          _context.p = 2;
+          _context.n = 3;
+          return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/subjects/student/".concat(studentId));
+        case 3:
+          res = _context.v;
+          setSubjects(res.data);
+          _context.n = 5;
+          break;
+        case 4:
+          _context.p = 4;
+          _t = _context.v;
+          console.error("Error fetching subjects:", _t);
+        case 5:
+          _context.p = 5;
+          setLoading(false);
+          return _context.f(5);
+        case 6:
+          return _context.a(2);
+      }
+    }, _callee, null, [[2, 4, 5, 6]]);
+  })), [user]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    fetchSubjects();
+    // Listen for admin-triggered enrollment updates
+    var handler = function handler() {
+      return fetchSubjects();
+    };
+    window.addEventListener("dataUpdated", handler);
+    return function () {
+      return window.removeEventListener("dataUpdated", handler);
+    };
+  }, [fetchSubjects]);
+  var fmtTime = function fmtTime(t) {
+    if (!t) return null;
+    try {
+      var _t$split = t.split(":"),
+        _t$split2 = _slicedToArray(_t$split, 2),
+        h = _t$split2[0],
+        m = _t$split2[1];
+      var hr = parseInt(h, 10);
+      var suffix = hr >= 12 ? "PM" : "AM";
+      var hr12 = hr % 12 || 12;
+      return "".concat(hr12, ":").concat(m, " ").concat(suffix);
+    } catch (_unused) {
+      return t;
+    }
+  };
+  if (loading) {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+      style: {
+        padding: "2rem",
+        color: "#64748b",
+        display: "flex",
+        alignItems: "center",
+        gap: "10px"
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+        style: {
+          width: "20px",
+          height: "20px",
+          border: "2px solid #e2e8f0",
+          borderTop: "2px solid #6366f1",
+          borderRadius: "50%",
+          animation: "spin 0.8s linear infinite"
+        }
+      }), "Loading subjects..."]
+    });
+  }
+  var totalUnits = subjects.reduce(function (sum, s) {
+    return sum + (parseInt(s.units) || 3);
+  }, 0);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+    style: {
+      padding: "20px"
+    },
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+      style: {
+        marginBottom: "1.5rem",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "flex-start"
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h2", {
+          style: {
+            margin: 0,
+            color: "#1e293b",
+            fontSize: "1.5rem",
+            fontWeight: 800
+          },
+          children: "My Enrolled Subjects"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("p", {
+          style: {
+            margin: "5px 0 0",
+            color: "#64748b"
+          },
+          children: "Your class schedule and assigned instructors"
+        })]
+      }), subjects.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+        style: {
+          display: "flex",
+          gap: "12px"
+        },
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+          style: {
+            background: "#eef2ff",
+            padding: "10px 16px",
+            borderRadius: "10px",
+            textAlign: "center"
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+            style: {
+              fontSize: "1.4rem",
+              fontWeight: 800,
+              color: "#6366f1"
+            },
+            children: subjects.length
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+            style: {
+              fontSize: "0.72rem",
+              color: "#4338ca",
+              fontWeight: 700,
+              textTransform: "uppercase"
+            },
+            children: "Subjects"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+          style: {
+            background: "#f0fdf4",
+            padding: "10px 16px",
+            borderRadius: "10px",
+            textAlign: "center"
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+            style: {
+              fontSize: "1.4rem",
+              fontWeight: 800,
+              color: "#16a34a"
+            },
+            children: totalUnits
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+            style: {
+              fontSize: "0.72rem",
+              color: "#15803d",
+              fontWeight: 700,
+              textTransform: "uppercase"
+            },
+            children: "Total Units"
+          })]
+        })]
+      })]
+    }), subjects.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+      style: {
+        textAlign: "center",
+        padding: "4rem 2rem",
+        background: "#fff",
+        borderRadius: "16px",
+        border: "1px solid #e2e8f0",
+        boxShadow: "0 4px 6px -1px rgba(0,0,0,0.05)"
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        size: 48,
+        color: "#cbd5e1",
+        style: {
+          marginBottom: "1rem"
+        }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h3", {
+        style: {
+          margin: "0 0 10px 0",
+          color: "#334155",
+          fontSize: "1.1rem"
+        },
+        children: "No Enrolled Subjects"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("p", {
+        style: {
+          margin: 0,
+          color: "#64748b",
+          fontSize: "0.9rem"
+        },
+        children: "You have no enrolled subjects yet. Please contact your administrator for enrollment."
+      })]
+    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+      style: {
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+        gap: "1.25rem"
+      },
+      children: subjects.map(function (sub) {
+        var facultyName = sub.faculty ? "".concat(sub.faculty.first_name, " ").concat(sub.faculty.last_name) : "TBA";
+        var timeDisplay = sub.time_start && sub.time_end ? "".concat(fmtTime(sub.time_start), " \u2013 ").concat(fmtTime(sub.time_end)) : "TBA";
+        var room = sub.room_id && sub.room ? sub.room.name || sub.room : sub.room || "TBA";
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+          style: {
+            background: "#fff",
+            borderRadius: "16px",
+            border: "1px solid #e2e8f0",
+            padding: "1.5rem",
+            boxShadow: "0 4px 6px -1px rgba(0,0,0,0.05)",
+            transition: "box-shadow 0.2s, transform 0.2s"
+          },
+          onMouseOver: function onMouseOver(e) {
+            e.currentTarget.style.boxShadow = "0 10px 25px rgba(0,0,0,0.1)";
+            e.currentTarget.style.transform = "translateY(-2px)";
+          },
+          onMouseOut: function onMouseOut(e) {
+            e.currentTarget.style.boxShadow = "0 4px 6px -1px rgba(0,0,0,0.05)";
+            e.currentTarget.style.transform = "translateY(0)";
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+            style: {
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "flex-start",
+              marginBottom: "1rem"
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+                style: {
+                  fontSize: "0.8rem",
+                  fontWeight: 800,
+                  color: "#6366f1",
+                  background: "#eef2ff",
+                  padding: "4px 10px",
+                  borderRadius: "6px",
+                  display: "inline-block",
+                  marginBottom: "8px"
+                },
+                children: sub.code
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h3", {
+                style: {
+                  margin: 0,
+                  fontSize: "1rem",
+                  color: "#1e293b",
+                  fontWeight: 700
+                },
+                children: sub.name
+              }), sub.section && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+                style: {
+                  fontSize: "0.72rem",
+                  color: "#4338ca",
+                  background: "#e0e7ff",
+                  padding: "2px 8px",
+                  borderRadius: "4px",
+                  fontWeight: 700,
+                  display: "inline-block",
+                  marginTop: "4px"
+                },
+                children: sub.section
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+              style: {
+                textAlign: "right",
+                flexShrink: 0
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+                style: {
+                  fontSize: "1.4rem",
+                  fontWeight: 800,
+                  color: "#10b981"
+                },
+                children: sub.units || 3
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+                style: {
+                  fontSize: "0.7rem",
+                  color: "#64748b",
+                  display: "block",
+                  textTransform: "uppercase",
+                  fontWeight: 600
+                },
+                children: "Units"
+              })]
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+            style: {
+              display: "flex",
+              flexDirection: "column",
+              gap: "8px",
+              paddingTop: "1rem",
+              borderTop: "1px solid #f1f5f9"
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+              style: {
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                color: "#475569",
+                fontSize: "0.875rem"
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                size: 15,
+                color: "#6366f1",
+                style: {
+                  flexShrink: 0
+                }
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+                style: {
+                  fontWeight: 600,
+                  minWidth: "70px"
+                },
+                children: "Instructor:"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+                children: facultyName
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+              style: {
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                color: "#475569",
+                fontSize: "0.875rem"
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                size: 15,
+                color: "#f59e0b",
+                style: {
+                  flexShrink: 0
+                }
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+                style: {
+                  fontWeight: 600,
+                  minWidth: "70px"
+                },
+                children: "Day:"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+                children: sub.schedule_day || "TBA"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+              style: {
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                color: "#475569",
+                fontSize: "0.875rem"
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                size: 15,
+                color: "#14b8a6",
+                style: {
+                  flexShrink: 0
+                }
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+                style: {
+                  fontWeight: 600,
+                  minWidth: "70px"
+                },
+                children: "Time:"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+                children: timeDisplay
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+              style: {
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                color: "#475569",
+                fontSize: "0.875rem"
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                size: 15,
+                color: "#ec4899",
+                style: {
+                  flexShrink: 0
+                }
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+                style: {
+                  fontWeight: 600,
+                  minWidth: "70px"
+                },
+                children: "Room:"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+                children: room
+              })]
+            }), sub.semester && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+              style: {
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                color: "#475569",
+                fontSize: "0.875rem"
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                size: 15,
+                color: "#8b5cf6",
+                style: {
+                  flexShrink: 0
+                }
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+                style: {
+                  fontWeight: 600,
+                  minWidth: "70px"
+                },
+                children: "Semester:"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("span", {
+                children: [sub.semester, " ", sub.academic_year ? "| ".concat(sub.academic_year) : ""]
+              })]
+            })]
+          })]
+        }, sub.id);
+      })
+    })]
+  });
+}
+
+/***/ }),
+
 /***/ "./resources/js/components/Students.js":
 /*!*********************************************!*\
   !*** ./resources/js/components/Students.js ***!
@@ -95888,28 +97204,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Context_CountContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Context/CountContext */ "./resources/js/Context/CountContext.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/pen.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/archive.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/plus.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/search.js");
-/* harmony import */ var _ConfirmModal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ConfirmModal */ "./resources/js/components/ConfirmModal.js");
-/* harmony import */ var _Toast__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Toast */ "./resources/js/components/Toast.js");
-/* harmony import */ var _useToast__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./useToast */ "./resources/js/components/useToast.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/circle-alert.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/circle-check-big.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/circle-user.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/archive.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-marked.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/calendar.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/chevron-right.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/clock.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/search.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/x.js");
+/* harmony import */ var _ConfirmModal__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./ConfirmModal */ "./resources/js/components/ConfirmModal.js");
+/* harmony import */ var _Toast__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./Toast */ "./resources/js/components/Toast.js");
+/* harmony import */ var _useToast__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./useToast */ "./resources/js/components/useToast.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
-function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
+function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
-function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
-function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
-function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -95923,321 +97242,934 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
-// import "../../sass/students.scss";
 
+/* ─── Student Detail Panel ──────────────────────────────────────────────── */
+
+function StudentDetailPanel(_ref) {
+  var _results$enrolled, _results$skipped;
+  var student = _ref.student,
+    allSubjects = _ref.allSubjects,
+    facultyStudentCounts = _ref.facultyStudentCounts,
+    onClose = _ref.onClose,
+    onEnrolled = _ref.onEnrolled,
+    onArchive = _ref.onArchive;
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState2 = _slicedToArray(_useState, 2),
+    enrolledSubjects = _useState2[0],
+    setEnrolledSubjects = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true),
+    _useState4 = _slicedToArray(_useState3, 2),
+    loadingEnrolled = _useState4[0],
+    setLoadingEnrolled = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState6 = _slicedToArray(_useState5, 2),
+    showEnrollModal = _useState6[0],
+    setShowEnrollModal = _useState6[1];
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
+    _useState8 = _slicedToArray(_useState7, 2),
+    selectedSubjectIds = _useState8[0],
+    setSelectedSubjectIds = _useState8[1];
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState0 = _slicedToArray(_useState9, 2),
+    saving = _useState0[0],
+    setSaving = _useState0[1];
+  var _useState1 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    _useState10 = _slicedToArray(_useState1, 2),
+    results = _useState10[0],
+    setResults = _useState10[1];
+  var _useToast = (0,_useToast__WEBPACK_IMPORTED_MODULE_16__.useToast)(),
+    toasts = _useToast.toasts,
+    addToast = _useToast.addToast;
+  var fetchEnrolled = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function () {
+    setLoadingEnrolled(true);
+    axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/subjects/student/".concat(student.id)).then(function (res) {
+      return setEnrolledSubjects(res.data);
+    })["catch"](function () {
+      return setEnrolledSubjects([]);
+    })["finally"](function () {
+      return setLoadingEnrolled(false);
+    });
+  }, [student.id]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    fetchEnrolled();
+  }, [fetchEnrolled]);
+  var yearSubjects = allSubjects.filter(function (s) {
+    return s.year_level === student.year_level;
+  });
+  var toggleSubject = function toggleSubject(subId, facultyId) {
+    setSelectedSubjectIds(function (prev) {
+      var next = _objectSpread({}, prev);
+      if (next[subId] !== undefined) {
+        delete next[subId];
+      } else {
+        next[subId] = facultyId || null;
+      }
+      return next;
+    });
+  };
+  var fmtTime = function fmtTime(t) {
+    if (!t) return "TBA";
+    try {
+      var _t$split = t.split(":"),
+        _t$split2 = _slicedToArray(_t$split, 2),
+        h = _t$split2[0],
+        m = _t$split2[1];
+      var hr = parseInt(h, 10);
+      var suffix = hr >= 12 ? "PM" : "AM";
+      var hr12 = hr % 12 || 12;
+      return "".concat(hr12, ":").concat(m, " ").concat(suffix);
+    } catch (_unused) {
+      return t;
+    }
+  };
+  var handleSaveEnrollment = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
+      var res, _err$response, _t;
+      return _regenerator().w(function (_context) {
+        while (1) switch (_context.p = _context.n) {
+          case 0:
+            if (!(Object.keys(selectedSubjectIds).length === 0)) {
+              _context.n = 1;
+              break;
+            }
+            addToast("Please select at least one subject.", "error");
+            return _context.a(2);
+          case 1:
+            setSaving(true);
+            _context.p = 2;
+            _context.n = 3;
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().post("/api/students/".concat(student.id, "/bulk-enroll"), {
+              subject_assignments: selectedSubjectIds
+            });
+          case 3:
+            res = _context.v;
+            setResults(res.data);
+            fetchEnrolled();
+            onEnrolled(res.data.student);
+            setSelectedSubjectIds({});
+            addToast("Enrollment successful!", "success");
+            setShowEnrollModal(false); // Close modal on success
+            _context.n = 5;
+            break;
+          case 4:
+            _context.p = 4;
+            _t = _context.v;
+            addToast(((_err$response = _t.response) === null || _err$response === void 0 || (_err$response = _err$response.data) === null || _err$response === void 0 ? void 0 : _err$response.message) || "Enrollment failed.", "error");
+          case 5:
+            _context.p = 5;
+            setSaving(false);
+            return _context.f(5);
+          case 6:
+            return _context.a(2);
+        }
+      }, _callee, null, [[2, 4, 5, 6]]);
+    }));
+    return function handleSaveEnrollment() {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+  var alreadyEnrolledIds = enrolledSubjects.map(function (s) {
+    return s.id;
+  });
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+    style: {
+      position: "fixed",
+      top: 0,
+      right: 0,
+      bottom: 0,
+      width: "520px",
+      background: "#fff",
+      boxShadow: "-8px 0 40px rgba(0,0,0,0.12)",
+      zIndex: 1000,
+      display: "flex",
+      flexDirection: "column",
+      overflowY: "auto"
+    },
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+      style: {
+        padding: "1.5rem",
+        background: "linear-gradient(135deg,#6366f1,#4f46e5)",
+        color: "#fff",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "flex-start"
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+          style: {
+            display: "flex",
+            alignItems: "center",
+            gap: "12px",
+            marginBottom: "8px"
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
+            style: {
+              background: "rgba(255,255,255,0.2)",
+              borderRadius: "50%",
+              padding: "10px"
+            },
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              size: 28
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("h3", {
+              style: {
+                margin: 0,
+                fontWeight: 800,
+                fontSize: "1.2rem"
+              },
+              children: [student.first_name, " ", student.last_name]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("span", {
+              style: {
+                fontSize: "0.8rem",
+                opacity: 0.85
+              },
+              children: student.student_id
+            })]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
+          style: {
+            display: "flex",
+            gap: "8px",
+            flexWrap: "wrap"
+          },
+          children: [student.course, student.year_level, student.section || "No Section"].map(function (v, i) {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("span", {
+              style: {
+                background: "rgba(255,255,255,0.2)",
+                padding: "3px 10px",
+                borderRadius: "99px",
+                fontSize: "0.75rem",
+                fontWeight: 600
+              },
+              children: v || "—"
+            }, i);
+          })
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("button", {
+        onClick: onClose,
+        style: {
+          background: "rgba(255,255,255,0.15)",
+          border: "none",
+          borderRadius: "8px",
+          color: "#fff",
+          cursor: "pointer",
+          padding: "8px"
+        },
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
+          size: 20
+        })
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+      style: {
+        flex: 1,
+        padding: "1.5rem",
+        display: "flex",
+        flexDirection: "column",
+        gap: "1.5rem"
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+          style: {
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginBottom: "12px"
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("h4", {
+            style: {
+              margin: 0,
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
+              color: "#1e293b"
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
+              size: 18,
+              color: "#6366f1"
+            }), " Enrolled Subjects"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("span", {
+            style: {
+              background: "#eef2ff",
+              color: "#6366f1",
+              padding: "2px 10px",
+              borderRadius: "99px",
+              fontSize: "0.75rem",
+              fontWeight: 700
+            },
+            children: [enrolledSubjects.length, " subjects"]
+          })]
+        }), loadingEnrolled ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
+          style: {
+            textAlign: "center",
+            padding: "2rem",
+            color: "#94a3b8"
+          },
+          children: "Loading..."
+        }) : enrolledSubjects.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+          style: {
+            background: "#fafafa",
+            border: "2px dashed #e2e8f0",
+            borderRadius: "12px",
+            padding: "2rem",
+            textAlign: "center"
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            size: 36,
+            color: "#cbd5e1",
+            style: {
+              marginBottom: "12px"
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("p", {
+            style: {
+              margin: "0 0 4px",
+              fontWeight: 700,
+              color: "#334155"
+            },
+            children: "No subjects enrolled"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("p", {
+            style: {
+              margin: 0,
+              fontSize: "0.85rem",
+              color: "#64748b"
+            },
+            children: "Assign subjects to this student to get started."
+          })]
+        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
+          style: {
+            display: "flex",
+            flexDirection: "column",
+            gap: "8px"
+          },
+          children: enrolledSubjects.map(function (s) {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+              style: {
+                background: "#f8fafc",
+                border: "1px solid #e2e8f0",
+                borderRadius: "10px",
+                padding: "12px 14px",
+                display: "flex",
+                alignItems: "center",
+                gap: "12px"
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
+                style: {
+                  background: "#eef2ff",
+                  color: "#6366f1",
+                  padding: "6px 10px",
+                  borderRadius: "6px",
+                  fontWeight: 800,
+                  fontSize: "0.8rem",
+                  flexShrink: 0
+                },
+                children: s.code
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+                style: {
+                  flex: 1
+                },
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
+                  style: {
+                    fontWeight: 700,
+                    fontSize: "0.9rem",
+                    color: "#1e293b"
+                  },
+                  children: s.name
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+                  style: {
+                    fontSize: "0.75rem",
+                    color: "#64748b",
+                    display: "flex",
+                    gap: "8px",
+                    marginTop: "3px",
+                    flexWrap: "wrap"
+                  },
+                  children: [s.section && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("span", {
+                    style: {
+                      background: "#e0e7ff",
+                      color: "#4338ca",
+                      padding: "1px 6px",
+                      borderRadius: "4px",
+                      fontWeight: 700
+                    },
+                    children: s.section
+                  }), s.faculty && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("span", {
+                    children: ["\uD83D\uDC68\u200D\uD83C\uDFEB ", s.faculty.first_name, " ", s.faculty.last_name]
+                  }), s.schedule_day && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("span", {
+                    children: ["\uD83D\uDCC5 ", s.schedule_day]
+                  }), s.time_start && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("span", {
+                    children: ["\uD83D\uDD50 ", fmtTime(s.time_start)]
+                  })]
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                size: 16,
+                color: "#10b981"
+              })]
+            }, s.id);
+          })
+        })]
+      }), results && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+        style: {
+          borderRadius: "12px",
+          overflow: "hidden",
+          border: "1px solid #e2e8f0"
+        },
+        children: [((_results$enrolled = results.enrolled) === null || _results$enrolled === void 0 ? void 0 : _results$enrolled.length) > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+          style: {
+            background: "#f0fdf4",
+            padding: "12px 16px",
+            display: "flex",
+            alignItems: "center",
+            gap: "10px"
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            size: 18,
+            color: "#16a34a"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("span", {
+            style: {
+              fontSize: "0.85rem",
+              color: "#166534",
+              fontWeight: 600
+            },
+            children: [results.enrolled.length, " subject(s) enrolled successfully!"]
+          })]
+        }), (_results$skipped = results.skipped) === null || _results$skipped === void 0 ? void 0 : _results$skipped.map(function (sk, i) {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+            style: {
+              background: "#fff7ed",
+              padding: "10px 16px",
+              display: "flex",
+              alignItems: "flex-start",
+              gap: "10px",
+              borderTop: "1px solid #fed7aa"
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+              size: 16,
+              color: "#ea580c",
+              style: {
+                flexShrink: 0,
+                marginTop: "2px"
+              }
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("span", {
+              style: {
+                fontSize: "0.8rem",
+                color: "#9a3412"
+              },
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("strong", {
+                children: sk.subject_code
+              }), ": ", sk.reason]
+            })]
+          }, i);
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("button", {
+        onClick: function onClick() {
+          setShowEnrollModal(true);
+          setResults(null);
+        },
+        style: {
+          padding: "12px 20px",
+          background: "linear-gradient(135deg,#6366f1,#4f46e5)",
+          color: "#fff",
+          border: "none",
+          borderRadius: "10px",
+          cursor: "pointer",
+          fontWeight: 700,
+          fontSize: "0.9rem",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "8px",
+          boxShadow: "0 4px 12px rgba(99,102,241,0.3)"
+        },
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
+          size: 18
+        }), " ", enrolledSubjects.length === 0 ? "Assign Subjects Now" : "Manage Subjects", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
+          size: 16
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("button", {
+        onClick: function onClick() {
+          return onArchive(student);
+        },
+        style: {
+          padding: "10px 20px",
+          background: "#fff",
+          color: "#ef4444",
+          border: "2px solid #fecaca",
+          borderRadius: "10px",
+          cursor: "pointer",
+          fontWeight: 700,
+          fontSize: "0.85rem",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "8px"
+        },
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          size: 16
+        }), " Archive Student"]
+      })]
+    }), showEnrollModal && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
+      style: {
+        position: "fixed",
+        inset: 0,
+        background: "rgba(0,0,0,0.5)",
+        zIndex: 1100,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "1rem"
+      },
+      onClick: function onClick() {
+        return setShowEnrollModal(false);
+      },
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+        style: {
+          background: "#fff",
+          borderRadius: "16px",
+          width: "100%",
+          maxWidth: "700px",
+          maxHeight: "85vh",
+          display: "flex",
+          flexDirection: "column",
+          overflow: "hidden"
+        },
+        onClick: function onClick(e) {
+          return e.stopPropagation();
+        },
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+          style: {
+            padding: "1.25rem 1.5rem",
+            borderBottom: "1px solid #f1f5f9",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            background: "#fafafa"
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("h3", {
+              style: {
+                margin: 0,
+                color: "#1e293b",
+                fontSize: "1.1rem"
+              },
+              children: ["Assign Subjects \u2014 ", student.first_name, " ", student.last_name]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("p", {
+              style: {
+                margin: "4px 0 0",
+                fontSize: "0.8rem",
+                color: "#64748b"
+              },
+              children: ["Showing ", yearSubjects.length, " subjects for ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("strong", {
+                children: student.year_level
+              }), ". ", Object.keys(selectedSubjectIds).length, " selected."]
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("button", {
+            onClick: function onClick() {
+              return setShowEnrollModal(false);
+            },
+            style: {
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+              color: "#64748b"
+            },
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
+              size: 20
+            })
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
+          style: {
+            flex: 1,
+            overflowY: "auto"
+          },
+          children: yearSubjects.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+            style: {
+              textAlign: "center",
+              padding: "3rem",
+              color: "#94a3b8"
+            },
+            children: ["No subjects found for ", student.year_level, "."]
+          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("table", {
+            style: {
+              width: "100%",
+              borderCollapse: "collapse",
+              fontSize: "0.85rem"
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("thead", {
+              style: {
+                background: "#f8fafc",
+                position: "sticky",
+                top: 0
+              },
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("tr", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("th", {
+                  style: {
+                    padding: "12px",
+                    width: "44px"
+                  }
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("th", {
+                  style: {
+                    padding: "12px",
+                    textAlign: "left",
+                    fontWeight: 700,
+                    color: "#475569"
+                  },
+                  children: "Subject"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("th", {
+                  style: {
+                    padding: "12px",
+                    textAlign: "left",
+                    fontWeight: 700,
+                    color: "#475569"
+                  },
+                  children: "Schedule"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("th", {
+                  style: {
+                    padding: "12px",
+                    textAlign: "left",
+                    fontWeight: 700,
+                    color: "#475569"
+                  },
+                  children: "Faculty / Load"
+                })]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("tbody", {
+              children: yearSubjects.map(function (sub) {
+                var isEnrolled = alreadyEnrolledIds.includes(sub.id);
+                var isChecked = selectedSubjectIds[sub.id] !== undefined;
+                var load = sub.faculty ? facultyStudentCounts[sub.faculty.id] || 0 : 0;
+                var atCap = load >= 50;
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("tr", {
+                  style: {
+                    borderBottom: "1px solid #f1f5f9",
+                    background: isEnrolled ? "#f8fafc" : isChecked ? "#faf5ff" : "#fff",
+                    opacity: atCap && !isEnrolled || isEnrolled ? 0.7 : 1,
+                    transition: "all 0.2s"
+                  },
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("td", {
+                    style: {
+                      padding: "12px",
+                      textAlign: "center"
+                    },
+                    children: isEnrolled ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
+                      style: {
+                        color: "#10b981",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center"
+                      },
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                        size: 18
+                      })
+                    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("input", {
+                      type: "checkbox",
+                      checked: isChecked,
+                      disabled: atCap || isEnrolled,
+                      onChange: function onChange() {
+                        return toggleSubject(sub.id, sub.faculty_id);
+                      },
+                      style: {
+                        cursor: atCap || isEnrolled ? "not-allowed" : "pointer",
+                        width: "17px",
+                        height: "17px",
+                        accentColor: "#6366f1"
+                      }
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("td", {
+                    style: {
+                      padding: "12px"
+                    },
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+                      style: {
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "8px"
+                      },
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("span", {
+                        style: {
+                          fontWeight: 700,
+                          color: isEnrolled ? "#94a3b8" : "#1e293b"
+                        },
+                        children: sub.code
+                      }), isEnrolled && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("span", {
+                        style: {
+                          background: "#ecfdf5",
+                          color: "#059669",
+                          padding: "1px 8px",
+                          borderRadius: "4px",
+                          fontSize: "0.65rem",
+                          fontWeight: 800,
+                          textTransform: "uppercase"
+                        },
+                        children: "Already Enrolled"
+                      })]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
+                      style: {
+                        color: isEnrolled ? "#cbd5e1" : "#64748b",
+                        fontSize: "0.78rem"
+                      },
+                      children: sub.name
+                    }), sub.section && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("span", {
+                      style: {
+                        background: isEnrolled ? "#f1f5f9" : "#e0e7ff",
+                        color: isEnrolled ? "#94a3b8" : "#4338ca",
+                        padding: "1px 6px",
+                        borderRadius: "4px",
+                        fontSize: "0.7rem",
+                        fontWeight: 700,
+                        marginTop: "4px",
+                        display: "inline-block"
+                      },
+                      children: sub.section
+                    })]
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("td", {
+                    style: {
+                      padding: "12px",
+                      color: isEnrolled ? "#cbd5e1" : "#64748b",
+                      fontSize: "0.8rem"
+                    },
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+                      style: {
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "4px"
+                      },
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                        size: 14
+                      }), " ", sub.schedule_day || "TBA"]
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+                      style: {
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "4px",
+                        marginTop: "2px"
+                      },
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
+                        size: 14
+                      }), " ", sub.time_start && sub.time_end ? "".concat(fmtTime(sub.time_start), " \u2013 ").concat(fmtTime(sub.time_end)) : "—"]
+                    })]
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("td", {
+                    style: {
+                      padding: "12px"
+                    },
+                    children: sub.faculty ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+                        style: {
+                          fontWeight: 600,
+                          color: isEnrolled ? "#cbd5e1" : "#334155",
+                          fontSize: "0.82rem"
+                        },
+                        children: [sub.faculty.first_name, " ", sub.faculty.last_name]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
+                        style: {
+                          marginTop: "4px"
+                        },
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("span", {
+                          style: {
+                            background: isEnrolled ? "#f1f5f9" : atCap ? "#fee2e2" : "#f1f5f9",
+                            color: isEnrolled ? "#cbd5e1" : atCap ? "#ef4444" : "#475569",
+                            padding: "2px 8px",
+                            borderRadius: "4px",
+                            fontSize: "0.72rem",
+                            fontWeight: 700
+                          },
+                          children: [load, "/50 ", atCap ? "⚠ FULL" : "students"]
+                        })
+                      })]
+                    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("span", {
+                      style: {
+                        color: "#cbd5e1"
+                      },
+                      children: "No faculty"
+                    })
+                  })]
+                }, sub.id);
+              })
+            })]
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+          style: {
+            padding: "1rem 1.5rem",
+            borderTop: "1px solid #f1f5f9",
+            display: "flex",
+            justifyContent: "flex-end",
+            gap: "12px",
+            background: "#fafafa"
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("button", {
+            onClick: function onClick() {
+              return setShowEnrollModal(false);
+            },
+            style: {
+              padding: "10px 20px",
+              background: "#f1f5f9",
+              color: "#475569",
+              border: "none",
+              borderRadius: "8px",
+              cursor: "pointer",
+              fontWeight: 700
+            },
+            children: "Cancel"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("button", {
+            onClick: /*#__PURE__*/_asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
+              return _regenerator().w(function (_context2) {
+                while (1) switch (_context2.n) {
+                  case 0:
+                    _context2.n = 1;
+                    return handleSaveEnrollment();
+                  case 1:
+                    return _context2.a(2);
+                }
+              }, _callee2);
+            })),
+            disabled: saving || Object.keys(selectedSubjectIds).length === 0,
+            style: {
+              padding: "10px 24px",
+              background: Object.keys(selectedSubjectIds).length === 0 ? "#e2e8f0" : "linear-gradient(135deg,#22c55e,#16a34a)",
+              color: Object.keys(selectedSubjectIds).length === 0 ? "#94a3b8" : "#fff",
+              border: "none",
+              borderRadius: "8px",
+              cursor: "pointer",
+              fontWeight: 700,
+              boxShadow: Object.keys(selectedSubjectIds).length === 0 ? "none" : "0 4px 12px rgba(22,163,74,0.2)"
+            },
+            children: saving ? "Saving..." : "Add Selected Subjects (".concat(Object.keys(selectedSubjectIds).length, ")")
+          })]
+        })]
+      })
+    })]
+  });
+}
+
+/* ─── Main Students Component ───────────────────────────────────────────── */
 function Students() {
   var _useCounts = (0,_Context_CountContext__WEBPACK_IMPORTED_MODULE_2__.useCounts)(),
     refreshCounts = _useCounts.refreshCounts;
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
-    _useState2 = _slicedToArray(_useState, 2),
-    students = _useState2[0],
-    setStudents = _useState2[1];
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
-    _useState4 = _slicedToArray(_useState3, 2),
-    editingId = _useState4[0],
-    setEditingId = _useState4[1];
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState6 = _slicedToArray(_useState5, 2),
-    showForm = _useState6[0],
-    setShowForm = _useState6[1];
-  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
-    _useState8 = _slicedToArray(_useState7, 2),
-    searchQuery = _useState8[0],
-    setSearchQuery = _useState8[1];
-  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("Active"),
-    _useState0 = _slicedToArray(_useState9, 2),
-    statusFilter = _useState0[0],
-    setStatusFilter = _useState0[1]; // Default to Active
-  var _useState1 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
-    _useState10 = _slicedToArray(_useState1, 2),
-    departmentsList = _useState10[0],
-    setDepartmentsList = _useState10[1];
   var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState12 = _slicedToArray(_useState11, 2),
-    coursesList = _useState12[0],
-    setCoursesList = _useState12[1];
-  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    students = _useState12[0],
+    setStudents = _useState12[1];
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState14 = _slicedToArray(_useState13, 2),
+    allSubjects = _useState14[0],
+    setAllSubjects = _useState14[1];
+  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({}),
+    _useState16 = _slicedToArray(_useState15, 2),
+    facultyStudentCounts = _useState16[0],
+    setFacultyStudentCounts = _useState16[1];
+  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    _useState18 = _slicedToArray(_useState17, 2),
+    searchQuery = _useState18[0],
+    setSearchQuery = _useState18[1];
+  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("Active"),
+    _useState20 = _slicedToArray(_useState19, 2),
+    statusFilter = _useState20[0],
+    setStatusFilter = _useState20[1];
+  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
       isOpen: false,
       type: "",
       id: null,
       title: "",
       message: ""
     }),
-    _useState14 = _slicedToArray(_useState13, 2),
-    confirmModal = _useState14[0],
-    setConfirmModal = _useState14[1];
-  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
-    _useState16 = _slicedToArray(_useState15, 2),
-    selectedIds = _useState16[0],
-    setSelectedIds = _useState16[1];
-  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
-    _useState18 = _slicedToArray(_useState17, 2),
-    activityLogs = _useState18[0],
-    setActivityLogs = _useState18[1];
-  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
-    _useState20 = _slicedToArray(_useState19, 2),
-    showCredentials = _useState20[0],
-    setShowCredentials = _useState20[1];
-  var _useToast = (0,_useToast__WEBPACK_IMPORTED_MODULE_9__.useToast)(),
-    toasts = _useToast.toasts,
-    addToast = _useToast.addToast,
-    removeToast = _useToast.removeToast;
-  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
-      first_name: "",
-      middle_name: "",
-      last_name: "",
-      date_of_birth: "",
-      sex: "",
-      email: "",
-      phone: "",
-      address: "",
-      department: "",
-      course: "",
-      year_level: "",
-      section: ""
-    }),
     _useState22 = _slicedToArray(_useState21, 2),
-    form = _useState22[0],
-    setForm = _useState22[1];
+    confirmModal = _useState22[0],
+    setConfirmModal = _useState22[1];
+  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    _useState24 = _slicedToArray(_useState23, 2),
+    selectedStudent = _useState24[0],
+    setSelectedStudent = _useState24[1];
+  var _useToast2 = (0,_useToast__WEBPACK_IMPORTED_MODULE_16__.useToast)(),
+    toasts = _useToast2.toasts,
+    addToast = _useToast2.addToast,
+    removeToast = _useToast2.removeToast;
   var fetchStudents = /*#__PURE__*/function () {
-    var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
-      var res, _t;
-      return _regenerator().w(function (_context) {
-        while (1) switch (_context.p = _context.n) {
-          case 0:
-            _context.p = 0;
-            _context.n = 1;
-            return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/students");
-          case 1:
-            res = _context.v;
-            setStudents(res.data);
-            _context.n = 3;
-            break;
-          case 2:
-            _context.p = 2;
-            _t = _context.v;
-            console.error(_t);
-          case 3:
-            return _context.a(2);
-        }
-      }, _callee, null, [[0, 2]]);
-    }));
-    return function fetchStudents() {
-      return _ref.apply(this, arguments);
-    };
-  }();
-  var fetchDepartments = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
+    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3() {
       var res, _t2;
-      return _regenerator().w(function (_context2) {
-        while (1) switch (_context2.p = _context2.n) {
-          case 0:
-            _context2.p = 0;
-            _context2.n = 1;
-            return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/departments");
-          case 1:
-            res = _context2.v;
-            setDepartmentsList(res.data.filter(function (d) {
-              return d.status !== "Archived";
-            }));
-            _context2.n = 3;
-            break;
-          case 2:
-            _context2.p = 2;
-            _t2 = _context2.v;
-            console.error(_t2);
-          case 3:
-            return _context2.a(2);
-        }
-      }, _callee2, null, [[0, 2]]);
-    }));
-    return function fetchDepartments() {
-      return _ref2.apply(this, arguments);
-    };
-  }();
-  var fetchCourses = /*#__PURE__*/function () {
-    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3() {
-      var res, _t3;
       return _regenerator().w(function (_context3) {
         while (1) switch (_context3.p = _context3.n) {
           case 0:
             _context3.p = 0;
             _context3.n = 1;
-            return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/courses");
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/students");
           case 1:
             res = _context3.v;
-            setCoursesList(res.data.filter(function (c) {
-              return c.status !== "Archived";
-            }));
+            setStudents(res.data);
             _context3.n = 3;
             break;
           case 2:
             _context3.p = 2;
-            _t3 = _context3.v;
-            console.error(_t3);
+            _t2 = _context3.v;
+            console.error(_t2);
           case 3:
             return _context3.a(2);
         }
       }, _callee3, null, [[0, 2]]);
     }));
-    return function fetchCourses() {
-      return _ref3.apply(this, arguments);
+    return function fetchStudents() {
+      return _ref4.apply(this, arguments);
+    };
+  }();
+  var fetchSubjects = /*#__PURE__*/function () {
+    var _ref5 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4() {
+      var res, _t3;
+      return _regenerator().w(function (_context4) {
+        while (1) switch (_context4.p = _context4.n) {
+          case 0:
+            _context4.p = 0;
+            _context4.n = 1;
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/subjects");
+          case 1:
+            res = _context4.v;
+            setAllSubjects(res.data.filter(function (s) {
+              return s.status === "Active";
+            }));
+            _context4.n = 3;
+            break;
+          case 2:
+            _context4.p = 2;
+            _t3 = _context4.v;
+            console.error(_t3);
+          case 3:
+            return _context4.a(2);
+        }
+      }, _callee4, null, [[0, 2]]);
+    }));
+    return function fetchSubjects() {
+      return _ref5.apply(this, arguments);
+    };
+  }();
+  var fetchFacultyCounts = /*#__PURE__*/function () {
+    var _ref6 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee5() {
+      var res, _t4;
+      return _regenerator().w(function (_context5) {
+        while (1) switch (_context5.p = _context5.n) {
+          case 0:
+            _context5.p = 0;
+            _context5.n = 1;
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/faculty/student-counts");
+          case 1:
+            res = _context5.v;
+            setFacultyStudentCounts(res.data);
+            _context5.n = 3;
+            break;
+          case 2:
+            _context5.p = 2;
+            _t4 = _context5.v;
+            console.error(_t4);
+          case 3:
+            return _context5.a(2);
+        }
+      }, _callee5, null, [[0, 2]]);
+    }));
+    return function fetchFacultyCounts() {
+      return _ref6.apply(this, arguments);
     };
   }();
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     fetchStudents();
-    fetchDepartments();
-    fetchCourses();
+    fetchSubjects();
+    fetchFacultyCounts();
   }, []);
-  var yearLevels = ["1st Year", "2nd Year", "3rd Year", "4th Year", "5th Year"];
-  var handleSubmit = /*#__PURE__*/function () {
-    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4(e) {
-      var payload, res, _err$response, errs, _t4;
-      return _regenerator().w(function (_context4) {
-        while (1) switch (_context4.p = _context4.n) {
-          case 0:
-            e.preventDefault();
-            _context4.p = 1;
-            payload = _objectSpread({}, form);
-            if (!editingId) {
-              _context4.n = 3;
-              break;
-            }
-            _context4.n = 2;
-            return axios__WEBPACK_IMPORTED_MODULE_1___default().put("/api/students/".concat(editingId), payload);
-          case 2:
-            addToast('Student updated successfully!', 'success');
-            _context4.n = 5;
-            break;
-          case 3:
-            _context4.n = 4;
-            return axios__WEBPACK_IMPORTED_MODULE_1___default().post('/api/students', payload);
-          case 4:
-            res = _context4.v;
-            addToast('Student enrolled successfully!', 'success');
-            if (res.data.credentials) {
-              setShowCredentials(res.data.credentials);
-            }
-          case 5:
-            _context4.n = 6;
-            return fetchStudents();
-          case 6:
-            _context4.n = 7;
-            return refreshCounts();
-          case 7:
-            window.dispatchEvent(new CustomEvent("dataUpdated", {
-              detail: {
-                type: "students"
-              }
-            }));
-            if (!editingId) {
-              // Keep form open if showing credentials, otherwise close
-            } else {
-              closeForm();
-            }
-            _context4.n = 9;
-            break;
-          case 8:
-            _context4.p = 8;
-            _t4 = _context4.v;
-            errs = (_err$response = _t4.response) !== null && _err$response !== void 0 && (_err$response = _err$response.data) !== null && _err$response !== void 0 && _err$response.errors ? Object.values(_t4.response.data.errors).flat().join(' ') : '';
-            addToast('Failed to save. ' + errs, 'error');
-          case 9:
-            return _context4.a(2);
-        }
-      }, _callee4, null, [[1, 8]]);
-    }));
-    return function handleSubmit(_x) {
-      return _ref4.apply(this, arguments);
-    };
-  }();
-  var openForm = function openForm() {
-    var student = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
-    if (student) {
-      setEditingId(student.id);
-      setForm({
-        first_name: student.first_name || "",
-        middle_name: student.middle_name || "",
-        last_name: student.last_name || "",
-        date_of_birth: student.date_of_birth || "",
-        sex: student.sex || "",
-        email: student.email || "",
-        phone: student.phone || "",
-        address: student.address || "",
-        department: student.department || "",
-        course: student.course || "",
-        year_level: student.year_level || "",
-        section: student.section || ""
-      });
-    } else {
-      setEditingId(null);
-      setForm({
-        first_name: "",
-        middle_name: "",
-        last_name: "",
-        date_of_birth: "",
-        sex: "",
-        email: "",
-        phone: "",
-        address: "",
-        department: "",
-        course: "",
-        year_level: "",
-        section: ""
-      });
-    }
-    setActivityLogs([]);
-    setShowCredentials(null);
-    fetchDepartments();
-    fetchCourses();
-    setShowForm(true);
-  };
-  var closeForm = function closeForm() {
-    setShowForm(false);
-    setEditingId(null);
-    setForm({
-      first_name: "",
-      middle_name: "",
-      last_name: "",
-      date_of_birth: "",
-      sex: "",
-      email: "",
-      phone: "",
-      address: "",
-      department: "",
-      course: "",
-      year_level: "",
-      section: ""
-    });
-  };
-  var handleArchive = function handleArchive(student) {
-    setConfirmModal({
-      isOpen: true,
-      type: "archive",
-      id: student.id,
-      title: "Archive Student",
-      message: "Are you sure you want to archive ".concat(student.first_name, " ").concat(student.last_name, "?")
-    });
-  };
-  var toggleSelect = function toggleSelect(id) {
-    setSelectedIds(function (prev) {
-      return prev.includes(id) ? prev.filter(function (i) {
-        return i !== id;
-      }) : [].concat(_toConsumableArray(prev), [id]);
-    });
-  };
-  var toggleSelectAll = function toggleSelectAll() {
-    var pendings = filtered.filter(function (s) {
-      return s.status === "Pending";
-    }).map(function (s) {
-      return s.id;
-    });
-    if (selectedIds.length === pendings.length && pendings.length > 0) {
-      setSelectedIds([]);
-    } else {
-      setSelectedIds(pendings);
-    }
-  };
   var filteredBySearch = students.filter(function (s) {
     var q = searchQuery.toLowerCase();
     var name = "".concat(s.first_name || "", " ").concat(s.middle_name || "", " ").concat(s.last_name || "").toLowerCase();
@@ -96255,11 +98187,7 @@ function Students() {
       return s.status !== "Archived";
     }).length
   };
-  var isPending = form.status === "Pending";
-  var isRejected = form.status === "Rejected";
-
-  // ── Tab Configuration ──────────────────────────────────────────────────────
-  var STATUS_TABS_CONFIG = [{
+  var STATUS_TABS = [{
     id: "Active",
     label: "Active",
     color: "#0F6E56",
@@ -96270,102 +98198,74 @@ function Students() {
     color: "#3C3489",
     count: counts.all
   }];
-  function StatusTab(_ref5) {
-    var id = _ref5.id,
-      label = _ref5.label,
-      color = _ref5.color,
-      count = _ref5.count,
-      isActive = _ref5.isActive,
-      _onClick = _ref5.onClick;
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("button", {
-      type: "button",
-      onClick: function onClick() {
-        return _onClick(id);
-      },
-      style: {
-        display: "flex",
-        alignItems: "center",
-        gap: "8px",
-        padding: "6px 14px",
-        borderRadius: "999px",
-        border: isActive ? "none" : "0.5px solid #e2e8f0",
-        background: isActive ? color : "#fff",
-        color: isActive ? "#fff" : "#64748b",
-        fontSize: "13px",
-        fontWeight: "600",
-        cursor: "pointer",
-        transition: "all 0.15s ease",
-        boxShadow: isActive ? "0 4px 12px rgba(0,0,0,0.08)" : "none"
-      },
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
-        style: {
-          width: "6px",
-          height: "6px",
-          borderRadius: "50%",
-          background: isActive ? "#fff" : color
-        }
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
-        style: {
-          whiteSpace: 'nowrap'
-        },
-        children: label
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
-        style: {
-          marginLeft: "2px",
-          padding: "1px 7px",
-          borderRadius: "999px",
-          fontSize: "11px",
-          fontWeight: "700",
-          background: isActive ? "rgba(255,255,255,0.2)" : "#f1f5f9",
-          color: isActive ? "#fff" : "#64748b"
-        },
-        children: count
-      })]
+  var handleArchive = function handleArchive(student) {
+    setConfirmModal({
+      isOpen: true,
+      type: "archive",
+      id: student.id,
+      title: "Archive Student",
+      message: "Are you sure you want to archive ".concat(student.first_name, " ").concat(student.last_name, "?")
     });
-  }
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+  };
+  var handleEnrolled = function handleEnrolled(updatedStudent) {
+    setStudents(function (prev) {
+      return prev.map(function (s) {
+        return s.id === updatedStudent.id ? _objectSpread(_objectSpread({}, s), updatedStudent) : s;
+      });
+    });
+    if ((selectedStudent === null || selectedStudent === void 0 ? void 0 : selectedStudent.id) === updatedStudent.id) setSelectedStudent(_objectSpread(_objectSpread({}, selectedStudent), updatedStudent));
+    fetchFacultyCounts();
+    refreshCounts();
+    addToast("Subjects assigned successfully!", "success");
+    window.dispatchEvent(new CustomEvent("dataUpdated", {
+      detail: {
+        type: "students"
+      }
+    }));
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
     className: "settings-container",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
       className: "settings-header",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("h2", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("h2", {
           children: "Student Management"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("p", {
           className: "subtitle",
-          children: "Manage students and their academic information"
+          children: "Click a student to view details and manage enrollment"
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
       className: "settings-content",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
         className: "settings-body",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
           className: "table-header",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
             style: {
               display: "flex",
               gap: "1rem",
               alignItems: "center",
               flex: 1,
-              justifyContent: 'space-between'
+              justifyContent: "space-between"
             },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
               style: {
-                display: 'flex',
-                gap: '1rem',
-                alignItems: 'center'
+                display: "flex",
+                gap: "1rem",
+                alignItems: "center"
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("h3", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("h3", {
                 children: "Students"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
                 className: "search-box",
                 style: {
                   maxWidth: "250px"
                 },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
                   size: 18,
                   className: "search-icon"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("input", {
                   type: "text",
                   placeholder: "Search Students",
                   value: searchQuery,
@@ -96373,499 +98273,257 @@ function Students() {
                     return setSearchQuery(e.target.value);
                   }
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
-                className: "status-tabs-container",
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
                 style: {
-                  display: 'flex',
-                  gap: '6px',
-                  alignItems: 'center'
+                  display: "flex",
+                  gap: "6px"
                 },
-                children: STATUS_TABS_CONFIG.map(function (tab) {
-                  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(StatusTab, _objectSpread(_objectSpread({}, tab), {}, {
-                    isActive: statusFilter === tab.id,
-                    onClick: setStatusFilter
-                  }), tab.id);
+                children: STATUS_TABS.map(function (tab) {
+                  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("button", {
+                    onClick: function onClick() {
+                      return setStatusFilter(tab.id);
+                    },
+                    style: {
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                      padding: "6px 14px",
+                      borderRadius: "999px",
+                      border: statusFilter === tab.id ? "none" : "0.5px solid #e2e8f0",
+                      background: statusFilter === tab.id ? tab.color : "#fff",
+                      color: statusFilter === tab.id ? "#fff" : "#64748b",
+                      fontSize: "13px",
+                      fontWeight: "600",
+                      cursor: "pointer"
+                    },
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("span", {
+                      style: {
+                        width: "6px",
+                        height: "6px",
+                        borderRadius: "50%",
+                        background: statusFilter === tab.id ? "#fff" : tab.color
+                      }
+                    }), tab.label, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("span", {
+                      style: {
+                        padding: "1px 7px",
+                        borderRadius: "999px",
+                        fontSize: "11px",
+                        fontWeight: 700,
+                        background: statusFilter === tab.id ? "rgba(255,255,255,0.2)" : "#f1f5f9",
+                        color: statusFilter === tab.id ? "#fff" : "#64748b"
+                      },
+                      children: tab.count
+                    })]
+                  }, tab.id);
                 })
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("button", {
-              className: "primary-btn",
-              onClick: function onClick() {
-                return openForm();
-              },
-              style: {
-                display: 'flex',
-                alignItems: 'center',
-                gap: '5px',
-                padding: '8px 16px',
-                background: '#3b82f6',
-                color: '#fff',
-                border: 'none',
-                borderRadius: '6px',
-                cursor: 'pointer',
-                fontWeight: '600'
-              },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                size: 16
-              }), " New Student"]
-            })]
+            })
           })
-        }), showForm && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
-          className: "modal-overlay",
-          onClick: closeForm,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-            className: "modal-content",
-            onClick: function onClick(e) {
-              return e.stopPropagation();
-            },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("h3", {
-              className: "modal-title",
-              children: [editingId ? "Edit Student" : "New Student Enrollment", editingId && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("span", {
-                className: "modal-header-id",
-                children: [" | ", form.student_id]
-              })]
-            }), showCredentials ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-              className: "credentials-box",
-              style: {
-                background: '#f0fdf4',
-                border: '1px solid #bbf7d0',
-                padding: '1.5rem',
-                borderRadius: '12px',
-                marginBottom: '1.5rem',
-                textAlign: 'center'
-              },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("h4", {
-                style: {
-                  color: '#166534',
-                  marginTop: 0
-                },
-                children: "\u2705 Enrollment Successful!"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
-                style: {
-                  color: '#15803d',
-                  marginBottom: '1rem'
-                },
-                children: "Issue these credentials to the student immediately."
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                style: {
-                  display: 'grid',
-                  gridTemplateColumns: '1fr 1fr',
-                  gap: '1rem',
-                  background: '#fff',
-                  padding: '1rem',
-                  borderRadius: '8px',
-                  border: '1px dashed #22c55e'
-                },
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("small", {
-                    style: {
-                      color: '#64748b',
-                      display: 'block',
-                      textTransform: 'uppercase',
-                      fontSize: '10px',
-                      fontWeight: 700
-                    },
-                    children: "Student ID (Username)"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("strong", {
-                    style: {
-                      fontSize: '1.2rem',
-                      color: '#1e293b'
-                    },
-                    children: showCredentials.username
-                  })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("small", {
-                    style: {
-                      color: '#64748b',
-                      display: 'block',
-                      textTransform: 'uppercase',
-                      fontSize: '10px',
-                      fontWeight: 700
-                    },
-                    children: "Default Password"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("strong", {
-                    style: {
-                      fontSize: '1.2rem',
-                      color: '#1e293b'
-                    },
-                    children: showCredentials.password
-                  })]
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
-                type: "button",
-                onClick: closeForm,
-                style: {
-                  marginTop: '1.5rem',
-                  padding: '8px 24px',
-                  background: '#166534',
-                  color: '#fff',
-                  border: 'none',
-                  borderRadius: '6px',
-                  cursor: 'pointer'
-                },
-                children: "Done"
-              })]
-            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("form", {
-              onSubmit: handleSubmit,
-              className: "modal-form",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("h4", {
-                className: "section-heading",
-                children: "\uD83D\uDCCB Personal Information"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                className: "form-row",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                  className: "form-group",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("label", {
-                    children: "First Name *"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
-                    type: "text",
-                    value: form.first_name,
-                    onChange: function onChange(e) {
-                      return setForm(_objectSpread(_objectSpread({}, form), {}, {
-                        first_name: e.target.value
-                      }));
-                    },
-                    required: true
-                  })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                  className: "form-group",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("label", {
-                    children: "Middle Name"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
-                    type: "text",
-                    value: form.middle_name,
-                    onChange: function onChange(e) {
-                      return setForm(_objectSpread(_objectSpread({}, form), {}, {
-                        middle_name: e.target.value
-                      }));
-                    }
-                  })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                  className: "form-group",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("label", {
-                    children: "Last Name *"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
-                    type: "text",
-                    value: form.last_name,
-                    onChange: function onChange(e) {
-                      return setForm(_objectSpread(_objectSpread({}, form), {}, {
-                        last_name: e.target.value
-                      }));
-                    },
-                    required: true
-                  })]
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                className: "form-row",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                  className: "form-group",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("label", {
-                    children: "Date of Birth"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
-                    type: "date",
-                    value: form.date_of_birth,
-                    onChange: function onChange(e) {
-                      return setForm(_objectSpread(_objectSpread({}, form), {}, {
-                        date_of_birth: e.target.value
-                      }));
-                    }
-                  })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                  className: "form-group",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("label", {
-                    children: "Sex"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("select", {
-                    value: form.sex,
-                    onChange: function onChange(e) {
-                      return setForm(_objectSpread(_objectSpread({}, form), {}, {
-                        sex: e.target.value
-                      }));
-                    },
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                      value: "",
-                      children: "Select Sex"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                      value: "Male",
-                      children: "Male"
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                      value: "Female",
-                      children: "Female"
-                    })]
-                  })]
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("h4", {
-                className: "section-heading",
-                children: "\uD83D\uDCDE Contact Information"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                className: "form-row",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                  className: "form-group",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("label", {
-                    children: "Email *"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
-                    type: "email",
-                    value: form.email,
-                    onChange: function onChange(e) {
-                      return setForm(_objectSpread(_objectSpread({}, form), {}, {
-                        email: e.target.value
-                      }));
-                    },
-                    required: true
-                  })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                  className: "form-group",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("label", {
-                    children: "Phone"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
-                    type: "tel",
-                    value: form.phone,
-                    onChange: function onChange(e) {
-                      return setForm(_objectSpread(_objectSpread({}, form), {}, {
-                        phone: e.target.value
-                      }));
-                    }
-                  })]
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                className: "form-group",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("label", {
-                  children: "Address"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
-                  type: "text",
-                  value: form.address,
-                  onChange: function onChange(e) {
-                    return setForm(_objectSpread(_objectSpread({}, form), {}, {
-                      address: e.target.value
-                    }));
-                  }
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("h4", {
-                className: "section-heading",
-                children: "\uD83C\uDF93 Academic Information"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                className: "form-row",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                  className: "form-group",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("label", {
-                    children: "Department *"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("select", {
-                    value: form.department,
-                    onChange: function onChange(e) {
-                      return setForm(_objectSpread(_objectSpread({}, form), {}, {
-                        department: e.target.value
-                      }));
-                    },
-                    required: true,
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                      value: "",
-                      children: "Select Department"
-                    }), departmentsList.map(function (d) {
-                      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                        value: d.name,
-                        children: d.name
-                      }, d.id);
-                    })]
-                  })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                  className: "form-group",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("label", {
-                    children: "Course *"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("select", {
-                    value: form.course,
-                    onChange: function onChange(e) {
-                      return setForm(_objectSpread(_objectSpread({}, form), {}, {
-                        course: e.target.value
-                      }));
-                    },
-                    required: true,
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                      value: "",
-                      children: "Select Course"
-                    }), coursesList.map(function (c) {
-                      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                        value: c.name,
-                        children: c.name
-                      }, c.id);
-                    })]
-                  })]
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                className: "form-row",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                  className: "form-group",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("label", {
-                    children: "Year Level *"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("select", {
-                    value: form.year_level,
-                    onChange: function onChange(e) {
-                      return setForm(_objectSpread(_objectSpread({}, form), {}, {
-                        year_level: e.target.value
-                      }));
-                    },
-                    required: true,
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                      value: "",
-                      children: "Select Year Level"
-                    }), yearLevels.map(function (y) {
-                      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("option", {
-                        value: y,
-                        children: y
-                      }, y);
-                    })]
-                  })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                  className: "form-group",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("label", {
-                    children: "Section"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("input", {
-                    type: "text",
-                    placeholder: "e.g. CS-1A",
-                    value: form.section,
-                    onChange: function onChange(e) {
-                      return setForm(_objectSpread(_objectSpread({}, form), {}, {
-                        section: e.target.value
-                      }));
-                    }
-                  })]
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
-                className: "modal-actions",
-                style: {
-                  marginTop: "1.5rem",
-                  paddingTop: "1rem",
-                  borderTop: "1px solid #ddd"
-                },
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-                  style: {
-                    display: "flex",
-                    justifyContent: "flex-end",
-                    width: "100%",
-                    gap: "1rem"
-                  },
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
-                    type: "button",
-                    className: "btn-cancel",
-                    onClick: closeForm,
-                    children: "Cancel"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
-                    type: "submit",
-                    className: "btn-submit",
-                    children: editingId ? "Update Student" : "Complete Enrollment"
-                  })]
-                })
-              })]
-            })]
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
           className: "settings-table-wrapper",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("table", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("table", {
             className: "settings-table",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("thead", {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("tr", {
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("thead", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("tr", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("th", {
                   style: {
-                    width: '40px'
+                    width: "40px"
                   },
                   children: "#"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("th", {
                   children: "Student ID"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("th", {
                   children: "Name"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("th", {
                   children: "Email"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("th", {
                   children: "Course"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("th", {
                   children: "Section"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("th", {
                   children: "Year Level"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("th", {
                   children: "Status"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("th", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("th", {
                   children: "Actions"
                 })]
               })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("tbody", {
-              children: filtered.map(function (s, index) {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("tbody", {
+              children: [filtered.map(function (s, index) {
                 var fullName = [s.first_name, s.middle_name, s.last_name].filter(Boolean).join(" ") || s.name || "N/A";
-                var isSelected = selectedIds.includes(s.id);
-                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("tr", {
-                  className: isSelected ? "row-selected" : "",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
+                var isActive = (selectedStudent === null || selectedStudent === void 0 ? void 0 : selectedStudent.id) === s.id;
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("tr", {
+                  onClick: function onClick() {
+                    return setSelectedStudent(isActive ? null : s);
+                  },
+                  style: {
+                    cursor: "pointer",
+                    background: isActive ? "#eef2ff" : undefined,
+                    borderLeft: isActive ? "3px solid #6366f1" : "3px solid transparent",
+                    transition: "all 0.15s"
+                  },
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("td", {
                     children: index + 1
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
-                    children: s.student_id
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
-                    children: fullName
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("td", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("span", {
+                      style: {
+                        fontWeight: 700,
+                        color: "#6366f1"
+                      },
+                      children: s.student_id
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("td", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("span", {
+                      style: {
+                        fontWeight: 600,
+                        color: "#1e293b"
+                      },
+                      children: fullName
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("td", {
                     children: s.email
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
-                    children: s.status === "Pending" && !s.course ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("span", {
-                      className: "reg-date",
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("td", {
+                    children: s.status === "Pending" && !s.course ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("span", {
+                      style: {
+                        color: "#6366f1",
+                        fontSize: "12px"
+                      },
                       children: ["Registered ", new Date(s.created_at).toLocaleDateString()]
                     }) : s.course || "—"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
-                    children: s.section || "—"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
-                    children: s.status === "Pending" && !s.year_level ? "—" : s.year_level || "—"
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("span", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("td", {
+                    children: s.section ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("span", {
+                      style: {
+                        background: "#e0e7ff",
+                        color: "#4338ca",
+                        padding: "2px 8px",
+                        borderRadius: "6px",
+                        fontSize: "0.78rem",
+                        fontWeight: 700
+                      },
+                      children: s.section
+                    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("span", {
+                      style: {
+                        color: "#94a3b8"
+                      },
+                      children: "\u2014"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("td", {
+                    children: s.year_level || "—"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("td", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("span", {
                       className: "status-badge ".concat((s.status || "").toLowerCase()),
                       children: s.status
                     })
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("td", {
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("td", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)("div", {
                       className: "action-buttons",
-                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.Fragment, {
-                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
-                          onClick: function onClick() {
-                            return openForm(s);
-                          },
-                          className: "btn-icon btn-edit",
-                          title: "Edit",
-                          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                            size: 16
-                          })
-                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("button", {
-                          onClick: function onClick() {
-                            return handleArchive(s);
-                          },
-                          className: "btn-icon btn-archive",
-                          title: "Archive",
-                          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
-                            size: 16
-                          })
-                        })]
-                      })
+                      onClick: function onClick(e) {
+                        return e.stopPropagation();
+                      },
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("button", {
+                        onClick: function onClick() {
+                          return setSelectedStudent(isActive ? null : s);
+                        },
+                        title: "View Details",
+                        style: {
+                          background: "#eef2ff",
+                          color: "#6366f1",
+                          border: "none",
+                          padding: "6px",
+                          borderRadius: "4px",
+                          cursor: "pointer",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center"
+                        },
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
+                          size: 16
+                        })
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("button", {
+                        onClick: function onClick() {
+                          return handleArchive(s);
+                        },
+                        title: "Archive",
+                        style: {
+                          backgroundColor: "#ef4444",
+                          color: "white",
+                          border: "none",
+                          padding: "6px",
+                          borderRadius: "4px",
+                          cursor: "pointer",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center"
+                        },
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                          size: 16,
+                          color: "white"
+                        })
+                      })]
                     })
                   })]
                 }, s.id);
-              })
+              }), filtered.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("tr", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("td", {
+                  colSpan: "9",
+                  style: {
+                    textAlign: "center",
+                    padding: "3rem",
+                    color: "#94a3b8"
+                  },
+                  children: "No students found."
+                })
+              })]
             })]
           })
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_Toast__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    }), selectedStudent && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.Fragment, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)("div", {
+        style: {
+          position: "fixed",
+          inset: 0,
+          background: "rgba(0,0,0,0.2)",
+          zIndex: 999
+        },
+        onClick: function onClick() {
+          return setSelectedStudent(null);
+        }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(StudentDetailPanel, {
+        student: selectedStudent,
+        allSubjects: allSubjects,
+        facultyStudentCounts: facultyStudentCounts,
+        onClose: function onClose() {
+          return setSelectedStudent(null);
+        },
+        onEnrolled: handleEnrolled,
+        onArchive: function onArchive(student) {
+          setSelectedStudent(null);
+          handleArchive(student);
+        }
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(_Toast__WEBPACK_IMPORTED_MODULE_15__["default"], {
       toasts: toasts,
       removeToast: removeToast
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_ConfirmModal__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_17__.jsx)(_ConfirmModal__WEBPACK_IMPORTED_MODULE_14__["default"], {
       isOpen: confirmModal.isOpen,
       title: confirmModal.title,
       message: confirmModal.message,
       type: confirmModal.type,
-      onConfirm: /*#__PURE__*/_asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee5() {
+      onConfirm: /*#__PURE__*/_asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee6() {
         var _t5;
-        return _regenerator().w(function (_context5) {
-          while (1) switch (_context5.p = _context5.n) {
+        return _regenerator().w(function (_context6) {
+          while (1) switch (_context6.p = _context6.n) {
             case 0:
-              _context5.p = 0;
-              _context5.n = 1;
+              _context6.p = 0;
+              _context6.n = 1;
               return axios__WEBPACK_IMPORTED_MODULE_1___default().patch("/api/students/".concat(confirmModal.id, "/archive"));
             case 1:
-              addToast('Student archived.', 'info');
-              _context5.n = 2;
+              addToast("Student archived.", "info");
+              _context6.n = 2;
               return fetchStudents();
             case 2:
-              _context5.n = 3;
+              _context6.n = 3;
               return refreshCounts();
             case 3:
               window.dispatchEvent(new CustomEvent("dataUpdated", {
@@ -96873,12 +98531,12 @@ function Students() {
                   type: "students"
                 }
               }));
-              _context5.n = 5;
+              _context6.n = 5;
               break;
             case 4:
-              _context5.p = 4;
-              _t5 = _context5.v;
-              addToast('Action failed.', 'error');
+              _context6.p = 4;
+              _t5 = _context6.v;
+              addToast("Action failed.", "error");
             case 5:
               setConfirmModal({
                 isOpen: false,
@@ -96888,9 +98546,9 @@ function Students() {
                 message: ""
               });
             case 6:
-              return _context5.a(2);
+              return _context6.a(2);
           }
-        }, _callee5, null, [[0, 4]]);
+        }, _callee6, null, [[0, 4]]);
       })),
       onCancel: function onCancel() {
         return setConfirmModal({
@@ -97015,13 +98673,14 @@ function Subjects() {
       department: "",
       course_id: "",
       faculty_id: "",
-      room_id: "",
+      room: "",
       schedule_day: "",
       schedule_time: "",
       time_start: "",
       time_end: "",
       semester: "",
       academic_year: "",
+      year_level: "",
       status: "Active"
     }),
     _useState20 = _slicedToArray(_useState19, 2),
@@ -97239,12 +98898,13 @@ function Subjects() {
         department: subject.department || "",
         course_id: subject.course_id || "",
         faculty_id: subject.faculty_id || "",
-        room_id: subject.room_id || "",
+        room: subject.room || "",
         schedule_day: subject.schedule_day || "",
         schedule_time: subject.schedule_time || "",
         time_start: subject.time_start || "",
         time_end: subject.time_end || "",
         semester: subject.semester || "",
+        year_level: subject.year_level || "",
         academic_year: subject.academic_year || "",
         status: subject.status || "Active"
       });
@@ -97258,12 +98918,13 @@ function Subjects() {
         department: "",
         course_id: "",
         faculty_id: "",
-        room_id: "",
+        room: "",
         schedule_day: "",
         schedule_time: "",
         time_start: "",
         time_end: "",
         semester: "",
+        year_level: "",
         academic_year: "",
         status: "Active"
       });
@@ -97474,6 +99135,45 @@ function Subjects() {
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
                   className: "form-group",
                   children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("label", {
+                    children: "Year Level *"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("select", {
+                    value: form.year_level,
+                    onChange: function onChange(e) {
+                      return setForm(_objectSpread(_objectSpread({}, form), {}, {
+                        year_level: e.target.value
+                      }));
+                    },
+                    required: true,
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("option", {
+                      value: "",
+                      children: "Select Year Level"
+                    }), ["1st Year", "2nd Year", "3rd Year", "4th Year", "5th Year"].map(function (y) {
+                      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("option", {
+                        value: y,
+                        children: y
+                      }, y);
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+                  className: "form-group",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("label", {
+                    children: "Room"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("input", {
+                    type: "text",
+                    placeholder: "e.g. Room 101",
+                    value: form.room,
+                    onChange: function onChange(e) {
+                      return setForm(_objectSpread(_objectSpread({}, form), {}, {
+                        room: e.target.value
+                      }));
+                    }
+                  })]
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+                className: "form-row",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+                  className: "form-group",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("label", {
                     children: "Department"
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("select", {
                     value: form.department,
@@ -97641,11 +99341,13 @@ function Subjects() {
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("th", {
                   children: "Name"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("th", {
+                  children: "Year Level"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("th", {
                   children: "Units"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("th", {
                   children: "Section"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("th", {
-                  children: "Department"
+                  children: "Room"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("th", {
                   children: "Faculty"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("th", {
@@ -97664,11 +99366,13 @@ function Subjects() {
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("td", {
                     children: s.name
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("td", {
+                    children: s.year_level || '—'
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("td", {
                     children: s.units || 3
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("td", {
                     children: s.section || '—'
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("td", {
-                    children: s.department
+                    children: s.room || '—'
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("td", {
                     children: s.faculty ? "".concat(s.faculty.first_name, " ").concat(s.faculty.last_name) : "—"
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("td", {
@@ -97821,18 +99525,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/bell.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/chevron-down.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/credit-card.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/log-out.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/menu.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/moon.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/search.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/settings.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/shield.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/sun.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/circle-alert.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/bell.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/chevron-down.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/info.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/log-out.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/menu.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/moon.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/search.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/settings.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/shield.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/sun.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/user.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
+function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -97841,8 +99559,48 @@ function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" !=
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
+
 // import "../../sass/top-navbar.scss";
 
+var timeAgo = function timeAgo(dateStr) {
+  var date = new Date(dateStr);
+  var now = new Date();
+  var seconds = Math.floor((now - date) / 1000);
+  if (seconds < 60) return "".concat(seconds, "s ago");
+  var minutes = Math.floor(seconds / 60);
+  if (minutes < 60) return "".concat(minutes, "m ago");
+  var hours = Math.floor(minutes / 60);
+  if (hours < 24) return "".concat(hours, "h ago");
+  var days = Math.floor(hours / 24);
+  if (days < 30) return "".concat(days, "d ago");
+  return date.toLocaleDateString();
+};
+var getIcon = function getIcon(iconName) {
+  switch (iconName) {
+    case 'system':
+    case 'settings':
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        size: 14
+      });
+    case 'user':
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_14__["default"], {
+        size: 14
+      });
+    case 'book':
+    case 'book-open':
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        size: 14
+      });
+    case 'alert':
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        size: 14
+      });
+    default:
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        size: 14
+      });
+  }
+};
 function TopNavbar(_ref) {
   var user = _ref.user,
     onToggleSidebar = _ref.onToggleSidebar,
@@ -97861,6 +99619,14 @@ function TopNavbar(_ref) {
     setShowProfileDropdown = _useState6[1];
   var profileRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
   var notificationRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState8 = _slicedToArray(_useState7, 2),
+    notifications = _useState8[0],
+    setNotifications = _useState8[1];
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
+    _useState0 = _slicedToArray(_useState9, 2),
+    unreadCount = _useState0[0],
+    setUnreadCount = _useState0[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
@@ -97881,27 +99647,124 @@ function TopNavbar(_ref) {
       return document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+  var fetchNotifications = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
+      var res, _t;
+      return _regenerator().w(function (_context) {
+        while (1) switch (_context.p = _context.n) {
+          case 0:
+            _context.p = 0;
+            _context.n = 1;
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().get('/api/notifications?limit=5');
+          case 1:
+            res = _context.v;
+            setNotifications(res.data.notifications || []);
+            setUnreadCount(res.data.unread_count || 0);
+            _context.n = 3;
+            break;
+          case 2:
+            _context.p = 2;
+            _t = _context.v;
+            console.error("Error fetching notifications", _t);
+          case 3:
+            return _context.a(2);
+        }
+      }, _callee, null, [[0, 2]]);
+    }));
+    return function fetchNotifications() {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    fetchNotifications();
+    var interval = setInterval(fetchNotifications, 30000); // Poll every 30 seconds
+    return function () {
+      return clearInterval(interval);
+    };
+  }, []);
+  var handleMarkAllRead = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
+      var _t2;
+      return _regenerator().w(function (_context2) {
+        while (1) switch (_context2.p = _context2.n) {
+          case 0:
+            _context2.p = 0;
+            _context2.n = 1;
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().post('/api/notifications/mark-all-read');
+          case 1:
+            setUnreadCount(0);
+            setNotifications(notifications.map(function (n) {
+              return _objectSpread(_objectSpread({}, n), {}, {
+                is_read: true
+              });
+            }));
+            _context2.n = 3;
+            break;
+          case 2:
+            _context2.p = 2;
+            _t2 = _context2.v;
+            console.error("Error marking all as read", _t2);
+          case 3:
+            return _context2.a(2);
+        }
+      }, _callee2, null, [[0, 2]]);
+    }));
+    return function handleMarkAllRead() {
+      return _ref3.apply(this, arguments);
+    };
+  }();
+  var handleNotificationClick = /*#__PURE__*/function () {
+    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3(n) {
+      var _t3;
+      return _regenerator().w(function (_context3) {
+        while (1) switch (_context3.p = _context3.n) {
+          case 0:
+            if (n.is_read) {
+              _context3.n = 4;
+              break;
+            }
+            _context3.p = 1;
+            _context3.n = 2;
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().post("/api/notifications/".concat(n.id, "/mark-read"));
+          case 2:
+            setUnreadCount(function (prev) {
+              return Math.max(0, prev - 1);
+            });
+            setNotifications(notifications.map(function (item) {
+              return item.id === n.id ? _objectSpread(_objectSpread({}, item), {}, {
+                is_read: true
+              }) : item;
+            }));
+            _context3.n = 4;
+            break;
+          case 3:
+            _context3.p = 3;
+            _t3 = _context3.v;
+            console.error("Error marking as read", _t3);
+          case 4:
+            if (n.action_link) {
+              setShowNotifications(false);
+              window.history.pushState({}, "", n.action_link);
+              window.dispatchEvent(new PopStateEvent('popstate'));
+            }
+          case 5:
+            return _context3.a(2);
+        }
+      }, _callee3, null, [[1, 3]]);
+    }));
+    return function handleNotificationClick(_x) {
+      return _ref4.apply(this, arguments);
+    };
+  }();
+  var handleViewAllNotifications = function handleViewAllNotifications() {
+    setShowNotifications(false);
+    window.history.pushState({}, "", "/notifications");
+    window.dispatchEvent(new PopStateEvent('popstate'));
+  };
   var toggleTheme = function toggleTheme() {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
-  var notifications = [{
-    id: 1,
-    text: "System maintenance scheduled for 12:00 AM",
-    time: "1h ago",
-    type: "system"
-  }, {
-    id: 2,
-    text: "New faculty member assigned to your department",
-    time: "2h ago",
-    type: "user"
-  }, {
-    id: 3,
-    text: "Monthly report is now available for download",
-    time: "5h ago",
-    type: "report"
-  }];
   var handleProfileClick = function handleProfileClick() {
-    // Navigate to profile page
     var role = (user === null || user === void 0 ? void 0 : user.role) || "admin";
     var path = "/profile";
     if (role === "faculty") path = "/faculty-profile";
@@ -97910,155 +99773,182 @@ function TopNavbar(_ref) {
     window.dispatchEvent(new PopStateEvent('popstate'));
     setShowProfileDropdown(false);
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("header", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("header", {
     className: "top-navbar",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
       className: "navbar-left",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("button", {
         className: "mobile-toggle",
         onClick: onToggleSidebar,
         "aria-label": "Toggle Sidebar",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
           size: 20
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
         className: "search-bar",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
           size: 16,
           className: "search-icon"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("input", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("input", {
           type: "text",
           placeholder: "Search for students, subjects..."
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
       className: "navbar-right",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
         className: "nav-actions",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("button", {
           className: "action-btn theme-toggle",
           onClick: toggleTheme,
           title: "Toggle Theme",
-          children: theme === 'light' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          children: theme === 'light' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
             size: 18
-          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
+          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
             size: 18
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
           className: "notification-wrapper",
           ref: notificationRef,
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("button", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("button", {
             className: "action-btn notification-bell ".concat(showNotifications ? 'active' : ''),
             onClick: function onClick() {
               return setShowNotifications(!showNotifications);
             },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_1__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
               size: 18
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("span", {
-              className: "notification-dot"
+            }), unreadCount > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
+              className: "notification-dot",
+              children: unreadCount > 9 ? '9+' : unreadCount
             })]
-          }), showNotifications && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+          }), showNotifications && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
             className: "notification-dropdown",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
               className: "dropdown-header",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("h3", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("h3", {
                 children: "Notifications"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
+              }), unreadCount > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("button", {
                 className: "mark-all-read",
+                onClick: handleMarkAllRead,
                 children: "Mark all as read"
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
               className: "dropdown-content",
-              children: notifications.map(function (n) {
-                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+              children: notifications.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
+                style: {
+                  padding: '20px',
+                  textAlign: 'center',
+                  color: '#94a3b8',
+                  fontSize: '0.9rem'
+                },
+                children: "No notifications yet."
+              }) : notifications.map(function (n) {
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                   className: "notification-item",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
-                    className: "notification-icon ".concat(n.type),
-                    children: n.type === 'system' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"], {
-                      size: 14
-                    }) : n.type === 'user' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
-                      size: 14
-                    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                      size: 14
-                    })
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+                  onClick: function onClick() {
+                    return handleNotificationClick(n);
+                  },
+                  style: {
+                    cursor: 'pointer',
+                    background: n.is_read ? 'transparent' : '#f0fdfa',
+                    borderLeft: n.is_read ? '3px solid transparent' : '3px solid #0d7c66'
+                  },
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
+                    className: "notification-icon ".concat(n.type || 'info'),
+                    children: getIcon(n.icon)
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
                     className: "notification-text",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("p", {
-                      children: n.text
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("span", {
-                      children: n.time
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
+                      style: {
+                        fontWeight: n.is_read ? 500 : 700,
+                        color: n.is_read ? '#64748b' : '#0f172a'
+                      },
+                      children: n.title
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("p", {
+                      style: {
+                        fontSize: '0.8rem',
+                        color: '#64748b',
+                        margin: '2px 0 4px',
+                        whiteSpace: 'nowrap',
+                        overflow: 'hidden',
+                        textOverflow: 'ellipsis'
+                      },
+                      children: n.message
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
+                      children: timeAgo(n.created_at)
                     })]
                   })]
                 }, n.id);
               })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
               className: "dropdown-footer",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("button", {
+                onClick: handleViewAllNotifications,
                 children: "View All Notifications"
               })
             })]
           })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
         className: "user-section",
         ref: profileRef,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
           className: "user-chip ".concat(showProfileDropdown ? 'active' : ''),
           onClick: function onClick() {
             return setShowProfileDropdown(!showProfileDropdown);
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
             className: "user-avatar-mini",
-            children: [user !== null && user !== void 0 && user.profile_photo ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("img", {
+            children: [user !== null && user !== void 0 && user.profile_photo ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("img", {
               src: user.profile_photo,
               alt: "User Avatar"
-            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
               className: "avatar-placeholder",
               children: ((user === null || user === void 0 ? void 0 : user.name) || (user === null || user === void 0 ? void 0 : user.first_name) || "A").charAt(0).toUpperCase()
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("span", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
               className: "online-indicator"
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
             className: "user-meta-mini",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("span", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
               className: "user-name-mini",
               children: (user === null || user === void 0 ? void 0 : user.name) || (user === null || user === void 0 ? void 0 : user.first_name) || "Admin"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("span", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
               className: "user-role-mini",
               children: ((user === null || user === void 0 ? void 0 : user.role) || "admin").toUpperCase()
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
             size: 14,
             className: "chevron-icon ".concat(showProfileDropdown ? 'rotate' : '')
           })]
-        }), showProfileDropdown && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+        }), showProfileDropdown && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
           className: "user-dropdown",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
             className: "dropdown-user-plate",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
               className: "plate-avatar",
               children: ((user === null || user === void 0 ? void 0 : user.name) || (user === null || user === void 0 ? void 0 : user.first_name) || "A").charAt(0).toUpperCase()
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
               className: "plate-text",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                 className: "plate-name",
                 children: (user === null || user === void 0 ? void 0 : user.name) || (user === null || user === void 0 ? void 0 : user.first_name) || "Admin User"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("span", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                 className: "plate-email",
                 children: (user === null || user === void 0 ? void 0 : user.email) || "admin@unisys.com"
               })]
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("div", {
             className: "dropdown-links",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("button", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("button", {
               className: "dropdown-link",
               onClick: handleProfileClick,
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_14__["default"], {
                 size: 16
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("span", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                 children: "Account Settings"
               })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("button", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("button", {
               className: "dropdown-link",
               onClick: function onClick() {
                 var role = (user === null || user === void 0 ? void 0 : user.role) || "admin";
@@ -98069,20 +99959,20 @@ function TopNavbar(_ref) {
                 window.dispatchEvent(new PopStateEvent('popstate'));
                 setShowProfileDropdown(false);
               },
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
                 size: 16
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("span", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                 children: "Security & Privacy"
               })]
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("div", {
             className: "dropdown-footer",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("button", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)("button", {
               className: "logout-btn",
               onClick: onLogout,
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
                 size: 16
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("span", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)("span", {
                 children: "Sign Out"
               })]
             })

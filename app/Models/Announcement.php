@@ -11,6 +11,7 @@ class Announcement extends Model
 
     protected $fillable = [
         'faculty_id',
+        'subject_id',
         'title',
         'content',
         'type',
@@ -62,6 +63,25 @@ class Announcement extends Model
         return $query->where(function ($q) use ($department) {
             $q->where('department', $department)
               ->orWhereNull('department');
+        });
+    }
+
+    /**
+     * The subject this announcement is targeted to.
+     */
+    public function subject()
+    {
+        return $this->belongsTo(Subject::class);
+    }
+
+    /**
+     * Scope to filter announcements for a specific subject.
+     */
+    public function scopeForSubject($query, $subjectId)
+    {
+        return $query->where(function ($q) use ($subjectId) {
+            $q->where('subject_id', $subjectId)
+              ->orWhereNull('subject_id');
         });
     }
 

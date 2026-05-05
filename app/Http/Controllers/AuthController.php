@@ -349,6 +349,7 @@ class AuthController extends Controller
             $student = Student::create([
                 'user_id'    => $user->id,
                 'student_id' => (string)$studentId,
+                'name'       => trim($request->first_name . ' ' . $request->last_name),
                 'first_name' => $request->first_name,
                 'last_name'  => $request->last_name,
                 'email'      => $request->email,
@@ -359,6 +360,20 @@ class AuthController extends Controller
                 'year_level' => $request->year_level,
                 'status'     => 'Active'
             ]);
+
+            // Notify admins
+            $admins = User::where('role', 'admin')->get();
+            foreach ($admins as $admin) {
+                \App\Models\Notification::create([
+                    'user_id' => $admin->id,
+                    'title' => 'New Student Registered',
+                    'message' => "Student {$request->first_name} {$request->last_name} has just registered.",
+                    'type' => 'info',
+                    'icon' => 'user',
+                    'action_link' => '/students'
+                ]);
+            }
+
             DB::commit();
 
             return response()->json([
@@ -398,8 +413,6 @@ class AuthController extends Controller
             'email'          => 'required|email|unique:users,email',
             'phone'          => 'required|string',
             'department'     => 'required|string',
-            'position'       => 'required|string',
-            'specialization' => 'required|string',
             'password'       => 'required|min:8|confirmed',
         ]);
 
@@ -429,10 +442,24 @@ class AuthController extends Controller
                 'email'          => $request->email,
                 'phone'          => $request->phone,
                 'department'     => $request->department,
-                'position'       => $request->position,
-                'specialization' => $request->specialization,
+                'position'       => 'Pending Assignment',
+                'specialization' => null,
                 'status'         => 'Active'
             ]);
+
+            // Notify admins
+            $admins = User::where('role', 'admin')->get();
+            foreach ($admins as $admin) {
+                \App\Models\Notification::create([
+                    'user_id' => $admin->id,
+                    'title' => 'New Faculty Registered',
+                    'message' => "Faculty {$request->first_name} {$request->last_name} has just registered.",
+                    'type' => 'info',
+                    'icon' => 'book-open',
+                    'action_link' => '/faculty'
+                ]);
+            }
+
             DB::commit();
 
             return response()->json([

@@ -13,6 +13,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        // Protected System Admin Seeder - ALWAYS RUNS
+        $this->call(SystemAdminSeeder::class);
+        
+        // Development Seeders (Fake data) - DISABLED
+        // $this->call(DefaultAccountsSeeder::class);
     }
 }

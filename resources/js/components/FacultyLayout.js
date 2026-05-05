@@ -5,6 +5,7 @@ import FacultySubjects from "./FacultySubjects";
 import Profile from "./Profile";
 import UserSettings from "./UserSettings";
 import SecurityPrivacy from "./SecurityPrivacy";
+import NotificationsPage from "./NotificationsPage";
 import { GraduationCap, LayoutDashboard, Users, User, BookOpen, Circle, Settings as SettingsIcon } from "lucide-react";
 import TopNavbar from "./TopNavbar";
 // import "../../sass/layout.scss";
@@ -16,7 +17,7 @@ export default function FacultyLayout({ user, onLogout }) {
   useEffect(() => {
     const updatePage = () => {
       const path = window.location.pathname.split("/").pop();
-      const valid = ["faculty-dashboard", "faculty-students", "faculty-subjects", "faculty-profile", "faculty-settings", "faculty-security"];
+      const valid = ["faculty-dashboard", "faculty-students", "faculty-subjects", "faculty-profile", "faculty-settings", "faculty-security", "notifications"];
       if (valid.includes(path)) setPage(path);
     };
     window.addEventListener("popstate", updatePage);
@@ -77,6 +78,7 @@ export default function FacultyLayout({ user, onLogout }) {
           {page === "faculty-profile" && <Profile user={user} onLogout={onLogout} />}
           {page === "faculty-settings" && <UserSettings user={user} />}
           {page === "faculty-security" && <SecurityPrivacy user={user} />}
+          {page === "notifications" && <NotificationsPage />}
         </div>
       </main>
     </div>

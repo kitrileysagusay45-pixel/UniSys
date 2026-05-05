@@ -29,7 +29,8 @@ export default function StudentRegister({ onRegisterSuccess, onBackToLogin }) {
     try {
       const res = await axios.post("/api/student/register", form);
       if (res.data?.success) {
-        onRegisterSuccess(res.data.user);
+        sessionStorage.setItem("registrationSuccess", "Account created successfully! Please log in to continue.");
+        window.location.href = "/login";
       }
     } catch (err) {
       if (err.response?.data?.errors) {

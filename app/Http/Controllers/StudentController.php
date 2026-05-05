@@ -3,12 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Student;
-use App\Models\AccountActivityLog;
-use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\DB;
 
 class StudentController extends Controller
 {
@@ -17,81 +12,81 @@ class StudentController extends Controller
         return response()->json(Student::all());
     }
 
-
     public function store(Request $request)
     {
         $data = $request->validate([
+            'name' => 'nullable|string|max:100',
             'first_name' => 'required|string|max:100',
             'middle_name' => 'nullable|string|max:100',
             'last_name' => 'required|string|max:100',
-            'email' => 'required|email|unique:students,email|unique:users,email',
-            'department' => 'required|string|exists:departments,name',
-            'course' => 'required|string|exists:courses,name',
+            'email' => 'required|email|unique:students,email',
+            'date_of_birth' => 'nullable|date',
+            'age' => 'nullable|integer|min:15|max:100',
+            'sex' => 'nullable|in:Male,Female',
+            'phone' => 'nullable|string|max:20',
+            'address' => 'nullable|string',
+            'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'course' => 'required|string|max:100',
+            'department' => 'required|string|max:100',
             'year_level' => 'required|string|max:20',
-            'section' => 'nullable|string|max:50',
+            'status' => 'nullable|string|max:20',
         ]);
 
-        try {
-            DB::beginTransaction();
-
-            // 1. Auto-generate Student ID: STU-YYYY-NNNN
-            $year = date('Y');
-            $lastStudent = Student::withTrashed()->whereYear('created_at', $year)
-                ->orderBy('id', 'desc')
-                ->first();
-            
-            if ($lastStudent && preg_match('/STU-' . $year . '-(\d+)/', $lastStudent->student_id, $matches)) {
-                $lastNumber = intval($matches[1]);
-                $newNumber = str_pad($lastNumber + 1, 4, '0', STR_PAD_LEFT);
-            } else {
-                $newNumber = '0001';
-            }
-            $studentId = 'STU-' . $year . '-' . $newNumber;
-
-            // 2. Default password: student + last 4 digits of ID
-            $defaultPassword = 'student' . $newNumber;
-
-            // 3. Create User record
-            $user = User::create([
-                'name' => trim($data['first_name'] . ' ' . $data['last_name']),
-                'username' => $studentId,
-                'email' => $data['email'],
-                'password' => Hash::make($defaultPassword),
-                'role' => 'student',
-            ]);
-
-            // 4. Create Student profile
-            $middleName = !empty($data['middle_name']) ? ' ' . $data['middle_name'] . ' ' : ' ';
-            $studentData = array_merge($data, [
-                'user_id' => $user->id,
-                'student_id' => $studentId,
-                'name' => trim($data['first_name'] . $middleName . $data['last_name']),
-                'password' => $user->password,
-                'status' => 'Active',
-                'enrollment_status' => 'enrolled'
-            ]);
-
-            $student = Student::create($studentData);
-
-            DB::commit();
-
-            return response()->json([
-                'success' => true,
-                'message' => "✅ Student enrolled! ID: {$studentId}, Password: {$defaultPassword}",
-                'student' => $student,
-                'credentials' => [
-                    'username' => $studentId,
-                    'password' => $defaultPassword
-                ]
-            ], 201);
-
-        } catch (\Exception $e) {
-            DB::rollBack();
-            return response()->json([
-                'success' => false,
-                'message' => 'Enrollment failed: ' . $e->getMessage()
-            ], 500);
+        // Handle photo upload
+        if ($request->hasFile('photo')) {
+            $photo = $request->file('photo');
+            $photoName = time() . '_' . $photo->getClientOriginalName();
+            $photo->storeAs('public/student_photos', $photoName);
+            $data['photo'] = 'storage/student_photos/' . $photoName;
         }
+
+        // Auto-generate Student ID
+        $year = date('Y');
+        $lastStudent = Student::whereYear('created_at', $year)
+            ->orderBy('id', 'desc')
+            ->first();
+        
+        if ($lastStudent && preg_match('/STU-' . $year . '-(\d+)/', $lastStudent->student_id, $matches)) {
+            $lastNumber = intval($matches[1]);
+            $newNumber = str_pad($lastNumber + 1, 4, '0', STR_PAD_LEFT);
+        } else {
+            $newNumber = '0001';
+        }
+        
+        $data['student_id'] = 'STU-' . $year . '-' . $newNumber;
+        
+        // Combine first, middle and last name for the name field
+        $middleName = !empty($data['middle_name']) ? ' ' . $data['middle_name'] . ' ' : ' ';
+        $data['name'] = trim($data['first_name'] . $middleName . $data['last_name']);
+        
+        // Set default status if not provided
+        if (!isset($data['status'])) {
+            $data['status'] = 'Active';
+        }
+
+        $student = Student::create($data);
+
+        if ($request->has('assigned_subjects')) {
+            $assigned = $request->assigned_subjects ?? [];
+            foreach ($assigned as $subId => $pivotData) {
+                $facId = $pivotData['faculty_id'] ?? null;
+                if ($facId) {
+                    $count = \DB::table('student_subject')->where('faculty_id', $facId)->count();
+                    if ($count >= 50) {
+                        $faculty = \App\Models\Faculty::find($facId);
+                        return response()->json([
+                            'message' => "Faculty member " . ($faculty->first_name . ' ' . $faculty->last_name) . " has reached the maximum limit of 50 students."
+                        ], 422);
+                    }
+                }
+            }
+            $student->subjects()->sync($assigned);
+        }
+
+        return response()->json([
+            'message' => '✅ Student added successfully!',
+            'student' => $student
+        ], 201);
     }
 
     public function show(Student $student)
@@ -139,6 +134,26 @@ class StudentController extends Controller
 
         $student->update($data);
 
+        if ($request->has('assigned_subjects')) {
+            $assigned = $request->assigned_subjects ?? [];
+            
+            // Check capacity for each assignment
+            foreach ($assigned as $subId => $pivotData) {
+                $facId = $pivotData['faculty_id'] ?? null;
+                if ($facId) {
+                    $count = \DB::table('student_subject')->where('faculty_id', $facId)->count();
+                    if ($count >= 50) {
+                        $faculty = \App\Models\Faculty::find($facId);
+                        return response()->json([
+                            'message' => "Faculty member " . ($faculty->first_name . ' ' . $faculty->last_name) . " has reached the maximum limit of 50 students."
+                        ], 422);
+                    }
+                }
+            }
+            
+            $student->subjects()->sync($assigned);
+        }
+
         return response()->json([
             'message' => '✅ Student updated successfully!',
             'student' => $student
@@ -165,6 +180,15 @@ class StudentController extends Controller
         ]);
     }
 
+    public function activate(Student $student)
+    {
+        if ($student->status !== 'Pending') {
+            return response()->json(['message' => 'Only Pending students can be activated'], 422);
+        }
+
+        $student->update(['status' => 'Active']);
+        return response()->json(['message' => 'Student activated successfully', 'student' => $student]);
+    }
 
     public function archive(Student $student)
     {
@@ -181,6 +205,76 @@ class StudentController extends Controller
         return response()->json([
             'message' => '✅ Student restored successfully',
             'student' => $student
+        ]);
+    }
+
+    /**
+     * Bulk enroll a student into multiple subjects at once.
+     * Supports partial success: subjects that violate the 50-student faculty cap
+     * are skipped and reported, while valid ones are enrolled.
+     * Also auto-updates the student's section from the first assigned subject.
+     */
+    public function bulkEnrollSubjects(Request $request, Student $student)
+    {
+        $request->validate([
+            'subject_assignments' => 'required|array',
+        ]);
+
+        $assignments    = $request->subject_assignments; // [subjectId => facultyId|null, ...]
+        $enrolled       = [];
+        $skipped        = [];
+        $firstSection   = null;
+
+        foreach ($assignments as $subjectId => $facultyId) {
+            $subject = \App\Models\Subject::find($subjectId);
+            if (!$subject) continue;
+
+            // Resolve faculty: use what was passed, fall back to subject default
+            $resolvedFacultyId = $facultyId ?: $subject->faculty_id;
+
+            // Capacity check
+            if ($resolvedFacultyId) {
+                $currentCount = \DB::table('student_subject')
+                    ->where('faculty_id', $resolvedFacultyId)
+                    ->count();
+                if ($currentCount >= 50) {
+                    $faculty = \App\Models\Faculty::find($resolvedFacultyId);
+                    $name = $faculty ? trim($faculty->first_name . ' ' . $faculty->last_name) : 'Unknown';
+                    $skipped[] = [
+                        'subject_id'   => $subjectId,
+                        'subject_code' => $subject->code,
+                        'reason'       => "Faculty {$name} has reached the 50-student limit.",
+                    ];
+                    continue;
+                }
+            }
+
+            // Sync the enrollment (won't duplicate if already enrolled)
+            $subject->students()->syncWithoutDetaching([
+                $student->id => [
+                    'faculty_id' => $resolvedFacultyId,
+                    'semester' => $subject->semester || '1st Semester',
+                    'academic_year' => $subject->academic_year || '2025-2026'
+                ]
+            ]);
+            $enrolled[] = $subjectId;
+
+            // Capture section from first enrolled subject
+            if (!$firstSection && $subject->section) {
+                $firstSection = $subject->section;
+            }
+        }
+
+        // Auto-populate section on the student record
+        if ($firstSection) {
+            $student->update(['section' => $firstSection]);
+        }
+
+        return response()->json([
+            'message'  => count($enrolled) . ' subject(s) enrolled successfully.',
+            'enrolled' => $enrolled,
+            'skipped'  => $skipped,
+            'student'  => $student->fresh(),
         ]);
     }
 }

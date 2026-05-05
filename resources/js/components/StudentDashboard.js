@@ -48,19 +48,25 @@ export default function StudentDashboard({ user }) {
         console.error("Dashboard fetch error:", err);
         try {
           const profileId = user.profile_id || user.id;
-          const subRes = await axios.get(`/api/student/${profileId}/subjects`);
-          setSchedule(subRes.data.map(s => ({
+          const subRes = await axios.get(`/api/subjects/student/${profileId}`);
+          const mapped = subRes.data.map(s => ({
             id: s.id, code: s.code, name: s.name, units: s.units || 3,
-            room: s.room?.name || 'TBA', day: s.schedule_day || 'TBA',
+            room: s.room?.name || s.room || 'TBA', day: s.schedule_day || 'TBA',
             time_start: s.time_start, time_end: s.time_end,
             time_display: s.time_start && s.time_end ? `${s.time_start} - ${s.time_end}` : 'TBA',
             instructor: s.faculty ? `${s.faculty.first_name} ${s.faculty.last_name}` : 'TBA',
             section: s.section, semester: s.semester, academic_year: s.academic_year,
-          })));
+          }));
+          setSchedule(mapped);
+          setTotalUnits(mapped.reduce((sum, s) => sum + (parseInt(s.units) || 3), 0));
         } catch (e) { console.error(e); }
       } finally { setLoading(false); }
     };
     fetchData();
+    // Listen for admin enrollment updates
+    const handler = () => { fetchData(); };
+    window.addEventListener('dataUpdated', handler);
+    return () => window.removeEventListener('dataUpdated', handler);
   }, [user]);
 
   if (viewingGrades) {
@@ -252,34 +258,6 @@ export default function StudentDashboard({ user }) {
             </div>
           </div>
 
-          {/* Announcements Feed */}
-          <div style={{ background: '#1e293b', padding: '1.5rem', borderRadius: '24px', color: '#fff' }}>
-            <h3 style={{ marginTop: 0, marginBottom: '1.25rem', display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem' }}>
-              <Bell size={20} color="#fbbf24" /> Bulletin Board
-            </h3>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-              {announcements.length > 0 ? announcements.slice(0, 4).map(ann => (
-                <div key={ann.id} style={{ borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '12px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
-                     <span style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc' }}>{ann.title}</span>
-                     {ann.category && <span style={{ fontSize: '0.65rem', background: 'rgba(255,255,255,0.1)', color: '#94a3b8', padding: '1px 6px', borderRadius: '4px' }}>{ann.category.replace('_',' ')}</span>}
-                  </div>
-                  <p style={{ margin: 0, fontSize: '0.8rem', color: '#94a3b8', lineHeight: '1.5' }}>{ann.content.substring(0, 80)}...</p>
-                  <div style={{ marginTop: '8px', display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.7rem', color: '#64748b' }}>
-                    <User size={12} /> {ann.faculty ? `${ann.faculty.first_name} ${ann.faculty.last_name}` : 'System'}
-                  </div>
-                </div>
-              )) : (
-                <p style={{ fontSize: '0.8rem', color: '#64748b' }}>No recent broadcasts.</p>
-              )}
-            </div>
-            <button 
-              onClick={() => { window.history.pushState({}, '', '/student-dashboard'); window.dispatchEvent(new PopStateEvent('popstate')); }}
-              style={{ width: '100%', marginTop: '1.25rem', padding: '10px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px', color: '#cbd5e1', fontSize: '0.85rem', cursor: 'pointer', transition: 'all 0.2s' }}
-            >
-              View All Posts
-            </button>
-          </div>
         </div>
       </div>
     </div>

@@ -9,8 +9,6 @@ export default function FacultyRegister({ onRegisterSuccess, onBackToLogin }) {
     email: "",
     phone: "",
     department: "",
-    position: "",
-    specialization: "",
     password: "",
     password_confirmation: "",
   });
@@ -28,7 +26,8 @@ export default function FacultyRegister({ onRegisterSuccess, onBackToLogin }) {
     try {
       const res = await axios.post("/api/faculty/register", form);
       if (res.data?.success) {
-        onRegisterSuccess(res.data.user);
+        sessionStorage.setItem("registrationSuccess", "Faculty account created successfully! Please log in to continue.");
+        window.location.href = "/login";
       }
     } catch (err) {
       if (err.response?.data?.errors) {
@@ -273,113 +272,40 @@ export default function FacultyRegister({ onRegisterSuccess, onBackToLogin }) {
             </div>
           </div>
 
-          <div style={{ display: 'flex', gap: '1.25rem' }}>
-            <div className="lp-field" style={{ flex: 1 }}>
-              <label className="lp-label" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '600', color: '#475569', fontSize: '0.9rem' }}>Department *</label>
-              <div className="lp-input-wrap">
-                <input 
-                  type="text" 
-                  className={`lp-input ${fieldErrors.department ? "lp-input--invalid" : ""}`}
-                  style={{
-                    width: '100%',
-                    padding: '0.75rem 1rem',
-                    borderRadius: '10px',
-                    border: fieldErrors.department ? '1.5px solid #ef4444' : '1.5px solid #e2e8f0',
-                    fontSize: '1rem',
-                    outline: 'none',
-                    transition: 'border-color 0.2s, box-shadow 0.2s'
-                  }}
-                  onFocus={(e) => {
-                    if(!fieldErrors.department) {
-                      e.target.style.borderColor = '#3b82f6';
-                      e.target.style.boxShadow = '0 0 0 4px rgba(59, 130, 246, 0.1)';
-                    }
-                  }}
-                  onBlur={(e) => {
-                    if(!fieldErrors.department) {
-                      e.target.style.borderColor = '#e2e8f0';
-                      e.target.style.boxShadow = 'none';
-                    }
-                  }}
-                  placeholder="e.g. IT Department" 
-                  value={form.department}
-                  onChange={e => setForm({...form, department: e.target.value})} 
-                  required 
-                />
-              </div>
-              {fieldErrors.department && <span className="lp-field-error" style={{ color: '#ef4444', fontSize: '0.8rem', marginTop: '0.25rem', display: 'block' }}>{fieldErrors.department[0]}</span>}
-            </div>
-            <div className="lp-field" style={{ flex: 1 }}>
-              <label className="lp-label" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '600', color: '#475569', fontSize: '0.9rem' }}>Rank / Position *</label>
-              <div className="lp-input-wrap">
-                <input 
-                  type="text" 
-                  className={`lp-input ${fieldErrors.position ? "lp-input--invalid" : ""}`}
-                  style={{
-                    width: '100%',
-                    padding: '0.75rem 1rem',
-                    borderRadius: '10px',
-                    border: fieldErrors.position ? '1.5px solid #ef4444' : '1.5px solid #e2e8f0',
-                    fontSize: '1rem',
-                    outline: 'none',
-                    transition: 'border-color 0.2s, box-shadow 0.2s'
-                  }}
-                  onFocus={(e) => {
-                    if(!fieldErrors.position) {
-                      e.target.style.borderColor = '#3b82f6';
-                      e.target.style.boxShadow = '0 0 0 4px rgba(59, 130, 246, 0.1)';
-                    }
-                  }}
-                  onBlur={(e) => {
-                    if(!fieldErrors.position) {
-                      e.target.style.borderColor = '#e2e8f0';
-                      e.target.style.boxShadow = 'none';
-                    }
-                  }}
-                  placeholder="e.g. Assistant Professor" 
-                  value={form.position}
-                  onChange={e => setForm({...form, position: e.target.value})} 
-                  required 
-                />
-              </div>
-              {fieldErrors.position && <span className="lp-field-error" style={{ color: '#ef4444', fontSize: '0.8rem', marginTop: '0.25rem', display: 'block' }}>{fieldErrors.position[0]}</span>}
-            </div>
-          </div>
-
           <div className="lp-field">
-            <label className="lp-label" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '600', color: '#475569', fontSize: '0.9rem' }}>Specialization *</label>
+            <label className="lp-label" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '600', color: '#475569', fontSize: '0.9rem' }}>Department *</label>
             <div className="lp-input-wrap">
               <input 
                 type="text" 
-                className={`lp-input ${fieldErrors.specialization ? "lp-input--invalid" : ""}`}
+                className={`lp-input ${fieldErrors.department ? "lp-input--invalid" : ""}`}
                 style={{
                   width: '100%',
                   padding: '0.75rem 1rem',
                   borderRadius: '10px',
-                  border: fieldErrors.specialization ? '1.5px solid #ef4444' : '1.5px solid #e2e8f0',
+                  border: fieldErrors.department ? '1.5px solid #ef4444' : '1.5px solid #e2e8f0',
                   fontSize: '1rem',
                   outline: 'none',
                   transition: 'border-color 0.2s, box-shadow 0.2s'
                 }}
                 onFocus={(e) => {
-                  if(!fieldErrors.specialization) {
+                  if(!fieldErrors.department) {
                     e.target.style.borderColor = '#3b82f6';
                     e.target.style.boxShadow = '0 0 0 4px rgba(59, 130, 246, 0.1)';
                   }
                 }}
                 onBlur={(e) => {
-                  if(!fieldErrors.specialization) {
+                  if(!fieldErrors.department) {
                     e.target.style.borderColor = '#e2e8f0';
                     e.target.style.boxShadow = 'none';
                   }
                 }}
-                placeholder="e.g. Data Science, Web Development" 
-                value={form.specialization}
-                onChange={e => setForm({...form, specialization: e.target.value})} 
+                placeholder="e.g. IT Department" 
+                value={form.department}
+                onChange={e => setForm({...form, department: e.target.value})} 
                 required 
               />
             </div>
-            {fieldErrors.specialization && <span className="lp-field-error" style={{ color: '#ef4444', fontSize: '0.8rem', marginTop: '0.25rem', display: 'block' }}>{fieldErrors.specialization[0]}</span>}
+            {fieldErrors.department && <span className="lp-field-error" style={{ color: '#ef4444', fontSize: '0.8rem', marginTop: '0.25rem', display: 'block' }}>{fieldErrors.department[0]}</span>}
           </div>
 
           <div style={{ display: 'flex', gap: '1.25rem' }}>

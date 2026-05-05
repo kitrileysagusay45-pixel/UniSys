@@ -13,10 +13,10 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import { 
-  GraduationCap, Users, Building2, TrendingUp, Calendar, 
-  Plus, BookOpen, Bell, Info, AlertTriangle, Activity, 
-  Clock, CheckCircle, ArrowUpRight, Zap, Download
+import {
+  GraduationCap, Users, Building2, TrendingUp, Calendar,
+  Plus, BookOpen, Bell, Info, AlertTriangle, Activity,
+  Clock, CheckCircle, ArrowUpRight, Zap, Download, UserPlus, BookPlus
 } from "lucide-react";
 import { exportStudentReport } from "../utils/ExportUtils";
 
@@ -48,14 +48,15 @@ export default function Dashboard({ user }) {
   const { counts } = useCounts();
   const [students, setStudents] = useState([]);
   const [faculties, setFaculties] = useState([]);
-  const [chartKey, setChartKey] = useState(0); 
+  const [chartKey, setChartKey] = useState(0);
   const [dashboardData, setDashboardData] = useState({
     totalStudents: 0,
     totalFaculty: 0,
     totalCourses: 0,
     totalDepartments: 0,
     pendingStudents: 0,
-    pendingFaculty: 0
+    pendingFaculty: 0,
+    facultyLoads: {}
   });
 
   const [announcements, setAnnouncements] = useState([]);
@@ -63,8 +64,8 @@ export default function Dashboard({ user }) {
   const [activeSemester, setActiveSemester] = useState("");
 
   const colorPalette = [
-    '#3b82f6', '#f59e0b', '#10b981', '#8b5cf6', '#ec4899', 
-    '#06b6d4', '#ef4444', '#84cc16', '#f97316', '#6366f1', 
+    '#3b82f6', '#f59e0b', '#10b981', '#8b5cf6', '#ec4899',
+    '#06b6d4', '#ef4444', '#84cc16', '#f97316', '#6366f1',
     '#14b8a6', '#a855f7', '#f43f5e', '#0ea5e9', '#eab308'
   ];
 
@@ -93,13 +94,14 @@ export default function Dashboard({ user }) {
 
   const fetchDashboardData = async () => {
     try {
-      const [studentsRes, facultiesRes, countsRes, annRes, settingsRes, logsRes] = await Promise.all([
+      const [studentsRes, facultiesRes, countsRes, annRes, settingsRes, logsRes, loadsRes] = await Promise.all([
         axios.get("/api/students"),
         axios.get("/api/faculties"),
         axios.get("/api/dashboard-counts"),
         axios.get("/api/announcements/dashboard"),
         axios.get("/api/system/settings"),
-        axios.get("/api/system/audit-logs")
+        axios.get("/api/system/audit-logs"),
+        axios.get("/api/faculty/student-counts")
       ]);
 
       setStudents(studentsRes.data.filter(s => s.status !== "Archived"));
@@ -110,9 +112,10 @@ export default function Dashboard({ user }) {
         totalCourses: countsRes.data.courses,
         totalDepartments: countsRes.data.departments,
         pendingStudents: studentsRes.data.filter(s => s.status === 'Pending').length,
-        pendingFaculty: facultiesRes.data.filter(f => f.status === 'Pending').length
+        pendingFaculty: facultiesRes.data.filter(f => f.status === 'Pending').length,
+        facultyLoads: loadsRes.data || {}
       });
-      
+
       setAnnouncements(annRes.data);
       setAuditLogs(logsRes.data || []);
       if (settingsRes.data.active_semester) {
@@ -135,59 +138,59 @@ export default function Dashboard({ user }) {
 
   // Chart Data Calculations
   const courseData = students.reduce((acc, student) => { acc[student.course] = (acc[student.course] || 0) + 1; return acc; }, {});
-  const studentsPerCourseData = { 
-    labels: Object.keys(courseData), 
-    datasets: [{ 
-      label: "Students", 
-      data: Object.values(courseData), 
-      backgroundColor: chartColors.primary, 
+  const studentsPerCourseData = {
+    labels: Object.keys(courseData),
+    datasets: [{
+      label: "Students",
+      data: Object.values(courseData),
+      backgroundColor: chartColors.primary,
       borderRadius: 8,
       hoverBackgroundColor: '#4f46e5'
-    }] 
+    }]
   };
 
   const facultyDeptData = faculties.reduce((acc, faculty) => { acc[faculty.department] = (acc[faculty.department] || 0) + 1; return acc; }, {});
-  const facultyPerDeptData = { 
-    labels: Object.keys(facultyDeptData), 
-    datasets: [{ 
-      data: Object.values(facultyDeptData), 
-      backgroundColor: [chartColors.primary, chartColors.secondary, chartColors.accent, '#8b5cf6', '#ec4899'], 
+  const facultyPerDeptData = {
+    labels: Object.keys(facultyDeptData),
+    datasets: [{
+      data: Object.values(facultyDeptData),
+      backgroundColor: [chartColors.primary, chartColors.secondary, chartColors.accent, '#8b5cf6', '#ec4899'],
       borderWidth: 0,
       hoverOffset: 15
-    }] 
+    }]
   };
 
   const studentDeptData = students.reduce((acc, student) => { acc[student.department] = (acc[student.department] || 0) + 1; return acc; }, {});
-  const studentsPerDeptData = { 
-    labels: Object.keys(studentDeptData), 
-    datasets: [{ 
-      label: "Students", 
-      data: Object.values(studentDeptData), 
-      backgroundColor: chartColors.secondary, 
-      borderRadius: 8 
-    }] 
+  const studentsPerDeptData = {
+    labels: Object.keys(studentDeptData),
+    datasets: [{
+      label: "Students",
+      data: Object.values(studentDeptData),
+      backgroundColor: chartColors.secondary,
+      borderRadius: 8
+    }]
   };
 
-  const yearLevelData = students.reduce((acc, student) => { 
+  const yearLevelData = students.reduce((acc, student) => {
     if (student.year_level && student.year_level !== "null") {
-      acc[student.year_level] = (acc[student.year_level] || 0) + 1; 
+      acc[student.year_level] = (acc[student.year_level] || 0) + 1;
     }
-    return acc; 
+    return acc;
   }, {});
-  const enrollmentData = { 
-    labels: Object.keys(yearLevelData).sort(), 
-    datasets: [{ 
-      label: "Students", 
-      data: Object.values(yearLevelData), 
-      backgroundColor: '#8b5cf6', 
-      borderRadius: 8 
-    }] 
+  const enrollmentData = {
+    labels: Object.keys(yearLevelData).sort(),
+    datasets: [{
+      label: "Students",
+      data: Object.values(yearLevelData),
+      backgroundColor: '#8b5cf6',
+      borderRadius: 8
+    }]
   };
 
-  const chartOptions = { 
-    responsive: true, 
-    maintainAspectRatio: false, 
-    plugins: { 
+  const chartOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
       legend: { display: false },
       tooltip: {
         backgroundColor: '#1e293b',
@@ -196,35 +199,35 @@ export default function Dashboard({ user }) {
         bodyFont: { size: 13 },
         cornerRadius: 8
       }
-    }, 
-    scales: { 
-      y: { 
-        beginAtZero: true, 
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
         grid: { color: "#f1f5f9", drawBorder: false },
         ticks: { color: '#64748b', font: { size: 11 } }
-      }, 
-      x: { 
+      },
+      x: {
         grid: { display: false },
         ticks: { color: '#64748b', font: { size: 11 } }
-      } 
-    } 
+      }
+    }
   };
-  
-  const doughnutOptions = { 
-    responsive: true, 
-    maintainAspectRatio: false, 
+
+  const doughnutOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
     cutout: '70%',
-    plugins: { 
-      legend: { 
-        position: "bottom", 
-        labels: { 
-          usePointStyle: true, 
+    plugins: {
+      legend: {
+        position: "bottom",
+        labels: {
+          usePointStyle: true,
           padding: 20,
           font: { size: 12, family: 'Inter' },
           color: '#475569'
-        } 
-      } 
-    } 
+        }
+      }
+    }
   };
 
   return (
@@ -236,15 +239,12 @@ export default function Dashboard({ user }) {
             <p style={{ color: '#64748b', fontSize: '0.95rem' }}>{activeSemester ? `Academic Year 2025-2026 | ${activeSemester}` : 'System Overview'}</p>
           </div>
           <div style={{ display: 'flex', gap: '12px' }}>
-            <button 
-              className="export-btn" 
+            <button
+              className="export-btn"
               onClick={handleExport}
               style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 20px', background: '#fff', color: '#475569', border: '1px solid #e2e8f0', borderRadius: '10px', cursor: 'pointer', fontWeight: 600, boxShadow: '0 1px 2px rgba(0,0,0,0.05)' }}
             >
               <Download size={18} /> Export Data
-            </button>
-            <button className="primary-btn" onClick={() => window.history.pushState({}, '', '/announcements')} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 20px', background: '#6366f1', color: '#fff', border: 'none', borderRadius: '10px', cursor: 'pointer', fontWeight: 600, boxShadow: '0 4px 6px -1px rgba(99, 102, 241, 0.2)' }}>
-              <Zap size={18} /> New Broadcast
             </button>
           </div>
         </div>
@@ -252,10 +252,12 @@ export default function Dashboard({ user }) {
         {/* Quick Actions Bar */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginTop: '1.5rem' }}>
           {[
-            { label: 'Create Schedule', icon: Calendar, path: '/subjects', color: '#f59e0b' },
-            { label: 'Post Announcement', icon: Bell, path: '/announcements', color: '#8b5cf6' }
+            { label: 'Enroll Student', icon: UserPlus, path: '/students', color: '#6366f1' },
+            { label: 'Create Subject', icon: BookPlus, path: '/subjects', color: '#14b8a6' },
+            { label: 'Set Schedule', icon: Calendar, path: '/subjects', color: '#f59e0b' },
+            { label: 'System Logs', icon: Activity, path: '/reports', color: '#ec4899' }
           ].map((action, i) => (
-            <button 
+            <button
               key={i}
               onClick={() => { window.history.pushState({}, '', action.path); window.dispatchEvent(new PopStateEvent('popstate')); }}
               style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '12px 16px', background: '#fff', border: '1px solid #f1f5f9', borderRadius: '12px', cursor: 'pointer', transition: 'all 0.2s' }}
@@ -310,7 +312,7 @@ export default function Dashboard({ user }) {
                 There are <strong>{dashboardData.pendingStudents}</strong> students and <strong>{dashboardData.pendingFaculty}</strong> faculty members awaiting approval.
               </p>
             </div>
-            <button 
+            <button
               onClick={() => { window.history.pushState({}, '', '/students'); window.dispatchEvent(new PopStateEvent('popstate')); }}
               style={{ background: '#fff', border: '1px solid #cbd5e1', padding: '6px 14px', borderRadius: '8px', fontSize: '0.85rem', fontWeight: 600, color: '#475569', cursor: 'pointer' }}
             >
@@ -364,27 +366,6 @@ export default function Dashboard({ user }) {
                   <p style={{ fontSize: '0.85rem', color: '#94a3b8', textAlign: 'center', padding: '20px 0' }}>No recent activities found.</p>
                 )}
               </div>
-            </div>
-
-            {/* Announcements */}
-            <div className="widget-box" style={{ background: '#1e293b', padding: '1.5rem', borderRadius: '16px', color: '#fff' }}>
-              <h3 style={{ margin: '0 0 1.25rem 0', fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <Bell size={20} style={{ color: '#fbbf24' }} /> Broadcasts
-              </h3>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {announcements.slice(0, 3).map((ann, i) => (
-                  <div key={i} style={{ paddingBottom: i < 2 ? '1rem' : 0, borderBottom: i < 2 ? '1px solid rgba(255,255,255,0.1)' : 'none' }}>
-                    <h4 style={{ margin: '0 0 4px 0', fontSize: '0.9rem', color: '#f8fafc' }}>{ann.title}</h4>
-                    <p style={{ margin: 0, fontSize: '0.8rem', color: '#94a3b8', lineHeight: '1.4' }}>{ann.content?.substring(0, 80)}...</p>
-                  </div>
-                ))}
-              </div>
-              <button 
-                onClick={() => { window.history.pushState({}, '', '/announcements'); window.dispatchEvent(new PopStateEvent('popstate')); }}
-                style={{ width: '100%', marginTop: '1.25rem', padding: '8px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', color: '#cbd5e1', fontSize: '0.8rem', cursor: 'pointer' }}
-              >
-                View Bulletin Board
-              </button>
             </div>
           </div>
         </div>

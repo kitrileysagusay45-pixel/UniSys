@@ -59,12 +59,18 @@ Route::middleware('api.user')->group(function () {
     // Profiles
     Route::apiResource('profiles', ProfileController::class);
 
+    // Notifications
+    Route::get('/notifications', [App\Http\Controllers\NotificationController::class, 'index']);
+    Route::post('/notifications/mark-all-read', [App\Http\Controllers\NotificationController::class, 'markAllAsRead']);
+    Route::post('/notifications/{id}/mark-read', [App\Http\Controllers\NotificationController::class, 'markAsRead']);
+
     // Dashboard counts (all roles can view)
     Route::get('/dashboard-counts',  [DashboardController::class, 'counts']);
     Route::get('/refresh-counts',    [DashboardController::class, 'counts']);
 
     // Subjects (faculty & students need read access)
     Route::get('subjects',                           [SubjectController::class, 'index']);
+    Route::get('subjects/student/{studentId}',       [SubjectController::class, 'studentSubjects']);
     Route::get('subjects/{subject}',                 [SubjectController::class, 'show']);
     Route::get('faculty/{facultyId}/subjects',       [SubjectController::class, 'facultySubjects']);
     Route::get('student/{studentId}/subjects',       [SubjectController::class, 'studentSubjects']);
@@ -90,6 +96,7 @@ Route::middleware('api.user:faculty')->group(function () {
     Route::get('faculty/section-grades/{subjectId}', [GradeController::class, 'sectionGrades']);
     Route::post('faculty/announcements',             [AnnouncementController::class, 'store']);
     Route::get('faculty/my-announcements',           [AnnouncementController::class, 'facultyAnnouncements']);
+    Route::get('faculty/{id}/students',              [FacultyController::class, 'getStudents']);
 });
 
 // ── ADMIN ONLY: Full CRUD access ──────────────────────────────────────────────
@@ -106,9 +113,9 @@ Route::middleware('api.user:admin')->group(function () {
     Route::put('students/{student}',                 [StudentController::class, 'update']);
     Route::delete('students/{student}',              [StudentController::class, 'destroy']);
     Route::patch('students/{student}/archive',       [StudentController::class, 'archive']);
-    Route::patch('students/{student}/archive',       [StudentController::class, 'archive']);
     Route::patch('students/{student}/restore',       [StudentController::class, 'restore']);
     Route::patch('students/{student}/status',        [StudentController::class, 'updateStatus']);
+    Route::post('students/{student}/bulk-enroll',   [StudentController::class, 'bulkEnrollSubjects']);
 
     // Faculty management
     Route::get('faculties',                          [FacultyController::class, 'index']);
@@ -120,6 +127,7 @@ Route::middleware('api.user:admin')->group(function () {
     Route::patch('faculties/{faculty}/archive',      [FacultyController::class, 'archive']);
     Route::patch('faculties/{faculty}/restore',      [FacultyController::class, 'restore']);
     Route::patch('faculties/{faculty}/status',       [FacultyController::class, 'updateStatus']);
+    Route::get('faculty/student-counts',            [FacultyController::class, 'studentCounts']);
 
     // Departments CRUD
     Route::apiResource('departments', DepartmentController::class);
@@ -171,25 +179,7 @@ Route::middleware('api.user:admin')->group(function () {
     Route::post('admin/schedule/conflicts',           [ScheduleController::class, 'checkConflicts']);
 });
 
-// ── ADMIN + FACULTY: Department students list ─────────────────────────────────
+// ── ADMIN + FACULTY: Shared access if needed ─────────────────────────────────
 Route::middleware('api.user:admin,faculty')->group(function () {
-    Route::get('faculty/{facultyId}/students', function ($facultyId) {
-        try {
-            $faculty = \App\Models\Faculty::findOrFail($facultyId);
-
-            $query = \App\Models\Student::where('status', 'Active');
-
-            if ($faculty->department) {
-                $query->where('department', $faculty->department);
-            } elseif ($faculty->department_id) {
-                $query->whereHas('program', function ($q) use ($faculty) {
-                    $q->where('department_id', $faculty->department_id);
-                });
-            }
-
-            return response()->json($query->orderBy('last_name')->get());
-        } catch (\Exception $e) {
-            return response()->json(['error' => 'Faculty not found'], 404);
-        }
-    });
+    // Add shared routes here if necessary
 });

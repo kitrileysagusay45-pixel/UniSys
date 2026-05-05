@@ -9,13 +9,14 @@ import Archive from "./Archive";
 import Profile from "./Profile";
 import Programs from "./Programs";
 import Announcements from "./Announcements";
+import NotificationsPage from "./NotificationsPage";
 import { GraduationCap, LayoutDashboard, Users, BookOpen, GraduationCap as GradIcon, BarChart3, Settings as SettingsIcon, Archive as ArchiveIcon, User, Circle, Bell } from "lucide-react";
 import TopNavbar from "./TopNavbar";
 
 export default function AdminLayout({ user, onLogout }) {
   const [page, setPage] = useState(() => {
     const path = window.location.pathname.split("/").pop() || "dashboard";
-    const validPages = ["dashboard", "faculty", "students", "subjects", "programs", "announcements", "reports", "settings", "archive", "profile"];
+    const validPages = ["dashboard", "faculty", "students", "subjects", "programs", "announcements", "reports", "settings", "archive", "profile", "notifications"];
     return validPages.includes(path) ? path : "dashboard";
   });
 
@@ -24,7 +25,7 @@ export default function AdminLayout({ user, onLogout }) {
   useEffect(() => {
     const updatePage = () => {
       const path = window.location.pathname.split("/").pop() || "dashboard";
-      const validPages = ["dashboard", "faculty", "students", "subjects", "programs", "announcements", "reports", "settings", "archive", "profile"];
+      const validPages = ["dashboard", "faculty", "students", "subjects", "programs", "announcements", "reports", "settings", "archive", "profile", "notifications"];
       if (validPages.includes(path)) setPage(path);
     };
     window.addEventListener("popstate", updatePage);
@@ -104,6 +105,7 @@ export default function AdminLayout({ user, onLogout }) {
           {page === "settings" && <Settings />}
           {page === "archive" && <Archive />}
           {page === "profile" && <Profile user={user} onLogout={onLogout} />}
+          {page === "notifications" && <NotificationsPage />}
         </div>
       </main>
     </div>

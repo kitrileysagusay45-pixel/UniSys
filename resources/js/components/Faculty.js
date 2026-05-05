@@ -19,7 +19,9 @@ export default function Faculty() {
   const [selectedIds, setSelectedIds] = useState([]);
   const [viewMode, setViewMode] = useState(null);
   const [activityLogs, setActivityLogs] = useState([]);
-  const [showCredentials, setShowCredentials] = useState(null);
+  const [allSubjects, setAllSubjects] = useState([]);
+  const [assignedSubjects, setAssignedSubjects] = useState([]);
+  const [facultyStudentCounts, setFacultyStudentCounts] = useState({});
   const { toasts, addToast, removeToast } = useToast();
 
   const [form, setForm] = useState({
@@ -27,16 +29,32 @@ export default function Faculty() {
     date_of_birth: "", sex: "", email: "", phone: "", address: "",
     department: "", position: "", employment_type: "Full-Time", date_hired: "", office_phone: "",
     specialization: "",
+    status: "Active"
   });
+
+  const fetchDepartments = async () => {
+    try {
+      const res = await axios.get("/api/departments");
+      // Filter for active departments if applicable, otherwise set all
+      setDepartmentsList(Array.isArray(res.data) ? res.data.filter(d => d.status !== 'Archived') : []);
+    } catch (err) { console.error("Failed to fetch departments:", err); }
+  };
 
   const fetchFaculties = async () => {
     try { const res = await axios.get("/api/faculties"); setFaculties(res.data); } catch (err) { console.error(err); }
   };
-  const fetchDepartments = async () => {
-    try { const res = await axios.get("/api/departments"); setDepartmentsList(res.data.filter(d => d.status !== "Archived")); } catch (err) { console.error(err); }
+  const fetchFacultyCounts = async () => {
+    try {
+        const res = await axios.get("/api/faculty/student-counts");
+        setFacultyStudentCounts(res.data);
+    } catch (err) { console.error(err); }
   };
 
-  useEffect(() => { fetchFaculties(); fetchDepartments(); }, []);
+  useEffect(() => { 
+    fetchFaculties(); 
+    fetchDepartments(); 
+    fetchFacultyCounts();
+  }, []);
 
   const positions = ["Professor", "Associate Professor", "Assistant Professor", "Lecturer", "Instructor", "Senior Lecturer", "Dean", "Department Head", "Coordinator"];
   const employmentTypes = ["Full-Time", "Part-Time", "Adjunct"];
@@ -44,25 +62,16 @@ export default function Faculty() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const payload = { ...form };
+      const payload = { ...form, assigned_subjects: assignedSubjects };
       if (editingId) {
         await axios.put(`/api/faculties/${editingId}`, payload);
         addToast('Faculty updated successfully!', 'success');
-      } else {
-        const res = await axios.post('/api/faculties', payload);
-        addToast('Faculty member added successfully!', 'success');
-        if (res.data.credentials) {
-          setShowCredentials(res.data.credentials);
-        }
       }
       await fetchFaculties();
+      await fetchFacultyCounts();
       await refreshCounts();
       window.dispatchEvent(new CustomEvent("dataUpdated", { detail: { type: "faculties" } }));
-      if (!editingId) {
-          // Keep form open if showing credentials
-      } else {
-          closeForm();
-      }
+      closeForm();
     } catch (err) {
       const errs = err.response?.data?.errors ? Object.values(err.response.data.errors).flat().join(' ') : '';
       addToast('Failed to save. ' + errs, 'error');
@@ -82,6 +91,10 @@ export default function Faculty() {
         date_hired: faculty.date_hired || "", office_phone: faculty.office_phone || "",
         specialization: faculty.specialization || "",
       });
+      // Load assigned subjects
+      axios.get(`/api/subjects?faculty_id=${faculty.id}`).then(res => {
+        setAssignedSubjects(res.data.filter(s => s.faculty_id === faculty.id).map(s => s.id));
+      }).catch(() => setAssignedSubjects([]));
     } else {
       setEditingId(null);
       setForm({
@@ -90,9 +103,11 @@ export default function Faculty() {
         department: "", position: "", employment_type: "Full-Time", date_hired: "", office_phone: "",
         specialization: "",
       });
+      setAssignedSubjects([]);
     }
     setActivityLogs([]);
-    setShowCredentials(null);
+    // Fetch all active subjects for assignment
+    axios.get("/api/subjects").then(res => setAllSubjects(res.data.filter(s => s.status === 'Active'))).catch(() => {});
     fetchDepartments();
     setShowForm(true);
   };
@@ -100,7 +115,8 @@ export default function Faculty() {
   const closeForm = () => { 
     setShowForm(false); 
     setEditingId(null); 
-    setViewMode(null); 
+    setViewMode(null);
+    setAssignedSubjects([]);
     setForm({
       first_name: "", middle_name: "", last_name: "",
       date_of_birth: "", sex: "", email: "", phone: "", address: "",
@@ -226,8 +242,8 @@ export default function Faculty() {
                   ))}
                 </div>
               </div>
-              <button className="primary-btn" onClick={() => openForm()} style={{ display: 'flex', alignItems: 'center', gap: '5px', padding: '8px 16px', background: '#3b82f6', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: '600' }}>
-                <Plus size={16} /> New Faculty
+              <button className="btn-primary" onClick={() => openForm()} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 20px', background: 'linear-gradient(135deg,#6366f1,#4f46e5)', color: '#fff', border: 'none', borderRadius: '10px', fontWeight: 700, cursor: 'pointer', boxShadow: '0 4px 12px rgba(99,102,241,0.25)' }}>
+                <Plus size={18} /> Register Faculty
               </button>
             </div>
           </div>
@@ -237,28 +253,11 @@ export default function Faculty() {
             <div className="modal-overlay" onClick={closeForm}>
               <div className="modal-content" onClick={e => e.stopPropagation()}>
                 <h3 className="modal-title">
-                  {editingId ? "Edit Faculty" : "New Faculty Member"}
+                  Edit Faculty
                   {editingId && <span className="modal-header-id"> | {form.employee_id || form.faculty_id}</span>}
                 </h3>
 
-                {showCredentials ? (
-                  <div className="credentials-box" style={{ background: '#f0fdf4', border: '1px solid #bbf7d0', padding: '1.5rem', borderRadius: '12px', marginBottom: '1.5rem', textAlign: 'center' }}>
-                    <h4 style={{ color: '#166534', marginTop: 0 }}>✅ Faculty Account Created!</h4>
-                    <p style={{ color: '#15803d', marginBottom: '1rem' }}>Issue these credentials to the faculty member.</p>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', background: '#fff', padding: '1rem', borderRadius: '8px', border: '1px dashed #22c55e' }}>
-                      <div>
-                        <small style={{ color: '#64748b', display: 'block', textTransform: 'uppercase', fontSize: '10px', fontWeight: 700 }}>Faculty ID (Username)</small>
-                        <strong style={{ fontSize: '1.2rem', color: '#1e293b' }}>{showCredentials.username}</strong>
-                      </div>
-                      <div>
-                        <small style={{ color: '#64748b', display: 'block', textTransform: 'uppercase', fontSize: '10px', fontWeight: 700 }}>Default Password</small>
-                        <strong style={{ fontSize: '1.2rem', color: '#1e293b' }}>{showCredentials.password}</strong>
-                      </div>
-                    </div>
-                    <button type="button" onClick={closeForm} style={{ marginTop: '1.5rem', padding: '8px 24px', background: '#166534', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>Done</button>
-                  </div>
-                ) : (
-                  <form onSubmit={handleSubmit} className="modal-form">
+                <form onSubmit={handleSubmit} className="modal-form">
                     <h4 className="section-heading">📋 Personal Information</h4>
                     <div className="form-row">
                       <div className="form-group">
@@ -341,14 +340,38 @@ export default function Faculty() {
                       <input type="date" value={form.date_hired} onChange={e => setForm({ ...form, date_hired: e.target.value })} />
                     </div>
 
+                    <h4 className="section-heading">📚 Subject Assignment</h4>
+                    <div className="form-group" style={{ marginBottom: "1.5rem" }}>
+                      <p style={{ fontSize: "0.85rem", color: "#64748b", marginBottom: "8px" }}>Select subjects to assign to this faculty member.</p>
+                      <div style={{ maxHeight: "160px", overflowY: "auto", border: "1px solid #e2e8f0", borderRadius: "8px", padding: "10px", background: "#f8fafc" }}>
+                        {allSubjects.map(sub => (
+                          <label key={sub.id} style={{ display: "flex", alignItems: "center", gap: "8px", padding: "6px 0", cursor: "pointer", borderBottom: "1px solid #f1f5f9" }}>
+                            <input
+                              type="checkbox"
+                              checked={assignedSubjects.includes(sub.id)}
+                              onChange={(e) => {
+                                if (e.target.checked) setAssignedSubjects([...assignedSubjects, sub.id]);
+                                else setAssignedSubjects(assignedSubjects.filter(id => id !== sub.id));
+                              }}
+                            />
+                            <span style={{ fontSize: "0.85rem", fontWeight: 600, color: "#1e293b" }}>{sub.code}</span>
+                            <span style={{ fontSize: "0.8rem", color: "#64748b" }}>- {sub.name}</span>
+                            <span style={{ fontSize: "0.75rem", fontWeight: 700, background: "#eef2ff", color: "#6366f1", padding: "2px 6px", borderRadius: "4px", marginLeft: "auto" }}>Section: {sub.section || 'TBA'}</span>
+                          </label>
+                        ))}
+                        {allSubjects.length === 0 && (
+                          <p style={{ fontSize: "0.8rem", color: "#94a3b8" }}>No active subjects available.</p>
+                        )}
+                      </div>
+                    </div>
+
                     <div className="modal-actions" style={{ marginTop: "1.5rem", paddingTop: "1rem", borderTop: "1px solid #ddd" }}>
                       <div style={{ display: "flex", justifyContent: "flex-end", width: "100%", gap: "1rem" }}>
                         <button type="button" className="btn-cancel" onClick={closeForm}>Cancel</button>
-                        <button type="submit" className="btn-submit">{editingId ? "Update Faculty" : "Create Account"}</button>
+                        <button type="submit" className="btn-submit">Update Faculty</button>
                       </div>
                     </div>
                   </form>
-                )}
               </div>
             </div>
           )}
@@ -358,12 +381,13 @@ export default function Faculty() {
             <table className="settings-table">
               <thead><tr>
                 <th style={{ width: '40px' }}>#</th>
-                <th>EMPLOYEE ID</th><th>Name</th><th>Email</th><th>DEPARTMENT</th><th>EMPLOYMENT TYPE</th><th>Status</th><th>Actions</th>
+                <th>EMPLOYEE ID</th><th>Name</th><th>Email</th><th>DEPARTMENT</th><th>STUDENT LOAD</th><th>EMPLOYMENT TYPE</th><th>Status</th><th>Actions</th>
               </tr></thead>
               <tbody>
                 {filtered.map((f, index) => {
                   const fullName = [f.first_name, f.middle_name, f.last_name].filter(Boolean).join(" ") || f.name || "N/A";
                   const isSelected = selectedIds.includes(f.id);
+                  const studentCount = facultyStudentCounts[f.id] || 0;
                   return (
                     <tr key={f.id} className={isSelected ? "row-selected" : ""}>
                       <td>{index + 1}</td>
@@ -371,14 +395,24 @@ export default function Faculty() {
                       <td>{fullName}</td>
                       <td>{f.email}</td>
                       <td>{f.status === "Pending" && !f.department ? <span className="reg-date" style={{ color: '#6366f1', fontSize: '12px' }}>Registered {new Date(f.created_at).toLocaleDateString()}</span> : (f.department || "—")}</td>
+                      <td>
+                        <span style={{ 
+                            padding: '4px 8px', 
+                            borderRadius: '4px', 
+                            fontSize: '0.75rem', 
+                            fontWeight: 600,
+                            background: studentCount >= 50 ? '#fee2e2' : '#f1f5f9',
+                            color: studentCount >= 50 ? '#ef4444' : '#64748b'
+                        }}>
+                            {studentCount}/50 Students
+                        </span>
+                      </td>
                       <td>{f.status === "Pending" && !f.employment_type ? "—" : (f.employment_type || "—")}</td>
                       <td><span className={`status-badge ${(f.status || "").toLowerCase()}`}>{f.status}</span></td>
                       <td>
                         <div className="action-buttons">
-                            <>
-                              <button onClick={() => openForm(f)} className="btn-icon btn-edit" title="Edit"><Edit2 size={16} /></button>
-                              <button onClick={() => handleArchive(f)} className="btn-icon btn-archive" title="Archive"><Archive size={16} /></button>
-                            </>
+                            <button onClick={() => openForm(f)} className="btn-icon btn-edit" title="Edit" style={{ backgroundColor: '#eef2ff', color: '#6366f1', border: 'none', padding: '6px', borderRadius: '4px', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Edit2 size={16} /></button>
+                            <button onClick={() => handleArchive(f)} className="btn-icon btn-archive" title="Archive" style={{ backgroundColor: '#ef4444', color: 'white', border: 'none', padding: '6px', borderRadius: '4px', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Archive size={16} color="white" /></button>
                         </div>
                       </td>
                     </tr>

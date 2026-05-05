@@ -3,12 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Faculty;
-use App\Models\AccountActivityLog;
-use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\DB;
 
 class FacultyController extends Controller
 {
@@ -18,78 +13,55 @@ class FacultyController extends Controller
         return Faculty::orderBy('id', 'desc')->get();
     }
 
-
+    // ✅ Store a new faculty
     public function store(Request $request)
     {
         $validated = $request->validate([
+            'faculty_id' => 'nullable|string|max:50',
+            'employee_id' => 'nullable|string|max:50',
             'first_name' => 'required|string|max:100',
             'middle_name' => 'nullable|string|max:100',
             'last_name' => 'required|string|max:100',
-            'email' => 'required|email|unique:faculties,email|unique:users,email',
-            'department' => 'required|string|exists:departments,name',
-            'employment_type' => 'required|string|max:50',
+            'date_of_birth' => 'nullable|date',
+            'age' => 'nullable|integer|min:18|max:100',
+            'sex' => 'nullable|string|max:10',
+            'email' => 'required|email|unique:faculties,email',
+            'phone' => 'nullable|string|max:20',
+            'address' => 'nullable|string|max:255',
+            'department' => 'required|string|max:100',
             'position' => 'nullable|string|max:100',
+            'employment_type' => 'required|string|max:50',
+            'date_hired' => 'nullable|date',
+            'office_phone' => 'nullable|string|max:20',
+            'status' => 'nullable|string|max:20',
         ]);
 
-        try {
-            DB::beginTransaction();
-
-            // 1. Auto-generate Faculty ID: FAC-YYYY-NNNN
-            $year = date('Y');
-            $lastFaculty = Faculty::withTrashed()->whereYear('created_at', $year)
-                ->orderBy('id', 'desc')
-                ->first();
-            
-            if ($lastFaculty && preg_match('/FAC-' . $year . '-(\d+)/', $lastFaculty->faculty_id, $matches)) {
-                $lastNumber = intval($matches[1]);
-                $newNumber = str_pad($lastNumber + 1, 4, '0', STR_PAD_LEFT);
-            } else {
-                $newNumber = '0001';
-            }
-            $facultyId = 'FAC-' . $year . '-' . $newNumber;
-
-            // 2. Default password: faculty + last 4 digits of ID
-            $defaultPassword = 'faculty' . $newNumber;
-
-            // 3. Create User record
-            $user = User::create([
-                'name' => trim($validated['first_name'] . ' ' . $validated['last_name']),
-                'username' => $facultyId,
-                'email' => $validated['email'],
-                'password' => Hash::make($defaultPassword),
-                'role' => 'faculty',
-            ]);
-
-            // 4. Create Faculty profile
-            $facultyData = array_merge($validated, [
-                'user_id' => $user->id,
-                'faculty_id' => $facultyId,
-                'name' => trim($validated['first_name'] . ' ' . ($validated['middle_name'] ? $validated['middle_name'] . ' ' : '') . $validated['last_name']),
-                'password' => $user->password,
-                'status' => 'Active'
-            ]);
-
-            $faculty = Faculty::create($facultyData);
-
-            DB::commit();
-
-            return response()->json([
-                'success' => true,
-                'message' => "✅ Faculty created! ID: {$facultyId}, Password: {$defaultPassword}",
-                'faculty' => $faculty,
-                'credentials' => [
-                    'username' => $facultyId,
-                    'password' => $defaultPassword
-                ]
-            ], 201);
-
-        } catch (\Exception $e) {
-            DB::rollBack();
-            return response()->json([
-                'success' => false,
-                'message' => 'Creation failed: ' . $e->getMessage()
-            ], 500);
+        // Auto-generate Faculty ID
+        $year = date('Y');
+        $lastFaculty = Faculty::whereYear('created_at', $year)
+            ->orderBy('id', 'desc')
+            ->first();
+        
+        if ($lastFaculty && preg_match('/FAC-' . $year . '-(\d+)/', $lastFaculty->faculty_id, $matches)) {
+            $lastNumber = intval($matches[1]);
+            $newNumber = str_pad($lastNumber + 1, 4, '0', STR_PAD_LEFT);
+        } else {
+            $newNumber = '0001';
         }
+        
+        $validated['faculty_id'] = 'FAC-' . $year . '-' . $newNumber;
+        
+        // Set default status if not provided
+        if (!isset($validated['status'])) {
+            $validated['status'] = 'Active';
+        }
+
+        $faculty = Faculty::create($validated);
+
+        return response()->json([
+            'message' => '✅ Faculty created successfully!',
+            'faculty' => $faculty
+        ], 201);
     }
 
     // ✅ Show specific faculty
@@ -119,9 +91,26 @@ class FacultyController extends Controller
             'date_hired' => 'nullable|date',
             'office_phone' => 'nullable|string|max:20',
             'status' => 'nullable|string|max:20',
+            'assigned_subjects' => 'nullable|array',
+            'assigned_subjects.*' => 'exists:subjects,id',
         ]);
 
-        $faculty->update($validated);
+        $faculty->update($request->except('assigned_subjects'));
+
+        if ($request->has('assigned_subjects')) {
+            $assignedSubjects = $request->assigned_subjects ?? [];
+            
+            // Unassign subjects currently assigned to this faculty that are not in the new list
+            \App\Models\Subject::where('faculty_id', $faculty->id)
+                ->whereNotIn('id', $assignedSubjects)
+                ->update(['faculty_id' => null]);
+
+            // Assign the new subjects to this faculty
+            if (!empty($assignedSubjects)) {
+                \App\Models\Subject::whereIn('id', $assignedSubjects)
+                    ->update(['faculty_id' => $faculty->id]);
+            }
+        }
 
         return response()->json([
             'message' => '✅ Faculty updated successfully!',
@@ -148,6 +137,15 @@ class FacultyController extends Controller
     }
 
     // ✅ Activate a faculty (Pending → Active)
+    public function activate(Faculty $faculty)
+    {
+        if ($faculty->status !== 'Pending') {
+            return response()->json(['message' => 'Only Pending faculty can be activated'], 422);
+        }
+
+        $faculty->update(['status' => 'Active']);
+        return response()->json(['message' => 'Faculty activated successfully', 'faculty' => $faculty]);
+    }
 
     // 🆕 Archive a faculty (soft delete)
     public function archive(Faculty $faculty)
@@ -161,5 +159,42 @@ class FacultyController extends Controller
     {
         $faculty->update(['status' => 'Active']);
         return response()->json(['message' => 'Faculty restored successfully', 'faculty' => $faculty]);
+    }
+    // 🆕 Get student counts for all faculties
+    public function studentCounts()
+    {
+        $counts = \DB::table('student_subject')
+            ->select('faculty_id', \DB::raw('count(*) as count'))
+            ->whereNotNull('faculty_id')
+            ->groupBy('faculty_id')
+            ->pluck('count', 'faculty_id');
+            
+        return response()->json($counts);
+    }
+
+    // 🆕 Get all students assigned to a faculty member via pivot
+    // 🆕 Get all students assigned to a faculty member via pivot
+    public function getStudents(Request $request, $id)
+    {
+        $faculty = \App\Models\Faculty::find($id) ?? \App\Models\Faculty::where('user_id', $id)->first();
+        
+        if (!$faculty) {
+            return response()->json([]);
+        }
+
+        $subjectId = $request->query('subject_id');
+
+        $query = \DB::table('student_subject')
+            ->join('students', 'student_subject.student_id', '=', 'students.id')
+            ->where('student_subject.faculty_id', $faculty->id)
+            ->where('students.status', 'Active');
+        
+        if ($subjectId) {
+            $query->where('student_subject.subject_id', $subjectId);
+        }
+
+        $students = $query->select('students.*', 'student_subject.subject_id')->get();
+
+        return response()->json($students);
     }
 }

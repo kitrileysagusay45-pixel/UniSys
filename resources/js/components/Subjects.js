@@ -23,8 +23,8 @@ export default function Subjects() {
 
   const [form, setForm] = useState({
     code: "", name: "", units: 3, section: "", department: "", course_id: "", faculty_id: "",
-    room_id: "", schedule_day: "", schedule_time: "", time_start: "",
-    time_end: "", semester: "", academic_year: "", status: "Active",
+    room: "", schedule_day: "", schedule_time: "", time_start: "",
+    time_end: "", semester: "", academic_year: "", year_level: "", status: "Active",
   });
 
   const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -84,16 +84,17 @@ export default function Subjects() {
         code: subject.code || "", name: subject.name || "", units: subject.units || 3, section: subject.section || "",
         department: subject.department || "",
         course_id: subject.course_id || "", faculty_id: subject.faculty_id || "",
-        room_id: subject.room_id || "", schedule_day: subject.schedule_day || "",
+        room: subject.room || "", schedule_day: subject.schedule_day || "",
         schedule_time: subject.schedule_time || "",
         time_start: subject.time_start || "", time_end: subject.time_end || "",
         semester: subject.semester || "",
+        year_level: subject.year_level || "",
         academic_year: subject.academic_year || "", status: subject.status || "Active",
       });
     } else {
       setEditingId(null);
-      setForm({ code: "", name: "", units: 3, section: "", department: "", course_id: "", faculty_id: "", room_id: "",
-        schedule_day: "", schedule_time: "", time_start: "", time_end: "", semester: "", academic_year: "", status: "Active" });
+      setForm({ code: "", name: "", units: 3, section: "", department: "", course_id: "", faculty_id: "", room: "",
+        schedule_day: "", schedule_time: "", time_start: "", time_end: "", semester: "", year_level: "", academic_year: "", status: "Active" });
     }
     setShowForm(true);
   };
@@ -171,6 +172,17 @@ export default function Subjects() {
                     </div>
                   </div>
                   <div className="form-row">
+                    <div className="form-group"><label>Year Level *</label>
+                      <select value={form.year_level} onChange={e => setForm({...form, year_level: e.target.value})} required>
+                        <option value="">Select Year Level</option>
+                        {["1st Year","2nd Year","3rd Year","4th Year","5th Year"].map(y => <option key={y} value={y}>{y}</option>)}
+                      </select>
+                    </div>
+                    <div className="form-group"><label>Room</label>
+                      <input type="text" placeholder="e.g. Room 101" value={form.room} onChange={e => setForm({...form, room: e.target.value})} />
+                    </div>
+                  </div>
+                  <div className="form-row">
                     <div className="form-group"><label>Department</label>
                       <select value={form.department} onChange={e => setForm({...form, department: e.target.value})}>
                         <option value="">Select Department</option>
@@ -224,16 +236,17 @@ export default function Subjects() {
           <div className="settings-table-wrapper">
             <table className="settings-table">
               <thead><tr>
-                <th>Code</th><th>Name</th><th>Units</th><th>Section</th><th>Department</th><th>Faculty</th><th>Schedule</th><th>Status</th><th>Actions</th>
+                <th>Code</th><th>Name</th><th>Year Level</th><th>Units</th><th>Section</th><th>Room</th><th>Faculty</th><th>Schedule</th><th>Status</th><th>Actions</th>
               </tr></thead>
               <tbody>
                 {filtered.map(s => (
                   <tr key={s.id}>
                     <td>{s.code}</td>
                     <td>{s.name}</td>
+                    <td>{s.year_level || '—'}</td>
                     <td>{s.units || 3}</td>
                     <td>{s.section || '—'}</td>
-                    <td>{s.department}</td>
+                    <td>{s.room || '—'}</td>
                     <td>{s.faculty ? `${s.faculty.first_name} ${s.faculty.last_name}` : "—"}</td>
                     <td>{s.schedule_day ? `${s.schedule_day} ${s.time_start || ""} - ${s.time_end || ""}` : "—"}</td>
                     <td><span className={`status-badge ${s.status.toLowerCase()}`}>{s.status}</span></td>
